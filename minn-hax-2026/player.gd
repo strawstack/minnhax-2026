@@ -33,7 +33,7 @@ func _input(event):
 		$Node3D.rotate_y(deg_to_rad(-event.relative.x * mouse_sens))
 
 		# Calculate new camera pitch
-		var camera = $Node3D/Camera3D
+		var camera = $Node3D/Node3D
 		var new_pitch = camera.rotation_degrees.x - event.relative.y * mouse_sens
 
 		# Clamp pitch
