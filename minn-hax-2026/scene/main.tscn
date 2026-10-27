@@ -1,21 +1,21 @@
 [gd_scene format=3 uid="uid://c4mam1u6g1fpn"]
 
-[ext_resource type="Script" uid="uid://csa1lm0kjl01s" path="res://gc.gd" id="1_h2yge"]
-[ext_resource type="PackedScene" uid="uid://cml38j780pqq4" path="res://freelancerHouse.tscn" id="2_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://buaduh1xyxbk4" path="res://player.tscn" id="2_h2yge"]
+[ext_resource type="Script" uid="uid://csa1lm0kjl01s" path="res://script/gc.gd" id="1_sugp2"]
+[ext_resource type="PackedScene" uid="uid://buaduh1xyxbk4" path="res://scene/player.tscn" id="2_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://cml38j780pqq4" path="res://scene/freelancerHouse.tscn" id="3_tbgi4"]
 
 [sub_resource type="Environment" id="Environment_jd5n0"]
 
 [node name="main" type="Node3D" unique_id=1687076067]
-script = ExtResource("1_h2yge")
+script = ExtResource("1_sugp2")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=37290506]
 environment = SubResource("Environment_jd5n0")
 
-[node name="CharacterBody3D" parent="." unique_id=387635343 instance=ExtResource("2_h2yge")]
+[node name="CharacterBody3D" parent="." unique_id=387635343 instance=ExtResource("2_jyhfs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.361572, -12.469708, -28)
 
-[node name="FreelancerHouse1" parent="." unique_id=1993436172 instance=ExtResource("2_0xm2m")]
+[node name="FreelancerHouse1" parent="." unique_id=1993436172 instance=ExtResource("3_tbgi4")]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1460455843]
 transform = Transform3D(0.70710677, 0.49999997, -0.49999997, 0, 0.7071068, 0.7071068, 0.7071068, -0.5, 0.5, 0, 32.535095, 0)

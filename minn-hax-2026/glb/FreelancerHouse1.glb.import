@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cbnny2erky83k"
-path="res://.godot/imported/FreelancerHouse1.glb-061034c0fee189d11aa03be483ea16e2.scn"
+path="res://.godot/imported/FreelancerHouse1.glb-8ed6a9e58182ba944fa6a0d49203b5dd.scn"
 
 [deps]
 
-source_file="res://FreelancerHouse1.glb"
-dest_files=["res://.godot/imported/FreelancerHouse1.glb-061034c0fee189d11aa03be483ea16e2.scn"]
+source_file="res://glb/FreelancerHouse1.glb"
+dest_files=["res://.godot/imported/FreelancerHouse1.glb-8ed6a9e58182ba944fa6a0d49203b5dd.scn"]
 
 [params]
 

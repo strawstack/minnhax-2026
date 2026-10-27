@@ -2,8 +2,8 @@ extends CharacterBody3D
 
 var mouse_sens = 0.3
 
-var walkSpeed = 3
-var runSpeed = 6
+var walkSpeed = 4
+var runSpeed = 8
 var speed = walkSpeed
 
 # Maximum look angles
@@ -12,6 +12,11 @@ const MAX_LOOK_DOWN = -80.0
 
 const gravity = 20
 const jump_height = 2
+
+const small = 0.01
+
+# Tracks player rotation to set Idle facing direction
+var previous_rotation = -PI/2
 
 # Capture mouse when game launches
 func _ready():
@@ -54,8 +59,10 @@ func _physics_process(delta):
 	# Increase speed when shift is held
 	if Input.is_action_pressed("run"):
 		speed = runSpeed
+		$agentFortyJeffM.setSpeed(3)
 	else:
 		speed = walkSpeed
+		$agentFortyJeffM.setSpeed(1.8)
 
 	# Add up current player direction based on input 
 	if Input.is_action_pressed("right"):
@@ -79,6 +86,18 @@ func _physics_process(delta):
 		velocity.y = sqrt(2.0 * gravity * jump_height)
 
 	var dir = direction.normalized()
+	var target_rotation = atan2(dir.x, dir.z) + PI / 2
+	if dir.length() < small:
+		target_rotation = previous_rotation
+		$agentFortyJeffM.playAnimation("Idle")
+	else:
+		$agentFortyJeffM.playAnimation("RunAction")
+	previous_rotation = target_rotation
+	$agentFortyJeffM.rotation.y = lerp_angle(
+		$agentFortyJeffM.rotation.y,
+		target_rotation,
+		10.0 * delta
+	)
 	velocity.x = dir.x * speed
 	velocity.z = dir.z * speed
 
