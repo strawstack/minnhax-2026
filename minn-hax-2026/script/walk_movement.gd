@@ -15,7 +15,7 @@ var cameraY
 var agentFortyJeffM
 
 # Tracks player rotation to set Idle facing direction
-var previous_rotation = -PI/2
+var previous_rotation = 0
 
 # Capture mouse when game launches
 func _ready():
@@ -25,6 +25,8 @@ func _ready():
 
 func toggleActive(active: bool):
 	$CollisionShape3D.set_disabled(not active)
+	agentFortyJeffM.rotation.x = 0
+	agentFortyJeffM.rotation.z = 0
 
 # Called on every physics frame
 func _physics_process(delta):
@@ -66,7 +68,7 @@ func _physics_process(delta):
 		velocity.y = sqrt(2.0 * gravity * jump_height)
 
 	var dir = direction.normalized()
-	var target_rotation = atan2(dir.x, dir.z) + PI / 2
+	var target_rotation = atan2(dir.x, dir.z) + PI
 	if dir.length() < small:
 		target_rotation = previous_rotation
 		agentFortyJeffM.playAnimation("Idle")

@@ -2238,14 +2238,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
 [node name="CameraX" type="Node3D" parent="CameraY" unique_id=258036667]
 
 [node name="Camera3D" type="Camera3D" parent="CameraY/CameraX" unique_id=173877677]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.36790037, 0.21578729, 2.1694167)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.368, 0.216, 2.169)
 
 [node name="agentFortyJeffM" type="Node3D" parent="." unique_id=98074392]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0.9998523, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9998523, 0)
 script = ExtResource("2_hjaqi")
 
 [node name="Armature" type="Node3D" parent="agentFortyJeffM" unique_id=1026448599]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, -0.1, 0)
 
 [node name="Skeleton3D" type="Skeleton3D" parent="agentFortyJeffM/Armature" unique_id=1707750278]
 bones/0/name = "Bone"
@@ -2601,7 +2601,7 @@ transform = Transform3D(0.05001425, 0, 0, 0, -5.962163e-09, 0.05001425, 0, -0.05
 mesh = SubResource("ArrayMesh_0sklo")
 
 [node name="SkateBoardFloor" type="MeshInstance3D" parent="agentFortyJeffM" unique_id=768784655]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05, -1.05, -0.001)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.00034706667, -1.05, -0.001)
 mesh = SubResource("ArrayMesh_in3ru")
 
 [node name="Cube_019" type="MeshInstance3D" parent="agentFortyJeffM/SkateBoardFloor" unique_id=252057702]

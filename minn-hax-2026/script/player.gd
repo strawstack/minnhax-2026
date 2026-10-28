@@ -4,13 +4,13 @@ extends Node3D
 @export var skateBoardBack: MeshInstance3D
 @export var skateBoardFloor: MeshInstance3D
 
+var useWalkMovement = true
+
 var mouse_sens = 0.3
 
 # Maximum look angles
 const MAX_LOOK_UP = 80.0
 const MAX_LOOK_DOWN = -80.0
-
-var useWalkMovement = true
 
 var agentFortyJeffM
 var characterBody3D
