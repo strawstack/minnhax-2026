@@ -1,9 +1,9 @@
-[gd_scene format=4 uid="uid://buaduh1xyxbk4"]
+[gd_scene format=4 uid="uid://bugwpg2o7w3gw"]
 
-[ext_resource type="Script" uid="uid://biyju5kqnpuru" path="res://script/player.gd" id="1_xo3ru"]
-[ext_resource type="Script" uid="uid://bblmatoicl77u" path="res://scene/player_animation.gd" id="2_hjaqi"]
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jd5n0"]
+[ext_resource type="Script" uid="uid://dxj0y7qf2t7pw" path="res://script/player.gd" id="1_xo3ru"]
+[ext_resource type="Script" uid="uid://clibv5pv710xj" path="res://script/skate_movement.gd" id="2_fvtld"]
+[ext_resource type="Script" uid="uid://bblmatoicl77u" path="res://script/player_animation.gd" id="2_hjaqi"]
+[ext_resource type="Script" uid="uid://biyju5kqnpuru" path="res://script/walk_movement.gd" id="3_fvtld"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j6yc5"]
 
@@ -2222,55 +2222,59 @@ _data = {
 &"SkatePush": SubResource("Animation_quqh2")
 }
 
-[node name="CharacterBody3D" type="CharacterBody3D" unique_id=387635343]
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jd5n0"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_jd5n0"]
+radius = 1.225
+
+[node name="Player" type="Node3D" unique_id=1371449073 node_paths=PackedStringArray("skateBoardBack", "skateBoardFloor")]
 script = ExtResource("1_xo3ru")
+skateBoardBack = NodePath("agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/SkateBoardBack")
+skateBoardFloor = NodePath("agentFortyJeffM/SkateBoardFloor")
 
-[node name="Node3D" type="Node3D" parent="." unique_id=525929735]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
+[node name="CameraY" type="Node3D" parent="." unique_id=1605868732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
 
-[node name="Node3D" type="Node3D" parent="Node3D" unique_id=1915681712]
+[node name="CameraX" type="Node3D" parent="CameraY" unique_id=258036667]
 
-[node name="Camera3D" type="Camera3D" parent="Node3D/Node3D" unique_id=1447189143]
+[node name="Camera3D" type="Camera3D" parent="CameraY/CameraX" unique_id=173877677]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.36790037, 0.21578729, 2.1694167)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1421981849]
-shape = SubResource("CapsuleShape3D_jd5n0")
-
-[node name="agentFortyJeffM" type="Node3D" parent="." unique_id=2017266547]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, -1, 0)
+[node name="agentFortyJeffM" type="Node3D" parent="." unique_id=98074392]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0.9998523, 0)
 script = ExtResource("2_hjaqi")
 
-[node name="Armature" type="Node3D" parent="agentFortyJeffM" unique_id=1675875875]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.90000004, 0)
+[node name="Armature" type="Node3D" parent="agentFortyJeffM" unique_id=1026448599]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
 
-[node name="Skeleton3D" type="Skeleton3D" parent="agentFortyJeffM/Armature" unique_id=1777855243]
+[node name="Skeleton3D" type="Skeleton3D" parent="agentFortyJeffM/Armature" unique_id=1707750278]
 bones/0/name = "Bone"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 bones/0/enabled = true
-bones/0/position = Vector3(0, -0.10263729, 0)
-bones/0/rotation = Quaternion(-2.7823798e-17, -8.973132e-09, 0.06998469, 0.9975481)
+bones/0/position = Vector3(0, 0, 0)
+bones/0/rotation = Quaternion(0, 0, 0, 1)
 bones/0/scale = Vector3(1, 1, 1)
 bones/1/name = "Bone.001"
 bones/1/parent = 0
 bones/1/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.59999996, 0)
 bones/1/enabled = true
 bones/1/position = Vector3(0, 0.59999996, 0)
-bones/1/rotation = Quaternion(0, -1.0408341e-17, 0, 1)
+bones/1/rotation = Quaternion(0, 0, 0, 1)
 bones/1/scale = Vector3(1, 1, 1)
 bones/2/name = "Bone.002"
 bones/2/parent = 0
 bones/2/rest = Transform3D(0, 0.039968047, -0.99920094, 1.3038525e-08, -0.99920094, -0.039968047, -1.0000007, -1.3028098e-08, -5.211263e-10, 0, 0.55, 0.25)
 bones/2/enabled = true
 bones/2/position = Vector3(0, 0.55, 0.25)
-bones/2/rotation = Quaternion(0.6809368, 0.19059114, -0.68093693, 0.19059108)
+bones/2/rotation = Quaternion(0.70696557, 0.014136416, -0.70696545, 0.014136385)
 bones/2/scale = Vector3(1.0000007, 1, 1)
 bones/3/name = "Bone.003"
 bones/3/parent = 2
 bones/3/rest = Transform3D(1, -3.2011624e-09, 1.75536e-07, 1.6047778e-08, 0.9973148, -0.07323404, -1.7483023e-07, 0.073234044, 0.99731475, 2.5332323e-09, 0.25019988, -6.2846546e-09)
 bones/3/enabled = true
 bones/3/position = Vector3(2.5332323e-09, 0.25019988, -6.2846546e-09)
-bones/3/rotation = Quaternion(0.5197546, 7.477971e-08, 6.774124e-08, 0.85431564)
+bones/3/rotation = Quaternion(0.036648765, 8.765042e-08, 4.8164055e-09, 0.99932826)
 bones/3/scale = Vector3(1, 1, 0.99999994)
 bones/4/name = "Bone.004"
 bones/4/parent = 3
@@ -2284,35 +2288,35 @@ bones/5/parent = 0
 bones/5/rest = Transform3D(-3.5762793e-07, -0.02499219, -0.9996877, 2.7939682e-09, -0.9996878, 0.024992187, -1.0000001, 6.1448087e-09, 3.57586e-07, 0, 5.9604645e-08, 0.125)
 bones/5/enabled = true
 bones/5/position = Vector3(0, 5.9604645e-08, 0.125)
-bones/5/rotation = Quaternion(-0.6253045, 0.33014297, 0.6253044, 0.330143)
+bones/5/rotation = Quaternion(-0.7070515, 0.008841101, 0.7070516, 0.008841105)
 bones/5/scale = Vector3(1.0000001, 1.0000001, 1)
 bones/6/name = "Bone.006"
 bones/6/parent = 5
 bones/6/rest = Transform3D(1, -3.5631866e-09, 2.5013858e-07, -8.246284e-09, 0.99888563, 0.047195833, -2.5002802e-07, -0.047195833, 0.99888563, 1.6981718e-09, 0.40012503, 1.9819328e-09)
 bones/6/enabled = true
 bones/6/position = Vector3(1.6981718e-09, 0.40012503, 1.9819328e-09)
-bones/6/rotation = Quaternion(-0.24324495, 1.213536e-07, -1.2068142e-08, 0.969965)
+bones/6/rotation = Quaternion(-0.023616083, 1.2507644e-07, -1.1716754e-09, 0.9997211)
 bones/6/scale = Vector3(1, 0.99999994, 0.99999994)
 bones/7/name = "Bone.007"
 bones/7/parent = 6
 bones/7/rest = Transform3D(1, -1.7468169e-07, 3.8817802e-09, -2.842171e-14, -0.022216678, -0.99975324, 1.7472482e-07, 0.99975324, -0.022216678, 1.9409077e-10, 0.45011103, -6.580527e-10)
 bones/7/enabled = true
 bones/7/position = Vector3(1.9409077e-10, 0.45011103, -6.580527e-10)
-bones/7/rotation = Quaternion(0.8181324, -5.703675e-08, 1.05117614e-07, 0.57502985)
+bones/7/rotation = Quaternion(0.71491843, -6.108449e-08, 6.2456984e-08, 0.6992079)
 bones/7/scale = Vector3(1, 1, 1)
 bones/8/name = "Bone.008"
 bones/8/parent = 0
 bones/8/rest = Transform3D(0.99920166, 0.039968062, 1.5087517e-07, 0.03996808, -0.9992012, 6.0350067e-09, 1.5099592e-07, 1.5543127e-15, -1, 0, 0.55, -0.25)
 bones/8/enabled = true
 bones/8/position = Vector3(0, 0.55, -0.25)
-bones/8/rotation = Quaternion(0.99291694, -0.11881124, 3.2210128e-08, -1.2551968e-07)
+bones/8/rotation = Quaternion(0.99980015, 0.019995976, -6.034827e-11, -3.0205058e-09)
 bones/8/scale = Vector3(1.0000007, 1.0000002, 1)
 bones/9/name = "Bone.009"
 bones/9/parent = 8
 bones/9/rest = Transform3D(0.99731475, -0.07323402, -4.805344e-09, 0.07323402, 0.99731475, 1.0734947e-08, 4.0062766e-09, -1.1058036e-08, 1, -2.3586644e-09, 0.25019988, 8.7507575e-09)
 bones/9/enabled = true
 bones/9/position = Vector3(-2.3586644e-09, 0.25019988, 8.7507575e-09)
-bones/9/rotation = Quaternion(-8.395855e-08, -1.8210624e-09, 0.5642756, 0.82558644)
+bones/9/rotation = Quaternion(-5.4540696e-09, -2.2043842e-09, 0.036656156, 0.99932796)
 bones/9/scale = Vector3(0.99999994, 0.99999994, 1)
 bones/10/name = "Bone.010"
 bones/10/parent = 9
@@ -2326,55 +2330,55 @@ bones/11/parent = 0
 bones/11/rest = Transform3D(0.9996878, -0.02499219, 1.5094862e-07, -0.024992188, -0.9996879, -3.7737147e-09, 1.509958e-07, 2.2204466e-16, -1, 0, 5.9604645e-08, -0.12499999)
 bones/11/enabled = true
 bones/11/position = Vector3(0, 5.9604645e-08, -0.12499999)
-bones/11/rotation = Quaternion(0.98307496, 0.18320395, -7.9167414e-08, -1.0244498e-07)
+bones/11/rotation = Quaternion(0.99992174, -0.012511637, 4.672923e-08, 1.2993916e-09)
 bones/11/scale = Vector3(1.0000001, 1.0000002, 1)
 bones/12/name = "Bone.012"
 bones/12/parent = 11
 bones/12/rest = Transform3D(0.9988856, 0.04719583, 1.8584824e-07, -0.047195826, 0.99888563, 6.558669e-10, -1.8561016e-07, -9.426397e-09, 1, 6.833041e-10, 0.40012503, 4.0542374e-09)
 bones/12/enabled = true
 bones/12/position = Vector3(6.833041e-10, 0.40012503, 4.0542374e-09)
-bones/12/rotation = Quaternion(-6.5641586e-08, 7.3299944e-08, -0.6145458, 0.7888811)
+bones/12/rotation = Quaternion(-2.5242093e-09, 9.289043e-08, -0.023632018, 0.9997208)
 bones/12/scale = Vector3(0.9999999, 0.99999994, 1)
 bones/13/name = "Bone.013"
 bones/13/parent = 12
 bones/13/rest = Transform3D(-0.022216678, -0.99975324, -3.4535412e-07, 0.99975324, -0.022216678, 3.846874e-07, -3.9226506e-07, -3.3672242e-07, 1, 4.3711418e-10, 0.45011097, -4.5370702e-10)
 bones/13/enabled = true
 bones/13/position = Vector3(4.3711418e-10, 0.45011097, -4.5370702e-10)
-bones/13/rotation = Quaternion(1.9273416e-06, 5.153463e-08, 0.5401461, 0.8415714)
+bones/13/rotation = Quaternion(-2.579382e-07, 1.6772944e-08, 0.71491843, 0.6992079)
 bones/13/scale = Vector3(1, 1, 1)
 bones/14/name = "Bone.018"
 bones/14/parent = 0
 bones/14/rest = Transform3D(0, 0.99999994, -1.1920928e-07, 5.9604645e-08, -1.19209275e-07, -1, -1, -7.105427e-15, -5.9604645e-08, 0, 0, 0.25)
 bones/14/enabled = true
-bones/14/position = Vector3(-0.026312005, 0.07985574, 0.24999997)
+bones/14/position = Vector3(0, 0, 0.25)
 bones/14/rotation = Quaternion(0.50000006, 0.49999994, -0.5, 0.49999994)
 bones/14/scale = Vector3(1, 0.99999994, 1)
 bones/15/name = "Bone.019"
 bones/15/parent = 14
 bones/15/rest = Transform3D(1, 0, -4.8876205e-07, 0, 1, 0, 4.8876205e-07, 0, 1, 4.6493213e-08, 0.5, -0.29999998)
 bones/15/enabled = true
-bones/15/position = Vector3(4.0599247e-08, 0.49999997, -0.29999995)
+bones/15/position = Vector3(4.0530768e-08, 0.5, -0.29999998)
 bones/15/rotation = Quaternion(0, -2.4438103e-07, 0, 1)
 bones/15/scale = Vector3(1, 1, 1)
 bones/16/name = "Bone.020"
 bones/16/parent = 0
 bones/16/rest = Transform3D(0, 1, 7.1054274e-15, 1, 0, 1.5099582e-07, 1.5099582e-07, 7.1054274e-15, -1, 0, 0, -0.25)
 bones/16/enabled = true
-bones/16/position = Vector3(-0.35650662, 0.26692063, -0.25000006)
+bones/16/position = Vector3(0, 0, -0.25)
 bones/16/rotation = Quaternion(0.7071068, 0.7071068, 5.3385087e-08, -5.3385087e-08)
 bones/16/scale = Vector3(1, 1, 1)
 bones/17/name = "Bone.021"
 bones/17/parent = 16
 bones/17/rest = Transform3D(1, 0, 4.371138e-08, 0, 1, 0, -4.371138e-08, 0, 1, 0.30000004, 0.49999997, 3.2183365e-08)
 bones/17/enabled = true
-bones/17/position = Vector3(0.04947889, 0.5347705, -1.8478108e-08)
+bones/17/position = Vector3(0.29999998, 0.49999997, 4.4106244e-08)
 bones/17/rotation = Quaternion(0, 2.185569e-08, 0, 1)
 bones/17/scale = Vector3(1, 1, 1)
 bones/18/name = "Bone.014"
 bones/18/parent = -1
 bones/18/rest = Transform3D(0, 1, -5.9604645e-08, 5.9604645e-08, -1.1920929e-07, -1, -1, 5.9604645e-08, -1.1920929e-07, 0, -0.84999996, 0.125)
 bones/18/enabled = true
-bones/18/position = Vector3(-0.44578102, -0.7965713, 0.124999985)
+bones/18/position = Vector3(0, -0.84999996, 0.12499999)
 bones/18/rotation = Quaternion(0.50000006, 0.49999997, -0.49999997, 0.49999997)
 bones/18/scale = Vector3(1, 1, 1)
 bones/19/name = "Bone.015"
@@ -2388,278 +2392,281 @@ bones/20/name = "Bone.016"
 bones/20/parent = -1
 bones/20/rest = Transform3D(0, 1, 1.4210855e-14, 1, 0, 3.1391647e-07, 3.1391647e-07, 1.4210855e-14, -1, 0, -0.84999996, -0.124999985)
 bones/20/enabled = true
-bones/20/position = Vector3(0.6296036, -0.33579534, -0.12500006)
+bones/20/position = Vector3(0, -0.84999996, -0.124999985)
 bones/20/rotation = Quaternion(0.7071068, 0.7071068, 1.1098625e-07, -1.1098625e-07)
 bones/20/scale = Vector3(1, 1, 1)
 bones/21/name = "Bone.017"
 bones/21/parent = 20
 bones/21/rest = Transform3D(-1, 0, -2.3841858e-07, 0, -1, 0, -2.3841858e-07, 0, 1, 0.45, -0.59999996, 1.4950767e-07)
 bones/21/enabled = true
-bones/21/position = Vector3(-0.20166534, -0.59490883, -1.3524836e-07)
+bones/21/position = Vector3(0.45000002, -0.59999996, 1.4970806e-07)
 bones/21/rotation = Quaternion(-1.1920929e-07, 0, 1, 0)
 bones/21/scale = Vector3(1, 1, 1)
 
-[node name="Bone_001" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=1722560568]
-transform = Transform3D(0.9902043, -0.13962618, -1.790226e-08, 0.13962618, 0.9902043, -1.2559636e-09, 1.790226e-08, -1.2559636e-09, 1, -0.0837757, 0.49148524, -7.535781e-10)
+[node name="Bone_001" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=652798191]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.59999996, 0)
 bone_name = "Bone.001"
 bone_idx = 1
 
-[node name="Icosphere_001" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_001" unique_id=1979297026]
+[node name="Icosphere_001" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_001" unique_id=786034492]
 transform = Transform3D(0.35664687, 0, 0, 0, 0.35664687, 0, 0, 0, 0.35664687, 1.5765429e-05, 0.35136008, -0.0005464554)
 mesh = SubResource("ArrayMesh_tkwy7")
 
-[node name="Cube_015" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_001/Icosphere_001" unique_id=229937740]
+[node name="Cube_015" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_001/Icosphere_001" unique_id=1200401308]
 transform = Transform3D(2.803894, 0, 0, 0, 2.803894, 0, 0, 0, 2.803894, -1.0374409, 0.31863403, 0.001532203)
 mesh = SubResource("ArrayMesh_by3rp")
 
-[node name="Cube_010" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_001/Icosphere_001/Cube_015" unique_id=1191830359]
+[node name="Cube_010" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_001/Icosphere_001/Cube_015" unique_id=1018562496]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.06499994, -0.19499998)
 mesh = SubResource("ArrayMesh_71inj")
 
-[node name="Cube_014" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_001/Icosphere_001/Cube_015" unique_id=2100047136]
+[node name="Cube_014" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_001/Icosphere_001/Cube_015" unique_id=1864959092]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.06499994, 0.19500001)
 mesh = SubResource("ArrayMesh_hu5yj")
 
-[node name="Cube_016" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_001/Icosphere_001/Cube_015" unique_id=917537517]
+[node name="Cube_016" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_001/Icosphere_001/Cube_015" unique_id=867189875]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.30998433, 0.02000022, 0.32925004)
 mesh = SubResource("ArrayMesh_j3y74")
 
-[node name="Cube_017" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_001/Icosphere_001/Cube_015" unique_id=255355170]
+[node name="Cube_017" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_001/Icosphere_001/Cube_015" unique_id=1807282985]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.30998433, 0.02000022, -0.32965982)
 mesh = SubResource("ArrayMesh_0gvqy")
 
-[node name="Bone_004" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=1430521834]
-transform = Transform3D(-1.9050508e-07, -0.36524782, -0.93091035, -2.719639e-08, -0.93091035, 0.3652478, -1.0000007, 1.2725806e-07, 1.2192059e-07, -0.037207425, -0.02726145, 0.25000003)
+[node name="Bone_004" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=954139804]
+transform = Transform3D(2.1063549e-07, -6.5155327e-06, -0.99999994, 4.481827e-08, -0.99999994, 6.5118074e-06, -1.0000007, -4.6869104e-08, -2.684854e-07, -1.0244548e-08, 1.4901161e-07, 0.24999997)
 bone_name = "Bone.004"
 bone_idx = 4
 
-[node name="Cube_009" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_004" unique_id=1621951976]
+[node name="Cube_009" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_004" unique_id=1775524139]
 transform = Transform3D(1.7881395e-07, 1.0302577e-08, -0.9999993, -1.7752695e-08, -1, -1.0302572e-08, -1, 1.7752697e-08, -1.7881382e-07, -6.337953e-08, 0.060000114, 0.05000001)
 mesh = SubResource("ArrayMesh_pi42o")
 
-[node name="Bone_003" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=201233139]
-transform = Transform3D(-5.957598e-08, -0.3960582, -0.9182254, -8.640923e-08, -0.91822547, 0.39605814, -1.0000007, 1.337644e-07, -2.6060931e-08, 0.08167604, 0.24835922, 0.24999997)
+[node name="Bone_003" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=1866282116]
+transform = Transform3D(3.5414604e-07, -0.033321336, -0.99944466, 3.751706e-08, -0.9994447, 0.033321332, -1.0000007, -5.327244e-08, -4.1044916e-07, 0.010001943, 0.30000013, 0.24999999)
 bone_name = "Bone.003"
 bone_idx = 3
 
-[node name="Cube_008" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_003" unique_id=876658468]
+[node name="Cube_008" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_003" unique_id=2019553229]
 transform = Transform3D(1.7881393e-07, 7.45058e-09, -0.9999993, -0.033314843, -0.9994449, -1.3403592e-08, -0.99944496, 0.03331484, -1.7846632e-07, -1.8652212e-08, 0.14691857, 0.055136044)
 mesh = SubResource("ArrayMesh_thf5b")
 
-[node name="Bone_002" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=292379930]
-transform = Transform3D(-2.2650337e-07, 0.6333754, -0.77384466, 2.6987282e-08, -0.77384466, -0.6333754, -1.0000007, -1.0884236e-07, 1.6416487e-07, -0.07679441, 0.44197506, 0.25)
+[node name="Bone_002" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=1948020631]
+transform = Transform3D(1.7881406e-07, 0.039975785, -0.9992007, 4.656616e-08, -0.9992007, -0.039975785, -1.0000007, -3.9115548e-08, -2.3841858e-07, 0, 0.55, 0.25)
 bone_name = "Bone.002"
 bone_idx = 2
 
-[node name="Cube_007" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_002" unique_id=1127578903]
+[node name="Cube_007" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_002" unique_id=1738814915]
 transform = Transform3D(0, 9.313226e-09, -0.9999993, 0.039968017, -0.9992009, -9.305779e-09, -0.9992009, -0.039968017, -3.7222816e-10, -5.9421204e-08, 0.0929258, 0.05375701)
 mesh = SubResource("ArrayMesh_4blot")
 
-[node name="Bone_007" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=2080668655]
-transform = Transform3D(1.8569234e-07, -0.7740654, 0.6331059, -9.3601265e-08, 0.6331058, 0.77406555, -1.0000001, -1.732122e-07, 5.4712196e-08, -0.44578454, -0.79657733, 0.12499994)
+[node name="Bone_007" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=2013549665]
+transform = Transform3D(-4.3735042e-08, -1.0000001, -1.0980293e-05, 4.6315036e-09, -1.0993332e-05, 1.0000002, -1.0000001, -1.5981414e-08, 3.3265717e-09, -9.313226e-10, -0.84999985, 0.125)
 bone_name = "Bone.007"
 bone_idx = 7
 
-[node name="Cube_013" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_007" unique_id=903311091]
+[node name="Cube_013" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_007" unique_id=1226166269]
 transform = Transform3D(0, 0, -0.9999999, -1, 0, 0, 0, 1, 0, 5.2154064e-08, 0.05000001, -1.266629e-07)
 mesh = SubResource("ArrayMesh_hxi2b")
 
-[node name="Bone_006" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=1194132898]
-transform = Transform3D(4.1887705e-07, -0.33352843, -0.9427401, -1.4686024e-07, -0.9427402, 0.33352828, -1.0000001, -2.0379296e-08, -4.1910147e-07, -0.29565972, -0.3722396, 0.12499995)
+[node name="Bone_006" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=884029269]
+transform = Transform3D(1.309466e-07, 0.022227654, -0.99975294, 8.515201e-09, -0.9997531, -0.022227671, -1.0000001, -2.9706722e-09, -1.9077619e-07, -0.010004914, -0.39999995, 0.125)
 bone_name = "Bone.006"
 bone_idx = 6
 
-[node name="Cube_012" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_006" unique_id=1255296049]
+[node name="Cube_012" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_006" unique_id=1928582781]
 transform = Transform3D(1.1920929e-07, 7.450581e-09, -0.9999999, 0.02221674, -0.99975324, -4.8002993e-09, -0.99975324, -0.02221674, -1.1934536e-07, 1.0418917e-07, 0.19906203, 0.044433482)
 mesh = SubResource("ArrayMesh_kn03q")
 
-[node name="Bone_005" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=1527903985]
-transform = Transform3D(2.0328699e-07, -0.73891836, -0.6737951, -3.2797708e-08, -0.6737953, 0.7389183, -1.0000001, -1.3328388e-07, -1.303437e-07, -1.0560151e-08, -0.10263723, 0.125)
+[node name="Bone_005" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=1007307609]
+transform = Transform3D(-1.192093e-07, -0.025004465, -0.9996874, 6.519259e-09, -0.99968755, 0.02500446, -1.0000001, -3.7252907e-09, 5.9604645e-08, 0, 5.9604645e-08, 0.125)
 bone_name = "Bone.005"
 bone_idx = 5
 
-[node name="Cube_001" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_005" unique_id=727947430]
+[node name="Cube_001" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_005" unique_id=2126129399]
 transform = Transform3D(-3.5762784e-07, 2.7939673e-09, -0.9999999, -0.024992188, -0.99968755, 6.1448073e-09, -0.9996876, 0.024992187, 3.5758595e-07, 5.0945155e-09, 0.20118731, 0.044985946)
 mesh = SubResource("ArrayMesh_0obd5")
 
-[node name="Bone_010" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=2001173369]
-transform = Transform3D(0.30210984, -0.9532738, -1.2021744e-09, -0.95327324, -0.30210957, 4.1103064e-08, -3.9545704e-08, -1.12717835e-08, -0.9999999, -0.39030302, 0.11187802, -0.25000006)
+[node name="Bone_010" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=863512212]
+transform = Transform3D(1.0000007, -1.3157725e-05, 8.730213e-08, -1.3113022e-05, -1, -3.1539216e-12, 8.730207e-08, 2.0046187e-12, -0.9999999, 4.004687e-08, 5.066395e-07, -0.25)
 bone_name = "Bone.010"
 bone_idx = 10
 
-[node name="Cube_006" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_010" unique_id=1878390280]
+[node name="Cube_006" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_010" unique_id=313570650]
 transform = Transform3D(0.9999993, 3.3528085e-08, 2.3841856e-07, 3.3528067e-08, -0.99999976, 1.0214067e-14, 2.384184e-07, -2.2203474e-15, -1, -0.04999997, 0.06000006, -1.1920927e-08)
 mesh = SubResource("ArrayMesh_rbem6")
 
-[node name="Bone_009" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=1529316862]
-transform = Transform3D(0.27018398, -0.9628094, -3.3626108e-08, -0.96280885, -0.27018374, 1.272487e-07, -1.3160145e-07, -2.0051942e-09, -0.9999999, -0.101299964, 0.19297811, -0.25000006)
+[node name="Bone_009" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=122135557]
+transform = Transform3D(0.99944514, -0.033327986, -4.6138884e-09, -0.033327922, -0.99944454, -4.885373e-09, -4.448502e-09, 5.036425e-09, -0.9999999, 0.01000398, 0.3000002, -0.25)
 bone_name = "Bone.009"
 bone_idx = 9
 
-[node name="Cube_005" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_009" unique_id=2037043060]
+[node name="Cube_005" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_009" unique_id=1052580945]
 transform = Transform3D(0.9994442, -0.03331477, 1.4658406e-07, -0.033314757, -0.99944466, 1.4655191e-14, 1.4650259e-07, -4.8834288e-09, -1, -0.055136006, 0.14691845, -1.2477146e-08)
 mesh = SubResource("ArrayMesh_13poh")
 
-[node name="Bone_008" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=358339712]
-transform = Transform3D(0.99519265, -0.09794396, 7.703905e-08, -0.09794399, -0.99519205, 2.5359213e-07, 5.1830874e-08, -2.5991844e-07, -0.9999999, -0.07679439, 0.44197506, -0.25)
+[node name="Bone_008" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=1521315423]
+transform = Transform3D(0.99920106, 0.03998396, -2.414683e-10, 0.03998398, -0.99920046, 6.0373893e-09, 1.2349853e-13, -6.042218e-09, -0.9999999, 0, 0.55, -0.25)
 bone_name = "Bone.008"
 bone_idx = 8
 
-[node name="Cube_004" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_008" unique_id=100622286]
+[node name="Cube_004" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_008" unique_id=838252937]
 transform = Transform3D(0.9992002, 0.03996804, 1.5099579e-07, 0.03996802, -0.9992007, 3.1086245e-15, 1.5087502e-07, 6.0350027e-09, -1, -0.053756975, 0.09292557, 3.0436e-08)
 mesh = SubResource("ArrayMesh_vxyc5")
 
-[node name="Bone_013" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=865249734]
-transform = Transform3D(0.770627, 0.63728654, -3.6599297e-06, 0.6372865, -0.77062696, 1.5000353e-06, -1.864488e-06, -3.488391e-06, -0.9999999, 0.62965417, -0.33580026, -0.12500007)
+[node name="Bone_013" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=1771367762]
+transform = Transform3D(2.5996938e-05, -1, -5.75198e-08, -1.0000002, -2.5998801e-05, -4.0134842e-07, 4.0134688e-07, 5.7530258e-08, -1, 1.21071935e-08, -0.84999955, -0.124999985)
 bone_name = "Bone.013"
 bone_idx = 13
 
-[node name="Cube_011" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_013" unique_id=1891244442]
+[node name="Cube_011" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_013" unique_id=1567547521]
 transform = Transform3D(0, -0.99999976, 4.0133926e-07, -1, 1.7110116e-20, 4.2632564e-14, -4.2632564e-14, -4.0133918e-07, -1, 3.93327e-08, 0.05, 1.718596e-08)
 mesh = SubResource("ArrayMesh_jnjt0")
 
-[node name="Bone_012" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=259560285]
-transform = Transform3D(-0.2584303, 0.96603, -1.9427361e-08, 0.9660299, 0.25843027, 2.2883685e-07, 2.2608387e-07, 4.0370892e-08, -0.9999999, 0.19483347, -0.45212257, -0.12500009)
+[node name="Bone_012" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=547103828]
+transform = Transform3D(0.9997526, 0.022242667, 2.791923e-07, 0.022242675, -0.9997528, -9.074494e-09, 2.7892133e-07, 1.5282229e-08, -1, -0.010011656, -0.3999998, -0.12499999)
 bone_name = "Bone.012"
 bone_idx = 12
 
-[node name="Cube_003" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_012" unique_id=1636827089]
+[node name="Cube_003" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_012" unique_id=1641455648]
 transform = Transform3D(0.9997532, 0.022216745, 3.364377e-07, 0.022216747, -0.99975306, 1.6552766e-08, 3.367224e-07, -9.07413e-09, -1, -0.044433482, 0.19906206, -4.657197e-09)
 mesh = SubResource("ArrayMesh_d4msx")
 
-[node name="Bone_011" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=728784020]
-transform = Transform3D(0.8734404, 0.48693147, -1.9747053e-07, 0.4869314, -0.8734403, 1.4500704e-07, -1.0187023e-07, -2.2280963e-07, -0.9999999, -6.084586e-09, -0.10263723, -0.12499999)
+[node name="Bone_011" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=1905173549]
+transform = Transform3D(0.999687, -0.025021322, 9.3418635e-08, -0.02502132, -0.9996872, -3.767898e-09, 9.348368e-08, 1.4292618e-09, -1, 0, 5.9604645e-08, -0.12499999)
 bone_name = "Bone.011"
 bone_idx = 11
 
-[node name="Cube_002" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_011" unique_id=1310790769]
+[node name="Cube_002" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_011" unique_id=690773930]
 transform = Transform3D(0.99968743, -0.024992177, 1.5099579e-07, -0.024992181, -0.9996873, 8.892888e-17, 1.5094858e-07, -3.773714e-09, -1, -0.044985935, 0.20118731, -1.763961e-08)
 mesh = SubResource("ArrayMesh_l54ff")
 
-[node name="Bone" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=822305989]
-transform = Transform3D(0.9902043, -0.13962618, -1.790226e-08, 0.13962618, 0.9902043, -1.2559636e-09, 1.790226e-08, -1.2559636e-09, 1, 0, -0.10263729, 0)
+[node name="Bone" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=1828582976]
 bone_name = "Bone"
 bone_idx = 0
 
-[node name="Cube" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone" unique_id=1551771017]
+[node name="Cube" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone" unique_id=822095053]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.050000004, 0.305, 0)
 mesh = SubResource("ArrayMesh_lr12x")
 
-[node name="Cube_027" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube" unique_id=1415435190]
+[node name="SkateBoardBack" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube" unique_id=179103683]
 transform = Transform3D(1.7881393e-07, -1.0000001, -8.940697e-08, 0.63694847, 0, 0.77090645, -0.77090645, -2.0861626e-07, 0.6369484, 0.22999999, -0.09500003, -0.0005465448)
 mesh = SubResource("ArrayMesh_3aplx")
 
-[node name="Cube_028" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/Cube_027" unique_id=426809467]
+[node name="Cube_028" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/SkateBoardBack" unique_id=2100000592]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.39999995, 0.030000001, 0)
 mesh = SubResource("ArrayMesh_s0851")
 
-[node name="Cube_029" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/Cube_027" unique_id=994331817]
+[node name="Cube_029" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/SkateBoardBack" unique_id=1071555236]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4000001, 0.03, 0)
 mesh = SubResource("ArrayMesh_svmjd")
 
-[node name="Cube_030" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/Cube_027" unique_id=2006063544]
+[node name="Cube_030" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/SkateBoardBack" unique_id=645541261]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29999992, -0.079999976, 0.00027332304)
 mesh = SubResource("ArrayMesh_15a1r")
 
-[node name="Cube_031" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/Cube_027" unique_id=815768390]
+[node name="Cube_031" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/SkateBoardBack" unique_id=58556494]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29999992, -0.11, -0.059453394)
 mesh = SubResource("ArrayMesh_8s0yx")
 
-[node name="Cube_032" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/Cube_027" unique_id=1061218315]
+[node name="Cube_032" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/SkateBoardBack" unique_id=1412319912]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29999998, -0.10999998, 0.06054664)
 mesh = SubResource("ArrayMesh_nrslb")
 
-[node name="Cube_033" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/Cube_027" unique_id=34750782]
+[node name="Cube_033" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/SkateBoardBack" unique_id=1591684607]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30000007, -0.079999976, 0.00027333794)
 mesh = SubResource("ArrayMesh_to7yb")
 
-[node name="Cube_034" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/Cube_027" unique_id=1079569578]
+[node name="Cube_034" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/SkateBoardBack" unique_id=2126004380]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30000013, -0.11000001, -0.059453387)
 mesh = SubResource("ArrayMesh_ejlb0")
 
-[node name="Cube_035" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/Cube_027" unique_id=671606592]
+[node name="Cube_035" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/SkateBoardBack" unique_id=1078970514]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30000007, -0.109999985, 0.060546596)
 mesh = SubResource("ArrayMesh_ln0d1")
 
-[node name="Cylinder_004" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/Cube_027" unique_id=981175863]
+[node name="Cylinder_004" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/SkateBoardBack" unique_id=63493145]
 transform = Transform3D(0.05001425, 0, 0, 0, -5.962163e-09, 0.05001425, 0, -0.05001425, -5.962163e-09, 0.2999999, -0.109999985, 0.11054665)
 mesh = SubResource("ArrayMesh_31uvc")
 
-[node name="Cylinder_005" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/Cube_027" unique_id=774702158]
+[node name="Cylinder_005" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/SkateBoardBack" unique_id=999395685]
 transform = Transform3D(0.05001425, 0, 0, 0, -5.962163e-09, 0.05001425, 0, -0.05001425, -5.962163e-09, 0.29999995, -0.10999999, -0.109453484)
 mesh = SubResource("ArrayMesh_2wook")
 
-[node name="Cylinder_006" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/Cube_027" unique_id=789491356]
+[node name="Cylinder_006" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/SkateBoardBack" unique_id=1895468347]
 transform = Transform3D(0.05001425, 0, 0, 0, -5.962163e-09, 0.05001425, 0, -0.05001425, -5.962163e-09, -0.30000007, -0.10999999, 0.11054666)
 mesh = SubResource("ArrayMesh_28u4q")
 
-[node name="Cylinder_007" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/Cube_027" unique_id=433942234]
+[node name="Cylinder_007" type="MeshInstance3D" parent="agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/SkateBoardBack" unique_id=1185623522]
 transform = Transform3D(0.05001425, 0, 0, 0, -5.962163e-09, 0.05001425, 0, -0.05001425, -5.962163e-09, -0.30000004, -0.11, -0.10945347)
 mesh = SubResource("ArrayMesh_0sklo")
 
-[node name="Cube_018" type="MeshInstance3D" parent="agentFortyJeffM" unique_id=718730744]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.049999997, -0.049999997, -0.0005465448)
+[node name="SkateBoardFloor" type="MeshInstance3D" parent="agentFortyJeffM" unique_id=768784655]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05, -1.05, -0.001)
 mesh = SubResource("ArrayMesh_in3ru")
 
-[node name="Cube_019" type="MeshInstance3D" parent="agentFortyJeffM/Cube_018" unique_id=180946734]
+[node name="Cube_019" type="MeshInstance3D" parent="agentFortyJeffM/SkateBoardFloor" unique_id=252057702]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.39999998, 0.029999997, 0)
 mesh = SubResource("ArrayMesh_qb34g")
 
-[node name="Cube_020" type="MeshInstance3D" parent="agentFortyJeffM/Cube_018" unique_id=1006019741]
+[node name="Cube_020" type="MeshInstance3D" parent="agentFortyJeffM/SkateBoardFloor" unique_id=1369991472]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.39999998, 0.029999997, 0)
 mesh = SubResource("ArrayMesh_4b8gq")
 
-[node name="Cube_021" type="MeshInstance3D" parent="agentFortyJeffM/Cube_018" unique_id=2144364995]
+[node name="Cube_021" type="MeshInstance3D" parent="agentFortyJeffM/SkateBoardFloor" unique_id=1985810762]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29999998, -0.08, 0.0002732575)
 mesh = SubResource("ArrayMesh_vlltn")
 
-[node name="Cube_022" type="MeshInstance3D" parent="agentFortyJeffM/Cube_018" unique_id=1133923923]
+[node name="Cube_022" type="MeshInstance3D" parent="agentFortyJeffM/SkateBoardFloor" unique_id=1108166059]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, -0.11, -0.059453458)
 mesh = SubResource("ArrayMesh_40ccj")
 
-[node name="Cube_023" type="MeshInstance3D" parent="agentFortyJeffM/Cube_018" unique_id=484452168]
+[node name="Cube_023" type="MeshInstance3D" parent="agentFortyJeffM/SkateBoardFloor" unique_id=2107638429]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, -0.11, 0.06054654)
 mesh = SubResource("ArrayMesh_ri7xc")
 
-[node name="Cube_024" type="MeshInstance3D" parent="agentFortyJeffM/Cube_018" unique_id=1421161575]
+[node name="Cube_024" type="MeshInstance3D" parent="agentFortyJeffM/SkateBoardFloor" unique_id=2050299739]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3, -0.08, 0.0002732575)
 mesh = SubResource("ArrayMesh_le33d")
 
-[node name="Cube_025" type="MeshInstance3D" parent="agentFortyJeffM/Cube_018" unique_id=1955025489]
+[node name="Cube_025" type="MeshInstance3D" parent="agentFortyJeffM/SkateBoardFloor" unique_id=550247611]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3, -0.11, -0.059453458)
 mesh = SubResource("ArrayMesh_87c04")
 
-[node name="Cube_026" type="MeshInstance3D" parent="agentFortyJeffM/Cube_018" unique_id=1866992883]
+[node name="Cube_026" type="MeshInstance3D" parent="agentFortyJeffM/SkateBoardFloor" unique_id=966703179]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3, -0.11, 0.06054654)
 mesh = SubResource("ArrayMesh_1ly1t")
 
-[node name="Cylinder" type="MeshInstance3D" parent="agentFortyJeffM/Cube_018" unique_id=42588435]
+[node name="Cylinder" type="MeshInstance3D" parent="agentFortyJeffM/SkateBoardFloor" unique_id=998100482]
 transform = Transform3D(0.05001425, 0, 0, 0, -5.962163e-09, 0.05001425, 0, -0.05001425, -5.962163e-09, 0.29999998, -0.11, 0.110546544)
 mesh = SubResource("ArrayMesh_djd3w")
 
-[node name="Cylinder_001" type="MeshInstance3D" parent="agentFortyJeffM/Cube_018" unique_id=336313284]
+[node name="Cylinder_001" type="MeshInstance3D" parent="agentFortyJeffM/SkateBoardFloor" unique_id=106530649]
 transform = Transform3D(0.05001425, 0, 0, 0, -5.962163e-09, 0.05001425, 0, -0.05001425, -5.962163e-09, 0.29999998, -0.11, -0.109453455)
 mesh = SubResource("ArrayMesh_uoqmg")
 
-[node name="Cylinder_002" type="MeshInstance3D" parent="agentFortyJeffM/Cube_018" unique_id=305818349]
+[node name="Cylinder_002" type="MeshInstance3D" parent="agentFortyJeffM/SkateBoardFloor" unique_id=783051995]
 transform = Transform3D(0.05001425, 0, 0, 0, -5.962163e-09, 0.05001425, 0, -0.05001425, -5.962163e-09, -0.3, -0.11, 0.110546544)
 mesh = SubResource("ArrayMesh_87psa")
 
-[node name="Cylinder_003" type="MeshInstance3D" parent="agentFortyJeffM/Cube_018" unique_id=1678043064]
+[node name="Cylinder_003" type="MeshInstance3D" parent="agentFortyJeffM/SkateBoardFloor" unique_id=1188114390]
 transform = Transform3D(0.05001425, 0, 0, 0, -5.962163e-09, 0.05001425, 0, -0.05001425, -5.962163e-09, -0.3, -0.11, -0.109453455)
 mesh = SubResource("ArrayMesh_drw5n")
 
-[node name="Empty" type="Node3D" parent="agentFortyJeffM" unique_id=656893450]
-transform = Transform3D(-0.5360084, -2.342967e-08, -2.3429662e-08, 2.342967e-08, -1.9169157e-07, -0.5360084, 2.3429662e-08, -0.5360084, 1.9169157e-07, 0.034524065, 1.2656958, 0)
-
-[node name="Empty_001" type="Node3D" parent="agentFortyJeffM" unique_id=1115997330]
-transform = Transform3D(-0.5360084, -2.342967e-08, -2.3429662e-08, 2.342967e-08, -1.9169157e-07, -0.5360084, 2.3429662e-08, -0.5360084, 1.9169157e-07, 0.034524065, 1.2656958, 0)
-
-[node name="Empty_002" type="Node3D" parent="agentFortyJeffM" unique_id=1073294472]
-transform = Transform3D(-0.5360084, -2.342967e-08, -2.3429662e-08, 2.342967e-08, -1.9169157e-07, -0.5360084, 2.3429662e-08, -0.5360084, 1.9169157e-07, 0.034524065, 1.2656958, 0)
-
-[node name="Empty_003" type="Node3D" parent="agentFortyJeffM" unique_id=350252964]
-transform = Transform3D(-0.5360084, -2.342967e-08, -2.3429662e-08, 2.342967e-08, -1.9169157e-07, -0.5360084, 2.3429662e-08, -0.5360084, 1.9169157e-07, 0.034524065, 1.2656958, 0)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="agentFortyJeffM" unique_id=612225024]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="agentFortyJeffM" unique_id=468320990]
 libraries/ = SubResource("AnimationLibrary_5x73b")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1293825373 node_paths=PackedStringArray("playerRoot")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+script = ExtResource("3_fvtld")
+playerRoot = NodePath("..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=670861063]
+shape = SubResource("CapsuleShape3D_jd5n0")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=1716485668 node_paths=PackedStringArray("playerRoot")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+script = ExtResource("2_fvtld")
+playerRoot = NodePath("..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=674735452]
+shape = SubResource("SphereShape3D_jd5n0")

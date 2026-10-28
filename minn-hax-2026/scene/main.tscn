@@ -1,10 +1,13 @@
 [gd_scene format=3 uid="uid://c4mam1u6g1fpn"]
 
 [ext_resource type="Script" uid="uid://csa1lm0kjl01s" path="res://script/gc.gd" id="1_sugp2"]
-[ext_resource type="PackedScene" uid="uid://buaduh1xyxbk4" path="res://scene/player.tscn" id="2_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://bugwpg2o7w3gw" path="res://scene/player.tscn" id="2_jyhfs"]
+[ext_resource type="Script" uid="uid://4ahqbdnr5vg6" path="res://scene/player_start_marker.gd" id="3_brvut"]
 [ext_resource type="PackedScene" uid="uid://cml38j780pqq4" path="res://scene/freelancerHouse.tscn" id="3_tbgi4"]
 
 [sub_resource type="Environment" id="Environment_jd5n0"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_wp4xf"]
 
 [node name="main" type="Node3D" unique_id=1687076067]
 script = ExtResource("1_sugp2")
@@ -12,8 +15,15 @@ script = ExtResource("1_sugp2")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=37290506]
 environment = SubResource("Environment_jd5n0")
 
-[node name="CharacterBody3D" parent="." unique_id=387635343 instance=ExtResource("2_jyhfs")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.361572, -12.469708, -28)
+[node name="Player" parent="." unique_id=1371449073 node_paths=PackedStringArray("playerStart") instance=ExtResource("2_jyhfs")]
+playerStart = NodePath("../PlayerStartMarker")
+
+[node name="PlayerStartMarker" type="Node3D" parent="." unique_id=1857606536]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.451954, -10.349545, -28.665997)
+script = ExtResource("3_brvut")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PlayerStartMarker" unique_id=707379543]
+mesh = SubResource("CapsuleMesh_wp4xf")
 
 [node name="FreelancerHouse1" parent="." unique_id=1993436172 instance=ExtResource("3_tbgi4")]
 
