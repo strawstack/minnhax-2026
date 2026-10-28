@@ -51,19 +51,25 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("f_key"):
 		setMovement(not useWalkMovement)
 	if useWalkMovement:
-		agentFortyJeffM.set_position(characterBody3D.get_position())
-		cameraY.set_position(characterBody3D.get_position())
+		var pos = characterBody3D.get_position()
+		agentFortyJeffM.set_position(pos)
+		cameraY.set_position(pos)
 	else:
-		agentFortyJeffM.set_position(rigidBody3D.get_position())
-		cameraY.set_position(rigidBody3D.get_position())
+		var previous_position = agentFortyJeffM.get_position()
+		var pos = rigidBody3D.get_position()
+		var offset = agentFortyJeffM.global_basis.y.normalized() * 0.74
+		agentFortyJeffM.set_position(lerp(previous_position, pos + offset, 18.0 * delta))
+		cameraY.set_position(pos)
 
 func setMovement(walk: bool):
 	useWalkMovement = walk
 
 	# Sync new player movement body with previous
 	if useWalkMovement:
+		$CameraY/CameraX/Camera3D.set_fov(75.0)
 		characterBody3D.set_position(rigidBody3D.get_position())
 	else:
+		$CameraY/CameraX/Camera3D.set_fov(90.0)
 		rigidBody3D.setTeleport(characterBody3D.get_position())
 
 	skateBoardBack.set_visible(useWalkMovement)
