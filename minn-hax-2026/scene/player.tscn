@@ -4,6 +4,8 @@
 [ext_resource type="Script" uid="uid://clibv5pv710xj" path="res://script/skate_movement.gd" id="2_fvtld"]
 [ext_resource type="Script" uid="uid://bblmatoicl77u" path="res://script/player_animation.gd" id="2_hjaqi"]
 [ext_resource type="Script" uid="uid://biyju5kqnpuru" path="res://script/walk_movement.gd" id="3_fvtld"]
+[ext_resource type="Texture2D" uid="uid://c4xco0fqx540u" path="res://mouth.png" id="5_oh5ij"]
+[ext_resource type="Texture2D" uid="uid://dt16v01xforbo" path="res://teeth.png" id="6_hp4bs"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j6yc5"]
 
@@ -2669,3 +2671,12 @@ playerRoot = NodePath("..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=674735452]
 shape = SubResource("SphereShape3D_jd5n0")
+
+[node name="Mouth" type="Sprite3D" parent="." unique_id=1147864270]
+transform = Transform3D(0.09, 0, 0, 0, 0.09, 0, 0, 0, 0.09, 0, 1.6878026, -0.34888765)
+visible = false
+texture = ExtResource("5_oh5ij")
+
+[node name="Teeth" type="Sprite3D" parent="." unique_id=1899072149]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 1.688, -0.35495132)
+texture = ExtResource("6_hp4bs")
