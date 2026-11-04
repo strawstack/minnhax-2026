@@ -4,6 +4,8 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 # Todo
 
+- [ ] Reimport and animate underwater scene
+
 - [ ] Blender: Finish basement environment
 - [ ] Blender: create underwater environment
 - [ ] Create main menu with underwater environment

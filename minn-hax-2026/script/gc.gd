@@ -1,8 +1,10 @@
 extends Node3D
 
 func _ready() -> void:
-	# DEBUG: Code for texting dialog 
-	var json = JSON.parse_string(FileAccess.get_file_as_string("res://dialog/script/example.json"))
+	pass
+
+func playDialogFile(fileStr: String):
+	var json = JSON.parse_string(FileAccess.get_file_as_string(fileStr))
 	if json:
 		$CanvasLayer_Dialog.playDialog(json)
 
