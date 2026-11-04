@@ -1,12 +1,17 @@
 extends Node3D
 
+@export var player: CharacterBody3D
 
-# Called when the node enters the scene tree for the first time.
+var once = false
+
+var gc
+
 func _ready() -> void:
-	pass # Replace with function body.
+	gc = get_tree().current_scene
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("enter"):
-		print($SubViewport/underwater.startIsReady)
+func _process(_delta: float) -> void:
+	if not once and Input.is_action_just_pressed("enter"):
+		if $SubViewport/underwater.startIsReady:
+			once = true
+			player.canMove = true
+			gc.playDialogFile("res://dialog/script/apartment_intro.json")

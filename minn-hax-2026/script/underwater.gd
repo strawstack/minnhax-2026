@@ -14,7 +14,7 @@ func startScene():
 	animationPlayer.play("drift_down")
 	await animationPlayer.animation_finished
 	
-	await get_tree().create_timer(1.0).timeout
+	await get_tree().create_timer(0.5).timeout
 	
 	agentAnimationPlayer.play("LookWatch")
 	await agentAnimationPlayer.animation_finished
@@ -28,5 +28,5 @@ func startScene():
 # Pressing start will trigger Agent to look at watch then the outer scene will free the camera
 # and Richard will talk to the player
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass

@@ -13,7 +13,8 @@ const MAX_LOOK_DOWN = -80.0
 const gravity = 20
 const jump_height = 2
 
-# Capture mouse when game launches
+var canMove = false
+
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
@@ -28,7 +29,7 @@ func _input(event):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
 	# https://forum.godotengine.org/t/how-to-make-the-camera-moves-by-the-mouse-in-3d/24201/2
-	if event is InputEventMouseMotion:
+	if canMove and event is InputEventMouseMotion:
 		# Rotate player left/right
 		$Node3D.rotate_y(deg_to_rad(-event.relative.x * mouse_sens))
 
@@ -43,6 +44,8 @@ func _input(event):
 
 # Called on every physics frame
 func _physics_process(delta):
+	if not canMove:
+		return 
 
 	# Set player direction to Zero 
 	var direction = Vector3.ZERO

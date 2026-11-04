@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Richard",
+        "avatar": "",
+        "lines": [
+            {
+                "voice": "",
+                "text": "Hey MinnMax! Look around with the mouse. I'm behind you on the couch."
+            },
+            {
+                "voice": "",
+                "text": "I'm Richard. Nice to meet you. Thanks for coming over on such short notice to film a studio tour. It's exciting times with our game streaming tomorrow on MinnHax."
+            }, {
+                "voice": "",
+                "text": "Use WASD to walk around. Head upstairs and you can see my office in the second bedroom where I made this game."
+            }, {
+                "voice": "",
+                "text": "I'll stay here because I have to play Hitman Freelancer, but I'll shout, so you'll be able to hear me upstairs."
+            }
+        ]
+    }
+]

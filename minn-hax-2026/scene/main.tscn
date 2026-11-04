@@ -23,7 +23,7 @@ color = Color(0.34509805, 1, 1, 1)
 
 [node name="ColorRect_Background" type="ColorRect" parent="CanvasLayer_Dialog" unique_id=1993439820]
 offset_top = 448.0
-offset_right = 1152.0
+offset_right = 1168.0
 offset_bottom = 648.0
 color = Color(0.06666667, 0.06666667, 0.06666667, 0.49803922)
 
@@ -53,16 +53,16 @@ vertical_alignment = 1
 custom_minimum_size = Vector2(1, 1)
 offset_left = 192.0
 offset_top = 464.0
-offset_right = 1024.0
+offset_right = 1032.0
 offset_bottom = 632.0
 theme_override_font_sizes/font_size = 22
 text = "This is an example passage: Hey MinnMax or whoever, thanks for coming by on such short notice for a studio tour. It's exciting with the game releasing tomorrow on the MinnMax Stream. I'm on the couch. Feel free to take a look around. I'll stay play Hitman Freelancer. How about a final line. Can we actually do a bit more. Like I'll go halfway."
 autowrap_mode = 2
 
 [node name="Label" type="Label" parent="CanvasLayer_Dialog" unique_id=432302450]
-offset_left = 1032.0
+offset_left = 1048.0
 offset_top = 600.0
-offset_right = 1096.0
+offset_right = 1112.0
 offset_bottom = 640.0
 theme_override_font_sizes/font_size = 22
 text = "Enter"
@@ -70,9 +70,9 @@ horizontal_alignment = 2
 vertical_alignment = 1
 
 [node name="ColorRect_Stop" type="ColorRect" parent="CanvasLayer_Dialog" unique_id=1366927087]
-offset_left = 1112.0
+offset_left = 1128.0
 offset_top = 608.0
-offset_right = 1136.0
+offset_right = 1152.0
 offset_bottom = 632.0
 
 [node name="scene" type="Node3D" parent="." unique_id=1725802773]

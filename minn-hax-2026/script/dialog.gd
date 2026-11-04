@@ -34,6 +34,7 @@ func resetDialog():
 	messageIndex = 0
 	lineIndex = 0
 	charIndex = 0
+	label_Message.set_text("")
 
 # Call with JSON obj to trigger a set of dialog boxes in succession
 func playDialog(dialog: Array):
