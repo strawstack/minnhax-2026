@@ -4,8 +4,8 @@
 [ext_resource type="Script" uid="uid://clibv5pv710xj" path="res://script/skate_movement.gd" id="2_fvtld"]
 [ext_resource type="Script" uid="uid://bblmatoicl77u" path="res://script/player_animation.gd" id="2_hjaqi"]
 [ext_resource type="Script" uid="uid://biyju5kqnpuru" path="res://script/walk_movement.gd" id="3_fvtld"]
-[ext_resource type="Texture2D" uid="uid://c4xco0fqx540u" path="res://mouth.png" id="5_oh5ij"]
-[ext_resource type="Texture2D" uid="uid://dt16v01xforbo" path="res://teeth.png" id="6_hp4bs"]
+[ext_resource type="Texture2D" uid="uid://c4xco0fqx540u" path="res://image/mouth.png" id="5_oh5ij"]
+[ext_resource type="Texture2D" uid="uid://dt16v01xforbo" path="res://image/teeth.png" id="6_hp4bs"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j6yc5"]
 

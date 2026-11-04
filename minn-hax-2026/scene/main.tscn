@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c4mam1u6g1fpn"]
 
 [ext_resource type="Script" uid="uid://csa1lm0kjl01s" path="res://script/gc.gd" id="1_sugp2"]
+[ext_resource type="Script" uid="uid://cw5p35xqsvu2j" path="res://script/dialog.gd" id="2_v0l8b"]
 
 [sub_resource type="Environment" id="Environment_jd5n0"]
 
@@ -9,3 +10,67 @@ script = ExtResource("1_sugp2")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=37290506]
 environment = SubResource("Environment_jd5n0")
+
+[node name="CanvasLayer_Dialog" type="CanvasLayer" parent="." unique_id=1106465616]
+script = ExtResource("2_v0l8b")
+
+[node name="ColorRect_Flash" type="ColorRect" parent="CanvasLayer_Dialog" unique_id=385391305]
+offset_left = 16.0
+offset_top = 464.0
+offset_right = 32.0
+offset_bottom = 608.0
+color = Color(0.34509805, 1, 1, 1)
+
+[node name="ColorRect_Background" type="ColorRect" parent="CanvasLayer_Dialog" unique_id=1993439820]
+offset_top = 448.0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.06666667, 0.06666667, 0.06666667, 0.49803922)
+
+[node name="ColorRect_PlaceholderAvatar" type="ColorRect" parent="CanvasLayer_Dialog" unique_id=523485412]
+offset_left = 32.0
+offset_top = 464.0
+offset_right = 176.0
+offset_bottom = 608.0
+
+[node name="ColorRect_NameBackground" type="ColorRect" parent="CanvasLayer_Dialog" unique_id=1576016897]
+offset_left = 16.0
+offset_top = 608.0
+offset_right = 176.0
+offset_bottom = 632.0
+color = Color(0.06666667, 0.06666667, 0.06666667, 1)
+
+[node name="Label_CharacterName" type="Label" parent="CanvasLayer_Dialog" unique_id=760661215]
+offset_left = 16.0
+offset_top = 608.0
+offset_right = 176.0
+offset_bottom = 632.0
+text = "Character Name"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label_Message" type="Label" parent="CanvasLayer_Dialog" unique_id=531249765]
+custom_minimum_size = Vector2(1, 1)
+offset_left = 192.0
+offset_top = 464.0
+offset_right = 1024.0
+offset_bottom = 632.0
+theme_override_font_sizes/font_size = 22
+text = "This is an example passage: Hey MinnMax or whoever, thanks for coming by on such short notice for a studio tour. It's exciting with the game releasing tomorrow on the MinnMax Stream. I'm on the couch. Feel free to take a look around. I'll stay play Hitman Freelancer. How about a final line. Can we actually do a bit more. Like I'll go halfway."
+autowrap_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer_Dialog" unique_id=432302450]
+offset_left = 1032.0
+offset_top = 600.0
+offset_right = 1096.0
+offset_bottom = 640.0
+theme_override_font_sizes/font_size = 22
+text = "Enter"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ColorRect_Stop" type="ColorRect" parent="CanvasLayer_Dialog" unique_id=1366927087]
+offset_left = 1112.0
+offset_top = 608.0
+offset_right = 1136.0
+offset_bottom = 632.0

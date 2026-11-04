@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://bem3dcsvo1kua"]
 
 [ext_resource type="Texture2D" uid="uid://1yvtxki5qtp0" path="res://glb/underwater/underwater_agent_head_texture_with_qr.png" id="1_1ttkh"]
-[ext_resource type="Script" uid="uid://pnm3pi1fxnos" path="res://underwater.gd" id="1_n3fmg"]
+[ext_resource type="Script" uid="uid://pnm3pi1fxnos" path="res://script/underwater.gd" id="1_n3fmg"]
 [ext_resource type="Texture2D" uid="uid://dx5m05nrigwwh" path="res://glb/underwater/underwater_agent_suit.png" id="2_n3fmg"]
 
 [sub_resource type="Environment" id="Environment_jd5n0"]

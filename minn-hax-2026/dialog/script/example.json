@@ -1,0 +1,48 @@
+[
+    {
+        "name": "Agent Forty",
+        "avatar": "",
+        "lines": [
+            {
+                "voice": "",
+                "text": "Hey, how are you doing today! Nice weather right."
+            },
+            {
+                "voice": "",
+                "text": "I'm going to the park. Care to join me?"
+            }            
+        ]
+    },
+    {
+        "name": "MoneyPony",
+        "avatar": "",
+        "lines": [
+            {
+                "voice": "",
+                "text": "Sure, I love to go to the park. However..."
+            },
+            {
+                "voice": "",
+                "text": "I have an appointment later, but I can go for half an hour or so."
+            }            
+        ]
+    },
+    {
+        "name": "Agent Forty",
+        "avatar": "",
+        "lines": [
+            {
+                "voice": "",
+                "text": "Great! I'll be ready to leave soon."
+            },
+            {
+                "voice": "",
+                "text": "One more thing..."
+            },
+            {
+                "voice": "",
+                "text": "It might rain, so I'll bring an umbrella. This is an example of a long message. This is an example of a long message. This is an example of a long message. This is an example of a long message. This is an example of a long message. This is an example of a long message. This is an example of a long message. This is an example of a long message. This is an example of a long message. This is an example of a long message. This is an example of a long message. This is an example of a long message. This is an example of a long message. This is an example of a long message. This is an example of a long message."
+            }                        
+        ]
+    }
+]
