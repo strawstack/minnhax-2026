@@ -1,32 +1,29 @@
 extends Node3D
 
-@export var animationPlayer: AnimationPlayer
 @export var agentAnimationPlayer: AnimationPlayer
-@export var startLabel: Label
+var gc
+var animationPlayer
+var lookWatch = false
 
-var startIsReady = false
-
-func _ready() -> void:
-	startLabel.set_modulate(Color(1,1,1,0)) 
+func _ready() -> void: 
+	gc = get_tree().current_scene
+	animationPlayer = $AnimationPlayer
 	startScene()
 
-func startScene():
-	animationPlayer.play("drift_down")
-	await animationPlayer.animation_finished
-	
-	await get_tree().create_timer(0.5).timeout
-	
-	agentAnimationPlayer.play("LookWatch")
-	await agentAnimationPlayer.animation_finished
-	
-	startIsReady = true
-	
-	animationPlayer.play("show_start_label")
-	await animationPlayer.animation_finished
+func setLookWatch(value):
+	lookWatch = value 
 
-# TODO(richard): in _process allow player to press start after startScene completes
-# Pressing start will trigger Agent to look at watch then the outer scene will free the camera
-# and Richard will talk to the player
+func startScene():
+	animationPlayer.play("fish_swim")
+	await animationPlayer.animation_finished
+	animationPlayer.play("float_down")
+	await animationPlayer.animation_finished
+	if lookWatch:
+		await get_tree().create_timer(1.0).timeout
+		agentAnimationPlayer.play("LookWatch")
+		await agentAnimationPlayer.animation_finished
+	await get_tree().create_timer(1.0).timeout
+	gc.initialUnderwaterSceneComplete()
 
 func _process(_delta: float) -> void:
 	pass

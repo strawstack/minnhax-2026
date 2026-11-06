@@ -33,7 +33,12 @@ func logoSceneEnds():
 	await fadeIn()
 
 func mainMenuStartPress():
-	print("Load apartment scene and start underwater sequence")
+	await fadeOut()
+	loadScene("apartment") # Calls "initialUnderwaterSceneComplete" on complete
+	await fadeIn()
+
+func initialUnderwaterSceneComplete():
+	print("Start dialog scene post initial underwater")
 
 func playDialogFile(fileStr: String):
 	var json = JSON.parse_string(FileAccess.get_file_as_string(fileStr))

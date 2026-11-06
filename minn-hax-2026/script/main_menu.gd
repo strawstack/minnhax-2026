@@ -25,11 +25,8 @@ func sceneStart():
 	$CanvasLayer/Label_PressStart.set_visible(true)
 	isReady = true
 
-func startPress():
-	$CanvasLayer.set_visible(false)
-	gc.mainMenuStartPress()
-
 func _process(delta: float) -> void:
 	if isReady:
 		if Input.is_action_just_pressed("enter"):
-			startPress()
+			isReady = false
+			await gc.mainMenuStartPress() # Note: await will spawn another instance of this _process until scene unmounts
