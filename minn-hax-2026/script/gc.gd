@@ -1,12 +1,13 @@
 extends Node3D
 
 const scenes = {
-	"apartment": preload("res://scene/apartment.tscn") 
+	"apartment": preload("res://scene/apartment.tscn"),
+	"talk_test": preload("res://scene/talk_test.tscn")
 }
 
 func _ready() -> void:
 	# TODO: replace with preamble and possible main menu
-	loadScene("apartment")
+	loadScene("talk_test")
 
 func playDialogFile(fileStr: String):
 	var json = JSON.parse_string(FileAccess.get_file_as_string(fileStr))
@@ -17,11 +18,11 @@ func _process(_delta: float) -> void:
 	pass
 
 func loadScene(sceneName: String):
-	for child in $scene.get_children():
-		$scene.remove_child(child)
+	for child in $Scene.get_children():
+		$Scene.remove_child(child)
 		child.queue_free()
 	var instance = scenes[sceneName].instantiate()
-	$scene.add_child(instance)
+	$Scene.add_child(instance)
 
 func _input(event):
 	# Capture mouse on left click

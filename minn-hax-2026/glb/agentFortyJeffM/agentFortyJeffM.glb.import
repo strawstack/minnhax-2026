@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dxfaoonbbb8r"
-path="res://.godot/imported/agentFortyJeffM.glb-47ec6fa44a561872fd4343fa721cd612.scn"
+uid="uid://doeb8lw46886d"
+path="res://.godot/imported/agentFortyJeffM.glb-81e516eb7146036090f1fc9663d70f73.scn"
 
 [deps]
 
-source_file="res://glb/agentFortyJeffM.glb"
-dest_files=["res://.godot/imported/agentFortyJeffM.glb-47ec6fa44a561872fd4343fa721cd612.scn"]
+source_file="res://glb/agentFortyJeffM/agentFortyJeffM.glb"
+dest_files=["res://.godot/imported/agentFortyJeffM.glb-81e516eb7146036090f1fc9663d70f73.scn"]
 
 [params]
 

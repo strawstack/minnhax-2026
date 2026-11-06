@@ -1,0 +1,36 @@
+extends Node3D
+
+# Const
+const MAX_MOUTH_SCALE = 0.15
+const MOUTH_SIZE_BOOST = 0.06
+const TEETH_CUTOFF = 0.00005
+
+# Ref
+var spectrum_instance
+var space
+var teeth
+
+# Var
+var isSpeaking = false
+
+func _ready() -> void:
+	# TODO register with gc using exported "characterName" parameter
+	space = $Space
+	teeth = $Teeth
+	spectrum_instance = AudioServer.get_bus_effect_instance(2, 0)  # Bus 1, Effect 0
+
+func setIsSpeaking(value):
+	pass
+
+func _process(delta: float) -> void:
+	var magnitude = spectrum_instance.get_magnitude_for_frequency_range(0, 1000).length()
+	
+	# Show hide teeth
+	var showTeeth = magnitude <= TEETH_CUTOFF
+	space.set_visible(not showTeeth)
+	teeth.set_visible(showTeeth)
+	
+	# Scale mouth space
+	var scale = min(MAX_MOUTH_SCALE, magnitude * MAX_MOUTH_SCALE + MOUTH_SIZE_BOOST)
+	var lerp_scale = lerp(space.get_scale().x, scale, 0.9)
+	space.set_scale(Vector3(lerp_scale, lerp_scale, 1))
