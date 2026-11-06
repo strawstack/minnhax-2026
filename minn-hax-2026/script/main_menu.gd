@@ -7,13 +7,23 @@ var isReady = false
 func _ready() -> void:
 	gc = get_tree().current_scene
 	animationPlayer = $AnimationPlayer
+	$CanvasLayer/Label_TheDepartment.set_visible(false)
+	$CanvasLayer/Label_title_Of.set_visible(false)
+	$CanvasLayer/Label_ParasocialActivity.set_visible(false)
+	$CanvasLayer/Label_PressStart.set_visible(false)
 	sceneStart()
 
 func sceneStart():
-	await get_tree().create_timer(2.0).timeout
-	animationPlayer.play("showStart")
+	animationPlayer.play("lebooboo_peek")
+	await get_tree().create_timer(4).timeout # Wait for LeBooBoo to hide
+	$CanvasLayer/Label_TheDepartment.set_visible(true)
+	await get_tree().create_timer(0.5).timeout
+	$CanvasLayer/Label_title_Of.set_visible(true)
+	await get_tree().create_timer(0.5).timeout
+	$CanvasLayer/Label_ParasocialActivity.set_visible(true)
+	await get_tree().create_timer(1.0).timeout
+	$CanvasLayer/Label_PressStart.set_visible(true)
 	isReady = true
-	await animationPlayer.animation_finished
 
 func startPress():
 	$CanvasLayer.set_visible(false)
