@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bg5ixunmm5oq2"]
+
+[ext_resource type="Script" uid="uid://qk0q75q7ywcp" path="res://script/mouth.gd" id="1_jacdo"]
+[ext_resource type="Texture2D" uid="uid://c4xco0fqx540u" path="res://image/mouth.png" id="2_58ssf"]
+[ext_resource type="Texture2D" uid="uid://dt16v01xforbo" path="res://image/teeth.png" id="3_15bu7"]
+
+[node name="Mouth" type="Node3D" unique_id=1139275092]
+script = ExtResource("1_jacdo")
+
+[node name="Space" type="Sprite3D" parent="." unique_id=543812608]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 1, 0, 0, 0)
+visible = false
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("2_58ssf")
+
+[node name="Teeth" type="Sprite3D" parent="." unique_id=1292641126]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+texture = ExtResource("3_15bu7")

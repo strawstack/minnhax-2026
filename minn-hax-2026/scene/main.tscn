@@ -6,8 +6,63 @@
 
 [sub_resource type="Environment" id="Environment_jd5n0"]
 
+[sub_resource type="Animation" id="Animation_0ha60"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer_Fade/fadeRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_wp4xf"]
+resource_name = "fadeIn"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer_Fade/fadeRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_brvut"]
+resource_name = "fadeOut"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer_Fade/fadeRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0ha60"]
+_data = {
+&"RESET": SubResource("Animation_0ha60"),
+&"fadeIn": SubResource("Animation_wp4xf"),
+&"fadeOut": SubResource("Animation_brvut")
+}
+
 [node name="main" type="Node3D" unique_id=1687076067]
 script = ExtResource("1_sugp2")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=37290506]
+environment = SubResource("Environment_jd5n0")
 
 [node name="CanvasLayer_Dialog" type="CanvasLayer" parent="." unique_id=1106465616]
 script = ExtResource("2_v0l8b")
@@ -91,14 +146,20 @@ text = "Objective: Something go downstairs to the door behind the couch"
 autowrap_mode = 2
 autowrap_trim_flags = 64
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=37290506]
-environment = SubResource("Environment_jd5n0")
+[node name="CanvasLayer_Fade" type="CanvasLayer" parent="." unique_id=1994350165]
+
+[node name="fadeRect" type="ColorRect" parent="CanvasLayer_Fade" unique_id=173595337]
+offset_right = 1168.0
+offset_bottom = 720.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1333780906]
+libraries/ = SubResource("AnimationLibrary_0ha60")
 
 [node name="Audio" type="Node3D" parent="." unique_id=1138003499]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Audio" unique_id=92344062]
 stream = ExtResource("3_wp4xf")
-autoplay = true
 bus = &"Voice"
 
 [node name="Scene" type="Node3D" parent="." unique_id=1725802773]

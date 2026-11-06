@@ -1,5 +1,8 @@
 extends Node3D
 
+@export var characterName: String
+@export var teethOveride: Texture2D
+
 # Const
 const MAX_MOUTH_SCALE = 0.15
 const MOUTH_SIZE_BOOST = 0.06
@@ -17,6 +20,8 @@ func _ready() -> void:
 	# TODO register with gc using exported "characterName" parameter
 	space = $Space
 	teeth = $Teeth
+	if teethOveride:
+		teeth.set_texture(teethOveride)
 	spectrum_instance = AudioServer.get_bus_effect_instance(2, 0)  # Bus 1, Effect 0
 
 func setIsSpeaking(value):

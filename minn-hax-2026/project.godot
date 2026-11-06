@@ -14,6 +14,10 @@ config/name="MinnHax-2026"
 run/main_scene="uid://c4mam1u6g1fpn"
 config/features=PackedStringArray("4.7", "Forward Plus")
 
+[audio]
+
+buses/default_bus_layout="uid://den38rk7xtgt0"
+
 [display]
 
 window/size/viewport_width=1168

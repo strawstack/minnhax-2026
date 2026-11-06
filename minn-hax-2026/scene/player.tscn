@@ -3,12 +3,10 @@
 [ext_resource type="Script" uid="uid://dxj0y7qf2t7pw" path="res://script/player.gd" id="1_xo3ru"]
 [ext_resource type="Script" uid="uid://clibv5pv710xj" path="res://script/skate_movement.gd" id="2_fvtld"]
 [ext_resource type="Script" uid="uid://bblmatoicl77u" path="res://script/player_animation.gd" id="2_hjaqi"]
-[ext_resource type="Script" uid="uid://qk0q75q7ywcp" path="res://script/mouth.gd" id="3_2fvbb"]
 [ext_resource type="Script" uid="uid://biyju5kqnpuru" path="res://script/walk_movement.gd" id="3_fvtld"]
 [ext_resource type="Texture2D" uid="uid://b6acec27h8d0e" path="res://glb/agentFortyJeffM/agentFortyJeffM_agent_head_texture_with_qr.png" id="3_g2vtq"]
+[ext_resource type="PackedScene" uid="uid://bg5ixunmm5oq2" path="res://scene/mouth.tscn" id="3_hp4bs"]
 [ext_resource type="Texture2D" uid="uid://djg2x5qdm4ngn" path="res://glb/agentFortyJeffM/agentFortyJeffM_agent_suit.png" id="4_2fvbb"]
-[ext_resource type="Texture2D" uid="uid://c4xco0fqx540u" path="res://image/mouth.png" id="5_oh5ij"]
-[ext_resource type="Texture2D" uid="uid://dt16v01xforbo" path="res://image/teeth.png" id="6_hp4bs"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ko0vb"]
 resource_name = "yellow_head"
@@ -2693,19 +2691,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.368, 0.216, 2.169)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 script = ExtResource("2_hjaqi")
 
-[node name="Mouth" type="Node3D" parent="agentFortyJeffM" unique_id=1769440436]
+[node name="Mouth" parent="agentFortyJeffM" unique_id=1139275092 instance=ExtResource("3_hp4bs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6758678, -0.35555172)
-script = ExtResource("3_2fvbb")
-
-[node name="Space" type="Sprite3D" parent="agentFortyJeffM/Mouth" unique_id=1147864270]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 1, 0, 0, 0)
-modulate = Color(0, 0, 0, 1)
-texture = ExtResource("5_oh5ij")
-
-[node name="Teeth" type="Sprite3D" parent="agentFortyJeffM/Mouth" unique_id=1899072149]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
-visible = false
-texture = ExtResource("6_hp4bs")
 
 [node name="Armature" type="Node3D" parent="agentFortyJeffM" unique_id=260021758]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, -0.25, 0)

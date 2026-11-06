@@ -1,13 +1,39 @@
 extends Node3D
 
 const scenes = {
+	"logo": preload("res://scene/logo.tscn"),
+	"splash": preload("res://scene/splash.tscn"),
+	"mainMenu": preload("res://scene/main_menu.tscn"),
 	"apartment": preload("res://scene/apartment.tscn"),
-	"talk_test": preload("res://scene/talk_test.tscn")
 }
 
+var animationPlayer
+
 func _ready() -> void:
-	# TODO: replace with preamble and possible main menu
-	loadScene("talk_test")
+	animationPlayer = $AnimationPlayer
+	loadScene("logo") # Calls "logoSceneEnds" on completion
+	await fadeIn()
+
+func fadeIn():
+	animationPlayer.play("fadeIn")
+	await animationPlayer.animation_finished
+
+func fadeOut():
+	animationPlayer.play("fadeOut")
+	await animationPlayer.animation_finished
+
+func logoSceneEnds():
+	await fadeOut()
+	await get_tree().create_timer(1.0).timeout
+	loadScene("splash")
+	await fadeIn()
+	await get_tree().create_timer(4.0).timeout
+	await fadeOut()
+	loadScene("mainMenu") # Calls "mainMenuStartPress" on completion
+	await fadeIn()
+
+func mainMenuStartPress():
+	print("Load apartment scene and start underwater sequence")
 
 func playDialogFile(fileStr: String):
 	var json = JSON.parse_string(FileAccess.get_file_as_string(fileStr))
