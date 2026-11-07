@@ -4,6 +4,7 @@ extends Node3D
 var gc
 var animationPlayer
 var lookWatch = false
+var startIsReady = false
 
 func _ready() -> void: 
 	gc = get_tree().current_scene
@@ -23,7 +24,8 @@ func startScene():
 		agentAnimationPlayer.play("LookWatch")
 		await agentAnimationPlayer.animation_finished
 	await get_tree().create_timer(1.0).timeout
-	gc.initialUnderwaterSceneComplete()
+	gc.setPlayerCanMove(true)
+	gc.playDialogFile("res://dialog/script/apartment_intro.json")
 
 func _process(_delta: float) -> void:
 	pass

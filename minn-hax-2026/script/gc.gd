@@ -8,11 +8,16 @@ const scenes = {
 }
 
 var animationPlayer
+var dialogInProgress = false # Set when dialog is in progress
+var playerCanMove = false
 
 func _ready() -> void:
 	animationPlayer = $AnimationPlayer
 	loadScene("logo") # Calls "logoSceneEnds" on completion
 	await fadeIn()
+
+func setPlayerCanMove(value):
+	playerCanMove = value
 
 func fadeIn():
 	animationPlayer.play("fadeIn")
@@ -37,13 +42,15 @@ func mainMenuStartPress():
 	loadScene("apartment") # Calls "initialUnderwaterSceneComplete" on complete
 	await fadeIn()
 
-func initialUnderwaterSceneComplete():
-	print("Start dialog scene post initial underwater")
-
 func playDialogFile(fileStr: String):
 	var json = JSON.parse_string(FileAccess.get_file_as_string(fileStr))
 	if json:
+		dialogInProgress = true
 		$CanvasLayer_Dialog.playDialog(json)
+
+# Called when a dialog ends indicating a new one can be started
+func dialogEnds():
+	dialogInProgress = false
 
 func _process(_delta: float) -> void:
 	pass

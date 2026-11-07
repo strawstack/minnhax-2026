@@ -1,9 +1,7 @@
 extends Node3D
 
 @export var player: CharacterBody3D
-
 var once = false
-
 var gc
 
 func _ready() -> void:
