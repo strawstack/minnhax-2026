@@ -1,5 +1,7 @@
 extends Node3D
 
+const DEBUG = true
+
 const scenes = {
 	"logo": preload("res://scene/logo.tscn"),
 	"splash": preload("res://scene/splash.tscn"),
@@ -13,8 +15,12 @@ var playerCanMove = false
 
 func _ready() -> void:
 	animationPlayer = $AnimationPlayer
-	loadScene("logo") # Calls "logoSceneEnds" on completion
-	await fadeIn()
+	if DEBUG:
+		$CanvasLayer_Fade/fadeRect.set_visible(false)
+		loadScene("apartment")
+	else:
+		loadScene("logo") # Calls "logoSceneEnds" on completion
+		await fadeIn()
 
 func setPlayerCanMove(value):
 	playerCanMove = value

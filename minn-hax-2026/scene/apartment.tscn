@@ -2,17 +2,11 @@
 
 [ext_resource type="Script" uid="uid://gg8i1ry5kgdv" path="res://script/movement_apartment.gd" id="1_sedwy"]
 [ext_resource type="Script" uid="uid://dkclpj7uqg38h" path="res://scene/apartment_scene_root.gd" id="1_x34op"]
-[ext_resource type="PackedScene" uid="uid://bbewn3tgvwx1t" path="res://scene/apartment_model.tscn" id="2_x34op"]
 [ext_resource type="PackedScene" uid="uid://bem3dcsvo1kua" path="res://scene/underwater.tscn" id="3_mb15i"]
+[ext_resource type="PackedScene" uid="uid://bbewn3tgvwx1t" path="res://scene/apartment_model.tscn" id="5_gsw74"]
 [ext_resource type="LightmapGIData" uid="uid://b5plorwwoxo17" path="res://bake/apartment.lmbake" id="5_w0ngi"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jd5n0"]
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_mb15i"]
-data = PackedVector3Array(3.6499999, 0.14999999, -8.5, -3.6499999, 0.14999999, 8.5, -3.6499999, 0.14999999, -8.5, 3.6499999, 0.14999999, -8.5, 3.6499999, 0.14999999, 8.5, -3.6499999, 0.14999999, 8.5, 3.6499999, -0.14999999, 8.5, -3.6499999, 0.14999999, 8.5, 3.6499999, 0.14999999, 8.5, 3.6499999, -0.14999999, 8.5, -3.6499999, -0.14999999, 8.5, -3.6499999, 0.14999999, 8.5, -3.6499999, -0.14999999, 8.5, -3.6499999, 0.14999999, -8.5, -3.6499999, 0.14999999, 8.5, -3.6499999, -0.14999999, 8.5, -3.6499999, -0.14999999, -8.5, -3.6499999, 0.14999999, -8.5, -3.6499999, -0.14999999, -8.5, 3.6499999, -0.14999999, 8.5, 3.6499999, -0.14999999, -8.5, -3.6499999, -0.14999999, -8.5, -3.6499999, -0.14999999, 8.5, 3.6499999, -0.14999999, 8.5, 3.6499999, -0.14999999, -8.5, 3.6499999, 0.14999999, 8.5, 3.6499999, 0.14999999, -8.5, 3.6499999, -0.14999999, -8.5, 3.6499999, -0.14999999, 8.5, 3.6499999, 0.14999999, 8.5, -3.6499999, -0.14999999, -8.5, 3.6499999, 0.14999999, -8.5, -3.6499999, 0.14999999, -8.5, -3.6499999, -0.14999999, -8.5, 3.6499999, -0.14999999, -8.5, 3.6499999, 0.14999999, -8.5)
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_x34op"]
-data = PackedVector3Array(1, 0.14999999, -5.1, -1, 0.14999999, 5.1, -1, 0.14999999, -5.1, 1, 0.14999999, -5.1, 1, 0.14999999, 5.1, -1, 0.14999999, 5.1, 1, -0.14999999, 5.1, -1, 0.14999999, 5.1, 1, 0.14999999, 5.1, 1, -0.14999999, 5.1, -1, -0.14999999, 5.1, -1, 0.14999999, 5.1, -1, -0.14999999, 5.1, -1, 0.14999999, -5.1, -1, 0.14999999, 5.1, -1, -0.14999999, 5.1, -1, -0.14999999, -5.1, -1, 0.14999999, -5.1, -1, -0.14999999, -5.1, 1, -0.14999999, 5.1, 1, -0.14999999, -5.1, -1, -0.14999999, -5.1, -1, -0.14999999, 5.1, 1, -0.14999999, 5.1, 1, -0.14999999, -5.1, 1, 0.14999999, 5.1, 1, 0.14999999, -5.1, 1, -0.14999999, -5.1, 1, -0.14999999, 5.1, 1, 0.14999999, 5.1, -1, -0.14999999, -5.1, 1, 0.14999999, -5.1, -1, 0.14999999, -5.1, -1, -0.14999999, -5.1, 1, -0.14999999, -5.1, 1, 0.14999999, -5.1)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_jd5n0"]
 size = Vector2(1.98, 1.296)
@@ -25,14 +19,12 @@ resource_local_to_scene = true
 shading_mode = 0
 albedo_texture = SubResource("ViewportTexture_x34op")
 
-[node name="apartment" type="Node3D" unique_id=802607312 node_paths=PackedStringArray("player")]
+[node name="apartment" type="Node3D" unique_id=802607312]
 script = ExtResource("1_x34op")
-player = NodePath("CharacterBody3D")
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=1492951469]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.027121544, 0)
 light_data = ExtResource("5_w0ngi")
-
-[node name="apartment_model" parent="." unique_id=1419898657 instance=ExtResource("2_x34op")]
 
 [node name="SubViewport" type="SubViewport" parent="." unique_id=185564117]
 own_world_3d = true
@@ -41,6 +33,7 @@ size = Vector2i(1168, 720)
 render_target_update_mode = 4
 
 [node name="underwater" parent="SubViewport" unique_id=1915067228 instance=ExtResource("3_mb15i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.6892605, 0.045001507, 0.029174447)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=857753503]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.373817, 7, -4.6540756)
@@ -55,18 +48,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
 shape = SubResource("CapsuleShape3D_jd5n0")
 
 [node name="apartment_shadow" type="Node3D" parent="." unique_id=1237425037]
-
-[node name="StaticBody3D" type="StaticBody3D" parent="apartment_shadow" unique_id=785296452]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3500018, 5.850001, -8)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="apartment_shadow/StaticBody3D" unique_id=1504630994]
-shape = SubResource("ConcavePolygonShape3D_mb15i")
-
-[node name="StaticBody3D2" type="StaticBody3D" parent="apartment_shadow" unique_id=2067963434]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.000002, 5.850001, -11.400001)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="apartment_shadow/StaticBody3D2" unique_id=1685400524]
-shape = SubResource("ConcavePolygonShape3D_x34op")
 
 [node name="light" type="Node3D" parent="apartment_shadow" unique_id=1888333497]
 
@@ -112,7 +93,72 @@ light_bake_mode = 1
 spot_range = 8.440148
 spot_angle = 85.77462
 
+[node name="SpotLight3D15" type="SpotLight3D" parent="apartment_shadow/light" unique_id=693726438]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 4.942273, 3.2651772, 0.02647829)
+light_energy = 2.0
+light_bake_mode = 1
+spot_range = 8.440148
+spot_angle = 85.77462
+
+[node name="SpotLight3D9" type="SpotLight3D" parent="apartment_shadow/light" unique_id=824762580]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 2.6284199, 2.96696, 4.873281)
+light_energy = 2.0
+light_bake_mode = 1
+spot_range = 8.440148
+spot_angle = 85.77462
+
+[node name="SpotLight3D12" type="SpotLight3D" parent="apartment_shadow/light" unique_id=554522515]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -2.1984196, 2.96696, 5.0694766)
+light_energy = 2.0
+light_bake_mode = 1
+spot_range = 8.440148
+spot_angle = 85.77462
+
+[node name="SpotLight3D13" type="SpotLight3D" parent="apartment_shadow/light" unique_id=444002138]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -2.1984196, 2.96696, 8.181192)
+light_energy = 2.0
+light_bake_mode = 1
+spot_range = 8.440148
+spot_angle = 85.77462
+
+[node name="SpotLight3D14" type="SpotLight3D" parent="apartment_shadow/light" unique_id=1657321875]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 2.846037, 2.96696, 8.171528)
+light_energy = 2.0
+light_bake_mode = 1
+spot_range = 8.440148
+spot_angle = 85.77462
+
+[node name="SpotLight3D8" type="SpotLight3D" parent="apartment_shadow/light" unique_id=659953464]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 9.036747, 2.998003, 5.5022035)
+light_energy = 2.0
+light_bake_mode = 1
+spot_range = 8.440148
+spot_angle = 85.77462
+
+[node name="SpotLight3D7" type="SpotLight3D" parent="apartment_shadow/light" unique_id=615531079]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 8.423342, 2.998003, -0.75451565)
+light_energy = 2.0
+light_bake_mode = 1
+spot_range = 8.440148
+spot_angle = 85.77462
+
+[node name="SpotLight3D10" type="SpotLight3D" parent="apartment_shadow/light" unique_id=1499841713]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 2.965529, 2.1450071, -2.2770042)
+light_energy = 2.0
+light_bake_mode = 1
+spot_range = 8.440148
+spot_angle = 85.77462
+
+[node name="SpotLight3D11" type="SpotLight3D" parent="apartment_shadow/light" unique_id=622828791]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -1.2983508, 3.032784, -1.0823845)
+light_energy = 2.0
+light_bake_mode = 1
+spot_range = 8.440148
+spot_angle = 85.77462
+
 [node name="MeshInstance3D_Television" type="MeshInstance3D" parent="." unique_id=1684035076]
 transform = Transform3D(1.9106855e-15, 1, -4.371139e-08, 4.371139e-08, -4.371139e-08, -1, -1, 0, -4.371139e-08, -2.4458795, 7.8917675, -4.674992)
 mesh = SubResource("PlaneMesh_jd5n0")
 surface_material_override/0 = SubResource("StandardMaterial3D_w0ngi")
+
+[node name="apartment_model" parent="." unique_id=905896842 instance=ExtResource("5_gsw74")]

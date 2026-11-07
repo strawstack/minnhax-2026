@@ -8,8 +8,11 @@ var startIsReady = false
 
 func _ready() -> void: 
 	gc = get_tree().current_scene
-	animationPlayer = $AnimationPlayer
-	startScene()
+	if gc.DEBUG:
+		gc.setPlayerCanMove(true)
+	else:
+		animationPlayer = $AnimationPlayer
+		startScene()
 
 func setLookWatch(value):
 	lookWatch = value 
