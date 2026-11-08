@@ -184,7 +184,6 @@ autowrap_mode = 2
 autowrap_trim_flags = 64
 
 [node name="CanvasLayer_Fade" type="CanvasLayer" parent="." unique_id=1994350165]
-visible = false
 
 [node name="fadeRect" type="ColorRect" parent="CanvasLayer_Fade" unique_id=173595337]
 offset_right = 1168.0

@@ -1,6 +1,6 @@
 extends Node3D
 
-const DEBUG = true
+const DEBUG = false
 
 @export var commands: Node3D
 
@@ -30,12 +30,17 @@ func _ready() -> void:
 	animationPlayer = $AnimationPlayer
 	audioStreamPlayerVoice = $Audio/AudioStreamPlayerVoice
 	hideInteract()
+	showCrossHairs(false)
 	if DEBUG:
 		$CanvasLayer_Fade/fadeRect.set_visible(false)
 		loadScene("apartment")
 	else:
+		$CanvasLayer_Fade.set_visible(true) # Just to make sure
 		loadScene("logo") # Calls "logoSceneEnds" on completion
 		await fadeIn()
+
+func showCrossHairs(value):
+	$CanvasLayer_Interact/TextureRect.set_visible(value)
 
 func setPlayerCanMove(value):
 	playerCanMove = value

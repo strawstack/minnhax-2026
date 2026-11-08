@@ -10,6 +10,7 @@ func _ready() -> void:
 	gc = get_tree().current_scene
 	if gc.DEBUG:
 		gc.setPlayerCanMove(true)
+		gc.showCrossHairs(true)
 		gc.playDialogFile("res://dialog/script/apartment/apartment_intro.json")
 	else:
 		animationPlayer = $AnimationPlayer
