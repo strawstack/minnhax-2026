@@ -1,7 +1,7 @@
 extends CanvasLayer
 
 # Objectives
-# Mouse to look around. WASD to move. Talk to Yu in the kitchen and film the PC upstairs.
+# Mouse to look around. WASD to move. Talk to Yu in the kitchen, and see my office upstairs.
 # Head downstairs to the studio in the basement.
 # Talk to LeBooBoo in the downstairs studio.
 # Start the interview stream from the control room.
@@ -30,7 +30,7 @@ func _ready() -> void:
 	pass
 
 func setObjective(msg: String):
-	$CanvasLayer_Objective.set_visible(true)
+	set_visible(true)
 	$PanelContainer/Label.set_text(prefix + msg)
 
 func _process(delta: float) -> void:

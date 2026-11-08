@@ -1,0 +1,20 @@
+[
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "Hello"
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "objectiveStudioDoor"
+	},
+	{
+		"name": "Command",
+		"command": "revealStudioPrompt"
+	}
+]

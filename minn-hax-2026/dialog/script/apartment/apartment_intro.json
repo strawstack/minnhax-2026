@@ -18,5 +18,9 @@
 				"text": "Thanks again for dropping by! That’s my wife Yu over in the kitchen. Upstairs is my computer where I made this game."
 			}
 		]
-	}
+	},
+	{
+		"name": "Command",
+		"command": "objectiveGoSeeComputer"
+	},
 ]

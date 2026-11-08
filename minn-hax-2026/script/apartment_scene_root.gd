@@ -1,5 +1,7 @@
 extends Node3D
 
+@export var minnMaxLogoStudioDoor: Node3D
+
 var gc
 
 func _ready() -> void:
@@ -7,7 +9,8 @@ func _ready() -> void:
 	gc.sceneCommandLookup = {
 		"kitchenCameraA": switchCameraA,
 		"kitchenCameraB": switchCameraB,
-		"returnPlayerCamera": returnPlayerCamera
+		"returnPlayerCamera": returnPlayerCamera,
+		"revealStudioPrompt": revealStudioPrompt
 	}
 
 func switchCameraA():
@@ -18,3 +21,6 @@ func switchCameraB():
 
 func returnPlayerCamera():
 	$CharacterBody3D/Node3D/Camera3D.set_current(true)
+
+func revealStudioPrompt():
+	minnMaxLogoStudioDoor.set_visible(true)

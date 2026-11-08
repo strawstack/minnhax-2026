@@ -30,6 +30,7 @@ func startScene():
 		await agentAnimationPlayer.animation_finished
 	await get_tree().create_timer(1.0).timeout
 	gc.setPlayerCanMove(true)
+	gc.showCrossHairs(true)
 	gc.playDialogFile("res://dialog/script/apartment/apartment_intro.json")
 
 func _process(_delta: float) -> void:

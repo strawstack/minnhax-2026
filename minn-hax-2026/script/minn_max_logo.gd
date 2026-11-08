@@ -2,7 +2,7 @@ extends Node3D
 
 @export var prompt: String
 @export var dialogFile: String
-@export var configuration: String
+@export var startHidden: bool
 
 var gc
 
@@ -26,9 +26,10 @@ func _ready() -> void:
 	deactive = $Arrows/Deactive
 	deactiveSecond = $Arrows/DeactiveSecond
 	startAnimate()
+	set_visible(not startHidden)
 
 func showInteract():
-	if not eventTriggered:
+	if not eventTriggered and visible:
 		if gc.dialogInProgress:
 			gc.showInteract("Event not available during dialog")
 		else:
@@ -53,13 +54,12 @@ func startAnimate():
 	).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 
 func startEvent():
-	eventTriggered = true
-	set_visible(false)
-	gc.hideInteract()
-	if dialogFile:
-		gc.playDialogFile(dialogFile)
-	else:
-		gc.startEvent(configuration)
+	if visible:
+		eventTriggered = true
+		set_visible(false)
+		gc.hideInteract()
+		if dialogFile:
+			gc.playDialogFile(dialogFile)
 
 func _process(delta: float) -> void:
 	rotate_y(rotation_speed * delta)
