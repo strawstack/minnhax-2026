@@ -1,32 +1,56 @@
 [
 	{
+		"name": "Command",
+		"command": "freezePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "kitchenCameraA"
+	},
+	{
 		"name": "Yu",
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "test_voice",
+				"voice": "apartment/yu_nice_to_meet_you",
 				"text": "Hey, nice to meet you. My name is Yu like Y U. Thanks for coming over for the studio tour. I’m just cooking some lunch. It’s noodles, tofu, and salmon."
 			},
 		]
+	},
+	{
+		"name": "Command",
+		"command": "kitchenCameraB"
 	},
 	{
 		"name": "Richard",
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "test_voice",
+				"voice": "apartment/rich_want_cerial",
 				"text": "We can make you some lunch. Or help yourself to some cereal."
 			},
 		]
+	},
+	{
+		"name": "Command",
+		"command": "kitchenCameraA"
 	},
 	{
 		"name": "Yu",
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "test_voice",
+				"voice": "apartment/yu_let_me_know_you_want_something_to_eat",
 				"text": "Ya, let me know if you want something to eat. We have some drinks in the fridge. Just like in Grand Theft Auto. So help yourself!"
 			},
 		]
-	}
+	},
+	{
+		"name": "Command",
+		"command": "returnPlayerCamera"
+	},
+	{
+		"name": "Command",
+		"command": "unfreezePlayer"
+	},
 ]

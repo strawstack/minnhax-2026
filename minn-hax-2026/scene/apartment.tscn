@@ -2083,6 +2083,14 @@ script = ExtResource("1_x34op")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.027121544, 0)
 light_data = ExtResource("5_w0ngi")
 
+[node name="Cameras" type="Node3D" parent="." unique_id=1631660044]
+
+[node name="cameraA" type="Camera3D" parent="Cameras" unique_id=739878785]
+transform = Transform3D(0.55556834, -0.30810782, 0.7722781, 0, 0.9288095, 0.37055758, -0.8314709, -0.20587005, 0.51601714, -0.5828928, 7.8305116, -16.433172)
+
+[node name="cameraB" type="Camera3D" parent="Cameras" unique_id=1705382921]
+transform = Transform3D(-0.97391486, 0.01531693, -0.22639623, 0, 0.9977192, 0.067501105, 0.22691377, 0.06574033, -0.9716936, -2.1288695, 8.441346, -18.399906)
+
 [node name="SubViewport" type="SubViewport" parent="." unique_id=185564117]
 own_world_3d = true
 handle_input_locally = false
@@ -2092,14 +2100,24 @@ render_target_update_mode = 4
 [node name="underwater" parent="SubViewport" unique_id=1915067228 instance=ExtResource("3_mb15i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.6892605, 0.045001507, 0.029174447)
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=857753503]
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=857753503 node_paths=PackedStringArray("rayCast3D")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.67, 7, -7.712)
+collision_layer = 2
 script = ExtResource("1_sedwy")
+rayCast3D = NodePath("Node3D/Camera3D/RayCast3D")
 
 [node name="Node3D" type="Node3D" parent="CharacterBody3D" unique_id=992997219]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Node3D" unique_id=249227619]
+current = true
+
+[node name="RayCast3D" type="RayCast3D" parent="CharacterBody3D/Node3D/Camera3D" unique_id=36536425]
+target_position = Vector3(0, 0, -3)
+collision_mask = 4
+hit_from_inside = true
+collide_with_areas = true
+collide_with_bodies = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1010204814]
 shape = SubResource("CapsuleShape3D_jd5n0")
@@ -2228,7 +2246,11 @@ surface_material_override/0 = SubResource("StandardMaterial3D_w0ngi")
 [node name="apartment_model" parent="." unique_id=905896842 instance=ExtResource("5_gsw74")]
 
 [node name="diana" type="Node3D" parent="." unique_id=33160197]
-transform = Transform3D(0.8062125, 0, -0.59162605, 0, 1, 0, 0.59162605, 0, 0.8062125, -1.4011809, 6.011517, -17.423618)
+transform = Transform3D(0.79863554, 0, -0.601815, 0, 1, 0, 0.601815, 0, 0.79863554, -1.4011809, 6.011517, -17.423618)
+
+[node name="Mouth" parent="diana" unique_id=1139275092 instance=ExtResource("6_gsw74")]
+transform = Transform3D(-0.020777881, 0, -0.9997837, 0, 1, 0, 0.9997837, 0, -0.020777881, 0.2215724, 1.544177, 0.0127334595)
+characterName = "Yu"
 
 [node name="Armature" type="Node3D" parent="diana" unique_id=1678585012]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05, 0)
@@ -2489,12 +2511,13 @@ mesh = SubResource("ArrayMesh_ty0hw")
 
 [node name="minnMaxLogo" parent="." unique_id=1930660944 instance=ExtResource("6_ludmo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.38806272, 7.8985577, -16.548794)
+prompt = "talk with Yu"
 dialogFile = "res://dialog/script/apartment/kitchen.json"
 
 [node name="Armature_Richard" type="Node3D" parent="." unique_id=1540700419]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.3508898, 7.071293, -8.550575)
 
-[node name="Mouth" parent="Armature_Richard" unique_id=1139275092 instance=ExtResource("6_gsw74")]
+[node name="Mouth" parent="Armature_Richard" unique_id=147381713 instance=ExtResource("6_gsw74")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.3516482, 0.8592477, 0)
 characterName = "Richard"
 

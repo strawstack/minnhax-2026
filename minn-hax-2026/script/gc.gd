@@ -2,12 +2,19 @@ extends Node3D
 
 const DEBUG = true
 
+@export var commands: Node3D
+
 const scenes = {
 	"logo": preload("res://scene/logo.tscn"),
 	"splash": preload("res://scene/splash.tscn"),
 	"mainMenu": preload("res://scene/main_menu.tscn"),
 	"apartment": preload("res://scene/apartment.tscn"),
 }
+
+# commandLookup populated by Commands child node 
+var commandLookup = {}
+# If command is not present, checks sceneCommandLookup which is populated by scene
+var sceneCommandLookup = {}
 
 var animationPlayer
 var dialogInProgress = false # Set when dialog is in progress
@@ -22,6 +29,7 @@ var audioStreamPlayerVoice: AudioStreamPlayer
 func _ready() -> void:
 	animationPlayer = $AnimationPlayer
 	audioStreamPlayerVoice = $Audio/AudioStreamPlayerVoice
+	hideInteract()
 	if DEBUG:
 		$CanvasLayer_Fade/fadeRect.set_visible(false)
 		loadScene("apartment")
@@ -39,6 +47,13 @@ func fadeIn():
 func fadeOut():
 	animationPlayer.play("fadeOut")
 	await animationPlayer.animation_finished
+
+func showInteract(msg):
+	$CanvasLayer_Interact/PanelContainer/Label.set_text(msg)
+	$CanvasLayer_Interact/PanelContainer.set_visible(true)
+
+func hideInteract():
+	$CanvasLayer_Interact/PanelContainer.set_visible(false)
 
 func registerMouth(name, mouthNode):
 	mouthLookup[name] = mouthNode
@@ -74,6 +89,16 @@ func playDialogFile(fileStr: String):
 	if json:
 		dialogInProgress = true
 		$CanvasLayer_Dialog.playDialog(json)
+
+func startEvent(name: String):
+	# TODO a minnmax logo either has a dialog file or is calls this function to request execution of a set of steps 
+	print("TODO lookup name in eventLookup and run associated function which is a list of world events")
+
+func triggerCommand(command: String):
+	if command in commandLookup:
+		commandLookup[command].call()
+	elif command in sceneCommandLookup:
+		sceneCommandLookup[command].call()
 
 func setMouth(name: String):
 	for characterName in mouthLookup:

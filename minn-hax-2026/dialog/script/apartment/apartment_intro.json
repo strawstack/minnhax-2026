@@ -4,17 +4,17 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "test_voice",
+				"voice": "apartment/rich_so_anyways_that_the_opening",
 				"text": "So anyways that’s the opening cutscene of the game. Agent Forty-JeffM is underwater for a long time after a helicopter crash."
 			},
 			{
-				"voice": "test_voice",
+				"voice": "apartment/rich_thanks_again_coming_by",
 				"text": "Thanks again for coming by on such short notice to film a studio tour. It’s an exciting time with our game Parasocial Activity streaming on MinnHax tomorrow! I'm Richard by the way. Nice to meet you."
 			}, {
-				"voice": "test_voice",
+				"voice": "apartment/rich_feel_free_to_grab",
 				"text": "Feel free to grab some footage of my apartment. I’ll stay here on the couch because I have to play Hitman Freelancer. If you have any questions just shout, and I’ll answer from here."
 			}, {
-				"voice": "test_voice",
+				"voice": "apartment/rich_my_wife_and_upstairs",
 				"text": "Thanks again for dropping by! That’s my wife Yu over in the kitchen. Upstairs is my computer where I made this game."
 			}
 		]

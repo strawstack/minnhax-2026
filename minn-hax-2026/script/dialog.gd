@@ -55,6 +55,10 @@ func setAvatar(message: Dictionary):
 func setMouth(message):
 	gc.setMouth(message["name"])
 
+func toggleEnterPrompt(value):
+	$Label.set_visible(value)
+	$ColorRect_Stop.set_visible(value)
+
 # Set dialog visibility in UI
 func showDialog(value: bool):
 	visible = value
@@ -74,17 +78,30 @@ func stopVoice():
 func setCharacterVisible(charIndex: float):
 	label_Message.set_visible_characters(charIndex)
 
+func dialogOver():
+	state = dialogState.NOT_PLAYING
+	showDialog(false)
+	gc.dialogEnds()
+
 func _process(delta: float) -> void:
+	toggleEnterPrompt(state == dialogState.WAITING_FOR_INPUT)
+
 	if state == dialogState.LOAD_LINE:
 		var message = activeDialog[messageIndex]
-		setAvatar(message)
-		setMouth(message)
-		activeLine = message["lines"][lineIndex]
-		charIndex = 0
-		setCharacterVisible(charIndex)
-		setLine(activeLine["text"])
-		playVoice(activeLine["voice"])
-		state = dialogState.ANIMATING_LINE
+		if message["name"] == "Command":
+			gc.triggerCommand(message["command"])
+			messageIndex += 1
+			if messageIndex >= activeDialog.size():
+				dialogOver()
+		else:
+			setAvatar(message)
+			setMouth(message)
+			activeLine = message["lines"][lineIndex]
+			charIndex = 0
+			setCharacterVisible(charIndex)
+			setLine(activeLine["text"])
+			playVoice(activeLine["voice"])
+			state = dialogState.ANIMATING_LINE
 
 	if state == dialogState.WAITING_FOR_INPUT:
 		if Input.is_action_just_pressed("enter"):
@@ -94,8 +111,7 @@ func _process(delta: float) -> void:
 				lineIndex = 0
 				messageIndex += 1
 			if messageIndex >= activeDialog.size():
-				state = dialogState.NOT_PLAYING
-				showDialog(false)
+				dialogOver()
 			else:
 				state = dialogState.LOAD_LINE
 

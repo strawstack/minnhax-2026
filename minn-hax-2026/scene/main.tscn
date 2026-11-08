@@ -1,10 +1,19 @@
 [gd_scene format=3 uid="uid://c4mam1u6g1fpn"]
 
 [ext_resource type="Script" uid="uid://csa1lm0kjl01s" path="res://script/gc.gd" id="1_sugp2"]
+[ext_resource type="Script" uid="uid://biutlbmiyiw76" path="res://script/canvas_layer_interact.gd" id="2_0ha60"]
+[ext_resource type="Script" uid="uid://bf7an73nf3omp" path="res://scene/commands.gd" id="2_4j5ol"]
+[ext_resource type="Texture2D" uid="uid://bl2ax3g176ohq" path="res://image/point_8.png" id="2_brvut"]
 [ext_resource type="Script" uid="uid://cw5p35xqsvu2j" path="res://script/dialog.gd" id="2_v0l8b"]
 [ext_resource type="AudioStream" uid="uid://kd2gfe4tc611" path="res://dialog/vocal/test_voice.mp3" id="3_wp4xf"]
 
 [sub_resource type="Environment" id="Environment_jd5n0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0ha60"]
+bg_color = Color(0, 0, 0, 0.39215687)
+border_width_left = 10
+border_width_right = 10
+border_color = Color(0, 0, 0, 0.39215687)
 
 [sub_resource type="Animation" id="Animation_0ha60"]
 length = 0.001
@@ -58,11 +67,39 @@ _data = {
 &"fadeOut": SubResource("Animation_brvut")
 }
 
-[node name="main" type="Node3D" unique_id=1687076067]
+[node name="main" type="Node3D" unique_id=1687076067 node_paths=PackedStringArray("commands")]
 script = ExtResource("1_sugp2")
+commands = NodePath("Commands")
+
+[node name="Commands" type="Node3D" parent="." unique_id=700984858]
+script = ExtResource("2_4j5ol")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=37290506]
 environment = SubResource("Environment_jd5n0")
+
+[node name="CanvasLayer_Interact" type="CanvasLayer" parent="." unique_id=1895858215]
+script = ExtResource("2_0ha60")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer_Interact" unique_id=752641653]
+modulate = Color(1, 1, 1, 0.39215687)
+offset_left = 576.0
+offset_top = 352.0
+offset_right = 584.0
+offset_bottom = 360.0
+texture = ExtResource("2_brvut")
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer_Interact" unique_id=2032848661]
+offset_left = 640.0
+offset_top = 336.0
+offset_right = 716.0
+offset_bottom = 376.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_0ha60")
+
+[node name="Label" type="Label" parent="CanvasLayer_Interact/PanelContainer" unique_id=1623886871]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Testing"
+vertical_alignment = 1
 
 [node name="CanvasLayer_Dialog" type="CanvasLayer" parent="." unique_id=1106465616]
 script = ExtResource("2_v0l8b")
@@ -147,6 +184,7 @@ autowrap_mode = 2
 autowrap_trim_flags = 64
 
 [node name="CanvasLayer_Fade" type="CanvasLayer" parent="." unique_id=1994350165]
+visible = false
 
 [node name="fadeRect" type="ColorRect" parent="CanvasLayer_Fade" unique_id=173595337]
 offset_right = 1168.0

@@ -1,5 +1,7 @@
 extends CharacterBody3D
 
+@export var rayCast3D: RayCast3D
+
 var mouse_sens = 0.3
 
 var walkSpeed = 3
@@ -14,6 +16,8 @@ const gravity = 20
 const jump_height = 2
 
 var gc
+
+var currentEvent = null
 
 func _ready():
 	gc = get_tree().current_scene
@@ -43,7 +47,24 @@ func _input(event):
 
 		camera.rotation_degrees.x = new_pitch
 
-# Called on every physics frame
+func _process(_delta: float) -> void:
+	if not gc.playerCanMove:
+		return
+ 
+	rayCast3D.force_raycast_update()
+
+	# Check for event Area2D
+	if rayCast3D.is_colliding():
+		currentEvent = rayCast3D.get_collider().get_parent()
+		currentEvent.showInteract()
+	else:
+		currentEvent = null
+		gc.hideInteract()
+
+	if Input.is_action_just_pressed("e_key"):
+		if not gc.dialogInProgress and currentEvent:
+			currentEvent.startEvent()
+
 func _physics_process(delta):
 	if not gc.playerCanMove:
 		return 
