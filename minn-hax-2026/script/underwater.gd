@@ -10,7 +10,7 @@ func _ready() -> void:
 	gc = get_tree().current_scene
 	if gc.DEBUG:
 		gc.setPlayerCanMove(true)
-		gc.playDialogFile("res://dialog/script/apartment_intro.json")
+		gc.playDialogFile("res://dialog/script/apartment/apartment_intro.json")
 	else:
 		animationPlayer = $AnimationPlayer
 		startScene()
@@ -29,7 +29,7 @@ func startScene():
 		await agentAnimationPlayer.animation_finished
 	await get_tree().create_timer(1.0).timeout
 	gc.setPlayerCanMove(true)
-	gc.playDialogFile("res://dialog/script/apartment_intro.json")
+	gc.playDialogFile("res://dialog/script/apartment/apartment_intro.json")
 
 func _process(_delta: float) -> void:
 	pass

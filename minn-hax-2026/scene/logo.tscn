@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://df3df6bjurflm"]
 
-[ext_resource type="Script" uid="uid://dx2k518nkf2v2" path="res://scene/logo.gd" id="1_ciqto"]
+[ext_resource type="Script" uid="uid://dx2k518nkf2v2" path="res://script/logo.gd" id="1_ciqto"]
 [ext_resource type="AudioStream" uid="uid://3pki7wktn1op" path="res://dialog/vocal/crickets.mp3" id="2_o4sbl"]
 [ext_resource type="AudioStream" uid="uid://bkq2wc6ejwy6w" path="res://dialog/vocal/boo_logo_voice.mp3" id="2_snm24"]
 [ext_resource type="LightmapGIData" uid="uid://ce5c5lnwpo2d4" path="res://bake/logo.lmbake" id="5_5j417"]

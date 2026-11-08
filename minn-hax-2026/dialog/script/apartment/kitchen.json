@@ -1,0 +1,32 @@
+[
+	{
+		"name": "Yu",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "test_voice",
+				"text": "Hey, nice to meet you. My name is Yu like Y U. Thanks for coming over for the studio tour. I’m just cooking some lunch. It’s noodles, tofu, and salmon."
+			},
+		]
+	},
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "test_voice",
+				"text": "We can make you some lunch. Or help yourself to some cereal."
+			},
+		]
+	},
+	{
+		"name": "Yu",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "test_voice",
+				"text": "Ya, let me know if you want something to eat. We have some drinks in the fridge. Just like in Grand Theft Auto. So help yourself!"
+			},
+		]
+	}
+]
