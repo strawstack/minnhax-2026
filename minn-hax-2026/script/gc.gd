@@ -45,6 +45,12 @@ func showCrossHairs(value):
 func setPlayerCanMove(value):
 	playerCanMove = value
 
+func setObjective(msg: String):
+	$CanvasLayer_Objective.setObjective(msg)
+
+func hideObjective():
+	$CanvasLayer_Objective.set_visible(false)
+
 func fadeIn():
 	animationPlayer.play("fadeIn")
 	await animationPlayer.animation_finished

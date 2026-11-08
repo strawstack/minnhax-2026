@@ -6,10 +6,17 @@
 [ext_resource type="Texture2D" uid="uid://bl2ax3g176ohq" path="res://image/point_8.png" id="2_brvut"]
 [ext_resource type="Script" uid="uid://cw5p35xqsvu2j" path="res://script/dialog.gd" id="2_v0l8b"]
 [ext_resource type="AudioStream" uid="uid://kd2gfe4tc611" path="res://dialog/vocal/test_voice.mp3" id="3_wp4xf"]
+[ext_resource type="Script" uid="uid://w2owemapqhmn" path="res://script/canvas_layer_objective.gd" id="5_p1hux"]
 
 [sub_resource type="Environment" id="Environment_jd5n0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0ha60"]
+bg_color = Color(0, 0, 0, 0.39215687)
+border_width_left = 10
+border_width_right = 10
+border_color = Color(0, 0, 0, 0.39215687)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jd5n0"]
 bg_color = Color(0, 0, 0, 0.39215687)
 border_width_left = 10
 border_width_right = 10
@@ -101,6 +108,18 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 text = "Testing"
 vertical_alignment = 1
 
+[node name="CanvasLayer_Objective" type="CanvasLayer" parent="." unique_id=2026318359]
+script = ExtResource("5_p1hux")
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer_Objective" unique_id=1525063732]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jd5n0")
+
+[node name="Label" type="Label" parent="CanvasLayer_Objective/PanelContainer" unique_id=498094334]
+layout_mode = 2
+text = "Objective: testing"
+
 [node name="CanvasLayer_Dialog" type="CanvasLayer" parent="." unique_id=1106465616]
 script = ExtResource("2_v0l8b")
 
@@ -184,6 +203,7 @@ autowrap_mode = 2
 autowrap_trim_flags = 64
 
 [node name="CanvasLayer_Fade" type="CanvasLayer" parent="." unique_id=1994350165]
+visible = false
 
 [node name="fadeRect" type="ColorRect" parent="CanvasLayer_Fade" unique_id=173595337]
 offset_right = 1168.0
