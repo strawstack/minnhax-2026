@@ -26,7 +26,10 @@ var label_Message
 const letterSpeed = 40
 const punctuationSpeed = 2
 
+var gc
+
 func _ready() -> void:
+	gc = get_tree().current_scene
 	showDialog(false)
 	label_Message = $Label_Message
 
@@ -49,6 +52,9 @@ func setAvatar(message: Dictionary):
 	print("TODO: Set avatar image")
 	$Label_CharacterName.set_text(message["name"])
 
+func setMouth(message):
+	gc.setMouth(message["name"])
+
 # Set dialog visibility in UI
 func showDialog(value: bool):
 	visible = value
@@ -58,11 +64,11 @@ func setLine(line: String):
 	label_Message.set_text(line)
 
 func playVoice(voiceFile: String):
-	print("TODO: play voice")
+	gc.playVoice(voiceFile)
 
 # Called to ensure voice audio stops when player advances to next line
 func stopVoice():
-	print("TODO: stop voice")
+	gc.stopVoice()
 
 # Set number of visible characters in label
 func setCharacterVisible(charIndex: float):
@@ -72,6 +78,7 @@ func _process(delta: float) -> void:
 	if state == dialogState.LOAD_LINE:
 		var message = activeDialog[messageIndex]
 		setAvatar(message)
+		setMouth(message)
 		activeLine = message["lines"][lineIndex]
 		charIndex = 0
 		setCharacterVisible(charIndex)

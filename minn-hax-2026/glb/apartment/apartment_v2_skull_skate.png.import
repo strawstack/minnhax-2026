@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gpo20wj0fb2g"
-path.s3tc="res://.godot/imported/apartment_garfield_monday.jpg-f3c426211b7ec9e5b60e2b6afcf36d25.s3tc.ctex"
+uid="uid://c43flevw011k2"
+path.s3tc="res://.godot/imported/apartment_v2_skull_skate.png-17c72abe84cb63e3586e9b87485ff31a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "a5ddc2a85081c60f8b4bb192219631a3"
+"md5": "d67a96711b3c8574bd7018994c788898"
 }
 
 [deps]
 
-source_file="res://glb/apartment/apartment_garfield_monday.jpg"
-dest_files=["res://.godot/imported/apartment_garfield_monday.jpg-f3c426211b7ec9e5b60e2b6afcf36d25.s3tc.ctex"]
+source_file="res://glb/apartment/apartment_v2_skull_skate.png"
+dest_files=["res://.godot/imported/apartment_v2_skull_skate.png-17c72abe84cb63e3586e9b87485ff31a.s3tc.ctex"]
 
 [params]
 

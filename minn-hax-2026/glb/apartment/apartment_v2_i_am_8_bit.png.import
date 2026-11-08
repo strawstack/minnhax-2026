@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://n7bcgqdrbwl"
-path.s3tc="res://.godot/imported/apartment_skull_skate.png-565cc306daba544bfa8ea68c075836da.s3tc.ctex"
+uid="uid://drjwn0iy15nbb"
+path.s3tc="res://.godot/imported/apartment_v2_i_am_8_bit.png-e8552b6b5fabffaedd1b71b1c8fd0091.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "d67a96711b3c8574bd7018994c788898"
+"md5": "cfef58ff0fd002dd1cde1c286379b113"
 }
 
 [deps]
 
-source_file="res://glb/apartment/apartment_skull_skate.png"
-dest_files=["res://.godot/imported/apartment_skull_skate.png-565cc306daba544bfa8ea68c075836da.s3tc.ctex"]
+source_file="res://glb/apartment/apartment_v2_i_am_8_bit.png"
+dest_files=["res://.godot/imported/apartment_v2_i_am_8_bit.png-e8552b6b5fabffaedd1b71b1c8fd0091.s3tc.ctex"]
 
 [params]
 

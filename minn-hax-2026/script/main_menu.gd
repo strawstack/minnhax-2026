@@ -25,7 +25,7 @@ func sceneStart():
 	$CanvasLayer/Label_PressStart.set_visible(true)
 	isReady = true
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if isReady:
 		if Input.is_action_just_pressed("enter"):
 			isReady = false

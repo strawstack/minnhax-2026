@@ -13,8 +13,15 @@ var animationPlayer
 var dialogInProgress = false # Set when dialog is in progress
 var playerCanMove = false
 
+# CharacterName to mouthNode lookup
+var mouthLookup = {}
+
+# ref
+var audioStreamPlayerVoice: AudioStreamPlayer
+
 func _ready() -> void:
 	animationPlayer = $AnimationPlayer
+	audioStreamPlayerVoice = $Audio/AudioStreamPlayerVoice
 	if DEBUG:
 		$CanvasLayer_Fade/fadeRect.set_visible(false)
 		loadScene("apartment")
@@ -32,6 +39,20 @@ func fadeIn():
 func fadeOut():
 	animationPlayer.play("fadeOut")
 	await animationPlayer.animation_finished
+
+func registerMouth(name, mouthNode):
+	mouthLookup[name] = mouthNode
+
+func playVoice(voiceFile: String):
+	var audio = load(
+		"res://dialog/vocal/" + voiceFile + ".mp3"
+	)
+	if audio:
+		audioStreamPlayerVoice.stream = audio
+		audioStreamPlayerVoice.play()
+
+func stopVoice():
+	audioStreamPlayerVoice.stop()
 
 func logoSceneEnds():
 	await fadeOut()
@@ -53,6 +74,10 @@ func playDialogFile(fileStr: String):
 	if json:
 		dialogInProgress = true
 		$CanvasLayer_Dialog.playDialog(json)
+
+func setMouth(name: String):
+	for characterName in mouthLookup:
+		mouthLookup[characterName].setIsSpeaking(characterName == name)
 
 # Called when a dialog ends indicating a new one can be started
 func dialogEnds():

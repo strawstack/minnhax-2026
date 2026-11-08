@@ -158,7 +158,7 @@ libraries/ = SubResource("AnimationLibrary_0ha60")
 
 [node name="Audio" type="Node3D" parent="." unique_id=1138003499]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Audio" unique_id=92344062]
+[node name="AudioStreamPlayerVoice" type="AudioStreamPlayer" parent="Audio" unique_id=92344062]
 stream = ExtResource("3_wp4xf")
 bus = &"Voice"
 

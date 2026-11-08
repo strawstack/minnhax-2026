@@ -1,22 +1,22 @@
 [
-    {
-        "name": "Richard",
-        "avatar": "",
-        "lines": [
-            {
-                "voice": "",
-                "text": "Hey MinnMax! Look around with the mouse. I'm behind you on the couch."
-            },
-            {
-                "voice": "",
-                "text": "I'm Richard. Nice to meet you. Thanks for coming over on such short notice to film a studio tour. It's exciting times with our game streaming tomorrow on MinnHax."
-            }, {
-                "voice": "",
-                "text": "Use WASD to walk around. Head upstairs and you can see my office in the second bedroom where I made this game."
-            }, {
-                "voice": "",
-                "text": "I'll stay here because I have to play Hitman Freelancer, but I'll shout, so you'll be able to hear me upstairs."
-            }
-        ]
-    }
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "test_voice",
+				"text": "So anyways that’s the opening cutscene of the game. Agent Forty-JeffM is underwater for a long time after a helicopter crash."
+			},
+			{
+				"voice": "test_voice",
+				"text": "Thanks again for coming by on such short notice to film a studio tour. It’s an exciting time with our game Parasocial Activity streaming on MinnHax tomorrow! I'm Richard by the way. Nice to meet you."
+			}, {
+				"voice": "test_voice",
+				"text": "Feel free to grab some footage of my apartment. I’ll stay here on the couch because I have to play Hitman Freelancer. If you have any questions just shout, and I’ll answer from here."
+			}, {
+				"voice": "test_voice",
+				"text": "Thanks again for dropping by! That’s my wife Yu over in the kitchen. Upstairs is my computer where I made this game."
+			}
+		]
+	}
 ]

@@ -21,5 +21,5 @@ func startScene():
 	await get_tree().create_timer(1).timeout
 	gc.logoSceneEnds()
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
