@@ -1,0 +1,16 @@
+[
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "PLACEHOLDER: Okay, time to start the stream..."
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "startGameStream"
+	}
+]

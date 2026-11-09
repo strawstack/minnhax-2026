@@ -16,7 +16,8 @@ func _ready() -> void:
 		"fadeOut": fadeOut,
 		"fadeIn": fadeIn,
 		"hideCrossHairs": hideCrossHairs,
-		"showCrossHairs": showCrossHairs
+		"showCrossHairs": showCrossHairs,
+		"startGameStream": startGameStream
 	}
 
 func showCrossHairs():
@@ -50,3 +51,6 @@ func fadeOut():
 func fadeIn():
 	await gc.fadeIn()
 	canvasLayerDialog.endAwait()
+
+func startGameStream():
+	gc.startGameStream()

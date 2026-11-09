@@ -51,7 +51,7 @@ func playDialog(dialog: Array):
 
 # Set image and character name in UI
 func setAvatar(message: Dictionary):
-	print("TODO: Set avatar image")
+	# print("TODO: Set avatar image")
 	$Label_CharacterName.set_text(message["name"])
 
 func setMouth(message):

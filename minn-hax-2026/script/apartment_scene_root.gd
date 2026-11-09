@@ -1,7 +1,10 @@
 extends Node3D
 
 @export var minnMaxLogoStudioDoor: Node3D
+@export var minnMaxLogoLeBooBooPreinterview: Node3D
 @export var minnMaxLogoControlRoom: Node3D
+@export var minnMaxLogoVoiceMail: Node3D
+@export var minnMaxLogoControlRoom2: Node3D
 
 var gc
 
@@ -18,9 +21,15 @@ func _ready() -> void:
 		"interviewCameraA": interviewCameraA,
 		"interviewCameraB": interviewCameraB,
 		"interviewCameraC": interviewCameraC,
-		"advanceToMorning": advanceToMorning
+		"advanceToMorning": advanceToMorning,
 	}
 	hideInterviewCharacters()
+	if gc.DEBUG:
+		minnMaxLogoLeBooBooPreinterview.hideDeactivate()
+		hideLeBooBooPreInterview()
+		advanceToMorning()
+		gc.setPlayerCanMove(true)
+		gc.showCrossHairs(true)
 
 func switchCameraA():
 	$Cameras/cameraA.set_current(true)
@@ -32,14 +41,14 @@ func returnPlayerCamera():
 	$CharacterBody3D/Node3D/Camera3D.set_current(true)
 
 func revealStudioPrompt():
-	minnMaxLogoStudioDoor.set_visible(true)
+	minnMaxLogoStudioDoor.reveal()
 
 func hideLeBooBooPreInterview():
 	$LeBooBoo.set_visible(false)
 	$LeBooBoo.stopFloat()
 
 func revealControlRoomPrompt():
-	minnMaxLogoControlRoom.set_visible(true)
+	minnMaxLogoControlRoom.reveal()
 
 func hideInterviewCharacters():
 	$LeBooBooInterview.set_visible(false)
@@ -68,5 +77,6 @@ func advanceToMorning():
 	$CharacterBody3D/Node3D/Camera3D.rotation = Vector3(0, 0, 0)
 	hideInterviewCharacters()
 	# TODO Show phone on table
+	minnMaxLogoVoiceMail.reveal()
 	# TODO Show stream start prompt in control room
-	pass
+	minnMaxLogoControlRoom2.reveal()

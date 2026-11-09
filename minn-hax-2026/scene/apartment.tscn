@@ -2079,10 +2079,13 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_s0qdo")
 
-[node name="apartment" type="Node3D" unique_id=802607312 node_paths=PackedStringArray("minnMaxLogoStudioDoor", "minnMaxLogoControlRoom")]
+[node name="apartment" type="Node3D" unique_id=802607312 node_paths=PackedStringArray("minnMaxLogoStudioDoor", "minnMaxLogoLeBooBooPreinterview", "minnMaxLogoControlRoom", "minnMaxLogoVoiceMail", "minnMaxLogoControlRoom2")]
 script = ExtResource("1_x34op")
 minnMaxLogoStudioDoor = NodePath("minnMaxLogo_StudioDoor")
+minnMaxLogoLeBooBooPreinterview = NodePath("minnMaxLogo_LeBooBooPreInterview")
 minnMaxLogoControlRoom = NodePath("minnMaxLogo_ControlRoom")
+minnMaxLogoVoiceMail = NodePath("minnMaxLogo_VoiceMail")
+minnMaxLogoControlRoom2 = NodePath("minnMaxLogo_ControlRoom2")
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=1492951469]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.027121544, 0)
@@ -2581,10 +2584,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5463722, 1.4727757, 5.53509
 prompt = "talk to LeBooBoo"
 dialogFile = "res://dialog/script/apartment/lebooboo_pre_interview.json"
 
+[node name="minnMaxLogo_VoiceMail" parent="." unique_id=1277532464 instance=ExtResource("6_ludmo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52782273, 1.4727757, 4.8904934)
+prompt = "listen to voicemail"
+dialogFile = "res://dialog/script/apartment/example.json"
+startHidden = true
+
 [node name="minnMaxLogo_ControlRoom" parent="." unique_id=1565072404 instance=ExtResource("6_ludmo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.796251, 1.558917, -0.81987095)
 prompt = "start the interview"
 dialogFile = "res://dialog/script/apartment/interview.json"
+startHidden = true
+
+[node name="minnMaxLogo_ControlRoom2" parent="." unique_id=1207239834 instance=ExtResource("6_ludmo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6400418, 1.558917, -0.19180158)
+prompt = "stream The Department of Parasocial Activity "
+dialogFile = "res://dialog/script/apartment/control_room_start_game_stream.json"
 startHidden = true
 
 [node name="Armature_Richard" type="Node3D" parent="." unique_id=1540700419]

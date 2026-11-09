@@ -2949,9 +2949,8 @@ _data = {
 &"float_down": SubResource("Animation_dhljn")
 }
 
-[node name="underwater" type="Node3D" unique_id=1915067228 node_paths=PackedStringArray("agentAnimationPlayer")]
+[node name="underwater" type="Node3D" unique_id=1915067228]
 script = ExtResource("1_n3fmg")
-agentAnimationPlayer = NodePath("underwater/AnimationPlayer")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=791467384]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4290855, 3.0353518)

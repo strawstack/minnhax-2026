@@ -26,7 +26,17 @@ func _ready() -> void:
 	deactive = $Arrows/Deactive
 	deactiveSecond = $Arrows/DeactiveSecond
 	startAnimate()
-	set_visible(not startHidden)
+	if startHidden:
+		set_visible(false)
+		$Area3D.set_collision_layer_value(3, false)
+
+func hideDeactivate():
+	set_visible(false)
+	$Area3D.set_collision_layer_value(3, false)
+
+func reveal():
+	set_visible(true)
+	$Area3D.set_collision_layer_value(3, true)
 
 func showInteract():
 	if not eventTriggered and visible:

@@ -9,6 +9,7 @@ const scenes = {
 	"splash": preload("res://scene/splash.tscn"),
 	"mainMenu": preload("res://scene/main_menu.tscn"),
 	"apartment": preload("res://scene/apartment.tscn"),
+	"underwater": preload("res://scene/underwater.tscn"),
 }
 
 # commandLookup populated by Commands child node 
@@ -19,6 +20,9 @@ var sceneCommandLookup = {}
 var animationPlayer
 var dialogInProgress = false # Set when dialog is in progress
 var playerCanMove = false
+
+# Controls if player looks at watch when underwater scene plays
+var lookWatchUnderwater = false
 
 # CharacterName to mouthNode lookup
 var mouthLookup = {}
@@ -115,6 +119,8 @@ func triggerCommand(command: String):
 		commandLookup[command].call()
 	elif command in sceneCommandLookup:
 		sceneCommandLookup[command].call()
+	else:
+		print("TODO: Command not found: " + command)
 
 func setMouth(name: String):
 	for characterName in mouthLookup:
@@ -143,3 +149,9 @@ func _input(event):
 	# Free mouse on esc
 	if event.is_action_pressed("esc"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+
+# Called by interacting with Control Room 2 prompt after morning voice mail
+func startGameStream():
+	mouthLookup.clear()
+	lookWatchUnderwater = true
+	loadScene("underwater")
