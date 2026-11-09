@@ -1357,7 +1357,7 @@ shadow_mesh = SubResource("ArrayMesh_ohvwu")
 script = ExtResource("1_2ca0g")
 
 [node name="Mouth" parent="." unique_id=1139275092 instance=ExtResource("1_wej5l")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.5010447, 0.97882885, 0)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.5159112, 0.97882885, 0)
 characterName = "LeBooBoo"
 hideTeeth = true
 

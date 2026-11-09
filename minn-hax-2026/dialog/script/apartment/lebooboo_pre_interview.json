@@ -4,8 +4,28 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
-				"text": "Hello"
+				"voice": "apartment/interview/lb_richard_and_yu_working_hard",
+				"text": "Hey, nice to meet ya. I’m LeBooBoo. Richard and Yu have been working real hard on the game. Trust me, I’ve been living here the whole month…"
+			},
+		]
+	},
+	{
+		"name": "LeBooBoo",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "apartment/interview/lb_rich_let_me_crash",
+				"text": "Rich let me crash in a spare room. Some guys are filming a new show at my haunted cabin. They said I could stay during filming, but they broke out the whole ghost radar, and it just got a little awkward. But hey! You should visit some time. Awesome tube run right out back - anyways…"
+			},
+		]
+	},
+	{
+		"name": "LeBooBoo",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "apartment/interview/lb_get_into_costume",
+				"text": "Richard and Yu are getting into costume, and they will be down soon. I’ll have you head into the control room, and take us live when you’re ready."
 			},
 		]
 	},

@@ -72,7 +72,10 @@ func hideInteract():
 	$CanvasLayer_Interact/PanelContainer.set_visible(false)
 
 func registerMouth(characterName, mouthNode):
-	mouthLookup[characterName] = mouthNode
+	if characterName in mouthLookup:
+		mouthLookup[characterName].push_back(mouthNode)
+	else:
+		mouthLookup[characterName] = [mouthNode]
 
 func playVoice(voiceFile: String):
 	if voiceFile != "":
@@ -115,7 +118,8 @@ func triggerCommand(command: String):
 
 func setMouth(name: String):
 	for characterName in mouthLookup:
-		mouthLookup[characterName].setIsSpeaking(characterName == name)
+		for mouth in mouthLookup[characterName]:
+			mouth.setIsSpeaking(characterName == name)
 
 # Called when a dialog ends indicating a new one can be started
 func dialogEnds():

@@ -42,11 +42,11 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/lb_lb_here_interview_start",
 				"text": "Hey, LeBooBoo here. Today on LeBooMax our planned interview with a vampire had to be cancelled last minute due to some filming issues. Turns out those guys don’t exactly show up on camera all that much…"
 			},
 			{
-				"voice": "",
+				"voice": "apartment/interview/instead_check_this_out",
 				"text": "But instead, check this out, we’ve got an interview for you with two voice actors from the upcoming MinnHax game “The Department of Parasocial Activity”. They have been working all month, so let’s kick things off with some introductions. First up, we have what looks like a horse wrapped in dollar bills?"
 			}			
 		]
@@ -60,7 +60,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/money_me_question",
 				"text": "Me?"
 			}	
 		]
@@ -74,7 +74,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/lb_you",
 				"text": "You."
 			}
 		]
@@ -88,8 +88,8 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
-				"text": "Hi, my name is Yu. In the game, I do the voice acting for a character called “MoneyPony”. She helps Agent Forty-JeffM complete his mission to stop LeBooBoo, and I have a few lines as another character called TCB."
+				"voice": "apartment/interview/money_yu_voice_money_pony_and_tcb",
+				"text": "Hi, my name is Yu. In the game, I do the voice acting for a character called 'MoneyPony'. She helps Agent Forty-JeffM complete his mission to stop LeBooBoo, and I have a few lines as another character called TCB."
 			}	
 		]
 	},
@@ -102,7 +102,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/lb_great_to_meet_you_yu",
 				"text": "Great to meet you Yu. I should say - for the audience - I also play a role in the game as a rapper called LeBooBoo - a sort of “elusive target” if you will. I’ll get back to you, but next, let’s hear from the mysterious man with a very round bald head, and - is that a QR code?"
 			}
 		]
@@ -116,7 +116,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/agent_this_qr_code",
 				"text": "Hi! Ya, this QR code is just my character's name “Agent Forty-JeffM”. My real life name is Richard, and I’m the developer for the game, and the voice actor for Agent Forty-JeffM, and myself I guess, and you."
 			}
 		]
@@ -130,7 +130,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/lb_and_yu_question",
 				"text": "and Yu?"
 			}
 		]
@@ -140,7 +140,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/agent_you_lb_i_your_voice",
 				"text": "No you! LeBooBoo, I’m your voice actor."
 			}
 		]
@@ -154,7 +154,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/lb_well_i_dont_know",
 				"text": "Em, well I don’t know about that… but anyways question for Yu."
 			}
 		]
@@ -168,7 +168,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/money_my_english_name",
 				"text": "My English name is Diana. Maybe that’s easier?"
 			}	
 		]
@@ -182,7 +182,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/lb_diana_what_made_you_want",
 				"text": "Diana - what made you want to take part in this project. This game."
 			}
 		]
@@ -196,7 +196,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/money_we_were_walking",
 				"text": "Oh ah, Richard and I were walking at the start of Nov, and he was planning to have voice acting in the game. He asked me if I wanted to voice a character called TCB, and - "
 			}	
 		]
@@ -210,7 +210,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/lb_tcb_does_that_stand",
 				"text": "TCB? Does that stand for something?"
 			}
 		]
@@ -220,7 +220,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/money_tcb_stands_for",
 				"text": "TCB stands for “Tough Chubby Boy” - haha. It’s a character we joke about sometimes. Richard said we could put a Tough Chubby Boy in the game. Then, we decided it would be fun if I voiced MonyPony as well. So, I was excited to try."
 			}	
 		]
@@ -230,7 +230,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/lb_you_never_voice_acted",
 				"text": "You’ve never voice acted before?"
 			}
 		]
@@ -244,7 +244,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/money_no_just_trying_it",
 				"text": "No, just trying it for fun mostly."
 			}	
 		]
@@ -254,7 +254,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/lb_awesome_cant_wait_to _meet_tcb",
 				"text": "Awesome! Well, I can’t wait to encounter TCB in the game."
 			}
 		]
@@ -264,7 +264,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/money_ha_sounds_good",
 				"text": "Haha - sounds good."
 			}	
 		]
@@ -278,7 +278,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/lb_question_richard",
 				"text": "Question for Richard - the game has parasocial in its name, and, from what I understand, deals with some parasocial themes as well. As the developer, what made you decide to take things in that direction?"
 			}
 		]
@@ -292,7 +292,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/agent_good_question_i_feel",
 				"text": "Good question, I feel the idea of 'being parasocial' has been getting more attention recently. Like, there was a panel about it at PAX West, which I attended…"
 			}
 		]
@@ -302,7 +302,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/agent_nearly_everyone",
 				"text": "… also, in general, I think nearly everyone today is making some form of content. The line between creator and audience is getting blurred. So, I personally have been reflecting more on my relationship with content."
 			}
 		]
@@ -312,7 +312,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/agent_when_i_make_games",
 				"text": "When I make games, I end up drawing from whatever I’m thinking about, so that’s how these themes make it into the game."
 			}
 		]
@@ -326,7 +326,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/agent_this_community",
 				"text": "Also, I want to say I think this community is healthy in my experience, there’s a good level communication, so I feel comfortable putting parasocial stuff in my game -"
 			}
 		]
@@ -336,7 +336,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/lb_knowing_that_it_wont",
 				"text": "- knowing that it won’t be taken the wrong way?"
 			}
 		]
@@ -346,7 +346,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/agent_i_think_understanding",
 				"text": "Yeah, I think there’s an understanding that what I make is for my own personal fun, and I’m not expecting anything in return. I think it’s important for art sometimes to 'test the line' so to speak to allow us all to learn more about where the line is or should be since 'parasociality' is this new thing for society."
 			}
 		]
@@ -360,7 +360,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/agent_thank_for_that_answer",
 				"text": "Thank you for that answer. And that just about does it for our interview. Join me online tomorrow morning! I will be streaming 'The Department of Parasocial Activity'. And Yu - Diana - I know you watch this show: LeBooMax, so would you like to take us out?"
 			}
 		]
@@ -374,7 +374,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/money_be_bood_get_scared",
 				"text": "Sure… Be Boo’d, get scared… and bye suckers! "
 			}	
 		]
@@ -384,7 +384,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "",
+				"voice": "apartment/interview/lb_see_ya_tomorrow",
 				"text": "haha - See ya tomorrow folks!"
 			}
 		]
