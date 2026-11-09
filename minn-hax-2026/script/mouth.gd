@@ -2,6 +2,7 @@ extends Node3D
 
 @export var characterName: String
 @export var teethOveride: Texture2D
+@export var hideTeeth: bool
 
 # Const
 const MAX_MOUTH_SCALE = 0.15
@@ -38,7 +39,7 @@ func _process(_delta: float) -> void:
 		# Show hide teeth
 		var showTeeth = magnitude <= TEETH_CUTOFF
 		space.set_visible(not showTeeth)
-		teeth.set_visible(showTeeth)
+		teeth.set_visible(showTeeth and not hideTeeth)
 		
 		# Scale mouth space
 		var scale = min(MAX_MOUTH_SCALE, magnitude * MAX_MOUTH_SCALE + MOUTH_SIZE_BOOST)
@@ -46,4 +47,4 @@ func _process(_delta: float) -> void:
 		space.set_scale(Vector3(lerp_scale, lerp_scale, 1))
 	else:
 		space.set_visible(false)
-		teeth.set_visible(true)
+		teeth.set_visible(not hideTeeth)

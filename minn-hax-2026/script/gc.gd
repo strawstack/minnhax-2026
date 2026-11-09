@@ -33,12 +33,16 @@ func _ready() -> void:
 	showCrossHairs(false)
 	hideObjective()
 	if DEBUG:
-		$CanvasLayer_Fade/fadeRect.set_visible(false)
+		#$CanvasLayer_Fade/fadeRect.set_visible(false)
+		animationPlayer.play("fadeIn")
 		loadScene("apartment")
 	else:
 		$CanvasLayer_Fade.set_visible(true) # Just to make sure
 		loadScene("logo") # Calls "logoSceneEnds" on completion
 		await fadeIn()
+
+func hideDialog():
+	$CanvasLayer_Dialog.set_visible(false)
 
 func showCrossHairs(value):
 	$CanvasLayer_Interact/TextureRect.set_visible(value)

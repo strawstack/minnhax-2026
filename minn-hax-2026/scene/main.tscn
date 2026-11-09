@@ -78,8 +78,9 @@ _data = {
 script = ExtResource("1_sugp2")
 commands = NodePath("Commands")
 
-[node name="Commands" type="Node3D" parent="." unique_id=700984858]
+[node name="Commands" type="Node3D" parent="." unique_id=700984858 node_paths=PackedStringArray("canvasLayerDialog")]
 script = ExtResource("2_4j5ol")
+canvasLayerDialog = NodePath("../CanvasLayer_Dialog")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=37290506]
 environment = SubResource("Environment_jd5n0")
@@ -203,7 +204,6 @@ autowrap_mode = 2
 autowrap_trim_flags = 64
 
 [node name="CanvasLayer_Fade" type="CanvasLayer" parent="." unique_id=1994350165]
-visible = false
 
 [node name="fadeRect" type="ColorRect" parent="CanvasLayer_Fade" unique_id=173595337]
 offset_right = 1168.0

@@ -3,7 +3,10 @@
 [ext_resource type="Script" uid="uid://gg8i1ry5kgdv" path="res://script/movement_apartment.gd" id="1_sedwy"]
 [ext_resource type="Script" uid="uid://dkclpj7uqg38h" path="res://script/apartment_scene_root.gd" id="1_x34op"]
 [ext_resource type="PackedScene" uid="uid://bem3dcsvo1kua" path="res://scene/underwater.tscn" id="3_mb15i"]
+[ext_resource type="PackedScene" uid="uid://lor47dxqn02d" path="res://scene/le_boo_boo.tscn" id="3_py6cp"]
+[ext_resource type="PackedScene" uid="uid://bngddr2fwdmes" path="res://scene/money_pony.tscn" id="4_6dlxa"]
 [ext_resource type="PackedScene" uid="uid://bbewn3tgvwx1t" path="res://scene/apartment_model.tscn" id="5_gsw74"]
+[ext_resource type="PackedScene" uid="uid://bgofq64avnwne" path="res://scene/forty_sitting.tscn" id="5_qrscm"]
 [ext_resource type="LightmapGIData" uid="uid://b5plorwwoxo17" path="res://bake/apartment.lmbake" id="5_w0ngi"]
 [ext_resource type="PackedScene" uid="uid://bg5ixunmm5oq2" path="res://scene/mouth.tscn" id="6_gsw74"]
 [ext_resource type="PackedScene" uid="uid://7w7qj04mf06d" path="res://scene/minn_max_logo.tscn" id="6_ludmo"]
@@ -2076,13 +2079,26 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_s0qdo")
 
-[node name="apartment" type="Node3D" unique_id=802607312 node_paths=PackedStringArray("minnMaxLogoStudioDoor")]
+[node name="apartment" type="Node3D" unique_id=802607312 node_paths=PackedStringArray("minnMaxLogoStudioDoor", "minnMaxLogoControlRoom")]
 script = ExtResource("1_x34op")
 minnMaxLogoStudioDoor = NodePath("minnMaxLogo_StudioDoor")
+minnMaxLogoControlRoom = NodePath("minnMaxLogo_ControlRoom")
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=1492951469]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.027121544, 0)
 light_data = ExtResource("5_w0ngi")
+
+[node name="LeBooBoo" parent="." unique_id=554539940 instance=ExtResource("3_py6cp")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.7020364, 0.051057935, 7.064478)
+
+[node name="LeBooBooInterview" parent="." unique_id=824598071 instance=ExtResource("3_py6cp")]
+transform = Transform3D(-0.9659258, 0, 0.25881898, 0, 1, 0, -0.25881898, 0, -0.9659258, 3.071698, 0.4561808, 6.51018)
+noFloat = true
+
+[node name="MoneyPony" parent="." unique_id=339477580 instance=ExtResource("4_6dlxa")]
+transform = Transform3D(0.49999997, 0, 0.86602545, 0, 1, 0, -0.86602545, 0, 0.49999997, -0.8688208, 0, 8.128597)
+
+[node name="fortySitting" parent="." unique_id=2076333072 instance=ExtResource("5_qrscm")]
 
 [node name="Cameras" type="Node3D" parent="." unique_id=1631660044]
 
@@ -2091,6 +2107,17 @@ transform = Transform3D(0.55556834, -0.30810782, 0.7722781, 0, 0.9288095, 0.3705
 
 [node name="cameraB" type="Camera3D" parent="Cameras" unique_id=1705382921]
 transform = Transform3D(-0.97391486, 0.01531693, -0.22639623, 0, 0.9977192, 0.067501105, 0.22691377, 0.06574033, -0.9716936, -2.1288695, 8.441346, -18.399906)
+
+[node name="Interview" type="Node3D" parent="Cameras" unique_id=538688751]
+
+[node name="CameraA" type="Camera3D" parent="Cameras/Interview" unique_id=99009425]
+transform = Transform3D(-0.8987939, 0.019470327, -0.43793896, 0, 0.9990132, 0.044415124, 0.43837154, 0.03992004, -0.89790696, 1.0180042, 1.9511489, 5.166945)
+
+[node name="CameraB" type="Camera3D" parent="Cameras/Interview" unique_id=403433360]
+transform = Transform3D(-0.961263, -0.01944617, 0.27494588, 0, 0.99750817, 0.07055102, -0.2756327, 0.06781809, -0.95886767, -0.6465192, 1.8942056, 5.8088875)
+
+[node name="CameraC" type="Camera3D" parent="Cameras/Interview" unique_id=1883676188]
+transform = Transform3D(-0.99991435, -0.0014711326, 0.013004038, 0, 0.9936617, 0.11241187, -0.013086987, 0.112402245, -0.9935766, 0.33448258, 2.0044878, 3.7118778)
 
 [node name="SubViewport" type="SubViewport" parent="." unique_id=185564117]
 own_world_3d = true
@@ -2122,6 +2149,9 @@ collide_with_bodies = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1010204814]
 shape = SubResource("CapsuleShape3D_jd5n0")
+
+[node name="morningPlayerStart" type="Node3D" parent="." unique_id=1608250254]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1.05, 0)
 
 [node name="apartment_shadow" type="Node3D" parent="." unique_id=1237425037]
 
@@ -2544,6 +2574,17 @@ dialogFile = "res://dialog/script/apartment/example.json"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.480101, 8.021435, -11.079866)
 prompt = "open door to studio"
 dialogFile = "res://dialog/script/apartment/studio_door.json"
+startHidden = true
+
+[node name="minnMaxLogo_LeBooBooPreInterview" parent="." unique_id=530809989 instance=ExtResource("6_ludmo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5463722, 1.4727757, 5.535099)
+prompt = "talk to LeBooBoo"
+dialogFile = "res://dialog/script/apartment/lebooboo_pre_interview.json"
+
+[node name="minnMaxLogo_ControlRoom" parent="." unique_id=1565072404 instance=ExtResource("6_ludmo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.796251, 1.558917, -0.81987095)
+prompt = "start the interview"
+dialogFile = "res://dialog/script/apartment/interview.json"
 startHidden = true
 
 [node name="Armature_Richard" type="Node3D" parent="." unique_id=1540700419]

@@ -11,7 +11,7 @@ func _ready() -> void:
 	if gc.DEBUG:
 		gc.setPlayerCanMove(true)
 		gc.showCrossHairs(true)
-		gc.playDialogFile("res://dialog/script/apartment/apartment_intro.json")
+		#gc.playDialogFile("res://dialog/script/apartment/apartment_intro.json")
 	else:
 		animationPlayer = $AnimationPlayer
 		startScene()

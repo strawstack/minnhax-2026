@@ -1,0 +1,16 @@
+[
+	{
+		"name": "LeBooBoo",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "Hello"
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "revealControlRoomPrompt"
+	},
+]

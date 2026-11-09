@@ -1,5 +1,7 @@
 extends Node3D
 
+@export var canvasLayerDialog: CanvasLayer
+
 var gc
 
 func _ready() -> void:
@@ -8,8 +10,20 @@ func _ready() -> void:
 		"freezePlayer": freezePlayer,
 		"unfreezePlayer": unfreezePlayer,
 		"objectiveGoSeeComputer": objectiveGoSeeComputer,
-		"objectiveStudioDoor": objectiveStudioDoor
+		"objectiveStudioDoor": objectiveStudioDoor,
+		"hideDialog": hideDialog,
+		"showDialog": showDialog,
+		"fadeOut": fadeOut,
+		"fadeIn": fadeIn,
+		"hideCrossHairs": hideCrossHairs,
+		"showCrossHairs": showCrossHairs
 	}
+
+func showCrossHairs():
+	gc.showCrossHairs(true)
+
+func hideCrossHairs():
+	gc.showCrossHairs(false)
 
 func freezePlayer():
 	gc.playerCanMove = false
@@ -22,3 +36,17 @@ func objectiveGoSeeComputer():
 
 func objectiveStudioDoor():
 	gc.setObjective("Head downstairs to the studio in the basement.")
+
+func hideDialog():
+	canvasLayerDialog.set_visible(false)
+
+func showDialog():
+	canvasLayerDialog.set_visible(true) 
+
+func fadeOut():
+	await gc.fadeOut()
+	canvasLayerDialog.endAwait()
+
+func fadeIn():
+	await gc.fadeIn()
+	canvasLayerDialog.endAwait()

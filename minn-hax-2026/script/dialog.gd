@@ -11,6 +11,7 @@ const dialogState = {
 	"LOAD_LINE": 1,
 	"ANIMATING_LINE": 2,
 	"WAITING_FOR_INPUT": 3,
+	"AWAIT_IN_PROGRESS": 4,
 }
 var state = dialogState.NOT_PLAYING
 
@@ -20,6 +21,7 @@ var activeLine = null
 var messageIndex = 0
 var lineIndex = 0
 var charIndex = 0
+var await_in_progress = false
 
 var label_Message
 
@@ -83,16 +85,26 @@ func dialogOver():
 	showDialog(false)
 	gc.dialogEnds()
 
+func endAwait():
+	await_in_progress = false
+
 func _process(delta: float) -> void:
 	toggleEnterPrompt(state == dialogState.WAITING_FOR_INPUT)
+	if state == dialogState.AWAIT_IN_PROGRESS:
+		if not await_in_progress:
+			state = dialogState.LOAD_LINE
 
 	if state == dialogState.LOAD_LINE:
+		if messageIndex >= activeDialog.size():
+			dialogOver()
+			return
 		var message = activeDialog[messageIndex]
 		if message["name"] == "Command":
 			gc.triggerCommand(message["command"])
+			if "await" in message:
+				await_in_progress = true
+				state = dialogState.AWAIT_IN_PROGRESS
 			messageIndex += 1
-			if messageIndex >= activeDialog.size():
-				dialogOver()
 		else:
 			setAvatar(message)
 			setMouth(message)
@@ -110,10 +122,7 @@ func _process(delta: float) -> void:
 			if lineIndex >= activeDialog[messageIndex]["lines"].size():
 				lineIndex = 0
 				messageIndex += 1
-			if messageIndex >= activeDialog.size():
-				dialogOver()
-			else:
-				state = dialogState.LOAD_LINE
+			state = dialogState.LOAD_LINE
 
 	if state == dialogState.ANIMATING_LINE:
 		if Input.is_action_just_pressed("enter"):
