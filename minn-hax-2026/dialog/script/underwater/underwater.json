@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "PLACEHOLDER: I was the fortyith jeffm clone..."
+			},
+		]
+	},
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "PLACEHOLDER: I remember the crash like I was playing through it in realtime in a triple A video game with raytracing..."
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "sceneHelicopter"
+	}
+]

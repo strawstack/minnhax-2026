@@ -17,7 +17,9 @@ func _ready() -> void:
 		"fadeIn": fadeIn,
 		"hideCrossHairs": hideCrossHairs,
 		"showCrossHairs": showCrossHairs,
-		"startGameStream": startGameStream
+		"startGameStream": startGameStream,
+		"sceneHelicopter": sceneHelicopter,
+		"loadBeachScene": loadBeachScene
 	}
 
 func showCrossHairs():
@@ -54,3 +56,9 @@ func fadeIn():
 
 func startGameStream():
 	gc.startGameStream()
+
+func sceneHelicopter():
+	gc.sceneHelicopter()
+
+func loadBeachScene():
+	gc.loadBeachScene()

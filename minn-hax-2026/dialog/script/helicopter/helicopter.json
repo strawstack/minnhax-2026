@@ -1,0 +1,35 @@
+[
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "PLACEHOLDER: My job back then was to sit at the door and play Switch..."
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "cameraSwitchScreen"
+	},
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "PLACEHOLDER: Oh uh, I though I charged it before we left..."
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "triggerExplosionSound",
+		"await": true
+	},
+	{
+		"name": "Command",
+		"command": "loadBeachScene"
+	},
+]

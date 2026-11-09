@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dck1tvpqv80il"]
+
+[ext_resource type="Script" uid="uid://b7h1fiev73ecj" path="res://script/beach.gd" id="1_dbrq8"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_jd5n0"]
+
+[node name="beach" type="Node3D" unique_id=343819480]
+script = ExtResource("1_dbrq8")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=37029515]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=341027852]
+transform = Transform3D(1, 0, 0, 0, -0.31863245, -0.94787836, 0, 0.94787836, -0.31863245, 0, 0, -3.5449219)
+mesh = SubResource("CylinderMesh_jd5n0")

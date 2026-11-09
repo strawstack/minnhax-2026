@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://nj07yhm5gg3o"]
+
+[ext_resource type="Script" uid="uid://sbwiguswjtsq" path="res://script/helicopter.gd" id="1_r4yxt"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_jd5n0"]
+
+[node name="helicopter" type="Node3D" unique_id=52106417]
+script = ExtResource("1_r4yxt")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=122635715]
+
+[node name="Camera3D_SwitchScreen" type="Camera3D" parent="." unique_id=1894373373]
+transform = Transform3D(-0.999762, -0.010325659, 0.019216971, 0, 0.8808906, 0.47331995, -0.02181539, 0.4732073, -0.880681, -0.017605303, 0.8343698, -4.679149)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=512158121]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.3072608)
+mesh = SubResource("BoxMesh_jd5n0")

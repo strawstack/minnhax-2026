@@ -21,7 +21,6 @@ var activeLine = null
 var messageIndex = 0
 var lineIndex = 0
 var charIndex = 0
-var await_in_progress = false
 
 var label_Message
 
@@ -86,14 +85,12 @@ func dialogOver():
 	gc.dialogEnds()
 
 func endAwait():
-	await_in_progress = false
+	state = dialogState.LOAD_LINE
 
 func _process(delta: float) -> void:
 	toggleEnterPrompt(state == dialogState.WAITING_FOR_INPUT)
 	if state == dialogState.AWAIT_IN_PROGRESS:
-		if not await_in_progress:
-			state = dialogState.LOAD_LINE
-
+		return # State changed by 'endAwait' above
 	if state == dialogState.LOAD_LINE:
 		if messageIndex >= activeDialog.size():
 			dialogOver()
@@ -102,7 +99,6 @@ func _process(delta: float) -> void:
 		if message["name"] == "Command":
 			gc.triggerCommand(message["command"])
 			if "await" in message:
-				await_in_progress = true
 				state = dialogState.AWAIT_IN_PROGRESS
 			messageIndex += 1
 		else:

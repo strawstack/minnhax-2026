@@ -10,6 +10,8 @@ const scenes = {
 	"mainMenu": preload("res://scene/main_menu.tscn"),
 	"apartment": preload("res://scene/apartment.tscn"),
 	"underwater": preload("res://scene/underwater.tscn"),
+	"helicopter": preload("res://scene/helicopter.tscn"),
+	"beach": preload("res://scene/beach.tscn"),
 }
 
 # commandLookup populated by Commands child node 
@@ -59,6 +61,9 @@ func setObjective(msg: String):
 
 func hideObjective():
 	$CanvasLayer_Objective.set_visible(false)
+
+func endAwaitDialog():
+	$CanvasLayer_Dialog.endAwait()
 
 func fadeIn():
 	animationPlayer.play("fadeIn")
@@ -152,6 +157,17 @@ func _input(event):
 
 # Called by interacting with Control Room 2 prompt after morning voice mail
 func startGameStream():
+	await fadeOut()
 	mouthLookup.clear()
 	lookWatchUnderwater = true
+	showCrossHairs(false)
+	sceneCommandLookup.clear()
 	loadScene("underwater")
+
+func sceneHelicopter():
+	await fadeOut()
+	loadScene("helicopter")
+
+func loadBeachScene():
+	await fadeOut()
+	loadScene("beach")

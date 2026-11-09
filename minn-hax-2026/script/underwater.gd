@@ -18,6 +18,7 @@ func _ready() -> void:
 		startScene()
 
 func startScene():
+	await gc.fadeIn()
 	animationPlayer.play("fish_swim")
 	await animationPlayer.animation_finished
 	animationPlayer.play("float_down")
@@ -28,7 +29,7 @@ func startScene():
 		await agentAnimationPlayer.animation_finished
 	await get_tree().create_timer(1.0).timeout
 	if gc.lookWatchUnderwater:
-		gc.playDialogFile("res://dialog/script/helicopter/game_intro.json")
+		gc.playDialogFile("res://dialog/script/underwater/underwater.json")
 	else:
 		gc.setPlayerCanMove(true)
 		gc.showCrossHairs(true)
