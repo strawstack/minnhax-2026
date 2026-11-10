@@ -3,6 +3,7 @@ extends Node3D
 const DEBUG = true
 
 @export var commands: Node3D
+@export var bulletSmoke: Node3D
 
 const scenes = {
 	"logo": preload("res://scene/logo.tscn"),
@@ -152,6 +153,9 @@ func _input(event):
 	# Free mouse on esc
 	if event.is_action_pressed("esc"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+
+func draw_thick_line(from: Vector3, to: Vector3):
+	bulletSmoke.draw_thick_line(from, to)
 
 # Called by interacting with Control Room 2 prompt after morning voice mail
 func startGameStream():

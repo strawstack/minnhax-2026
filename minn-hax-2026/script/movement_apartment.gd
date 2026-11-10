@@ -47,10 +47,10 @@ func _input(event):
 
 		camera.rotation_degrees.x = new_pitch
 
-func _process(_delta: float) -> void:
+func _physics_process(delta):
 	if not gc.playerCanMove:
 		return
- 
+
 	rayCast3D.force_raycast_update()
 
 	# Check for event Area2D
@@ -64,10 +64,6 @@ func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("e_key"):
 		if not gc.dialogInProgress and currentEvent:
 			currentEvent.startEvent()
-
-func _physics_process(delta):
-	if not gc.playerCanMove:
-		return 
 
 	# Set player direction to Zero 
 	var direction = Vector3.ZERO

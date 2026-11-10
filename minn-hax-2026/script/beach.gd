@@ -7,7 +7,6 @@ func _ready() -> void:
 	startScene()
 
 func startScene():
-	gc.showCrossHairs(true)
 	gc.playerCanMove = true
 	await gc.fadeIn()
 

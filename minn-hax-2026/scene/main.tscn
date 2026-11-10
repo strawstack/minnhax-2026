@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://cw5p35xqsvu2j" path="res://script/dialog.gd" id="2_v0l8b"]
 [ext_resource type="AudioStream" uid="uid://kd2gfe4tc611" path="res://dialog/vocal/test_voice.mp3" id="3_wp4xf"]
 [ext_resource type="Script" uid="uid://w2owemapqhmn" path="res://script/canvas_layer_objective.gd" id="5_p1hux"]
+[ext_resource type="Script" uid="uid://cakfngxb6o8an" path="res://scene/bullet_smoke.gd" id="8_of57s"]
 
 [sub_resource type="Environment" id="Environment_jd5n0"]
 
@@ -74,9 +75,28 @@ _data = {
 &"fadeOut": SubResource("Animation_brvut")
 }
 
-[node name="main" type="Node3D" unique_id=1687076067 node_paths=PackedStringArray("commands")]
+[sub_resource type="CylinderMesh" id="CylinderMesh_of57s"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b5f6u"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.78431374)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_tqoya"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k65ib"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.78431374)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_wscrc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mswub"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.78431374)
+
+[node name="main" type="Node3D" unique_id=1687076067 node_paths=PackedStringArray("commands", "bulletSmoke")]
 script = ExtResource("1_sugp2")
 commands = NodePath("Commands")
+bulletSmoke = NodePath("bulletSmoke")
 
 [node name="Commands" type="Node3D" parent="." unique_id=700984858 node_paths=PackedStringArray("canvasLayerDialog")]
 script = ExtResource("2_4j5ol")
@@ -220,3 +240,21 @@ stream = ExtResource("3_wp4xf")
 bus = &"Voice"
 
 [node name="Scene" type="Node3D" parent="." unique_id=1725802773]
+
+[node name="bulletSmoke" type="Node3D" parent="." unique_id=1073831074]
+script = ExtResource("8_of57s")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="bulletSmoke" unique_id=1054126362]
+visible = false
+mesh = SubResource("CylinderMesh_of57s")
+surface_material_override/0 = SubResource("StandardMaterial3D_b5f6u")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="bulletSmoke" unique_id=682701287]
+visible = false
+mesh = SubResource("CylinderMesh_tqoya")
+surface_material_override/0 = SubResource("StandardMaterial3D_k65ib")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="bulletSmoke" unique_id=397907378]
+visible = false
+mesh = SubResource("CylinderMesh_wscrc")
+surface_material_override/0 = SubResource("StandardMaterial3D_mswub")

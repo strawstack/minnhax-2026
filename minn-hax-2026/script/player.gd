@@ -4,9 +4,16 @@ extends Node3D
 @export var skateBoardBack: MeshInstance3D
 @export var skateBoardFloor: MeshInstance3D
 @export var noSkating: bool
+@export var shootingAllowed: bool
 @export var hideBoard: bool
+@export var gunArm: Node3D
+@export var rayCast3D: RayCast3D
+@export var bulletStart: Node3D
 
 var useWalkMovement = true
+var inShootingMode = false
+
+var currentEvent
 
 var mouse_sens = 0.3
 
@@ -20,6 +27,8 @@ var rigidBody3D
 var cameraY
 var cameraX
 
+var startCameraPosition: Vector3
+
 var gc
 
 func _ready() -> void:
@@ -29,12 +38,15 @@ func _ready() -> void:
 	rigidBody3D = $RigidBody3D
 	cameraY = $CameraY
 	cameraX = $CameraY/CameraX
+	startCameraPosition = $CameraY/CameraX/Camera3D.get_position()
 	
 	if hideBoard:
 		skateBoardBack.set_visible(false)
 		skateBoardFloor.set_visible(false)
 	
 	setMovement(useWalkMovement)
+	
+	shootingMode(false)
 	
 	# Sync character movement bodies with playerStart
 	if playerStart:
@@ -57,12 +69,41 @@ func _input(event):
 
 		cameraX.rotation_degrees.x = new_pitch
 
+func shootingMode(value: bool):
+	inShootingMode = value
+	gunArm.set_visible(value)
+	agentFortyJeffM.hideHead(value)
+	gc.showCrossHairs(value)
+	if value:
+		$CameraY/CameraX/Camera3D.set_position(Vector3(0, 0.75, 0))
+	else:
+		$CameraY/CameraX/Camera3D.set_position(startCameraPosition)
+
+func _physics_process(delta: float) -> void:
+	if inShootingMode and Input.is_action_just_pressed("left_mouse"):
+		rayCast3D.force_raycast_update()
+		if rayCast3D.is_colliding():
+			var from = bulletStart.get_global_position()
+			var to = rayCast3D.get_collision_point()
+			gc.draw_thick_line(from, to)
+
 func _process(delta: float) -> void:
 	if not gc.playerCanMove:
 		return
 
+	if Input.is_action_just_pressed("right_mouse") and shootingAllowed:
+		shootingMode(true)
+	
+	if Input.is_action_just_released("right_mouse"):
+		shootingMode(false)
+
 	if Input.is_action_just_pressed("f_key") and not noSkating:
 		setMovement(not useWalkMovement)
+	
+	if Input.is_action_just_pressed("e_key"):
+		if not gc.dialogInProgress and currentEvent:
+			currentEvent.startEvent()
+
 	if useWalkMovement:
 		var pos = characterBody3D.get_position()
 		agentFortyJeffM.set_position(pos)
@@ -91,3 +132,12 @@ func setMovement(walk: bool):
 
 	characterBody3D.toggleActive(useWalkMovement)
 	rigidBody3D.toggleActive(not useWalkMovement)
+
+func _on_area_3d_area_entered(area: Area3D) -> void:
+	var event = area.get_parent()
+	if event:
+		currentEvent = event
+		event.showInteract()
+
+func _on_area_3d_area_exited(area: Area3D) -> void:
+	gc.hideInteract()
