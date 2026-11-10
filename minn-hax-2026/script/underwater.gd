@@ -8,6 +8,9 @@ var startIsReady = false
 
 func _ready() -> void: 
 	gc = get_tree().current_scene
+	gc.sceneCommandLookup = {
+		"continueScene": continueScene
+	}
 	agentAnimationPlayer = $underwater/AnimationPlayer
 	if gc.DEBUG:
 		if gc.lookWatchUnderwater:
@@ -15,12 +18,20 @@ func _ready() -> void:
 			startScene()
 	else:
 		animationPlayer = $AnimationPlayer
-		startScene()
+		if gc.lookWatchUnderwater:
+			startScene()
+		else:
+			continueScene()
 
 func startScene():
 	await gc.fadeIn()
-	animationPlayer.play("fish_swim")
-	await animationPlayer.animation_finished
+	gc.playDialogFile("res://dialog/script/underwater/pre_float_underwater.json")
+
+func continueScene(): # Called after 'pre_float_underwater' ends
+	if not gc.lookWatchUnderwater:
+		await gc.fadeIn()
+		animationPlayer.play("fish_swim")
+		await animationPlayer.animation_finished
 	animationPlayer.play("float_down")
 	await animationPlayer.animation_finished
 	if gc.lookWatchUnderwater:

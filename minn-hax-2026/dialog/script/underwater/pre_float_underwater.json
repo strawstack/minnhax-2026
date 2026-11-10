@@ -1,0 +1,16 @@
+[
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "PLACEHOLDER: I was the fortyith jeffm clone..."
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "continueScene"
+	}
+]

@@ -23,7 +23,6 @@ buses/default_bus_layout="uid://den38rk7xtgt0"
 window/size/viewport_width=1168
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
 
 [importer_defaults]
 
