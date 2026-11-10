@@ -3,6 +3,8 @@ extends Node3D
 @export var playerStart: Node3D
 @export var skateBoardBack: MeshInstance3D
 @export var skateBoardFloor: MeshInstance3D
+@export var noSkating: bool
+@export var hideBoard: bool
 
 var useWalkMovement = true
 
@@ -18,24 +20,32 @@ var rigidBody3D
 var cameraY
 var cameraX
 
+var gc
+
 func _ready() -> void:
+	gc = get_tree().current_scene
 	agentFortyJeffM = $agentFortyJeffM
 	characterBody3D = $CharacterBody3D
 	rigidBody3D = $RigidBody3D
 	cameraY = $CameraY
 	cameraX = $CameraY/CameraX
 	
+	if hideBoard:
+		skateBoardBack.set_visible(false)
+		skateBoardFloor.set_visible(false)
+	
 	setMovement(useWalkMovement)
 	
 	# Sync character movement bodies with playerStart
-	if useWalkMovement:
-		characterBody3D.set_position(playerStart.get_position())
-	else:
-		rigidBody3D.setTeleport(playerStart.get_position())
+	if playerStart:
+		if useWalkMovement:
+			characterBody3D.set_position(playerStart.get_position())
+		else:
+			rigidBody3D.setTeleport(playerStart.get_position())
 
 func _input(event):
 	# https://forum.godotengine.org/t/how-to-make-the-camera-moves-by-the-mouse-in-3d/24201/2
-	if event is InputEventMouseMotion:
+	if event is InputEventMouseMotion and gc.playerCanMove:
 		# Rotate player left/right
 		cameraY.rotate_y(deg_to_rad(-event.relative.x * mouse_sens))
 
@@ -48,7 +58,10 @@ func _input(event):
 		cameraX.rotation_degrees.x = new_pitch
 
 func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("f_key"):
+	if not gc.playerCanMove:
+		return
+
+	if Input.is_action_just_pressed("f_key") and not noSkating:
 		setMovement(not useWalkMovement)
 	if useWalkMovement:
 		var pos = characterBody3D.get_position()
@@ -72,10 +85,9 @@ func setMovement(walk: bool):
 		$CameraY/CameraX/Camera3D.set_fov(90.0)
 		rigidBody3D.setTeleport(characterBody3D.get_position())
 
-	skateBoardBack.set_visible(useWalkMovement)
-	skateBoardFloor.set_visible(not useWalkMovement)
-	
+	if not hideBoard:
+		skateBoardBack.set_visible(useWalkMovement)
+		skateBoardFloor.set_visible(not useWalkMovement)
+
 	characterBody3D.toggleActive(useWalkMovement)
 	rigidBody3D.toggleActive(not useWalkMovement)
-	
-	

@@ -1,6 +1,6 @@
 extends Node3D
 
-const DEBUG = false
+const DEBUG = true
 
 @export var commands: Node3D
 
@@ -39,7 +39,7 @@ func _ready() -> void:
 	showCrossHairs(false)
 	hideObjective()
 	if DEBUG:
-		loadScene("helicopter")
+		loadScene("beach")
 	else:
 		$CanvasLayer_Fade.set_visible(true) # Just to make sure
 		loadScene("logo") # Calls "logoSceneEnds" on completion
@@ -167,5 +167,6 @@ func sceneHelicopter():
 	loadScene("helicopter")
 
 func loadBeachScene():
+	playerCanMove = false
 	await fadeOut()
 	loadScene("beach")

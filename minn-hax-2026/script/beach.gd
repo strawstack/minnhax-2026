@@ -7,8 +7,9 @@ func _ready() -> void:
 	startScene()
 
 func startScene():
+	gc.showCrossHairs(true)
+	gc.playerCanMove = true
 	await gc.fadeIn()
-	print("startScene beach")
 
 func _process(delta: float) -> void:
 	pass

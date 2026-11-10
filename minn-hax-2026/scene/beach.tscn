@@ -1,14 +1,81 @@
 [gd_scene format=3 uid="uid://dck1tvpqv80il"]
 
 [ext_resource type="Script" uid="uid://b7h1fiev73ecj" path="res://script/beach.gd" id="1_dbrq8"]
+[ext_resource type="PackedScene" uid="uid://beb663qt8k7wo" path="res://scene/beach_model.tscn" id="2_enn3f"]
+[ext_resource type="LightmapGIData" uid="uid://btjmvxdaun7dv" path="res://bake/beach.lmbake" id="2_wlmxs"]
+[ext_resource type="PackedScene" uid="uid://bugwpg2o7w3gw" path="res://scene/player.tscn" id="2_y4fha"]
+[ext_resource type="PackedScene" uid="uid://7w7qj04mf06d" path="res://scene/minn_max_logo.tscn" id="5_k82v5"]
 
-[sub_resource type="CylinderMesh" id="CylinderMesh_jd5n0"]
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_k82v5"]
+sky_top_color = Color(0.09654612, 0.12467157, 0.16213462, 1)
+sky_energy_multiplier = 0.1
+sky_cover_modulate = Color(0.18000486, 0.18000486, 0.18000486, 1)
+
+[sub_resource type="Sky" id="Sky_y4fha"]
+sky_material = SubResource("ProceduralSkyMaterial_k82v5")
+
+[sub_resource type="Environment" id="Environment_jd5n0"]
+background_energy_multiplier = 0.2
+sky = SubResource("Sky_y4fha")
+ambient_light_energy = 0.5
 
 [node name="beach" type="Node3D" unique_id=343819480]
 script = ExtResource("1_dbrq8")
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=37029515]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=508102296]
+environment = SubResource("Environment_jd5n0")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=341027852]
-transform = Transform3D(1, 0, 0, 0, -0.31863245, -0.94787836, 0, 0.94787836, -0.31863245, 0, 0, -3.5449219)
-mesh = SubResource("CylinderMesh_jd5n0")
+[node name="Player" parent="." unique_id=1371449073 instance=ExtResource("2_y4fha")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.008007, 0.24564838, 1.9342923)
+noSkating = true
+hideBoard = true
+
+[node name="LightmapGI" type="LightmapGI" parent="." unique_id=308752786]
+light_data = ExtResource("2_wlmxs")
+
+[node name="beach_model" parent="." unique_id=1069443093 instance=ExtResource("2_enn3f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.001655221, -0.014924049, 0.0062417984)
+
+[node name="beach_shadow" type="Node3D" parent="." unique_id=1602424804]
+
+[node name="light" type="Node3D" parent="beach_shadow" unique_id=1986401837]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.712933, 11.367319, -16.633825)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="beach_shadow/light" unique_id=1751707865]
+transform = Transform3D(0.9773556, 9.249487e-09, -0.2116036, 0.20817646, 0.17924754, 0.96152633, 0.037929434, -0.983804, 0.17518859, -16.841164, 20.77001, 0)
+light_energy = 3.0
+spot_range = 47.015106
+spot_angle = 54.843742
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="beach_shadow/light" unique_id=1624081496]
+transform = Transform3D(0.9773556, 1.2890421e-08, -0.21160358, 0.20817646, 0.17924754, 0.96152633, 0.037929434, -0.983804, 0.17518859, 22.420723, 20.77001, 0)
+light_energy = 3.0
+light_bake_mode = 1
+spot_range = 47.015106
+spot_angle = 54.843742
+
+[node name="OmniLight3D" type="OmniLight3D" parent="beach_shadow/light" unique_id=1747597351]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.232826, -7.128325, 12.374847)
+light_bake_mode = 1
+omni_range = 5.6790895
+
+[node name="FlashOne" type="SpotLight3D" parent="beach_shadow/light" unique_id=1704442532]
+transform = Transform3D(0.6993411, 0.548601, 0.4582129, 1.6840294e-08, -0.6410472, 0.76750153, 0.71478814, -0.5367453, -0.44831064, 15.040099, -6.3677998, 7.404379)
+light_energy = 3.0
+light_bake_mode = 1
+spot_range = 9.276475
+spot_angle = 10.652196
+
+[node name="FlashOne2" type="SpotLight3D" parent="beach_shadow/light" unique_id=525830305]
+transform = Transform3D(0.9983008, 0.04472439, 0.037355524, -0.01573006, -0.41042322, 0.9117595, 0.05610946, -0.9107978, -0.40902227, 16.71524, -6.311935, 7.2491665)
+light_energy = 3.0
+light_bake_mode = 1
+spot_range = 7.118474
+spot_angle = 19.032436
+
+[node name="fake_light" type="Node3D" parent="beach_shadow" unique_id=1808317192]
+
+[node name="minnMaxLogo_Radio" parent="." unique_id=1930660944 instance=ExtResource("5_k82v5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.156725, 1.7058065, -5.1681)
+prompt = "pick up radio"
+dialogFile = "res://dialog/script/beach/example.json"

@@ -11,7 +11,10 @@ var agentFortyJeffM
 # state
 var kicking = false
 
+var gc
+
 func _ready() -> void:
+	gc = get_tree().current_scene
 	agentFortyJeffM = playerRoot.get_node("agentFortyJeffM")
 
 func performKick():
@@ -33,9 +36,12 @@ func setTeleport(pos: Vector3) -> void:
 	global_transform.origin = pos
 
 func _physics_process(delta: float) -> void:
+	if not gc.playerCanMove:
+		return
+
 	if playerRoot.useWalkMovement:
 		return
-	
+
 	if linear_velocity.length() > 0.01:
 		var offset = agentFortyJeffM.global_basis.y.normalized() * 0.74
 		agentFortyJeffM.look_at(global_position + offset + linear_velocity, Vector3.UP)

@@ -19,7 +19,21 @@
 		"lines": [
 			{
 				"voice": "",
-				"text": "PLACEHOLDER: Oh uh, I though I charged it before we left..."
+				"text": "PLACEHOLDER: On that chopper were the three other remaining Jeffm clones..."
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "switchLowBattery"
+	},
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "PLACEHOLDER: Uh oh, though I charged it before I left..."
 			},
 		]
 	},

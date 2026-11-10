@@ -17,8 +17,11 @@ var agentFortyJeffM
 # Tracks player rotation to set Idle facing direction
 var previous_rotation = 0
 
+var gc
+
 # Capture mouse when game launches
 func _ready():
+	gc = get_tree().current_scene
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	agentFortyJeffM = playerRoot.get_node("agentFortyJeffM")
 	cameraY = playerRoot.get_node("CameraY")
@@ -30,6 +33,9 @@ func toggleActive(active: bool):
 
 # Called on every physics frame
 func _physics_process(delta):
+	if not gc.playerCanMove:
+		return
+	
 	var direction = Vector3.ZERO
 	
 	if not playerRoot.useWalkMovement:
