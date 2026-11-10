@@ -1,17 +1,42 @@
 [gd_scene format=3 uid="uid://nj07yhm5gg3o"]
 
 [ext_resource type="Script" uid="uid://sbwiguswjtsq" path="res://script/helicopter.gd" id="1_r4yxt"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_jd5n0"]
+[ext_resource type="PackedScene" uid="uid://ddudcf4gjw50i" path="res://scene/helicopter_model.tscn" id="2_dytwp"]
+[ext_resource type="LightmapGIData" uid="uid://bcj560v2nwd2f" path="res://bake/helicopter.lmbake" id="2_ieuwk"]
+[ext_resource type="Texture2D" uid="uid://5mqv2q3ean5d" path="res://image/message_from_deepspace.jpg" id="4_6w1s8"]
+[ext_resource type="Texture2D" uid="uid://dy833c5iu3nqk" path="res://image/low_battery.png" id="5_6kcpd"]
 
 [node name="helicopter" type="Node3D" unique_id=52106417]
 script = ExtResource("1_r4yxt")
 
+[node name="LightmapGI" type="LightmapGI" parent="." unique_id=1827535358]
+light_data = ExtResource("2_ieuwk")
+
 [node name="Camera3D" type="Camera3D" parent="." unique_id=122635715]
+transform = Transform3D(-0.9896512, 0.000511841, -0.14349294, 0, 0.9999936, 0.0035669892, 0.14349385, 0.003530075, -0.9896449, -0.92100173, 1.5366657, -0.6983857)
 
 [node name="Camera3D_SwitchScreen" type="Camera3D" parent="." unique_id=1894373373]
-transform = Transform3D(-0.999762, -0.010325659, 0.019216971, 0, 0.8808906, 0.47331995, -0.02181539, 0.4732073, -0.880681, -0.017605303, 0.8343698, -4.679149)
+transform = Transform3D(0.4265712, 0.18418446, -0.8855016, 0, 0.9790455, 0.20364161, 0.904454, -0.086867645, 0.4176326, -1.7229414, 1.707941, 0.86422634)
+fov = 56.0
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=512158121]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.3072608)
-mesh = SubResource("BoxMesh_jd5n0")
+[node name="helicopter_model" parent="." unique_id=2039346391 instance=ExtResource("2_dytwp")]
+
+[node name="helicopter_shadow" type="Node3D" parent="." unique_id=1551872298]
+
+[node name="lights" type="Node3D" parent="helicopter_shadow" unique_id=191909385]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="helicopter_shadow/lights" unique_id=1696185848]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.013401508, 2.2693982, 1.2339053)
+visible = false
+light_color = Color(1, 0.47630578, 0.42279038, 1)
+light_energy = 4.0
+light_bake_mode = 1
+
+[node name="Sprite3D_Game" type="Sprite3D" parent="." unique_id=144694184]
+transform = Transform3D(0.1, 0, 0, 0, 0.06831794, 0.73025054, 0, -0.073025055, 0.68317944, -0.801877, 1.3449628, 0.7080395)
+texture = ExtResource("4_6w1s8")
+
+[node name="Sprite3D_LowBattery" type="Sprite3D" parent="." unique_id=1075216322]
+transform = Transform3D(0.1, 0, 0, 0, 0.06831794, 0.73025054, 0, -0.073025055, 0.68317944, -0.801877, 1.3449628, 0.7080395)
+visible = false
+texture = ExtResource("5_6kcpd")
