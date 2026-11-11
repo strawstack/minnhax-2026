@@ -13,6 +13,7 @@ const scenes = {
 	"underwater": preload("res://scene/underwater.tscn"),
 	"helicopter": preload("res://scene/helicopter.tscn"),
 	"beach": preload("res://scene/beach.tscn"),
+	"greenDay": preload("res://scene/green_day.tscn"),
 }
 
 # commandLookup populated by Commands child node 
@@ -40,7 +41,7 @@ func _ready() -> void:
 	showCrossHairs(false)
 	hideObjective()
 	if DEBUG:
-		loadScene("beach")
+		loadGreenDayTraining()
 	else:
 		$CanvasLayer_Fade.set_visible(true) # Just to make sure
 		loadScene("logo") # Calls "logoSceneEnds" on completion
@@ -168,9 +169,17 @@ func startGameStream():
 
 func sceneHelicopter():
 	await fadeOut()
+	mouthLookup.clear()
 	loadScene("helicopter")
 
 func loadBeachScene():
 	playerCanMove = false
 	await fadeOut()
+	mouthLookup.clear()
 	loadScene("beach")
+
+func loadGreenDayTraining():
+	playerCanMove = false
+	await fadeOut()
+	mouthLookup.clear()
+	loadScene("greenDay")

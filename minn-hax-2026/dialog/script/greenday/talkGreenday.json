@@ -1,0 +1,16 @@
+[
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "PLACEHOLDER: John GreenDay like the band..."
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "revealDriveJeep"
+	},
+]

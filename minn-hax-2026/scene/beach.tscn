@@ -78,4 +78,9 @@ spot_angle = 19.032436
 [node name="minnMaxLogo_Radio" parent="." unique_id=1930660944 instance=ExtResource("5_k82v5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.156725, 1.7058065, -5.1681)
 prompt = "pick up radio"
-dialogFile = "res://dialog/script/beach/example.json"
+dialogFile = "res://dialog/script/beach/radio.json"
+
+[node name="minnMaxLogo_Tape" parent="." unique_id=1391797102 instance=ExtResource("5_k82v5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.33879, 1.6253122, -1.1463573)
+prompt = "pick up secret tape"
+dialogFile = "res://dialog/script/beach/secret_tape.json"

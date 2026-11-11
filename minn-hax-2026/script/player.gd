@@ -55,6 +55,9 @@ func _ready() -> void:
 		else:
 			rigidBody3D.setTeleport(playerStart.get_position())
 
+func setCameraActive():
+	$CameraY/CameraX/Camera3D.set_current(true)
+
 func _input(event):
 	# https://forum.godotengine.org/t/how-to-make-the-camera-moves-by-the-mouse-in-3d/24201/2
 	if event is InputEventMouseMotion and gc.playerCanMove:

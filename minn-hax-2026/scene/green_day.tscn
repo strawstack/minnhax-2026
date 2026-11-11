@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://0a7lo8khhe2a"]
+
+[ext_resource type="Script" uid="uid://bss2sbwso1ylj" path="res://script/green_day.gd" id="1_gtwnb"]
+[ext_resource type="PackedScene" uid="uid://cwfjws3l3654t" path="res://scene/greenday_training_model.tscn" id="2_386c3"]
+[ext_resource type="LightmapGIData" uid="uid://bxix1esnwdxxm" path="res://bake/green_day.lmbake" id="3_xbkkb"]
+[ext_resource type="PackedScene" uid="uid://6gc1yeta3avh" path="res://scene/explode_barrel.tscn" id="4_gpfag"]
+[ext_resource type="PackedScene" uid="uid://xt2olg74fkl8" path="res://scene/jeep.tscn" id="5_ubt6e"]
+[ext_resource type="PackedScene" uid="uid://egojsd03b1cx" path="res://glb/greenDayTraining/agentInPlanePose/agentPlanePose.glb" id="6_y72cq"]
+[ext_resource type="PackedScene" uid="uid://bugwpg2o7w3gw" path="res://scene/player.tscn" id="7_ovsro"]
+[ext_resource type="PackedScene" uid="uid://b187oxy1uw14s" path="res://glb/greenDayTraining/greenDayIdleModel/GreenDay.glb" id="8_3u8ep"]
+[ext_resource type="PackedScene" uid="uid://7w7qj04mf06d" path="res://scene/minn_max_logo.tscn" id="9_o61kh"]
+
+[sub_resource type="Environment" id="Environment_jd5n0"]
+fog_enabled = true
+fog_density = 0.005
+
+[node name="greenDay" type="Node3D" unique_id=454374296 node_paths=PackedStringArray("agent", "greenDay")]
+script = ExtResource("1_gtwnb")
+agent = NodePath("Player")
+greenDay = NodePath("GreenDay")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1557651157]
+environment = SubResource("Environment_jd5n0")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=539856491]
+transform = Transform3D(-0.8038575, -0.28610292, 0.5214962, 0, 0.8767265, 0.48098922, -0.59482193, 0.3866468, -0.7047632, 4.604971, 6.728528, 90.950195)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1931417608]
+transform = Transform3D(0.8660254, 2.1855694e-08, -0.5, 0.4829629, 0.258819, 0.83651626, 0.12940952, -0.9659258, 0.22414382, 0, 48, 0)
+
+[node name="greenday_training_model" parent="." unique_id=1641896734 instance=ExtResource("2_386c3")]
+
+[node name="LightmapGI" type="LightmapGI" parent="." unique_id=1516068207]
+light_data = ExtResource("3_xbkkb")
+
+[node name="Barrels" type="Node3D" parent="." unique_id=1817275297]
+
+[node name="ExplodeBarrel" parent="Barrels" unique_id=2022457406 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17034435, 1, 11.716091)
+
+[node name="ExplodeBarrel2" parent="Barrels" unique_id=1823662985 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.8296556, 1, 10.716091)
+
+[node name="ExplodeBarrel3" parent="Barrels" unique_id=1036326938 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8296556, 1, 3.7160912)
+
+[node name="ExplodeBarrel4" parent="Barrels" unique_id=1418643705 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1703444, 1, 3.7160912)
+
+[node name="ExplodeBarrel5" parent="Barrels" unique_id=1376125473 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1703444, 1, 6.716091)
+
+[node name="ExplodeBarrel6" parent="Barrels" unique_id=1177298461 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1703444, 1, 5.716091)
+
+[node name="Jeep" parent="." unique_id=1064003405 instance=ExtResource("5_ubt6e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 80)
+
+[node name="agentPlanePose" parent="." unique_id=1621998410 instance=ExtResource("6_y72cq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -27, 0)
+
+[node name="Player" parent="." unique_id=1371449073 instance=ExtResource("7_ovsro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 91)
+noSkating = true
+hideBoard = true
+
+[node name="GreenDay" parent="." unique_id=777426682 instance=ExtResource("8_3u8ep")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3, 0, 81)
+
+[node name="minnMaxLogo_TalkGreenDay" parent="." unique_id=1930660944 instance=ExtResource("9_o61kh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2, 83)
+prompt = "talk with Greenday"
+dialogFile = "res://dialog/script/greenday/talkGreenday.json"
+
+[node name="minnMaxLogo_EnterJeep" parent="." unique_id=1067575001 instance=ExtResource("9_o61kh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 80)
+prompt = "drive jeep"
+dialogFile = "res://dialog/script/greenday/driveJeep.json"
+startHidden = true

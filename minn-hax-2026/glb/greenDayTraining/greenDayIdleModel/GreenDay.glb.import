@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bb7f71ihafvtl"
-path="res://.godot/imported/temp.glb-11468d3feea868cf3572683a7be1fa71.scn"
+uid="uid://b187oxy1uw14s"
+path="res://.godot/imported/GreenDay.glb-28080554522b4f55b6c7b3e8b2c53022.scn"
 
 [deps]
 
-source_file="res://glb/temp/temp.glb"
-dest_files=["res://.godot/imported/temp.glb-11468d3feea868cf3572683a7be1fa71.scn"]
+source_file="res://glb/greenDayTraining/greenDayIdleModel/GreenDay.glb"
+dest_files=["res://.godot/imported/GreenDay.glb-28080554522b4f55b6c7b3e8b2c53022.scn"]
 
 [params]
 

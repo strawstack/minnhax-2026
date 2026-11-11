@@ -7,7 +7,7 @@
 [ext_resource type="Script" uid="uid://cw5p35xqsvu2j" path="res://script/dialog.gd" id="2_v0l8b"]
 [ext_resource type="AudioStream" uid="uid://kd2gfe4tc611" path="res://dialog/vocal/test_voice.mp3" id="3_wp4xf"]
 [ext_resource type="Script" uid="uid://w2owemapqhmn" path="res://script/canvas_layer_objective.gd" id="5_p1hux"]
-[ext_resource type="Script" uid="uid://cakfngxb6o8an" path="res://scene/bullet_smoke.gd" id="8_of57s"]
+[ext_resource type="Script" uid="uid://cakfngxb6o8an" path="res://script/bullet_smoke.gd" id="8_of57s"]
 
 [sub_resource type="Environment" id="Environment_jd5n0"]
 

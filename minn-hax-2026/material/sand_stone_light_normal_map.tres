@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b4gnh15gsrjv7"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_3u8ep"]
+frequency = 0.04
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_ovsro"]
+noise = SubResource("FastNoiseLite_3u8ep")
+seamless = true
+
+[resource]
+albedo_color = Color(0.95, 0.84075, 0.66499996, 1)
+normal_enabled = true
+normal_scale = 0.2
+normal_texture = SubResource("NoiseTexture2D_ovsro")
+uv1_triplanar = true
