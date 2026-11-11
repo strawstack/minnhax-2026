@@ -30,6 +30,7 @@ func driveJeep():
 	greenDay.set_visible(false)
 	$Jeep.showPassengers()
 	gc.playerCanMove = false
+	$Jeep.canDrive = true
 
 func _process(delta: float) -> void:
 	pass

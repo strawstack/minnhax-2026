@@ -2337,8 +2337,24 @@ _data = {
 &"Idle": SubResource("Animation_3xx0f")
 }
 
-[node name="Jeep" type="Node3D" unique_id=1064003405]
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kbkkx"]
+radius = 1.0776367
+height = 2.1552734
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kbkkx"]
+size = Vector3(2.4276123, 1.638794, 3.505127)
+
+[node name="Jeep" type="CharacterBody3D" unique_id=2103365435]
+collision_layer = 2
 script = ExtResource("1_bg831")
+
+[node name="CameraY" type="Node3D" parent="." unique_id=1618942124]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8748894, 0)
+
+[node name="CameraX" type="Node3D" parent="CameraY" unique_id=225396570]
+
+[node name="Camera3D" type="Camera3D" parent="CameraY/CameraX" unique_id=58139708]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1053507, 5.2683587)
 
 [node name="Armature" type="Node3D" parent="." unique_id=1954507473]
 transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 0.6752733, 0.7554546, 0.6747267)
@@ -2998,3 +3014,15 @@ mesh = SubResource("ArrayMesh_1x4e8")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=740179368]
 libraries/ = SubResource("AnimationLibrary_2noo5")
+
+[node name="CoreCollider" type="CollisionShape3D" parent="." unique_id=2113993260]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0026974678, 1.0790815, -0.09364319)
+shape = SubResource("CapsuleShape3D_kbkkx")
+
+[node name="Area3D_BarrelCollider" type="Area3D" parent="." unique_id=956173569]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D_BarrelCollider" unique_id=1569346831]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0016504526, 1.0716964, -0.09338379)
+shape = SubResource("BoxShape3D_kbkkx")
