@@ -1,6 +1,58 @@
 [gd_scene format=3 uid="uid://4ycxn23ueuos"]
 
 [ext_resource type="Script" uid="uid://clihx5vd5pmu5" path="res://script/training_shoot.gd" id="1_8tfii"]
+[ext_resource type="PackedScene" uid="uid://dr22r5nu5vh3x" path="res://scene/target_shooting_model.tscn" id="2_3cpc2"]
+[ext_resource type="PackedScene" uid="uid://c7un3a18bmdfx" path="res://scene/target.tscn" id="3_monsh"]
+[ext_resource type="PackedScene" uid="uid://bugwpg2o7w3gw" path="res://scene/player.tscn" id="4_vtk02"]
+[ext_resource type="PackedScene" uid="uid://707st4a8qcn7" path="res://scene/forty_idle_no_anim.tscn" id="5_w6ini"]
+[ext_resource type="PackedScene" uid="uid://b7p6q3wrflobu" path="res://scene/mon_roll.tscn" id="6_u734e"]
+[ext_resource type="LightmapGIData" uid="uid://b3yf28u5nhe6n" path="res://bake/training_shoot.lmbake" id="7_hmbwd"]
+
+[sub_resource type="Environment" id="Environment_jd5n0"]
 
 [node name="trainingShoot" type="Node3D" unique_id=480395963]
 script = ExtResource("1_8tfii")
+
+[node name="target_shooting_model" parent="." unique_id=1694195642 instance=ExtResource("2_3cpc2")]
+
+[node name="Target" parent="." unique_id=267441459 node_paths=PackedStringArray("targetHitCallbackNode") instance=ExtResource("3_monsh")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.7864742, 0, -7.389925)
+targetHitCallbackNode = NodePath("..")
+
+[node name="Target2" parent="." unique_id=1455664344 node_paths=PackedStringArray("targetHitCallbackNode") instance=ExtResource("3_monsh")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 6.09613, 0, -9.38792)
+targetHitCallbackNode = NodePath("..")
+
+[node name="Target3" parent="." unique_id=757695296 node_paths=PackedStringArray("targetHitCallbackNode") instance=ExtResource("3_monsh")]
+transform = Transform3D(1.9106855e-15, 1, 4.371139e-08, 4.371139e-08, -4.371139e-08, 1, 1, 0, -4.371139e-08, -2.507888, 2.532948, -9.465384)
+targetHitCallbackNode = NodePath("..")
+
+[node name="Player" parent="." unique_id=1371449073 instance=ExtResource("4_vtk02")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+noSkating = true
+shootingAllowed = true
+hideBoard = true
+
+[node name="Camera3D_MonRoll" type="Camera3D" parent="." unique_id=1333529769]
+transform = Transform3D(-0.96245474, 0.07936193, -0.25958163, 0, 0.9563049, 0.29237124, 0.27144232, 0.2813941, -0.9204002, 1.0004344, 2.1980882, -1.7928686)
+
+[node name="fortyIdleNoAnim" parent="." unique_id=306473063 instance=ExtResource("5_w6ini")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.69152737, 0, 0)
+
+[node name="MonRoll" parent="." unique_id=936362553 instance=ExtResource("6_u734e")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2.5609317, 0, 2.259447)
+
+[node name="Timer" type="Timer" parent="." unique_id=527581786]
+one_shot = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1603501314]
+transform = Transform3D(0.9837385, -0.059221547, -0.16956192, 0.17960633, 0.32436773, 0.9287233, 0, -0.9440754, 0.32972968, -1.2970514, 10.237716, 0)
+light_bake_mode = 1
+
+[node name="LightmapGI" type="LightmapGI" parent="." unique_id=840346394]
+light_data = ExtResource("7_hmbwd")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=999392081]
+environment = SubResource("Environment_jd5n0")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

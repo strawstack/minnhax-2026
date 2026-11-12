@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cam7w0dnx5fsh"]
+
+[ext_resource type="Script" uid="uid://daclkhef88c8n" path="res://script/obstacle_course.gd" id="1_a4f43"]
+
+[node name="obstacleCourse" type="Node3D" unique_id=298529073]
+script = ExtResource("1_a4f43")

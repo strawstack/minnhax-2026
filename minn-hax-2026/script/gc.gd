@@ -14,7 +14,8 @@ const scenes = {
 	"helicopter": preload("res://scene/helicopter.tscn"),
 	"beach": preload("res://scene/beach.tscn"),
 	"greenDay": preload("res://scene/green_day.tscn"),
-	"trainingShoot": preload("res://scene/training_shoot.tscn")
+	"trainingShoot": preload("res://scene/training_shoot.tscn"),
+	"obstacleCourse": preload("res://scene/obstacle_course.tscn"),
 }
 
 # commandLookup populated by Commands child node 
@@ -42,7 +43,7 @@ func _ready() -> void:
 	showCrossHairs(false)
 	hideObjective()
 	if DEBUG:
-		loadGreenDayTraining()
+		loadTrainingShoot()
 	else:
 		$CanvasLayer_Fade.set_visible(true) # Just to make sure
 		loadScene("logo") # Calls "logoSceneEnds" on completion
@@ -190,3 +191,9 @@ func loadTrainingShoot():
 	await fadeOut()
 	mouthLookup.clear()
 	loadScene("trainingShoot")
+
+func loadObstacleCourse():
+	playerCanMove = false
+	await fadeOut()
+	mouthLookup.clear()
+	loadScene("obstacleCourse")

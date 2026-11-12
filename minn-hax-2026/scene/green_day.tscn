@@ -9,8 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://bugwpg2o7w3gw" path="res://scene/player.tscn" id="7_ovsro"]
 [ext_resource type="PackedScene" uid="uid://b187oxy1uw14s" path="res://glb/greenDayTraining/greenDayIdleModel/GreenDay.glb" id="8_3u8ep"]
 [ext_resource type="PackedScene" uid="uid://7w7qj04mf06d" path="res://scene/minn_max_logo.tscn" id="9_o61kh"]
-[ext_resource type="PackedScene" uid="uid://cpg314r4mjlf7" path="res://glb/croissantDuh/CroissantDuh.glb" id="10_em7uo"]
-[ext_resource type="PackedScene" uid="uid://cgqpoc10n4v7f" path="res://glb/monRoll/MonRoll.glb" id="11_thd86"]
+[ext_resource type="PackedScene" uid="uid://bruns83sdie5u" path="res://scene/croissant_duh.tscn" id="10_thd86"]
+[ext_resource type="PackedScene" uid="uid://b7p6q3wrflobu" path="res://scene/mon_roll.tscn" id="11_ute6l"]
 [ext_resource type="PackedScene" uid="uid://707st4a8qcn7" path="res://scene/forty_idle_no_anim.tscn" id="12_thd86"]
 
 [sub_resource type="Environment" id="Environment_jd5n0"]
@@ -291,10 +291,10 @@ shape = SubResource("ConcavePolygonShape3D_4w3fx")
 [node name="SecondPlayerPosition" type="Node3D" parent="." unique_id=1793972640]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75, 1, -57)
 
-[node name="CroissantDuh" parent="." unique_id=1074927996 instance=ExtResource("10_em7uo")]
+[node name="CroissantDuh" parent="." unique_id=874928942 instance=ExtResource("10_thd86")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -74, 3, -100)
 
-[node name="MonRoll" parent="." unique_id=933791163 instance=ExtResource("11_thd86")]
+[node name="MonRoll" parent="." unique_id=936362553 instance=ExtResource("11_ute6l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76, 3, -98)
 
 [node name="Camera3D_CroissantDuh" type="Camera3D" parent="." unique_id=132946034]

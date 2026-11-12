@@ -21,7 +21,8 @@ func _ready() -> void:
 		"sceneHelicopter": sceneHelicopter,
 		"loadBeachScene": loadBeachScene,
 		"loadGreenDayTraining": loadGreenDayTraining,
-		"loadTrainingShoot": loadTrainingShoot
+		"loadTrainingShoot": loadTrainingShoot,
+		"loadObstacleCourse": loadObstacleCourse
 	}
 
 func showCrossHairs():
@@ -70,3 +71,6 @@ func loadGreenDayTraining():
 
 func loadTrainingShoot():
 	gc.loadTrainingShoot()
+
+func loadObstacleCourse():
+	gc.loadObstacleCourse()

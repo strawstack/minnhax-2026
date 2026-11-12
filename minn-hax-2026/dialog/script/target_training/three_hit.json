@@ -1,0 +1,16 @@
+[
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "PLACEHOLDER: Something like that..."
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "loadObstacleCourse"
+	},
+]

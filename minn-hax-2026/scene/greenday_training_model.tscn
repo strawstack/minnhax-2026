@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://cwfjws3l3654t"]
 
 [ext_resource type="Material" uid="uid://c51v7x212ff0l" path="res://material/sand_stone_normal_map.tres" id="1_nkm2i"]
-[ext_resource type="Script" uid="uid://eee7vx2qqin2" path="res://scene/greenday_training_model.gd" id="1_wsh3t"]
+[ext_resource type="Script" uid="uid://eee7vx2qqin2" path="res://script/greenday_training_model.gd" id="1_wsh3t"]
 [ext_resource type="Material" uid="uid://b4gnh15gsrjv7" path="res://material/sand_stone_light_normal_map.tres" id="2_8g3uc"]
 [ext_resource type="Material" uid="uid://due5oug3u2p8x" path="res://material/rust_on_door.tres" id="3_w3p61"]
 [ext_resource type="Material" uid="uid://c8afg082ijuws" path="res://material/runway.tres" id="3_wsh3t"]

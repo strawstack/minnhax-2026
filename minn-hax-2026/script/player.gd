@@ -20,6 +20,7 @@ var mouse_sens = 0.3
 # Maximum look angles
 const MAX_LOOK_UP = 80.0
 const MAX_LOOK_DOWN = -80.0
+const MAX_BULLET_DISTANCE = 300
 
 var agentFortyJeffM
 var characterBody3D
@@ -93,6 +94,13 @@ func _physics_process(delta: float) -> void:
 			var from = bulletStart.get_global_position()
 			var to = rayCast3D.get_collision_point()
 			gc.draw_thick_line(from, to)
+			var target_root = rayCast3D.get_collider().get_parent().get_parent()
+			if target_root:
+				target_root.hit()
+		else:
+			var from = bulletStart.get_global_position()
+			var bulletDirection = -1 * bulletStart.get_global_basis().x * MAX_BULLET_DISTANCE
+			gc.draw_thick_line(from, from + bulletDirection)
 
 func _process(delta: float) -> void:
 	if not gc.playerCanMove:

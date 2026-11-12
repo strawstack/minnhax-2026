@@ -1,0 +1,16 @@
+[
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "Hello"
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "returnPlayerControl"
+	},
+]
