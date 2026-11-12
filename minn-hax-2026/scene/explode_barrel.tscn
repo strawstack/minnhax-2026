@@ -27,8 +27,8 @@ mesh = SubResource("CylinderMesh_4iy43")
 surface_material_override/0 = SubResource("StandardMaterial3D_jd5n0")
 
 [node name="Area3D" type="Area3D" parent="MeshInstance3D" unique_id=1910978201]
-collision_layer = 2
-collision_mask = 0
+collision_layer = 0
+collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/Area3D" unique_id=1134198322]
 shape = SubResource("ConcavePolygonShape3D_xbkkb")
@@ -39,8 +39,8 @@ mesh = SubResource("SphereMesh_jd5n0")
 surface_material_override/0 = SubResource("StandardMaterial3D_kbkkx")
 
 [node name="Timer" type="Timer" parent="." unique_id=446153422]
-wait_time = 0.5
+wait_time = 0.25
 one_shot = true
 
-[connection signal="body_entered" from="MeshInstance3D/Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="area_entered" from="MeshInstance3D/Area3D" to="." method="_on_area_3d_area_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

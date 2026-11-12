@@ -1,0 +1,16 @@
+[
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "PLACEHOLDER: Didn't expect to go backwards..."
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "openDoorOne"
+	},
+]

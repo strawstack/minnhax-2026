@@ -55,6 +55,10 @@ func _ready() -> void:
 		else:
 			rigidBody3D.setTeleport(playerStart.get_position())
 
+func resetCamera():
+	cameraY.set_rotation(Vector3.ZERO)
+	cameraX.set_rotation(Vector3.ZERO)
+
 func setCameraActive():
 	$CameraY/CameraX/Camera3D.set_current(true)
 

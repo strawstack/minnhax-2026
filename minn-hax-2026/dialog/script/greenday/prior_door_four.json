@@ -1,0 +1,16 @@
+[
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "PLACEHOLDER: What’s with all these barrels anyway?"
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "openDoorFour"
+	},
+]

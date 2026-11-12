@@ -1,0 +1,16 @@
+[
+	{
+		"name": "Command",
+		"command": "exitJeep"
+	},
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "PLACEHOLDER: Head up the stairs and meet your fellow recruits"
+			},
+		]
+	},
+]

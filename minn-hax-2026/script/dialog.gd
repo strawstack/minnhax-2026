@@ -47,6 +47,8 @@ func playDialog(dialog: Array):
 		activeDialog = dialog
 		state = dialogState.LOAD_LINE
 		showDialog(true)
+	else:
+		print("playDialog called while already playing")
 
 # Set image and character name in UI
 func setAvatar(message: Dictionary):

@@ -6408,6 +6408,7 @@ mesh = SubResource("ArrayMesh_8g338")
 
 [node name="Cylinder_043" type="MeshInstance3D" parent="." unique_id=209786815]
 transform = Transform3D(0.5146102, 0, 0, 0, 0.5146102, 0, 0, 0, 0.5146102, -0.5, 1.0000001, -26.5)
+visible = false
 mesh = SubResource("ArrayMesh_elrfd")
 
 [node name="Cylinder_032" type="MeshInstance3D" parent="Cylinder_043" unique_id=303058917]
@@ -6468,6 +6469,7 @@ mesh = SubResource("ArrayMesh_5juco")
 
 [node name="Cylinder_058" type="MeshInstance3D" parent="." unique_id=1215036496]
 transform = Transform3D(0.45072955, 0, 0.24832742, 0, 0.5146102, 0, -0.24832742, 0, 0.45072955, -4.5, 1.0000001, -51.5)
+visible = false
 mesh = SubResource("ArrayMesh_epmw1")
 
 [node name="Cylinder_053" type="MeshInstance3D" parent="Cylinder_058" unique_id=747725762]
@@ -6528,6 +6530,7 @@ mesh = SubResource("ArrayMesh_v0teb")
 
 [node name="Cylinder_073" type="MeshInstance3D" parent="." unique_id=652458051]
 transform = Transform3D(0.5146102, 0, 0, 0, 0.5146102, 0, 0, 0, 0.5146102, -39.5, 1.0000001, -51.5)
+visible = false
 mesh = SubResource("ArrayMesh_6ggbx")
 
 [node name="Cylinder_068" type="MeshInstance3D" parent="Cylinder_073" unique_id=400475851]

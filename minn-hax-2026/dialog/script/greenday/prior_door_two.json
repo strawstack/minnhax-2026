@@ -1,0 +1,16 @@
+[
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "PLACEHOLDER: Never heard of GreenDay - ha (astonished). I bet I could find you a song right now. Can I turn on the radio?"
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "openDoorTwo"
+	},
+]

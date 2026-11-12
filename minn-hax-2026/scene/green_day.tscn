@@ -9,15 +9,47 @@
 [ext_resource type="PackedScene" uid="uid://bugwpg2o7w3gw" path="res://scene/player.tscn" id="7_ovsro"]
 [ext_resource type="PackedScene" uid="uid://b187oxy1uw14s" path="res://glb/greenDayTraining/greenDayIdleModel/GreenDay.glb" id="8_3u8ep"]
 [ext_resource type="PackedScene" uid="uid://7w7qj04mf06d" path="res://scene/minn_max_logo.tscn" id="9_o61kh"]
+[ext_resource type="PackedScene" uid="uid://cpg314r4mjlf7" path="res://glb/croissantDuh/CroissantDuh.glb" id="10_em7uo"]
+[ext_resource type="PackedScene" uid="uid://cgqpoc10n4v7f" path="res://glb/monRoll/MonRoll.glb" id="11_thd86"]
+[ext_resource type="PackedScene" uid="uid://707st4a8qcn7" path="res://scene/forty_idle_no_anim.tscn" id="12_thd86"]
 
 [sub_resource type="Environment" id="Environment_jd5n0"]
-fog_enabled = true
+fog_light_color = Color(0.5176471, 0.5529412, 0.60784316, 1)
 fog_density = 0.005
+volumetric_fog_albedo = Color(0.5176471, 0.5529412, 0.60784316, 1)
 
-[node name="greenDay" type="Node3D" unique_id=454374296 node_paths=PackedStringArray("agent", "greenDay")]
+[sub_resource type="BoxMesh" id="BoxMesh_jd5n0"]
+size = Vector3(22, 16, 1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_o61kh"]
+data = PackedVector3Array(-11, 8, 0.5, 11, 8, 0.5, -11, -8, 0.5, 11, 8, 0.5, 11, -8, 0.5, -11, -8, 0.5, 11, 8, -0.5, -11, 8, -0.5, 11, -8, -0.5, -11, 8, -0.5, -11, -8, -0.5, 11, -8, -0.5, 11, 8, 0.5, 11, 8, -0.5, 11, -8, 0.5, 11, 8, -0.5, 11, -8, -0.5, 11, -8, 0.5, -11, 8, -0.5, -11, 8, 0.5, -11, -8, -0.5, -11, 8, 0.5, -11, -8, 0.5, -11, -8, -0.5, 11, 8, 0.5, -11, 8, 0.5, 11, 8, -0.5, -11, 8, 0.5, -11, 8, -0.5, 11, 8, -0.5, -11, -8, 0.5, 11, -8, 0.5, -11, -8, -0.5, 11, -8, 0.5, 11, -8, -0.5, -11, -8, -0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_o61kh"]
+size = Vector3(22, 16, 1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_fu7da"]
+data = PackedVector3Array(-11, 8, 0.5, 11, 8, 0.5, -11, -8, 0.5, 11, 8, 0.5, 11, -8, 0.5, -11, -8, 0.5, 11, 8, -0.5, -11, 8, -0.5, 11, -8, -0.5, -11, 8, -0.5, -11, -8, -0.5, 11, -8, -0.5, 11, 8, 0.5, 11, 8, -0.5, 11, -8, 0.5, 11, 8, -0.5, 11, -8, -0.5, 11, -8, 0.5, -11, 8, -0.5, -11, 8, 0.5, -11, -8, -0.5, -11, 8, 0.5, -11, -8, 0.5, -11, -8, -0.5, 11, 8, 0.5, -11, 8, 0.5, 11, 8, -0.5, -11, 8, 0.5, -11, 8, -0.5, 11, 8, -0.5, -11, -8, 0.5, 11, -8, 0.5, -11, -8, -0.5, 11, -8, 0.5, 11, -8, -0.5, -11, -8, -0.5)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_em7uo"]
+data = PackedVector3Array(-11, 8, 0.5, 11, 8, 0.5, -11, -8, 0.5, 11, 8, 0.5, 11, -8, 0.5, -11, -8, 0.5, 11, 8, -0.5, -11, 8, -0.5, 11, -8, -0.5, -11, 8, -0.5, -11, -8, -0.5, 11, -8, -0.5, 11, 8, 0.5, 11, 8, -0.5, 11, -8, 0.5, 11, 8, -0.5, 11, -8, -0.5, 11, -8, 0.5, -11, 8, -0.5, -11, 8, 0.5, -11, -8, -0.5, -11, 8, 0.5, -11, -8, 0.5, -11, -8, -0.5, 11, 8, 0.5, -11, 8, 0.5, 11, 8, -0.5, -11, 8, 0.5, -11, 8, -0.5, 11, 8, -0.5, -11, -8, 0.5, 11, -8, 0.5, -11, -8, -0.5, 11, -8, 0.5, 11, -8, -0.5, -11, -8, -0.5)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_thd86"]
+data = PackedVector3Array(-11, 8, 0.5, 11, 8, 0.5, -11, -8, 0.5, 11, 8, 0.5, 11, -8, 0.5, -11, -8, 0.5, 11, 8, -0.5, -11, 8, -0.5, 11, -8, -0.5, -11, 8, -0.5, -11, -8, -0.5, 11, -8, -0.5, 11, 8, 0.5, 11, 8, -0.5, 11, -8, 0.5, 11, 8, -0.5, 11, -8, -0.5, 11, -8, 0.5, -11, 8, -0.5, -11, 8, 0.5, -11, -8, -0.5, -11, 8, 0.5, -11, -8, 0.5, -11, -8, -0.5, 11, 8, 0.5, -11, 8, 0.5, 11, 8, -0.5, -11, 8, 0.5, -11, 8, -0.5, 11, 8, -0.5, -11, -8, 0.5, 11, -8, 0.5, -11, -8, -0.5, 11, -8, 0.5, 11, -8, -0.5, -11, -8, -0.5)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ute6l"]
+data = PackedVector3Array(-11, 8, 0.5, 11, 8, 0.5, -11, -8, 0.5, 11, 8, 0.5, 11, -8, 0.5, -11, -8, 0.5, 11, 8, -0.5, -11, 8, -0.5, 11, -8, -0.5, -11, 8, -0.5, -11, -8, -0.5, 11, -8, -0.5, 11, 8, 0.5, 11, 8, -0.5, 11, -8, 0.5, 11, 8, -0.5, 11, -8, -0.5, 11, -8, 0.5, -11, 8, -0.5, -11, 8, 0.5, -11, -8, -0.5, -11, 8, 0.5, -11, -8, 0.5, -11, -8, -0.5, 11, 8, 0.5, -11, 8, 0.5, 11, 8, -0.5, -11, 8, 0.5, -11, 8, -0.5, 11, 8, -0.5, -11, -8, 0.5, 11, -8, 0.5, -11, -8, -0.5, 11, -8, 0.5, 11, -8, -0.5, -11, -8, -0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kbkkx"]
+size = Vector3(1, 20, 23)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_4w3fx"]
+data = PackedVector3Array(-0.5, 10, 11.5, 0.5, 10, 11.5, -0.5, -10, 11.5, 0.5, 10, 11.5, 0.5, -10, 11.5, -0.5, -10, 11.5, 0.5, 10, -11.5, -0.5, 10, -11.5, 0.5, -10, -11.5, -0.5, 10, -11.5, -0.5, -10, -11.5, 0.5, -10, -11.5, 0.5, 10, 11.5, 0.5, 10, -11.5, 0.5, -10, 11.5, 0.5, 10, -11.5, 0.5, -10, -11.5, 0.5, -10, 11.5, -0.5, 10, -11.5, -0.5, 10, 11.5, -0.5, -10, -11.5, -0.5, 10, 11.5, -0.5, -10, 11.5, -0.5, -10, -11.5, 0.5, 10, 11.5, -0.5, 10, 11.5, 0.5, 10, -11.5, -0.5, 10, 11.5, -0.5, 10, -11.5, 0.5, 10, -11.5, -0.5, -10, 11.5, 0.5, -10, 11.5, -0.5, -10, -11.5, 0.5, -10, 11.5, 0.5, -10, -11.5, -0.5, -10, -11.5)
+
+[node name="greenDay" type="Node3D" unique_id=454374296 node_paths=PackedStringArray("agent", "greenDay", "returnBlocker")]
 script = ExtResource("1_gtwnb")
 agent = NodePath("Player")
 greenDay = NodePath("GreenDay")
+returnBlocker = NodePath("DoorAreas/ReturnBlocker/StaticBody3D")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1557651157]
 environment = SubResource("Environment_jd5n0")
@@ -34,6 +66,7 @@ transform = Transform3D(0.8660254, 2.1855694e-08, -0.5, 0.4829629, 0.258819, 0.8
 light_data = ExtResource("3_xbkkb")
 
 [node name="Barrels" type="Node3D" parent="." unique_id=1817275297]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 
 [node name="ExplodeBarrel" parent="Barrels" unique_id=2022457406 instance=ExtResource("4_gpfag")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17034435, 1, 11.716091)
@@ -52,6 +85,105 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1703444, 1, 6.716091)
 
 [node name="ExplodeBarrel6" parent="Barrels" unique_id=1177298461 instance=ExtResource("4_gpfag")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1703444, 1, 5.716091)
+
+[node name="Barrels2" type="Node3D" parent="." unique_id=1016187280]
+transform = Transform3D(0.9659258, 0, 0.25881904, 0, 1, 0, -0.25881904, 0, 0.9659258, 0, -1, -32)
+
+[node name="ExplodeBarrel" parent="Barrels2" unique_id=91922774 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17034435, 1, 11.716091)
+
+[node name="ExplodeBarrel2" parent="Barrels2" unique_id=548885783 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.8296556, 1, 10.716091)
+
+[node name="ExplodeBarrel3" parent="Barrels2" unique_id=548864591 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8296556, 1, 3.7160912)
+
+[node name="ExplodeBarrel4" parent="Barrels2" unique_id=1938413044 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1703444, 1, 3.7160912)
+
+[node name="ExplodeBarrel5" parent="Barrels2" unique_id=1902796491 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1703444, 1, 6.716091)
+
+[node name="ExplodeBarrel6" parent="Barrels2" unique_id=2071299992 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1703444, 1, 5.716091)
+
+[node name="Barrels3" type="Node3D" parent="." unique_id=600689213]
+transform = Transform3D(0.86602545, 0, -0.5, 0, 1, 0, 0.5, 0, 0.86602545, 0, -1, -56)
+
+[node name="ExplodeBarrel" parent="Barrels3" unique_id=1573711675 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17034435, 1, 11.716091)
+
+[node name="ExplodeBarrel2" parent="Barrels3" unique_id=109200183 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.8296556, 1, 10.716091)
+
+[node name="ExplodeBarrel3" parent="Barrels3" unique_id=1088128100 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8296556, 1, 3.7160912)
+
+[node name="ExplodeBarrel4" parent="Barrels3" unique_id=214344648 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1703444, 1, 3.7160912)
+
+[node name="ExplodeBarrel5" parent="Barrels3" unique_id=930348020 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1703444, 1, 6.716091)
+
+[node name="ExplodeBarrel6" parent="Barrels3" unique_id=745047514 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1703444, 1, 5.716091)
+
+[node name="ExplodeBarrel7" parent="Barrels3" unique_id=282538206 instance=ExtResource("4_gpfag")]
+transform = Transform3D(0.70710695, 0, -0.7071068, 0, 1, 0, 0.7071068, 0, 0.70710695, -4.2639084, 1, 11.979591)
+
+[node name="ExplodeBarrel8" parent="Barrels3" unique_id=1619973375 instance=ExtResource("4_gpfag")]
+transform = Transform3D(0.70710695, 0, -0.7071068, 0, 1, 0, 0.7071068, 0, 0.70710695, -9.213654, 1, 5.6156197)
+
+[node name="ExplodeBarrel9" parent="Barrels3" unique_id=1100717095 instance=ExtResource("4_gpfag")]
+transform = Transform3D(0.70710695, 0, -0.7071068, 0, 1, 0, 0.7071068, 0, 0.70710695, -0.72837067, 1, 4.2014084)
+
+[node name="ExplodeBarrel10" parent="Barrels3" unique_id=1796290058 instance=ExtResource("4_gpfag")]
+transform = Transform3D(0.70710695, 0, -0.7071068, 0, 1, 0, 0.7071068, 0, 0.70710695, 4.928488, 1, 9.858265)
+
+[node name="ExplodeBarrel11" parent="Barrels3" unique_id=758976471 instance=ExtResource("4_gpfag")]
+transform = Transform3D(0.70710695, 0, -0.7071068, 0, 1, 0, 0.7071068, 0, 0.70710695, 2.8071651, 1, 11.979584)
+
+[node name="ExplodeBarrel12" parent="Barrels3" unique_id=1433273650 instance=ExtResource("4_gpfag")]
+transform = Transform3D(0.70710695, 0, -0.7071068, 0, 1, 0, 0.7071068, 0, 0.70710695, 2.1000557, 1, 9.858265)
+
+[node name="Barrels4" type="Node3D" parent="." unique_id=579190966]
+transform = Transform3D(0.96592593, 0, 0.25881904, 0, 1, 0, -0.25881904, 0, 0.96592593, -33, -1, -57)
+
+[node name="ExplodeBarrel" parent="Barrels4" unique_id=2104540383 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17034435, 1, 11.716091)
+
+[node name="ExplodeBarrel2" parent="Barrels4" unique_id=429751094 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.8296556, 1, 10.716091)
+
+[node name="ExplodeBarrel3" parent="Barrels4" unique_id=836231227 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8296556, 1, 3.7160912)
+
+[node name="ExplodeBarrel4" parent="Barrels4" unique_id=1420740028 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1703444, 1, 3.7160912)
+
+[node name="ExplodeBarrel5" parent="Barrels4" unique_id=805536514 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1703444, 1, 6.716091)
+
+[node name="ExplodeBarrel6" parent="Barrels4" unique_id=457549301 instance=ExtResource("4_gpfag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1703444, 1, 5.716091)
+
+[node name="ExplodeBarrel7" parent="Barrels4" unique_id=1551583716 instance=ExtResource("4_gpfag")]
+transform = Transform3D(-0.99999976, 0, 1.1920929e-07, 0, 1, 0, -1.1920929e-07, 0, -0.99999976, -12.685959, 1, -1.2406998)
+
+[node name="ExplodeBarrel8" parent="Barrels4" unique_id=14721068 instance=ExtResource("4_gpfag")]
+transform = Transform3D(-0.99999976, 0, 1.1920929e-07, 0, 1, 0, -1.1920929e-07, 0, -0.99999976, -4.685957, 1, -0.2407074)
+
+[node name="ExplodeBarrel9" parent="Barrels4" unique_id=520008029 instance=ExtResource("4_gpfag")]
+transform = Transform3D(-0.99999976, 0, 1.1920929e-07, 0, 1, 0, -1.1920929e-07, 0, -0.99999976, -9.685959, 1, 6.7592964)
+
+[node name="ExplodeBarrel10" parent="Barrels4" unique_id=627572363 instance=ExtResource("4_gpfag")]
+transform = Transform3D(-0.99999976, 0, 1.1920929e-07, 0, 1, 0, -1.1920929e-07, 0, -0.99999976, -17.685953, 1, 6.7592964)
+
+[node name="ExplodeBarrel11" parent="Barrels4" unique_id=201137647 instance=ExtResource("4_gpfag")]
+transform = Transform3D(-0.99999976, 0, 1.1920929e-07, 0, 1, 0, -1.1920929e-07, 0, -0.99999976, -17.685953, 1, 3.7592964)
+
+[node name="ExplodeBarrel12" parent="Barrels4" unique_id=1309060024 instance=ExtResource("4_gpfag")]
+transform = Transform3D(-0.99999976, 0, 1.1920929e-07, 0, 1, 0, -1.1920929e-07, 0, -0.99999976, -15.685957, 1, 4.7592926)
 
 [node name="Jeep" parent="." unique_id=1064003405 instance=ExtResource("5_ubt6e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 80)
@@ -77,3 +209,111 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 80)
 prompt = "drive jeep"
 dialogFile = "res://dialog/script/greenday/driveJeep.json"
 startHidden = true
+
+[node name="minnMaxLogo_MeetFellowRecruits" parent="." unique_id=1196909930 instance=ExtResource("9_o61kh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 5, -97)
+prompt = "meet fellow recruits"
+dialogFile = "res://dialog/script/greenday/meet_recruits.json"
+
+[node name="DoorAreas" type="Node3D" parent="." unique_id=927681184]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="DoorAreas" unique_id=501193835]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 7.5, 19.497986)
+visible = false
+mesh = SubResource("BoxMesh_jd5n0")
+
+[node name="PassDoorOne" type="Area3D" parent="DoorAreas/MeshInstance3D" unique_id=1355756994]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorAreas/MeshInstance3D/PassDoorOne" unique_id=295623556]
+shape = SubResource("ConcavePolygonShape3D_o61kh")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="DoorAreas" unique_id=1289643184]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 7.5, -10.502014)
+visible = false
+mesh = SubResource("BoxMesh_o61kh")
+
+[node name="PassDoorTwo" type="Area3D" parent="DoorAreas/MeshInstance3D2" unique_id=698004643]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorAreas/MeshInstance3D2/PassDoorTwo" unique_id=325864772]
+shape = SubResource("ConcavePolygonShape3D_fu7da")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="DoorAreas" unique_id=1277585581]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 7.5, -40.502014)
+visible = false
+mesh = SubResource("BoxMesh_o61kh")
+
+[node name="PassDoorThree" type="Area3D" parent="DoorAreas/MeshInstance3D3" unique_id=1476361122]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorAreas/MeshInstance3D3/PassDoorThree" unique_id=517223718]
+shape = SubResource("ConcavePolygonShape3D_em7uo")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="DoorAreas" unique_id=1765989135]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -21.5, 7.5, -49.502014)
+visible = false
+mesh = SubResource("BoxMesh_o61kh")
+
+[node name="PassDoorFour" type="Area3D" parent="DoorAreas/MeshInstance3D4" unique_id=758340784]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorAreas/MeshInstance3D4/PassDoorFour" unique_id=28336011]
+shape = SubResource("ConcavePolygonShape3D_thd86")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="DoorAreas" unique_id=243657392]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -70.5, 7.5, -49.502014)
+visible = false
+mesh = SubResource("BoxMesh_o61kh")
+
+[node name="PassDoorFive" type="Area3D" parent="DoorAreas/MeshInstance3D5" unique_id=1942886055]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorAreas/MeshInstance3D5/PassDoorFive" unique_id=603849132]
+shape = SubResource("ConcavePolygonShape3D_ute6l")
+
+[node name="ReturnBlocker" type="MeshInstance3D" parent="DoorAreas" unique_id=531917169]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 9.5, -49)
+visible = false
+mesh = SubResource("BoxMesh_kbkkx")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="DoorAreas/ReturnBlocker" unique_id=2041844124]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorAreas/ReturnBlocker/StaticBody3D" unique_id=1808356074]
+shape = SubResource("ConcavePolygonShape3D_4w3fx")
+
+[node name="SecondPlayerPosition" type="Node3D" parent="." unique_id=1793972640]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75, 1, -57)
+
+[node name="CroissantDuh" parent="." unique_id=1074927996 instance=ExtResource("10_em7uo")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -74, 3, -100)
+
+[node name="MonRoll" parent="." unique_id=933791163 instance=ExtResource("11_thd86")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76, 3, -98)
+
+[node name="Camera3D_CroissantDuh" type="Camera3D" parent="." unique_id=132946034]
+transform = Transform3D(0.99999046, -0.0016165669, 0.0040519633, 0, 0.92880976, 0.37055692, -0.0043625333, -0.37055337, 0.9288009, -74.18582, 5.0875273, -98.29789)
+
+[node name="Camera3D_MonRoll" type="Camera3D" parent="." unique_id=2058900668]
+transform = Transform3D(-0.039258566, -0.091430835, 0.99503726, 0, 0.99580497, 0.09150138, -0.9992291, 0.003592213, -0.039093874, -74.01255, 4.2153974, -98.2374)
+
+[node name="Camera3D_AgentAndOthers" type="Camera3D" parent="." unique_id=2080661504]
+transform = Transform3D(-0.12619747, -0.30167454, 0.9450221, 0, 0.95263827, 0.30410582, -0.99200517, 0.038377386, -0.12022054, -72.50755, 4.955576, -98.86819)
+
+[node name="Camera3D_AgentToCroissant" type="Camera3D" parent="." unique_id=1469200313]
+transform = Transform3D(0.91531193, -0.18098879, 0.35978755, 0, 0.893337, 0.44938737, -0.4027456, -0.41132963, 0.817682, -73.09625, 5.2556834, -96.52472)
+
+[node name="fortyIdleNoAnim" parent="." unique_id=306473063 instance=ExtResource("12_thd86")]
+transform = Transform3D(-2.9802322e-08, 0, -1.0000001, 0, 1, 0, 1.0000001, 0, -2.9802322e-08, -74, 3, -97)
+
+[connection signal="area_entered" from="DoorAreas/MeshInstance3D/PassDoorOne" to="." method="_on_pass_door_one_area_entered"]
+[connection signal="area_entered" from="DoorAreas/MeshInstance3D2/PassDoorTwo" to="." method="_on_pass_door_two_area_entered"]
+[connection signal="area_entered" from="DoorAreas/MeshInstance3D3/PassDoorThree" to="." method="_on_pass_door_three_area_entered"]
+[connection signal="area_entered" from="DoorAreas/MeshInstance3D4/PassDoorFour" to="." method="_on_pass_door_four_area_entered"]
+[connection signal="area_entered" from="DoorAreas/MeshInstance3D5/PassDoorFive" to="." method="_on_pass_door_five_area_entered"]

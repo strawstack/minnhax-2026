@@ -19,6 +19,8 @@ var cameraX
 
 var canDrive = false
 
+var onceMoveJeep = false
+
 var gc
 
 func _ready() -> void:
@@ -34,6 +36,9 @@ func showPassengers():
 	agent.set_visible(true)
 	greenDay.set_visible(true)
 	$CameraY/CameraX/Camera3D.set_current(true)
+
+func hideAgent():
+	agent.set_visible(false)
 
 func _input(event):
 	# https://forum.godotengine.org/t/how-to-make-the-camera-moves-by-the-mouse-in-3d/24201/2
@@ -56,6 +61,9 @@ func _process(delta: float) -> void:
 	var moving = false
 
 	if Input.is_action_pressed("forward") or Input.is_action_pressed("back"):
+		if not onceMoveJeep and not gc.dialogInProgress:
+			onceMoveJeep = true
+			gc.playDialogFile("res://dialog/script/greenday/first_jeep_move.json")
 		moving = true
 	
 	if Input.is_action_pressed("left"):

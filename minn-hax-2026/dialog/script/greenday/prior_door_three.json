@@ -1,0 +1,16 @@
+[
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "PLACEHOLDER: How did you break your arms?"
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "openDoorThree"
+	},
+]

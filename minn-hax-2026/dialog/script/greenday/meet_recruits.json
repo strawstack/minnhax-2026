@@ -1,0 +1,20 @@
+[
+	{
+		"name": "Command",
+		"command": "camera3D_AgentToCroissant"
+	},
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "PLACEHOLDER: Hello, ah, miss half moon?"
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "loadTrainingShoot"
+	},
+]

@@ -1,0 +1,16 @@
+[
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "PLACEHOLDER: I never would have agreed to training you, but M insisted."
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "openDoorFive"
+	},
+]
