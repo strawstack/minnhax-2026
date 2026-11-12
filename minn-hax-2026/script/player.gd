@@ -93,6 +93,8 @@ func _physics_process(delta: float) -> void:
 	if not gc.playerCanMove:
 		return
 	if inShootingMode:
+		var pos = characterBody3D.get_position()
+		cameraY.set_position(pos)
 		if Input.is_action_just_pressed("left_mouse"):
 			rayCast3D.force_raycast_update()
 			if rayCast3D.is_colliding():
@@ -126,10 +128,10 @@ func _process(delta: float) -> void:
 	if not gc.playerCanMove:
 		return
 
-	if Input.is_action_just_pressed("right_mouse") and shootingAllowed:
+	if Input.is_action_just_pressed("right_mouse") and shootingAllowed and useWalkMovement:
 		shootingMode(true)
 	
-	if Input.is_action_just_released("right_mouse"):
+	if inShootingMode and Input.is_action_just_released("right_mouse"):
 		shootingMode(false)
 	
 	if Input.is_action_just_pressed("e_key"):
@@ -150,6 +152,9 @@ func setMovement(walk: bool):
 	# Active physics: character or rigid sphere
 	characterBody3D.toggleActive(useWalkMovement)
 	rigidBody3D.toggleActive(not useWalkMovement)
+	
+	# Rotation of head
+	rigidBody3D.set_rotation(Vector3(0, agentFortyJeffM.get_rotation().y, 0))
 
 func _on_area_3d_area_entered(area: Area3D) -> void:
 	var event = area.get_parent()

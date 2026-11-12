@@ -1,0 +1,16 @@
+[
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "PLACEHOLDER: got it..."
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "loadTacSim"
+	},
+]

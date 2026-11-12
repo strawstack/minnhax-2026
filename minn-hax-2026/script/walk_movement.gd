@@ -36,7 +36,7 @@ func _physics_process(delta):
 	
 	var direction = Vector3.ZERO
 	
-	if not playerRoot.useWalkMovement:
+	if not playerRoot.useWalkMovement and not playerRoot.inShootingMode:
 		return
 	
 	var forward = -1 * cameraY.get_global_transform().basis.z
@@ -68,7 +68,7 @@ func _physics_process(delta):
 		velocity.y -= gravity * delta
 
 	# Jump
-	if Input.is_action_just_pressed("jump") and is_on_floor():
+	if Input.is_action_just_pressed("jump") and is_on_floor() and not playerRoot.inShootingMode:
 		velocity.y = sqrt(2.0 * gravity * jump_height)
 
 	var dir = direction.normalized()

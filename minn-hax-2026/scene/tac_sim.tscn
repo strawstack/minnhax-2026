@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b3ln7j0caqm4y"]
+
+[ext_resource type="Script" uid="uid://bnpo1aw3ksmbs" path="res://script/tac_sim.gd" id="1_4ry2h"]
+
+[node name="tacSim" type="Node3D" unique_id=2140253641]
+script = ExtResource("1_4ry2h")

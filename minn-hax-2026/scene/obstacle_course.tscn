@@ -24,6 +24,8 @@ light_data = ExtResource("2_j0s0b")
 
 [node name="Player" parent="." unique_id=1371449073 instance=ExtResource("3_8m52w")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+noSkating = true
+hideBoard = true
 
 [node name="CroissantDuh" parent="." unique_id=874928942 instance=ExtResource("4_gtgy7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.232452, 0, 3.6212873)
@@ -42,6 +44,11 @@ dialogFile = "res://dialog/script/obstacleCourse/pick_gun.json"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.082449, 1.8236125, -31.665956)
 prompt = "learn to skate"
 dialogFile = "res://dialog/script/obstacleCourse/learn_skate.json"
+
+[node name="minnMaxLogo_Flag" parent="." unique_id=438187878 instance=ExtResource("5_pnelr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.605991, 6.722595, -40.9754)
+prompt = "get flag"
+dialogFile = "res://dialog/script/obstacleCourse/get_flag.json"
 
 [node name="Targets" type="Node3D" parent="." unique_id=1986140771]
 
