@@ -45,14 +45,14 @@ func _physics_process(delta: float) -> void:
 	if linear_velocity.length() > 0.01:
 		var offset = agentFortyJeffM.global_basis.y.normalized() * 0.74
 		agentFortyJeffM.look_at(global_position + offset + linear_velocity, Vector3.UP)
-	
+
 	var steer = Vector3.UP.cross(linear_velocity).normalized() * steering_force * delta;
-	
+
 	if Input.is_action_pressed("right"):
 		apply_central_force(-steer)
 
 	if Input.is_action_pressed("left"):
 		apply_central_force(steer)
-	
+
 	if Input.is_action_just_pressed("jump") or Input.is_action_just_pressed("forward"):
 		performKick()

@@ -119,6 +119,7 @@ func _process(delta: float) -> void:
 		if not gc.dialogInProgress and currentEvent:
 			currentEvent.startEvent()
 
+	var offset = agentFortyJeffM.global_basis.y.normalized() * 0.74
 	if useWalkMovement:
 		var pos = characterBody3D.get_position()
 		agentFortyJeffM.set_position(pos)
@@ -126,7 +127,6 @@ func _process(delta: float) -> void:
 	else:
 		var previous_position = agentFortyJeffM.get_position()
 		var pos = rigidBody3D.get_position()
-		var offset = agentFortyJeffM.global_basis.y.normalized() * 0.74
 		agentFortyJeffM.set_position(lerp(previous_position, pos + offset, 18.0 * delta))
 		cameraY.set_position(pos)
 

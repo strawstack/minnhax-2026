@@ -1,6 +1,68 @@
 [gd_scene format=3 uid="uid://cam7w0dnx5fsh"]
 
 [ext_resource type="Script" uid="uid://daclkhef88c8n" path="res://script/obstacle_course.gd" id="1_a4f43"]
+[ext_resource type="PackedScene" uid="uid://db43j4pmtdalr" path="res://scene/obstacle_course_model.tscn" id="2_3vmvm"]
+[ext_resource type="LightmapGIData" uid="uid://da4nbfbvt2j7b" path="res://bake/obstacle_course.lmbake" id="2_j0s0b"]
+[ext_resource type="PackedScene" uid="uid://bugwpg2o7w3gw" path="res://scene/player.tscn" id="3_8m52w"]
+[ext_resource type="PackedScene" uid="uid://bruns83sdie5u" path="res://scene/croissant_duh.tscn" id="4_gtgy7"]
+[ext_resource type="PackedScene" uid="uid://7w7qj04mf06d" path="res://scene/minn_max_logo.tscn" id="5_pnelr"]
+[ext_resource type="PackedScene" uid="uid://c7un3a18bmdfx" path="res://scene/target.tscn" id="6_w62g6"]
+[ext_resource type="PackedScene" uid="uid://b7p6q3wrflobu" path="res://scene/mon_roll.tscn" id="8_kgecf"]
+
+[sub_resource type="Environment" id="Environment_jd5n0"]
 
 [node name="obstacleCourse" type="Node3D" unique_id=298529073]
 script = ExtResource("1_a4f43")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=380114713]
+environment = SubResource("Environment_jd5n0")
+
+[node name="LightmapGI" type="LightmapGI" parent="." unique_id=1938887273]
+light_data = ExtResource("2_j0s0b")
+
+[node name="obstacle_course_model" parent="." unique_id=1363569204 instance=ExtResource("2_3vmvm")]
+
+[node name="Player" parent="." unique_id=1371449073 instance=ExtResource("3_8m52w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+
+[node name="CroissantDuh" parent="." unique_id=874928942 instance=ExtResource("4_gtgy7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.232452, 0, 3.6212873)
+
+[node name="minnMaxLogo_CD" parent="." unique_id=1930660944 instance=ExtResource("5_pnelr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5663285, 2.3093088, 3.4368978)
+prompt = "talk to CroissantDuh"
+dialogFile = "res://dialog/script/obstacleCourse/talk_cd.json"
+
+[node name="minnMaxLogo_TakeGun" parent="." unique_id=966122424 instance=ExtResource("5_pnelr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.86817694, 2.3826091, -10.235828)
+prompt = "pick up gun"
+dialogFile = "res://dialog/script/obstacleCourse/pick_gun.json"
+
+[node name="minnMaxLogo_MonRoll" parent="." unique_id=593332272 instance=ExtResource("5_pnelr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.082449, 1.8236125, -31.665956)
+prompt = "learn to skate"
+dialogFile = "res://dialog/script/obstacleCourse/learn_skate.json"
+
+[node name="Targets" type="Node3D" parent="." unique_id=1986140771]
+
+[node name="Target" parent="Targets" unique_id=267441459 instance=ExtResource("6_w62g6")]
+transform = Transform3D(0.47599903, 0, -0.8794458, 0, 1, 0, 0.8794458, 0, 0.47599903, -2.218193, 0, -17.302723)
+
+[node name="Target2" parent="Targets" unique_id=1029470702 instance=ExtResource("6_w62g6")]
+transform = Transform3D(0.0035575237, 0, -0.9999936, 0, 1, 0, 0.9999936, 0, 0.0035575237, 0.79362106, 0, -17.385616)
+
+[node name="Target3" parent="Targets" unique_id=412101397 instance=ExtResource("6_w62g6")]
+transform = Transform3D(0.9999988, 0, -0.0015295614, 0, 1, 0, 0.0015295614, 0, 0.9999988, -10.010223, 0, -18.20074)
+
+[node name="Target4" parent="Targets" unique_id=1852117061 instance=ExtResource("6_w62g6")]
+transform = Transform3D(0.9999988, 0, -0.0015295614, 0, 1, 0, 0.0015295614, 0, 0.9999988, -14.002953, 0, -16.211287)
+
+[node name="Target5" parent="Targets" unique_id=142288561 instance=ExtResource("6_w62g6")]
+transform = Transform3D(-0.9150071, 0, -0.40343782, 0, 1, 0, 0.40343782, 0, -0.9150071, -4.9923077, 3.9841185, -21.999147)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1773735848]
+transform = Transform3D(0.9659258, 0.066987306, 0.25, -0.25881904, 0.25000003, 0.93301266, 0, -0.9659258, 0.25881907, 0, 30.817776, 0)
+light_bake_mode = 1
+
+[node name="MonRoll" parent="." unique_id=936362553 instance=ExtResource("8_kgecf")]
+transform = Transform3D(0.55609894, 0, -0.8311161, 0, 1, 0, 0.8311161, 0, 0.55609894, -15.6146755, 0, -32.396034)

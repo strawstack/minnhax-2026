@@ -1,0 +1,16 @@
+[
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "PLACEHOLDER: Let's find some targets..."
+			},
+		]
+	},
+		{
+		"name": "Command",
+		"command": "playerCanShoot"
+	},
+]

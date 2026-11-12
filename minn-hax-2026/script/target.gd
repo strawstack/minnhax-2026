@@ -10,7 +10,8 @@ func _ready() -> void:
 func hit():
 	$AnimationPlayer.play("down")
 	if not once:
-		targetHitCallbackNode.targetHit()
+		if targetHitCallbackNode:
+			targetHitCallbackNode.targetHit()
 
 func reset():
 	$AnimationPlayer.play("up")

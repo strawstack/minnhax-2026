@@ -1,11 +1,26 @@
 extends Node3D
 
+var gc
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	gc = get_tree().current_scene
+	gc.sceneCommandLookup = {
+		"playerCanShoot": playerCanShoot,
+		"playerCanSkate": playerCanSkate
+	}
+	startScene()
 
+func startScene():
+	$Player.setCameraActive()
+	gc.playerCanMove = true
+	await gc.fadeIn()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+func playerCanShoot():
+	$Player.shootingAllowed = true
+
+func playerCanSkate():
+	$Player.noSkating = false
+	$Player.hideBoard = false
+
 func _process(delta: float) -> void:
 	pass
