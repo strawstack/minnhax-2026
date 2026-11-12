@@ -19,15 +19,13 @@ var previous_rotation = 0
 
 var gc
 
-# Capture mouse when game launches
 func _ready():
 	gc = get_tree().current_scene
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	agentFortyJeffM = playerRoot.get_node("agentFortyJeffM")
 	cameraY = playerRoot.get_node("CameraY")
 
 func toggleActive(active: bool):
-	$CollisionShape3D.set_disabled(not active)
+	$CollisionShape3D.set_deferred("disabled", not active)
 	agentFortyJeffM.rotation.x = 0
 	agentFortyJeffM.rotation.z = 0
 

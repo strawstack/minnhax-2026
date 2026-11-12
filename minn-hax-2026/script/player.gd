@@ -9,6 +9,7 @@ extends Node3D
 @export var gunArm: Node3D
 @export var rayCast3D: RayCast3D
 @export var bulletStart: Node3D
+@export var agentHead: Node3D
 
 var useWalkMovement = true
 var inShootingMode = false
@@ -23,12 +24,13 @@ const MAX_LOOK_DOWN = -80.0
 const MAX_BULLET_DISTANCE = 300
 
 var agentFortyJeffM
-var characterBody3D
-var rigidBody3D
+var characterBody3D: CharacterBody3D
+var rigidBody3D: RigidBody3D
 var cameraY
 var cameraX
 
 var startCameraPosition: Vector3
+var preserveVelocity = Vector3.ZERO
 
 var gc
 
@@ -88,19 +90,37 @@ func shootingMode(value: bool):
 		$CameraY/CameraX/Camera3D.set_position(startCameraPosition)
 
 func _physics_process(delta: float) -> void:
-	if inShootingMode and Input.is_action_just_pressed("left_mouse"):
-		rayCast3D.force_raycast_update()
-		if rayCast3D.is_colliding():
-			var from = bulletStart.get_global_position()
-			var to = rayCast3D.get_collision_point()
-			gc.draw_thick_line(from, to)
-			var target_root = rayCast3D.get_collider().get_parent().get_parent()
-			if target_root:
-				target_root.hit()
+	if not gc.playerCanMove:
+		return
+	if inShootingMode:
+		if Input.is_action_just_pressed("left_mouse"):
+			rayCast3D.force_raycast_update()
+			if rayCast3D.is_colliding():
+				var from = bulletStart.get_global_position()
+				var to = rayCast3D.get_collision_point()
+				gc.draw_thick_line(from, to)
+				var target_root = rayCast3D.get_collider().get_parent().get_parent()
+				if target_root:
+					target_root.hit()
+			else:
+				var from = bulletStart.get_global_position()
+				var bulletDirection = -1 * bulletStart.get_global_basis().x * MAX_BULLET_DISTANCE
+				gc.draw_thick_line(from, from + bulletDirection)
+	else:
+		if Input.is_action_just_pressed("f_key") and not noSkating:
+			setMovement(not useWalkMovement)
+
+		if useWalkMovement:
+			var offset = 0.846 # Distance center jeffm to center of head
+			var pos = characterBody3D.get_position()
+			agentFortyJeffM.set_position(pos)
+			cameraY.set_position(pos)
+			rigidBody3D.set_position(pos + Vector3(0, offset, 0))
+			preserveVelocity = characterBody3D.velocity
 		else:
-			var from = bulletStart.get_global_position()
-			var bulletDirection = -1 * bulletStart.get_global_basis().x * MAX_BULLET_DISTANCE
-			gc.draw_thick_line(from, from + bulletDirection)
+			var pos = rigidBody3D.get_position()
+			characterBody3D.set_position(pos)
+			cameraY.set_position(pos)
 
 func _process(delta: float) -> void:
 	if not gc.playerCanMove:
@@ -111,40 +131,23 @@ func _process(delta: float) -> void:
 	
 	if Input.is_action_just_released("right_mouse"):
 		shootingMode(false)
-
-	if Input.is_action_just_pressed("f_key") and not noSkating:
-		setMovement(not useWalkMovement)
 	
 	if Input.is_action_just_pressed("e_key"):
 		if not gc.dialogInProgress and currentEvent:
 			currentEvent.startEvent()
 
-	var offset = agentFortyJeffM.global_basis.y.normalized() * 0.74
-	if useWalkMovement:
-		var pos = characterBody3D.get_position()
-		agentFortyJeffM.set_position(pos)
-		cameraY.set_position(pos)
-	else:
-		var previous_position = agentFortyJeffM.get_position()
-		var pos = rigidBody3D.get_position()
-		agentFortyJeffM.set_position(lerp(previous_position, pos + offset, 18.0 * delta))
-		cameraY.set_position(pos)
-
 func setMovement(walk: bool):
 	useWalkMovement = walk
-
-	# Sync new player movement body with previous
-	if useWalkMovement:
-		$CameraY/CameraX/Camera3D.set_fov(75.0)
-		characterBody3D.set_position(rigidBody3D.get_position())
-	else:
-		$CameraY/CameraX/Camera3D.set_fov(90.0)
-		rigidBody3D.setTeleport(characterBody3D.get_position())
 
 	if not hideBoard:
 		skateBoardBack.set_visible(useWalkMovement)
 		skateBoardFloor.set_visible(not useWalkMovement)
 
+	# Visible: body or head
+	agentFortyJeffM.set_visible(useWalkMovement)
+	agentHead.set_visible(not useWalkMovement)
+
+	# Active physics: character or rigid sphere
 	characterBody3D.toggleActive(useWalkMovement)
 	rigidBody3D.toggleActive(not useWalkMovement)
 
