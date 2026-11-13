@@ -1,6 +1,76 @@
 [gd_scene format=3 uid="uid://b3ln7j0caqm4y"]
 
 [ext_resource type="Script" uid="uid://bnpo1aw3ksmbs" path="res://script/tac_sim.gd" id="1_4ry2h"]
+[ext_resource type="PackedScene" uid="uid://b2es5y0isdsdk" path="res://scene/tac_sim_model.tscn" id="2_1cx4h"]
+[ext_resource type="PackedScene" uid="uid://bugwpg2o7w3gw" path="res://scene/player.tscn" id="2_4nhj6"]
+[ext_resource type="LightmapGIData" uid="uid://evvlh5deqpe0" path="res://bake/tac_sim.lmbake" id="4_onqtw"]
 
 [node name="tacSim" type="Node3D" unique_id=2140253641]
 script = ExtResource("1_4ry2h")
+
+[node name="Player" parent="." unique_id=1371449073 instance=ExtResource("2_4nhj6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5838037, 1, 21.510788)
+noSkating = true
+hideBoard = true
+
+[node name="tac_sim_model" parent="." unique_id=245037582 instance=ExtResource("2_1cx4h")]
+
+[node name="light" type="Node3D" parent="." unique_id=509701126]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="light" unique_id=838555099]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 5.3474765, 20.140944)
+light_energy = 2.0
+light_bake_mode = 1
+spot_range = 9.234035
+spot_angle = 85.499626
+
+[node name="SpotLight3D7" type="SpotLight3D" parent="light" unique_id=176278236]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 4.589772, 3.920566, 21.52855)
+light_energy = 0.5
+light_bake_mode = 1
+spot_range = 9.234035
+spot_angle = 85.499626
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="light" unique_id=2066990435]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 5.3474765, 8.926716)
+light_energy = 2.0
+light_bake_mode = 1
+spot_range = 9.234035
+spot_angle = 85.499626
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="light" unique_id=245699886]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -6.033745, 5.3474765, 4.660434)
+light_energy = 2.0
+light_bake_mode = 1
+spot_range = 9.234035
+spot_angle = 85.499626
+
+[node name="SpotLight3D4" type="SpotLight3D" parent="light" unique_id=118250242]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 5.363327, 5.3474765, 4.660434)
+light_energy = 2.0
+light_bake_mode = 1
+spot_range = 9.234035
+spot_angle = 85.499626
+
+[node name="SpotLight3D5" type="SpotLight3D" parent="light" unique_id=1656185551]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.060943604, 5.3474765, -20.08401)
+light_energy = 2.0
+light_bake_mode = 1
+spot_range = 9.234035
+spot_angle = 85.499626
+
+[node name="SpotLight3D6" type="SpotLight3D" parent="light" unique_id=212211887]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.060943604, 5.3474765, -3.7328148)
+light_energy = 2.0
+light_bake_mode = 1
+spot_range = 9.234035
+spot_angle = 85.499626
+
+[node name="LightmapGI" type="LightmapGI" parent="." unique_id=1134276560]
+light_data = ExtResource("4_onqtw")
+
+[node name="Label3D" type="Label3D" parent="." unique_id=476289940]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.722559, -26.451237)
+modulate = Color(0.06666667, 0.06666667, 0.06666667, 1)
+text = "IMMERSIVE AGENT TRAINING"
+font_size = 128
