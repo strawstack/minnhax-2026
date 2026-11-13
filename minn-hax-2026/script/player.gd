@@ -8,6 +8,7 @@ extends Node3D
 @export var hideBoard: bool
 @export var gunArm: Node3D
 @export var rayCast3D: RayCast3D
+@export var cameraRayCast3D: RayCast3D
 @export var bulletStart: Node3D
 @export var agentHead: Node3D
 
@@ -28,6 +29,8 @@ var characterBody3D: CharacterBody3D
 var rigidBody3D: RigidBody3D
 var cameraY
 var cameraX
+var cameraRoot
+var camera3D
 
 var startCameraPosition: Vector3
 var preserveVelocity = Vector3.ZERO
@@ -41,7 +44,9 @@ func _ready() -> void:
 	rigidBody3D = $RigidBody3D
 	cameraY = $CameraY
 	cameraX = $CameraY/CameraX
-	startCameraPosition = $CameraY/CameraX/Camera3D.get_position()
+	cameraRoot = $CameraY/CameraX/CameraRoot
+	camera3D = $CameraY/CameraX/CameraRoot/Camera3D
+	startCameraPosition = $CameraY/CameraX/CameraRoot.get_position()
 	
 	if hideBoard:
 		skateBoardBack.set_visible(false)
@@ -63,7 +68,7 @@ func resetCamera():
 	cameraX.set_rotation(Vector3.ZERO)
 
 func setCameraActive():
-	$CameraY/CameraX/Camera3D.set_current(true)
+	$CameraY/CameraX/CameraRoot/Camera3D.set_current(true)
 
 func _input(event):
 	# https://forum.godotengine.org/t/how-to-make-the-camera-moves-by-the-mouse-in-3d/24201/2
@@ -85,11 +90,21 @@ func shootingMode(value: bool):
 	agentFortyJeffM.hideHead(value)
 	gc.showCrossHairs(value)
 	if value:
-		$CameraY/CameraX/Camera3D.set_position(Vector3(0, 0.75, 0))
+		$CameraY/CameraX/CameraRoot.set_position(Vector3(0, 0.75, 0))
 	else:
-		$CameraY/CameraX/Camera3D.set_position(startCameraPosition)
+		$CameraY/CameraX/CameraRoot.set_position(startCameraPosition)
 
 func _physics_process(delta: float) -> void:
+
+	if cameraRayCast3D.is_colliding():
+		var point = cameraRayCast3D.get_collision_point()
+		var distance = (point - cameraRoot.get_global_position()).length()
+		var maxCameraSlide = 2.2
+		var cameraPoint = distance - maxCameraSlide 
+		camera3D.set_position(Vector3(0, 0, cameraPoint))
+	else:
+		camera3D.set_position(Vector3.ZERO)
+
 	if not gc.playerCanMove:
 		return
 	if inShootingMode:

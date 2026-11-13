@@ -3046,13 +3046,14 @@ shadow_mesh = SubResource("ArrayMesh_8i5nj")
 [sub_resource type="SphereShape3D" id="SphereShape3D_jd5n0"]
 radius = 0.36
 
-[node name="Player" type="Node3D" unique_id=1371449073 node_paths=PackedStringArray("skateBoardBack", "skateBoardFloor", "gunArm", "rayCast3D", "bulletStart", "agentHead")]
+[node name="Player" type="Node3D" unique_id=1371449073 node_paths=PackedStringArray("skateBoardBack", "skateBoardFloor", "gunArm", "rayCast3D", "cameraRayCast3D", "bulletStart", "agentHead")]
 script = ExtResource("1_xo3ru")
 skateBoardBack = NodePath("agentFortyJeffM/Armature/Skeleton3D/Bone/Cube/SkateBoardBack")
 skateBoardFloor = NodePath("agentFortyJeffM/SkateBoardFloor")
-gunArm = NodePath("CameraY/CameraX/Camera3D/agent_gun_arm")
-rayCast3D = NodePath("CameraY/CameraX/Camera3D/agent_gun_arm/RayCast3D")
-bulletStart = NodePath("CameraY/CameraX/Camera3D/agent_gun_arm/bulletStart")
+gunArm = NodePath("CameraY/CameraX/CameraRoot/agent_gun_arm")
+rayCast3D = NodePath("CameraY/CameraX/CameraRoot/agent_gun_arm/RayCast3D")
+cameraRayCast3D = NodePath("CameraY/CameraX/CameraRoot/RayCast3D")
+bulletStart = NodePath("CameraY/CameraX/CameraRoot/agent_gun_arm/bulletStart")
 agentHead = NodePath("RigidBody3D/AgentHead")
 
 [node name="CameraY" type="Node3D" parent="." unique_id=1605868732]
@@ -3060,42 +3061,48 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="CameraX" type="Node3D" parent="CameraY" unique_id=258036667]
 
-[node name="Camera3D" type="Camera3D" parent="CameraY/CameraX" unique_id=173877677]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.28887412, 0.61771595, 2.169)
+[node name="CameraRoot" type="Node3D" parent="CameraY/CameraX" unique_id=1508942982]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29, 0.62, 2.2)
 
-[node name="agent_gun_arm" type="Node3D" parent="CameraY/CameraX/Camera3D" unique_id=976136120]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.07261014, -0.3131342, -0.016422033)
+[node name="RayCast3D" type="RayCast3D" parent="CameraY/CameraX/CameraRoot" unique_id=1678827231]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0009999871, -0.0019999743, -2.2)
+target_position = Vector3(0, 0, 2.3)
 
-[node name="Cube_040" type="MeshInstance3D" parent="CameraY/CameraX/Camera3D/agent_gun_arm" unique_id=871219414]
+[node name="Camera3D" type="Camera3D" parent="CameraY/CameraX/CameraRoot" unique_id=173877677]
+
+[node name="agent_gun_arm" type="Node3D" parent="CameraY/CameraX/CameraRoot" unique_id=976136120]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.07373601, -0.31541824, -0.04742217)
+
+[node name="Cube_040" type="MeshInstance3D" parent="CameraY/CameraX/CameraRoot/agent_gun_arm" unique_id=871219414]
 transform = Transform3D(0.08420128, 0.96224886, -0.25881892, -0.99619335, 0.087171555, 0, 0.022561654, 0.2578337, 0.9659259, 0, 0, 0)
 mesh = SubResource("ArrayMesh_afil8")
 
-[node name="Cube_041" type="MeshInstance3D" parent="CameraY/CameraX/Camera3D/agent_gun_arm/Cube_040" unique_id=386378403]
+[node name="Cube_041" type="MeshInstance3D" parent="CameraY/CameraX/CameraRoot/agent_gun_arm/Cube_040" unique_id=386378403]
 transform = Transform3D(0.9849227, 0.17233178, 0.015134676, -0.17233178, 0.96973044, 0.17298743, 0.015134676, -0.17298743, 0.9848077, -0.025700089, -0.2937012, 0.019318517)
 mesh = SubResource("ArrayMesh_1wiks")
 
-[node name="Cube_042" type="MeshInstance3D" parent="CameraY/CameraX/Camera3D/agent_gun_arm/Cube_040" unique_id=1813528487]
+[node name="Cube_042" type="MeshInstance3D" parent="CameraY/CameraX/CameraRoot/agent_gun_arm/Cube_040" unique_id=1813528487]
 transform = Transform3D(0.9961945, 0.084188595, 0.022558264, -0.08715844, 0.96224993, 0.25783408, 2.7939677e-09, -0.25881904, 0.9659258, -0.06302745, -0.49084488, 0.047955588)
 mesh = SubResource("ArrayMesh_3hur2")
 
-[node name="Cube_043" type="MeshInstance3D" parent="CameraY/CameraX/Camera3D/agent_gun_arm/Cube_040" unique_id=1589985900]
+[node name="Cube_043" type="MeshInstance3D" parent="CameraY/CameraX/CameraRoot/agent_gun_arm/Cube_040" unique_id=1589985900]
 transform = Transform3D(0.9961945, 0.084188595, 0.022558264, -0.08715844, 0.96224993, 0.25783408, 2.7939677e-09, -0.25881904, 0.9659258, -0.11970953, -0.5267853, 0.067614794)
 mesh = SubResource("ArrayMesh_wobaj")
 
-[node name="bulletStart" type="Node3D" parent="CameraY/CameraX/Camera3D/agent_gun_arm" unique_id=163198179]
+[node name="bulletStart" type="Node3D" parent="CameraY/CameraX/CameraRoot/agent_gun_arm" unique_id=163198179]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.89744484, 0.07718563, -0.07446176)
 
-[node name="RayCast3D" type="RayCast3D" parent="CameraY/CameraX/Camera3D/agent_gun_arm" unique_id=1700374463]
+[node name="RayCast3D" type="RayCast3D" parent="CameraY/CameraX/CameraRoot/agent_gun_arm" unique_id=1700374463]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.89288855, 0.076370955, -0.072731525)
 target_position = Vector3(-50, 0, 0)
 collision_mask = 8
 
-[node name="Area3D" type="Area3D" parent="CameraY/CameraX/Camera3D" unique_id=1576320068]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.0187376)
+[node name="Area3D" type="Area3D" parent="CameraY/CameraX/CameraRoot" unique_id=1576320068]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0011258721, -0.00228405, -3.0497377)
 collision_layer = 0
 collision_mask = 4
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CameraY/CameraX/Camera3D/Area3D" unique_id=1268271570]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CameraY/CameraX/CameraRoot/Area3D" unique_id=1268271570]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.4449687)
 shape = SubResource("BoxShape3D_kbkkx")
 
@@ -3593,5 +3600,5 @@ mesh = SubResource("ArrayMesh_txm3q")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=674735452]
 shape = SubResource("SphereShape3D_jd5n0")
 
-[connection signal="area_entered" from="CameraY/CameraX/Camera3D/Area3D" to="." method="_on_area_3d_area_entered"]
-[connection signal="area_exited" from="CameraY/CameraX/Camera3D/Area3D" to="." method="_on_area_3d_area_exited"]
+[connection signal="area_entered" from="CameraY/CameraX/CameraRoot/Area3D" to="." method="_on_area_3d_area_entered"]
+[connection signal="area_exited" from="CameraY/CameraX/CameraRoot/Area3D" to="." method="_on_area_3d_area_exited"]
