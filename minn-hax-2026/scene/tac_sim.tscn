@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bnpo1aw3ksmbs" path="res://script/tac_sim.gd" id="1_4ry2h"]
 [ext_resource type="PackedScene" uid="uid://b2es5y0isdsdk" path="res://scene/tac_sim_model.tscn" id="2_1cx4h"]
 [ext_resource type="PackedScene" uid="uid://bugwpg2o7w3gw" path="res://scene/player.tscn" id="2_4nhj6"]
+[ext_resource type="PackedScene" uid="uid://7w7qj04mf06d" path="res://scene/minn_max_logo.tscn" id="4_j44vb"]
 [ext_resource type="LightmapGIData" uid="uid://evvlh5deqpe0" path="res://bake/tac_sim.lmbake" id="4_onqtw"]
 
 [node name="tacSim" type="Node3D" unique_id=2140253641]
@@ -14,6 +15,11 @@ noSkating = true
 hideBoard = true
 
 [node name="tac_sim_model" parent="." unique_id=245037582 instance=ExtResource("2_1cx4h")]
+
+[node name="minnMaxLogo_StartTacSim" parent="." unique_id=1930660944 instance=ExtResource("4_j44vb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8277223, -19.874193)
+prompt = "start mission"
+dialogFile = "res://dialog/script/tacSim/start_mission.json"
 
 [node name="light" type="Node3D" parent="." unique_id=509701126]
 
