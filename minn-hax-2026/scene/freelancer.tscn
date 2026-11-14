@@ -285,3 +285,5 @@ light_bake_mode = 1
 
 [node name="Player" parent="." unique_id=1371449073 instance=ExtResource("4_cwj8e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.219078, 0, 43.74219)
+
+[node name="trees" type="Node3D" parent="." unique_id=1335456269]

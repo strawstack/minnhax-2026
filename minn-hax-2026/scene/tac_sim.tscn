@@ -11,7 +11,8 @@ script = ExtResource("1_4ry2h")
 
 [node name="Player" parent="." unique_id=1371449073 instance=ExtResource("2_4nhj6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5838037, 1, 21.510788)
-shootingAllowed = true
+noSkating = true
+hideBoard = true
 
 [node name="tac_sim_model" parent="." unique_id=245037582 instance=ExtResource("2_1cx4h")]
 

@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dn1jj1l7p66n4"]
+
+[resource]
+resource_name = "Wood Window Frame"
+cull_mode = 2
+albedo_color = Color(0.26274514, 0.1568628, 0.094117664, 1)
+roughness = 0.5

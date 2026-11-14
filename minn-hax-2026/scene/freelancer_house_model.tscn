@@ -1,5 +1,14 @@
 [gd_scene format=4 uid="uid://bb7qqfiheb5v5"]
 
+[ext_resource type="Material" uid="uid://x41bw7aiyiax" path="res://material/window_clear.tres" id="1_02fag"]
+[ext_resource type="Material" uid="uid://dn1jj1l7p66n4" path="res://material/wood_window_frame.tres" id="2_quchv"]
+[ext_resource type="Material" uid="uid://c0ayg3mf4l6lc" path="res://material/rust_triplanar.tres" id="3_aa57k"]
+[ext_resource type="Material" uid="uid://b7qpcnmvd3dia" path="res://material/grass_dirt.tres" id="3_psymu"]
+[ext_resource type="Material" uid="uid://b4gnh15gsrjv7" path="res://material/sand_stone_light_normal_map.tres" id="4_aa57k"]
+[ext_resource type="Material" uid="uid://hi4gayacy3ex" path="res://material/water_opaque.tres" id="4_psymu"]
+[ext_resource type="Material" uid="uid://c8afg082ijuws" path="res://material/runway.tres" id="5_aa57k"]
+[ext_resource type="Material" uid="uid://c51v7x212ff0l" path="res://material/sand_stone_normal_map.tres" id="5_cdm7x"]
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k3yuh"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_rby0n"]
@@ -369,12 +378,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_qre6h")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nw5pa"]
-resource_name = "Wood Window Frame"
-cull_mode = 2
-albedo_color = Color(0.26274514, 0.1568628, 0.094117664, 1)
-roughness = 0.5
-
 [sub_resource type="ArrayMesh" id="ArrayMesh_hq02m"]
 _surfaces = [{
 "aabb": AABB(-0.024999984, -2, -0.049999982, 0.049999967, 4, 0.099999964),
@@ -398,7 +401,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -563,7 +566,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -596,7 +599,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -629,7 +632,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -662,7 +665,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -695,7 +698,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -728,7 +731,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -761,7 +764,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -794,7 +797,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -860,7 +863,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -893,7 +896,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -926,7 +929,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -959,7 +962,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -992,7 +995,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -1025,7 +1028,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -1058,7 +1061,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -1421,7 +1424,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -1454,7 +1457,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -1487,7 +1490,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -1520,7 +1523,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -1553,7 +1556,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -1586,7 +1589,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -1619,7 +1622,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -1652,7 +1655,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -1685,7 +1688,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -1718,7 +1721,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -1751,7 +1754,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -1817,7 +1820,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -1850,7 +1853,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2312,7 +2315,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2345,7 +2348,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2378,7 +2381,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2411,7 +2414,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2444,7 +2447,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2477,7 +2480,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2510,7 +2513,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2543,7 +2546,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2576,7 +2579,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2609,7 +2612,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2642,7 +2645,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2675,7 +2678,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2807,7 +2810,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -3071,7 +3074,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -3104,7 +3107,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -3137,7 +3140,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -3170,7 +3173,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -3203,7 +3206,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -3236,7 +3239,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -3269,7 +3272,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -3302,7 +3305,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -3335,7 +3338,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -3632,7 +3635,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -3665,7 +3668,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -3698,7 +3701,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -3731,7 +3734,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -3764,7 +3767,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -3797,7 +3800,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -3830,7 +3833,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -3863,7 +3866,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -4919,7 +4922,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -4952,7 +4955,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -4985,7 +4988,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -5216,7 +5219,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -5249,7 +5252,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -5282,7 +5285,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -5315,7 +5318,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -5348,7 +5351,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -5381,7 +5384,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -5414,7 +5417,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -5447,7 +5450,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -5602,7 +5605,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 6,
 "index_data": PackedByteArray("AAABAAIAAAADAAEA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -5635,7 +5638,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -6394,7 +6397,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -6427,7 +6430,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -6460,7 +6463,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -6493,7 +6496,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -6526,7 +6529,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -6559,7 +6562,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -6592,7 +6595,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -6625,7 +6628,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -6658,7 +6661,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -6691,7 +6694,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -6724,7 +6727,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -6757,7 +6760,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -8121,7 +8124,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 6,
 "index_data": PackedByteArray("AAABAAIAAAADAAEA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -8231,7 +8234,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 12,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -8462,7 +8465,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -8495,7 +8498,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -8528,7 +8531,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -8561,7 +8564,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -8594,7 +8597,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -8627,7 +8630,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -8770,7 +8773,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 6,
 "index_data": PackedByteArray("AAABAAIAAAADAAEA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -8803,7 +8806,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -8836,7 +8839,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -9133,7 +9136,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -9166,7 +9169,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -9199,7 +9202,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -9265,7 +9268,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -9298,7 +9301,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -9331,7 +9334,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -9529,7 +9532,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -9562,7 +9565,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -9595,7 +9598,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -10024,7 +10027,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -10057,7 +10060,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -10123,7 +10126,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -11188,39 +11191,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_mbkah")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4buwj"]
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_1owi3"]
-_surfaces = [{
-"aabb": AABB(-1.5, -0.49999994, -15, 3, 0.9999999, 30),
-"format": 34359742465,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYA"),
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 8,
-"vertex_data": PackedByteArray("AADAv/7//74AAHBBAADAv/7//z4AAHDBAADAv/7//z4AAHBBAADAv/7//74AAHDBAADAP/7//z4AAHDBAADAP/7//74AAHBBAADAP/7//z4AAHBBAADAP/7//74AAHDB")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_ktf7u"]
-resource_name = "freelancerHouse_v3_Cube_454"
-lightmap_size_hint = Vector2i(62, 158)
-_surfaces = [{
-"aabb": AABB(-1.5, -0.49999994, -15, 3, 0.9999999, 30),
-"attribute_data": PackedByteArray("AADAPgAAgD8651w/nDB/PwAAID8AAEA/EUJIPwNR6TwAACA/AACAPxFCSD+cMH8/AADAPgAAQD8651w/A1HpPAAAwD4AAEA/U0ppPwNR6TwAACA/AAAAP3zvfT9+Vws+AAAgPwAAQD98730/A1HpPAAAwD4AAAA/U0ppP35XCz4AAMA+AAAAP/jeOz8DUek8AAAgPwAAgD7OOSc/nDB/PwAAID8AAAA/zjknPwNR6TwAAMA+AACAPvjeOz+cMH8/AADAPgAAgD5TSmk/E+b3PgAAID8AAAAAfO99P2F+Fz8AACA/AACAPnzvfT8T5vc+AADAPgAAAABTSmk/YX4XPwAAAD4AAAA/IYSQPnVkTzsAAMA+AACAPgghBDx4tXg/AADAPgAAAD8IIQQ8dWRPOwAAAD4AAIA+IYSQPni1eD8AACA/AAAAP1NKqT51ZE87AABgPwAAgD621ho/eLV4PwAAYD8AAAA/ttYaP3VkTzsAACA/AACAPlNKqT54tXg/"),
-"format": 34359742519,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_4buwj"),
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 24,
-"vertex_data": PackedByteArray("AADAv/7//74AAHBBAADAv/7//z4AAHDBAADAv/7//z4AAHBBAADAv/7//74AAHDBAADAv/7//74AAHDBAADAP/7//z4AAHDBAADAv/7//z4AAHDBAADAP/7//74AAHDBAADAP/7//74AAHDBAADAP/7//z4AAHBBAADAP/7//z4AAHDBAADAP/7//74AAHBBAADAP/7//74AAHBBAADAv/7//z4AAHBBAADAP/7//z4AAHBBAADAv/7//74AAHBBAADAv/7//74AAHDBAADAP/7//74AAHBBAADAP/7//74AAHDBAADAv/7//74AAHBBAADAP/7//z4AAHDBAADAv/7//z4AAHBBAADAv/7//z4AAHDBAADAP/7//z4AAHBBAAD/f/9///8AAP9//3///wAA/3//f///AAD/f/9//////////3//////////f/////////9//////////3///////3//f///////f/9///////9//3///////3//f////3//f/9/////f/9//3////9//3//f////3//f/9/////fwAA////v/9/AAD///+//38AAP///7//fwAA////v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+/")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_1owi3")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1sgag"]
 
@@ -12433,7 +12403,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -12466,7 +12436,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -12499,7 +12469,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -12532,7 +12502,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -12565,7 +12535,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -12598,7 +12568,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -12631,7 +12601,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -12664,7 +12634,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -12697,7 +12667,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -12730,7 +12700,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -12763,7 +12733,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -12796,7 +12766,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -12829,7 +12799,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -12862,7 +12832,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -12895,7 +12865,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -12928,7 +12898,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -12961,7 +12931,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -12994,7 +12964,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13027,7 +12997,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13060,7 +13030,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13093,7 +13063,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13126,7 +13096,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13159,7 +13129,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13192,7 +13162,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13225,7 +13195,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13258,7 +13228,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13291,7 +13261,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13324,7 +13294,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13357,7 +13327,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13390,7 +13360,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13423,7 +13393,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13456,7 +13426,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13489,7 +13459,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13522,7 +13492,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13555,7 +13525,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13588,7 +13558,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13621,7 +13591,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13654,7 +13624,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13687,7 +13657,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13720,7 +13690,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13753,7 +13723,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13786,7 +13756,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13819,7 +13789,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13852,7 +13822,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13885,7 +13855,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13918,7 +13888,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13951,7 +13921,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -13984,7 +13954,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14017,7 +13987,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14050,7 +14020,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14083,7 +14053,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14116,7 +14086,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14149,7 +14119,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14182,7 +14152,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14215,7 +14185,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14248,7 +14218,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14281,7 +14251,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14314,7 +14284,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14347,7 +14317,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14380,7 +14350,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14413,7 +14383,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14446,7 +14416,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14479,7 +14449,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14512,7 +14482,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14545,7 +14515,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14578,7 +14548,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14611,7 +14581,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14644,7 +14614,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14677,7 +14647,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14710,7 +14680,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14743,7 +14713,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14776,7 +14746,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14809,7 +14779,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14842,7 +14812,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14875,7 +14845,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14908,7 +14878,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14941,7 +14911,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -14974,7 +14944,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15007,7 +14977,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15040,7 +15010,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15073,7 +15043,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15106,7 +15076,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15139,7 +15109,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15172,7 +15142,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15205,7 +15175,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15238,7 +15208,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15271,7 +15241,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15304,7 +15274,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15337,7 +15307,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15370,7 +15340,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15403,7 +15373,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15436,7 +15406,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15469,7 +15439,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15502,7 +15472,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15535,7 +15505,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15568,7 +15538,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15601,7 +15571,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15634,7 +15604,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -15667,7 +15637,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -19540,6 +19510,42 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_suemk")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4buwj"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_1owi3"]
+_surfaces = [{
+"aabb": AABB(-1.5, -0.49999994, -15, 3, 0.9999999, 30),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AADAv/7//74AAHBBAADAv/7//z4AAHDBAADAv/7//z4AAHBBAADAv/7//74AAHDBAADAP/7//z4AAHDBAADAP/7//74AAHBBAADAP/7//z4AAHBBAADAP/7//74AAHDB")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ktf7u"]
+resource_name = "freelancerHouse_v3_Cube_454"
+lightmap_size_hint = Vector2i(62, 158)
+_surfaces = [{
+"aabb": AABB(-1.5, -0.49999994, -15, 3, 0.9999999, 30),
+"attribute_data": PackedByteArray("AADAPgAAgD8651w/nDB/PwAAID8AAEA/EUJIPwNR6TwAACA/AACAPxFCSD+cMH8/AADAPgAAQD8651w/A1HpPAAAwD4AAEA/U0ppPwNR6TwAACA/AAAAP3zvfT9+Vws+AAAgPwAAQD98730/A1HpPAAAwD4AAAA/U0ppP35XCz4AAMA+AAAAP/jeOz8DUek8AAAgPwAAgD7OOSc/nDB/PwAAID8AAAA/zjknPwNR6TwAAMA+AACAPvjeOz+cMH8/AADAPgAAgD5TSmk/E+b3PgAAID8AAAAAfO99P2F+Fz8AACA/AACAPnzvfT8T5vc+AADAPgAAAABTSmk/YX4XPwAAAD4AAAA/IYSQPnVkTzsAAMA+AACAPgghBDx4tXg/AADAPgAAAD8IIQQ8dWRPOwAAAD4AAIA+IYSQPni1eD8AACA/AAAAP1NKqT51ZE87AABgPwAAgD621ho/eLV4PwAAYD8AAAA/ttYaP3VkTzsAACA/AACAPlNKqT54tXg/"),
+"format": 34359742519,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_4buwj"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AADAv/7//74AAHBBAADAv/7//z4AAHDBAADAv/7//z4AAHBBAADAv/7//74AAHDBAADAv/7//74AAHDBAADAP/7//z4AAHDBAADAv/7//z4AAHDBAADAP/7//74AAHDBAADAP/7//74AAHDBAADAP/7//z4AAHBBAADAP/7//z4AAHDBAADAP/7//74AAHBBAADAP/7//74AAHBBAADAv/7//z4AAHBBAADAP/7//z4AAHBBAADAv/7//74AAHBBAADAv/7//74AAHDBAADAP/7//74AAHBBAADAP/7//74AAHDBAADAv/7//74AAHBBAADAP/7//z4AAHDBAADAv/7//z4AAHBBAADAv/7//z4AAHDBAADAP/7//z4AAHBBAAD/f/9///8AAP9//3///wAA/3//f///AAD/f/9//////////3//////////f/////////9//////////3///////3//f///////f/9///////9//3///////3//f////3//f/9/////f/9//3////9//3//f////3//f/9/////fwAA////v/9/AAD///+//38AAP///7//fwAA////v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_1owi3")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_51fg5"]
+data = PackedVector3Array(-1.5, -0.5, 15, -1.5, 0.5, -15, -1.5, 0.5, 15, -1.5, -0.5, 15, -1.5, -0.5, -15, -1.5, 0.5, -15, -1.5, -0.5, -15, 1.5, 0.5, -15, -1.5, 0.5, -15, -1.5, -0.5, -15, 1.5, -0.5, -15, 1.5, 0.5, -15, 1.5, -0.5, -15, 1.5, 0.5, 15, 1.5, 0.5, -15, 1.5, -0.5, -15, 1.5, -0.5, 15, 1.5, 0.5, 15, 1.5, -0.5, 15, -1.5, 0.5, 15, 1.5, 0.5, 15, 1.5, -0.5, 15, -1.5, -0.5, 15, -1.5, 0.5, 15, -1.5, -0.5, -15, 1.5, -0.5, 15, 1.5, -0.5, -15, -1.5, -0.5, -15, -1.5, -0.5, 15, 1.5, -0.5, 15, 1.5, 0.5, -15, -1.5, 0.5, 15, -1.5, 0.5, -15, 1.5, 0.5, -15, 1.5, 0.5, 15, -1.5, 0.5, 15)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kqmt5"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_lbwvb"]
@@ -20063,7 +20069,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -20169,7 +20175,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 6,
 "index_data": PackedByteArray("AAABAAIAAAADAAEA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -20479,7 +20485,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 6,
 "index_data": PackedByteArray("AAABAAIAAAADAAEA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -20717,7 +20723,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -20789,7 +20795,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -21013,7 +21019,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 12,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -22269,7 +22275,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 12,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -22541,7 +22547,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 6,
 "index_data": PackedByteArray("AAABAAIAAAADAAEA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -31494,7 +31500,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_nw5pa"),
+"material": ExtResource("2_quchv"),
 "name": "Wood Window Frame",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -31691,6 +31697,7 @@ data = PackedVector3Array(-1.1, 1.4499999, 1.875, -1.1, -1.4499999, -1.875, -1.1
 
 [node name="Cube" type="MeshInstance3D" parent="." unique_id=1896825588]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 1, -2.5)
+visible = false
 mesh = SubResource("ArrayMesh_cfuol")
 
 [node name="Cube_008" type="MeshInstance3D" parent="." unique_id=1387817533]
@@ -31703,35 +31710,43 @@ mesh = SubResource("ArrayMesh_qh42t")
 
 [node name="Cube_018" type="MeshInstance3D" parent="." unique_id=1665702166]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35, 2, -7.0499997)
+material_override = ExtResource("1_02fag")
 mesh = SubResource("ArrayMesh_n6neo")
 
 [node name="Cube_019" type="MeshInstance3D" parent="." unique_id=1039657800]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3, 2, -7.0499997)
+material_override = ExtResource("1_02fag")
 mesh = SubResource("ArrayMesh_qm23t")
 
 [node name="Cube_020" type="MeshInstance3D" parent="." unique_id=1186454826]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3999999, 2, -7.0499997)
 mesh = SubResource("ArrayMesh_tkv64")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_021" type="MeshInstance3D" parent="." unique_id=1791514406]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4999995, 2, -7.0499997)
 mesh = SubResource("ArrayMesh_mofq6")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_022" type="MeshInstance3D" parent="." unique_id=1587924145]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5999994, 2, -7.0499997)
 mesh = SubResource("ArrayMesh_cocu3")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_023" type="MeshInstance3D" parent="." unique_id=762746419]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.6999993, 2, -7.0499997)
 mesh = SubResource("ArrayMesh_5ppyv")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_024" type="MeshInstance3D" parent="." unique_id=209305387]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.799999, 2, -7.0499997)
 mesh = SubResource("ArrayMesh_8vfga")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_025" type="MeshInstance3D" parent="." unique_id=1897566825]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.9, 2, -7.0499997)
 mesh = SubResource("ArrayMesh_sb1yb")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_026" type="MeshInstance3D" parent="." unique_id=1662900695]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.575, 2, -7.1499996)
@@ -31740,18 +31755,22 @@ mesh = SubResource("ArrayMesh_xguvi")
 [node name="Cube_027" type="MeshInstance3D" parent="." unique_id=976812527]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1, 2, -7.1499996)
 mesh = SubResource("ArrayMesh_57iqd")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_028" type="MeshInstance3D" parent="." unique_id=801081080]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.200001, 2, -7.0499997)
 mesh = SubResource("ArrayMesh_xkxbk")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_029" type="MeshInstance3D" parent="." unique_id=697113207]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.300001, 2, -7.0499997)
 mesh = SubResource("ArrayMesh_o2ebc")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_030" type="MeshInstance3D" parent="." unique_id=612902938]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.400002, 2, -7.0499997)
 mesh = SubResource("ArrayMesh_w76r0")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_031" type="MeshInstance3D" parent="." unique_id=1006148829]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7500001, 2, -6.9999995)
@@ -31788,6 +31807,7 @@ mesh = SubResource("ArrayMesh_ccdav")
 [node name="Cube_039" type="MeshInstance3D" parent="." unique_id=1342195743]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.000001, 2, -7.1499996)
 mesh = SubResource("ArrayMesh_glmdw")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_040" type="MeshInstance3D" parent="." unique_id=533457321]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.650001, 2, -7.0499997)
@@ -31820,42 +31840,52 @@ mesh = SubResource("ArrayMesh_jh3ge")
 [node name="Cube_047" type="MeshInstance3D" parent="." unique_id=1745919873]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 2, -7.6)
 mesh = SubResource("ArrayMesh_syacc")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_048" type="MeshInstance3D" parent="." unique_id=1611466349]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 2, -8.7)
 mesh = SubResource("ArrayMesh_thhmh")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_049" type="MeshInstance3D" parent="." unique_id=210781486]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 2, -9.8)
 mesh = SubResource("ArrayMesh_tghkf")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_050" type="MeshInstance3D" parent="." unique_id=1180733489]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 2, -10.900001)
 mesh = SubResource("ArrayMesh_2oy8l")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_051" type="MeshInstance3D" parent="." unique_id=1115325518]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 2, -12.000001)
 mesh = SubResource("ArrayMesh_el17q")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_052" type="MeshInstance3D" parent="." unique_id=1885528]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 2, -13.100001)
 mesh = SubResource("ArrayMesh_430ra")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_053" type="MeshInstance3D" parent="." unique_id=1241033109]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 2, -14.200002)
 mesh = SubResource("ArrayMesh_xnlfl")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_054" type="MeshInstance3D" parent="." unique_id=1306411722]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 2, -15.300002)
 mesh = SubResource("ArrayMesh_67mhl")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_055" type="MeshInstance3D" parent="." unique_id=1531779761]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 2, -16.400002)
 mesh = SubResource("ArrayMesh_blm0d")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_059" type="MeshInstance3D" parent="." unique_id=1070993422]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 2.55, -26.000004)
 mesh = SubResource("ArrayMesh_uxm0w")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_060" type="MeshInstance3D" parent="." unique_id=1477655970]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 6.25, -17.500002)
@@ -31915,54 +31945,67 @@ mesh = SubResource("ArrayMesh_gxqx4")
 
 [node name="Cube_074" type="MeshInstance3D" parent="." unique_id=1132556072]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35, 5.77, -7.0499997)
+material_override = ExtResource("1_02fag")
 mesh = SubResource("ArrayMesh_ul3ub")
 
 [node name="Cube_075" type="MeshInstance3D" parent="." unique_id=195175593]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3, 5.9474998, -7.0499997)
+material_override = ExtResource("1_02fag")
 mesh = SubResource("ArrayMesh_xomnn")
 
 [node name="Cube_076" type="MeshInstance3D" parent="." unique_id=406228018]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3999999, 6.1525, -7.0499997)
+material_override = ExtResource("1_02fag")
 mesh = SubResource("ArrayMesh_3cegs")
 
 [node name="Cube_077" type="MeshInstance3D" parent="." unique_id=597698950]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4999995, 6.3525, -7.0499997)
+material_override = ExtResource("1_02fag")
 mesh = SubResource("ArrayMesh_5i17k")
 
 [node name="Cube_078" type="MeshInstance3D" parent="." unique_id=1260740104]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5999994, 6.5575, -7.0499997)
+material_override = ExtResource("1_02fag")
 mesh = SubResource("ArrayMesh_7g2y4")
 
 [node name="Cube_079" type="MeshInstance3D" parent="." unique_id=232700316]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.6999993, 6.7625, -7.0499997)
+material_override = ExtResource("1_02fag")
 mesh = SubResource("ArrayMesh_p4mai")
 
 [node name="Cube_080" type="MeshInstance3D" parent="." unique_id=44574592]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.799999, 6.9674997, -7.0499997)
+material_override = ExtResource("1_02fag")
 mesh = SubResource("ArrayMesh_lqe26")
 
 [node name="Cube_081" type="MeshInstance3D" parent="." unique_id=911628361]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.9, 7.1724997, -7.0499997)
+material_override = ExtResource("1_02fag")
 mesh = SubResource("ArrayMesh_uesib")
 
 [node name="Cube_082" type="MeshInstance3D" parent="." unique_id=1159943767]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 7.3774996, -7.0499997)
+material_override = ExtResource("1_02fag")
 mesh = SubResource("ArrayMesh_cn88o")
 
 [node name="Cube_083" type="MeshInstance3D" parent="." unique_id=29266187]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1, 7.5825, -7.0499997)
+material_override = ExtResource("1_02fag")
 mesh = SubResource("ArrayMesh_ne7s4")
 
 [node name="Cube_084" type="MeshInstance3D" parent="." unique_id=436872242]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.200001, 7.7874994, -7.0499997)
+material_override = ExtResource("1_02fag")
 mesh = SubResource("ArrayMesh_j5nfw")
 
 [node name="Cube_085" type="MeshInstance3D" parent="." unique_id=787930979]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.300001, 7.9900002, -7.0499997)
+material_override = ExtResource("1_02fag")
 mesh = SubResource("ArrayMesh_bxbvf")
 
 [node name="Cube_086" type="MeshInstance3D" parent="." unique_id=1155199402]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.400002, 8.192499, -7.0499997)
+material_override = ExtResource("1_02fag")
 mesh = SubResource("ArrayMesh_k74vs")
 
 [node name="Cube_087" type="MeshInstance3D" parent="." unique_id=2039099073]
@@ -32016,14 +32059,17 @@ mesh = SubResource("ArrayMesh_edtxf")
 [node name="Cube_099" type="MeshInstance3D" parent="." unique_id=12809177]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 8.3, -7.6)
 mesh = SubResource("ArrayMesh_jyve2")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_100" type="MeshInstance3D" parent="." unique_id=2063836933]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 8.3, -8.7)
 mesh = SubResource("ArrayMesh_qma07")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_101" type="MeshInstance3D" parent="." unique_id=1585361409]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 8.3, -9.8)
 mesh = SubResource("ArrayMesh_031sn")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_102" type="MeshInstance3D" parent="." unique_id=1038980667]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.050002, 8.295, -6.95)
@@ -32032,30 +32078,37 @@ mesh = SubResource("ArrayMesh_cqyrg")
 [node name="Cube_103" type="MeshInstance3D" parent="." unique_id=826976983]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 8.3, -10.900001)
 mesh = SubResource("ArrayMesh_si1cc")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_104" type="MeshInstance3D" parent="." unique_id=749196984]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 8.3, -12.000001)
 mesh = SubResource("ArrayMesh_fe75s")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_105" type="MeshInstance3D" parent="." unique_id=1663580042]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 8.3, -13.100001)
 mesh = SubResource("ArrayMesh_8n08v")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_106" type="MeshInstance3D" parent="." unique_id=578320321]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 8.3, -14.200002)
 mesh = SubResource("ArrayMesh_5r1c8")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_107" type="MeshInstance3D" parent="." unique_id=281827159]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 8.3, -15.300002)
 mesh = SubResource("ArrayMesh_3s2do")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_108" type="MeshInstance3D" parent="." unique_id=169467928]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 8.3, -16.400002)
 mesh = SubResource("ArrayMesh_1c328")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_110" type="MeshInstance3D" parent="." unique_id=693370351]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 8.9, -18.500002)
 mesh = SubResource("ArrayMesh_qfj71")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_111" type="MeshInstance3D" parent="." unique_id=926242572]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.000002, 8.3, -8.15)
@@ -32096,33 +32149,41 @@ mesh = SubResource("ArrayMesh_urokv")
 [node name="Cube_120" type="MeshInstance3D" parent="." unique_id=1163887411]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5, 1.75, -7.0499997)
 mesh = SubResource("ArrayMesh_ihj6i")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_121" type="MeshInstance3D" parent="." unique_id=1349199205]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.4, 1.95, -7.0499997)
 mesh = SubResource("ArrayMesh_rlt4n")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_122" type="MeshInstance3D" parent="." unique_id=945450930]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.299999, 2.1499999, -7.0499997)
 mesh = SubResource("ArrayMesh_ol7j8")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_123" type="MeshInstance3D" parent="." unique_id=1343510630]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.1999993, 2.35, -7.0499997)
 mesh = SubResource("ArrayMesh_r1f6a")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_124" type="MeshInstance3D" parent="." unique_id=1326766683]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0999994, 2.55, -7.0499997)
 mesh = SubResource("ArrayMesh_auahk")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_125" type="MeshInstance3D" parent="." unique_id=1648756632]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9999995, 2.7499998, -7.0499997)
 mesh = SubResource("ArrayMesh_131iu")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_126" type="MeshInstance3D" parent="." unique_id=822056595]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8999996, 2.9499998, -7.0499997)
 mesh = SubResource("ArrayMesh_tj1mh")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_127" type="MeshInstance3D" parent="." unique_id=1830746695]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7999997, 3.1499996, -7.0499997)
+material_override = ExtResource("1_02fag")
 mesh = SubResource("ArrayMesh_p7sjp")
 
 [node name="Cube_128" type="MeshInstance3D" parent="." unique_id=518361370]
@@ -32172,6 +32233,7 @@ mesh = SubResource("ArrayMesh_pnro0")
 [node name="Cube_142" type="MeshInstance3D" parent="." unique_id=48401602]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 8.9, -19.600002)
 mesh = SubResource("ArrayMesh_u1eov")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_143" type="MeshInstance3D" parent="." unique_id=580405802]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7, 2.35, -30.824999)
@@ -32280,6 +32342,7 @@ mesh = SubResource("ArrayMesh_xk2pv")
 [node name="Cube_170" type="MeshInstance3D" parent="." unique_id=1994955605]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 2.55, -24.900002)
 mesh = SubResource("ArrayMesh_qutq8")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_171" type="MeshInstance3D" parent="." unique_id=207856778]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 2.55, -25.450005)
@@ -32296,26 +32359,32 @@ mesh = SubResource("ArrayMesh_bmbur")
 [node name="Cube_176" type="MeshInstance3D" parent="." unique_id=1656716833]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 8.9, -20.700003)
 mesh = SubResource("ArrayMesh_lyogy")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_177" type="MeshInstance3D" parent="." unique_id=1143955521]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.849999, 8.9, -21.800003)
 mesh = SubResource("ArrayMesh_68auq")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_178" type="MeshInstance3D" parent="." unique_id=4802098]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.849999, 8.9, -22.900003)
 mesh = SubResource("ArrayMesh_d8npo")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_179" type="MeshInstance3D" parent="." unique_id=149004142]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 8.9, -24.000004)
 mesh = SubResource("ArrayMesh_whov2")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_180" type="MeshInstance3D" parent="." unique_id=1688358475]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 8.9, -25.100004)
 mesh = SubResource("ArrayMesh_66cf1")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_181" type="MeshInstance3D" parent="." unique_id=1833760390]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.95, 8.9, -26.200005)
 mesh = SubResource("ArrayMesh_4v3a2")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_182" type="MeshInstance3D" parent="." unique_id=1607735768]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.950001, 8.9, -21.250004)
@@ -32368,22 +32437,27 @@ mesh = SubResource("ArrayMesh_eeo7d")
 [node name="Cube_206" type="MeshInstance3D" parent="." unique_id=806247892]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.95, 4.2000003, -9.249999)
 mesh = SubResource("ArrayMesh_ihjp2")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_207" type="MeshInstance3D" parent="." unique_id=1266386488]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9500003, 4.2000003, -9.249999)
 mesh = SubResource("ArrayMesh_n1nuy")
+surface_material_override/0 = ExtResource("3_aa57k")
 
 [node name="Cube_208" type="MeshInstance3D" parent="." unique_id=1875181642]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.95, 4.2000003, -15.949999)
 mesh = SubResource("ArrayMesh_cxtud")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_209" type="MeshInstance3D" parent="." unique_id=1867464658]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9500003, 4.2000003, -12.599998)
 mesh = SubResource("ArrayMesh_3qebc")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_210" type="MeshInstance3D" parent="." unique_id=639480043]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9500003, 4.2000003, -15.949999)
 mesh = SubResource("ArrayMesh_tjmop")
+surface_material_override/0 = ExtResource("3_aa57k")
 
 [node name="Cube_216" type="MeshInstance3D" parent="." unique_id=803070956]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3499987, 3, -20.449999)
@@ -32392,38 +32466,47 @@ mesh = SubResource("ArrayMesh_05oy5")
 [node name="Cube_221" type="MeshInstance3D" parent="." unique_id=687386242]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4500003, 10.327499, -17.550003)
 mesh = SubResource("ArrayMesh_11k71")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_227" type="MeshInstance3D" parent="." unique_id=2088340517]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1499999, 2.15, -32.749996)
 mesh = SubResource("ArrayMesh_g24xp")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_228" type="MeshInstance3D" parent="." unique_id=682286934]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1499999, 3.5500002, -32.749996)
 mesh = SubResource("ArrayMesh_ws58m")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_229" type="MeshInstance3D" parent="." unique_id=2135098408]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1499999, 4.9500003, -32.749996)
 mesh = SubResource("ArrayMesh_a5xyf")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_230" type="MeshInstance3D" parent="." unique_id=222536732]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1499999, 6.3500004, -32.749996)
 mesh = SubResource("ArrayMesh_v4int")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_231" type="MeshInstance3D" parent="." unique_id=1479080615]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1499999, 7.7500005, -32.749996)
 mesh = SubResource("ArrayMesh_vg4mf")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_232" type="MeshInstance3D" parent="." unique_id=1553212345]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1499999, 9.15, -32.749996)
 mesh = SubResource("ArrayMesh_k4sfv")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_233" type="MeshInstance3D" parent="." unique_id=1520410432]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1499999, 10.549999, -32.749996)
 mesh = SubResource("ArrayMesh_s7557")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_234" type="MeshInstance3D" parent="." unique_id=598479977]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9500003, 2.15, -31.849997)
 mesh = SubResource("ArrayMesh_gdvfc")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_235" type="MeshInstance3D" parent="." unique_id=1020217597]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 8.75, -32.749996)
@@ -32432,26 +32515,32 @@ mesh = SubResource("ArrayMesh_6k1ef")
 [node name="Cube_236" type="MeshInstance3D" parent="." unique_id=506998979]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9500003, 3.5500002, -31.849997)
 mesh = SubResource("ArrayMesh_8a6mb")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_237" type="MeshInstance3D" parent="." unique_id=192684792]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9500003, 4.9500003, -31.849997)
 mesh = SubResource("ArrayMesh_t4717")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_238" type="MeshInstance3D" parent="." unique_id=1936488937]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9500003, 6.3500004, -31.849997)
 mesh = SubResource("ArrayMesh_sxlle")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_239" type="MeshInstance3D" parent="." unique_id=405880221]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9500003, 7.7500005, -31.849997)
 mesh = SubResource("ArrayMesh_2bldr")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_240" type="MeshInstance3D" parent="." unique_id=1792116864]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9500003, 9.15, -31.849997)
 mesh = SubResource("ArrayMesh_bq1cn")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_241" type="MeshInstance3D" parent="." unique_id=613514586]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9500003, 10.549999, -31.849997)
 mesh = SubResource("ArrayMesh_gfsqb")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_242" type="MeshInstance3D" parent="." unique_id=1918520109]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0000002, 2.85, -31.849997)
@@ -32512,150 +32601,187 @@ mesh = SubResource("ArrayMesh_t1iuv")
 [node name="Cube_275" type="MeshInstance3D" parent="." unique_id=898066644]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 4.8, -14.849998)
 mesh = SubResource("ArrayMesh_qslen")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_276" type="MeshInstance3D" parent="." unique_id=1894722215]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.4, 4.8, -14.849998)
 mesh = SubResource("ArrayMesh_l04u8")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_277" type="MeshInstance3D" parent="." unique_id=889371530]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.3, 4.8, -14.849998)
 mesh = SubResource("ArrayMesh_fjk43")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_278" type="MeshInstance3D" parent="." unique_id=1236187460]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.199999, 4.8, -14.849998)
 mesh = SubResource("ArrayMesh_m5qy3")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_279" type="MeshInstance3D" parent="." unique_id=1329135754]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.099998, 4.8, -14.849998)
 mesh = SubResource("ArrayMesh_0512m")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_280" type="MeshInstance3D" parent="." unique_id=1785926214]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.999998, 4.8, -14.849998)
 mesh = SubResource("ArrayMesh_cq2lo")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_281" type="MeshInstance3D" parent="." unique_id=870929221]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.899998, 4.8, -14.849998)
 mesh = SubResource("ArrayMesh_kfwea")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_282" type="MeshInstance3D" parent="." unique_id=145975899]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.799997, 4.8, -14.849998)
 mesh = SubResource("ArrayMesh_lmbrw")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_283" type="MeshInstance3D" parent="." unique_id=1445928355]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.699997, 4.8, -14.849998)
 mesh = SubResource("ArrayMesh_4tvy1")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_284" type="MeshInstance3D" parent="." unique_id=218765668]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.599997, 4.8, -14.849998)
 mesh = SubResource("ArrayMesh_1kh6q")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_285" type="MeshInstance3D" parent="." unique_id=1487114713]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -22.749996, 4.8, -17.499998)
 mesh = SubResource("ArrayMesh_8syqq")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_286" type="MeshInstance3D" parent="." unique_id=268862860]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -22.749996, 4.8, -18.599998)
 mesh = SubResource("ArrayMesh_bauo3")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_287" type="MeshInstance3D" parent="." unique_id=1532353779]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -22.749996, 4.8, -19.699999)
 mesh = SubResource("ArrayMesh_k62bl")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_288" type="MeshInstance3D" parent="." unique_id=1567404790]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -22.749996, 4.8, -20.8)
 mesh = SubResource("ArrayMesh_07h0u")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_289" type="MeshInstance3D" parent="." unique_id=1498266807]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -22.749996, 4.8, -21.9)
 mesh = SubResource("ArrayMesh_gttdv")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_290" type="MeshInstance3D" parent="." unique_id=1966225995]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -22.749996, 4.8, -23)
 mesh = SubResource("ArrayMesh_2hayh")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_291" type="MeshInstance3D" parent="." unique_id=653804217]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -22.749996, 4.8, -24.1)
 mesh = SubResource("ArrayMesh_pwaq2")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_292" type="MeshInstance3D" parent="." unique_id=973412083]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -22.749996, 4.8, -25.2)
 mesh = SubResource("ArrayMesh_faard")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_293" type="MeshInstance3D" parent="." unique_id=727865395]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -22.749996, 4.8, -26.300001)
 mesh = SubResource("ArrayMesh_wetuy")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_294" type="MeshInstance3D" parent="." unique_id=983527510]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -22.749996, 4.8, -16.399998)
 mesh = SubResource("ArrayMesh_nkgja")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_295" type="MeshInstance3D" parent="." unique_id=632808795]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -22.749996, 4.8, -27.400002)
 mesh = SubResource("ArrayMesh_1egv3")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_296" type="MeshInstance3D" parent="." unique_id=1304345891]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -22.749996, 4.8, -28.500002)
 mesh = SubResource("ArrayMesh_pkal4")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_297" type="MeshInstance3D" parent="." unique_id=401313435]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -22.749996, 4.8, -29.600002)
 mesh = SubResource("ArrayMesh_u30nm")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_298" type="MeshInstance3D" parent="." unique_id=491787082]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -22.749996, 4.8, -30.700003)
 mesh = SubResource("ArrayMesh_xvxka")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_299" type="MeshInstance3D" parent="." unique_id=1599517706]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.499999, 4.8, -32.25)
 mesh = SubResource("ArrayMesh_0ykod")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_300" type="MeshInstance3D" parent="." unique_id=340894345]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.4, 4.8, -32.25)
 mesh = SubResource("ArrayMesh_ck85w")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_301" type="MeshInstance3D" parent="." unique_id=1409339840]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.299999, 4.8, -32.25)
 mesh = SubResource("ArrayMesh_0hrns")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_302" type="MeshInstance3D" parent="." unique_id=1529058347]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.199999, 4.8, -32.25)
 mesh = SubResource("ArrayMesh_2brwn")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_303" type="MeshInstance3D" parent="." unique_id=53511842]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.099998, 4.8, -32.25)
 mesh = SubResource("ArrayMesh_515up")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_304" type="MeshInstance3D" parent="." unique_id=562106400]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.999998, 4.8, -32.25)
 mesh = SubResource("ArrayMesh_bkhue")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_305" type="MeshInstance3D" parent="." unique_id=1019195770]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5, 4.8, -32.25)
 mesh = SubResource("ArrayMesh_3sxev")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_308" type="MeshInstance3D" parent="." unique_id=45377106]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1499999, 11.949999, -32.749996)
 mesh = SubResource("ArrayMesh_oic7h")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_309" type="MeshInstance3D" parent="." unique_id=22011807]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1499999, 13.349998, -32.749996)
 mesh = SubResource("ArrayMesh_0xp01")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_310" type="MeshInstance3D" parent="." unique_id=1488683027]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1499999, 14.749998, -32.749996)
 mesh = SubResource("ArrayMesh_h5ts4")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_311" type="MeshInstance3D" parent="." unique_id=1180976210]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9500003, 11.949999, -31.849997)
 mesh = SubResource("ArrayMesh_t4vt3")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_312" type="MeshInstance3D" parent="." unique_id=1132966726]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9500003, 13.349998, -31.849997)
 mesh = SubResource("ArrayMesh_6ewdl")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_313" type="MeshInstance3D" parent="." unique_id=1641900605]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9500003, 14.749998, -31.849997)
 mesh = SubResource("ArrayMesh_xc8if")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_314" type="MeshInstance3D" parent="." unique_id=1459734529]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.999999, 12.750001, -17.650003)
@@ -32676,6 +32802,7 @@ mesh = SubResource("ArrayMesh_gp85s")
 [node name="Cube_327" type="MeshInstance3D" parent="." unique_id=855893848]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5999985, 8.9, -14.850002)
 mesh = SubResource("ArrayMesh_4ecwv")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_330" type="MeshInstance3D" parent="." unique_id=1932564572]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.699998, 8.099999, -23.075)
@@ -32740,34 +32867,42 @@ mesh = SubResource("ArrayMesh_802gs")
 [node name="Cube_364" type="MeshInstance3D" parent="." unique_id=1120883158]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.25, 8.9, -30.700005)
 mesh = SubResource("ArrayMesh_00lrg")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_365" type="MeshInstance3D" parent="." unique_id=2074201210]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.899998, 8.9, -17.050003)
 mesh = SubResource("ArrayMesh_1lbuv")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_366" type="MeshInstance3D" parent="." unique_id=1437617285]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.999998, 8.9, -17.050003)
 mesh = SubResource("ArrayMesh_u4y83")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_367" type="MeshInstance3D" parent="." unique_id=933595392]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.099998, 8.9, -17.050003)
 mesh = SubResource("ArrayMesh_jww37")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_368" type="MeshInstance3D" parent="." unique_id=820371296]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.199999, 8.9, -17.150003)
 mesh = SubResource("ArrayMesh_gcvbk")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_369" type="MeshInstance3D" parent="." unique_id=1753439839]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.299999, 8.9, -17.150003)
 mesh = SubResource("ArrayMesh_60bad")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_370" type="MeshInstance3D" parent="." unique_id=401502075]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.4, 8.9, -17.050003)
 mesh = SubResource("ArrayMesh_jtebb")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_371" type="MeshInstance3D" parent="." unique_id=1801955138]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.5, 8.9, -17.050003)
 mesh = SubResource("ArrayMesh_xo2aj")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_372" type="MeshInstance3D" parent="." unique_id=28939154]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.449997, 8.9, -17.000002)
@@ -32800,22 +32935,27 @@ mesh = SubResource("ArrayMesh_blhv7")
 [node name="Cube_379" type="MeshInstance3D" parent="." unique_id=1795135592]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.25, 8.9, -17.800001)
 mesh = SubResource("ArrayMesh_3ib40")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_380" type="MeshInstance3D" parent="." unique_id=1009908139]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.25, 8.9, -18.900002)
 mesh = SubResource("ArrayMesh_5xn4g")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_381" type="MeshInstance3D" parent="." unique_id=1231972699]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.25, 8.9, -20.000002)
 mesh = SubResource("ArrayMesh_0bh4s")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_382" type="MeshInstance3D" parent="." unique_id=1264895499]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.25, 8.9, -21.100002)
 mesh = SubResource("ArrayMesh_bdgfn")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_383" type="MeshInstance3D" parent="." unique_id=2025631832]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.25, 8.9, -26.800003)
 mesh = SubResource("ArrayMesh_ei0ue")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_384" type="MeshInstance3D" parent="." unique_id=1701112168]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.300001, 8.9, -18.350002)
@@ -32832,6 +32972,7 @@ mesh = SubResource("ArrayMesh_ydom4")
 [node name="Cube_389" type="MeshInstance3D" parent="." unique_id=986805577]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.6, 4.8, -32.25)
 mesh = SubResource("ArrayMesh_n3kdb")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_390" type="MeshInstance3D" parent="." unique_id=1515328998]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3, 3.5, -32.25)
@@ -32852,14 +32993,17 @@ mesh = SubResource("ArrayMesh_15464")
 [node name="Cube_394" type="MeshInstance3D" parent="." unique_id=244229480]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.100002, 4.7000003, -27.75)
 mesh = SubResource("ArrayMesh_4dhyo")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_395" type="MeshInstance3D" parent="." unique_id=423703769]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.000002, 4.7000003, -27.75)
 mesh = SubResource("ArrayMesh_ahb0r")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_396" type="MeshInstance3D" parent="." unique_id=982306755]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.900002, 4.7000003, -27.75)
 mesh = SubResource("ArrayMesh_jhfv0")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_397" type="MeshInstance3D" parent="." unique_id=310317297]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9000001, 2.5500002, -27.649998)
@@ -32868,14 +33012,17 @@ mesh = SubResource("ArrayMesh_hobd2")
 [node name="Cube_398" type="MeshInstance3D" parent="." unique_id=1549720002]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5000002, 9, -18.550001)
 mesh = SubResource("ArrayMesh_euxkc")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_399" type="MeshInstance3D" parent="." unique_id=1878521750]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 10.522499, -17.550003)
 mesh = SubResource("ArrayMesh_y3mdq")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_400" type="MeshInstance3D" parent="." unique_id=126935995]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.55, 10.7175, -17.550003)
 mesh = SubResource("ArrayMesh_w3jwv")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_401" type="MeshInstance3D" parent="." unique_id=1464155379]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.05, 10.624999, -17.500002)
@@ -32888,6 +33035,7 @@ mesh = SubResource("ArrayMesh_26v0m")
 [node name="Cube_404" type="MeshInstance3D" parent="." unique_id=181307650]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.699997, 8.9, -14.850002)
 mesh = SubResource("ArrayMesh_ir1ug")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_407" type="MeshInstance3D" parent="." unique_id=219205378]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.1499987, 8.9, -14.800002)
@@ -32896,6 +33044,7 @@ mesh = SubResource("ArrayMesh_b3ml3")
 [node name="Cube_408" type="MeshInstance3D" parent="." unique_id=915619469]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 2, -14.849998)
 mesh = SubResource("ArrayMesh_al2jx")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="Cube_410" type="MeshInstance3D" parent="." unique_id=938719063]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.75, 1.4999994, -25.000004)
@@ -32916,10 +33065,12 @@ mesh = SubResource("ArrayMesh_w6aoo")
 [node name="Cube_414" type="MeshInstance3D" parent="." unique_id=317521047]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.774999, 8.9, -17.150002)
 mesh = SubResource("ArrayMesh_0a2ar")
+surface_material_override/0 = ExtResource("2_quchv")
 
 [node name="Cube_415" type="MeshInstance3D" parent="." unique_id=1959040710]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.724998, 8.9, -17.150002)
 mesh = SubResource("ArrayMesh_jhlhl")
+surface_material_override/0 = ExtResource("2_quchv")
 
 [node name="Cube_416" type="MeshInstance3D" parent="." unique_id=7417403]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.55, 7.299999, -20.550001)
@@ -33020,10 +33171,6 @@ mesh = SubResource("ArrayMesh_ldwou")
 [node name="Cube_441" type="MeshInstance3D" parent="." unique_id=1116523860]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.85, 7.2, -27.65)
 mesh = SubResource("ArrayMesh_f3s5n")
-
-[node name="Cube_450" type="MeshInstance3D" parent="." unique_id=160392051]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, -0.49999994, 30)
-mesh = SubResource("ArrayMesh_ktf7u")
 
 [node name="Cube_451" type="MeshInstance3D" parent="." unique_id=1630682781]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 2, -45.2)
@@ -33715,18 +33862,22 @@ mesh = SubResource("ArrayMesh_br7iw")
 
 [node name="Cube_747" type="MeshInstance3D" parent="." unique_id=925066407]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 52.999973, 3.8499994, -25.999994)
+material_override = ExtResource("3_aa57k")
 mesh = SubResource("ArrayMesh_6hy7n")
 
 [node name="Cube_750" type="MeshInstance3D" parent="." unique_id=1939302858]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31, 0, 101)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_p1o8l")
 
 [node name="Cube_751" type="MeshInstance3D" parent="." unique_id=1682228464]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41, 2, 111)
+material_override = ExtResource("5_aa57k")
 mesh = SubResource("ArrayMesh_iixrn")
 
 [node name="Cube_753" type="MeshInstance3D" parent="." unique_id=268879298]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 4, 111)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_glump")
 
 [node name="Cube_754" type="MeshInstance3D" parent="." unique_id=1678848290]
@@ -34012,9 +34163,11 @@ mesh = SubResource("ArrayMesh_k4sdw")
 [node name="Plane" type="MeshInstance3D" parent="." unique_id=1420767669]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 115)
 mesh = SubResource("ArrayMesh_2hl8m")
+surface_material_override/0 = ExtResource("4_psymu")
 
 [node name="Plane_001" type="MeshInstance3D" parent="." unique_id=600463178]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -115)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_m3u7p")
 
 [node name="Trees" type="MeshInstance3D" parent="." unique_id=1343621905]
@@ -34025,9 +34178,19 @@ mesh = SubResource("ArrayMesh_fi3dm")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -30, 0)
 mesh = SubResource("ArrayMesh_cvmbb")
 
+[node name="dock" type="MeshInstance3D" parent="Wall" unique_id=160392051]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, 29.5, 30)
+mesh = SubResource("ArrayMesh_ktf7u")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Wall/dock" unique_id=1844276312]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall/dock/StaticBody3D" unique_id=495892019]
+shape = SubResource("ConcavePolygonShape3D_51fg5")
+
 [node name="Cube_001" type="MeshInstance3D" parent="Wall" unique_id=2029031368]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 29.5, -3.5)
 mesh = SubResource("ArrayMesh_fi0ih")
+surface_material_override/0 = ExtResource("2_quchv")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_001" unique_id=1786658531]
 
@@ -34181,6 +34344,7 @@ shape = SubResource("ConcavePolygonShape3D_7d1lu")
 [node name="Cube_058" type="MeshInstance3D" parent="Wall" unique_id=711061212]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.949999, 32.55, -18.850002)
 mesh = SubResource("ArrayMesh_aqwe3")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_058" unique_id=1103187065]
 
@@ -34253,6 +34417,7 @@ shape = SubResource("ConcavePolygonShape3D_kf1dw")
 [node name="Cube_190" type="MeshInstance3D" parent="Wall" unique_id=1592112786]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.200001, 36.3, -17.450003)
 mesh = SubResource("ArrayMesh_bgu88")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_190" unique_id=1303674802]
 
@@ -34280,6 +34445,7 @@ shape = SubResource("ConcavePolygonShape3D_psicu")
 [node name="Cube_196" type="MeshInstance3D" parent="Wall" unique_id=791437185]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.3, 38.9, -26.750006)
 mesh = SubResource("ArrayMesh_mlura")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_196" unique_id=1762438991]
 
@@ -34298,6 +34464,7 @@ shape = SubResource("ConcavePolygonShape3D_h1f0i")
 [node name="Cube_199" type="MeshInstance3D" parent="Wall" unique_id=921206763]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 38.9, -26.750006)
 mesh = SubResource("ArrayMesh_acuen")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_199" unique_id=2058870503]
 
@@ -34316,6 +34483,7 @@ shape = SubResource("ConcavePolygonShape3D_4rlb8")
 [node name="Cube_201" type="MeshInstance3D" parent="Wall" unique_id=1595755721]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.9, 38.9, -26.750006)
 mesh = SubResource("ArrayMesh_80mgh")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_201" unique_id=277125089]
 
@@ -34334,6 +34502,7 @@ shape = SubResource("ConcavePolygonShape3D_vloly")
 [node name="Cube_203" type="MeshInstance3D" parent="Wall" unique_id=2049366689]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1, 36.3, -30.450003)
 mesh = SubResource("ArrayMesh_i0i51")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_203" unique_id=802467348]
 
@@ -34343,6 +34512,7 @@ shape = SubResource("ConcavePolygonShape3D_g1gw4")
 [node name="Cube_204" type="MeshInstance3D" parent="Wall" unique_id=1672302568]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.75, 36.3, -23.9)
 mesh = SubResource("ArrayMesh_sx1ab")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_204" unique_id=578219744]
 
@@ -34361,6 +34531,7 @@ shape = SubResource("ConcavePolygonShape3D_1w5o1")
 [node name="Cube_211" type="MeshInstance3D" parent="Wall" unique_id=791159104]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7999988, 30.4, -18.5)
 mesh = SubResource("ArrayMesh_oyiot")
+surface_material_override/0 = ExtResource("3_aa57k")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_211" unique_id=1975197808]
 
@@ -34370,6 +34541,7 @@ shape = SubResource("ConcavePolygonShape3D_cyd5h")
 [node name="Cube_212" type="MeshInstance3D" parent="Wall" unique_id=582221994]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7999988, 32.4, -17.249998)
 mesh = SubResource("ArrayMesh_vlt72")
+surface_material_override/0 = ExtResource("3_aa57k")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_212" unique_id=1631011722]
 
@@ -34379,6 +34551,7 @@ shape = SubResource("ConcavePolygonShape3D_2p6se")
 [node name="Cube_213" type="MeshInstance3D" parent="Wall" unique_id=1533043337]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5499988, 32.4, -20.449999)
 mesh = SubResource("ArrayMesh_dqj8h")
+surface_material_override/0 = ExtResource("3_aa57k")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_213" unique_id=1611777233]
 
@@ -34388,6 +34561,7 @@ shape = SubResource("ConcavePolygonShape3D_7d8wh")
 [node name="Cube_214" type="MeshInstance3D" parent="Wall" unique_id=1239095401]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4499989, 32.4, -19.199999)
 mesh = SubResource("ArrayMesh_nr7pm")
+surface_material_override/0 = ExtResource("3_aa57k")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_214" unique_id=625256903]
 
@@ -34397,6 +34571,7 @@ shape = SubResource("ConcavePolygonShape3D_y3r45")
 [node name="Cube_215" type="MeshInstance3D" parent="Wall" unique_id=711356694]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2499988, 33, -19.199999)
 mesh = SubResource("ArrayMesh_51ur2")
+surface_material_override/0 = ExtResource("3_aa57k")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_215" unique_id=185630942]
 
@@ -34424,6 +34599,7 @@ shape = SubResource("ConcavePolygonShape3D_4ybp8")
 [node name="Cube_219" type="MeshInstance3D" parent="Wall" unique_id=217406883]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7999988, 34.55, -18.5)
 mesh = SubResource("ArrayMesh_uf82w")
+surface_material_override/0 = ExtResource("3_aa57k")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_219" unique_id=825366174]
 
@@ -34442,6 +34618,7 @@ shape = SubResource("ConcavePolygonShape3D_hb8y7")
 [node name="Cube_222" type="MeshInstance3D" parent="Wall" unique_id=1814343835]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8000002, 41.4, -18.300001)
 mesh = SubResource("ArrayMesh_qhvv5")
+surface_material_override/0 = ExtResource("3_aa57k")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_222" unique_id=1550407569]
 
@@ -34451,6 +34628,7 @@ shape = SubResource("ConcavePolygonShape3D_vcvt3")
 [node name="Cube_223" type="MeshInstance3D" parent="Wall" unique_id=386840993]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2000001, 41.4, -18.300001)
 mesh = SubResource("ArrayMesh_1gmu0")
+surface_material_override/0 = ExtResource("3_aa57k")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_223" unique_id=1601252156]
 
@@ -34460,6 +34638,7 @@ shape = SubResource("ConcavePolygonShape3D_ei4mp")
 [node name="Cube_224" type="MeshInstance3D" parent="Wall" unique_id=1419098037]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4999996, 41.4, -20.300001)
 mesh = SubResource("ArrayMesh_kouju")
+surface_material_override/0 = ExtResource("3_aa57k")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_224" unique_id=89395178]
 
@@ -34505,6 +34684,7 @@ shape = SubResource("ConcavePolygonShape3D_8eleq")
 [node name="Cube_256" type="MeshInstance3D" parent="Wall" unique_id=1743355447]
 transform = Transform3D(-1, 0, -1.0410971e-06, 0, 1, 0, 1.0410971e-06, 0, -1, 11.599998, 32.55, -29.9)
 mesh = SubResource("ArrayMesh_saa1e")
+surface_material_override/0 = ExtResource("2_quchv")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_256" unique_id=1927667369]
 
@@ -34667,6 +34847,7 @@ shape = SubResource("ConcavePolygonShape3D_yg1xm")
 [node name="Cube_307" type="MeshInstance3D" parent="Wall" unique_id=1785478964]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4999996, 41.4, -16.300001)
 mesh = SubResource("ArrayMesh_3tped")
+surface_material_override/0 = ExtResource("3_aa57k")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_307" unique_id=1384925438]
 
@@ -34739,6 +34920,7 @@ shape = SubResource("ConcavePolygonShape3D_vv03a")
 [node name="Cube_325" type="MeshInstance3D" parent="Wall" unique_id=987430540]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.49999976, 37.05, -12.6)
 mesh = SubResource("ArrayMesh_imrft")
+surface_material_override/0 = ExtResource("3_aa57k")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_325" unique_id=1798385312]
 
@@ -34811,6 +34993,7 @@ shape = SubResource("ConcavePolygonShape3D_0234o")
 [node name="Cube_338" type="MeshInstance3D" parent="Wall" unique_id=450646054]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5, 38.9, -32.250004)
 mesh = SubResource("ArrayMesh_87jmi")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_338" unique_id=332327338]
 
@@ -34829,6 +35012,7 @@ shape = SubResource("ConcavePolygonShape3D_woama")
 [node name="Cube_340" type="MeshInstance3D" parent="Wall" unique_id=901970518]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.75, 36.3, -23.55)
 mesh = SubResource("ArrayMesh_q8gyi")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_340" unique_id=508443460]
 
@@ -34838,6 +35022,7 @@ shape = SubResource("ConcavePolygonShape3D_8sudh")
 [node name="Cube_341" type="MeshInstance3D" parent="Wall" unique_id=1591528193]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.6, 36.3, -32.25)
 mesh = SubResource("ArrayMesh_cihuy")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_341" unique_id=1757783335]
 
@@ -34847,6 +35032,7 @@ shape = SubResource("ConcavePolygonShape3D_yriql")
 [node name="Cube_342" type="MeshInstance3D" parent="Wall" unique_id=1757588392]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.550001, 36.3, -14.849999)
 mesh = SubResource("ArrayMesh_bk6rh")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_342" unique_id=564743111]
 
@@ -34919,6 +35105,7 @@ shape = SubResource("ConcavePolygonShape3D_pyfug")
 [node name="Cube_359" type="MeshInstance3D" parent="Wall" unique_id=783251760]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.6, 38.9, -32.250004)
 mesh = SubResource("ArrayMesh_qjwiv")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_359" unique_id=1515741229]
 
@@ -34928,6 +35115,7 @@ shape = SubResource("ConcavePolygonShape3D_mfk4e")
 [node name="Cube_360" type="MeshInstance3D" parent="Wall" unique_id=938166624]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.049999, 38.9, -32.250004)
 mesh = SubResource("ArrayMesh_bwrap")
+surface_material_override/0 = ExtResource("1_02fag")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_360" unique_id=165273258]
 
@@ -35035,6 +35223,7 @@ shape = SubResource("ConcavePolygonShape3D_gt75s")
 
 [node name="Cube_445" type="MeshInstance3D" parent="Wall" unique_id=1250418104]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 31.5, 11)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_2jjgw")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_445" unique_id=226528228]
@@ -35089,6 +35278,7 @@ shape = SubResource("ConcavePolygonShape3D_s58cu")
 
 [node name="Cube_453" type="MeshInstance3D" parent="Wall" unique_id=1959350166]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.5, 32, -14.5)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_v5qt5")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_453" unique_id=389234947]
@@ -35126,6 +35316,7 @@ shape = SubResource("ConcavePolygonShape3D_kktw3")
 [node name="Cube_458" type="MeshInstance3D" parent="Wall" unique_id=1877797335]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.5, 35.5, 20)
 mesh = SubResource("ArrayMesh_ur368")
+surface_material_override/0 = ExtResource("3_psymu")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_458" unique_id=1381850865]
 
@@ -35135,6 +35326,7 @@ shape = SubResource("ConcavePolygonShape3D_xeiyw")
 [node name="Cube_459" type="MeshInstance3D" parent="Wall" unique_id=1994272694]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.5, 35.5, 15.5)
 mesh = SubResource("ArrayMesh_pxv7k")
+surface_material_override/0 = ExtResource("3_psymu")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_459" unique_id=1870573413]
 
@@ -35144,6 +35336,7 @@ shape = SubResource("ConcavePolygonShape3D_nk4ia")
 [node name="Cube_460" type="MeshInstance3D" parent="Wall" unique_id=896692389]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.5, 33.5, 21)
 mesh = SubResource("ArrayMesh_c270w")
+surface_material_override/0 = ExtResource("3_psymu")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_460" unique_id=685612237]
 
@@ -35152,6 +35345,7 @@ shape = SubResource("ConcavePolygonShape3D_fad20")
 
 [node name="Cube_461" type="MeshInstance3D" parent="Wall" unique_id=1007272354]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 32, 21)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_svj1p")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_461" unique_id=1049686436]
@@ -35161,6 +35355,7 @@ shape = SubResource("ConcavePolygonShape3D_bl76a")
 
 [node name="Cube_462" type="MeshInstance3D" parent="Wall" unique_id=1290746838]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.5, 31.5, 7.5)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_fr71l")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_462" unique_id=1597436082]
@@ -35170,6 +35365,7 @@ shape = SubResource("ConcavePolygonShape3D_rx31x")
 
 [node name="Cube_463" type="MeshInstance3D" parent="Wall" unique_id=135331513]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 31.5, 9)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_37rk2")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_463" unique_id=1375013356]
@@ -35179,6 +35375,7 @@ shape = SubResource("ConcavePolygonShape3D_ytwf1")
 
 [node name="Cube_464" type="MeshInstance3D" parent="Wall" unique_id=1722728487]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.5, 32.5, -26.5)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_pjjvp")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_464" unique_id=841774092]
@@ -35188,6 +35385,7 @@ shape = SubResource("ConcavePolygonShape3D_i0d76")
 
 [node name="Cube_465" type="MeshInstance3D" parent="Wall" unique_id=1260813378]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.5, 35.5, -11)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_i4gmt")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_465" unique_id=411652971]
@@ -35242,6 +35440,7 @@ shape = SubResource("ConcavePolygonShape3D_10jhq")
 
 [node name="Cube_471" type="MeshInstance3D" parent="Wall" unique_id=679316282]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5, 30.5, -46.5)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_psm86")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_471" unique_id=2014078979]
@@ -35251,6 +35450,7 @@ shape = SubResource("ConcavePolygonShape3D_i4re2")
 
 [node name="Cube_472" type="MeshInstance3D" parent="Wall" unique_id=977378619]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.5, 30.5, -63.5)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_2wrul")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_472" unique_id=20342292]
@@ -35260,6 +35460,7 @@ shape = SubResource("ConcavePolygonShape3D_swq1y")
 
 [node name="Cube_473" type="MeshInstance3D" parent="Wall" unique_id=1093468251]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.5, 30.5, -60.5)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_2w0si")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_473" unique_id=1251267528]
@@ -35278,6 +35479,7 @@ shape = SubResource("ConcavePolygonShape3D_j0c30")
 
 [node name="Cube_475" type="MeshInstance3D" parent="Wall" unique_id=1506535203]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.5, 31, -45)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_5ar4p")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_475" unique_id=1767334225]
@@ -35287,6 +35489,7 @@ shape = SubResource("ConcavePolygonShape3D_slxcy")
 
 [node name="Cube_477" type="MeshInstance3D" parent="Wall" unique_id=1277133391]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.5, 31, -43.5)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_2knif")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_477" unique_id=1949465706]
@@ -35332,6 +35535,7 @@ shape = SubResource("ConcavePolygonShape3D_rmqvf")
 
 [node name="Cube_500" type="MeshInstance3D" parent="Wall" unique_id=1276309381]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.5, 32, -45.5)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_gmi38")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_500" unique_id=43156916]
@@ -35341,6 +35545,7 @@ shape = SubResource("ConcavePolygonShape3D_8nlmj")
 
 [node name="Cube_501" type="MeshInstance3D" parent="Wall" unique_id=543889550]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66.5, 32, -51.5)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_x22m2")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_501" unique_id=1318751637]
@@ -35350,6 +35555,7 @@ shape = SubResource("ConcavePolygonShape3D_j75pn")
 
 [node name="Cube_502" type="MeshInstance3D" parent="Wall" unique_id=54012217]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 30.8, -30)
+material_override = ExtResource("4_aa57k")
 mesh = SubResource("ArrayMesh_siriv")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_502" unique_id=197434223]
@@ -35359,6 +35565,7 @@ shape = SubResource("ConcavePolygonShape3D_gm6cd")
 
 [node name="Cube_503" type="MeshInstance3D" parent="Wall" unique_id=373361690]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82.450005, 32, -28.5)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_v7ccu")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_503" unique_id=664028633]
@@ -35368,6 +35575,7 @@ shape = SubResource("ConcavePolygonShape3D_fg37f")
 
 [node name="Cube_504" type="MeshInstance3D" parent="Wall" unique_id=1495169371]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.5, 32, -8.5)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_fgcuu")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_504" unique_id=938188444]
@@ -35422,6 +35630,7 @@ shape = SubResource("ConcavePolygonShape3D_0ghp8")
 
 [node name="Cube_510" type="MeshInstance3D" parent="Wall" unique_id=291351550]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.5, 32, 4)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_ixrm6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_510" unique_id=1386556304]
@@ -35431,6 +35640,7 @@ shape = SubResource("ConcavePolygonShape3D_71y77")
 
 [node name="Cube_512" type="MeshInstance3D" parent="Wall" unique_id=575389779]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.5, 31.5, 17.5)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_rlpfo")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_512" unique_id=1005891257]
@@ -35440,6 +35650,7 @@ shape = SubResource("ConcavePolygonShape3D_judqv")
 
 [node name="Cube_513" type="MeshInstance3D" parent="Wall" unique_id=1440469643]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 31, -46)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_0dtql")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_513" unique_id=1060017818]
@@ -35449,6 +35660,7 @@ shape = SubResource("ConcavePolygonShape3D_vrlic")
 
 [node name="Cube_514" type="MeshInstance3D" parent="Wall" unique_id=1995825906]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.5, 31, -46)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_5mm13")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_514" unique_id=898727257]
@@ -35503,6 +35715,7 @@ shape = SubResource("ConcavePolygonShape3D_ho5e4")
 
 [node name="Cube_521" type="MeshInstance3D" parent="Wall" unique_id=814269792]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.5, 32, -10)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_h3c37")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_521" unique_id=1471001208]
@@ -35512,6 +35725,7 @@ shape = SubResource("ConcavePolygonShape3D_nt1vs")
 
 [node name="Cube_522" type="MeshInstance3D" parent="Wall" unique_id=1141511586]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 32, -8.5)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_iwt8r")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_522" unique_id=1696649858]
@@ -35782,6 +35996,7 @@ shape = SubResource("ConcavePolygonShape3D_r1nvo")
 
 [node name="Cube_613" type="MeshInstance3D" parent="Wall" unique_id=1130978118]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75, 33.55, -32)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_rg4hj")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_613" unique_id=2142638142]
@@ -36025,6 +36240,7 @@ shape = SubResource("ConcavePolygonShape3D_eomxb")
 
 [node name="Cube_726" type="MeshInstance3D" parent="Wall" unique_id=223979683]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68, 33.3, -20.5)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_ay3n7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_726" unique_id=1185250554]
@@ -36034,6 +36250,7 @@ shape = SubResource("ConcavePolygonShape3D_nwq3m")
 
 [node name="Cube_727" type="MeshInstance3D" parent="Wall" unique_id=2137027100]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.5, 33.85, -20.5)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_l8e53")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_727" unique_id=53838423]
@@ -36043,6 +36260,7 @@ shape = SubResource("ConcavePolygonShape3D_r0w6q")
 
 [node name="Cube_728" type="MeshInstance3D" parent="Wall" unique_id=362658764]
 transform = Transform3D(3.5762787e-07, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 3.5762787e-07, 53.09997, 36.35, -21.899996)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_amapa")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_728" unique_id=807928235]
@@ -36052,6 +36270,7 @@ shape = SubResource("ConcavePolygonShape3D_ptfnl")
 
 [node name="Cube_730" type="MeshInstance3D" parent="Wall" unique_id=1616567288]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68, 33.55, -25)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_tlru0")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_730" unique_id=202945918]
@@ -36061,6 +36280,7 @@ shape = SubResource("ConcavePolygonShape3D_vxynr")
 
 [node name="Cube_731" type="MeshInstance3D" parent="Wall" unique_id=926411002]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75, 33.55, -25)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_v317f")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_731" unique_id=957660248]
@@ -36070,6 +36290,7 @@ shape = SubResource("ConcavePolygonShape3D_io7j0")
 
 [node name="Cube_732" type="MeshInstance3D" parent="Wall" unique_id=1677322695]
 transform = Transform3D(0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 0, 0, 1, 57.35, 32.35, -13)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_0hri1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_732" unique_id=1110950124]
@@ -36079,6 +36300,7 @@ shape = SubResource("ConcavePolygonShape3D_qypfu")
 
 [node name="Cube_733" type="MeshInstance3D" parent="Wall" unique_id=1797094637]
 transform = Transform3D(1, 0, 0, 0, 0.8660254, -0.5, 0, 0.5, 0.8660254, 53.1, 35.35, -18.300001)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_o78bf")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_733" unique_id=752550518]
@@ -36088,6 +36310,7 @@ shape = SubResource("ConcavePolygonShape3D_04w4r")
 
 [node name="Cube_734" type="MeshInstance3D" parent="Wall" unique_id=1674889254]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.6, 33.55, -31.5)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_2drb7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_734" unique_id=919151877]
@@ -36097,6 +36320,7 @@ shape = SubResource("ConcavePolygonShape3D_gtdoa")
 
 [node name="Cube_735" type="MeshInstance3D" parent="Wall" unique_id=413630212]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55, 33.55, -42.5)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_2e0m5")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_735" unique_id=767832826]
@@ -36106,6 +36330,7 @@ shape = SubResource("ConcavePolygonShape3D_qk5hn")
 
 [node name="Cube_736" type="MeshInstance3D" parent="Wall" unique_id=178494520]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.5, 33.55, -40)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_8pujl")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_736" unique_id=1260004491]
@@ -36115,6 +36340,7 @@ shape = SubResource("ConcavePolygonShape3D_k1mq4")
 
 [node name="Cube_737" type="MeshInstance3D" parent="Wall" unique_id=961593378]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65.5, 33.55, -31.5)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_iog8i")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_737" unique_id=844479527]
@@ -36124,6 +36350,7 @@ shape = SubResource("ConcavePolygonShape3D_12qyf")
 
 [node name="Cube_738" type="MeshInstance3D" parent="Wall" unique_id=1822153092]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.5, 33.55, -37)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_wkvdn")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_738" unique_id=1140486142]
@@ -36133,6 +36360,7 @@ shape = SubResource("ConcavePolygonShape3D_oskph")
 
 [node name="Cube_739" type="MeshInstance3D" parent="Wall" unique_id=1186912754]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 62.5, 33.55, -42.5)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_81gnv")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_739" unique_id=1619268254]
@@ -36142,6 +36370,7 @@ shape = SubResource("ConcavePolygonShape3D_u28ud")
 
 [node name="Cube_740" type="MeshInstance3D" parent="Wall" unique_id=1777328845]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.5, 33.55, -32.5)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_syor8")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_740" unique_id=387430486]
@@ -36151,6 +36380,7 @@ shape = SubResource("ConcavePolygonShape3D_mqoq3")
 
 [node name="Cube_741" type="MeshInstance3D" parent="Wall" unique_id=1196459801]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.5, 33.55, -42.5)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_avbq1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_741" unique_id=191248073]
@@ -36160,6 +36390,7 @@ shape = SubResource("ConcavePolygonShape3D_wquoq")
 
 [node name="Cube_742" type="MeshInstance3D" parent="Wall" unique_id=1742912154]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.6, 36.3, -20.5)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_53t7r")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_742" unique_id=606953555]
@@ -36169,6 +36400,7 @@ shape = SubResource("ConcavePolygonShape3D_l8y05")
 
 [node name="Cube_743" type="MeshInstance3D" parent="Wall" unique_id=1505522868]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75, 36.3, -20.5)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_31af7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_743" unique_id=449780187]
@@ -36178,6 +36410,7 @@ shape = SubResource("ConcavePolygonShape3D_dpkru")
 
 [node name="Cube_745" type="MeshInstance3D" parent="Wall" unique_id=315628937]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.3, 33.55, -35.5)
+material_override = ExtResource("3_aa57k")
 mesh = SubResource("ArrayMesh_u7pnu")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_745" unique_id=1620967022]
@@ -36187,6 +36420,7 @@ shape = SubResource("ConcavePolygonShape3D_uce2y")
 
 [node name="Cube_746" type="MeshInstance3D" parent="Wall" unique_id=434794361]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.1, 33.85, -20.5)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_u7v4a")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_746" unique_id=158568264]
@@ -36196,6 +36430,7 @@ shape = SubResource("ConcavePolygonShape3D_h8g5o")
 
 [node name="Cube_748" type="MeshInstance3D" parent="Wall" unique_id=1036873487]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.1, 33.1, -13.799999)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_gf41o")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_748" unique_id=346673696]
@@ -36205,6 +36440,7 @@ shape = SubResource("ConcavePolygonShape3D_hjq6e")
 
 [node name="Cube_752" type="MeshInstance3D" parent="Wall" unique_id=976978224]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75, 32.7975, -37.5)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_qdxe5")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_752" unique_id=1062584147]
@@ -36214,6 +36450,7 @@ shape = SubResource("ConcavePolygonShape3D_bba17")
 
 [node name="Cube_757" type="MeshInstance3D" parent="Wall" unique_id=1646147417]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75, 31.85, -41)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_w1uel")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_757" unique_id=997296268]
@@ -36223,6 +36460,7 @@ shape = SubResource("ConcavePolygonShape3D_lefmw")
 
 [node name="Cube_772" type="MeshInstance3D" parent="Wall" unique_id=486023258]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64.49999, 33.35, -12.499993)
+material_override = ExtResource("3_aa57k")
 mesh = SubResource("ArrayMesh_4550k")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_772" unique_id=1490431125]
@@ -36232,6 +36470,7 @@ shape = SubResource("ConcavePolygonShape3D_fn2v1")
 
 [node name="Cube_773" type="MeshInstance3D" parent="Wall" unique_id=1765450312]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64.49999, 33.35, -17.499994)
+material_override = ExtResource("3_aa57k")
 mesh = SubResource("ArrayMesh_vcam4")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_773" unique_id=1587087834]
@@ -36250,6 +36489,7 @@ shape = SubResource("ConcavePolygonShape3D_a111j")
 
 [node name="Cube_780" type="MeshInstance3D" parent="Wall" unique_id=1508474303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.6, 33.55, -31.5)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_tvhc8")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_780" unique_id=322871014]
@@ -36259,6 +36499,7 @@ shape = SubResource("ConcavePolygonShape3D_whpfv")
 
 [node name="Cube_781" type="MeshInstance3D" parent="Wall" unique_id=1721324426]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.2, 33.55, -31.9)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_12vif")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_781" unique_id=20280696]
@@ -36268,6 +36509,7 @@ shape = SubResource("ConcavePolygonShape3D_u8ocu")
 
 [node name="Cube_782" type="MeshInstance3D" parent="Wall" unique_id=1120249974]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.2, 33.55, -20.3)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_qt5f3")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_782" unique_id=1615608673]
@@ -36277,6 +36519,7 @@ shape = SubResource("ConcavePolygonShape3D_hxesl")
 
 [node name="Cube_783" type="MeshInstance3D" parent="Wall" unique_id=1678480612]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.7, 33.55, -26)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_we6sj")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_783" unique_id=836613606]
@@ -36286,6 +36529,7 @@ shape = SubResource("ConcavePolygonShape3D_kd4o6")
 
 [node name="Cube_784" type="MeshInstance3D" parent="Wall" unique_id=112375672]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.7, 33.55, -26)
+material_override = ExtResource("5_cdm7x")
 mesh = SubResource("ArrayMesh_hggvy")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_784" unique_id=1538594984]
@@ -36295,6 +36539,7 @@ shape = SubResource("ConcavePolygonShape3D_d5h6c")
 
 [node name="Cube_785" type="MeshInstance3D" parent="Wall" unique_id=1748906351]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.5, 32, -27.5)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_kpx8d")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_785" unique_id=197565377]
@@ -36358,6 +36603,7 @@ shape = SubResource("ConcavePolygonShape3D_bygua")
 
 [node name="Cube_792" type="MeshInstance3D" parent="Wall" unique_id=1310863287]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.000005, 30.95, 20)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_dwuu8")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_792" unique_id=1051992926]
@@ -36493,6 +36739,7 @@ shape = SubResource("ConcavePolygonShape3D_liq8k")
 
 [node name="Cube_808" type="MeshInstance3D" parent="Wall" unique_id=1701242536]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.000005, 30.95, 25.5)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_4pik2")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_808" unique_id=158249823]
@@ -36529,6 +36776,7 @@ shape = SubResource("ConcavePolygonShape3D_eg8ku")
 
 [node name="Cube_902" type="MeshInstance3D" parent="Wall" unique_id=1536082268]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5, 30.5, -52.5)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_iky6r")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_902" unique_id=872812857]
@@ -36538,6 +36786,7 @@ shape = SubResource("ConcavePolygonShape3D_r7xi1")
 
 [node name="Cube_903" type="MeshInstance3D" parent="Wall" unique_id=1024463099]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45, 31.5, 4)
+material_override = ExtResource("3_psymu")
 mesh = SubResource("ArrayMesh_rhdqq")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_903" unique_id=656444869]
