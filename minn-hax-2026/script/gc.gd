@@ -17,7 +17,8 @@ const scenes = {
 	"trainingShoot": preload("res://scene/training_shoot.tscn"),
 	"obstacleCourse": preload("res://scene/obstacle_course.tscn"),
 	"tacSim": preload("res://scene/tac_sim.tscn"),
-	"freelancer": preload("res://scene/freelancer.tscn")
+	"freelancer": preload("res://scene/freelancer.tscn"),
+	"island": preload("res://scene/island.tscn"),
 }
 
 # commandLookup populated by Commands child node 
@@ -211,3 +212,9 @@ func loadFreelancer():
 	await fadeOut()
 	mouthLookup.clear()
 	loadScene("freelancer")
+
+func loadIsland():
+	playerCanMove = false
+	await fadeOut()
+	mouthLookup.clear()
+	loadScene("island")

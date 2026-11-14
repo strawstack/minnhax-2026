@@ -1,0 +1,16 @@
+[
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "PLACEHOLDER: Lets go crash LeBooBoo's concert..."
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "boatToIsland"
+	},
+]
