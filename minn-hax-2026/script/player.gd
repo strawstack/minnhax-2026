@@ -87,7 +87,7 @@ func _input(event):
 func shootingMode(value: bool):
 	inShootingMode = value
 	gunArm.set_visible(value)
-	agentFortyJeffM.hideHead(value)
+	agentFortyJeffM.set_visible(not value)
 	gc.showCrossHairs(value)
 	if value:
 		$CameraY/CameraX/CameraRoot.set_position(Vector3(0, 0.75, 0))
@@ -96,18 +96,22 @@ func shootingMode(value: bool):
 
 func _physics_process(delta: float) -> void:
 
-	if cameraRayCast3D.is_colliding():
-		var point = cameraRayCast3D.get_collision_point()
-		var distance = (point - cameraRoot.get_global_position()).length()
-		var maxCameraSlide = 2.2
-		var cameraPoint = distance - maxCameraSlide 
-		camera3D.set_position(Vector3(0, 0, cameraPoint))
-	else:
-		camera3D.set_position(Vector3.ZERO)
+	if not inShootingMode:
+		if cameraRayCast3D.is_colliding():
+			var buffer = 0.2 # Prevent camera see through walls
+			var point = cameraRayCast3D.get_collision_point()
+			var distance = (point - cameraRayCast3D.get_global_position()).length() - buffer
+			var maxCameraSlide = 2.2
+			var cameraPoint = distance - maxCameraSlide 
+			camera3D.set_position(Vector3(0, 0, cameraPoint))
+		else:
+			camera3D.set_position(Vector3.ZERO)
 
 	if not gc.playerCanMove:
 		return
+
 	if inShootingMode:
+		camera3D.set_position(Vector3.ZERO) # Reset if camera is near wall previously
 		var pos = characterBody3D.get_position()
 		cameraY.set_position(pos)
 		if Input.is_action_just_pressed("left_mouse"):

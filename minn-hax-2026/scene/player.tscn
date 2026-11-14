@@ -3065,7 +3065,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29, 0.62, 2.2)
 
 [node name="RayCast3D" type="RayCast3D" parent="CameraY/CameraX/CameraRoot" unique_id=1678827231]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0009999871, -0.0019999743, -2.2)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.2)
 target_position = Vector3(0, 0, 2.3)
 
 [node name="Camera3D" type="Camera3D" parent="CameraY/CameraX/CameraRoot" unique_id=173877677]
