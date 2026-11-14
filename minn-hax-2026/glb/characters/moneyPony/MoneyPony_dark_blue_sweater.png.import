@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cva0ey4a34883"
-path.s3tc="res://.godot/imported/MoneyPony_dark_blue_sweater.png-35a8a8d1b751e0ee93bf30d138f45f29.s3tc.ctex"
+path.s3tc="res://.godot/imported/MoneyPony_dark_blue_sweater.png-af2bc28aa15cf9acfb73727aadc9f4e6.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://glb/moneyPony/MoneyPony_dark_blue_sweater.png"
-dest_files=["res://.godot/imported/MoneyPony_dark_blue_sweater.png-35a8a8d1b751e0ee93bf30d138f45f29.s3tc.ctex"]
+source_file="res://glb/characters/moneyPony/MoneyPony_dark_blue_sweater.png"
+dest_files=["res://.godot/imported/MoneyPony_dark_blue_sweater.png-af2bc28aa15cf9acfb73727aadc9f4e6.s3tc.ctex"]
 
 [params]
 

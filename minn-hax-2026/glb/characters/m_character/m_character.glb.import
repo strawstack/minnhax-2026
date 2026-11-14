@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://ravv7dfwtgr1"
-path="res://.godot/imported/MoneyPony.glb-fba109920bc5ce2f48da82ea32ba9b8b.scn"
+uid="uid://b5jmk3l8s5q1c"
+path="res://.godot/imported/m_character.glb-85b11c20508b90181d47e69e292b7892.scn"
 
 [deps]
 
-source_file="res://glb/moneyPony/MoneyPony.glb"
-dest_files=["res://.godot/imported/MoneyPony.glb-fba109920bc5ce2f48da82ea32ba9b8b.scn"]
+source_file="res://glb/characters/m_character/m_character.glb"
+dest_files=["res://.godot/imported/m_character.glb-85b11c20508b90181d47e69e292b7892.scn"]
 
 [params]
 

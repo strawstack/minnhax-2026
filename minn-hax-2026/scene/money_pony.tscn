@@ -1,9 +1,9 @@
 [gd_scene format=4 uid="uid://bngddr2fwdmes"]
 
-[ext_resource type="Texture2D" uid="uid://d2bu4uhftjlbi" path="res://glb/moneyPony/MoneyPony_money_infinite.png" id="1_2gyit"]
+[ext_resource type="Texture2D" uid="uid://d2bu4uhftjlbi" path="res://glb/characters/moneyPony/MoneyPony_money_infinite.png" id="1_2gyit"]
 [ext_resource type="PackedScene" uid="uid://bg5ixunmm5oq2" path="res://scene/mouth.tscn" id="1_a1pku"]
-[ext_resource type="Texture2D" uid="uid://deo6r2wwxvrfd" path="res://glb/moneyPony/MoneyPony_pony_hair.png" id="2_8u46g"]
-[ext_resource type="Texture2D" uid="uid://cva0ey4a34883" path="res://glb/moneyPony/MoneyPony_dark_blue_sweater.png" id="3_a1pku"]
+[ext_resource type="Texture2D" uid="uid://deo6r2wwxvrfd" path="res://glb/characters/moneyPony/MoneyPony_pony_hair.png" id="2_8u46g"]
+[ext_resource type="Texture2D" uid="uid://cva0ey4a34883" path="res://glb/characters/moneyPony/MoneyPony_dark_blue_sweater.png" id="3_a1pku"]
 [ext_resource type="Material" uid="uid://df8a4w5diq806" path="res://material/money_pony_glass_lens.tres" id="3_pogl4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i5gte"]

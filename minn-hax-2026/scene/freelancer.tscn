@@ -873,7 +873,57 @@ spot_angle = 38.84024
 [node name="minnMaxLogo_leaveOnBoat" parent="." unique_id=1930660944 instance=ExtResource("6_36aw1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.2618, 1.9758142, 42.52454)
 prompt = "take boat to island"
-dialogFile = "res://dialog/freelancer/leave_on_boat.json"
+dialogFile = "res://dialog/script/freelancer/leave_on_boat.json"
+
+[node name="minnMaxLogo_zen" parent="." unique_id=108906179 instance=ExtResource("6_36aw1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.533327, 1.5602087, 33.49894)
+prompt = "take boat to island"
+dialogFile = "res://dialog/script/freelancer/leave_on_boat.json"
+
+[node name="minnMaxLogo_bananaSwitch" parent="." unique_id=1625653245 instance=ExtResource("6_36aw1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.706796, 2.4756682, -22.232994)
+prompt = "take boat to island"
+dialogFile = "res://dialog/script/freelancer/leave_on_boat.json"
+
+[node name="minnMaxLogo_mainHouseRoom" parent="." unique_id=1385783119 instance=ExtResource("6_36aw1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.312561, 1.3193958, -11.471247)
+prompt = "take boat to island"
+dialogFile = "res://dialog/script/freelancer/leave_on_boat.json"
+
+[node name="minnMaxLogo_officeRoom" parent="." unique_id=733603774 instance=ExtResource("6_36aw1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.706796, 7.720227, -23.777414)
+prompt = "take boat to island"
+dialogFile = "res://dialog/script/freelancer/leave_on_boat.json"
+
+[node name="minnMaxLogo_secondUpstairsRoom" parent="." unique_id=481349235 instance=ExtResource("6_36aw1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.677602, 7.5328803, -23.777414)
+prompt = "take boat to island"
+dialogFile = "res://dialog/script/freelancer/leave_on_boat.json"
+
+[node name="minnMaxLogo_garage" parent="." unique_id=1713361736 instance=ExtResource("6_36aw1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.719859, 2.1082425, -23.777414)
+prompt = "take boat to island"
+dialogFile = "res://dialog/script/freelancer/leave_on_boat.json"
+
+[node name="minnMaxLogo_roof" parent="." unique_id=1076062169 instance=ExtResource("6_36aw1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.79273, 14.548309, -23.777414)
+prompt = "take boat to island"
+dialogFile = "res://dialog/script/freelancer/leave_on_boat.json"
+
+[node name="minnMaxLogo_cabin" parent="." unique_id=924782812 instance=ExtResource("6_36aw1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.573196, 2.0033092, -42.98488)
+prompt = "take boat to island"
+dialogFile = "res://dialog/script/freelancer/leave_on_boat.json"
+
+[node name="minnMaxLogo_shootingRange" parent="." unique_id=809922078 instance=ExtResource("6_36aw1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.20416, 2.9273467, -36.98367)
+prompt = "take boat to island"
+dialogFile = "res://dialog/script/freelancer/leave_on_boat.json"
+
+[node name="minnMaxLogo_shootingRangeButton" parent="." unique_id=1402778759 instance=ExtResource("6_36aw1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.816692, 3.592094, -37.474026)
+prompt = "take boat to island"
+dialogFile = "res://dialog/script/freelancer/leave_on_boat.json"
 
 [node name="target" type="Node3D" parent="." unique_id=813849125]
 

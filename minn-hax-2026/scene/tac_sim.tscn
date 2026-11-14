@@ -5,6 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://bugwpg2o7w3gw" path="res://scene/player.tscn" id="2_4nhj6"]
 [ext_resource type="PackedScene" uid="uid://7w7qj04mf06d" path="res://scene/minn_max_logo.tscn" id="4_j44vb"]
 [ext_resource type="LightmapGIData" uid="uid://evvlh5deqpe0" path="res://bake/tac_sim.lmbake" id="4_onqtw"]
+[ext_resource type="PackedScene" uid="uid://dyico20xhksp6" path="res://scene/characters/m_character.tscn" id="6_nl6gx"]
+[ext_resource type="PackedScene" uid="uid://briidiikt8m5k" path="res://scene/characters/q_character.tscn" id="7_2pri7"]
+[ext_resource type="PackedScene" uid="uid://brl0oxiydmfbv" path="res://scene/characters/money_pony.tscn" id="8_qnipt"]
 
 [node name="tacSim" type="Node3D" unique_id=2140253641]
 script = ExtResource("1_4ry2h")
@@ -80,3 +83,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.722559, -26.451237)
 modulate = Color(0.06666667, 0.06666667, 0.06666667, 1)
 text = "IMMERSIVE AGENT TRAINING"
 font_size = 128
+
+[node name="m_character" parent="." unique_id=1292694125 instance=ExtResource("6_nl6gx")]
+transform = Transform3D(0.86602545, 0, 0.50000006, 0, 1, 0, -0.50000006, 0, 0.86602545, -2, 1, 23)
+
+[node name="q_character" parent="." unique_id=1638432039 instance=ExtResource("7_2pri7")]
+transform = Transform3D(-0.50000006, 0, -0.8660254, 0, 1, 0, 0.8660254, 0, -0.50000006, 4, 1, 2)
+
+[node name="money_pony" parent="." unique_id=1513112948 instance=ExtResource("8_qnipt")]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, -9, 1, 7)
+
+[node name="minnMaxLogo_Talk_Q" parent="." unique_id=116130393 instance=ExtResource("4_j44vb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 3, 2)
+prompt = "talk to Q"
+dialogFile = "res://dialog/script/tacSim/talk_to_q.json"
+
+[node name="minnMaxLogo_Talk_MoneyPony" parent="." unique_id=693544179 instance=ExtResource("4_j44vb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 3, 5)
+prompt = "get briefing from MoneyPony"
+dialogFile = "res://dialog/script/tacSim/talk_to_mp.json"

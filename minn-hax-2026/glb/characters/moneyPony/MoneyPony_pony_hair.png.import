@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://deo6r2wwxvrfd"
-path.s3tc="res://.godot/imported/MoneyPony_pony_hair.png-fe774bc4aa4b9a2bd137b64b17e75028.s3tc.ctex"
+path.s3tc="res://.godot/imported/MoneyPony_pony_hair.png-a204ff761aa3973798ecd0f6c3876c57.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://glb/moneyPony/MoneyPony_pony_hair.png"
-dest_files=["res://.godot/imported/MoneyPony_pony_hair.png-fe774bc4aa4b9a2bd137b64b17e75028.s3tc.ctex"]
+source_file="res://glb/characters/moneyPony/MoneyPony_pony_hair.png"
+dest_files=["res://.godot/imported/MoneyPony_pony_hair.png-a204ff761aa3973798ecd0f6c3876c57.s3tc.ctex"]
 
 [params]
 

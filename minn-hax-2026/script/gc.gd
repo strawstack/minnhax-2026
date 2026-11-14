@@ -1,6 +1,6 @@
 extends Node3D
 
-const DEBUG = true
+const DEBUG = false
 
 @export var commands: Node3D
 @export var bulletSmoke: Node3D
