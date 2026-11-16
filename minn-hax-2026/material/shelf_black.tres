@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bbbaxswojvgng"]
+
+[resource]
+resource_name = "shelf_black"
+cull_mode = 2
+albedo_color = Color(0.19607848, 0.19607848, 0.18823534, 1)
+roughness = 0.5

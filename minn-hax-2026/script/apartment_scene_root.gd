@@ -25,9 +25,9 @@ func _ready() -> void:
 	}
 	hideInterviewCharacters()
 	if gc.DEBUG:
-		minnMaxLogoLeBooBooPreinterview.hideDeactivate()
-		hideLeBooBooPreInterview()
-		advanceToMorning()
+		#minnMaxLogoLeBooBooPreinterview.hideDeactivate()
+		#hideLeBooBooPreInterview()
+		#advanceToMorning()
 		gc.setPlayerCanMove(true)
 		gc.showCrossHairs(true)
 
