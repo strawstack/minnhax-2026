@@ -925,6 +925,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.816692, 3.592094, -37.4740
 prompt = "take boat to island"
 dialogFile = "res://dialog/script/freelancer/leave_on_boat.json"
 
+[node name="minnMaxLogo_skateBoard" parent="." unique_id=262713277 instance=ExtResource("6_36aw1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.294056, -18.645754, -28.660503)
+prompt = "take boat to island"
+dialogFile = "res://dialog/script/freelancer/leave_on_boat.json"
+
 [node name="target" type="Node3D" parent="." unique_id=813849125]
 
 [node name="Target" parent="target" unique_id=267441459 instance=ExtResource("6_g2wiy")]
