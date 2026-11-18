@@ -12,6 +12,8 @@ extends Node3D
 @export var bulletStart: Node3D
 @export var agentHead: Node3D
 
+@export var startRotation: int = 0
+
 var useWalkMovement = true
 var inShootingMode = false
 
@@ -47,7 +49,11 @@ func _ready() -> void:
 	cameraRoot = $CameraY/CameraX/CameraRoot
 	camera3D = $CameraY/CameraX/CameraRoot/Camera3D
 	startCameraPosition = $CameraY/CameraX/CameraRoot.get_position()
-	
+
+	var rot = deg_to_rad(startRotation)
+	agentFortyJeffM.rotate_y(rot)
+	cameraY.rotate_y(rot)
+
 	if hideBoard:
 		skateBoardBack.set_visible(false)
 		skateBoardFloor.set_visible(false)
