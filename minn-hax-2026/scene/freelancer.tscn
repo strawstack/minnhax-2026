@@ -1050,7 +1050,7 @@ mesh = SubResource("ArrayMesh_5ynpx")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2004154243]
 transform = Transform3D(0.9659258, 0.066987306, 0.25, -0.25000003, 0.49148148, 0.8342339, -0.066987306, -0.868308, 0.4914815, 0, 35, 0)
-light_energy = 0.5
+light_energy = 0.8
 light_bake_mode = 1
 
 [node name="freelancer_house_model" parent="." unique_id=872576975 instance=ExtResource("3_cwj8e")]
