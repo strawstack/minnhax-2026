@@ -55,4 +55,11 @@ light_data = ExtResource("7_hmbwd")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=999392081]
 environment = SubResource("Environment_jd5n0")
 
+[node name="Label3D" type="Label3D" parent="." unique_id=1556746137]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.199688, 4.171907, -7.978497)
+text = "Hold Right Mouse to aim gun.
+Click Left Mouse to shoot at targets."
+font_size = 42
+horizontal_alignment = 0
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

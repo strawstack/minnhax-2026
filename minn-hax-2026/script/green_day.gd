@@ -25,7 +25,10 @@ func _ready() -> void:
 		"openDoorFour": openDoorFour,
 		"openDoorFive": openDoorFive,
 		"exitJeep": exitJeep,
-		"camera3D_AgentToCroissant": camera3D_AgentToCroissant
+		"camera3D_AgentToCroissant": camera3D_AgentToCroissant,
+		"switchCameraExitGreenDay": switchCameraExitGreenDay,
+		"switchCameraExitAgent": switchCameraExitAgent,
+		"exitJeepSceneComplete": exitJeepSceneComplete
 	}
 	doorAnimationPlayer = $greenday_training_model/AnimationPlayer
 	toggleReturnBlocker(false)
@@ -96,11 +99,20 @@ func _on_pass_door_five_area_entered(area: Area3D) -> void:
 
 func exitJeep():
 	$Jeep.canDrive = false
+	$Jeep.set_visible(false)
+	$JeepParkScene.set_visible(true)
 	agent.set_position($SecondPlayerPosition.get_position())
 	agent.resetCamera()
-	agent.setCameraActive()
-	$Jeep.hideAgent()
+
+func switchCameraExitGreenDay():
+	$JeepParkScene/Camera3D_GreenDay.set_current(true)
+
+func switchCameraExitAgent():
+	$JeepParkScene/Camera3D_Agent.set_current(true)
+
+func exitJeepSceneComplete():
 	agent.set_visible(true)
+	agent.setCameraActive()
 	gc.playerCanMove = true
 
 func camera3D_AgentToCroissant():

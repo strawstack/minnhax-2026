@@ -1,5 +1,9 @@
 [
 	{
+		"name": "Command",
+		"command": "hideGunModel"
+	},
+	{
 		"name": "Richard",
 		"avatar": "",
 		"lines": [
@@ -9,7 +13,7 @@
 			},
 		]
 	},
-		{
+	{
 		"name": "Command",
 		"command": "playerCanShoot"
 	},

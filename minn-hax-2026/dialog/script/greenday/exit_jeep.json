@@ -4,6 +4,10 @@
 		"command": "exitJeep"
 	},
 	{
+		"name": "Command",
+		"command": "switchCameraExitGreenDay"
+	},
+	{
 		"name": "Richard",
 		"avatar": "",
 		"lines": [
@@ -12,5 +16,23 @@
 				"text": "PLACEHOLDER: Head up the stairs and meet your fellow recruits"
 			},
 		]
+	},
+	{
+		"name": "Command",
+		"command": "switchCameraExitAgent"
+	},
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "PLACEHOLDER: Head up the stairs and meet your fellow recruits"
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "exitJeepSceneComplete"
 	},
 ]

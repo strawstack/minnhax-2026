@@ -46,8 +46,7 @@ func _ready() -> void:
 	showCrossHairs(false)
 	hideObjective()
 	if DEBUG:
-		loadScene("apartment")
-		await fadeIn()
+		loadObstacleCourse()
 	else:
 		$CanvasLayer_Fade.set_visible(true) # Just to make sure
 		loadScene("logo") # Calls "logoSceneEnds" on completion

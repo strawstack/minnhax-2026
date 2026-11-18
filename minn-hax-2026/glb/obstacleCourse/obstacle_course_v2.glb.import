@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://4jk78hcr7nfu"
-path="res://.godot/imported/obstacle_course_model.glb-c465cdacb2543c3847b5af34d616548a.scn"
+uid="uid://ou0ino54x20c"
+path="res://.godot/imported/obstacle_course_v2.glb-9fa4857a9c1be5649c91478639d6758b.scn"
 
 [deps]
 
-source_file="res://glb/obstacleCourse/obstacle_course_model.glb"
-dest_files=["res://.godot/imported/obstacle_course_model.glb-c465cdacb2543c3847b5af34d616548a.scn"]
+source_file="res://glb/obstacleCourse/obstacle_course_v2.glb"
+dest_files=["res://.godot/imported/obstacle_course_v2.glb-9fa4857a9c1be5649c91478639d6758b.scn"]
 
 [params]
 

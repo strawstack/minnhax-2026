@@ -3,6 +3,10 @@
 [ext_resource type="Script" uid="uid://cvr5crbksqxmd" path="res://script/jeep.gd" id="1_bg831"]
 [ext_resource type="Texture2D" uid="uid://ctcd2ghruauv7" path="res://glb/jeep/Jeep_agent_head_texture_with_qr.png" id="1_r3san"]
 [ext_resource type="Texture2D" uid="uid://dus8mo6molssp" path="res://glb/jeep/Jeep_agent_suit.png" id="2_bg831"]
+[ext_resource type="Material" uid="uid://cccduap8ol20l" path="res://material/jeep_green.tres" id="4_hb8dr"]
+[ext_resource type="PackedScene" uid="uid://bg5ixunmm5oq2" path="res://scene/mouth.tscn" id="4_m6hhk"]
+[ext_resource type="Material" uid="uid://b7md4g8kbwi5j" path="res://material/seat_black.tres" id="5_m6hhk"]
+[ext_resource type="Material" uid="uid://x41bw7aiyiax" path="res://material/window_clear.tres" id="6_amwmi"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c5tj0"]
 resource_name = "yellow_head"
@@ -2524,6 +2528,10 @@ bone_idx = 1
 transform = Transform3D(0.2164042, 1.2896201e-09, -0.2834894, -2.1200188e-09, 0.35664687, 4.0847946e-12, 0.28348938, 1.6826694e-09, 0.21640424, 1.5749269e-05, 0.3513602, -0.00054645824)
 mesh = SubResource("ArrayMesh_80dru")
 
+[node name="Mouth" parent="Armature/Skeleton3D/Bone_001/Icosphere_001" unique_id=1139275092 instance=ExtResource("4_m6hhk")]
+transform = Transform3D(2.2287421, -0.102225654, -1.6982572, -1.4632182e-07, 2.7988315, -0.1684739, 1.7013316, 0.13391565, 2.2247155, -0.581921, -0.42837715, 0.7774085)
+characterName = "AgentForty"
+
 [node name="Cube_006" type="MeshInstance3D" parent="Armature/Skeleton3D/Bone_001/Icosphere_001" unique_id=1916286531]
 transform = Transform3D(1.701331, 0, 2.2287426, 0, 2.803894, 0, -2.2287421, 0, 1.7013313, -0.6282744, 0.31863457, 0.82556444)
 mesh = SubResource("ArrayMesh_iensq")
@@ -2793,6 +2801,10 @@ bone_idx = 1
 transform = Transform3D(0.38662252, -7.4505815e-09, -2.421674e-15, 7.4505815e-09, 0.38662252, -1.3481137e-17, 2.421674e-15, 1.3481091e-17, 0.38662252, 3.8518856e-08, 0.38399646, -0.0007671184)
 mesh = SubResource("ArrayMesh_hk7ao")
 
+[node name="Mouth" parent="Armature_001/Skeleton3D/Bone_001/Sphere" unique_id=656052863 instance=ExtResource("4_m6hhk")]
+transform = Transform3D(-1.13059585e-07, -0.31073415, -2.5677695, 2.6645353e-15, 2.5677686, -0.3107342, 2.5865018, -1.3582616e-08, -1.1224075e-07, -0.98259056, -0.34207153, 0)
+characterName = "GreenDay"
+
 [node name="Cube_055" type="MeshInstance3D" parent="Armature_001/Skeleton3D/Bone_001/Sphere" unique_id=1414577088]
 transform = Transform3D(2.586502, 0, 0, 0, 2.5766602, 0.22542849, 0, -0.22542858, 2.5766592, -0.9052751, 0.2741782, 0.38996)
 mesh = SubResource("ArrayMesh_bk160")
@@ -2941,76 +2953,95 @@ mesh = SubResource("ArrayMesh_xe7yp")
 [node name="Cube_005" type="MeshInstance3D" parent="." unique_id=489612624]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -81.7)
 mesh = SubResource("ArrayMesh_al6qp")
+surface_material_override/0 = ExtResource("4_hb8dr")
 
 [node name="Cube_007" type="MeshInstance3D" parent="Cube_005" unique_id=1984411712]
 transform = Transform3D(-1, 0, -1.1046701e-06, 0, 1, 0, 1.1046701e-06, 0, -1, -1.9759791e-05, 0, 0)
 mesh = SubResource("ArrayMesh_s1i73")
+surface_material_override/0 = ExtResource("4_hb8dr")
 
 [node name="Cube_008" type="MeshInstance3D" parent="Cube_005" unique_id=530866683]
 transform = Transform3D(-1, 0, -1.1046701e-06, 0, 1, 0, 1.1046701e-06, 0, -1, -1.9483568e-05, 0, 0.30000305)
 mesh = SubResource("ArrayMesh_hnfl1")
+surface_material_override/0 = ExtResource("5_m6hhk")
 
 [node name="Cube_009" type="MeshInstance3D" parent="Cube_005" unique_id=1796229170]
 transform = Transform3D(-1, 0, -1.1046701e-06, 0, 1, 0, 1.1046701e-06, 0, -1, -1.936436e-05, 0, 0.30000305)
 mesh = SubResource("ArrayMesh_1fii8")
+surface_material_override/0 = ExtResource("5_m6hhk")
 
 [node name="Cube_010" type="MeshInstance3D" parent="Cube_005" unique_id=538489170]
 transform = Transform3D(-1, 0, -1.1046701e-06, 0, 1, 0, 1.1046701e-06, 0, -1, -1.9550323e-05, 0, 0)
 mesh = SubResource("ArrayMesh_grvi1")
+surface_material_override/0 = ExtResource("4_hb8dr")
 
 [node name="Cube_011" type="MeshInstance3D" parent="Cube_005" unique_id=1111774394]
 transform = Transform3D(-1, 0, -1.1046701e-06, 0, 1, 0, 1.1046701e-06, 0, -1, -1.9483568e-05, 0, 0.30000305)
 mesh = SubResource("ArrayMesh_yxx0k")
+surface_material_override/0 = ExtResource("5_m6hhk")
 
 [node name="Cube_012" type="MeshInstance3D" parent="Cube_005" unique_id=213811360]
 transform = Transform3D(-1, 0, -1.1046701e-06, 0, 1, 0, 1.1046701e-06, 0, -1, -1.936436e-05, 0, 0.30000305)
 mesh = SubResource("ArrayMesh_r7fjb")
+surface_material_override/0 = ExtResource("5_m6hhk")
 
 [node name="Cube_013" type="MeshInstance3D" parent="Cube_005" unique_id=1087823604]
 transform = Transform3D(-1, 0, -1.1046701e-06, 0, 1, 0, 1.1046701e-06, 0, -1, -1.9550323e-05, 0, 0)
 mesh = SubResource("ArrayMesh_lfvpt")
+surface_material_override/0 = ExtResource("4_hb8dr")
 
 [node name="Cube_014" type="MeshInstance3D" parent="Cube_005" unique_id=1358883825]
 transform = Transform3D(-1, 0, -1.1046701e-06, 0, 1, 0, 1.1046701e-06, 0, -1, -1.9192696e-05, 0, 0)
 mesh = SubResource("ArrayMesh_221mi")
+surface_material_override/0 = ExtResource("4_hb8dr")
 
 [node name="Cube_015" type="MeshInstance3D" parent="Cube_005" unique_id=467309809]
 transform = Transform3D(-1, 0, -1.1046701e-06, 0, 1, 0, 1.1046701e-06, 0, -1, -1.9192696e-05, 0, 0)
 mesh = SubResource("ArrayMesh_q4ljm")
+surface_material_override/0 = ExtResource("4_hb8dr")
 
 [node name="Cube_016" type="MeshInstance3D" parent="Cube_005" unique_id=986903165]
 transform = Transform3D(-1, 0, -1.1046701e-06, 0, 1, 0, 1.1046701e-06, 0, -1, -1.9609928e-05, 0, 0)
 mesh = SubResource("ArrayMesh_uvmpl")
+surface_material_override/0 = ExtResource("5_m6hhk")
 
 [node name="Cube_017" type="MeshInstance3D" parent="Cube_005" unique_id=275267457]
 transform = Transform3D(-1, 0, -1.1046701e-06, 0, 1, 0, 1.1046701e-06, 0, -1, -1.9051342e-05, 0, 0)
 mesh = SubResource("ArrayMesh_im8ix")
+surface_material_override/0 = ExtResource("4_hb8dr")
 
 [node name="Cube_018" type="MeshInstance3D" parent="Cube_005" unique_id=925439768]
 mesh = SubResource("ArrayMesh_kx2ra")
+surface_material_override/0 = ExtResource("4_hb8dr")
 
 [node name="Cube_019" type="MeshInstance3D" parent="Cube_005" unique_id=750617304]
 mesh = SubResource("ArrayMesh_xen2o")
+surface_material_override/0 = ExtResource("6_amwmi")
 
 [node name="Cylinder_011" type="MeshInstance3D" parent="Cube_005" unique_id=1848650870]
 transform = Transform3D(0, -0.39481512, -2.6513592e-07, -0.39481512, 1.7805057e-13, -2.6513592e-07, 2.6513592e-07, 2.6513592e-07, -0.39481512, -1.9013882e-05, 0, -7.629398e-06)
 mesh = SubResource("ArrayMesh_w4wjr")
+surface_material_override/0 = ExtResource("5_m6hhk")
 
 [node name="Cylinder_012" type="MeshInstance3D" parent="Cube_005" unique_id=1509076914]
 transform = Transform3D(0, -0.39481512, -2.6513592e-07, -0.39481512, 1.7805057e-13, -2.6513592e-07, 2.6513592e-07, 2.6513592e-07, -0.39481512, -1.9133091e-05, 0, -7.629398e-06)
 mesh = SubResource("ArrayMesh_irkmw")
+surface_material_override/0 = ExtResource("5_m6hhk")
 
 [node name="Cylinder_013" type="MeshInstance3D" parent="Cube_005" unique_id=1697201599]
 transform = Transform3D(0, -0.39481512, -2.6513592e-07, -0.39481512, 1.7805057e-13, -2.6513592e-07, 2.6513592e-07, 2.6513592e-07, -0.39481512, -1.9669533e-05, 0, 0)
 mesh = SubResource("ArrayMesh_v6tna")
+surface_material_override/0 = ExtResource("5_m6hhk")
 
 [node name="Cylinder_014" type="MeshInstance3D" parent="Cube_005" unique_id=1311636797]
 transform = Transform3D(0, -0.39481512, -2.6513592e-07, -0.39481512, 1.7805057e-13, -2.6513592e-07, 2.6513592e-07, 2.6513592e-07, -0.39481512, -1.9729137e-05, 0, 0)
 mesh = SubResource("ArrayMesh_4bjlu")
+surface_material_override/0 = ExtResource("5_m6hhk")
 
 [node name="Cylinder_015" type="MeshInstance3D" parent="Cube_005" unique_id=1969109183]
 transform = Transform3D(1.8847826e-08, 5.6543477e-08, -0.15810703, -0.15810703, 6.7405078e-15, -1.8847826e-08, 0, 0.15810703, 5.6543477e-08, 0, 0, -7.6293945e-06)
 mesh = SubResource("ArrayMesh_1x4e8")
+surface_material_override/0 = ExtResource("5_m6hhk")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=740179368]
 libraries/ = SubResource("AnimationLibrary_2noo5")

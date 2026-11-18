@@ -1,5 +1,9 @@
 [
 	{
+		"name": "Command",
+		"command": "hideSkateBoardModel"
+	},
+	{
 		"name": "Richard",
 		"avatar": "",
 		"lines": [
