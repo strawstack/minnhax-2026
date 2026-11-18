@@ -3,6 +3,7 @@ extends Node3D
 @export var prompt: String
 @export var dialogFile: String
 @export var startHidden: bool
+@export var showTape: bool
 
 var gc
 
@@ -17,6 +18,8 @@ var original
 var originalSecond
 var deactive
 var deactiveSecond
+var tape
+var deactiveTape
 
 func _ready() -> void:
 	gc = get_tree().current_scene
@@ -25,6 +28,8 @@ func _ready() -> void:
 	originalSecond = $Arrows/OriginalSecond
 	deactive = $Arrows/Deactive
 	deactiveSecond = $Arrows/DeactiveSecond
+	tape = $Tape/secretTape
+	deactiveTape = $Tape/deactiveSecretTape
 	startAnimate()
 	if startHidden:
 		set_visible(false)
@@ -71,10 +76,27 @@ func startEvent():
 		if dialogFile:
 			gc.playDialogFile(dialogFile)
 
+func hideAll():
+	original.set_visible(false)
+	originalSecond.set_visible(false)
+	deactive.set_visible(false)
+	deactiveSecond.set_visible(false)
+	tape.set_visible(false)
+	deactiveTape.set_visible(false)
+
 func _process(delta: float) -> void:
 	rotate_y(rotation_speed * delta)
 	meshInstance3DGlow.set_visible(not gc.dialogInProgress)
-	original.set_visible(not gc.dialogInProgress)
-	originalSecond.set_visible(not gc.dialogInProgress)
-	deactive.set_visible(gc.dialogInProgress)
-	deactiveSecond.set_visible(gc.dialogInProgress)
+	hideAll()
+	if gc.dialogInProgress:
+		if showTape:
+			deactiveTape.set_visible(true)
+		else:
+			deactive.set_visible(true)
+			deactiveSecond.set_visible(true)
+	else:
+		if showTape:
+			tape.set_visible(true)
+		else:
+			original.set_visible(true)
+			originalSecond.set_visible(true)
