@@ -2843,6 +2843,34 @@ tracks/1/keys = {
 "values": [Vector3(3.1000001, 12.5, 26.3)]
 }
 
+[sub_resource type="Animation" id="Animation_f42v5"]
+resource_name = "close_elevator"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Wall/Cube_061:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(3.1000001, 12.5, 27.76142), Vector3(3.1000001, 12.5, 26.299078)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Wall/Cube_060:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(3.1000001, 12.5, 23.232435), Vector3(3.1000001, 12.5, 24.702475)]
+}
+
 [sub_resource type="Animation" id="Animation_qdeg2"]
 resource_name = "open_elevator"
 length = 2.0
@@ -2874,6 +2902,7 @@ tracks/1/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_f63a0"]
 _data = {
 &"RESET": SubResource("Animation_8unav"),
+&"close_elevator": SubResource("Animation_f42v5"),
 &"open_elevator": SubResource("Animation_qdeg2")
 }
 
@@ -3329,6 +3358,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 12, 0)
 mesh = SubResource("ArrayMesh_355ki")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_064" unique_id=1997398574]
+collision_layer = 16
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_064/StaticBody3D" unique_id=1629581616]
 shape = SubResource("ConcavePolygonShape3D_2cjur")
@@ -3338,6 +3369,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4, 12, 0)
 mesh = SubResource("ArrayMesh_a0drh")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_065" unique_id=1429647370]
+collision_layer = 16
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_065/StaticBody3D" unique_id=87394750]
 shape = SubResource("ConcavePolygonShape3D_oafte")
@@ -3347,6 +3380,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 15.5, 0)
 mesh = SubResource("ArrayMesh_gq6d0")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_066" unique_id=1451533957]
+collision_layer = 16
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_066/StaticBody3D" unique_id=1211888173]
 shape = SubResource("ConcavePolygonShape3D_aj5pk")
@@ -3356,6 +3391,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 9.1, -12.450001)
 mesh = SubResource("ArrayMesh_ie1xt")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_067" unique_id=20213259]
+collision_layer = 16
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_067/StaticBody3D" unique_id=118456500]
 shape = SubResource("ConcavePolygonShape3D_6yt07")
@@ -3365,6 +3402,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 15.1, -12.450001)
 mesh = SubResource("ArrayMesh_y74ot")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_068" unique_id=1739847597]
+collision_layer = 16
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_068/StaticBody3D" unique_id=1540411745]
 shape = SubResource("ConcavePolygonShape3D_3424t")
@@ -3374,6 +3413,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.45, 12.5, 7.5)
 mesh = SubResource("ArrayMesh_n7jmd")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_069" unique_id=564921679]
+collision_layer = 16
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_069/StaticBody3D" unique_id=2111962868]
 shape = SubResource("ConcavePolygonShape3D_is6lv")
@@ -3383,6 +3424,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.450001, 12.5, 7.5)
 mesh = SubResource("ArrayMesh_wl21h")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_070" unique_id=1670519590]
+collision_layer = 16
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_070/StaticBody3D" unique_id=150464610]
 shape = SubResource("ConcavePolygonShape3D_j7a6p")
@@ -3392,6 +3435,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9999993, 10.5, 6)
 mesh = SubResource("ArrayMesh_053wk")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_071" unique_id=2105062525]
+collision_layer = 16
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_071/StaticBody3D" unique_id=1396764707]
 shape = SubResource("ConcavePolygonShape3D_637el")
@@ -3401,6 +3446,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9999993, 9.6, -3.6000004)
 mesh = SubResource("ArrayMesh_46406")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_072" unique_id=1511116621]
+collision_layer = 16
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_072/StaticBody3D" unique_id=1749280154]
 shape = SubResource("ConcavePolygonShape3D_8o2kg")
@@ -3410,6 +3457,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9999993, 10.05, 2.5)
 mesh = SubResource("ArrayMesh_t1r8k")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_073" unique_id=447162412]
+collision_layer = 16
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_073/StaticBody3D" unique_id=107917815]
 shape = SubResource("ConcavePolygonShape3D_ywvt3")
@@ -3419,6 +3468,8 @@ transform = Transform3D(4.818625, 0, 0, 0, 4.818625, 0, 0, 0, 4.818625, -1.99999
 mesh = SubResource("ArrayMesh_ygg75")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cylinder_008" unique_id=1744115405]
+collision_layer = 16
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cylinder_008/StaticBody3D" unique_id=428477981]
 shape = SubResource("ConcavePolygonShape3D_nb28f")

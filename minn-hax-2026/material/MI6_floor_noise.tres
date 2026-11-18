@@ -12,6 +12,6 @@ color_ramp = SubResource("Gradient_q0pek")
 seamless = true
 
 [resource]
-albedo_color = Color(0.64645094, 0.68781763, 0.4982019, 1)
+albedo_color = Color(0.63414675, 0.67545164, 0.48548555, 1)
 albedo_texture = SubResource("NoiseTexture2D_gusyn")
 uv1_triplanar = true

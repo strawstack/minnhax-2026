@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://ctcd2ghruauv7" path="res://glb/jeep/Jeep_agent_head_texture_with_qr.png" id="13_x0qqe"]
 [ext_resource type="Texture2D" uid="uid://dus8mo6molssp" path="res://glb/jeep/Jeep_agent_suit.png" id="14_robs7"]
 [ext_resource type="Material" uid="uid://cccduap8ol20l" path="res://material/jeep_green.tres" id="15_c7f72"]
+[ext_resource type="Texture2D" uid="uid://bewqa2svtnxer" path="res://glb/cast/cast_cast_texture.png" id="15_llgq0"]
 [ext_resource type="PackedScene" uid="uid://bg5ixunmm5oq2" path="res://scene/mouth.tscn" id="15_robs7"]
 [ext_resource type="Material" uid="uid://b7md4g8kbwi5j" path="res://material/seat_black.tres" id="16_llgq0"]
 [ext_resource type="Material" uid="uid://x41bw7aiyiax" path="res://material/window_clear.tres" id="17_o72e5"]
@@ -908,6 +909,46 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_8qu2m")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fdbiw"]
+resource_name = "cast"
+cull_mode = 2
+albedo_texture = ExtResource("15_llgq0")
+roughness = 0.5
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_rcijl"]
+_surfaces = [{
+"aabb": AABB(-0.17999999, -0.39999998, -0.14999999, 0.35999998, 0.79999995, 0.29999998),
+"format": 34359742465,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAwAEAAIABQADAAEAAAAFAAEABgAEAAMABQAGAAMABwACAAQABwAAAAIABgAHAAQACAAFAAAACQAGAAUACAAJAAUACQAKAAYACgAHAAYACwAJAAgADAAAAAcACgAMAAcADAAIAAAADQAMAAoADgAIAAwADQAOAAwADgALAAgADwANAAoADwAOAA0ADwAKAAkADwALAA4ACwAPAAkA"),
+"name": "cast",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("61E4vjMzsz6ZmRk+zMzMvczMzD7MzMy9zMzMvczMzD7MzMw9zMzMPczMzD7MzMy9zMzMPczMzD7MzMw961E4vjMzsz6ZmRm+61E4PjMzsz6ZmRm+61E4PjMzsz6ZmRk+61E4vjMzs76ZmRk+61E4vjMzs76ZmRm+61E4PjMzs76ZmRm+zMzMvczMzL7MzMw961E4PjMzs76ZmRk+zMzMPczMzL7MzMy9zMzMPczMzL7MzMw9zMzMvczMzL7MzMy9")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_tb8pv"]
+resource_name = "cast_Cube_006"
+lightmap_size_hint = Vector2i(22, 22)
+_surfaces = [{
+"aabb": AABB(-0.17999999, -0.39999998, -0.14999999, 0.35999998, 0.79999995, 0.29999998),
+"attribute_data": PackedByteArray("wQfAP1A2Wj6MLno/jC56P6A9Tj+Ajxo9bbJJP6OLbj+SP64/gI8aPR98cD+ji24/Qq0qP1A2Wj4AAEA/jC56P+O4qr+fOAFAAABAPwAAQD9ESQ6/txwKQKZAbT/poks/ZEWOv7ccCkDm7Uw/6aJLP4PEqr6fOAFAjC56PwAAQD9CrSo/wJU/v0YXHT8AAIA+kj+uP5wq/r598tg+1uc5PqA9Tj+cKv6+8UITP9bnOT7BB8A/wJU/v3TRxT4AAIA+g8Sqvp84AUCMLro8o4tuP4GM4z63HApAZkhMPowuej8I2uO9txwKQNT6lT2MLno/Qq0qP584AUAAAIA+o4tuP+SfI784J6K+ra5YPtbnOT6z8Ji/5NFZvzRvdz2MLro85J8jv+TRWb+WAlk+jC66PLPwmL84J6K+jB92PdbnOT6gPU4/nCr+vvFCEz/W5zk+kj+uP4CPGj1xHNk+jC66PKA9Tj+Ajxo97FcTP4wuujySP64/nCr+vn3y2D7W5zk+g8SqvrDplz2MLno/RhcdP0KtKj+fOAFAAABAP3TRxT6DxKq+nzgBQIwuej900cU+Qq0qP7Dplz0AAEA/RhcdP0KtKj9QNlo+RhcdP0YXHT/BB8A/txwKQHTRxT500cU+Qq0qP7ccCkBGFx0/dNHFPsEHwD9QNlo+dNHFPkYXHT/juKq/sOmXPYwuej8AAIA+g8Sqvp84AUAAAEA/jC66POO4qr+fOAFAjC56P4wuujyDxKq+sOmXPQAAQD8AAIA+wwfAP1A2Wj6MLro8RhcdP3JcFUC3HApAAACAPnTRxT7DB8A/txwKQP//fz5GFx0/clwVQFA2Wj6RLro8dNHFPrPwmL84J6K+jB92PdbnOT6CDwC/YJmEvQAAgD4AAIA+47iqv2CZhL2MLro8AACAPuSfI784J6K+ra5YPtbnOT5kRY6/YJmEvdT6lT0AAEA/g8SqvrDplz0AAIA+6aJLP+O4qr+w6Zc9jC66POmiSz9ESQ6/YJmEvWZITD4AAEA/5J8jv+TRWb9NNtk+o4tuP+O4qr8+W4O/RhcdP4wuej+CDwC/PluDv3TRxT6MLno/s/CYv+TRWb/ZZBM/o4tuPwja471gmYS9QK3fPgAAQD9CrSo/sOmXPUYXHT/poks/g8SqvrDplz100cU+6aJLP4GM4z5gmYS9XykQPwAAQD8="),
+"format": 34359742519,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUA"),
+"material": SubResource("StandardMaterial3D_fdbiw"),
+"name": "cast",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 56,
+"vertex_data": PackedByteArray("61E4vjMzsz6ZmRk+zMzMvczMzD7MzMy9zMzMvczMzD7MzMw961E4vjMzsz6ZmRm+61E4vjMzsz6ZmRm+zMzMPczMzD7MzMy9zMzMvczMzD7MzMy961E4PjMzsz6ZmRm+61E4PjMzsz6ZmRm+zMzMPczMzD7MzMw9zMzMPczMzD7MzMy961E4PjMzsz6ZmRk+61E4PjMzsz6ZmRk+zMzMvczMzD7MzMw9zMzMPczMzD7MzMw961E4vjMzsz6ZmRk+zMzMvczMzL7MzMy9zMzMPczMzL7MzMw9zMzMPczMzL7MzMy9zMzMvczMzL7MzMw9zMzMPczMzD7MzMy9zMzMvczMzD7MzMw9zMzMvczMzD7MzMy9zMzMPczMzD7MzMw961E4PjMzs76ZmRk+61E4vjMzsz6ZmRk+61E4PjMzsz6ZmRk+61E4vjMzs76ZmRk+61E4PjMzs76ZmRm+61E4PjMzsz6ZmRk+61E4PjMzsz6ZmRm+61E4PjMzs76ZmRk+61E4vjMzs76ZmRm+61E4PjMzsz6ZmRm+61E4vjMzsz6ZmRm+61E4PjMzs76ZmRm+61E4vjMzs76ZmRk+61E4vjMzsz6ZmRm+61E4vjMzsz6ZmRk+61E4vjMzs76ZmRm+zMzMvczMzL7MzMw961E4vjMzs76ZmRm+61E4vjMzs76ZmRk+zMzMvczMzL7MzMy9zMzMvczMzL7MzMy961E4PjMzs76ZmRm+61E4vjMzs76ZmRm+zMzMPczMzL7MzMy9zMzMPczMzL7MzMy961E4PjMzs76ZmRk+61E4PjMzs76ZmRm+zMzMPczMzL7MzMw9zMzMPczMzL7MzMw961E4vjMzs76ZmRk+61E4PjMzs76ZmRk+zMzMvczMzL7MzMw9xE7Ezv9//7/ETsTO/3//v8ROxM7/f/+/xE7Ezv9//7//v///////v/+///////+//7///////7//v///////vzqxxM7/f/+/OrHEzv9//786scTO/3//vzqxxM7/f/+//3//vwAA/7//f/+/AAD/v/9//78AAP+//3//vwAA/7//fwAA//////9/AAD//////38AAP//////fwAA//////9/////f/+//3////9//7//f////3//v/9/////f/+//3//fwAA/7//f/9/AAD/v/9//38AAP+//3//fwAA/7////9//3//v////3//f/+/////f/9//7////9//3//v/////////+//////////7//////////v/////////+/AAD/f/////8AAP9//////wAA/3//////AAD/f//////ETjox/////8ROOjH/////xE46Mf/////ETjox//////+/AAD///+//78AAP///7//vwAA////v/+/AAD///+/OrE6Mf////86sTox/////zqxOjH/////OrE6Mf//////f/8/AAD/v/9//z8AAP+//3//PwAA/7//f/8/AAD/vw==")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_rcijl")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kw4vy"]
 resource_name = "GreenDay_skin"
@@ -3009,6 +3050,14 @@ mesh = SubResource("ArrayMesh_jo5gs")
 
 [node name="Armature_001" type="Node3D" parent="JeepParkScene/JeepModel" unique_id=1209293873]
 transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -0.572, 0.79, 0.32800007)
+
+[node name="cast" type="MeshInstance3D" parent="JeepParkScene/JeepModel/Armature_001" unique_id=879587105]
+transform = Transform3D(0.9881834, 0.15327632, 5.165184e-10, -0.15327632, 0.9881834, 6.6999206e-09, 5.165255e-10, -6.6999206e-09, 1, 0.33657074, 0.7737569, -0.47458267)
+mesh = SubResource("ArrayMesh_tb8pv")
+
+[node name="cast2" type="MeshInstance3D" parent="JeepParkScene/JeepModel/Armature_001" unique_id=2052466617]
+transform = Transform3D(0.9881834, 0.15327632, 5.165184e-10, -0.15327632, 0.9881834, 6.6999206e-09, 5.165255e-10, -6.6999206e-09, 1, 0.33657074, 0.7737569, 0.5085602)
+mesh = SubResource("ArrayMesh_tb8pv")
 
 [node name="Skeleton3D" type="Skeleton3D" parent="JeepParkScene/JeepModel/Armature_001" unique_id=304337712]
 bones/0/name = "Bone"
