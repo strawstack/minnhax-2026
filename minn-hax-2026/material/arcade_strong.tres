@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c0iax1mk05qvp"]
+
+[ext_resource type="Texture2D" uid="uid://dfxnbjio01h2j" path="res://image/arcade_pattern.png" id="1_iteg4"]
+
+[resource]
+albedo_texture = ExtResource("1_iteg4")
+uv1_triplanar = true

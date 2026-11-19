@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bw3msee7hdgpq"]
+
+[resource]
+resource_name = "red couch"
+cull_mode = 2
+albedo_color = Color(0.5019608, 0.054901976, 0.07450982, 1)
+roughness = 0.5

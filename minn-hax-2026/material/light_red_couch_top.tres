@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cpc0vjni8f1nm"]
+
+[resource]
+resource_name = "red couch top"
+cull_mode = 2
+albedo_color = Color(0.67843145, 0.1568628, 0.19215693, 1)
+roughness = 0.5
