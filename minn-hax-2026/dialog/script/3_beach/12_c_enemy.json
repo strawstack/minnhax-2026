@@ -38,5 +38,9 @@
 				"text": "I’ll keep my distance."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "openPathToShimmy"
 	}
 ]

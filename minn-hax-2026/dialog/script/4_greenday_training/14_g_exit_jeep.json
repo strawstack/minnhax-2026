@@ -1,5 +1,13 @@
 [
 	{
+		"name": "Command",
+		"command": "exitJeep"
+	},
+	{
+		"name": "Command",
+		"command": "switchCameraExitGreenDay"
+	},
+	{
 		"name": "GreenDay",
 		"avatar": "",
 		"lines": [
@@ -58,5 +66,9 @@
 				"text": "No it’s - but you said - nevermind."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "exitJeepSceneComplete"
 	}
 ]

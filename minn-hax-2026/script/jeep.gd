@@ -63,7 +63,7 @@ func _process(delta: float) -> void:
 	if Input.is_action_pressed("forward") or Input.is_action_pressed("back"):
 		if not onceMoveJeep and not gc.dialogInProgress:
 			onceMoveJeep = true
-			gc.playDialogFile("res://dialog/script/greenday/first_jeep_move.json")
+			gc.playDialogFile("res://dialog/script/4_greenday_training/14_a_first_jeep_move.json")
 		moving = true
 	
 	if Input.is_action_pressed("left"):

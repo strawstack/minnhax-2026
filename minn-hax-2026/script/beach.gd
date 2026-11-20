@@ -9,6 +9,7 @@ func _ready() -> void:
 func startScene():
 	gc.playerCanMove = true
 	await gc.fadeIn()
+	gc.playDialogFile("res://dialog/script/3_beach/12_a_agent_on_beach.json")
 
 func _process(delta: float) -> void:
 	pass

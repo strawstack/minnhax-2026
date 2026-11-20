@@ -16,5 +16,9 @@
 				"text": "Anyways you’re probably wondering why I have a QR code on my head. I’m one of many clones - well there’s not so many of us anymore. The names Forty Forty-Jeffm, and I’m a bit of a rogue, but like in a light fun kinda way: a rogue-lite."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "continueScene"
 	}
 ]

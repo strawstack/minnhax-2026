@@ -2683,6 +2683,9 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -74,
 [node name="MonRoll" parent="." unique_id=936362553 instance=ExtResource("11_ute6l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76, 3, -98)
 
+[node name="Camera3D_AgentToCroissant" type="Camera3D" parent="." unique_id=1469200313]
+transform = Transform3D(0.915312, -0.18098879, 0.35978755, 0, 0.893337, 0.44938737, -0.40274563, -0.41132963, 0.817682, -73.09625, 5.255684, -96.52472)
+
 [node name="Camera3D_CroissantDuh" type="Camera3D" parent="." unique_id=132946034]
 transform = Transform3D(0.99999046, -0.0016165669, 0.0040519633, 0, 0.92880976, 0.37055692, -0.0043625333, -0.37055337, 0.9288009, -74.18582, 5.0875273, -98.29789)
 
@@ -2691,9 +2694,6 @@ transform = Transform3D(-0.039258566, -0.091430835, 0.99503726, 0, 0.99580497, 0
 
 [node name="Camera3D_AgentAndOthers" type="Camera3D" parent="." unique_id=2080661504]
 transform = Transform3D(-0.12619747, -0.30167454, 0.9450221, 0, 0.95263827, 0.30410582, -0.99200517, 0.038377386, -0.12022054, -72.50755, 4.955576, -98.86819)
-
-[node name="Camera3D_AgentToCroissant" type="Camera3D" parent="." unique_id=1469200313]
-transform = Transform3D(0.91531193, -0.18098879, 0.35978755, 0, 0.893337, 0.44938737, -0.4027456, -0.41132963, 0.817682, -73.09625, 5.255684, -96.52472)
 
 [node name="fortyIdleNoAnim" parent="." unique_id=306473063 instance=ExtResource("12_thd86")]
 transform = Transform3D(-2.9802322e-08, 0, -1.0000001, 0, 1, 0, 1.0000001, 0, -2.9802322e-08, -74, 3, -97)

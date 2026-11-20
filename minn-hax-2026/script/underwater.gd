@@ -25,7 +25,7 @@ func _ready() -> void:
 
 func startScene():
 	await gc.fadeIn()
-	gc.playDialogFile("res://dialog/script/underwater/pre_float_underwater.json")
+	gc.playDialogFile("res://dialog/script/1_underwater/11_a_agent_intro_monologue.json")
 
 func continueScene(): # Called after 'pre_float_underwater' ends
 	if not gc.lookWatchUnderwater:
@@ -40,11 +40,11 @@ func continueScene(): # Called after 'pre_float_underwater' ends
 		await agentAnimationPlayer.animation_finished
 	await get_tree().create_timer(1.0).timeout
 	if gc.lookWatchUnderwater:
-		gc.playDialogFile("res://dialog/script/underwater/underwater.json")
+		gc.playDialogFile("res://dialog/script/1_underwater/11_b_scene_helicopter.json")
 	else:
 		gc.setPlayerCanMove(true)
 		gc.showCrossHairs(true)
-		gc.playDialogFile("res://dialog/script/apartment/apartment_intro.json")
+		gc.playDialogFile("res://dialog/script/0_apartment/00_intro.json")
 
 func _process(_delta: float) -> void:
 	pass

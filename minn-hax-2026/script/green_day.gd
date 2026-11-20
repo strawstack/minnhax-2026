@@ -25,7 +25,11 @@ func _ready() -> void:
 		"openDoorFour": openDoorFour,
 		"openDoorFive": openDoorFive,
 		"exitJeep": exitJeep,
+		"hideAndFreezeAgentShowIdlePose": hideAndFreezeAgentShowIdlePose,
 		"camera3D_AgentToCroissant": camera3D_AgentToCroissant,
+		"camera3D_CroissantDuh": camera3D_CroissantDuh,
+		"camera3D_MonRoll": camera3D_MonRoll,
+		"camera3D_AgentAndOthers": camera3D_AgentAndOthers,
 		"switchCameraExitGreenDay": switchCameraExitGreenDay,
 		"switchCameraExitAgent": switchCameraExitAgent,
 		"exitJeepSceneComplete": exitJeepSceneComplete
@@ -45,7 +49,7 @@ func cameraToPlayer():
 func startScene():
 	$Camera3D.set_current(true)
 	await gc.fadeIn()
-	gc.playDialogFile("res://dialog/script/greenday/intro.json")
+	gc.playDialogFile("res://dialog/script/4_greenday_training/13_a_intro.json")
 
 func revealDriveJeep():
 	$minnMaxLogo_EnterJeep.reveal()
@@ -74,28 +78,28 @@ func _process(delta: float) -> void:
 func _on_pass_door_one_area_entered(area: Area3D) -> void:
 	if not onceDoorOne:
 		onceDoorOne = true
-		gc.playDialogFile("res://dialog/script/greenday/prior_door_two.json")
+		gc.playDialogFile("res://dialog/script/4_greenday_training/14_c_prior_door_two.json")
 
 func _on_pass_door_two_area_entered(area: Area3D) -> void:
 	if not onceDoorTwo:
 		onceDoorTwo = true
-		gc.playDialogFile("res://dialog/script/greenday/prior_door_three.json")
+		gc.playDialogFile("res://dialog/script/4_greenday_training/14_d_prior_door_three.json")
 
 func _on_pass_door_three_area_entered(area: Area3D) -> void:
 	if not onceDoorThree:
 		onceDoorThree = true
-		gc.playDialogFile("res://dialog/script/greenday/prior_door_four.json")
+		gc.playDialogFile("res://dialog/script/4_greenday_training/14_e_prior_door_four.json")
 
 func _on_pass_door_four_area_entered(area: Area3D) -> void:
 	if not onceDoorFour:
 		onceDoorFour = true
-		gc.playDialogFile("res://dialog/script/greenday/prior_door_five.json")
+		gc.playDialogFile("res://dialog/script/4_greenday_training/14_f_prior_door_five.json")
 
 func _on_pass_door_five_area_entered(area: Area3D) -> void:
 	if not onceDoorFive:
 		onceDoorFive = true
 		toggleReturnBlocker(true)
-		gc.playDialogFile("res://dialog/script/greenday/exit_jeep.json")
+		gc.playDialogFile("res://dialog/script/4_greenday_training/14_g_exit_jeep.json")
 
 func exitJeep():
 	$Jeep.canDrive = false
@@ -115,8 +119,19 @@ func exitJeepSceneComplete():
 	agent.setCameraActive()
 	gc.playerCanMove = true
 
-func camera3D_AgentToCroissant():
-	$Camera3D_AgentToCroissant.set_current(true)
+func hideAndFreezeAgentShowIdlePose():
 	gc.playerCanMove = false
 	agent.set_visible(false)
 	$fortyIdleNoAnim.set_visible(true)
+
+func camera3D_AgentToCroissant():
+	$Camera3D_AgentToCroissant.set_current(true)
+
+func camera3D_CroissantDuh():
+	$Camera3D_CroissantDuh.set_current(true)
+
+func camera3D_MonRoll():
+	$Camera3D_MonRoll.set_current(true)
+
+func camera3D_AgentAndOthers():
+	$Camera3D_AgentAndOthers.set_current(true)

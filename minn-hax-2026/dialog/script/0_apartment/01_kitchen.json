@@ -1,7 +1,11 @@
 [
 	{
 		"name": "Command",
-		"command": ""
+		"command": "freezePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "kitchenCameraA"
 	},
 	{
 		"name": "Yu",
@@ -14,6 +18,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "kitchenCameraB"
+	},
+	{
 		"name": "Richard",
 		"avatar": "",
 		"lines": [
@@ -24,6 +32,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "kitchenCameraA"
+	},
+	{
 		"name": "Yu",
 		"avatar": "",
 		"lines": [
@@ -32,5 +44,13 @@
 				"text": "Ya, let me know if you want something to eat. We have some drinks in the fridge. I’ll have to grab one for you though. We’re not exactly working with Grand Theft Auto money here."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "returnPlayerCamera"
+	},
+	{
+		"name": "Command",
+		"command": "unfreezePlayer"
 	}
 ]

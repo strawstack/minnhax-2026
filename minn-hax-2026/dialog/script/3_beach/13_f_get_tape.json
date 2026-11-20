@@ -20,6 +20,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "pickUpBeachTape"
+	},
+	{
 		"name": "AgentForty",
 		"avatar": "",
 		"lines": [
@@ -42,16 +46,9 @@
 				"text": "Are you talking to someone? Your heart rate is dropping. Stay put. We’ll send a rescue team…"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "loadGreenDayTraining"
 	}
 ]
-
-
-
-
-
-
-
-
-
-
-

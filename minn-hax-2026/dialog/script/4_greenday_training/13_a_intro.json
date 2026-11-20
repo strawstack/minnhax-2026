@@ -1,0 +1,20 @@
+[
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "Quite a long flight..."
+			},
+		]
+	},
+	{
+		"name": "Command",
+		"command": "unfreezePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "cameraToPlayer"
+	}
+]

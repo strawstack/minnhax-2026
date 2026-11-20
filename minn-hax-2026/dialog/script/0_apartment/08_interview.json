@@ -1,5 +1,43 @@
 [
 	{
+		"name": "Command",
+		"command": "hideDialog"
+	},
+	{
+		"name": "Command",
+		"command": "freezePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "fadeOut",
+		"await": true
+	},
+	{
+		"name": "Command",
+		"command": "hideCrossHairs"
+	},
+	{
+		"name": "Command",
+		"command": "showDialog"
+	},
+	{
+		"name": "Command",
+		"command": "hideLeBooBooPreInterview"
+	},
+	{
+		"name": "Command",
+		"command": "showInterviewCharacters"
+	},
+	{
+		"name": "Command",
+		"command": "interviewCameraA"
+	},
+	{
+		"name": "Command",
+		"command": "fadeIn",
+		"await": true
+	},
+	{
 		"name": "LeBooBoo",
 		"avatar": "",
 		"lines": [
@@ -14,6 +52,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "interviewCameraB"
+	},
+	{
 		"name": "MoneyPony",
 		"avatar": "",
 		"lines": [
@@ -22,6 +64,10 @@
 				"text": "Me?"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "interviewCameraA"
 	},
 	{
 		"name": "LeBooBoo",
@@ -34,6 +80,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "interviewCameraB"
+	},
+	{
 		"name": "MoneyPony",
 		"avatar": "",
 		"lines": [
@@ -44,6 +94,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "interviewCameraA"
+	},
+	{
 		"name": "LeBooBoo",
 		"avatar": "",
 		"lines": [
@@ -52,6 +106,10 @@
 				"text": "Great to meet you Yu. I should say - for the audience - I also play a role in the game as a rapper called LeBooBoo - a sort of “elusive target” if you will. I’ll get back to you, but next, let’s hear from a man with a very round bald head, and - is that a QR code?"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "interviewCameraC"
 	},
 	{
 		"name": "AgentForty",
@@ -84,6 +142,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "interviewCameraA"
+	},
+	{
 		"name": "LeBooBoo",
 		"avatar": "",
 		"lines": [
@@ -92,6 +154,10 @@
 				"text": "Em, well I don’t know about that… (louder) but anyways question for Yu what made you want to take part in this project. This game."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "interviewCameraB"
 	},
 	{
 		"name": "MoneyPony",
@@ -104,6 +170,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "interviewCameraA"
+	},
+	{
 		"name": "LeBooBoo",
 		"avatar": "",
 		"lines": [
@@ -112,6 +182,10 @@
 				"text": "TCB? Does that stand for something?"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "interviewCameraB"
 	},
 	{
 		"name": "MoneyPony",
@@ -129,7 +203,7 @@
 		"lines": [
 			{
 				"voice": "08_14",
-				"text": "You’ve never voice acted before? "
+				"text": "You’ve never voice acted before?"
 			}
 		]
 	},
@@ -142,6 +216,10 @@
 				"text": "No, just trying it for fun mostly."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "interviewCameraA"
 	},
 	{
 		"name": "LeBooBoo",
@@ -174,6 +252,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "interviewCameraB"
+	},
+	{
 		"name": "AgentForty",
 		"avatar": "",
 		"lines": [
@@ -186,6 +268,10 @@
 				"text": "So, I’ve been reflecting more on my relationship with content, and when I make games, I end up drawing from whatever I’m thinking about, so that’s how these themes made it into the game. It’s all in good fun though, and I try to keep it respectful."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "interviewCameraA"
 	},
 	{
 		"name": "LeBooBoo",
@@ -218,6 +304,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "interviewCameraB"
+	},
+	{
 		"name": "MoneyPony",
 		"avatar": "",
 		"lines": [
@@ -228,6 +318,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "interviewCameraC"
+	},
+	{
 		"name": "LeBooBoo",
 		"avatar": "",
 		"lines": [
@@ -236,5 +330,53 @@
 				"text": "haha - See ya tomorrow folks!"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "fadeOut",
+		"await": true
+	},
+	{
+		"name": "Command",
+		"command": "hideDialog"
+	},
+	{
+		"name": "Command",
+		"command": "advanceToMorning"
+	},
+	{
+		"name": "Command",
+		"command": "cameraLittleBoo"
+	},
+	{
+		"name": "Command",
+		"command": "fadeIn",
+		"await": true
+	},
+	{
+		"name": "LeBooBoo",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "09_01",
+				"text": "Great interview yesterday. Right lil’ Boo?"
+			},
+			{
+				"voice": "09_02",
+				"text": "Look at that. Almost time to kick off the stream."
+			}
+		]
+	},
+	{
+		"name": "Command",
+		"command": "returnPlayerCamera"
+	},
+	{
+		"name": "Command",
+		"command": "showCrossHairs"
+	},
+	{
+		"name": "Command",
+		"command": "unfreezePlayer"
 	}
 ]

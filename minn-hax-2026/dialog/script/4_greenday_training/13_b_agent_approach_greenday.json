@@ -22,11 +22,9 @@
 				"text": "I seem to have a couple broken wings at the moment. You’ll have to drive. I’ll open the big doors as we go."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "revealDriveJeep"
 	}
 ]
-
-
-
-
-
-

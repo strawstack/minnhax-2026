@@ -116,7 +116,7 @@ func logoSceneEnds():
 
 func mainMenuStartPress():
 	await fadeOut()
-	loadScene("apartment") # Calls "initialUnderwaterSceneComplete" on complete
+	loadScene("apartment")
 	await fadeIn()
 
 func playDialogFile(fileStr: String):

@@ -5,6 +5,7 @@ extends Node3D
 @export var minnMaxLogoControlRoom: Node3D
 @export var minnMaxLogoVoiceMail: Node3D
 @export var minnMaxLogoControlRoom2: Node3D
+@export var richardHeadAnimation: AnimationPlayer
 
 var gc
 
@@ -22,6 +23,8 @@ func _ready() -> void:
 		"interviewCameraB": interviewCameraB,
 		"interviewCameraC": interviewCameraC,
 		"advanceToMorning": advanceToMorning,
+		"richardTurnHead": richardTurnHead,
+		"cameraLittleBoo": cameraLittleBoo
 	}
 	hideInterviewCharacters()
 	if gc.DEBUG:
@@ -80,3 +83,9 @@ func advanceToMorning():
 	minnMaxLogoVoiceMail.reveal()
 	# TODO Show stream start prompt in control room
 	minnMaxLogoControlRoom2.reveal()
+
+func richardTurnHead():
+	richardHeadAnimation.play("turnHead")
+
+func cameraLittleBoo():
+	$Cameras/CameraLittleBoo.set_current(true)

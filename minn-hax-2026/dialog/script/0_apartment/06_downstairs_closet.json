@@ -1,5 +1,9 @@
 [
 	{
+		"name": "Command",
+		"command": "richardTurnHead"
+	},
+	{
 		"name": "Richard",
 		"avatar": "",
 		"lines": [

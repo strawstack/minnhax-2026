@@ -2085,6 +2085,43 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_s0qdo")
 
+[sub_resource type="Animation" id="Animation_qd0nk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Skeleton3D/Bone_002/head:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_8h1pa"]
+resource_name = "turnHead"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Skeleton3D/Bone_002/head:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0.0052359877, -1.7453293, -0.0052359877)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k1y1u"]
+_data = {
+&"RESET": SubResource("Animation_qd0nk"),
+&"turnHead": SubResource("Animation_8h1pa")
+}
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ib8mc"]
 resource_name = "MinnMax_orange"
 cull_mode = 2
@@ -2531,13 +2568,14 @@ shadow_mesh = SubResource("ArrayMesh_2cwhx")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_kbkkx"]
 
-[node name="apartment" type="Node3D" unique_id=802607312 node_paths=PackedStringArray("minnMaxLogoStudioDoor", "minnMaxLogoLeBooBooPreinterview", "minnMaxLogoControlRoom", "minnMaxLogoVoiceMail", "minnMaxLogoControlRoom2")]
+[node name="apartment" type="Node3D" unique_id=802607312 node_paths=PackedStringArray("minnMaxLogoStudioDoor", "minnMaxLogoLeBooBooPreinterview", "minnMaxLogoControlRoom", "minnMaxLogoVoiceMail", "minnMaxLogoControlRoom2", "richardHeadAnimation")]
 script = ExtResource("1_x34op")
 minnMaxLogoStudioDoor = NodePath("minnMaxLogo_StudioDoor")
 minnMaxLogoLeBooBooPreinterview = NodePath("minnMaxLogo_LeBooBooPreInterview")
 minnMaxLogoControlRoom = NodePath("minnMaxLogo_ControlRoom")
 minnMaxLogoVoiceMail = NodePath("minnMaxLogo_VoiceMail")
 minnMaxLogoControlRoom2 = NodePath("minnMaxLogo_ControlRoom2")
+richardHeadAnimation = NodePath("Armature_Richard/AnimationPlayerRichard")
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=1492951469]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.027121544, 0)
@@ -2562,6 +2600,9 @@ transform = Transform3D(0.55556834, -0.30810782, 0.7722781, 0, 0.9288095, 0.3705
 
 [node name="cameraB" type="Camera3D" parent="Cameras" unique_id=1705382921]
 transform = Transform3D(-0.97391486, 0.01531693, -0.22639623, 0, 0.9977192, 0.067501105, 0.22691377, 0.06574033, -0.9716936, -2.1288695, 8.441346, -18.399906)
+
+[node name="CameraLittleBoo" type="Camera3D" parent="Cameras" unique_id=569021532]
+transform = Transform3D(-0.49621493, 0.55859786, -0.6646346, 0, 0.7655319, 0.6433979, 0.8681997, 0.31926367, -0.37986836, 7.3103747, 1.8741307, 1.2061789)
 
 [node name="Interview" type="Node3D" parent="Cameras" unique_id=538688751]
 
@@ -3205,7 +3246,7 @@ bone_name = "Bone.002"
 bone_idx = 2
 
 [node name="head" type="MeshInstance3D" parent="Armature_Richard/Skeleton3D/Bone_002" unique_id=1482502280]
-transform = Transform3D(1.0000001, -4.656761e-10, -6.2929985e-08, 4.656761e-10, 1.0000001, -3.0037708e-10, 6.292999e-08, 3.0037708e-10, 1, 0.024999993, 0.16500004, -5.0448932e-08)
+transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, 0.024999976, 0.16499949, 0)
 mesh = SubResource("ArrayMesh_w0ngi")
 
 [node name="Mouth" parent="Armature_Richard/Skeleton3D/Bone_002/head" unique_id=147381713 instance=ExtResource("6_gsw74")]
@@ -3429,6 +3470,9 @@ mesh = SubResource("ArrayMesh_oglmx")
 [node name="Cube_038" type="MeshInstance3D" parent="Armature_Richard/Skeleton3D/Bone/Cube_051" unique_id=680847834]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.49999985, 0)
 mesh = SubResource("ArrayMesh_s78ml")
+
+[node name="AnimationPlayerRichard" type="AnimationPlayer" parent="Armature_Richard" unique_id=1319347273]
+libraries/ = SubResource("AnimationLibrary_k1y1u")
 
 [node name="studioLogos" type="Node3D" parent="." unique_id=554145034]
 

@@ -1,5 +1,9 @@
 [
 	{
+		"name": "Command",
+		"command": "pickUpRadio"
+	},
+	{
 		"name": "AgentForty",
 		"avatar": "",
 		"lines": [
@@ -80,19 +84,3 @@
 		]
 	}
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

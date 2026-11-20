@@ -1,9 +1,5 @@
 [
 	{
-		"name": "Command",
-		"command": ""
-	},
-	{
 		"name": "Richard",
 		"avatar": "",
 		"lines": [
@@ -24,5 +20,9 @@
 				"text": "That’s my partner Yu over in the kitchen. Upstairs you’ll find the computer where I made this game. Walk around with WASD and grab some footage of the apartment. I’ll stay here on the couch and play Hitman Freelancer. If you have any questions, just shout. I’ll hear you."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "objectiveGoSeeComputer"
 	}
 ]
