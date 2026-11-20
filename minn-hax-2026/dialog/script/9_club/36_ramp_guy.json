@@ -1,0 +1,16 @@
+[
+	{
+		"name": "RampGuy",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "36_01",
+				"text": "Ramp delivery! Tons of ramps over here. Anyone order a bunch of ramps!"
+			},
+			{
+				"voice": "36_02",
+				"text": "Boy these ramps go almost to the roof. Looks like skaters get free entry tonight via the roof. At least until someone tells me where to deliver these ramps."
+			}
+		]
+	}
+]

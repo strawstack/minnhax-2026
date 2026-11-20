@@ -1,0 +1,26 @@
+[
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "33_01",
+				"text": "LeBooBoo’s show is a rave, so anticipate a lot of people. You shouldn’t have any trouble getting in unless the bouncer is in a particularly bad mood."
+			},
+			{
+				"voice": "33_02",
+				"text": " MoneyPony: We need to find LeBooBoo and take him down. Once inside, we’ll have to come up with a plan that is safe and sound."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "33_03",
+				"text": "Where he belongs? Like PopMart?"
+			}
+		]
+	}
+]

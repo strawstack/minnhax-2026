@@ -1,0 +1,36 @@
+[
+	{
+		"name": "Command",
+		"command": ""
+	},
+	{
+		"name": "Yu",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "01_01",
+				"text": "Hey, nice to meet you. My name is Yu. Thanks for coming over for the studio tour. I’m just cooking some lunch. It’s noodles, tofu, and salmon."
+			}
+		]
+	},
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "01_02",
+				"text": "We can make you some lunch. Or feel free to help yourself, I know you guys are into cereal."
+			}
+		]
+	},
+	{
+		"name": "Yu",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "01_03",
+				"text": "Ya, let me know if you want something to eat. We have some drinks in the fridge. I’ll have to grab one for you though. We’re not exactly working with Grand Theft Auto money here."
+			}
+		]
+	}
+]

@@ -1,0 +1,27 @@
+[
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "27_01",
+				"text": "Looks like it can only be opened with the right sound."
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "27_02",
+				"text": "Let’s search the house for an instrument or something."
+			}
+		]
+	}
+]
+
+
+
+
+

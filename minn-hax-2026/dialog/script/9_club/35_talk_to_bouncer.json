@@ -1,0 +1,116 @@
+[
+	{
+		"name": "TCB",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "35_01",
+				"text": "Are you on the list?"
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "35_02",
+				"text": "Ken Club. Rave inspector. Just need to take a quick look inside."
+			}
+		]
+	},
+	{
+		"name": "TCB",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "35_03",
+				"text": "Everything’s good. We already have an inspector."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "35_04",
+				"text": "...exactly, just need to have a word with him about a few rave related things."
+			}
+		]
+	},
+	{
+		"name": "TCB",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "35_05",
+				"text": "I’m the inspector."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "35_06",
+				"text": "Always fun to meet a fellow inspector. Big fan of LeBooBoo! We used to work together at a tube run if you can believe it."
+			}
+		]
+	},
+	{
+		"name": "TCB",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "35_07",
+				"text": "Listen I see forty guys a week coming here in Jeffm cosplay wanting to see LeBooBoo’s show, and guess how many I let in - zero."
+			},
+			{
+				"voice": "35_08",
+				"text": "Content creators only - in here. LeBooBoo’s videos get two hundred and fifty views easy. Can you imagine how many people 250 is? Frame rates dropping already and half the people in here are fake NPCs."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "35_09",
+				"text": "Well, I’m friends with GreenDay?"
+			}
+		]
+	},
+	{
+		"name": "TCB",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "35_10",
+				"text": "Get out."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "35_11",
+				"text": "I am out. That’s my problem at the moment. I don’t suppose you know the location of a good pile of leaves. Do you have a lighter on you by chance?"
+			}
+		]
+	},
+	{
+		"name": "TCB",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "35_12",
+				"text": "...bye sucker!"
+			}
+		]
+	}
+]

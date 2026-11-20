@@ -1,0 +1,26 @@
+[
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "26_01",
+				"text": "Looks like LeBooBoo doesn’t keep his doors locked. Could it be a trap?"
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "26_02",
+				"text": "He’s a ghost afterall. Maybe he doesn’t even know what a door is."
+			}
+		]
+	}
+]
+
+
+
+

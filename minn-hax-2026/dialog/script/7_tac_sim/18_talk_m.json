@@ -1,0 +1,182 @@
+[
+	{
+		"name": "M",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "18_01",
+				"text": "Welcome to MI6 Agent Forty-JeffM."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "18_02",
+				"text": "What’s with the two I’s?"
+			}
+		]
+	},
+	{
+		"name": "M",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "18_03",
+				"text": "The agency has a new quantum super computer. It came up with the logo. Two i’s for Minnesota. We’re based there now."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "18_04",
+				"text": "I don’t think that’s how you spell -"
+			}
+		]
+	},
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "18_05",
+				"text": "You’re late."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "18_06",
+				"text": "You’re… in a body cast?!"
+			}
+		]
+	},
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "18_07",
+				"text": "009 manipulated me. He’s a master manipulator. One time, he told me to go to a chess tournament, and, when I least expected it, he blew it up."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "18_08",
+				"text": "Manipulated? That sounds more like straightforward terrorism?"
+			}
+		]
+	},
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "18_09",
+				"text": "No, he manipulated me into the building. You don’t understand. He’s a master. Anyways, the building bomb was a different thing. I was completely unharmed. I’m afraid the reason I’m in a body cast is yassified."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "18_10",
+				"text": "Classified?"
+			}
+		]
+	},
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "18_11",
+				"text": "No, yassified. 009 told me to meet him on a bridge, and we’d go get yassified. He knew I couldn’t resist."
+			}
+		]
+	},
+	{
+		"name": "M",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "..."
+			}
+		]
+	},
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "18_13",
+				"text": "When I got to the bridge, he changed the meeting location last minute to down by the water. "
+			}
+		]
+	},
+	{
+		"name": "M",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "..."
+			}
+		]
+	},
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "18_15",
+				"text": "He said get down there quick the salon reservation would expire. I should have seen it coming, but he’s a master manipulator. He’s 009!"
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "18_16",
+				"text": "So, 009 told you to jump off a bridge?"
+			}
+		]
+	},
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "18_17",
+				"text": "It’s extremely complex. Quantum! 009 and I go back years. It’s a supercomputer! Anyways you’re late."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "18_18",
+				"text": "Right? I should get going."
+			}
+		]
+	}
+]

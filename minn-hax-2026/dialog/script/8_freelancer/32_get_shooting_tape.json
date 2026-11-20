@@ -1,0 +1,46 @@
+[
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "32_01",
+				"text": "More rap on this one. I’ll play it, so you can listen for information. In the meantime, Q’s algorithm will pinpoint LeBooBoo’s location."
+			}
+		]
+	},
+	{
+		"name": "SecretTape",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "(music plays)"
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "32_02",
+				"text": "Uhh, are you sure we really want to find this guy?"
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "32_03",
+				"text": "Too late, Q already found him. He’s preparing for a show on the island in the lake."
+			},
+			{
+				"voice": "32_04",
+				"text": "Head to the dock. We can take LeBooBoo’s boat."
+			}
+		]
+	}
+]

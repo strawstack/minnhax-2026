@@ -1,0 +1,32 @@
+[
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "42_01",
+				"text": "The opulecent night flower only blooms twice bi-weekly?"
+			}
+		]
+	},
+	{
+		"name": "LadyInRed",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "42_02",
+				"text": "You like my big orb ;)"
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "42_03",
+				"text": "Sorry, thought you were someone else..."
+			}
+		]
+	}
+]

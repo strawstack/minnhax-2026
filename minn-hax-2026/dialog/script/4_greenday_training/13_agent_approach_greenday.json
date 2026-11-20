@@ -1,0 +1,32 @@
+[
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "13_01",
+				"text": "John GreenDay... just like the band"
+			}
+		]
+	},
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "13_02",
+				"text": "Never heard of it! And you’re late."
+			},
+			{
+				"voice": "13_03",
+				"text": "I seem to have a couple broken wings at the moment. You’ll have to drive. I’ll open the big doors as we go."
+			}
+		]
+	}
+]
+
+
+
+
+
+

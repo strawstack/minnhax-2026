@@ -1,0 +1,62 @@
+[
+	{
+		"name": "CroissantDuh",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "19_01",
+				"text": "Good luck out there Forty. I’ll be rooting for you."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "19_02",
+				"text": "What happened?"
+			}
+		]
+	},
+	{
+		"name": "CroissantDuh",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "19_03",
+				"text": "MonRoll and I went undercover at a bakery. I guess we were a little too convincing. There was a lunch rush. Two for one flash pastry sale."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "19_04",
+				"text": "Did MonRoll make it?"
+			}
+		]
+	},
+	{
+		"name": "CroissantDuh",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "19_05",
+				"text": "He’s in rough shape Forty, but he’ll be fine. Thanks to Q’s brilliant engineering, MonRoll wore a special Caramel Pecan disguise which kept him completely inedible except to some seagulls we encountered just prior to extraction."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "19_06",
+				"text": "Caramel Pecan?! That’s… disgusting. Glad you two made it out. Speedy recovery."
+			}
+		]
+	}
+]

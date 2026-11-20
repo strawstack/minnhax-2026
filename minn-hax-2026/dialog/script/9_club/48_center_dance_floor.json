@@ -1,0 +1,76 @@
+[
+	{
+		"name": "LeBooBoo",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "48_01",
+				"text": "*Tap Tap* is this thing on."
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "48_02",
+				"text": "Change of plans Forty. LeBooBoo’s not canceling. We’ve arranged for you to join him on stage. Stay close, and I can remotely hack his phone during the performance."
+			},
+			{
+				"voice": "48_03",
+				"text": "Hope you are ready to play some cowbell..."
+			}
+		]
+	},
+	{
+		"name": "LeBooBoo",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "48_04",
+				"text": "Folks, we’re about to kick things off. My cowbell guy bailed at the last minute. Luckily, I’m told we have somewhat of an expert in the house. Join me in welcoming to the stage Grand Theft Auto Five - Los Santos Rock Radio - Mississippi Queen cowbell drummer “Corky” JeffM."
+			}
+		]
+	},
+	{
+		"name": "Money",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "48_05",
+				"text": "Good luck on stage. Remember. It’s a cowbell. How hard could it be?"
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "48_06",
+				"text": "Yeah, it’s not like I have to play Beat Weaver up there."
+			}
+		]
+	},
+	{
+		"name": "LeBooBoo",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "48_07_a",
+				"text": "First, let’s get things popping with an opening performance. Welcome to the stage: MC CrabPalace. Take it away..."
+			}
+		]
+	},
+	{
+		"name": "MC CrabPalace",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "48_07_b",
+				"text": "(music plays)"
+			}
+		]
+	}
+]

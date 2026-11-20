@@ -1,0 +1,63 @@
+[
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "30_01",
+				"text": "I’ll scan the tape remotely to reveal what’s on it."
+			},
+			{
+				"voice": "",
+				"text": "..."
+			},
+			{
+				"voice": "30_03",
+				"text": "Doesn’t seem to contain much other than some rap. I will put it on while you skate. Playing over your earpiece now."
+			}
+		]
+	},
+	{
+		"name": "SecretTape",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "",
+				"text": "(Music plays NOTE await this dialog so music can't be skipped)"
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "30_04",
+				"text": "Well that was... spooky."
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "30_05",
+				"text": "If we find one more tape, Q can use the data to locate LeBooBoo. Try searching the forest next to the mansion."
+			}
+		]
+	}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+[
+	{
+		"name": "Command",
+		"command": ""
+	},
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "00_01",
+				"text": "So anyways, it’s not finished yet, but that’s the opening cutscene of the game where Agent Forty-JeffM spends a long time underwater after a helicopter crash."
+			},
+			{
+				"voice": "00_02",
+				"text": "You can turn around now with the mouse."
+			},
+			{
+				"voice": "00_03",
+				"text": "Thanks again for coming by on such short notice to film a studio tour. It’s an exciting time for us with our game Parasocial Activity streaming tomorrow on MinnHax!"
+			},
+			{
+				"voice": "00_04",
+				"text": "That’s my partner Yu over in the kitchen. Upstairs you’ll find the computer where I made this game. Walk around with WASD and grab some footage of the apartment. I’ll stay here on the couch and play Hitman Freelancer. If you have any questions, just shout. I’ll hear you."
+			}
+		]
+	}
+]

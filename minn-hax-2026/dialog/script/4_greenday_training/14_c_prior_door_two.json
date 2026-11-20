@@ -1,0 +1,32 @@
+[
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_06",
+				"text": "Never heard of GreenDay - ha (astonished). I bet I could find you a song right now. Can I turn on the radio?"
+			}
+		]
+	},
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_07",
+				"text": "That’s an MI6 exploding radio. Turn both knobs at exactly (emphasis) the same time or else we’ll both have more than a couple broken arms."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_08",
+				"text": "Well in that case… sorry I asked."
+			}
+		]
+	}
+]

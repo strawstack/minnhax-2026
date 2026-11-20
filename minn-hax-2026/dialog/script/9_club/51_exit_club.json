@@ -1,0 +1,22 @@
+[
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "51_01",
+				"text": "Nice work Forty. LeBooBoo is no longer a threat."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "51_02",
+				"text": "I guess my cowbell performance wasn’t so bad afterall. Maybe I’ll try my hand at Beat Weaver next."
+			}
+		]
+	}
+]

@@ -1,0 +1,32 @@
+[
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "31_01",
+				"text": "LeBooBoo has some kind of obstacle course set up."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "31_02",
+				"text": "Looks like he copied from a popular MinnHax game."
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "31_03",
+				"text": "There! Above the range, another tape. In the cage. Finish the course, and we should be able to grab it."
+			}
+		]
+	}
+]

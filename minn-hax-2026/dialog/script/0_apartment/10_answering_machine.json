@@ -1,0 +1,44 @@
+[
+	{
+		"name": "LeBooBoo",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "10_01",
+				"text": "A new message. Now who could that be?"
+			}
+		]
+	},
+	{
+		"name": "Neighbour",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "10_02",
+				"text": "Good morning ah - Mr. Le (pause) Boo! I’ve just moved into the house next door, and - well big fan of the show BooMax great stuff! Anyways, I was just looking at the property line, and haha I think your fence is a couple feet into my yard…"
+			},
+			{
+				"voice": "10_03",
+				"text": "I could be wrong of course. I’m not accusing you of anything. The last thing I want is a diss track out there about me, but - well - I came across a recording of you basically saying you knew it was going into my yard…"
+			},
+			{
+				"voice": "10_04",
+				"text": "just call me back when you have a chance. Thanks… and I’m looking forward to this morning's MinnHax stream. Keep up the great work!"
+			}
+		]
+	},
+	{
+		"name": "LeBooBoo",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "10_05",
+				"text": " Oh, nice guy. I should offer to pay for the whole fence!"
+			},
+			{
+				"voice": "10_06",
+				"text": "First though, let’s get this stream started."
+			}
+		]
+	}
+]

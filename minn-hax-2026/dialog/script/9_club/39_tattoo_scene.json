@@ -1,0 +1,32 @@
+[
+	{
+		"name": "LeBooBoo",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "39_01",
+				"text": "How’s myTattoo looking? I’m performing later, and I don’t want to get laughed off stage."
+			}
+		]
+	},
+	{
+		"name": "TattooArtist",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "39_02",
+				"text": "信我！这个纹出来绝对好看，不过话又说回来，你和Ben Hanson商量过吗？他会不会反对。"
+			}
+		]
+	},
+	{
+		"name": "LeBooBoo",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "39_03",
+				"text": "Nawww, Ben will be cool with it. He and I are pals. Just make sure to leave some space. I’m getting a PewPew Bang one next week."
+			}
+		]
+	}
+]

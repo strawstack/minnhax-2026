@@ -1,0 +1,32 @@
+[
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "17_04",
+				"text": "Congratulations Agent Forty. Every spy I’ve ever trained has grabbed the flag. You grabbed the flag, so that makes you a spy."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "17_05",
+				"text": "I learned how to skate too. Did you see me skate?"
+			}
+		]
+	},
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "17_06",
+				"text": "...the only thing I care about is whether or not you grabbed the flag right now. You grabbed it, so you’re a spy - training complete."
+			}
+		]
+	}
+]

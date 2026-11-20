@@ -1,0 +1,32 @@
+[
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "52_01_a",
+				"text": "On behalf of video games, thanks for playing us..."
+			}
+		]
+	},
+	{
+		"name": "Nevi",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "52_01_b",
+				"text": "Meow!"
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "52_02",
+				"text": "...bye suckers!"
+			}
+		]
+	}
+]

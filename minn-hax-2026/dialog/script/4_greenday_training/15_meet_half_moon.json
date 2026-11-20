@@ -1,0 +1,62 @@
+[
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "15_01",
+				"text": "Nice to meet you - Miss - halfmoon?"
+			}
+		]
+	},
+	{
+		"name": "CroissantDuh",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "15_02",
+				"text": "I’m a Crossiant-duh. Crossiant-duh."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "15_03",
+				"text": "Of course. Miss. Crossiant… duh."
+			}
+		]
+	},
+	{
+		"name": "CroissantDuh",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "15_04_a",
+				"text": "And this is MonRoll"
+			}
+		]
+	},
+	{
+		"name": "MonRoll",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "15_04_b",
+				"text": "You wanna roll Forty?"
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "15_05",
+				"text": "And here I thought GreenDay was lying when he told me we were going to Cinnabon."
+			}
+		]
+	}
+]

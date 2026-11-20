@@ -1,0 +1,62 @@
+[
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_28",
+				"text": "You get out here. Your MI6 training starts now. And probably won’t last very long if I had to guess."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_29",
+				"text": "You’re not joining for the training."
+			}
+		]
+	},
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_30",
+				"text": "The other recruits have been here for six months. I expect them to run the whole program now. Prepare yourself, you’re six months behind, so ‘welcome to a new kind of tension'."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_31",
+				"text": "In that case, wake me up when September ends, and I right?"
+			}
+		]
+	},
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_32",
+				"text": "Well then good morning (emphasis) because it’s December."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_33",
+				"text": "No it’s - but you said - nevermind."
+			}
+		]
+	}
+]

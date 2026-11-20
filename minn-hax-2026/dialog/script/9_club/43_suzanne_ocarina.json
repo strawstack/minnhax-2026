@@ -1,0 +1,32 @@
+[
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "43_01",
+				"text": "Is that the remake?"
+			}
+		]
+	},
+	{
+		"name": "Suzanne",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "43_02",
+				"text": "Yeah, it's pretty great, and they tell me it helps prevent rocket attacks"
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "43_03",
+				"text": "Just... keep it charged"
+			}
+		]
+	}
+]

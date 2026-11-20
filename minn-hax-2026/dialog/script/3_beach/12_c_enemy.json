@@ -1,0 +1,42 @@
+[
+	{
+		"name": "UnknownEnemy",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_10",
+				"text": "(enemy)"
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_11",
+				"text": "Hostile radio chatter nearby."
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_12",
+				"text": "Those are paratroupers. Parasocial I mean. Funny seeing them here. I thought they worked for - nevermind - don’t get close. They tend to ask for ‘more than one photo’ if you know what I mean."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_13",
+				"text": "I’ll keep my distance."
+			}
+		]
+	}
+]

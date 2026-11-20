@@ -1,0 +1,23 @@
+[
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "25_01",
+				"text": "You’d think a cereal killer lived here."
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "25_02",
+				"text": "Some of the boxes have strange markings on them. Did LeBooBoo... order these from a restaurant?"
+			}
+		]
+	}
+]
+

@@ -1,0 +1,92 @@
+[
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "21_01",
+				"text": "MoneyPony! That’s a small briefing screen."
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "21_02",
+				"text": "I know! Pretty cool right? We just had it installed. Right at tongue level."
+			},
+			{
+				"voice": "21_03",
+				"text": "But getting down to business. This next mission is serious. And you’re the only Agent who isn’t - you’re the best Agent we’ve got!"
+			},
+			{
+				"voice": "21_04",
+				"text": "The secret tape you recovered on the beach was created by a ghost named LeBooBoo. A parasocial rapper we believe is about to release viral lyrics into the community."
+			},
+			{
+				"voice": "21_05",
+				"text": "LeBooBoo’s most recent video has over two hundred and fifty views. As his popularity grows, his ego could get out of hand. We can not afford to simply rely on him doing something cringe on his own."
+			},
+			{
+				"voice": "21_06",
+				"text": "You will deploy to LeBooBoo’s mansion while he’s away. Get inside and search for evidence that could help us silence LeBooBoo before his parasocial rap is released."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "21_07",
+				"text": "Sounds like LeBooBoo is really putting in the work. Couldn’t he just pay $2500 and be on the podcast."
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "21_08",
+				"text": "Luckily his funds dried up making candy jar guesses before it came to that, and he’s more of a ghost behind the scenes anyways."
+			},
+			{
+				"voice": "21_09",
+				"text": "When you’re ready, head over to the TacSim - a state of the art mission simulator. It’s a training simulator, but, since this is already a video game, whatever happens inside will be just as real as me talking to you right now."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "21_10",
+				"text": "Like the matrix?"
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "21_11",
+				"text": "Yes but legally distinct. Seriously Forty - whatever happens inside the TacSim… is cannon."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "21_12",
+				"text": "In that case, I’ll be on my best behaviour."
+			}
+		]
+	}
+]

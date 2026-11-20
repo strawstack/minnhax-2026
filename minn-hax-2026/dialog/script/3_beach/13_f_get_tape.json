@@ -1,0 +1,57 @@
+[
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_18",
+				"text": "I see a tape deck?"
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_19",
+				"text": "Perfect. That’s what we need. Keep it somewhere safe."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_20",
+				"text": "That night, I helped recover an important tape for a client I later learnt was MI6, and I’m glad it was MI6 on that radio because I really would have just trusted whoever on that thing and done whatever they asked…"
+			},
+			{
+				"voice": "12_21",
+				"text": "Regardless, they pulled me into their training program - six months late I might add."
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_22",
+				"text": "Are you talking to someone? Your heart rate is dropping. Stay put. We’ll send a rescue team…"
+			}
+		]
+	}
+]
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+[
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "03_01",
+				"text": "It’s a bit empty in my office. Other than a cat tree by the window, this model is pretty accurate to real-life. I’ve been meaning to do some interior design."
+			},
+			{
+				"voice": "03_02",
+				"text": "This computer is where I developed The Department of Parasocial Activity. I wrote a lot of the dialog at the Bellevue library just outside Seattle, but everything else happened right here in Blender, Godot, and Audacity - often with Nevi sleeping on the corner of the desk."
+			},
+			{
+				"voice": "03_03",
+				"text": "On screen, you’ll see a model of this apartment is pulled up. That bottom floor is what you’ll see later on our tour."
+			},
+			{
+				"voice": "03_04",
+				"text": "Head down to the basement studio next. We need to film an interview down there if you don’t mind helping out in the control room? The studio door is behind the couch down here under the staircase."
+			}
+		]
+	}
+]

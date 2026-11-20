@@ -1,0 +1,52 @@
+[
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_01",
+				"text": "Weren't expecting to go backwards? First rule of spycraft - always do the unexpected."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_02",
+				"text": "Well I was late, that’s unexpected (proudly)"
+			}
+		]
+	},
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_03",
+				"text": "No! We’re very strict on timings. But everything else, do the unexpected. ‘No time to search the world around’ as they say."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_04",
+				"text": "Who says that GreenDay?"
+			}
+		]
+	},
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_05",
+				"text": "...Says my father Mr. GreenDay Sr."
+			}
+		]
+	}
+]

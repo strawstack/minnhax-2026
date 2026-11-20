@@ -1,0 +1,16 @@
+[
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "29_01",
+				"text": "Your training report says you skate kind of weird, but whatever gets the job done I guess."
+			},
+			{
+				"voice": "29_02",
+				"text": "A scan of the room shows a secret tape somewhere in the area. Similar to the one you found on the beach."
+			}
+		]
+	}
+]

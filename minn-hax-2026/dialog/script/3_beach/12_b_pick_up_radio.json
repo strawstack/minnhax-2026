@@ -1,0 +1,98 @@
+[
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_02",
+				"text": "Hello?"
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_03",
+				"text": "Who is this?"
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_04",
+				"text": "This is Forty Agent Forty… I don’t know what they saw in me on that mission: My determination. My calm in the face of disaster. Maybe they just liked my perfectly spherical -"
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_05",
+				"text": "Hello!? Are you talking to someone?"
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_06",
+				"text": "No, I’m… who is this?"
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_07",
+				"text": "I… don’t want to give away the farm just yet. Looks like you might be our only survivor. Can you help us recover an item?"
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_08",
+				"text": "Uhh, sure. Yes"
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_09",
+				"text": "Great! Head down the beach. The item is on the other side of those rocks."
+			}
+		]
+	}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

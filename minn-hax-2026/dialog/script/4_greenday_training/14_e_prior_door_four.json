@@ -1,0 +1,62 @@
+[
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_19",
+				"text": "What’s with the barrels anyway?"
+			}
+		]
+	},
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_20",
+				"text": "Rather unexpected isn’t it. It was my idea."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_21",
+				"text": "Definitely unexpected. And the doors?"
+			}
+		]
+	},
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_22",
+				"text": "Doors are the perfect gadget. You never know what to expect behind them."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_23",
+				"text": "Well, at this point, I’d expect barrels."
+			}
+		]
+	},
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_24",
+				"text": "Getting complacent already. But you are correct."
+			}
+		]
+	}
+]

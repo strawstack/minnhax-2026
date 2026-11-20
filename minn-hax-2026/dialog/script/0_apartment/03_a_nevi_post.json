@@ -1,0 +1,22 @@
+[
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "03_01",
+				"text": "Our cat Nevi stands on this scratching post, and watches for birds outside the window. We don’t let him outside, so the window is Hitman Freelancer for him."
+			}
+		]
+	},
+	{
+		"name": "Nevi",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "03_02",
+				"text": "Meow!"
+			}
+		]
+	}
+]

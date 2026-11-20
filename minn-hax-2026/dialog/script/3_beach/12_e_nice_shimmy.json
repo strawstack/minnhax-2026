@@ -1,0 +1,22 @@
+[
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_16",
+				"text": "Nice shimmying. I didn’t realize you were a jeffm"
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_17",
+				"text": "Forthyith clone (said proudly)"
+			}
+		]
+	}
+]

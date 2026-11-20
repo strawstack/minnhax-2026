@@ -1,0 +1,22 @@
+[
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "16_02",
+				"text": "Something like… that."
+			}
+		]
+	},
+	{
+		"name": "MonRoll",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "16_03",
+				"text": "Don’t get ahead of yourself Forty. This training isn’t all cream cheese icing and golden brown flaky pastry."
+			}
+		]
+	}
+]

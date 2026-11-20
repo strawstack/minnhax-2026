@@ -1,0 +1,32 @@
+[
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "28_01",
+				"text": "Looks like that banana might be a switch."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "28_02",
+				"text": "Only one way to find out."
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "28_03",
+				"text": "The fridge opened. There is a secret area behind the kitchen."
+			}
+		]
+	}
+]

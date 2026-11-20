@@ -1,0 +1,32 @@
+[
+	{
+		"name": "RampGuy",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "37_01",
+				"text": "Hey! Hey kid, I gotta deliver these. You can’t go scratching them up."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "37_02",
+				"text": "Kenny Hawk. Ramp inspector. At your service."
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "37_03",
+				"text": "Forty use the ramps to get on the roof."
+			}
+		]
+	}
+]

@@ -1,0 +1,46 @@
+[
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_25",
+				"text": "I never would have agreed to training you, but M insisted."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_26",
+				"text": "Well, you’ll have to take it up with her. All I know is I found a secret tape on a beach and now I’m here."
+			}
+		]
+	},
+	{
+		"name": "GreenDay",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_26_a",
+				"text": "Found a tape. Ha. Just another Dookie who thinks he can Kerplunk his way into the spy world with a secret tape. Well here’s a 21st Century Breakdown for you: we’re not playing Revolution Radio anymore..."
+			},
+			{
+				"voice": "14_26_b",
+				"text": "A word of Warning, don’t go strutting around like an American Idiot thinking you’re any of our Saviours: there’s a fine line between 39/Smooth and Nimrod."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "14_27",
+				"text": "Copy that. Don’t worry about me, believe it or not I'm more than just a compilation of Shenanigans."
+			}
+		]
+	}
+]

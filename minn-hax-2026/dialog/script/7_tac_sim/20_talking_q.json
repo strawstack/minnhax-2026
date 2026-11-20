@@ -1,0 +1,166 @@
+[
+	{
+		"name": "Q",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "20_01",
+				"text": "Agent Forty. Nice to meet you. I’m Q."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "20_02",
+				"text": "I might have guessed. Do you normally look like a letter Q?"
+			}
+		]
+	},
+	{
+		"name": "Q",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "20_03",
+				"text": "You should be seeing me as a hip giglio grandpa with doc Brown hair. If I look like a Q, your Q-lens could be malfunctioning."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "20_04",
+				"text": "Q-lens?"
+			}
+		]
+	},
+	{
+		"name": "Q",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "20_05",
+				"text": "We installed a Q contact lens in your eye. I’ll sneak into your apartment again tonight and make some adjustments. No worries, you won’t even know I was there."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "20_06",
+				"text": "Sneak into my apartment? Again?!"
+			}
+		]
+	},
+	{
+		"name": "Q",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "20_07_a",
+				"text": "Oh, I hope you don’t mind. You were fast asleep after watching the 2006 SPIKE VGA’s twice back to back. I couldn’t wake you if I tried. Couldn’t get a wink of sleep myself inside your couch - you were snoring so loud..."
+			},
+			{
+				"voice": "20_07_b",
+				"text": "...Must echo off that head of yours I would imagine. So I thought why not install the lens and save some time."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "20_08",
+				"text": "Does M know about this?"
+			}
+		]
+	},
+	{
+		"name": "Q",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "20_09",
+				"text": "It’s totally fine - Gadgets you know - Science - I’m a geek - It’s a whole thing. The supercomputer places your chances of complaining at 0.1%. So I’d say we’re in the clear."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "20_10",
+				"text": "Well, I’m one to test the odds, I don’t suppose you have a gadget around here that points toward the HR department?"
+			}
+		]
+	},
+	{
+		"name": "Q",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "20_11",
+				"text": "Your file said you were a joker. I could easily whip out up, but no need. HR watches everything through the lens already."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "20_12",
+				"text": "Everything?"
+			}
+		]
+	},
+	{
+		"name": "Q",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "20_13",
+				"text": "Well they did tune out for most of the VGA’s. 2006 was a different time..."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "20_14",
+				"text": "Well look at the time, I’m running late for my briefing with MoneyPony."
+			}
+		]
+	},
+	{
+		"name": "Q",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "20_15",
+				"text": "Of course! She’s over there by the briefing screen - I’ve engineered the screen to double as a salt lick!"
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "20_16",
+				"text": "Impressive! Uh, I suppose..."
+			}
+		]
+	}
+]

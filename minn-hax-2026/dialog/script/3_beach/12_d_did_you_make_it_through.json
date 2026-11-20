@@ -1,0 +1,22 @@
+[
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_24",
+				"text": "Did you make it through alright?"
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_15",
+				"text": "Close one, but I’m… safe and sound. (JB music da-da da da-da and flash the MinnHax theme)"
+			}
+		]
+	}
+]

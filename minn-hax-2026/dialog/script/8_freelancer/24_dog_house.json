@@ -1,0 +1,32 @@
+[
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "24_01",
+				"text": "Looks like LeBooBoo got himself a dog. Bet it could use a snack."
+			}
+		]
+	},
+	{
+		"name": "Dog",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "24_02",
+				"text": "...nothing has ever had so much flavor."
+			}
+		]
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "24_03",
+				"text": "Odd fellow..."
+			}
+		]
+	}
+]
