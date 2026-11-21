@@ -1,5 +1,21 @@
 [
 	{
+		"name": "Command",
+		"command": "freezePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "hidePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "showIdle"
+	},
+	{
+		"name": "Command",
+		"command": "cameraTCB"
+	},
+	{
 		"name": "TCB",
 		"avatar": "",
 		"lines": [
@@ -8,6 +24,10 @@
 				"text": "Are you on the list?"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "cameraAgentAtTCB"
 	},
 	{
 		"name": "AgentForty",
@@ -20,6 +40,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "cameraTCB"
+	},
+	{
 		"name": "TCB",
 		"avatar": "",
 		"lines": [
@@ -28,6 +52,10 @@
 				"text": "Everything’s good. We already have an inspector."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "cameraAgentAtTCB"
 	},
 	{
 		"name": "AgentForty",
@@ -40,6 +68,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "cameraTCB"
+	},
+	{
 		"name": "TCB",
 		"avatar": "",
 		"lines": [
@@ -50,6 +82,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "cameraAgentAtTCB"
+	},
+	{
 		"name": "AgentForty",
 		"avatar": "",
 		"lines": [
@@ -58,6 +94,10 @@
 				"text": "Always fun to meet a fellow inspector. Big fan of LeBooBoo! We used to work together at a tube run if you can believe it."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "cameraTCB"
 	},
 	{
 		"name": "TCB",
@@ -74,6 +114,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "cameraAgentAtTCB"
+	},
+	{
 		"name": "AgentForty",
 		"avatar": "",
 		"lines": [
@@ -82,6 +126,10 @@
 				"text": "Well, I’m friends with GreenDay?"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "cameraTCB"
 	},
 	{
 		"name": "TCB",
@@ -94,6 +142,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "cameraAgentAtTCB"
+	},
+	{
 		"name": "AgentForty",
 		"avatar": "",
 		"lines": [
@@ -104,6 +156,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "cameraTCB"
+	},
+	{
 		"name": "TCB",
 		"avatar": "",
 		"lines": [
@@ -112,5 +168,13 @@
 				"text": "...bye sucker!"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "returnPlayerCamera"
+	},
+	{
+		"name": "Command",
+		"command": "unfreezePlayer"
 	}
 ]

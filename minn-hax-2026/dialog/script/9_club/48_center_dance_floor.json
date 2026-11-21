@@ -1,5 +1,21 @@
 [
 	{
+		"name": "Command",
+		"command": "hideInterviewScene"
+	},
+	{
+		"name": "Command",
+		"command": "freezePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "hidePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "cameraStageCrowd"
+	},
+	{
 		"name": "LeBooBoo",
 		"avatar": "",
 		"lines": [
@@ -62,6 +78,20 @@
 				"text": "First, let’s get things popping with an opening performance. Welcome to the stage: MC CrabPalace. Take it away..."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "fadeOut",
+		"await": true
+	},
+	{
+		"name": "Command",
+		"command": "showCrabPerformance"
+	},
+	{
+		"name": "Command",
+		"command": "fadeIn",
+		"await": true
 	},
 	{
 		"name": "MC CrabPalace",

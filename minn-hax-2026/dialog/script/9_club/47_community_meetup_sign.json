@@ -1,5 +1,25 @@
 [
 	{
+		"name": "Command",
+		"command": "freezePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "hidePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "cameraMeetupRoom"
+	},
+	{
+		"name": "Command",
+		"command": "meetupDoorOpen"
+	},
+	{
+		"name": "Command",
+		"command": "showMeetupSign"
+	},
+	{
 		"name": "AgentForty",
 		"avatar": "",
 		"lines": [
@@ -20,6 +40,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "cameraDrummerMeetup"
+	},
+	{
 		"name": "Drummer",
 		"avatar": "",
 		"lines": [
@@ -30,6 +54,14 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "drummerInRoom"
+	},
+	{
+		"name": "Command",
+		"command": "cameraMeetupRoom"
+	},
+	{
 		"name": "MoneyPony",
 		"avatar": "",
 		"lines": [
@@ -38,6 +70,10 @@
 				"text": "Now! Lock him in!"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "meetupDoorClose"
 	},
 	{
 		"name": "AgentForty",
@@ -58,5 +94,17 @@
 				"text": "LeBooBoo certainly keeps some questionable company. Go to the dance floor. Let’s make sure the show gets cancelled."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showPlayer"
+	},
+	{
+		"name": "Command",
+		"command": "returnPlayerCamera"
+	},
+	{
+		"name": "Command",
+		"command": "unfreezePlayer"
 	}
 ]

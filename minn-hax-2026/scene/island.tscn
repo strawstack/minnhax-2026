@@ -25,6 +25,8 @@
 [ext_resource type="PackedScene" uid="uid://do57dblyrbw08" path="res://scene/characters/tcb_character_at_bar.tscn" id="23_q6i40"]
 [ext_resource type="PackedScene" uid="uid://707st4a8qcn7" path="res://scene/forty_idle_no_anim.tscn" id="23_re1to"]
 [ext_resource type="Texture2D" uid="uid://bary0ixyhw32y" path="res://glb/island_club/island_music_club_jeffm.png" id="25_jqyby"]
+[ext_resource type="PackedScene" uid="uid://7w7qj04mf06d" path="res://scene/minn_max_logo.tscn" id="26_pvu6s"]
+[ext_resource type="Script" uid="uid://bikli38xhfa12" path="res://script/dialogTriggerZone.gd" id="27_wimsx"]
 
 [sub_resource type="Environment" id="Environment_jd5n0"]
 
@@ -3981,8 +3983,68 @@ shadow_mesh = SubResource("ArrayMesh_doe0w")
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_820mh"]
 data = PackedVector3Array(0.049999997, 2, -0.75, -0.049999997, 2, 0.75, -0.049999997, 2, -0.75, 0.049999997, 2, -0.75, 0.049999997, 2, 0.75, -0.049999997, 2, 0.75, 0.049999997, -2, 0.75, -0.049999997, 2, 0.75, 0.049999997, 2, 0.75, 0.049999997, -2, 0.75, -0.049999997, -2, 0.75, -0.049999997, 2, 0.75, -0.049999997, -2, 0.75, -0.049999997, 2, -0.75, -0.049999997, 2, 0.75, -0.049999997, -2, 0.75, -0.049999997, -2, -0.75, -0.049999997, 2, -0.75, -0.049999997, -2, -0.75, 0.049999997, -2, 0.75, 0.049999997, -2, -0.75, -0.049999997, -2, -0.75, -0.049999997, -2, 0.75, 0.049999997, -2, 0.75, 0.049999997, -2, -0.75, 0.049999997, 2, 0.75, 0.049999997, 2, -0.75, 0.049999997, -2, -0.75, 0.049999997, -2, 0.75, 0.049999997, 2, 0.75, -0.049999997, -2, -0.75, 0.049999997, 2, -0.75, -0.049999997, 2, -0.75, -0.049999997, -2, -0.75, 0.049999997, -2, -0.75, 0.049999997, 2, -0.75)
 
-[node name="island" type="Node3D" unique_id=1778808922]
+[sub_resource type="BoxMesh" id="BoxMesh_jd5n0"]
+size = Vector3(0.049316406, 0.5934448, 1.276886)
+
+[sub_resource type="Animation" id="Animation_wimsx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("backRoomDoor:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(32.816692, 1.9900889, 2.7480133)]
+}
+
+[sub_resource type="Animation" id="Animation_v2fqc"]
+resource_name = "meetupDoorClose"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("backRoomDoor:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(32.816692, 5.896888, 2.7480133), Vector3(32.816692, 2.0011637, 2.7480133)]
+}
+
+[sub_resource type="Animation" id="Animation_ejoph"]
+resource_name = "meetupDoorOpen"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("backRoomDoor:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(32.816692, 1.9900889, 2.7480133), Vector3(32.816692, 5.896888, 2.7480133)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v2fqc"]
+_data = {
+&"RESET": SubResource("Animation_wimsx"),
+&"meetupDoorClose": SubResource("Animation_v2fqc"),
+&"meetupDoorOpen": SubResource("Animation_ejoph")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jd5n0"]
+size = Vector3(3.065277, 4.4990234, 1)
+
+[node name="island" type="Node3D" unique_id=1778808922 node_paths=PackedStringArray("interviewCouch", "interviewChair")]
 script = ExtResource("1_0stp1")
+interviewCouch = NodePath("sceneSeeEverything/interview_scene/interview_couch")
+interviewChair = NodePath("sceneSeeEverything/interview_scene/interview_chair")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1565766509]
 environment = SubResource("Environment_jd5n0")
@@ -4184,7 +4246,7 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 19, 
 visible = false
 
 [node name="club_dj_mic" parent="." unique_id=271821626 instance=ExtResource("18_tbq4j")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 19, 1, -3)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 19.01463, 1, -3)
 
 [node name="RampGuy" parent="." unique_id=1034816843 instance=ExtResource("17_57qce")]
 transform = Transform3D(0.86546916, 0, 0.50096244, 0, 1, 0, -0.50096244, 0, 0.86546916, 8.539304, 0, -31.167046)
@@ -4257,12 +4319,12 @@ transform = Transform3D(-0.89621955, 0, -0.4436108, 0, 1, 0, 0.4436108, 0, -0.89
 [node name="Cameras" type="Node3D" parent="." unique_id=507642706]
 
 [node name="StageCrowd" type="Camera3D" parent="Cameras" unique_id=1820452751]
-transform = Transform3D(-0.95239514, -0.01993908, 0.30421367, 0, 0.99785894, 0.06540268, -0.3048664, 0.062289193, -0.950356, 23.295345, 3.0300143, -14.431336)
+transform = Transform3D(-0.99965745, 0.0012557127, -0.026142694, 0, 0.9988484, 0.04797771, 0.026172835, 0.047961272, -0.99850625, 19.900536, 2.890564, -13.295457)
 fov = 39.5
 
 [node name="StageClose" type="Camera3D" parent="Cameras" unique_id=521260297]
-transform = Transform3D(-0.99999046, 3.767935e-09, 0.0043643895, 0, 1, -8.63336e-07, -0.0043643895, -8.633278e-07, -0.99999046, 19.286598, 3.4244504, -10.010439)
-fov = 63.0
+transform = Transform3D(-0.99984765, -0.0009894624, 0.017425342, 0, 0.99839175, 0.05669163, -0.017453412, 0.056682996, -0.99823964, 19.813765, 3.0118597, -9.523104)
+fov = 40.0
 
 [node name="sceneTalkToTCB" type="Node3D" parent="." unique_id=1553154615]
 
@@ -4274,6 +4336,7 @@ transform = Transform3D(0.9006998, -0.23342529, 0.36640483, 0, 0.8433918, 0.5372
 
 [node name="fortyIdleNoAnim" parent="sceneTalkToTCB" unique_id=306473063 instance=ExtResource("23_re1to")]
 transform = Transform3D(-0.39678743, 0, 0.9179105, 0, 1, 0, -0.9179105, 0, -0.39678743, 32.28169, 0.0027353764, -31.40527)
+visible = false
 
 [node name="tcbCharacter" parent="sceneTalkToTCB" unique_id=1041904738 instance=ExtResource("22_0efaj")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 33.468204, 0, -29.167385)
@@ -4807,6 +4870,7 @@ mesh = SubResource("ArrayMesh_n31d1")
 surface_material_override/0 = ExtResource("6_yypfl")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="sceneSeeEverything/interview_scene/interview_couch" unique_id=244660337]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="sceneSeeEverything/interview_scene/interview_couch/StaticBody3D" unique_id=1315457693]
 shape = SubResource("ConcavePolygonShape3D_3s0ds")
@@ -4822,6 +4886,7 @@ mesh = SubResource("ArrayMesh_ifk4d")
 surface_material_override/0 = ExtResource("6_yypfl")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="sceneSeeEverything/interview_scene/interview_chair" unique_id=2032747471]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="sceneSeeEverything/interview_scene/interview_chair/StaticBody3D" unique_id=845957841]
 shape = SubResource("ConcavePolygonShape3D_p3t1v")
@@ -4921,6 +4986,7 @@ font_size = 16
 
 [node name="DrummerCharacterInRoom" type="Node3D" parent="sceneDrummerDistract" unique_id=1879289937]
 transform = Transform3D(-1, 0, -1.1920929e-07, 0, 1, 0, 1.1920929e-07, 0, -1, 34.669884, 0, 2.779478)
+visible = false
 
 [node name="partyPerson16" parent="sceneDrummerDistract/DrummerCharacterInRoom" unique_id=1161791279 instance=ExtResource("17_57qce")]
 
@@ -4930,13 +4996,14 @@ text = "Drummer"
 font_size = 16
 
 [node name="fortyIdleNoAnim" parent="sceneDrummerDistract" unique_id=113384837 instance=ExtResource("23_re1to")]
-transform = Transform3D(-0.9332339, 0, 0.35926932, 0, 1, 0, -0.35926932, 0, -0.9332339, 30.22518, 0.27265787, 2.0117207)
+transform = Transform3D(0.6485609, 0, 0.76116276, 0, 1, 0, -0.76116276, 0, 0.6485609, 31.080423, 0.27265787, 1.7503679)
 
 [node name="Drummer" type="Camera3D" parent="sceneDrummerDistract" unique_id=2019047735]
-transform = Transform3D(-0.5735783, -0.20509878, 0.79305893, 0, 0.9681477, 0.25037977, -0.81915075, 0.1436124, -0.5553085, 30.654617, 2.0804024, 2.2607994)
+transform = Transform3D(-0.8290365, 0.09229355, -0.55152553, 0, 0.9862856, 0.1650473, 0.55919456, 0.13683024, -0.81766677, 29.0102, 1.9295616, 2.3495483)
+fov = 66.5
 
 [node name="Room" type="Camera3D" parent="sceneDrummerDistract" unique_id=590801405]
-transform = Transform3D(0.0043619294, 0.13052459, -0.9914354, 0, 0.9914449, 0.13052584, 0.99999046, -0.0005693445, 0.0043246127, 28.68779, 2.384174, 2.8123453)
+transform = Transform3D(0.0043619294, 0.13052459, -0.9914354, 0, 0.9914449, 0.13052584, 0.99999046, -0.0005693445, 0.0043246127, 28.68779, 2.3841743, 2.8123453)
 
 [node name="backRoomDoor" type="MeshInstance3D" parent="sceneDrummerDistract" unique_id=1576670139]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.816692, 1.9900889, 2.7480133)
@@ -4947,3 +5014,85 @@ surface_material_override/0 = ExtResource("4_tho0w")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="sceneDrummerDistract/backRoomDoor/StaticBody3D" unique_id=1837676085]
 shape = SubResource("ConcavePolygonShape3D_820mh")
+
+[node name="FakeMeetupSign" type="MeshInstance3D" parent="sceneDrummerDistract" unique_id=2138527905]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.669777, 2.0907521, 4.2029886)
+visible = false
+mesh = SubResource("BoxMesh_jd5n0")
+
+[node name="Label3D" type="Label3D" parent="sceneDrummerDistract/FakeMeetupSign" unique_id=205411756]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.026100159, 0, 0)
+text = "Community Meetup!
+< Right in here I promise"
+font_size = 18
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="sceneDrummerDistract" unique_id=2041793777]
+libraries/ = SubResource("AnimationLibrary_v2fqc")
+
+[node name="Camera3D_OpenOne" type="Camera3D" parent="." unique_id=1998468124]
+transform = Transform3D(0.20790885, 0.2818981, -0.9366469, 0, 0.9575715, 0.2881957, 0.9781482, -0.059918437, 0.19908759, 11.725603, 2.9151049, -48.830505)
+fov = 46.5
+
+[node name="Camera3D_OpenTwo" type="Camera3D" parent="." unique_id=192334245]
+transform = Transform3D(-0.94693, 0.030808622, -0.31996006, 0, 0.9953962, 0.09584567, 0.3214399, 0.090759136, -0.9425705, 21.958551, 2.6083467, -61.11563)
+fov = 46.5
+
+[node name="logoPoints" type="Node3D" parent="." unique_id=877344681]
+
+[node name="minnMaxLogo_Bouncer" parent="logoPoints" unique_id=1930660944 instance=ExtResource("26_pvu6s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.452263, 1.6327314, -30.992058)
+prompt = "talk to bouncer"
+
+[node name="minnMaxLogo_RampAnnounce" parent="logoPoints" unique_id=1903920026 instance=ExtResource("26_pvu6s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.793142, 1.6327314, -33.71552)
+prompt = "listen for clues"
+startHidden = true
+
+[node name="minnMaxLogo_TouchRamps" parent="logoPoints" unique_id=461043178 instance=ExtResource("26_pvu6s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.679066, 1.6327314, -33.71552)
+prompt = "touch the ramps"
+startHidden = true
+
+[node name="minnMaxLogo_Window" parent="logoPoints" unique_id=59222820 instance=ExtResource("26_pvu6s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.0522056, 6.774565, -9.188795)
+prompt = "break the window"
+startHidden = true
+
+[node name="Area3D_ClubHallway" type="Area3D" parent="logoPoints" unique_id=793745417]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.6229877, 0, -16.348328)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("27_wimsx")
+dialogFile = "res://dialog/script/9_club/41_hallway_to_club.json"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="logoPoints/Area3D_ClubHallway" unique_id=513916305]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0856781, 1.7495117, 0)
+shape = SubResource("BoxShape3D_jd5n0")
+
+[node name="minnMaxLogo_BarLady" parent="logoPoints" unique_id=354108091 instance=ExtResource("26_pvu6s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.339422, 1.6003125, -22.740679)
+prompt = "talk to contact in red"
+dialogFile = "res://dialog/script/9_club/42_girl_at_bar.json"
+
+[node name="minnMaxLogo_TCBBar" parent="logoPoints" unique_id=790892775 instance=ExtResource("26_pvu6s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.822857, 1.6003125, -23.530758)
+prompt = "talk to contact in red"
+dialogFile = "res://dialog/script/9_club/42_girl_at_bar.json"
+startHidden = true
+
+[node name="minnMaxLogo_Interview" parent="logoPoints" unique_id=214002430 instance=ExtResource("26_pvu6s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.046932, 1.6003125, -10.864874)
+prompt = "watch interview"
+
+[node name="minnMaxLogo_HostMeetup" parent="logoPoints" unique_id=744209755 instance=ExtResource("26_pvu6s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.496132, 1.9951714, 4.422349)
+prompt = "post fake meetup sign"
+dialogFile = "res://dialog/script/9_club/47_community_meetup_sign.json"
+startHidden = true
+
+[node name="minnMaxLogo_CenterDanceFloor" parent="logoPoints" unique_id=678720404 instance=ExtResource("26_pvu6s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.475012, 1.890154, -13.178336)
+prompt = "watch the show"
+startHidden = true
+
+[connection signal="body_entered" from="logoPoints/Area3D_ClubHallway" to="logoPoints/Area3D_ClubHallway" method="_on_body_entered"]

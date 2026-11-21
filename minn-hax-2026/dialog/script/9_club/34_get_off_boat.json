@@ -8,5 +8,13 @@
 				"text": "They’ve got a tough guy at the entrance. Getting in could be a challenge. You should think up an excuse."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "returnPlayerCamera"
+	},
+	{
+		"name": "Command",
+		"command": "unfreezePlayer"
 	}
 ]
