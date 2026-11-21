@@ -163,6 +163,10 @@ func _process(delta: float) -> void:
 		if not gc.dialogInProgress and currentEvent:
 			currentEvent.startEvent()
 
+func showBoard(value: bool):
+	skateBoardBack.set_visible(value)
+	hideBoard = not value
+
 func setMovement(walk: bool):
 	useWalkMovement = walk
 

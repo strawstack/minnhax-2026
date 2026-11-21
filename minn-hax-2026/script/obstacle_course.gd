@@ -2,13 +2,16 @@ extends Node3D
 
 var gc
 
+var commentOnce = false
+
 func _ready() -> void:
 	gc = get_tree().current_scene
 	gc.sceneCommandLookup = {
 		"playerCanShoot": playerCanShoot,
 		"hideGunModel": hideGunModel,
 		"playerCanSkate": playerCanSkate,
-		"hideSkateBoardModel": hideSkateBoardModel
+		"hideSkateBoardModel": hideSkateBoardModel,
+		"hideFlag": hideFlag
 	}
 	startScene()
 
@@ -30,5 +33,10 @@ func playerCanSkate():
 func hideSkateBoardModel():
 	$SkateBoardBack.set_visible(false)
 
+func hideFlag():
+	$red_flag.set_visible(false)
+
 func _process(delta: float) -> void:
-	pass
+	if not $Player.noSkating and Input.is_action_just_pressed("f_key") and not commentOnce:
+		commentOnce = true
+		gc.playDialogFile("res://dialog/script/6_obstacle_course/17_c_obstacle_course.json")

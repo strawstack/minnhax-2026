@@ -1,5 +1,21 @@
 [
 	{
+		"name": "Command",
+		"command": "freezePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "hidePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "showFortyMTalk"
+	},
+	{
+		"name": "Command",
+		"command": "camera3D_M"
+	},
+	{
 		"name": "M",
 		"avatar": "",
 		"lines": [
@@ -8,6 +24,10 @@
 				"text": "Welcome to MI6 Agent Forty-JeffM."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "camera3D_Agent"
 	},
 	{
 		"name": "AgentForty",
@@ -20,6 +40,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "TODO m"
+	},
+	{
 		"name": "M",
 		"avatar": "",
 		"lines": [
@@ -28,6 +52,10 @@
 				"text": "The agency has a new quantum super computer. It came up with the logo. Two i’s for Minnesota. We’re based there now."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "TODO agent"
 	},
 	{
 		"name": "AgentForty",
@@ -40,6 +68,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "TODO green"
+	},
+	{
 		"name": "GreenDay",
 		"avatar": "",
 		"lines": [
@@ -48,6 +80,10 @@
 				"text": "You’re late."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "TODO agent"
 	},
 	{
 		"name": "AgentForty",
@@ -60,6 +96,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "TODO green"
+	},
+	{
 		"name": "GreenDay",
 		"avatar": "",
 		"lines": [
@@ -70,6 +110,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "TODO agent"
+	},
+	{
 		"name": "AgentForty",
 		"avatar": "",
 		"lines": [
@@ -78,6 +122,10 @@
 				"text": "Manipulated? That sounds more like straightforward terrorism?"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "TODO green"
 	},
 	{
 		"name": "GreenDay",
@@ -110,6 +158,14 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "TODO m sideways glance"
+	},
+	{
+		"name": "Command",
+		"command": "TODO m close"
+	},
+	{
 		"name": "M",
 		"avatar": "",
 		"lines": [
@@ -118,6 +174,10 @@
 				"text": "..."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "TODO green"
 	},
 	{
 		"name": "GreenDay",
@@ -130,6 +190,14 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "TODO m eye roll"
+	},
+	{
+		"name": "Command",
+		"command": "TODO agent (m in back)"
+	},
+	{
 		"name": "M",
 		"avatar": "",
 		"lines": [
@@ -138,6 +206,10 @@
 				"text": "..."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "TODO green"
 	},
 	{
 		"name": "GreenDay",
@@ -150,6 +222,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "TODO agent"
+	},
+	{
 		"name": "AgentForty",
 		"avatar": "",
 		"lines": [
@@ -158,6 +234,10 @@
 				"text": "So, 009 told you to jump off a bridge?"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "TODO green"
 	},
 	{
 		"name": "GreenDay",
@@ -170,6 +250,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "TODO agent"
+	},
+	{
 		"name": "AgentForty",
 		"avatar": "",
 		"lines": [
@@ -178,5 +262,21 @@
 				"text": "Right? I should get going."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "hideFortyMTalk"
+	},
+	{
+		"name": "Command",
+		"command": "showPlayer"
+	},
+	{
+		"name": "Command",
+		"command": "returnPlayerCamera"
+	},
+	{
+		"name": "Command",
+		"command": "unfreezePlayer"
 	}
 ]

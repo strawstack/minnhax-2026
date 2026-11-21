@@ -1,5 +1,9 @@
 [
 	{
+		"name": "Command",
+		"command": "collectSkateSecretTape"
+	},
+	{
 		"name": "MoneyPony",
 		"avatar": "",
 		"lines": [
@@ -48,16 +52,3 @@
 		]
 	}
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-

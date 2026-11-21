@@ -8,5 +8,9 @@
 				"text": "Hit three targets."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "returnPlayerControl"
 	}
 ]

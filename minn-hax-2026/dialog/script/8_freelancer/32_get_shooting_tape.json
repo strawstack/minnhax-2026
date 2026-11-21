@@ -1,5 +1,9 @@
 [
 	{
+		"name": "Command",
+		"command": "collectShootingSecretTape"
+	},
+	{
 		"name": "MoneyPony",
 		"avatar": "",
 		"lines": [
@@ -42,5 +46,13 @@
 				"text": "Head to the dock. We can take LeBooBoo’s boat."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "openShootingExitDoor"
+	},
+	{
+		"name": "Command",
+		"command": "revealLeaveOnBoat"
 	}
 ]

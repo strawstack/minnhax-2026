@@ -1056,12 +1056,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.232452, 0, 3.6212873)
 [node name="minnMaxLogo_CD" parent="." unique_id=1930660944 instance=ExtResource("5_pnelr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5663285, 2.3093088, 3.4368978)
 prompt = "talk to CroissantDuh"
-dialogFile = "res://dialog/script/obstacleCourse/talk_cd.json"
+dialogFile = "res://dialog/script/6_obstacle_course/17_a_obstacle_course.json"
 
 [node name="minnMaxLogo_TakeGun" parent="." unique_id=966122424 instance=ExtResource("5_pnelr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.86817694, 2.3826091, -10.235828)
 prompt = "pick up gun"
-dialogFile = "res://dialog/script/obstacleCourse/pick_gun.json"
+dialogFile = "res://dialog/script/6_obstacle_course/17_e_take_gun.json"
 
 [node name="minnMaxLogo_MonRoll" parent="." unique_id=593332272 instance=ExtResource("5_pnelr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.082449, 1.8236125, -31.665956)

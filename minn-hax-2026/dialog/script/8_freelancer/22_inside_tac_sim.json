@@ -12,5 +12,13 @@
 				"text": "Intel says LeBooBoo moved in only one month ago, so the upper floors are pretty empty. Our data shows a large room under the main house. Find a way to get downstairs."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "returnPlayerCamera"
+	},
+	{
+		"name": "Command",
+		"command": "unfreezePlayer"
 	}
 ]

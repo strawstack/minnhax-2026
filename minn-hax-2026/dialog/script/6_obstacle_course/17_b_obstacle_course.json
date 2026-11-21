@@ -1,5 +1,13 @@
 [
 	{
+		"name": "Command",
+		"command": "hideSkateBoardModel"
+	},
+	{
+		"name": "Command",
+		"command": "playerCanSkate"
+	},
+	{
 		"name": "MonRoll",
 		"avatar": "",
 		"lines": [

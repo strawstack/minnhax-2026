@@ -1,5 +1,17 @@
 [
 	{
+		"name": "Command",
+		"command": "pickUpBoard"
+	},
+	{
+		"name": "Command",
+		"command": "playerCanSkate"
+	},
+	{
+		"name": "Command",
+		"command": "openParkDoor"
+	},
+	{
 		"name": "MoneyPony",
 		"avatar": "",
 		"lines": [

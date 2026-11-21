@@ -162,5 +162,9 @@
 				"text": "Impressive! Uh, I suppose..."
 			}
 		]
-	}
+	},
+	{
+		"name": "Command",
+		"command": "revealBriefing"
+	},
 ]

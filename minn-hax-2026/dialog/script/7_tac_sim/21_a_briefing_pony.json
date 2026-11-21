@@ -88,5 +88,9 @@
 				"text": "In that case, I’ll be on my best behaviour."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "removeBarrier"
 	}
 ]

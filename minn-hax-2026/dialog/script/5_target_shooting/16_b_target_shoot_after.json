@@ -18,5 +18,9 @@
 				"text": "Don’t get ahead of yourself Forty. This training isn’t all cream cheese icing and golden brown flaky pastry."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "loadObstacleCourse"
 	}
 ]

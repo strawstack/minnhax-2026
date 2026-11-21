@@ -1,0 +1,10 @@
+[
+	{
+		"name": "Command",
+		"command": "hideGunModel"
+	},
+	{
+		"name": "Command",
+		"command": "playerCanShoot"
+	}
+]

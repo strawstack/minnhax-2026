@@ -16,7 +16,7 @@ func _ready() -> void:
 	startScene()
 
 func startScene():
-	gc.playDialogFile("res://dialog/script/target_training/intro.json")
+	gc.playDialogFile("res://dialog/script/5_target_shooting/16_a_target_shoot_before.json")
 
 func targetHit():
 	targetCount += 1
@@ -39,4 +39,4 @@ func _on_timer_timeout() -> void:
 	$Player.set_visible(false)
 	$fortyIdleNoAnim.set_visible(true)
 	$Camera3D_MonRoll.set_current(true)
-	gc.playDialogFile("res://dialog/script/target_training/three_hit.json")
+	gc.playDialogFile("res://dialog/script/5_target_shooting/16_b_target_shoot_after.json")
