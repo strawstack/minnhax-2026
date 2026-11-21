@@ -8,7 +8,7 @@ const DEBUG = false
 const scenes = {
 	"logo": preload("res://scene/logo.tscn"),
 	"splash": preload("res://scene/splash.tscn"),
-	"mainMenu": preload("res://scene/main_menu.tscn"),
+	"mainMenu2": preload("res://scene/main_menu_2.tscn"),
 	"apartment": preload("res://scene/apartment.tscn"),
 	"underwater": preload("res://scene/underwater.tscn"),
 	"helicopter": preload("res://scene/helicopter.tscn"),
@@ -115,7 +115,7 @@ func logoSceneEnds():
 	await fadeIn()
 	await get_tree().create_timer(4.0).timeout
 	await fadeOut()
-	loadScene("mainMenu") # Calls "mainMenuStartPress" on completion
+	loadScene("mainMenu2") # Calls "mainMenuStartPress" on completion
 	await fadeIn()
 
 func mainMenuStartPress():
