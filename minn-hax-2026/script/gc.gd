@@ -219,3 +219,9 @@ func loadIsland():
 	await fadeOut()
 	mouthLookup.clear()
 	loadScene("island")
+
+func loadCredits():
+	playerCanMove = false
+	await fadeOut()
+	mouthLookup.clear()
+	loadScene("credits")

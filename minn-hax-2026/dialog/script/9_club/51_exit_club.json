@@ -18,5 +18,9 @@
 				"text": "I guess my cowbell performance wasn’t so bad afterall. Maybe I’ll try my hand at Beat Weaver next."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "loadCredits"
 	}
 ]

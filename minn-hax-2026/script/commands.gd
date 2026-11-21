@@ -25,7 +25,8 @@ func _ready() -> void:
 		"loadObstacleCourse": loadObstacleCourse,
 		"loadTacSim": loadTacSim,
 		"loadFreelancer": loadFreelancer,
-		"loadIsland": loadIsland
+		"loadIsland": loadIsland,
+		"loadCredits": loadCredits
 	}
 
 func showCrossHairs():
@@ -86,3 +87,6 @@ func loadFreelancer():
 
 func loadIsland():
 	gc.loadIsland()
+
+func loadCredits():
+	gc.loadCredits()

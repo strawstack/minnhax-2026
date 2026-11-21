@@ -55,7 +55,7 @@ func revealBriefing():
 	$minnMaxLogo_Talk_MoneyPony.reveal()
 
 func removeBarrier():
-	$tacBarrier/StaticBody3D_tacBarrier.set_collision_mask_value(1, false)
+	$tacBarrier/StaticBody3D_tacBarrier.set_collision_layer_value(5, false)
 	$tacBarrier.set_visible(false)
 
 func tacSimStartSound():

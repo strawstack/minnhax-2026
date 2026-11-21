@@ -643,7 +643,8 @@ mesh = SubResource("BoxMesh_jd5n0")
 surface_material_override/0 = ExtResource("19_56opd")
 
 [node name="StaticBody3D_tacBarrier" type="StaticBody3D" parent="tacBarrier" unique_id=489792892]
-collision_layer = 0
+collision_layer = 16
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="tacBarrier/StaticBody3D_tacBarrier" unique_id=195059065]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12243652, 2.1060486, 0)

@@ -13,6 +13,10 @@
 	},
 	{
 		"name": "Command",
+		"command": "showLeBooBooAtMic"
+	},
+	{
+		"name": "Command",
 		"command": "cameraStageCrowd"
 	},
 	{
@@ -102,5 +106,159 @@
 				"text": "(music plays)"
 			}
 		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "48_07_c",
+				"text": "Okay, LeBooBoo is up next. Stay close."
+			}
+		]
+	},
+	{
+		"name": "Command",
+		"command": "fadeOut",
+		"await": true
+	},
+	{
+		"name": "Command",
+		"command": "showLeBooBooPerformance"
+	},
+	{
+		"name": "Command",
+		"command": "fadeIn",
+		"await": true
+	},
+	{
+		"name": "LeBooBoo",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "49_01",
+				"text": "Don’t hold back cowbell guy. I’ve got a fever, and the only cure… is more cowbell."
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "49_02",
+				"text": "Hacking in progress…"
+			}
+		]
+	},
+	{
+		"name": "LeBooBoo",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "49_03",
+				"text": "(Play rap)"
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "50_01",
+				"text": "...hacking complete. Nice work Forty."
+			}
+		]
+	},
+	{
+		"name": "Command",
+		"command": "setPostShowTalk"
+	},
+	{
+		"name": "Command",
+		"command": "b"
+	},
+	{
+		"name": "LeBooBoo",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "50_02",
+				"text": "Awesome job cowbell guy. You got a Patreon I could subscribe to or something?"
+			}
+		]
+	},
+	{
+		"name": "Command",
+		"command": "a"
+	},
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "50_03",
+				"text": "I’m afraid I… don’t know how all that works."
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "50_04",
+				"text": "Head to extraction Forty. I’ve hacked ads into LeBooBoo’s premium feed. I think that’s the last we’ll be hearing from him..."
+			}
+		]
+	},
+	{
+		"name": "Command",
+		"command": "b"
+	},
+	{
+		"name": "LeBooBoo",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "50_05",
+				"text": "Hey cowbell, let me set you up on Patreon - wait what, there's an Ad in my premium feed! What do they think this is Disney Plus!?"
+			}
+		]
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "50_06",
+				"text": "Forty! Take the exit back stage. Go now."
+			}
+		]
+	},
+	{
+		"name": "Command",
+		"command": "openStageDoor"
+	},
+	{
+		"name": "Command",
+		"command": "movePlayerToStage"
+	},
+	{
+		"name": "Command",
+		"command": "activateStageWalls"
+	},
+	{
+		"name": "Command",
+		"command": "showPlayer"
+	},
+	{
+		"name": "Command",
+		"command": "returnPlayerCamera"
+	},
+	{
+		"name": "Command",
+		"command": "unfreezePlayer"
 	}
 ]
