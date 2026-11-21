@@ -16,5 +16,9 @@
 				"text": "…and, before you head down there, I got real carried away with Blender for this jam, and I accidentally modeled the entire MinnMax studio as seen in the Minnesota travelogue. The rest of the game is normal though I promise. Relatively normal."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "openStudioStairsDoor"
 	}
 ]

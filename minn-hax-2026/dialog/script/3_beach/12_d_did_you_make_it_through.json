@@ -18,5 +18,9 @@
 				"text": "Close one, but I’m… safe and sound. (JB music da-da da da-da and flash the MinnHax theme)"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "removeStaticBody3D_ShimmyBlock"
 	}
 ]

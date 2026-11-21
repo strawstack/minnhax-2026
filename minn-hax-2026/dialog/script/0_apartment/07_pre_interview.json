@@ -16,5 +16,9 @@
 				"text": "Anyways, Richard and Yu are getting into costume. They’ll be down soon. I’ll have you head back into the control room. I have to make some style updates to the wall, but go ahead and take us live when you’re ready."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "revealControlRoomPrompt"
 	}
 ]

@@ -41,6 +41,6 @@
 	},
 	{
 		"name": "Command",
-		"command": "openPathToShimmy"
+		"command": "removeStaticBody3D_AlrightBlock"
 	}
 ]

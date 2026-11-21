@@ -239,6 +239,14 @@ libraries/ = SubResource("AnimationLibrary_0ha60")
 stream = ExtResource("3_wp4xf")
 bus = &"Voice"
 
+[node name="AudioStreamPlayerBGM" type="AudioStreamPlayer" parent="Audio" unique_id=241268451]
+
+[node name="AudioStreamPlayerSoundEffect" type="AudioStreamPlayer" parent="Audio" unique_id=697635758]
+bus = &"SoundEffect"
+
+[node name="AudioStreamPlayerPlayerSoundEffect" type="AudioStreamPlayer" parent="Audio" unique_id=1774954438]
+bus = &"SoundEffect"
+
 [node name="Scene" type="Node3D" parent="." unique_id=1725802773]
 
 [node name="bulletSmoke" type="Node3D" parent="." unique_id=1073831074]

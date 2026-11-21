@@ -20,5 +20,13 @@
 				"text": "Head down to the basement studio next. We need to film an interview down there if you don’t mind helping out in the control room? The studio door is behind the couch down here under the staircase."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "objectiveStudioDoor"
+	},
+	{
+		"name": "Command",
+		"command": "revealStudioPrompt"
 	}
 ]

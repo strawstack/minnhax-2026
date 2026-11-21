@@ -24,7 +24,8 @@ func _ready() -> void:
 		"interviewCameraC": interviewCameraC,
 		"advanceToMorning": advanceToMorning,
 		"richardTurnHead": richardTurnHead,
-		"cameraLittleBoo": cameraLittleBoo
+		"cameraLittleBoo": cameraLittleBoo,
+		"openStudioStairsDoor": openStudioStairsDoor
 	}
 	hideInterviewCharacters()
 	if gc.DEBUG:
@@ -33,6 +34,11 @@ func _ready() -> void:
 		#advanceToMorning()
 		gc.setPlayerCanMove(true)
 		gc.showCrossHairs(true)
+
+func openStudioStairsDoor():
+	$studio_door_with_handle_and_open/closedDoor.set_visible(false)
+	$studio_door_with_handle_and_open/openDoor.set_visible(true)
+	$studio_door_with_handle_and_open/DoorWall/StaticBody3D.set_collision_layer_value(1, false)
 
 func switchCameraA():
 	$Cameras/cameraA.set_current(true)

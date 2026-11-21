@@ -5,6 +5,7 @@
 [ext_resource type="LightmapGIData" uid="uid://btjmvxdaun7dv" path="res://bake/beach.lmbake" id="2_wlmxs"]
 [ext_resource type="PackedScene" uid="uid://bugwpg2o7w3gw" path="res://scene/player.tscn" id="2_y4fha"]
 [ext_resource type="PackedScene" uid="uid://7w7qj04mf06d" path="res://scene/minn_max_logo.tscn" id="5_k82v5"]
+[ext_resource type="Script" uid="uid://bikli38xhfa12" path="res://script/dialogTriggerZone.gd" id="6_cwgp8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_k82v5"]
 sky_top_color = Color(0.09654612, 0.12467157, 0.16213462, 1)
@@ -18,6 +19,24 @@ sky_material = SubResource("ProceduralSkyMaterial_k82v5")
 background_energy_multiplier = 0.2
 sky = SubResource("Sky_y4fha")
 ambient_light_energy = 0.5
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kbkkx"]
+size = Vector3(1, 13.090012, 23.049988)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jd5n0"]
+size = Vector3(1, 13.581665, 20.139954)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_47ro8"]
+size = Vector3(1, 13.254456, 20.2883)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uhslb"]
+size = Vector3(1, 13.7543335, 19.594727)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uf2ew"]
+size = Vector3(1, 3.4926758, 6.881958)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xfpwl"]
+size = Vector3(1, 3.1317139, 2.251892)
 
 [node name="beach" type="Node3D" unique_id=343819480]
 script = ExtResource("1_dbrq8")
@@ -78,9 +97,75 @@ spot_angle = 19.032436
 [node name="minnMaxLogo_Radio" parent="." unique_id=1930660944 instance=ExtResource("5_k82v5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.156725, 1.7058065, -5.1681)
 prompt = "pick up radio"
-dialogFile = "res://dialog/script/beach/radio.json"
+dialogFile = "res://dialog/script/3_beach/12_b_pick_up_radio.json"
 
 [node name="minnMaxLogo_Tape" parent="." unique_id=1391797102 instance=ExtResource("5_k82v5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.33879, 1.6253122, -1.1463573)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.562473, 2.0560021, -2.9171681)
 prompt = "pick up secret tape"
-dialogFile = "res://dialog/script/beach/secret_tape.json"
+dialogFile = "res://dialog/script/3_beach/13_f_get_tape.json"
+showTape = true
+
+[node name="blocksAndAreas" type="Node3D" parent="." unique_id=338690231]
+
+[node name="StaticBody3D_UntilRadio" type="StaticBody3D" parent="blocksAndAreas" unique_id=933649279]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.325909, 0, -3.8995924)
+collision_layer = 16
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="blocksAndAreas/StaticBody3D_UntilRadio" unique_id=1978573245]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.045006, 6.1392517)
+shape = SubResource("BoxShape3D_kbkkx")
+
+[node name="Area3D_TriggerEnemies" type="Area3D" parent="blocksAndAreas" unique_id=1167080118]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.3346076, 0, -3.8537312)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("6_cwgp8")
+dialogFile = "res://dialog/script/3_beach/12_c_enemy.json"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="blocksAndAreas/Area3D_TriggerEnemies" unique_id=1545901900]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.2908325, 4.7306213)
+shape = SubResource("BoxShape3D_jd5n0")
+
+[node name="StaticBody3D_AlrightBlock" type="StaticBody3D" parent="blocksAndAreas" unique_id=1748740583]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.807838, 0, 0)
+collision_layer = 16
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="blocksAndAreas/StaticBody3D_AlrightBlock" unique_id=1613848821]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.127228, 0.72325134)
+shape = SubResource("BoxShape3D_47ro8")
+
+[node name="Area3D_YouAlright" type="Area3D" parent="blocksAndAreas" unique_id=1592880877]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.394939, 0, -3.9040718)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("6_cwgp8")
+dialogFile = "res://dialog/script/3_beach/12_d_did_you_make_it_through.json"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="blocksAndAreas/Area3D_YouAlright" unique_id=242068093]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.3771667, 4.5405273)
+shape = SubResource("BoxShape3D_uhslb")
+
+[node name="StaticBody3D_ShimmyBlock" type="StaticBody3D" parent="blocksAndAreas" unique_id=1884948489]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.37108, 0, -7.711164)
+collision_layer = 16
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="blocksAndAreas/StaticBody3D_ShimmyBlock" unique_id=23906847]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2463379, 2.940979)
+shape = SubResource("BoxShape3D_uf2ew")
+
+[node name="Area3D_NiceShimmy" type="Area3D" parent="blocksAndAreas" unique_id=580483206]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.407654, 1.3959079, -4.467294)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("6_cwgp8")
+dialogFile = "res://dialog/script/3_beach/12_e_nice_shimmy.json"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="blocksAndAreas/Area3D_NiceShimmy" unique_id=360451543]
+shape = SubResource("BoxShape3D_xfpwl")
+
+[connection signal="body_entered" from="blocksAndAreas/Area3D_TriggerEnemies" to="blocksAndAreas/Area3D_TriggerEnemies" method="_on_body_entered"]
+[connection signal="body_entered" from="blocksAndAreas/Area3D_YouAlright" to="blocksAndAreas/Area3D_YouAlright" method="_on_body_entered"]
+[connection signal="body_entered" from="blocksAndAreas/Area3D_NiceShimmy" to="blocksAndAreas/Area3D_NiceShimmy" method="_on_body_entered"]

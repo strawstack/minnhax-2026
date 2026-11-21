@@ -13,7 +13,7 @@ func _ready() -> void:
 
 func startScene():
 	await gc.fadeIn()
-	gc.playDialogFile("res://dialog/script/helicopter/helicopter.json")
+	gc.playDialogFile("res://dialog/script/2_helicopter/11_helicopter_job.json")
 
 func _process(delta: float) -> void:
 	pass

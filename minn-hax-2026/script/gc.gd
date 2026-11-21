@@ -1,6 +1,6 @@
 extends Node3D
 
-const DEBUG = true
+const DEBUG = false
 
 @export var commands: Node3D
 @export var bulletSmoke: Node3D
@@ -94,12 +94,16 @@ func registerMouth(characterName, mouthNode):
 
 func playVoice(voiceFile: String):
 	if voiceFile != "":
-		var audio = load(
-			"res://dialog/vocal/" + voiceFile + ".mp3"
-		)
-		if audio:
-			audioStreamPlayerVoice.stream = audio
-			audioStreamPlayerVoice.play()
+		var path = "res://dialog/vocal/" + voiceFile + ".mp3"
+		if FileAccess.file_exists(path):
+			var audio = load(
+				"res://dialog/vocal/" + voiceFile + ".mp3"
+			)
+			if audio:
+				audioStreamPlayerVoice.stream = audio
+				audioStreamPlayerVoice.play()
+		else:
+			print("MISSING: " + voiceFile)
 
 func stopVoice():
 	audioStreamPlayerVoice.stop()

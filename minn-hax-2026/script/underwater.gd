@@ -40,7 +40,7 @@ func continueScene(): # Called after 'pre_float_underwater' ends
 		await agentAnimationPlayer.animation_finished
 	await get_tree().create_timer(1.0).timeout
 	if gc.lookWatchUnderwater:
-		gc.playDialogFile("res://dialog/script/1_underwater/11_b_scene_helicopter.json")
+		gc.sceneHelicopter()
 	else:
 		gc.setPlayerCanMove(true)
 		gc.showCrossHairs(true)

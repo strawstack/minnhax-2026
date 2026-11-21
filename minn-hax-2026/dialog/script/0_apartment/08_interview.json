@@ -333,12 +333,12 @@
 	},
 	{
 		"name": "Command",
-		"command": "fadeOut",
-		"await": true
+		"command": "hideDialog"
 	},
 	{
 		"name": "Command",
-		"command": "hideDialog"
+		"command": "fadeOut",
+		"await": true
 	},
 	{
 		"name": "Command",
@@ -352,6 +352,10 @@
 		"name": "Command",
 		"command": "fadeIn",
 		"await": true
+	},
+	{
+		"name": "Command",
+		"command": "showDialog"
 	},
 	{
 		"name": "LeBooBoo",

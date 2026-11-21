@@ -82,5 +82,9 @@
 				"text": "Great! Head down the beach. The item is on the other side of those rocks."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "removeStaticBody3D_UntilRadio"
 	}
 ]
