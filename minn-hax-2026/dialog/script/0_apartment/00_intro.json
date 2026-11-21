@@ -1,5 +1,9 @@
 [
 	{
+		"name": "Command",
+		"command": "camera75fov"
+	},
+	{
 		"name": "Richard",
 		"avatar": "",
 		"lines": [

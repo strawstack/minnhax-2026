@@ -15,6 +15,7 @@
 [ext_resource type="Material" uid="uid://bbbaxswojvgng" path="res://material/shelf_black.tres" id="8_1l16d"]
 [ext_resource type="Material" uid="uid://dn1jj1l7p66n4" path="res://material/wood_window_frame.tres" id="8_qxhoa"]
 [ext_resource type="Material" uid="uid://c5ms3ytoe21hh" path="res://material/hard_floor.tres" id="11_gsk71"]
+[ext_resource type="Material" uid="uid://b8vlsfiq51xyb" path="res://material/flat_black.tres" id="13_0lpmh"]
 [ext_resource type="Material" uid="uid://d0lu2r31738" path="res://material/pillow_color.tres" id="14_0lpmh"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yxx8y"]
@@ -26881,14 +26882,17 @@ mesh = SubResource("ArrayMesh_j61ia")
 [node name="Cube_300" type="MeshInstance3D" parent="." unique_id=1051079646]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.462501, 7.7050004, -7.7000003)
 mesh = SubResource("ArrayMesh_ulx31")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_299" type="MeshInstance3D" parent="Cube_300" unique_id=1525360615]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.037500143, -0.851727, -1.1500001)
 mesh = SubResource("ArrayMesh_fsrvh")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_301" type="MeshInstance3D" parent="Cube_300" unique_id=583361654]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.037500143, -0.855, 1.1500001)
 mesh = SubResource("ArrayMesh_ct8uj")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_308" type="MeshInstance3D" parent="." unique_id=35823290]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9, 7.9399996, -4.605001)

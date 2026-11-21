@@ -6,6 +6,7 @@ extends Node3D
 @export var minnMaxLogoVoiceMail: Node3D
 @export var minnMaxLogoControlRoom2: Node3D
 @export var richardHeadAnimation: AnimationPlayer
+@export var playerCamera: Camera3D
 
 var gc
 
@@ -19,6 +20,7 @@ func _ready() -> void:
 		"hideLeBooBooPreInterview": hideLeBooBooPreInterview,
 		"revealControlRoomPrompt": revealControlRoomPrompt,
 		"showInterviewCharacters": showInterviewCharacters,
+		"camera75fov": camera75fov,
 		"interviewCameraA": interviewCameraA,
 		"interviewCameraB": interviewCameraB,
 		"interviewCameraC": interviewCameraC,
@@ -41,6 +43,9 @@ func _ready() -> void:
 func playerFree():
 	gc.setPlayerCanMove(true)
 	gc.showCrossHairs(true)
+
+func camera75fov():
+	playerCamera.set_fov(75.0)
 
 func openStudioStairsDoor():
 	$studio_door_with_handle_and_open/closedDoor.set_visible(false)
@@ -101,7 +106,7 @@ func richardTurnHead():
 	richardHeadAnimation.play("turnHead")
 
 func richardHeadForward():
-	richardHeadAnimation.play("headForward")
+	richardHeadAnimation.play("forwardHead")
 
 func releaseNevi():
 	$neviPoints.neviCanMove = true
