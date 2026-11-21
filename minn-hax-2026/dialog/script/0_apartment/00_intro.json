@@ -6,10 +6,24 @@
 			{
 				"voice": "00_01",
 				"text": "So anyways, it’s not finished yet, but that’s the opening cutscene of the game where Agent Forty-JeffM spends a long time underwater after a helicopter crash."
-			},
+			}
+		]
+	},
+	{
+		"name": "Command",
+		"command": "richardTurnHead"
+	},
+	{
+		"name": "Command",
+		"command": "playerFree"
+	},
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
 			{
 				"voice": "00_02",
-				"text": "You can turn around now with the mouse."
+				"text": "You can look around now with the mouse."
 			},
 			{
 				"voice": "00_03",
@@ -23,6 +37,14 @@
 	},
 	{
 		"name": "Command",
+		"command": "richardHeadForward"
+	},
+	{
+		"name": "Command",
 		"command": "objectiveGoSeeComputer"
+	},
+	{
+		"name": "Command",
+		"command": "releaseNevi"
 	}
 ]

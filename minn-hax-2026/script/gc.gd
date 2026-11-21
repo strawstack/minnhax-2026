@@ -116,7 +116,6 @@ func logoSceneEnds():
 	await get_tree().create_timer(4.0).timeout
 	await fadeOut()
 	loadScene("mainMenu2") # Calls "mainMenuStartPress" on completion
-	await fadeIn()
 
 func mainMenuStartPress():
 	await fadeOut()

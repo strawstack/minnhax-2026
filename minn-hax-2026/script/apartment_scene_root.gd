@@ -24,8 +24,11 @@ func _ready() -> void:
 		"interviewCameraC": interviewCameraC,
 		"advanceToMorning": advanceToMorning,
 		"richardTurnHead": richardTurnHead,
+		"richardHeadForward": richardHeadForward,
 		"cameraLittleBoo": cameraLittleBoo,
-		"openStudioStairsDoor": openStudioStairsDoor
+		"openStudioStairsDoor": openStudioStairsDoor,
+		"playerFree": playerFree,
+		"releaseNevi": releaseNevi
 	}
 	hideInterviewCharacters()
 	if gc.DEBUG:
@@ -34,6 +37,10 @@ func _ready() -> void:
 		#advanceToMorning()
 		gc.setPlayerCanMove(true)
 		gc.showCrossHairs(true)
+
+func playerFree():
+	gc.setPlayerCanMove(true)
+	gc.showCrossHairs(true)
 
 func openStudioStairsDoor():
 	$studio_door_with_handle_and_open/closedDoor.set_visible(false)
@@ -92,6 +99,12 @@ func advanceToMorning():
 
 func richardTurnHead():
 	richardHeadAnimation.play("turnHead")
+
+func richardHeadForward():
+	richardHeadAnimation.play("headForward")
+
+func releaseNevi():
+	$neviPoints.neviCanMove = true
 
 func cameraLittleBoo():
 	$Cameras/CameraLittleBoo.set_current(true)

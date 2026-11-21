@@ -9,6 +9,8 @@ var previousClosePoint = null
 var move_speed = 3
 var rotation_speed = 10
 
+var neviCanMove = false
+
 func _ready() -> void:
 	points = get_children()
 
@@ -16,6 +18,9 @@ func travel(point: Node3D):
 	nevi.set_position(point.get_position())
 
 func _process(delta: float) -> void:
+	if not neviCanMove:
+		return
+
 	var closePoint = null
 	var closeDistance = INF
 	var pos = player.get_position()

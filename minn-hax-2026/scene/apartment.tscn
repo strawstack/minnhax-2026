@@ -2100,9 +2100,9 @@ tracks/0/keys = {
 "values": [Vector3(0, 0, 0)]
 }
 
-[sub_resource type="Animation" id="Animation_8h1pa"]
-resource_name = "turnHead"
-length = 2.0
+[sub_resource type="Animation" id="Animation_k1y1u"]
+resource_name = "headForward"
+length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -2110,15 +2110,32 @@ tracks/0/path = NodePath("Skeleton3D/Bone_002/head:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2),
+"times": PackedFloat32Array(0, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0.0052359877, -1.7453293, -0.0052359877)]
+"values": [Vector3(0, -1.7453293, 0), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_8h1pa"]
+resource_name = "turnHead"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Skeleton3D/Bone_002/head:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -1.7453293, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_k1y1u"]
 _data = {
 &"RESET": SubResource("Animation_qd0nk"),
+&"headForward": SubResource("Animation_k1y1u"),
 &"turnHead": SubResource("Animation_8h1pa")
 }
 
@@ -2625,7 +2642,7 @@ render_target_update_mode = 4
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.6892605, 0.045001507, 0.029174447)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=857753503 node_paths=PackedStringArray("rayCast3D")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.67, 7, -7.712)
+transform = Transform3D(-0.6362189, 0, 0.77150846, 0, 1, 0, -0.77150846, 0, -0.6362189, 2.5182776, 7, -10.595583)
 collision_layer = 2
 script = ExtResource("1_sedwy")
 rayCast3D = NodePath("Node3D/Camera3D/RayCast3D")

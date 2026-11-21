@@ -42,8 +42,6 @@ func continueScene(): # Called after 'pre_float_underwater' ends
 	if gc.lookWatchUnderwater:
 		gc.sceneHelicopter()
 	else:
-		gc.setPlayerCanMove(true)
-		gc.showCrossHairs(true)
 		gc.playDialogFile("res://dialog/script/0_apartment/00_intro.json")
 
 func _process(_delta: float) -> void:
