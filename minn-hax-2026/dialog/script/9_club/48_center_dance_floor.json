@@ -74,50 +74,6 @@
 		]
 	},
 	{
-		"name": "LeBooBoo",
-		"avatar": "",
-		"lines": [
-			{
-				"voice": "48_07_a",
-				"text": "First, let’s get things popping with an opening performance. Welcome to the stage: MC CrabPalace. Take it away..."
-			}
-		]
-	},
-	{
-		"name": "Command",
-		"command": "fadeOut",
-		"await": true
-	},
-	{
-		"name": "Command",
-		"command": "showCrabPerformance"
-	},
-	{
-		"name": "Command",
-		"command": "fadeIn",
-		"await": true
-	},
-	{
-		"name": "MC CrabPalace",
-		"avatar": "",
-		"lines": [
-			{
-				"voice": "48_07_b",
-				"text": "(music plays)"
-			}
-		]
-	},
-	{
-		"name": "MoneyPony",
-		"avatar": "",
-		"lines": [
-			{
-				"voice": "48_07_c",
-				"text": "Okay, LeBooBoo is up next. Stay close."
-			}
-		]
-	},
-	{
 		"name": "Command",
 		"command": "fadeOut",
 		"await": true

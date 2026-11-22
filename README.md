@@ -4,6 +4,11 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 # Todo
 
+- Finish up Richard draft audio
+  - Export clips, review story, record patches
+  - Edit diana's file
+  - Name and export clips
+
 - Wire up dialog files to logos
 
 - Nevi should not be able to move until the initial apartment dialog is done
