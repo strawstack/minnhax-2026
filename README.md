@@ -4,17 +4,22 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 # Todo
 
-- Finish up Richard draft audio
-  - Export clips, review story, record patches
-  - Edit diana's file
-  - Name and export clips
-
-- Wire up dialog files to logos
-
-- Nevi should not be able to move until the initial apartment dialog is done
-- Cut and add all audio files
 - Make it so a rap can't be skipped and shows only a "tape playing" icon during play
-- Add 3D letters to the title screen texture the walls and couch
+
+- Lable on wall nead studio door saying
+  - "Controls: Spacebar to jump, WASD to move, mouse to look."
+
+- Nevi should meow when he moves (maybe not could be annoying?)
+
+- Add Avatars to dialog box for each character
+
+- Radio dissappear from rock on beach once taken
+  - Add emmission to radio
+  - Add radio sound effect
+
+- Beach ground and shimmy wall are labeled as invisible:
+  - The camera can go into them they should be labeled as "wall" to help camera physics
+
 - Find background music
 - Add background music
 - Add sound effects
@@ -24,4 +29,23 @@ Godot project files for the MinnHax 2026 Game Jam.
 - Physics boundaries in beach level to ensure radio, and dialog before squeeze
 - Studio stairs door. Make is colored to be more apparent
 
+- Wire up objectives to make sure they show hide and reflect the correct info
+
+- Remove from in game text "It's all in good fun though, and..." this is not in audio file by choice
+
+- Show Nevi on the desk at the correct time
+
 # Done
+
+- Nevi should not be able to move until the initial apartment dialog is done
+
+- Wire up dialog files to logos
+
+- Finish up Richard draft audio
+  - Export clips, review story, record patches
+  - Edit diana's file
+  - Name and export clips
+
+# Cancel
+
+- Add 3D letters to the title screen texture the walls and couch

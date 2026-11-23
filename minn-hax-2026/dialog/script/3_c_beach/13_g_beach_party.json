@@ -1,0 +1,21 @@
+[
+	{
+		"name": "AgentForty",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_23",
+				"text": "My vision went dark, and I had a wild dream. I was on the same beach as before, but there were ghosts dancing in a circle as CrabPalace performed a chart topping rap."
+			}
+		]
+	},
+	{
+		"name": "CrabPalace",
+		"avatar": "",
+		"music": "example_music_long"
+	},
+	{
+		"name": "Command",
+		"command": "loadGreenDayTraining"
+	}
+]

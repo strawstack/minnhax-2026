@@ -9,6 +9,7 @@
 [ext_resource type="Material" uid="uid://d3ekinuddh8ho" path="res://material/blue_glow.tres" id="7_635xt"]
 [ext_resource type="Material" uid="uid://cskvraawj4e4l" path="res://material/dark_tac_sim.tres" id="8_8ogy2"]
 [ext_resource type="Material" uid="uid://dstbnbfd8utx7" path="res://material/bin_dark_blue.tres" id="9_cybfe"]
+[ext_resource type="PackedScene" uid="uid://bg5ixunmm5oq2" path="res://scene/mouth.tscn" id="10_jlg20"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ljvjs"]
 
@@ -2268,16 +2269,20 @@ transform = Transform3D(9.037037e-09, -0.15161632, 0, 0.15161632, 9.037037e-09, 
 mesh = SubResource("ArrayMesh_w0ml4")
 surface_material_override/0 = ExtResource("8_8ogy2")
 
-[node name="Sphere_005" type="MeshInstance3D" parent="Armature_001/Skeleton3D/Bone/Cube_006" unique_id=447583848]
+[node name="Head" type="MeshInstance3D" parent="Armature_001/Skeleton3D/Bone/Cube_006" unique_id=447583848]
 transform = Transform3D(0.41114008, 0, 0, 0, 0.41114008, 0, 0, 0, 0.41114008, 0.0075417627, 0.8000002, 0)
 mesh = SubResource("ArrayMesh_oyrey")
 surface_material_override/0 = ExtResource("1_d5hwu")
 
-[node name="Sphere_006" type="MeshInstance3D" parent="Armature_001/Skeleton3D/Bone/Cube_006/Sphere_005" unique_id=1847994484]
+[node name="Mouth" parent="Armature_001/Skeleton3D/Bone/Cube_006/Head" unique_id=1139275092 instance=ExtResource("10_jlg20")]
+transform = Transform3D(-1.0631751e-07, 0, -2.432261, 0, 2.432261, 0, 2.432261, 0, -1.0631751e-07, -0.9170442, -0.5859935, 0)
+characterName = "CrabPalace"
+
+[node name="Sphere_006" type="MeshInstance3D" parent="Armature_001/Skeleton3D/Bone/Cube_006/Head" unique_id=1847994484]
 transform = Transform3D(0.7800502, -0.14368191, 0.15820985, 0.13616051, 0.79560715, 0.05121251, -0.16472751, -0.022757726, 0.7915177, -0.018343331, 0, 0)
 mesh = SubResource("ArrayMesh_3ulgn")
 
-[node name="Sphere_007" type="MeshInstance3D" parent="Armature_001/Skeleton3D/Bone/Cube_006/Sphere_005" unique_id=852928512]
+[node name="Sphere_007" type="MeshInstance3D" parent="Armature_001/Skeleton3D/Bone/Cube_006/Head" unique_id=852928512]
 transform = Transform3D(0.8126461, 0, 0, 0, 0.8126461, 0, 0, 0, 0.8126461, -0.40925846, 0.46088457, 0)
 mesh = SubResource("ArrayMesh_mr3ab")
 surface_material_override/0 = ExtResource("3_gd01i")

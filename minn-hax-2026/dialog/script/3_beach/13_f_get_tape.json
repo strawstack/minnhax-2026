@@ -49,6 +49,6 @@
 	},
 	{
 		"name": "Command",
-		"command": "loadGreenDayTraining"
+		"command": "loadBeachParty"
 	}
 ]

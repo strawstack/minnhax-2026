@@ -3271,6 +3271,10 @@ bone_idx = 2
 transform = Transform3D(1.0000001, -4.656761e-10, -6.2929985e-08, 4.656761e-10, 1.0000001, -3.003771e-10, 6.292999e-08, 3.003771e-10, 1, 0.025000112, 0.16500004, 6.876036e-08)
 mesh = SubResource("ArrayMesh_8bnfs")
 
+[node name="Mouth" parent="richardCouch/Armature_001/Skeleton3D/Bone_002/Cube_039_Head" unique_id=1179190687 instance=ExtResource("6_gsw74")]
+transform = Transform3D(2.2740342e-05, -0.0047732983, -0.9999886, -0.0047731195, 0.99997723, -0.004773354, 0.9999886, 0.0047731753, -4.371134e-08, 0.15225852, -0.12077522, 0)
+characterName = "Richard"
+
 [node name="Cube_018" type="MeshInstance3D" parent="richardCouch/Armature_001/Skeleton3D/Bone_002/Cube_039_Head" unique_id=344823696]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10500012, 0.1100005, -0.18000033)
 mesh = SubResource("ArrayMesh_qdb0j")

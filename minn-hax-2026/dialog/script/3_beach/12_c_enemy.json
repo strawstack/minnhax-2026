@@ -1,11 +1,41 @@
 [
 	{
-		"name": "UnknownEnemy",
+		"name": "UnknownOne",
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "12_10",
-				"text": "(enemy)"
+				"voice": "12_11_b",
+				"text": "Crab top right."
+			}
+		]
+	},
+	{
+		"name": "UnknownTwo",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_11_c",
+				"text": "Crab top right."
+			}
+		]
+	},
+	{
+		"name": "UnknownOne",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_11_d",
+				"text": "Crab top right."
+			}
+		]
+	},
+	{
+		"name": "UnknownTwo",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "12_11_e",
+				"text": "Crab top right."
 			}
 		]
 	},
@@ -14,7 +44,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "12_11",
+				"voice": "12_11_f",
 				"text": "Hostile radio chatter nearby."
 			}
 		]

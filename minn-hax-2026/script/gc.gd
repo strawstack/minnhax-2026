@@ -12,6 +12,7 @@ const scenes = {
 	"apartment": preload("res://scene/apartment.tscn"),
 	"underwater": preload("res://scene/underwater.tscn"),
 	"helicopter": preload("res://scene/helicopter.tscn"),
+	"beachParty": preload("res://scene/beach_party.tscn"),
 	"beach": preload("res://scene/beach.tscn"),
 	"greenDay": preload("res://scene/green_day.tscn"),
 	"trainingShoot": preload("res://scene/training_shoot.tscn"),
@@ -180,6 +181,12 @@ func sceneHelicopter():
 	await fadeOut()
 	mouthLookup.clear()
 	loadScene("helicopter")
+
+func loadBeachParty():
+	playerCanMove = false
+	await fadeOut()
+	mouthLookup.clear()
+	loadScene("beachParty")
 
 func loadBeachScene():
 	playerCanMove = false

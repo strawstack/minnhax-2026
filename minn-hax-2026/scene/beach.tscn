@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dck1tvpqv80il"]
 
-[ext_resource type="Script" uid="uid://b7h1fiev73ecj" path="res://script/beach.gd" id="1_dbrq8"]
+[ext_resource type="Script" uid="uid://do5h7vuxxxqu0" path="res://script/beach.gd" id="1_dbrq8"]
 [ext_resource type="PackedScene" uid="uid://beb663qt8k7wo" path="res://scene/beach_model.tscn" id="2_enn3f"]
 [ext_resource type="LightmapGIData" uid="uid://btjmvxdaun7dv" path="res://bake/beach.lmbake" id="2_wlmxs"]
 [ext_resource type="PackedScene" uid="uid://bugwpg2o7w3gw" path="res://scene/player.tscn" id="2_y4fha"]
