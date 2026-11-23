@@ -4,7 +4,17 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 # Todo
 
-- Make it so a rap can't be skipped and shows only a "tape playing" icon during play
+- NEXT: Wire dialog files througout the game
+  - Make skate stair fix to Freelancer level in Blender
+  - Get to the club, so we can confirm that the ending works
+  - Build out credits scene
+  - Find music tracks for following
+    - Apartment
+    - GreenDay training (and use same for all training)
+    - Background office for TacSim maybe
+    - Freelancer house
+    - Outside the club
+  - Continue with fixes below
 
 - Lable on wall nead studio door saying
   - "Controls: Spacebar to jump, WASD to move, mouse to look."
@@ -38,10 +48,9 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 # Done
 
+- Make it so a rap can't be skipped and shows only a "tape playing" icon during play
 - Nevi should not be able to move until the initial apartment dialog is done
-
 - Wire up dialog files to logos
-
 - Finish up Richard draft audio
   - Export clips, review story, record patches
   - Edit diana's file
