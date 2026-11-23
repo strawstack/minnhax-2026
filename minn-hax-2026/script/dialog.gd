@@ -55,8 +55,15 @@ func setAvatar(message: Dictionary):
 	# print("TODO: Set avatar image")
 	$Label_CharacterName.set_text(message["name"])
 
+func setMusicAvatar(message: Dictionary):
+	# print("TODO: Set avatar image")
+	gc.setMusicDialogCharacterName(message["mouth"])
+
 func setMouth(message):
-	gc.setMouth(message["name"])
+	if message["name"] == "Music":
+		gc.setMouth(message["mouth"])
+	else:
+		gc.setMouth(message["name"])
 
 func toggleEnterPrompt(value):
 	$Label.set_visible(value)
@@ -76,6 +83,9 @@ func playVoice(voiceFile: String):
 # Called to ensure voice audio stops when player advances to next line
 func stopVoice():
 	gc.stopVoice()
+
+func playMusic(track: String):
+	gc.playMusic(track)
 
 # Set number of visible characters in label
 func setCharacterVisible(charIndex: float):
@@ -98,7 +108,13 @@ func _process(delta: float) -> void:
 			dialogOver()
 			return
 		var message = activeDialog[messageIndex]
-		if message["name"] == "Command":
+		if message["name"] == "Music":
+			state = dialogState.AWAIT_IN_PROGRESS
+			setMusicAvatar(message)
+			gc.showMusicUI()
+			playMusic(message["track"])
+			messageIndex += 1
+		elif message["name"] == "Command":
 			gc.triggerCommand(message["command"])
 			if "await" in message:
 				state = dialogState.AWAIT_IN_PROGRESS

@@ -10,9 +10,10 @@
 		]
 	},
 	{
-		"name": "CrabPalace",
+		"name": "Music",
 		"avatar": "",
-		"music": "example_music_long"
+		"mouth": "CrabPalace",
+		"track": "example_music"
 	},
 	{
 		"name": "Command",

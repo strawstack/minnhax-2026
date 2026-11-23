@@ -225,6 +225,31 @@ text = "Objective: Something go downstairs to the door behind the couch"
 autowrap_mode = 2
 autowrap_trim_flags = 64
 
+[node name="CanvasLayer_MusicDialog" type="CanvasLayer" parent="." unique_id=1258124715]
+visible = false
+
+[node name="ColorRect_PlaceholderAvatar" type="ColorRect" parent="CanvasLayer_MusicDialog" unique_id=930829493]
+offset_left = 16.0
+offset_top = 536.0
+offset_right = 176.0
+offset_bottom = 680.0
+
+[node name="ColorRect_NameBackground" type="ColorRect" parent="CanvasLayer_MusicDialog" unique_id=1346033162]
+offset_left = 16.0
+offset_top = 680.0
+offset_right = 176.0
+offset_bottom = 704.0
+color = Color(0.06666667, 0.06666667, 0.06666667, 1)
+
+[node name="Label_CharacterName" type="Label" parent="CanvasLayer_MusicDialog" unique_id=1928670779]
+offset_left = 16.0
+offset_top = 680.0
+offset_right = 176.0
+offset_bottom = 704.0
+text = "Character Name"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="CanvasLayer_Fade" type="CanvasLayer" parent="." unique_id=1994350165]
 
 [node name="fadeRect" type="ColorRect" parent="CanvasLayer_Fade" unique_id=173595337]
@@ -249,6 +274,9 @@ bus = &"SoundEffect"
 [node name="AudioStreamPlayerPlayerSoundEffect" type="AudioStreamPlayer" parent="Audio" unique_id=1774954438]
 bus = &"SoundEffect"
 
+[node name="AudioStreamPlayerMusicTrack" type="AudioStreamPlayer" parent="Audio" unique_id=760994628]
+bus = &"MusicTrack"
+
 [node name="Scene" type="Node3D" parent="." unique_id=1725802773]
 
 [node name="bulletSmoke" type="Node3D" parent="." unique_id=1073831074]
@@ -268,3 +296,5 @@ surface_material_override/0 = SubResource("StandardMaterial3D_k65ib")
 visible = false
 mesh = SubResource("CylinderMesh_wscrc")
 surface_material_override/0 = SubResource("StandardMaterial3D_mswub")
+
+[connection signal="finished" from="Audio/AudioStreamPlayerMusicTrack" to="." method="_on_audio_stream_player_music_track_finished"]

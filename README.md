@@ -17,8 +17,9 @@ Godot project files for the MinnHax 2026 Game Jam.
   - Add emmission to radio
   - Add radio sound effect
 
-- Beach ground and shimmy wall are labeled as invisible:
+- Beach ground and all walls are labeled as invisible:
   - The camera can go into them they should be labeled as "wall" to help camera physics
+  - Applies to all rocks except barrier in the water
 
 - Find background music
 - Add background music

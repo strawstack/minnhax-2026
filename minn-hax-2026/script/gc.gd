@@ -1,6 +1,6 @@
 extends Node3D
 
-const DEBUG = false
+const DEBUG = true
 
 @export var commands: Node3D
 @export var bulletSmoke: Node3D
@@ -22,6 +22,11 @@ const scenes = {
 	"island": preload("res://scene/island.tscn"),
 }
 
+const musicTracks = {
+	"example_music": preload("res://dialog/tracks/example_music.mp3"),
+	"example_music_long": preload("res://dialog/tracks/example_music_long.mp3")
+}
+
 # commandLookup populated by Commands child node 
 var commandLookup = {}
 # If command is not present, checks sceneCommandLookup which is populated by scene
@@ -39,18 +44,23 @@ var mouthLookup = {}
 
 # ref
 var audioStreamPlayerVoice: AudioStreamPlayer
+var audioStreamPlayerMusicTrack: AudioStreamPlayer
 
 func _ready() -> void:
 	animationPlayer = $AnimationPlayer
 	audioStreamPlayerVoice = $Audio/AudioStreamPlayerVoice
+	audioStreamPlayerMusicTrack = $Audio/AudioStreamPlayerMusicTrack
 	hideInteract()
 	showCrossHairs(false)
 	hideObjective()
 	if DEBUG:
-		loadScene("apartment")
+		loadScene("beach")
 		await fadeIn()
 	else:
-		$CanvasLayer_Fade.set_visible(true) # Just to make sure
+		# Show and Hide these just to make sure
+		$CanvasLayer_Fade.set_visible(true) 
+		$CanvasLayer_MusicDialog.set_visible(false)
+
 		loadScene("logo") # Calls "logoSceneEnds" on completion
 		await fadeIn()
 
@@ -105,6 +115,24 @@ func playVoice(voiceFile: String):
 				audioStreamPlayerVoice.play()
 		else:
 			print("MISSING: " + voiceFile)
+
+func playMusic(track):
+	if track in musicTracks:
+		audioStreamPlayerMusicTrack.stream = musicTracks[track]
+		audioStreamPlayerMusicTrack.play() # Calls _on_audio_stream_player_music_track_finished when finished
+	else:
+		print("MISSING music: " + track)
+
+func setMusicDialogCharacterName(name: String):
+	$CanvasLayer_MusicDialog/Label_CharacterName.set_text(name)
+
+func showMusicUI():
+	$CanvasLayer_Dialog.set_visible(false)
+	$CanvasLayer_MusicDialog.set_visible(true)
+
+func hideMusicUI():
+	$CanvasLayer_Dialog.set_visible(true)
+	$CanvasLayer_MusicDialog.set_visible(false)
 
 func stopVoice():
 	audioStreamPlayerVoice.stop()
@@ -235,3 +263,8 @@ func loadCredits():
 	await fadeOut()
 	mouthLookup.clear()
 	loadScene("credits")
+
+# Music Track finishes playing
+func _on_audio_stream_player_music_track_finished() -> void:
+	hideMusicUI()
+	$CanvasLayer_Dialog.endAwait()

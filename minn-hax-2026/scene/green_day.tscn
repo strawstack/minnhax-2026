@@ -2588,7 +2588,7 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3, 
 [node name="minnMaxLogo_TalkGreenDay" parent="." unique_id=1930660944 instance=ExtResource("9_o61kh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2, 83)
 prompt = "talk with Greenday"
-dialogFile = "res://dialog/script/greenday/talkGreenday.json"
+dialogFile = "res://dialog/script/4_greenday_training/13_b_agent_approach_greenday.json"
 
 [node name="minnMaxLogo_EnterJeep" parent="." unique_id=1067575001 instance=ExtResource("9_o61kh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 80)
