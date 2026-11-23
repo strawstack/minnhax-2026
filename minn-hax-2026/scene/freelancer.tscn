@@ -14,6 +14,8 @@
 [ext_resource type="Script" uid="uid://ctxundukva263" path="res://script/freelancer_door_control.gd" id="10_ypev2"]
 
 [sub_resource type="Environment" id="Environment_jd5n0"]
+background_mode = 1
+background_color = Color(0.47171968, 0.62988955, 0.6560386, 1)
 
 [sub_resource type="Animation" id="Animation_nusu5"]
 length = 0.001
@@ -2562,9 +2564,9 @@ prompt = "take boat to island"
 dialogFile = "res://dialog/script/freelancer/leave_on_boat.json"
 
 [node name="minnMaxLogo_mainHouseRoom" parent="." unique_id=1385783119 instance=ExtResource("6_36aw1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.312561, 1.3193958, -11.471247)
-prompt = "take boat to island"
-dialogFile = "res://dialog/script/freelancer/leave_on_boat.json"
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.557165, 1.3193958, -8.0844555)
+prompt = "enter house"
+dialogFile = "res://dialog/script/8_freelancer/26_entering_house.json"
 
 [node name="minnMaxLogo_garage" parent="." unique_id=1713361736 instance=ExtResource("6_36aw1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.719859, 2.1082425, -23.777414)

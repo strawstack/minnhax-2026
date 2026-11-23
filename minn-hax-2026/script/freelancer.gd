@@ -14,12 +14,16 @@ func _ready() -> void:
 		"openShootingExitDoor": openShootingExitDoor,
 		"revealLeaveOnBoat": revealLeaveOnBoat,
 		"playBoatAnimation": playBoatAnimation,
-		"revealShooting": revealShooting
+		"revealShooting": revealShooting,
+		"returnPlayerCamera": returnPlayerCamera
 	}
 	$Camera3D_OpenShot.set_current(true)
 	$BoatCutscene.set_visible(false)
 	await gc.fadeIn()
 	gc.playDialogFile("res://dialog/script/8_freelancer/22_inside_tac_sim.json")
+
+func returnPlayerCamera():
+	$Player.setCameraActive()
 
 func revealShooting():
 	$minnMaxLogo_shootingRange.reveal()

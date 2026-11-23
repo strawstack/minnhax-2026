@@ -54,7 +54,7 @@ func _ready() -> void:
 	showCrossHairs(false)
 	hideObjective()
 	if DEBUG:
-		loadScene("tacSim")
+		loadScene("freelancer")
 		await fadeIn()
 	else:
 		# Show and Hide these just to make sure
