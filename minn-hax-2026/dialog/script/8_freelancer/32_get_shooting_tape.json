@@ -14,6 +14,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "openShootingExitDoor"
+	},
+	{
 		"name": "Music",
 		"avatar": "",
 		"mouth": "SecretTape",
@@ -42,10 +46,6 @@
 				"text": "Head to the dock. We can take LeBooBoo’s boat."
 			}
 		]
-	},
-	{
-		"name": "Command",
-		"command": "openShootingExitDoor"
 	},
 	{
 		"name": "Command",

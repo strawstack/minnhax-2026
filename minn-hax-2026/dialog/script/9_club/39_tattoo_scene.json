@@ -1,5 +1,31 @@
 [
 	{
+		"name": "Command",
+		"command": "fadeOut",
+		"await": true
+	},
+	{
+		"name": "Command",
+		"command": "TODO glass break sound"
+	},
+	{
+		"name": "Command",
+		"command": "freezePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "hidePlayer1"
+	},
+	{
+		"name": "Command",
+		"command": "TODO tattoo camera",
+	},
+	{
+		"name": "Command",
+		"command": "fadeIn",
+		"await": true
+	},
+	{
 		"name": "LeBooBoo",
 		"avatar": "",
 		"lines": [
@@ -28,5 +54,13 @@
 				"text": "Nawww, Ben will be cool with it. He and I are pals. Just make sure to leave some space. I’m getting a PewPew Bang one next week."
 			}
 		]
-	}
+	},
+	{
+		"name": "Command",
+		"command": "switchToPlayer2"
+	},
+	{
+		"name": "Command",
+		"command": "unfreezePlayer"
+	},
 ]

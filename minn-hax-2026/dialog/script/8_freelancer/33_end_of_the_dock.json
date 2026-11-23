@@ -1,5 +1,17 @@
 [
 	{
+		"name": "Command",
+		"command": "hidePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "freezePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "showBoatAndCam"
+	},
+	{
 		"name": "MoneyPony",
 		"avatar": "",
 		"lines": [
@@ -25,11 +37,6 @@
 	},
 	{
 		"name": "Command",
-		"command": "playBoatAnimation",
-		"await": true
-	},
-	{
-		"name": "Command",
-		"command": "loadIsland"
+		"command": "playBoatAnimation"
 	}
 ]

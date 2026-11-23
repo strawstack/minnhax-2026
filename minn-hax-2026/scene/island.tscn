@@ -28,6 +28,7 @@
 [ext_resource type="PackedScene" uid="uid://7w7qj04mf06d" path="res://scene/minn_max_logo.tscn" id="26_pvu6s"]
 [ext_resource type="Script" uid="uid://bikli38xhfa12" path="res://script/dialogTriggerZone.gd" id="27_wimsx"]
 [ext_resource type="Script" uid="uid://cn3gannmgxcio" path="res://script/stage_walls.gd" id="28_ejoph"]
+[ext_resource type="Script" uid="uid://b3l28wud18kxa" path="res://script/get_active_players.gd" id="29_v2fqc"]
 
 [sub_resource type="Environment" id="Environment_jd5n0"]
 
@@ -4217,9 +4218,6 @@ transform = Transform3D(0.900132, -0.2231844, 0.37410042, -0.4356173, -0.4611741
 light_energy = 0.5
 light_bake_mode = 1
 
-[node name="Player" parent="." unique_id=1371449073 instance=ExtResource("6_vmveg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.596327, 0, -53)
-
 [node name="Boat" type="MeshInstance3D" parent="." unique_id=1282307158]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.01037, -2.0729635, -49.519093)
 mesh = SubResource("ArrayMesh_3s0ds")
@@ -5117,10 +5115,6 @@ font_size = 18
 [node name="AnimationPlayer" type="AnimationPlayer" parent="sceneDrummerDistract" unique_id=2041793777]
 libraries/ = SubResource("AnimationLibrary_v2fqc")
 
-[node name="Camera3D_OpenOne" type="Camera3D" parent="." unique_id=1998468124]
-transform = Transform3D(0.20790885, 0.2818981, -0.9366469, 0, 0.9575715, 0.2881957, 0.9781482, -0.059918437, 0.19908759, 11.725603, 2.9151049, -48.830505)
-fov = 46.5
-
 [node name="Camera3D_OpenTwo" type="Camera3D" parent="." unique_id=192334245]
 transform = Transform3D(-0.94693, 0.030808622, -0.31996006, 0, 0.9953962, 0.09584567, 0.3214399, 0.090759136, -0.9425705, 21.958551, 2.6083467, -61.11563)
 fov = 46.5
@@ -5130,20 +5124,24 @@ fov = 46.5
 [node name="minnMaxLogo_Bouncer" parent="logoPoints" unique_id=1930660944 instance=ExtResource("26_pvu6s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.452263, 1.6327314, -30.992058)
 prompt = "talk to bouncer"
+dialogFile = "res://dialog/script/9_club/35_talk_to_bouncer.json"
 
 [node name="minnMaxLogo_RampAnnounce" parent="logoPoints" unique_id=1903920026 instance=ExtResource("26_pvu6s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.793142, 1.6327314, -33.71552)
 prompt = "listen for clues"
+dialogFile = "res://dialog/script/9_club/36_ramp_guy.json"
 startHidden = true
 
 [node name="minnMaxLogo_TouchRamps" parent="logoPoints" unique_id=461043178 instance=ExtResource("26_pvu6s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.679066, 1.6327314, -33.71552)
 prompt = "touch the ramps"
+dialogFile = "res://dialog/script/9_club/37_touch_ramps.json"
 startHidden = true
 
 [node name="minnMaxLogo_Window" parent="logoPoints" unique_id=59222820 instance=ExtResource("26_pvu6s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.0522056, 6.774565, -9.188795)
 prompt = "break the window"
+dialogFile = "res://dialog/script/9_club/38_window_on_roof.json"
 startHidden = true
 
 [node name="Area3D_ClubHallway" type="Area3D" parent="logoPoints" unique_id=793745417]
@@ -5273,5 +5271,17 @@ shape = SubResource("ConcavePolygonShape3D_4n3re")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="backStageDoor" unique_id=1445542403]
 libraries/ = SubResource("AnimationLibrary_0pdau")
+
+[node name="players" type="Node3D" parent="." unique_id=1673503523]
+script = ExtResource("29_v2fqc")
+
+[node name="Player" parent="players" unique_id=1371449073 instance=ExtResource("6_vmveg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.596327, 0, -53)
+
+[node name="Player2" parent="players" unique_id=959866717 instance=ExtResource("6_vmveg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6053314, 0, -9.564337)
+
+[node name="Player3" parent="players" unique_id=1100484398 instance=ExtResource("6_vmveg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.12, 1, -2.371)
 
 [connection signal="body_entered" from="logoPoints/Area3D_ClubHallway" to="logoPoints/Area3D_ClubHallway" method="_on_body_entered"]

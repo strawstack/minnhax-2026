@@ -29,16 +29,30 @@ func _ready() -> void:
 		"setPostShowTalk": setPostShowTalk,
 		"movePlayerToStage": movePlayerToStage,
 		"activateStageWalls": activateStageWalls,
-		"openStageDoor": openStageDoor
+		"openStageDoor": openStageDoor,
+		"switchToPlayer2": switchToPlayer2,
+		"hidePlayer1": hidePlayer1
 	}
-	$Camera3D_OpenOne.set_current(true)
-	await gc.fadeIn()
-	await get_tree().create_timer(2.0).timeout
 	$Camera3D_OpenTwo.set_current(true)
+	await gc.fadeIn()
 	gc.playDialogFile("res://dialog/script/9_club/34_get_off_boat.json")
 
+func hidePlayer1():
+	$players/Player.set_visible(false)
+
+func switchToPlayer2():
+	$players/Player.localFreeze = true
+	$players/Player.set_visible(false)
+	$players/Player2.localFreeze = false
+	$players/Player2.set_visible(true)
+	$players/Player2.setCameraActive()
+
 func movePlayerToStage():
-	$Player.characterBody3D.set_position($stagePlayerTarget.get_position())
+	$players/Player2.localFreeze = true
+	$players/Player2.set_visible(false)
+	$players/Player3.localFreeze = false
+	$players/Player3.set_visible(true)
+	$players/Player3.setCameraActive()
 
 func activateStageWalls():
 	$stageWalls.activateWalls(true)
@@ -98,7 +112,7 @@ func drummerInRoom():
 	$sceneDrummerDistract/DrummerCharacterInRoom.set_visible(true)
 
 func returnPlayerCamera():
-	$Player.setCameraActive()
+	$players.getActive().setCameraActive()
 
 func cameraMeetupRoom():
 	$sceneDrummerDistract/Room.set_current(true)
