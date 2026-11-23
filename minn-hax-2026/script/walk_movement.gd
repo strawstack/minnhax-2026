@@ -31,7 +31,7 @@ func toggleActive(active: bool):
 
 # Called on every physics frame
 func _physics_process(delta):
-	if not gc.playerCanMove:
+	if not gc.playerCanMove or playerRoot.localFreeze:
 		return
 	
 	var direction = Vector3.ZERO

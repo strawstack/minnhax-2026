@@ -1066,12 +1066,13 @@ dialogFile = "res://dialog/script/6_obstacle_course/17_e_take_gun.json"
 [node name="minnMaxLogo_MonRoll" parent="." unique_id=593332272 instance=ExtResource("5_pnelr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.082449, 1.8236125, -31.665956)
 prompt = "learn to skate"
-dialogFile = "res://dialog/script/obstacleCourse/learn_skate.json"
+dialogFile = "res://dialog/script/6_obstacle_course/17_b_obstacle_course.json"
 
 [node name="minnMaxLogo_Flag" parent="." unique_id=438187878 instance=ExtResource("5_pnelr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.605991, 6.722595, -40.9754)
 prompt = "get flag"
-dialogFile = "res://dialog/script/obstacleCourse/get_flag.json"
+dialogFile = "res://dialog/script/6_obstacle_course/17_d_obstacle_course.json"
+startHidden = true
 
 [node name="Targets" type="Node3D" parent="." unique_id=1986140771]
 

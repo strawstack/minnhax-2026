@@ -919,6 +919,7 @@ mesh = SubResource("ArrayMesh_lfuy1")
 
 [node name="Mouth" parent="Armature/Skeleton3D/Bone_001/Sphere" unique_id=1139275092 instance=ExtResource("1_e8ucv")]
 transform = Transform3D(-1.1305961e-07, 0, -2.5865023, 0, 2.5865023, 0, 2.5865023, 0, -1.1305961e-07, -0.99776036, -0.24148226, -0.02454826)
+characterName = "GreenDay"
 
 [node name="Cube_013" type="MeshInstance3D" parent="Armature/Skeleton3D/Bone_001/Sphere" unique_id=2087007762]
 transform = Transform3D(2.5865026, -1.7763568e-15, -1.4210855e-14, 0, 2.5766602, -0.2254286, 1.4210855e-14, 0.2254286, 2.5766602, -0.9052762, 0.27417898, -0.38599172)

@@ -110,6 +110,7 @@ left_mouse={
 3d_physics/layer_3="eventArea"
 3d_physics/layer_4="gunTarget"
 3d_physics/layer_5="wallInvisible"
+3d_physics/layer_6="barrelCollider"
 
 [physics]
 

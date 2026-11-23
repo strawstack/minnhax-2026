@@ -5,7 +5,7 @@
 		"lines": [
 			{
 				"voice": "14_06",
-				"text": "Never heard of GreenDay - ha (astonished). I bet I could find you a song right now. Can I turn on the radio?"
+				"text": "Never heard of GreenDay - ha. I bet I could find you a song right now. Can I turn on the radio?"
 			}
 		]
 	},
@@ -28,5 +28,9 @@
 				"text": "Well in that case… sorry I asked."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "openDoorTwo"
 	}
 ]

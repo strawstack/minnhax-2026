@@ -1,6 +1,7 @@
 extends Node3D
 
 @export var agent: Node3D
+@export var agent2: Node3D
 @export var greenDay: Node3D
 @export var returnBlocker: StaticBody3D
 
@@ -32,7 +33,9 @@ func _ready() -> void:
 		"camera3D_AgentAndOthers": camera3D_AgentAndOthers,
 		"switchCameraExitGreenDay": switchCameraExitGreenDay,
 		"switchCameraExitAgent": switchCameraExitAgent,
-		"exitJeepSceneComplete": exitJeepSceneComplete
+		"exitJeepSceneComplete": exitJeepSceneComplete,
+		"startRolling": startRolling,
+		"stopRolling": stopRolling
 	}
 	doorAnimationPlayer = $greenday_training_model/AnimationPlayer
 	toggleReturnBlocker(false)
@@ -43,7 +46,8 @@ func toggleReturnBlocker(value: bool):
 	returnBlocker.set_collision_layer_value(1, value)
 
 func cameraToPlayer():
-	$Player.setCameraActive()
+	var player = $players.getActive()
+	player.setCameraActive()
 	$agentPlanePose.set_visible(false)
 
 func startScene():
@@ -61,6 +65,12 @@ func driveJeep():
 	$Jeep.showPassengers()
 	$Jeep.canDrive = true
 
+func startRolling():
+	$AnimationPlayerMonRoll.play("roll")
+
+func stopRolling():
+	$AnimationPlayerMonRoll.stop()
+
 func openDoorOne():
 	doorAnimationPlayer.play("DoorOne")
 func openDoorTwo():
@@ -75,38 +85,58 @@ func openDoorFive():
 func _process(delta: float) -> void:
 	pass
 
-func _on_pass_door_one_area_entered(area: Area3D) -> void:
+func doorOne():
 	if not onceDoorOne:
 		onceDoorOne = true
 		gc.playDialogFile("res://dialog/script/4_greenday_training/14_c_prior_door_two.json")
+func _on_pass_door_one_area_entered(area: Area3D) -> void:
+	doorOne()
+func _on_pass_door_one_body_entered(body: Node3D) -> void:
+	doorOne()
 
-func _on_pass_door_two_area_entered(area: Area3D) -> void:
+func doorTwo():
 	if not onceDoorTwo:
 		onceDoorTwo = true
 		gc.playDialogFile("res://dialog/script/4_greenday_training/14_d_prior_door_three.json")
+func _on_pass_door_two_area_entered(area: Area3D) -> void:
+	doorTwo()
+func _on_pass_door_two_body_entered(body: Node3D) -> void:
+	doorTwo()
 
-func _on_pass_door_three_area_entered(area: Area3D) -> void:
+func doorThree():
 	if not onceDoorThree:
-		onceDoorThree = true
-		gc.playDialogFile("res://dialog/script/4_greenday_training/14_e_prior_door_four.json")
+			onceDoorThree = true
+			gc.playDialogFile("res://dialog/script/4_greenday_training/14_e_prior_door_four.json")
+func _on_pass_door_three_area_entered(area: Area3D) -> void:
+	doorThree()
+func _on_pass_door_three_body_entered(body: Node3D) -> void:
+	doorThree()
 
-func _on_pass_door_four_area_entered(area: Area3D) -> void:
+func doorFour():
 	if not onceDoorFour:
 		onceDoorFour = true
 		gc.playDialogFile("res://dialog/script/4_greenday_training/14_f_prior_door_five.json")
+func _on_pass_door_four_area_entered(area: Area3D) -> void:
+	doorFour()
+func _on_pass_door_four_body_entered(body: Node3D) -> void:
+	doorFour()
 
-func _on_pass_door_five_area_entered(area: Area3D) -> void:
+func doorFive():
 	if not onceDoorFive:
 		onceDoorFive = true
 		toggleReturnBlocker(true)
 		gc.playDialogFile("res://dialog/script/4_greenday_training/14_g_exit_jeep.json")
+func _on_pass_door_five_area_entered(area: Area3D) -> void:
+	doorFive()
+func _on_pass_door_five_body_entered(body: Node3D) -> void:
+	doorFive()
 
 func exitJeep():
 	$Jeep.canDrive = false
 	$Jeep.set_visible(false)
 	$JeepParkScene.set_visible(true)
-	agent.set_position($SecondPlayerPosition.get_position())
-	agent.resetCamera()
+	agent.localFreeze = true
+	agent2.resetCamera()
 
 func switchCameraExitGreenDay():
 	$JeepParkScene/Camera3D_GreenDay.set_current(true)
@@ -115,8 +145,10 @@ func switchCameraExitAgent():
 	$JeepParkScene/Camera3D_Agent.set_current(true)
 
 func exitJeepSceneComplete():
-	agent.set_visible(true)
-	agent.setCameraActive()
+	$JeepParkScene.set_visible(false)
+	agent2.set_visible(true)
+	agent2.setCameraActive()
+	agent2.localFreeze = false
 	gc.playerCanMove = true
 
 func hideAndFreezeAgentShowIdlePose():

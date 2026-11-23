@@ -3302,7 +3302,7 @@ mesh = SubResource("ArrayMesh_ja6ri")
 
 [node name="Mouth" parent="agentFortyJeffM/Armature/Skeleton3D/Bone_001/Icosphere_001" unique_id=1139275092 instance=ExtResource("3_hp4bs")]
 transform = Transform3D(-2.2287428, 0, 1.7013309, 0, 2.803894, 0, -1.7013309, 0, -2.2287428, -0.60372007, -0.47676802, 0.7933981)
-characterName = "Agent Forty"
+characterName = "AgentForty"
 
 [node name="Bone_004" type="BoneAttachment3D" parent="agentFortyJeffM/Armature/Skeleton3D" unique_id=1036519953]
 transform = Transform3D(3.1821344e-08, -4.582107e-06, -0.9999999, 4.109322e-08, -0.9999998, 4.582107e-06, -1.0000007, -4.105908e-08, -3.010865e-08, -1.3038516e-08, 0.14454561, 0.24999999)

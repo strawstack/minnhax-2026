@@ -22,14 +22,10 @@
 		]
 	},
 	{
-		"name": "SecretTape",
+		"name": "Music",
 		"avatar": "",
-		"lines": [
-			{
-				"voice": "",
-				"text": "(Music plays NOTE await this dialog so music can't be skipped)"
-			}
-		]
+		"mouth": "SecretTape",
+		"track": "example_music"
 	},
 	{
 		"name": "AgentForty",
@@ -50,5 +46,9 @@
 				"text": "If we find one more tape, Q can use the data to locate LeBooBoo. Try searching the forest next to the mansion."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "revealShooting"
 	}
 ]

@@ -11,9 +11,13 @@ func _ready() -> void:
 		"hideGunModel": hideGunModel,
 		"playerCanSkate": playerCanSkate,
 		"hideSkateBoardModel": hideSkateBoardModel,
-		"hideFlag": hideFlag
+		"hideFlag": hideFlag,
+		"revealFlagLogo": revealFlagLogo
 	}
 	startScene()
+
+func revealFlagLogo():
+	$minnMaxLogo_Flag.reveal()
 
 func startScene():
 	$Player.setCameraActive()

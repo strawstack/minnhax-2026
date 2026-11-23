@@ -64,7 +64,7 @@
 		"avatar": "",
 		"lines": [
 			{
-				"voice": "14_15",
+				"voice": "",
 				"text": "..."
 			}
 		]
@@ -92,25 +92,9 @@
 				"text": "Well GreeDay that is simply a remarkable story."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "openDoorThree"
 	}
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

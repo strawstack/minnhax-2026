@@ -11,8 +11,8 @@ extends Node3D
 @export var cameraRayCast3D: RayCast3D
 @export var bulletStart: Node3D
 @export var agentHead: Node3D
-
 @export var startRotation: int = 0
+@export var localFreeze: bool = false
 
 var useWalkMovement = true
 var inShootingMode = false
@@ -78,7 +78,7 @@ func setCameraActive():
 
 func _input(event):
 	# https://forum.godotengine.org/t/how-to-make-the-camera-moves-by-the-mouse-in-3d/24201/2
-	if event is InputEventMouseMotion and gc.playerCanMove:
+	if event is InputEventMouseMotion and gc.playerCanMove and not localFreeze:
 		# Rotate player left/right
 		cameraY.rotate_y(deg_to_rad(-event.relative.x * mouse_sens))
 
@@ -113,7 +113,7 @@ func _physics_process(delta: float) -> void:
 		else:
 			camera3D.set_position(Vector3.ZERO)
 
-	if not gc.playerCanMove:
+	if not gc.playerCanMove or localFreeze:
 		return
 
 	if inShootingMode:
@@ -150,7 +150,7 @@ func _physics_process(delta: float) -> void:
 			cameraY.set_position(pos)
 
 func _process(delta: float) -> void:
-	if not gc.playerCanMove:
+	if not gc.playerCanMove or localFreeze:
 		return
 
 	if Input.is_action_just_pressed("right_mouse") and shootingAllowed and useWalkMovement:

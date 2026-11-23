@@ -1755,6 +1755,7 @@ surface_material_override/0 = ExtResource("10_5a8tt")
 
 [node name="BoatCutscene" type="MeshInstance3D" parent="." unique_id=718169686]
 transform = Transform3D(0.913801, 0, 0.40616223, 0, 1, 0, -0.40616223, 0, 0.913801, 22.390461, 0.2641344, 44.863586)
+visible = false
 mesh = SubResource("ArrayMesh_sa2a5")
 surface_material_override/0 = ExtResource("8_nusu5")
 
@@ -2252,7 +2253,7 @@ spot_angle = 37.77022
 
 [node name="SpotLight3D8" type="SpotLight3D" parent="light" unique_id=1497729279]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.67158365, 9.694184, -29.96506)
-light_energy = 2.0
+light_energy = 10.0
 light_bake_mode = 1
 spot_range = 11.321197
 spot_angle = 28.33367
@@ -2315,28 +2316,28 @@ spot_angle = 33.246147
 
 [node name="SpotLight3D9" type="SpotLight3D" parent="light" unique_id=1343661101]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -2.0601084, 11.7707205, -24.77249)
-light_energy = 2.0
+light_energy = 10.0
 light_bake_mode = 1
 spot_range = 7.7029357
 spot_angle = 36.864765
 
 [node name="SpotLight3D10" type="SpotLight3D" parent="light" unique_id=2080096309]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 1.9052029, 11.7707205, -24.77249)
-light_energy = 2.0
+light_energy = 10.0
 light_bake_mode = 1
-spot_range = 7.7029357
+spot_range = 8.542616
 spot_angle = 36.864765
 
 [node name="SpotLight3D11" type="SpotLight3D" parent="light" unique_id=358327536]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -10.131306, 11.7707205, -24.77249)
-light_energy = 2.0
+light_energy = 10.0
 light_bake_mode = 1
 spot_range = 7.7029357
 spot_angle = 36.864765
 
 [node name="SpotLight3D12" type="SpotLight3D" parent="light" unique_id=1742169813]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -13.781731, 11.7707205, -19.688738)
-light_energy = 2.0
+light_energy = 10.0
 light_bake_mode = 1
 spot_range = 7.7029357
 spot_angle = 36.864765
@@ -2539,7 +2540,7 @@ spot_angle = 37.77022
 
 [node name="SpotLight3D4" type="SpotLight3D" parent="light" unique_id=44111491]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 10.09892, 11.69812, -22.839788)
-light_energy = 5.0
+light_energy = 10.0
 light_bake_mode = 1
 spot_range = 9.461537
 spot_angle = 38.84024
@@ -2584,11 +2585,13 @@ dialogFile = "res://dialog/script/freelancer/leave_on_boat.json"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.20416, 2.9273467, -36.98367)
 prompt = "take boat to island"
 dialogFile = "res://dialog/script/freelancer/leave_on_boat.json"
+startHidden = true
 
 [node name="minnMaxLogo_shootingRangeButton" parent="." unique_id=1402778759 instance=ExtResource("6_36aw1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.816692, 3.592094, -37.474026)
 prompt = "take boat to island"
 dialogFile = "res://dialog/script/freelancer/shooting_range.json"
+startHidden = true
 
 [node name="minnMaxLogo_shootingTape" parent="." unique_id=1868906982 instance=ExtResource("6_36aw1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.089798, 8.377639, -25.885372)

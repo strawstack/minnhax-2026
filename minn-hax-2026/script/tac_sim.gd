@@ -6,7 +6,7 @@ var gc
 
 func _ready() -> void:
 	gc = get_tree().current_scene
-	gc.gc.sceneCommandLookup = {
+	gc.sceneCommandLookup = {
 		"showPlayer": showPlayer,
 		"hidePlayer": hidePlayer,
 		"showFortyMTalk": showFortyMTalk,
@@ -18,17 +18,31 @@ func _ready() -> void:
 		"returnPlayerCamera": returnPlayerCamera,
 		"revealBriefing": revealBriefing,
 		"removeBarrier": removeBarrier,
-		"tacSimStartSound": tacSimStartSound
+		"tacSimStartSound": tacSimStartSound,
+		"mSidewaysGlance": mSidewaysGlance,
+		"showMEleveator": showMEleveator,
+		"closeElevator": closeElevator
 	}
 	await gc.fadeIn()
 	$tac_sim_model/AnimationPlayer.play("open_elevator")
 	gc.playerCanMove = true
 
+func showMEleveator():
+	$mChars/m_character.set_visible(false)
+	$mChars/m_character_elevator.set_visible(true)
+
+func mSidewaysGlance():
+	$mChars/m_character.mSidewaysGlance()
+
+func closeElevator():
+	await get_tree().create_timer(0.5).timeout
+	$tac_sim_model/AnimationPlayer.play("close_elevator")
+
 func hidePlayer():
-	$player.set_visible(false)
+	$Player.set_visible(false)
 
 func showPlayer():
-	$player.set_visible(true)
+	$Player.set_visible(true)
 
 func showFortyMTalk():
 	$fortyMTalk.set_visible(true)
@@ -49,7 +63,7 @@ func camera3D_Agent():
 	$mTalkCams/Camera3D_Agent.set_current(true)
 
 func returnPlayerCamera():
-	$player.setCameraActive()
+	$Player.setCameraActive()
 
 func revealBriefing():
 	$minnMaxLogo_Talk_MoneyPony.reveal()
@@ -60,7 +74,8 @@ func removeBarrier():
 
 func tacSimStartSound():
 	# TODO play sound, notify dialog on complete
-	pass
+	await get_tree().create_timer(1.0).timeout
+	gc.endAwaitDialog()
 
 func _process(delta: float) -> void:
 	pass

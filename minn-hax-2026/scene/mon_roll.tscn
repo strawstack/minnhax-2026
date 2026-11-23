@@ -417,6 +417,7 @@ shadow_mesh = SubResource("ArrayMesh_wluyg")
 
 [node name="Mouth" parent="." unique_id=1139275092 instance=ExtResource("1_4l1ko")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.18167916, 0.91365373, 0)
+characterName = "MonRoll"
 
 [node name="Cylinder_001" type="MeshInstance3D" parent="." unique_id=1034939263]
 transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 0, 1.1, 0)

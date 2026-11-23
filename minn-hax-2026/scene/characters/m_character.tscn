@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://dyico20xhksp6"]
 
 [ext_resource type="PackedScene" uid="uid://bg5ixunmm5oq2" path="res://scene/mouth.tscn" id="1_i0gco"]
+[ext_resource type="Script" uid="uid://bjv2h5p6dfsgd" path="res://script/m_character.gd" id="1_py3pn"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g7efj"]
 resource_name = "eye brow"
@@ -304,11 +305,121 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ewu3n")
 
+[sub_resource type="Animation" id="Animation_py3pn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Cylinder_002:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.26499996, 1.6, 0.3)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Cylinder_003:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.26499996, 1.6, -0.29999995)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Cube_001:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.255, 1.7900001, -0.3)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Cube:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.255, 1.7900001, 0.3)]
+}
+
+[sub_resource type="Animation" id="Animation_krfcs"]
+resource_name = "mSidewaysGlance"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Cylinder_002:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0.26499996, 1.6, 0.3), Vector3(0.26436684, 1.6023679, 0.23908505)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Cylinder_003:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0.26499996, 1.6, -0.29999995), Vector3(0.26436684, 1.6023679, -0.36091492)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Cube_001:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0.255, 1.7900001, -0.3), Vector3(0.25436687, 1.8615687, -0.30012593)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Cube:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0.255, 1.7900001, 0.3), Vector3(0.25436687, 1.8615687, 0.2998741)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jcafa"]
+_data = {
+&"RESET": SubResource("Animation_py3pn"),
+&"mSidewaysGlance": SubResource("Animation_krfcs")
+}
+
 [node name="m_character" type="Node3D" unique_id=1292694125]
+script = ExtResource("1_py3pn")
 
 [node name="Mouth" parent="." unique_id=1139275092 instance=ExtResource("1_i0gco")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.25138077, 0.60858715, 0)
-characterName = "m"
+characterName = "M"
 
 [node name="Cube" type="MeshInstance3D" parent="." unique_id=905807408]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.255, 1.7900001, 0.3)
@@ -341,3 +452,6 @@ mesh = SubResource("ArrayMesh_pr710")
 [node name="Text" type="MeshInstance3D" parent="." unique_id=841242721]
 transform = Transform3D(0, -1, 0, 0, 0, -1, 1, 0, 0, 0, 1.0298561, 0.0021355152)
 mesh = SubResource("ArrayMesh_vonus")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=114182572]
+libraries/ = SubResource("AnimationLibrary_jcafa")

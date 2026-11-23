@@ -30,7 +30,7 @@ func _integrate_forces(state: PhysicsDirectBodyState3D) -> void:
 		state.linear_velocity = playerRoot.preserveVelocity
 
 func _physics_process(delta: float) -> void:
-	if not gc.playerCanMove or playerRoot.useWalkMovement:
+	if not gc.playerCanMove or playerRoot.useWalkMovement or playerRoot.localFreeze:
 		return
 
 	if Input.is_action_just_pressed("jump"):

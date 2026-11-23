@@ -15,7 +15,7 @@
 		"lines": [
 			{
 				"voice": "14_02",
-				"text": "Well I was late, that’s unexpected (proudly)"
+				"text": "Well I was late, that’s unexpected."
 			}
 		]
 	},
@@ -48,5 +48,9 @@
 				"text": "...Says my father Mr. GreenDay Sr."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "openDoorOne"
 	}
 ]

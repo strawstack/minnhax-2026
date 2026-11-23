@@ -12,8 +12,8 @@ const scenes = {
 	"apartment": preload("res://scene/apartment.tscn"),
 	"underwater": preload("res://scene/underwater.tscn"),
 	"helicopter": preload("res://scene/helicopter.tscn"),
-	"beachParty": preload("res://scene/beach_party.tscn"),
 	"beach": preload("res://scene/beach.tscn"),
+	"beachParty": preload("res://scene/beach_party.tscn"),
 	"greenDay": preload("res://scene/green_day.tscn"),
 	"trainingShoot": preload("res://scene/training_shoot.tscn"),
 	"obstacleCourse": preload("res://scene/obstacle_course.tscn"),
@@ -54,7 +54,7 @@ func _ready() -> void:
 	showCrossHairs(false)
 	hideObjective()
 	if DEBUG:
-		loadScene("beach")
+		loadScene("tacSim")
 		await fadeIn()
 	else:
 		# Show and Hide these just to make sure

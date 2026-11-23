@@ -6937,7 +6937,7 @@ mesh = SubResource("ArrayMesh_v7s6s")
 shape = SubResource("ConcavePolygonShape3D_wumra")
 
 [node name="Cube_080" type="MeshInstance3D" parent="WallInvisible" unique_id=1767669463]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -93.5, 12.5, -123.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.5, 12.5, -123.5)
 mesh = SubResource("ArrayMesh_ykrp1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_080" unique_id=332808835]

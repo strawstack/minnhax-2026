@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://bg5ixunmm5oq2" path="res://scene/mouth.tscn" id="15_robs7"]
 [ext_resource type="Material" uid="uid://b7md4g8kbwi5j" path="res://material/seat_black.tres" id="16_llgq0"]
 [ext_resource type="Material" uid="uid://x41bw7aiyiax" path="res://material/window_clear.tres" id="17_o72e5"]
+[ext_resource type="Script" uid="uid://b3l28wud18kxa" path="res://script/get_active_players.gd" id="19_llgq0"]
 
 [sub_resource type="Environment" id="Environment_jd5n0"]
 fog_light_color = Color(0.5176471, 0.5529412, 0.60784316, 1)
@@ -51,6 +52,44 @@ size = Vector3(1, 20, 23)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_4w3fx"]
 data = PackedVector3Array(-0.5, 10, 11.5, 0.5, 10, 11.5, -0.5, -10, 11.5, 0.5, 10, 11.5, 0.5, -10, 11.5, -0.5, -10, 11.5, 0.5, 10, -11.5, -0.5, 10, -11.5, 0.5, -10, -11.5, -0.5, 10, -11.5, -0.5, -10, -11.5, 0.5, -10, -11.5, 0.5, 10, 11.5, 0.5, 10, -11.5, 0.5, -10, 11.5, 0.5, 10, -11.5, 0.5, -10, -11.5, 0.5, -10, 11.5, -0.5, 10, -11.5, -0.5, 10, 11.5, -0.5, -10, -11.5, -0.5, 10, 11.5, -0.5, -10, 11.5, -0.5, -10, -11.5, 0.5, 10, 11.5, -0.5, 10, 11.5, 0.5, 10, -11.5, -0.5, 10, 11.5, -0.5, 10, -11.5, 0.5, 10, -11.5, -0.5, -10, 11.5, 0.5, -10, 11.5, -0.5, -10, -11.5, 0.5, -10, 11.5, 0.5, -10, -11.5, -0.5, -10, -11.5)
+
+[sub_resource type="Animation" id="Animation_llgq0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MonRollRoll:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_o72e5"]
+resource_name = "roll"
+length = 3.0000000000000004
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MonRollRoll:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(3.1415927, 0, 0), Vector3(6.2831855, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vpxxj"]
+_data = {
+&"RESET": SubResource("Animation_llgq0"),
+&"roll": SubResource("Animation_o72e5")
+}
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c5tj0"]
 resource_name = "yellow_head"
@@ -2432,9 +2471,11 @@ height = 2.1552734
 [sub_resource type="BoxShape3D" id="BoxShape3D_kbkkx"]
 size = Vector3(2.4276123, 1.638794, 3.505127)
 
-[node name="greenDay" type="Node3D" unique_id=454374296 node_paths=PackedStringArray("agent", "returnBlocker")]
+[node name="greenDay" type="Node3D" unique_id=454374296 node_paths=PackedStringArray("agent", "agent2", "greenDay", "returnBlocker")]
 script = ExtResource("1_gtwnb")
-agent = NodePath("Player")
+agent = NodePath("players/Player")
+agent2 = NodePath("players/Player2")
+greenDay = NodePath("greenDay")
 returnBlocker = NodePath("DoorAreas/ReturnBlocker/StaticBody3D")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1557651157]
@@ -2577,11 +2618,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 80)
 [node name="agentPlanePose" parent="." unique_id=1621998410 instance=ExtResource("6_y72cq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -27, 0)
 
-[node name="Player" parent="." unique_id=1371449073 instance=ExtResource("7_ovsro")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 91)
-noSkating = true
-hideBoard = true
-
 [node name="greenDay" parent="." unique_id=381334478 instance=ExtResource("8_robs7")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3, 0, 81)
 
@@ -2593,13 +2629,13 @@ dialogFile = "res://dialog/script/4_greenday_training/13_b_agent_approach_greend
 [node name="minnMaxLogo_EnterJeep" parent="." unique_id=1067575001 instance=ExtResource("9_o61kh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 80)
 prompt = "drive jeep"
-dialogFile = "res://dialog/script/greenday/driveJeep.json"
+dialogFile = "res://dialog/script/4_greenday_training/14_aa_drive_jeep.json"
 startHidden = true
 
 [node name="minnMaxLogo_MeetFellowRecruits" parent="." unique_id=1196909930 instance=ExtResource("9_o61kh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 5, -97)
 prompt = "meet fellow recruits"
-dialogFile = "res://dialog/script/greenday/meet_recruits.json"
+dialogFile = "res://dialog/script/4_greenday_training/15_meet_half_moon.json"
 
 [node name="DoorAreas" type="Node3D" parent="." unique_id=927681184]
 
@@ -2674,14 +2710,17 @@ collision_mask = 0
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DoorAreas/ReturnBlocker/StaticBody3D" unique_id=1808356074]
 shape = SubResource("ConcavePolygonShape3D_4w3fx")
 
-[node name="SecondPlayerPosition" type="Node3D" parent="." unique_id=1793972640]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75, 1, -57)
-
 [node name="CroissantDuh" parent="." unique_id=874928942 instance=ExtResource("10_thd86")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -74, 3, -100)
 
-[node name="MonRoll" parent="." unique_id=936362553 instance=ExtResource("11_ute6l")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76, 3, -98)
+[node name="MonRollRoll" type="Node3D" parent="." unique_id=1871596492]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76, 4.2346835, -98)
+
+[node name="MonRoll" parent="MonRollRoll" unique_id=936362553 instance=ExtResource("11_ute6l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.2346835, 0)
+
+[node name="AnimationPlayerMonRoll" type="AnimationPlayer" parent="." unique_id=452041564]
+libraries/ = SubResource("AnimationLibrary_vpxxj")
 
 [node name="Camera3D_AgentToCroissant" type="Camera3D" parent="." unique_id=1469200313]
 transform = Transform3D(0.915312, -0.18098879, 0.35978755, 0, 0.893337, 0.44938737, -0.40274563, -0.41132963, 0.817682, -73.09625, 5.255684, -96.52472)
@@ -3425,8 +3464,28 @@ collision_mask = 0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0016504526, 1.0716964, -0.09338379)
 shape = SubResource("BoxShape3D_kbkkx")
 
+[node name="players" type="Node3D" parent="." unique_id=826338305]
+script = ExtResource("19_llgq0")
+
+[node name="Player" parent="players" unique_id=1371449073 instance=ExtResource("7_ovsro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 91)
+noSkating = true
+hideBoard = true
+
+[node name="Player2" parent="players" unique_id=659268463 instance=ExtResource("7_ovsro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76.33919, 0, -57.757645)
+visible = false
+noSkating = true
+hideBoard = true
+localFreeze = true
+
 [connection signal="area_entered" from="DoorAreas/MeshInstance3D/PassDoorOne" to="." method="_on_pass_door_one_area_entered"]
+[connection signal="body_entered" from="DoorAreas/MeshInstance3D/PassDoorOne" to="." method="_on_pass_door_one_body_entered"]
 [connection signal="area_entered" from="DoorAreas/MeshInstance3D2/PassDoorTwo" to="." method="_on_pass_door_two_area_entered"]
+[connection signal="body_entered" from="DoorAreas/MeshInstance3D2/PassDoorTwo" to="." method="_on_pass_door_two_body_entered"]
 [connection signal="area_entered" from="DoorAreas/MeshInstance3D3/PassDoorThree" to="." method="_on_pass_door_three_area_entered"]
+[connection signal="body_entered" from="DoorAreas/MeshInstance3D3/PassDoorThree" to="." method="_on_pass_door_three_body_entered"]
 [connection signal="area_entered" from="DoorAreas/MeshInstance3D4/PassDoorFour" to="." method="_on_pass_door_four_area_entered"]
+[connection signal="body_entered" from="DoorAreas/MeshInstance3D4/PassDoorFour" to="." method="_on_pass_door_four_body_entered"]
 [connection signal="area_entered" from="DoorAreas/MeshInstance3D5/PassDoorFive" to="." method="_on_pass_door_five_area_entered"]
+[connection signal="body_entered" from="DoorAreas/MeshInstance3D5/PassDoorFive" to="." method="_on_pass_door_five_body_entered"]

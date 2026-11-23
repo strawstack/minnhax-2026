@@ -1,6 +1,10 @@
 [
 	{
 		"name": "Command",
+		"command": "revealFlagLogo"
+	},
+	{
+		"name": "Command",
 		"command": "hideSkateBoardModel"
 	},
 	{

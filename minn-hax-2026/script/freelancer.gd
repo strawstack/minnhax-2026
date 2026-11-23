@@ -13,11 +13,17 @@ func _ready() -> void:
 		"collectShootingSecretTape": playCollectSound,
 		"openShootingExitDoor": openShootingExitDoor,
 		"revealLeaveOnBoat": revealLeaveOnBoat,
-		"playBoatAnimation": playBoatAnimation
+		"playBoatAnimation": playBoatAnimation,
+		"revealShooting": revealShooting
 	}
 	$Camera3D_OpenShot.set_current(true)
+	$BoatCutscene.set_visible(false)
 	await gc.fadeIn()
 	gc.playDialogFile("res://dialog/script/8_freelancer/22_inside_tac_sim.json")
+
+func revealShooting():
+	$minnMaxLogo_shootingRange.reveal()
+	$minnMaxLogo_shootingRangeButton.reveal()
 
 func boatToIsland():
 	# TODO boating animation then switch to island scene

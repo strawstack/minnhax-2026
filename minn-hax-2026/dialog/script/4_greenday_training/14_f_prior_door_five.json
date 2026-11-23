@@ -42,5 +42,9 @@
 				"text": "Copy that. Don’t worry about me, believe it or not I'm more than just a compilation of Shenanigans."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "openDoorFive"
 	}
 ]

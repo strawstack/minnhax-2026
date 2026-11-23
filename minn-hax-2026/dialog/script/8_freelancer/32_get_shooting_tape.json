@@ -14,14 +14,10 @@
 		]
 	},
 	{
-		"name": "SecretTape",
+		"name": "Music",
 		"avatar": "",
-		"lines": [
-			{
-				"voice": "",
-				"text": "(music plays)"
-			}
-		]
+		"mouth": "SecretTape",
+		"track": "example_music"
 	},
 	{
 		"name": "AgentForty",

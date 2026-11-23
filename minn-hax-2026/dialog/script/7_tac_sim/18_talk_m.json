@@ -41,7 +41,7 @@
 	},
 	{
 		"name": "Command",
-		"command": "TODO m"
+		"command": "camera3D_M"
 	},
 	{
 		"name": "M",
@@ -55,7 +55,7 @@
 	},
 	{
 		"name": "Command",
-		"command": "TODO agent"
+		"command": "camera3D_Agent"
 	},
 	{
 		"name": "AgentForty",
@@ -69,7 +69,7 @@
 	},
 	{
 		"name": "Command",
-		"command": "TODO green"
+		"command": "camera3D_GreenDay"
 	},
 	{
 		"name": "GreenDay",
@@ -83,7 +83,7 @@
 	},
 	{
 		"name": "Command",
-		"command": "TODO agent"
+		"command": "camera3D_Agent"
 	},
 	{
 		"name": "AgentForty",
@@ -97,7 +97,7 @@
 	},
 	{
 		"name": "Command",
-		"command": "TODO green"
+		"command": "camera3D_GreenDay"
 	},
 	{
 		"name": "GreenDay",
@@ -111,7 +111,7 @@
 	},
 	{
 		"name": "Command",
-		"command": "TODO agent"
+		"command": "camera3D_Agent"
 	},
 	{
 		"name": "AgentForty",
@@ -125,7 +125,7 @@
 	},
 	{
 		"name": "Command",
-		"command": "TODO green"
+		"command": "camera3D_GreenDay"
 	},
 	{
 		"name": "GreenDay",
@@ -159,11 +159,11 @@
 	},
 	{
 		"name": "Command",
-		"command": "TODO m sideways glance"
+		"command": "mSidewaysGlance"
 	},
 	{
 		"name": "Command",
-		"command": "TODO m close"
+		"command": "camera3D_M_Close"
 	},
 	{
 		"name": "M",
@@ -177,7 +177,7 @@
 	},
 	{
 		"name": "Command",
-		"command": "TODO green"
+		"command": "camera3D_GreenDay"
 	},
 	{
 		"name": "GreenDay",
@@ -191,11 +191,15 @@
 	},
 	{
 		"name": "Command",
-		"command": "TODO m eye roll"
+		"command": "showMEleveator"
 	},
 	{
 		"name": "Command",
-		"command": "TODO agent (m in back)"
+		"command": "camera3D_Agent"
+	},
+	{
+		"name": "Command",
+		"command": "closeElevator"
 	},
 	{
 		"name": "M",
@@ -209,7 +213,7 @@
 	},
 	{
 		"name": "Command",
-		"command": "TODO green"
+		"command": "camera3D_GreenDay"
 	},
 	{
 		"name": "GreenDay",
@@ -223,7 +227,7 @@
 	},
 	{
 		"name": "Command",
-		"command": "TODO agent"
+		"command": "camera3D_Agent"
 	},
 	{
 		"name": "AgentForty",
@@ -237,7 +241,7 @@
 	},
 	{
 		"name": "Command",
-		"command": "TODO green"
+		"command": "camera3D_GreenDay"
 	},
 	{
 		"name": "GreenDay",
@@ -251,7 +255,7 @@
 	},
 	{
 		"name": "Command",
-		"command": "TODO agent"
+		"command": "camera3D_Agent"
 	},
 	{
 		"name": "AgentForty",

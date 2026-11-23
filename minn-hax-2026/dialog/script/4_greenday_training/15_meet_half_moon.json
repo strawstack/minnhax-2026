@@ -64,6 +64,10 @@
 		"command": "camera3D_MonRoll"
 	},
 	{
+		"name": "Command",
+		"command": "startRolling"
+	},
+	{
 		"name": "MonRoll",
 		"avatar": "",
 		"lines": [
@@ -72,6 +76,10 @@
 				"text": "You wanna roll Forty?"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "stopRolling"
 	},
 	{
 		"name": "Command",

@@ -4,8 +4,7 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 # Todo
 
-- NEXT: Wire dialog files througout the game
-  - Make skate stair fix to Freelancer level in Blender
+- NEXT: Wire dialog files throughout the game
   - Get to the club, so we can confirm that the ending works
   - Build out credits scene
   - Find music tracks for following
@@ -14,14 +13,26 @@ Godot project files for the MinnHax 2026 Game Jam.
     - Background office for TacSim maybe
     - Freelancer house
     - Outside the club
+  - Record patch audio
   - Continue with fixes below
+
+- Crosshairs missing in greenday training
+
+- Make skate stairs fix to Freelancer level in Blender
 
 - Lable on wall nead studio door saying
   - "Controls: Spacebar to jump, WASD to move, mouse to look."
 
+- Flip the studio wall art when interview starts
+
 - Nevi should meow when he moves (maybe not could be annoying?)
 
 - Add Avatars to dialog box for each character
+
+- Place greenday near flag in obstacle course level
+
+- Gun doesn't shoot exactly at center dot in screen
+  - Maybe just move the dot a bit I think ray is centered
 
 - Radio dissappear from rock on beach once taken
   - Add emmission to radio
@@ -36,6 +47,7 @@ Godot project files for the MinnHax 2026 Game Jam.
 - Add sound effects
 - Top step of stairs to basement clips with floor - lower visible step a bit
 - Add LilBoo to bed
+- Add voice mail phone to desk
 - Remove objective notice during interview scene
 - Physics boundaries in beach level to ensure radio, and dialog before squeeze
 - Studio stairs door. Make is colored to be more apparent
@@ -45,6 +57,10 @@ Godot project files for the MinnHax 2026 Game Jam.
 - Remove from in game text "It's all in good fun though, and..." this is not in audio file by choice
 
 - Show Nevi on the desk at the correct time
+
+- Review screenshots for more fixes (for example, placing images on monitors in apartment)
+
+- Consider closing my office door when dialog is active?
 
 # Done
 

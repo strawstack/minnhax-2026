@@ -63,7 +63,7 @@ func _process(delta: float) -> void:
 	if Input.is_action_pressed("forward") or Input.is_action_pressed("back"):
 		if not onceMoveJeep and not gc.dialogInProgress:
 			onceMoveJeep = true
-			gc.playDialogFile("res://dialog/script/4_greenday_training/14_a_first_jeep_move.json")
+			$Timer.start()
 		moving = true
 	
 	if Input.is_action_pressed("left"):
@@ -80,3 +80,6 @@ func _process(delta: float) -> void:
 			velocity = Vector3.ZERO
 
 	move_and_slide()
+
+func _on_timer_timeout() -> void:
+	gc.playDialogFile("res://dialog/script/4_greenday_training/14_a_first_jeep_move.json")
