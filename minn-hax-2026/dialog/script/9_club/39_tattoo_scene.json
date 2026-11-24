@@ -6,7 +6,13 @@
 	},
 	{
 		"name": "Command",
-		"command": "TODO glass break sound"
+		"command": "breakGlassSoundEffect",
+		"await": true
+	},
+	{
+		"name": "Command",
+		"command": "waitOneSecond",
+		"await": true
 	},
 	{
 		"name": "Command",
@@ -18,12 +24,25 @@
 	},
 	{
 		"name": "Command",
-		"command": "TODO tattoo camera",
+		"command": "cameraCloseTattoo",
+	},
+	{
+		"name": "Command",
+		"command": "tattooSoundEffect",
 	},
 	{
 		"name": "Command",
 		"command": "fadeIn",
 		"await": true
+	},
+	{
+		"name": "Command",
+		"command": "waitThreeSeconds",
+		"await": true
+	},
+	{
+		"name": "Command",
+		"command": "cameraLeBooBoo",
 	},
 	{
 		"name": "LeBooBoo",
@@ -36,6 +55,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "cameraArtist",
+	},
+	{
 		"name": "TattooArtist",
 		"avatar": "",
 		"lines": [
@@ -44,6 +67,10 @@
 				"text": "信我！这个纹出来绝对好看，不过话又说回来，你和Ben Hanson商量过吗？他会不会反对。"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "cameraLeBooBoo",
 	},
 	{
 		"name": "LeBooBoo",
@@ -57,10 +84,51 @@
 	},
 	{
 		"name": "Command",
+		"command": "cameraPullBack",
+	},
+	{
+		"name": "Command",
+		"command": "playerFallAnimationSequence",
+		"await": true
+	},
+	{
+		"name": "MoneyPony",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "40_01",
+				"text": "Agent Forty meet LeBooBoo. A parasocial rapper whose lyrics threaten the innocence of Patreon communities everywhere. I have some information on your target."
+			},
+			{
+				"voice": "40_02",
+				"text": "Your target is a ghost. He likes to take ‘more than one’ photo, and ‘worst of all’ he’s… an actor."
+			},
+			{
+				"voice": "40_03",
+				"text": "Take him out Forty. Keep it Safe and Sound."
+			}
+		]
+	},
+	{
+		"name": "Command",
+		"command": "fadeOut",
+		"await": true
+	},
+	{
+		"name": "Command",
+		"command": "hidefortyIdleNoAnimRoof"
+	},
+	{
+		"name": "Command",
 		"command": "switchToPlayer2"
 	},
 	{
 		"name": "Command",
 		"command": "unfreezePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "fadeIn",
+		"await": true
 	},
 ]

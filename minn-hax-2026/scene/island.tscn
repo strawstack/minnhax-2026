@@ -16,6 +16,7 @@
 [ext_resource type="Material" uid="uid://c0ayg3mf4l6lc" path="res://material/rust_triplanar.tres" id="8_de5rk"]
 [ext_resource type="Material" uid="uid://x41bw7aiyiax" path="res://material/window_clear.tres" id="9_ms41l"]
 [ext_resource type="Material" uid="uid://6bicb1pey7la" path="res://material/bin_blue.tres" id="10_de5rk"]
+[ext_resource type="PackedScene" uid="uid://bg5ixunmm5oq2" path="res://scene/mouth.tscn" id="10_hpfep"]
 [ext_resource type="PackedScene" uid="uid://c7arww0hf4q5y" path="res://scene/characters/party_person.tscn" id="17_57qce"]
 [ext_resource type="PackedScene" uid="uid://b4avlj7skl5js" path="res://scene/characters/club_dj_spin.tscn" id="17_58cur"]
 [ext_resource type="PackedScene" uid="uid://cvrutceh1v4q6" path="res://scene/characters/club_dj_mic.tscn" id="18_tbq4j"]
@@ -699,6 +700,43 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_lebh4")
+
+[sub_resource type="Animation" id="Animation_0pdau"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("fortyIdleNoAnimRoof:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(4.9002857, 5.1748543, -9.301534)]
+}
+
+[sub_resource type="Animation" id="Animation_7x8he"]
+resource_name = "playerFall"
+length = 3.0000000000000004
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("fortyIdleNoAnimRoof:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(4.9002857, 5.1748543, -9.301534), Vector3(4.9002857, 0.40673566, -9.301534)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xvfq1"]
+_data = {
+&"RESET": SubResource("Animation_0pdau"),
+&"playerFall": SubResource("Animation_7x8he")
+}
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uk1xb"]
 resource_name = "red"
@@ -4365,7 +4403,13 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 19, 
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 20.85844, 1, -3)
 visible = false
 
-[node name="RampGuy" parent="." unique_id=1034816843 instance=ExtResource("17_57qce")]
+[node name="Node3D" type="Node3D" parent="." unique_id=337705803]
+
+[node name="Mouth" parent="Node3D" unique_id=1139275092 instance=ExtResource("10_hpfep")]
+transform = Transform3D(0.52338684, 0, -0.85209525, 0, 1, 0, 0.85209525, 0, 0.52338684, 8.633244, 1.8650329, -31.221167)
+characterName = "RampGuy"
+
+[node name="RampGuy" parent="Node3D" unique_id=1034816843 instance=ExtResource("17_57qce")]
 transform = Transform3D(0.86546916, 0, 0.50096244, 0, 1, 0, -0.50096244, 0, 0.86546916, 8.539304, 0, -31.167046)
 
 [node name="partyPeople" type="Node3D" parent="." unique_id=922616020]
@@ -4503,11 +4547,14 @@ transform = Transform3D(-0.8870095, 0.14460376, -0.43852463, 0, 0.9496991, 0.313
 transform = Transform3D(-0.98404115, -0.05128193, 0.1703912, 0, 0.9575714, 0.28819627, -0.177941, 0.283597, -0.94228965, 3.6365097, 2.3410633, -5.0741606)
 
 [node name="PullBack" type="Camera3D" parent="sceneTattoo" unique_id=1580242564]
-transform = Transform3D(-0.9988483, 0.005847236, -0.04762198, 0, 0.9925462, 0.121869184, 0.047979612, 0.12172883, -0.9914031, 3.0459926, 2.256928, -12.880386)
+transform = Transform3D(-0.9988483, 0.005847244, -0.047622044, 0, 0.9925462, 0.121869184, 0.047979675, 0.12172883, -0.9914031, 3.0459886, 2.256928, -12.880386)
+fov = 61.0
 
 [node name="fortyIdleNoAnimRoof" parent="sceneTattoo" unique_id=1972262023 instance=ExtResource("23_re1to")]
 transform = Transform3D(1.9106853e-15, -1, -4.3711385e-08, -4.3711378e-08, -4.371139e-08, 0.9999999, -0.9999999, 0, -4.3711378e-08, 4.9002857, 5.1748543, -9.301534)
-visible = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="sceneTattoo" unique_id=1575864775]
+libraries/ = SubResource("AnimationLibrary_xvfq1")
 
 [node name="sceneRedDress" type="Node3D" parent="." unique_id=980704445]
 
@@ -5179,7 +5226,7 @@ prompt = "talk to bouncer"
 dialogFile = "res://dialog/script/9_club/35_talk_to_bouncer.json"
 
 [node name="minnMaxLogo_RampAnnounce" parent="logoPoints" unique_id=1903920026 instance=ExtResource("26_pvu6s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.793142, 1.6327314, -33.71552)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.639421, 1.6327314, -33.71552)
 prompt = "listen for clues"
 dialogFile = "res://dialog/script/9_club/36_ramp_guy.json"
 startHidden = true
@@ -5193,7 +5240,7 @@ startHidden = true
 [node name="minnMaxLogo_Window" parent="logoPoints" unique_id=59222820 instance=ExtResource("26_pvu6s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.0522056, 6.774565, -9.188795)
 prompt = "break the window"
-dialogFile = "res://dialog/script/9_club/38_window_on_roof.json"
+dialogFile = "res://dialog/script/9_club/39_tattoo_scene.json"
 startHidden = true
 
 [node name="Area3D_ClubHallway" type="Area3D" parent="logoPoints" unique_id=793745417]

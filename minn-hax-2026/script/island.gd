@@ -42,7 +42,16 @@ func _ready() -> void:
 		"cameraAgent": cameraAgent,
 		"cameraRampGuy": cameraRampGuy,
 		"showfortyIdleNoAnimRoof": showfortyIdleNoAnimRoof,
-		"hidefortyIdleNoAnimRoof": hidefortyIdleNoAnimRoof
+		"hidefortyIdleNoAnimRoof": hidefortyIdleNoAnimRoof,
+		"playerFallAnimationSequence": null,
+		"breakGlassSoundEffect": null,
+		"tattooSoundEffect": null,
+		"cameraCloseTattoo": null,
+		"cameraLeBooBoo": null,
+		"cameraArtist": null,
+		"cameraPullBack": null,
+		"waitOneSecond": null,
+		"waitThreeSeconds": null,
 	}
 	# Make sure these players are hidden on start
 	$players/Player2.set_visible(false)
@@ -50,6 +59,38 @@ func _ready() -> void:
 	$Camera3D_OpenTwo.set_current(true)
 	await gc.fadeIn()
 	gc.playDialogFile("res://dialog/script/9_club/34_get_off_boat.json")
+
+func playerFallAnimationSequence():
+	showfortyIdleNoAnimRoof()
+	$sceneTattoo/AnimationPlayer.play("playerFall")
+	await $sceneTattoo/AnimationPlayer.animation_finished
+	gc.endAwaitDialog()
+
+func breakGlassSoundEffect():
+	pass
+
+func tattooSoundEffect():
+	pass
+
+func cameraCloseTattoo():
+	$sceneTattoo/CloseTattoo.set_current(true)
+
+func cameraLeBooBoo():
+	$sceneTattoo/LeBooBoo.set_current(true)
+
+func cameraArtist():
+	$sceneTattoo/Artist.set_current(true)
+
+func cameraPullBack():
+	$sceneTattoo/PullBack.set_current(true)
+
+func waitOneSecond():
+	await get_tree().create_timer(1.0).timeout
+	gc.endAwaitDialog()
+
+func waitThreeSeconds():
+	await get_tree().create_timer(3.0).timeout
+	gc.endAwaitDialog()
 
 func showfortyIdleNoAnimRoof():
 	$sceneTattoo/fortyIdleNoAnimRoof.set_visible(true)
