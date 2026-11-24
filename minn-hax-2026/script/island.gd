@@ -5,6 +5,11 @@ extends Node3D
 
 var gc
 
+const soundEffect = {
+	"glass": preload("res://audio/soundEffect/glass_break.mp3"),
+	"needle": preload("res://audio/soundEffect/tatto_needle.mp3")
+}
+
 func _ready() -> void:
 	gc = get_tree().current_scene
 	sceneSetUp()
@@ -51,7 +56,7 @@ func _ready() -> void:
 		"cameraArtist": cameraArtist,
 		"cameraPullBack": cameraPullBack,
 		"waitOneSecond": waitOneSecond,
-		"waitThreeSeconds": waitThreeSeconds,
+		"waitTwoSeconds": waitTwoSeconds,
 		"freeShards": freeShards
 	}
 	# Make sure these nodes are hidden on start
@@ -63,10 +68,22 @@ func _ready() -> void:
 	await gc.fadeIn()
 	gc.playDialogFile("res://dialog/script/9_club/34_get_off_boat.json")
 
+func playSoundEffectAwait(soundName: String):
+	$audio/AudioStreamPlayerSoundEffect.stop()
+	$audio/AudioStreamPlayerSoundEffect.stream = soundEffect[soundName]
+	$audio/AudioStreamPlayerSoundEffect.play()
+	await $audio/AudioStreamPlayerSoundEffect.finished
+
+func playSoundEffect(soundName: String):
+	$audio/AudioStreamPlayerSoundEffect.stop()
+	$audio/AudioStreamPlayerSoundEffect.stream = soundEffect[soundName]
+	$audio/AudioStreamPlayerSoundEffect.play()
+
 func playerFallAnimationSequence():
 	showfortyIdleNoAnimRoof()
 	$sceneTattoo/AnimationPlayer.play("playerFall")
 	$glass_shards.fall()
+	playSoundEffect("glass")
 	await $sceneTattoo/AnimationPlayer.animation_finished
 	gc.endAwaitDialog()
 
@@ -74,14 +91,11 @@ func freeShards():
 	$glass_shards.free()
 
 func breakGlassSoundEffect():
-	# TODO play sound
-	await get_tree().create_timer(1.0).timeout
+	await playSoundEffectAwait("glass")
 	gc.endAwaitDialog()
 
 func tattooSoundEffect():
-	# TODO play sound
-	await get_tree().create_timer(1.0).timeout
-	gc.endAwaitDialog()
+	playSoundEffect("needle")
 
 func cameraCloseTattoo():
 	$sceneTattoo/CloseTattoo.set_current(true)
@@ -99,8 +113,8 @@ func waitOneSecond():
 	await get_tree().create_timer(1.0).timeout
 	gc.endAwaitDialog()
 
-func waitThreeSeconds():
-	await get_tree().create_timer(3.0).timeout
+func waitTwoSeconds():
+	await get_tree().create_timer(2.0).timeout
 	gc.endAwaitDialog()
 
 func showfortyIdleNoAnimRoof():

@@ -33,7 +33,6 @@
 	{
 		"name": "Command",
 		"command": "tattooSoundEffect",
-		"await": true
 	},
 	{
 		"name": "Command",
@@ -42,7 +41,7 @@
 	},
 	{
 		"name": "Command",
-		"command": "waitThreeSeconds",
+		"command": "waitTwoSeconds",
 		"await": true
 	},
 	{

@@ -68,8 +68,8 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_84hjk")
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_7drdb"]
-data = PackedVector3Array(-1.9, -0.049999997, 2, -1.9, 0.049999997, -2, -1.9, 0.049999997, 2, -1.9, -0.049999997, 2, -1.9, -0.049999997, -2, -1.9, 0.049999997, -2, -1.9, -0.049999997, -2, 1.9, 0.049999997, -2, -1.9, 0.049999997, -2, -1.9, -0.049999997, -2, 1.9, -0.049999997, -2, 1.9, 0.049999997, -2, 1.9, -0.049999997, -2, 1.9, 0.049999997, 2, 1.9, 0.049999997, -2, 1.9, -0.049999997, -2, 1.9, -0.049999997, 2, 1.9, 0.049999997, 2, 1.9, -0.049999997, 2, -1.9, 0.049999997, 2, 1.9, 0.049999997, 2, 1.9, -0.049999997, 2, -1.9, -0.049999997, 2, -1.9, 0.049999997, 2, -1.9, -0.049999997, -2, 1.9, -0.049999997, 2, 1.9, -0.049999997, -2, -1.9, -0.049999997, -2, -1.9, -0.049999997, 2, 1.9, -0.049999997, 2, 1.9, 0.049999997, -2, -1.9, 0.049999997, 2, -1.9, 0.049999997, -2, 1.9, 0.049999997, -2, 1.9, 0.049999997, 2, -1.9, 0.049999997, 2)
+[sub_resource type="BoxShape3D" id="BoxShape3D_0pdau"]
+size = Vector3(4.074585, 0.9788513, 4.3776855)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dr8j3"]
 
@@ -4247,6 +4247,10 @@ light_data = ExtResource("2_tho0w")
 [node name="island_model" parent="." unique_id=857041530 instance=ExtResource("2_giqlj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0053777695, 0.020529509, -0.009842396)
 
+[node name="audio" type="Node3D" parent="." unique_id=463420886]
+
+[node name="AudioStreamPlayerSoundEffect" type="AudioStreamPlayer" parent="audio" unique_id=1170796073]
+
 [node name="light" type="Node3D" parent="." unique_id=722977712]
 
 [node name="OmniLight3D" type="OmniLight3D" parent="light" unique_id=2014566849]
@@ -4331,9 +4335,11 @@ surface_material_override/0 = ExtResource("9_ms41l")
 [node name="StaticBody3D" type="StaticBody3D" parent="windowRoof" unique_id=914245308]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="windowRoof/StaticBody3D" unique_id=1762607349]
-shape = SubResource("ConcavePolygonShape3D_7drdb")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05303955, -0.32292175, 0.07702637)
+shape = SubResource("BoxShape3D_0pdau")
 
 [node name="glass_shards" type="Node3D" parent="." unique_id=1540477448 node_paths=PackedStringArray("windowRoof")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.8627746, 0)
 script = ExtResource("5_0pdau")
 windowRoof = NodePath("../windowRoof")
 
@@ -4661,8 +4667,9 @@ libraries/ = SubResource("AnimationLibrary_xvfq1")
 
 [node name="sceneRedDress" type="Node3D" parent="." unique_id=980704445]
 
-[node name="fortyIdleNoAnim" parent="sceneRedDress" unique_id=58207265 instance=ExtResource("23_re1to")]
+[node name="fortyIdleNoAnimRed" parent="sceneRedDress" unique_id=58207265 instance=ExtResource("23_re1to")]
 transform = Transform3D(-0.1329559, 0, -0.9911217, 0, 1, 0, 0.99112177, 0, -0.1329559, 20.679165, 0, -24.20449)
+visible = false
 
 [node name="Lady" type="Camera3D" parent="sceneRedDress" unique_id=1244590856]
 transform = Transform3D(0.0523349, -0.09571433, 0.9940321, 0, 0.9953962, 0.09584568, -0.99862957, -0.005016074, 0.05209396, 21.912046, 1.9134456, -25.14203)

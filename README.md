@@ -23,6 +23,8 @@ Godot project files for the MinnHax 2026 Game Jam.
 - Lable on wall nead studio door saying
   - "Controls: Spacebar to jump, WASD to move, mouse to look."
 
+- You can spam jump when in skate mode
+
 - Flip the studio wall art when interview starts
 
 - Nevi should meow when he moves (maybe not could be annoying?)
