@@ -11,7 +11,7 @@
 	},
 	{
 		"name": "Command",
-		"command": "returnPlayerCamera"
+		"command": "returnPlayer1Camera"
 	},
 	{
 		"name": "Command",

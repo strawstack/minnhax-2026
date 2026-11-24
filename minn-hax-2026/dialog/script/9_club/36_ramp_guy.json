@@ -12,5 +12,9 @@
 				"text": "Boy these ramps go almost to the roof. Looks like skaters get free entry tonight via the roof. At least until someone tells me where to deliver these ramps."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "revealMinnMaxLogo_TouchRamps"
 	}
 ]

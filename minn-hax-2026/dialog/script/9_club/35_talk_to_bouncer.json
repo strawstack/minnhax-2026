@@ -5,11 +5,11 @@
 	},
 	{
 		"name": "Command",
-		"command": "hidePlayer"
+		"command": "hidePlayer1"
 	},
 	{
 		"name": "Command",
-		"command": "showIdle"
+		"command": "showIdleAtBouncer"
 	},
 	{
 		"name": "Command",
@@ -171,10 +171,26 @@
 	},
 	{
 		"name": "Command",
-		"command": "returnPlayerCamera"
+		"command": "showPlayer1"
+	},
+	{
+		"name": "Command",
+		"command": "hideIdleAtBouncer"
+	},
+	{
+		"name": "Command",
+		"command": "returnPlayer1Camera"
 	},
 	{
 		"name": "Command",
 		"command": "unfreezePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "showLabel3D_RampTruck"
+	},
+	{
+		"name": "Command",
+		"command": "revealMinnMaxLogo_RampAnnounce"
 	}
 ]

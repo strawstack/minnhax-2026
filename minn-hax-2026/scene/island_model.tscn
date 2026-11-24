@@ -2075,39 +2075,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_5y2cd")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_amm6x"]
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_84hjk"]
-_surfaces = [{
-"aabb": AABB(-1.9000001, -0.050000012, -1.9999999, 3.8000002, 0.100000024, 4),
-"format": 34359742465,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYA"),
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 8,
-"vertex_data": PackedByteArray("NDPzv9DMTL0AAABANDPzv9DMTD3///+/NDPzv9DMTD0AAABANDPzv9DMTL3///+/NDPzP9DMTD3///+/NDPzP9DMTL0AAABANDPzP9DMTD0AAABANDPzP9DMTL3///+/")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_pwgtc"]
-resource_name = "island_music_club_Cube_146"
-lightmap_size_hint = Vector2i(46, 30)
-_surfaces = [{
-"aabb": AABB(-1.9000001, -0.050000012, -1.9999999, 3.8000002, 0.100000024, 4),
-"attribute_data": PackedByteArray("AADAPgAAgD+nN30/vLt7PwAAID8AAEA/C1kIPzMzcz8AACA/AACAP6c3fT8zM3M/AADAPgAAQD8LWQg/vLt7PwAAwD4AAEA/QxYyPBERUT8AACA/AAAAP+pN7z6amVk/AAAgPwAAQD9DFjI8mplZPwAAwD4AAAA/6k3vPhERUT8AAMA+AAAAPwtZCD+amVk/AAAgPwAAgD6nN30/ERFRPwAAID8AAAA/C1kIPxERUT8AAMA+AACAPqc3fT+amVk/AADAPgAAgD5DFjI8MzNzPwAAID8AAAAA6k3vPry7ez8AACA/AACAPkMWMjy8u3s/AADAPgAAAADqTe8+MzNzPwAAAD4AAAA/6k3vPomIiDwAAMA+AACAPkMWMjx3dzc/AADAPgAAAD9DFjI8iYiIPAAAAD4AAIA+6k3vPnd3Nz8AACA/AAAAPwtZCD+JiIg8AABgPwAAgD6nN30/d3c3PwAAYD8AAAA/C1kIP3d3Nz8AACA/AACAPqc3fT+JiIg8"),
-"format": 34359742519,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_amm6x"),
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 24,
-"vertex_data": PackedByteArray("NDPzv9DMTL0AAABANDPzv9DMTD3///+/NDPzv9DMTD0AAABANDPzv9DMTL3///+/NDPzv9DMTL3///+/NDPzP9DMTD3///+/NDPzv9DMTD3///+/NDPzP9DMTL3///+/NDPzP9DMTL3///+/NDPzP9DMTD0AAABANDPzP9DMTD3///+/NDPzP9DMTL0AAABANDPzP9DMTL0AAABANDPzv9DMTD0AAABANDPzP9DMTD0AAABANDPzv9DMTL0AAABANDPzv9DMTL3///+/NDPzP9DMTL0AAABANDPzP9DMTL3///+/NDPzv9DMTL0AAABANDPzP9DMTD3///+/NDPzv9DMTD0AAABANDPzv9DMTD3///+/NDPzP9DMTD0AAABAAAD/f/9///8AAP9//3///wAA/3//f///AAD/f/9//////////3//////////f/////////9//////////3///////3//f///////f/9///////9//3///////3//f////3//f/9/////f/9//3////9//3//f////3//f/9/////fwAA////v/9/AAD///+//38AAP///7//fwAA////v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+/")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_84hjk")
-
 [sub_resource type="ArrayMesh" id="ArrayMesh_ckjcc"]
 _surfaces = [{
 "aabb": AABB(-1.8999996, -0.5, -3.6999998, 3.7999992, 1, 7.3999996),
@@ -14698,11 +14665,6 @@ surface_material_override/0 = ExtResource("2_0kn8t")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.099998, -0.5000001, -25)
 mesh = SubResource("ArrayMesh_5c6vi")
 surface_material_override/0 = ExtResource("1_k4saw")
-
-[node name="Cube_136" type="MeshInstance3D" parent="." unique_id=1010786084]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9, 4.85, -9.3)
-mesh = SubResource("ArrayMesh_pwgtc")
-surface_material_override/0 = ExtResource("4_gj5wf")
 
 [node name="Cube_147" type="MeshInstance3D" parent="." unique_id=1324916305]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.1, -0.5, -24.500002)

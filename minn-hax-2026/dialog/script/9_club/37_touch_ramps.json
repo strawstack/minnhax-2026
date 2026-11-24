@@ -1,5 +1,21 @@
 [
 	{
+		"name": "Command",
+		"command": "freezePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "hidePlayer1"
+	},
+	{
+		"name": "Command",
+		"command": "fortyIdleNoAnimRamp"
+	},
+	{
+		"name": "Command",
+		"command": "cameraRampGuy"
+	},
+	{
 		"name": "RampGuy",
 		"avatar": "",
 		"lines": [
@@ -10,6 +26,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "cameraAgent"
+	},
+	{
 		"name": "AgentForty",
 		"avatar": "",
 		"lines": [
@@ -18,6 +38,22 @@
 				"text": "Kenny Hawk. Ramp inspector. At your service."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showPlayer1"
+	},
+	{
+		"name": "Command",
+		"command": "hideFortyIdleNoAnimRamp"
+	},
+	{
+		"name": "Command",
+		"command": "returnPlayer1Camera"
+	},
+	{
+		"name": "Command",
+		"command": "unfreezePlayer"
 	},
 	{
 		"name": "MoneyPony",

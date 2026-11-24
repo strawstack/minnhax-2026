@@ -9,8 +9,10 @@ func _ready() -> void:
 	gc = get_tree().current_scene
 	sceneSetUp()
 	gc.sceneCommandLookup = {
-		"returnPlayerCamera": returnPlayerCamera,
-		"hidePlayer": hidePlayer,
+		"returnPlayer1Camera": returnPlayer1Camera,
+		"hidePlayer1": hidePlayer1,
+		"showPlayer1": showPlayer1,
+		"hideIdleAtBouncer": hideIdleAtBouncer,
 		"showPlayer": showPlayer,
 		"cameraTCB": cameraTCB,
 		"cameraAgentAtTCB": cameraAgentAtTCB,
@@ -31,14 +33,63 @@ func _ready() -> void:
 		"activateStageWalls": activateStageWalls,
 		"openStageDoor": openStageDoor,
 		"switchToPlayer2": switchToPlayer2,
-		"hidePlayer1": hidePlayer1
+		"showIdleAtBouncer": showIdleAtBouncer,
+		"showLabel3D_RampTruck": showLabel3D_RampTruck,
+		"revealMinnMaxLogo_RampAnnounce": revealMinnMaxLogo_RampAnnounce,
+		"revealMinnMaxLogo_TouchRamps": revealMinnMaxLogo_TouchRamps,
+		"hideFortyIdleNoAnimRamp": hideFortyIdleNoAnimRamp,
+		"showFortyIdleNoAnimRamp": showFortyIdleNoAnimRamp,
+		"cameraAgent": cameraAgent,
+		"cameraRampGuy": cameraRampGuy,
+		"showfortyIdleNoAnimRoof": showfortyIdleNoAnimRoof,
+		"hidefortyIdleNoAnimRoof": hidefortyIdleNoAnimRoof
 	}
+	# Make sure these players are hidden on start
+	$players/Player2.set_visible(false)
+	$players/Player3.set_visible(false)
 	$Camera3D_OpenTwo.set_current(true)
 	await gc.fadeIn()
 	gc.playDialogFile("res://dialog/script/9_club/34_get_off_boat.json")
 
+func showfortyIdleNoAnimRoof():
+	$sceneTattoo/fortyIdleNoAnimRoof.set_visible(true)
+
+func hidefortyIdleNoAnimRoof():
+	$sceneTattoo/fortyIdleNoAnimRoof.set_visible(false)
+
+func cameraAgent():
+	$sceneRampGuy/Agent.set_current(true)
+
+func cameraRampGuy():
+	$sceneRampGuy/RampGuy.set_current(true)
+
+func showFortyIdleNoAnimRamp():
+	$sceneRampGuy/fortyIdleNoAnimRamp.set_visible(true)
+
+func hideFortyIdleNoAnimRamp():
+	$sceneRampGuy/fortyIdleNoAnimRamp.set_visible(false)
+
+func revealMinnMaxLogo_RampAnnounce():
+	$logoPoints/minnMaxLogo_RampAnnounce.reveal()
+
+func revealMinnMaxLogo_TouchRamps():
+	$logoPoints/minnMaxLogo_TouchRamps.reveal()
+	$logoPoints/minnMaxLogo_Window.reveal()
+
+func showLabel3D_RampTruck():
+	$Label3D_RampTruck.set_visible(true)
+
+func showIdleAtBouncer():
+	$sceneTalkToTCB/fortyIdleNoAnim.set_visible(true)
+
+func hideIdleAtBouncer():
+	$sceneTalkToTCB/fortyIdleNoAnim.set_visible(false)
+
 func hidePlayer1():
 	$players/Player.set_visible(false)
+
+func showPlayer1():
+	$players/Player.set_visible(true)
 
 func switchToPlayer2():
 	$players/Player.localFreeze = true
@@ -71,7 +122,6 @@ func setPostShowTalk():
 	$cowBellGuy.set_visible(false)
 	$club_dj.set_visible(false)
 	$club_dj_mic.set_visible(false)
-	
 
 func showLeBooBooAtMic():
 	$LeBooBoo.set_visible(true)
@@ -111,8 +161,14 @@ func drummerInRoom():
 	$sceneDrummerDistract/DrummerCharacter.set_visible(false)
 	$sceneDrummerDistract/DrummerCharacterInRoom.set_visible(true)
 
-func returnPlayerCamera():
-	$players.getActive().setCameraActive()
+func returnPlayer1Camera():
+	$players/Player.setCameraActive()
+
+func returnPlayer2Camera():
+	$players/Player2.setCameraActive()
+
+func returnPlayer3Camera():
+	$players/Player3.setCameraActive()
 
 func cameraMeetupRoom():
 	$sceneDrummerDistract/Room.set_current(true)

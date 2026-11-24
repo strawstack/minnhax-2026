@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://bxjk2573h65eh"]
 
 [ext_resource type="Texture2D" uid="uid://cyf1n3s76a0ab" path="res://glb/toughBoy/tcb_TCB Shirt.png" id="1_aku50"]
+[ext_resource type="PackedScene" uid="uid://bg5ixunmm5oq2" path="res://scene/mouth.tscn" id="1_y0rgn"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kh1l8"]
 resource_name = "Pink"
@@ -652,11 +653,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.90000004, 0)
 bone_name = "Bone.001"
 bone_idx = 1
 
-[node name="Cube_011" type="MeshInstance3D" parent="Armature/Skeleton3D/Bone_001" unique_id=1990863999]
+[node name="head" type="MeshInstance3D" parent="Armature/Skeleton3D/Bone_001" unique_id=1990863999]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 0.19999993, 0)
 mesh = SubResource("ArrayMesh_qny14")
 
-[node name="Cube_012" type="MeshInstance3D" parent="Armature/Skeleton3D/Bone_001/Cube_011" unique_id=2008731411]
+[node name="Mouth" parent="Armature/Skeleton3D/Bone_001/head" unique_id=1139275092 instance=ExtResource("1_y0rgn")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.18278414, -0.1254338, 0)
+characterName = "TCB"
+
+[node name="Cube_012" type="MeshInstance3D" parent="Armature/Skeleton3D/Bone_001/head" unique_id=2008731411]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6900001, -0.7099999, 0)
 mesh = SubResource("ArrayMesh_wjkhf")
 
