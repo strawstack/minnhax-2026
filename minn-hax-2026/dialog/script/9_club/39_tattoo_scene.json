@@ -1,6 +1,10 @@
 [
 	{
 		"name": "Command",
+		"command": "hideDialog"
+	},
+	{
+		"name": "Command",
 		"command": "fadeOut",
 		"await": true
 	},
@@ -29,6 +33,7 @@
 	{
 		"name": "Command",
 		"command": "tattooSoundEffect",
+		"await": true
 	},
 	{
 		"name": "Command",
@@ -43,6 +48,10 @@
 	{
 		"name": "Command",
 		"command": "cameraLeBooBoo",
+	},
+	{
+		"name": "Command",
+		"command": "showDialog"
 	},
 	{
 		"name": "LeBooBoo",
@@ -84,12 +93,25 @@
 	},
 	{
 		"name": "Command",
+		"command": "hideDialog"
+	},
+	{
+		"name": "Command",
 		"command": "cameraPullBack",
+	},
+	{
+		"name": "Command",
+		"command": "waitOneSecond",
+		"await": true
 	},
 	{
 		"name": "Command",
 		"command": "playerFallAnimationSequence",
 		"await": true
+	},
+	{
+		"name": "Command",
+		"command": "showDialog"
 	},
 	{
 		"name": "MoneyPony",
@@ -113,6 +135,10 @@
 		"name": "Command",
 		"command": "fadeOut",
 		"await": true
+	},
+	{
+		"name": "Command",
+		"command": "freeShards"
 	},
 	{
 		"name": "Command",

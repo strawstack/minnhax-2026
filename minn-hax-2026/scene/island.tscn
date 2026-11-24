@@ -7,6 +7,7 @@
 [ext_resource type="Material" uid="uid://d3ekinuddh8ho" path="res://material/blue_glow.tres" id="3_p1fe6"]
 [ext_resource type="Material" uid="uid://b8vlsfiq51xyb" path="res://material/flat_black.tres" id="4_tho0w"]
 [ext_resource type="Texture2D" uid="uid://bcdn583txpcp8" path="res://glb/island_club/island_music_club_nevi_white_fur.png" id="4_vmveg"]
+[ext_resource type="Script" uid="uid://bxtrslc1esu31" path="res://script/glass_shards_island.gd" id="5_0pdau"]
 [ext_resource type="Material" uid="uid://bw3msee7hdgpq" path="res://material/dark_red_couch_bottom.tres" id="5_57qce"]
 [ext_resource type="Texture2D" uid="uid://b6py7bmoy1r22" path="res://glb/island_club/island_music_club_nevi_face.png" id="5_h8lc6"]
 [ext_resource type="PackedScene" uid="uid://bugwpg2o7w3gw" path="res://scene/player.tscn" id="6_vmveg"]
@@ -103,6 +104,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_8x01j")
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_kbkkx"]
+radius = 0.1
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l5qmf"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_2t644"]
@@ -135,6 +139,9 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_2t644")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_uf2ew"]
+radius = 0.1
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ja3iq"]
 
@@ -169,6 +176,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_0ws2y")
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_uhslb"]
+radius = 0.1
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bfdxv"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_wf5po"]
@@ -201,6 +211,9 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_wf5po")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_47ro8"]
+radius = 0.1
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vinr7"]
 
@@ -235,6 +248,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_4t4g4")
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_xfpwl"]
+radius = 0.1
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bb5mn"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ems10"]
@@ -267,6 +283,9 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ems10")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_rsijs"]
+radius = 0.1
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xqg0u"]
 
@@ -301,6 +320,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_5lqyo")
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_tqijd"]
+radius = 0.1
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fojt1"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_qc0wf"]
@@ -333,6 +355,12 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_qc0wf")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_jy6iu"]
+radius = 0.1
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_jd5n0"]
+radius = 0.1
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vi7nr"]
 
@@ -718,7 +746,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_7x8he"]
 resource_name = "playerFall"
-length = 3.0000000000000004
+length = 2.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -726,7 +754,7 @@ tracks/0/path = NodePath("fortyIdleNoAnimRoof:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 3),
+"times": PackedFloat32Array(0, 2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(4.9002857, 5.1748543, -9.301534), Vector3(4.9002857, 0.40673566, -9.301534)]
@@ -4305,51 +4333,125 @@ surface_material_override/0 = ExtResource("9_ms41l")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="windowRoof/StaticBody3D" unique_id=1762607349]
 shape = SubResource("ConcavePolygonShape3D_7drdb")
 
-[node name="glass_shards" type="Node3D" parent="." unique_id=1540477448]
-visible = false
+[node name="glass_shards" type="Node3D" parent="." unique_id=1540477448 node_paths=PackedStringArray("windowRoof")]
+script = ExtResource("5_0pdau")
+windowRoof = NodePath("../windowRoof")
 
-[node name="Cube_137" type="MeshInstance3D" parent="glass_shards" unique_id=15600664]
+[node name="RigidBody3D9" type="RigidBody3D" parent="glass_shards" unique_id=1752243522]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.525, 4.75, -10.8)
+gravity_scale = 0.5
+freeze = true
+angular_damp = 0.5
+
+[node name="Cube_137" type="MeshInstance3D" parent="glass_shards/RigidBody3D9" unique_id=15600664]
 mesh = SubResource("ArrayMesh_wpsfr")
 surface_material_override/0 = ExtResource("10_de5rk")
 
-[node name="Cube_138" type="MeshInstance3D" parent="glass_shards" unique_id=453301529]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="glass_shards/RigidBody3D9" unique_id=1018023757]
+shape = SubResource("SphereShape3D_kbkkx")
+
+[node name="RigidBody3D8" type="RigidBody3D" parent="glass_shards" unique_id=2054797177]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8500001, 4.75, -10.7)
+gravity_scale = 0.5
+freeze = true
+angular_damp = 0.5
+
+[node name="Cube_138" type="MeshInstance3D" parent="glass_shards/RigidBody3D8" unique_id=453301529]
 mesh = SubResource("ArrayMesh_1342b")
 surface_material_override/0 = ExtResource("10_de5rk")
 
-[node name="Cube_139" type="MeshInstance3D" parent="glass_shards" unique_id=974314646]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="glass_shards/RigidBody3D8" unique_id=1560511866]
+shape = SubResource("SphereShape3D_uf2ew")
+
+[node name="RigidBody3D7" type="RigidBody3D" parent="glass_shards" unique_id=1281348260]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2250004, 4.75, -10.6)
+gravity_scale = 0.5
+freeze = true
+angular_damp = 0.5
+
+[node name="Cube_139" type="MeshInstance3D" parent="glass_shards/RigidBody3D7" unique_id=974314646]
 mesh = SubResource("ArrayMesh_gan37")
 surface_material_override/0 = ExtResource("10_de5rk")
 
-[node name="Cube_140" type="MeshInstance3D" parent="glass_shards" unique_id=987553784]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="glass_shards/RigidBody3D7" unique_id=868248983]
+shape = SubResource("SphereShape3D_uhslb")
+
+[node name="RigidBody3D6" type="RigidBody3D" parent="glass_shards" unique_id=1009271894]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1250005, 4.75, -9.225)
+gravity_scale = 0.5
+freeze = true
+angular_damp = 0.5
+
+[node name="Cube_140" type="MeshInstance3D" parent="glass_shards/RigidBody3D6" unique_id=987553784]
 mesh = SubResource("ArrayMesh_2i7g3")
 surface_material_override/0 = ExtResource("10_de5rk")
 
-[node name="Cube_141" type="MeshInstance3D" parent="glass_shards" unique_id=726437736]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="glass_shards/RigidBody3D6" unique_id=1363003807]
+shape = SubResource("SphereShape3D_47ro8")
+
+[node name="RigidBody3D5" type="RigidBody3D" parent="glass_shards" unique_id=441301690]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8250003, 4.75, -9.400001)
+gravity_scale = 0.5
+freeze = true
+angular_damp = 0.5
+
+[node name="Cube_141" type="MeshInstance3D" parent="glass_shards/RigidBody3D5" unique_id=726437736]
 mesh = SubResource("ArrayMesh_yw2d8")
 surface_material_override/0 = ExtResource("10_de5rk")
 
-[node name="Cube_142" type="MeshInstance3D" parent="glass_shards" unique_id=1731803961]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="glass_shards/RigidBody3D5" unique_id=809486891]
+shape = SubResource("SphereShape3D_xfpwl")
+
+[node name="RigidBody3D4" type="RigidBody3D" parent="glass_shards" unique_id=1820161785]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6, 4.75, -9.575)
+gravity_scale = 0.5
+freeze = true
+angular_damp = 0.5
+
+[node name="Cube_142" type="MeshInstance3D" parent="glass_shards/RigidBody3D4" unique_id=1731803961]
 mesh = SubResource("ArrayMesh_f5oal")
 surface_material_override/0 = ExtResource("10_de5rk")
 
-[node name="Cube_143" type="MeshInstance3D" parent="glass_shards" unique_id=802245711]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="glass_shards/RigidBody3D4" unique_id=1904236582]
+shape = SubResource("SphereShape3D_rsijs")
+
+[node name="RigidBody3D3" type="RigidBody3D" parent="glass_shards" unique_id=1418354476]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.625, 4.75, -8.075)
+gravity_scale = 0.5
+freeze = true
+angular_damp = 0.5
+
+[node name="Cube_143" type="MeshInstance3D" parent="glass_shards/RigidBody3D3" unique_id=802245711]
 mesh = SubResource("ArrayMesh_3ytrc")
 surface_material_override/0 = ExtResource("10_de5rk")
 
-[node name="Cube_144" type="MeshInstance3D" parent="glass_shards" unique_id=863835074]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="glass_shards/RigidBody3D3" unique_id=231996138]
+shape = SubResource("SphereShape3D_tqijd")
+
+[node name="RigidBody3D2" type="RigidBody3D" parent="glass_shards" unique_id=1500902557]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.825, 4.75, -8)
+gravity_scale = 0.5
+freeze = true
+angular_damp = 0.5
+
+[node name="Cube_144" type="MeshInstance3D" parent="glass_shards/RigidBody3D2" unique_id=863835074]
 mesh = SubResource("ArrayMesh_ssi8x")
 surface_material_override/0 = ExtResource("10_de5rk")
 
-[node name="Cube_145" type="MeshInstance3D" parent="glass_shards" unique_id=2081562301]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="glass_shards/RigidBody3D2" unique_id=1472874202]
+shape = SubResource("SphereShape3D_jy6iu")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="glass_shards" unique_id=1066479108]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1000004, 4.75, -7.925)
+collision_layer = 0
+gravity_scale = 0.5
+freeze = true
+angular_damp = 0.5
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="glass_shards/RigidBody3D" unique_id=60928833]
+shape = SubResource("SphereShape3D_jd5n0")
+
+[node name="Cube_145" type="MeshInstance3D" parent="glass_shards/RigidBody3D" unique_id=2081562301]
 mesh = SubResource("ArrayMesh_mke7h")
 surface_material_override/0 = ExtResource("10_de5rk")
 
@@ -4552,6 +4654,7 @@ fov = 61.0
 
 [node name="fortyIdleNoAnimRoof" parent="sceneTattoo" unique_id=1972262023 instance=ExtResource("23_re1to")]
 transform = Transform3D(1.9106853e-15, -1, -4.3711385e-08, -4.3711378e-08, -4.371139e-08, 0.9999999, -0.9999999, 0, -4.3711378e-08, 4.9002857, 5.1748543, -9.301534)
+visible = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="sceneTattoo" unique_id=1575864775]
 libraries/ = SubResource("AnimationLibrary_xvfq1")
@@ -5376,7 +5479,7 @@ libraries/ = SubResource("AnimationLibrary_0pdau")
 script = ExtResource("29_v2fqc")
 
 [node name="Player" parent="players" unique_id=1371449073 instance=ExtResource("6_vmveg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.596327, 0, -53)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.344, 0, -51.854)
 startRotation = 180
 
 [node name="Player2" parent="players" unique_id=959866717 instance=ExtResource("6_vmveg")]

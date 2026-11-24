@@ -43,19 +43,22 @@ func _ready() -> void:
 		"cameraRampGuy": cameraRampGuy,
 		"showfortyIdleNoAnimRoof": showfortyIdleNoAnimRoof,
 		"hidefortyIdleNoAnimRoof": hidefortyIdleNoAnimRoof,
-		"playerFallAnimationSequence": null,
-		"breakGlassSoundEffect": null,
-		"tattooSoundEffect": null,
-		"cameraCloseTattoo": null,
-		"cameraLeBooBoo": null,
-		"cameraArtist": null,
-		"cameraPullBack": null,
-		"waitOneSecond": null,
-		"waitThreeSeconds": null,
+		"playerFallAnimationSequence": playerFallAnimationSequence,
+		"breakGlassSoundEffect": breakGlassSoundEffect,
+		"tattooSoundEffect": tattooSoundEffect,
+		"cameraCloseTattoo": cameraCloseTattoo,
+		"cameraLeBooBoo": cameraLeBooBoo,
+		"cameraArtist": cameraArtist,
+		"cameraPullBack": cameraPullBack,
+		"waitOneSecond": waitOneSecond,
+		"waitThreeSeconds": waitThreeSeconds,
+		"freeShards": freeShards
 	}
-	# Make sure these players are hidden on start
+	# Make sure these nodes are hidden on start
 	$players/Player2.set_visible(false)
 	$players/Player3.set_visible(false)
+	$sceneTattoo/fortyIdleNoAnimRoof.set_visible(false)
+	
 	$Camera3D_OpenTwo.set_current(true)
 	await gc.fadeIn()
 	gc.playDialogFile("res://dialog/script/9_club/34_get_off_boat.json")
@@ -63,14 +66,22 @@ func _ready() -> void:
 func playerFallAnimationSequence():
 	showfortyIdleNoAnimRoof()
 	$sceneTattoo/AnimationPlayer.play("playerFall")
+	$glass_shards.fall()
 	await $sceneTattoo/AnimationPlayer.animation_finished
 	gc.endAwaitDialog()
 
+func freeShards():
+	$glass_shards.free()
+
 func breakGlassSoundEffect():
-	pass
+	# TODO play sound
+	await get_tree().create_timer(1.0).timeout
+	gc.endAwaitDialog()
 
 func tattooSoundEffect():
-	pass
+	# TODO play sound
+	await get_tree().create_timer(1.0).timeout
+	gc.endAwaitDialog()
 
 func cameraCloseTattoo():
 	$sceneTattoo/CloseTattoo.set_current(true)
