@@ -94,6 +94,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "revealMinnMaxLogo_HostMeetup"
+	},
+	{
 		"name": "MoneyPony",
 		"avatar": "",
 		"lines": [
@@ -109,14 +113,3 @@
 
 
  
-
-
-
-
-
-
-
-
-
-
-

@@ -1,8 +1,5 @@
 extends Node3D
 
-@export var interviewCouch: MeshInstance3D
-@export var interviewChair: MeshInstance3D
-
 var gc
 
 const soundEffect = {
@@ -15,8 +12,14 @@ func _ready() -> void:
 	sceneSetUp()
 	gc.sceneCommandLookup = {
 		"returnPlayer1Camera": returnPlayer1Camera,
+		"returnPlayer2Camera": returnPlayer2Camera,
+		"returnPlayer3Camera": returnPlayer3Camera,
 		"hidePlayer1": hidePlayer1,
 		"showPlayer1": showPlayer1,
+		"hidePlayer2": hidePlayer2,
+		"showPlayer2": showPlayer2,
+		"hidePlayer3": hidePlayer3,
+		"showPlayer3": showPlayer3,
 		"hideIdleAtBouncer": hideIdleAtBouncer,
 		"showPlayer": showPlayer,
 		"cameraTCB": cameraTCB,
@@ -57,16 +60,91 @@ func _ready() -> void:
 		"cameraPullBack": cameraPullBack,
 		"waitOneSecond": waitOneSecond,
 		"waitTwoSeconds": waitTwoSeconds,
-		"freeShards": freeShards
+		"freeShards": freeShards,
+		"hideTattooScene": hideTattooScene,
+		"cameraLady": cameraLady,
+		"showIdleAtLady": showIdleAtLady,
+		"hideIdleAtLady": hideIdleAtLady,
+		"turnLady": turnLady,
+		"forwardLady": forwardLady,
+		"revealMinnMaxLogo_TCBBar": revealMinnMaxLogo_TCBBar,
+		"revealMinnMaxLogo_HostMeetup": revealMinnMaxLogo_HostMeetup,
+		"showFortyIdleNoAnimDrummer": showFortyIdleNoAnimDrummer,
+		"hideFortyIdleNoAnimDrummer": hideFortyIdleNoAnimDrummer,
+		"startRockCatAnimation": startRockCatAnimation,
+		"stopRockCatAnimation": stopRockCatAnimation,
+		"cameraSeeCat": cameraSeeCat,
+		"cameraSeeInterviewer": cameraSeeInterviewer,
+		"cameraSeeLeBooBoo": cameraSeeLeBooBoo,
+		"cameraSeePullBack": cameraSeePullBack,
+		"hideOutsideTCB": hideOutsideTCB
 	}
 	# Make sure these nodes are hidden on start
 	$players/Player2.set_visible(false)
 	$players/Player3.set_visible(false)
 	$sceneTattoo/fortyIdleNoAnimRoof.set_visible(false)
-	
+	$tcbCharacterAtBar.set_visible(false)
 	$Camera3D_OpenTwo.set_current(true)
 	await gc.fadeIn()
-	gc.playDialogFile("res://dialog/script/9_club/34_get_off_boat.json")
+	if gc.DEBUG:
+		switchToPlayer2()
+		gc.playerCanMove = true
+	else:
+		gc.playDialogFile("res://dialog/script/9_club/34_get_off_boat.json")
+
+func hideOutsideTCB():
+	$sceneTalkToTCB/tcbCharacter.set_visible(false)
+
+func cameraSeeCat():
+	$sceneSeeEverything/SeeCat.set_current(true)
+
+func cameraSeeInterviewer():
+	$sceneSeeEverything/SeeInterviewer.set_current(true)
+
+func cameraSeeLeBooBoo():
+	$sceneSeeEverything/SeeLeBooBoo.set_current(true)
+
+func cameraSeePullBack():
+	$sceneSeeEverything/SeePullBack.set_current(true)
+
+func startRockCatAnimation():
+	$sceneSeeEverything/AnimationPlayer.play("rockCat")
+
+func stopRockCatAnimation():
+	$sceneSeeEverything/AnimationPlayer.stop()
+
+func showFortyIdleNoAnimDrummer():
+	$sceneDrummerDistract/fortyIdleNoAnimDrummer.set_visible(true)
+
+func hideFortyIdleNoAnimDrummer():
+	$sceneDrummerDistract/fortyIdleNoAnimDrummer.set_visible(false)
+
+func revealMinnMaxLogo_HostMeetup():
+	$logoPoints/minnMaxLogo_HostMeetup.reveal()
+
+func revealMinnMaxLogo_TCBBar():
+	$logoPoints/minnMaxLogo_TCBBar.reveal()
+	$tcbCharacterAtBar.set_visible(true)
+
+func turnLady():
+	$sceneRedDress/LadyDress/AnimationPlayer.play("turn")
+	await $sceneRedDress/LadyDress/AnimationPlayer.animation_finished
+	gc.endAwaitDialog()
+
+func forwardLady():
+	$sceneRedDress/LadyDress/AnimationPlayer.play("forward")
+
+func showIdleAtLady():
+	$sceneRedDress/fortyIdleNoAnimRed.set_visible(true)
+
+func hideIdleAtLady():
+	$sceneRedDress/fortyIdleNoAnimRed.set_visible(false)
+
+func cameraLady():
+	$sceneRedDress/Lady.set_current(true)
+
+func hideTattooScene():
+	$tattooCharacters.set_visible(false)
 
 func playSoundEffectAwait(soundName: String):
 	$audio/AudioStreamPlayerSoundEffect.stop()
@@ -157,6 +235,18 @@ func hidePlayer1():
 func showPlayer1():
 	$players/Player.set_visible(true)
 
+func hidePlayer2():
+	$players/Player2.set_visible(false)
+
+func showPlayer2():
+	$players/Player2.set_visible(true)
+
+func hidePlayer3():
+	$players/Player3.set_visible(false)
+
+func showPlayer3():
+	$players/Player3.set_visible(true)
+
 func switchToPlayer2():
 	$players/Player.localFreeze = true
 	$players/Player.set_visible(false)
@@ -210,8 +300,8 @@ func cameraStageClose():
 	$Cameras/StageClose.set_current(true)
 
 func hideInterviewScene():
-	interviewCouch.get_node("StaticBody3D").set_collision_layer(1, false)
-	interviewChair.get_node("StaticBody3D").set_collision_layer(1, false)
+	$sceneSeeEverything/interview_scene/interview_couch/StaticBody3D.set_collision_layer_value(1, false)
+	$sceneSeeEverything/interview_scene/interview_chair/StaticBody3D.set_collision_layer_value(1, false)
 	$sceneSeeEverything.set_visible(false)
 
 func meetupDoorOpen():

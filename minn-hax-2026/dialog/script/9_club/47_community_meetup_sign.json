@@ -5,11 +5,15 @@
 	},
 	{
 		"name": "Command",
-		"command": "hidePlayer"
+		"command": "hidePlayer2"
 	},
 	{
 		"name": "Command",
 		"command": "cameraMeetupRoom"
+	},
+	{
+		"name": "Command",
+		"command": "showFortyIdleNoAnimDrummer"
 	},
 	{
 		"name": "Command",
@@ -97,14 +101,22 @@
 	},
 	{
 		"name": "Command",
-		"command": "showPlayer"
+		"command": "showPlayer2"
 	},
 	{
 		"name": "Command",
-		"command": "returnPlayerCamera"
+		"command": "hideFortyIdleNoAnimDrummer"
+	},
+	{
+		"name": "Command",
+		"command": "returnPlayer2Camera"
 	},
 	{
 		"name": "Command",
 		"command": "unfreezePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "hideInterviewScene"
 	}
 ]

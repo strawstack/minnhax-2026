@@ -1,5 +1,13 @@
 [
 	{
+		"name": "Command",
+		"command": "hideTattooScene"
+	},
+	{
+		"name": "Command",
+		"command": "hideOutsideTCB"
+	},
+	{
 		"name": "MoneyPony",
 		"avatar": "",
 		"lines": [

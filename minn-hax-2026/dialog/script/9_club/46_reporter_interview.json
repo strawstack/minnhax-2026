@@ -1,5 +1,21 @@
 [
 	{
+		"name": "Command",
+		"command": "startRockCatAnimation"
+	},
+	{
+		"name": "Command",
+		"command": "freezePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "hidePlayer2"
+	},
+	{
+		"name": "Command",
+		"command": "cameraSeeInterviewer"
+	},
+	{
 		"name": "Nathan",
 		"avatar": "",
 		"lines": [
@@ -8,6 +24,10 @@
 				"text": "You’re being honest with me? You didn’t get a MinnMax tattoo on your right bicep in that tattoo parlor over there exactly five minutes ago?"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "cameraSeeLeBooBoo"
 	},
 	{
 		"name": "LeBooBoo",
@@ -20,6 +40,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "cameraSeeInterviewer"
+	},
+	{
 		"name": "Nathan",
 		"avatar": "",
 		"lines": [
@@ -28,6 +52,10 @@
 				"text": "It’s just that a tattoo would be highly parasocial and that’s your-"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "cameraSeeLeBooBoo"
 	},
 	{
 		"name": "LeBooBoo",
@@ -40,6 +68,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "cameraSeeInterviewer"
+	},
+	{
 		"name": "Nathan",
 		"avatar": "",
 		"lines": [
@@ -48,6 +80,10 @@
 				"text": "Okay. Alright. Good chat..."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "cameraSeePullBack"
 	},
 	{
 		"name": "LeBooBoo",
@@ -60,6 +96,10 @@
 		]
 	},
 	{
+		"name": "Command",
+		"command": "cameraSeeCat"
+	},
+	{
 		"name": "Nevi",
 		"avatar": "",
 		"lines": [
@@ -68,5 +108,21 @@
 				"text": "Meow!"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "stopRockCatAnimation"
+	},
+	{
+		"name": "Command",
+		"command": "unfreezePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "showPlayer2"
+	},
+	{
+		"name": "Command",
+		"command": "returnPlayer2Camera"
 	}
 ]

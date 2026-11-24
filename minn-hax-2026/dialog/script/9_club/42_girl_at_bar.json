@@ -1,5 +1,21 @@
 [
 	{
+		"name": "Command",
+		"command": "hidePlayer2"
+	},
+	{
+		"name": "Command",
+		"command": "freezePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "cameraLady"
+	},
+	{
+		"name": "Command",
+		"command": "showIdleAtLady"
+	},
+	{
 		"name": "AgentForty",
 		"avatar": "",
 		"lines": [
@@ -8,6 +24,11 @@
 				"text": "The opulecent night flower only blooms twice bi-weekly?"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "turnLady",
+		"await": true
 	},
 	{
 		"name": "LadyInRed",
@@ -28,5 +49,29 @@
 				"text": "Sorry, thought you were someone else..."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "forwardLady"
+	},
+	{
+		"name": "Command",
+		"command": "showPlayer2"
+	},
+	{
+		"name": "Command",
+		"command": "unfreezePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "hideIdleAtLady"
+	},
+	{
+		"name": "Command",
+		"command": "returnPlayer2Camera"
+	},
+	{
+		"name": "Command",
+		"command": "revealMinnMaxLogo_TCBBar"
 	}
 ]
