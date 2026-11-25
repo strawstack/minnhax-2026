@@ -851,7 +851,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_4boof"]
 resource_name = "elevatorClose"
-length = 2.0
+length = 3.0000000000000004
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -859,7 +859,7 @@ tracks/0/path = NodePath("titleScreen/elevatorDoors/Cube_061:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2),
+"times": PackedFloat32Array(0, 3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(3.1000001, 2.5000002, 2.289648), Vector3(3.1000001, 2.5000002, 0.8086606)]
@@ -871,7 +871,7 @@ tracks/1/path = NodePath("titleScreen/elevatorDoors/Cube_060:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 2),
+"times": PackedFloat32Array(0, 3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(3.1000001, 2.5000002, -2.2645574), Vector3(3.1000001, 2.5000002, -0.7913395)]
@@ -879,7 +879,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_lr3xh"]
 resource_name = "elevatorOpen"
-length = 2.0
+length = 3.0000000000000004
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -887,7 +887,7 @@ tracks/0/path = NodePath("titleScreen/elevatorDoors/Cube_061:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2),
+"times": PackedFloat32Array(0, 3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(3.1000001, 2.5000002, 0.8086606), Vector3(3.1000001, 2.5000002, 2.289648)]
@@ -899,7 +899,7 @@ tracks/1/path = NodePath("titleScreen/elevatorDoors/Cube_060:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 2),
+"times": PackedFloat32Array(0, 3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(3.1000001, 2.5000002, -0.7913395), Vector3(3.1000001, 2.5000002, -2.2645574)]

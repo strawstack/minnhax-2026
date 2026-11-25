@@ -1,9 +1,11 @@
 extends Node3D
 
-const DEBUG = true
+const DEBUG = false
 
 @export var commands: Node3D
 @export var bulletSmoke: Node3D
+@export var audioStreamPlayerBGM: AudioStreamPlayer
+@export var audioStreamPlayerSoundEffect: AudioStreamPlayer
 
 const scenes = {
 	"logo": preload("res://scene/logo.tscn"),
@@ -29,7 +31,43 @@ const musicTracks = {
 }
 
 const bgmMusic = {
-	"name": null
+	"apartment": preload("res://audio/bgm/bgm_apartment.mp3"),
+	"bubbles": preload("res://audio/bgm/loop_bubbles.mp3"),
+	"helicopter": preload("res://audio/bgm/helicopter.mp3"),
+	"waves": preload("res://audio/bgm/loop_waves.mp3"),
+	"greenday": preload("res://audio/bgm/bgm_greenday_jeep.mp3"),
+	"obstacle": preload("res://audio/bgm/bgm_shooting_obstacle.mp3"),
+	"tacsim": preload("res://audio/bgm/bgm_mi6.mp3"),
+	"freelancer": preload("res://audio/bgm/bgm_freelancer.mp3"),
+	"outsideclub": preload("res://audio/bgm/bgm_outside_club.mp3")
+}
+
+const soundEffect = {
+	"air_plane_off": preload("res://audio/soundEffect/air_plane_off.mp3"),
+	"boat_engine": preload("res://audio/soundEffect/boat_engine.mp3"),
+	"bullet_wood": preload("res://audio/soundEffect/bullet_wood.mp3"),
+	"car_start": preload("res://audio/soundEffect/car_start.mp3"),
+	"cowbell": preload("res://audio/soundEffect/cowbell.mp3"),
+	"door_lock": preload("res://audio/soundEffect/door_lock.mp3"),
+	"door_open": preload("res://audio/soundEffect/door_open.mp3"),
+	"elevator_close": preload("res://audio/soundEffect/elevator_close.mp3"),
+	"elevator_open": preload("res://audio/soundEffect/elevator_open.mp3"),
+	"explode": preload("res://audio/soundEffect/explode.mp3"),
+	"flag_flap": preload("res://audio/soundEffect/flag_flap.mp3"),
+	"garage_door": preload("res://audio/soundEffect/garage_door.mp3"),
+	"glass_break": preload("res://audio/soundEffect/glass_break.mp3"),
+	"gun_shot": preload("res://audio/soundEffect/gun_shot.mp3"),
+	"item_collected": preload("res://audio/soundEffect/item_collect.mp3"),
+	"jeep_hit": preload("res://audio/soundEffect/jeep_hit.mp3"),
+	"jump": preload("res://audio/soundEffect/jump.mp3"),
+	"low_battery": preload("res://image/low_battery.png"),
+	"rocket_fly_explode": preload("res://audio/soundEffect/rocket_fly_explode.mp3"),
+	"small_debris": preload("res://audio/soundEffect/small_debris.mp3"),
+	"success": preload("res://audio/soundEffect/success.mp3"),
+	"tac_sim_start": preload("res://audio/soundEffect/tac_sim_start.mp3"),
+	"tattoo_needle": preload("res://audio/soundEffect/tatto_needle.mp3"),
+	"wind": preload("res://audio/soundEffect/wind.mp3"),
+	"wood_door_smash": preload("res://audio/soundEffect/wood_door_smash.mp3")
 }
 
 # commandLookup populated by Commands child node 
@@ -66,6 +104,19 @@ func _ready() -> void:
 		$CanvasLayer_MusicDialog.set_visible(false)
 		loadScene("logo") # Calls "logoSceneEnds" on completion
 		await fadeIn()
+
+func stopBGM():
+	audioStreamPlayerBGM.stop()
+
+func playBGM(trackName: String):
+	audioStreamPlayerBGM.stop()
+	audioStreamPlayerBGM.stream = bgmMusic[trackName]
+	audioStreamPlayerBGM.play()
+
+func playSoundEffect(effectName: String):
+	if not audioStreamPlayerSoundEffect.is_playing() and effectName in soundEffect:
+		audioStreamPlayerSoundEffect.stream = soundEffect[effectName]
+		audioStreamPlayerSoundEffect.play()
 
 func hideDialog():
 	$CanvasLayer_Dialog.set_visible(false)
@@ -147,10 +198,12 @@ func logoSceneEnds():
 	await fadeIn()
 	await get_tree().create_timer(4.0).timeout
 	await fadeOut()
+	playBGM("tacsim")
 	loadScene("mainMenu2") # Calls "mainMenuStartPress" on completion
 
 func mainMenuStartPress():
 	await fadeOut()
+	playBGM("apartment")
 	loadScene("apartment")
 	await fadeIn()
 
@@ -202,6 +255,7 @@ func draw_thick_line(from: Vector3, to: Vector3):
 # Called by interacting with Control Room 2 prompt after morning voice mail
 func startGameStream():
 	await fadeOut()
+	playBGM("loop_bubbles")
 	mouthLookup.clear()
 	lookWatchUnderwater = true
 	showCrossHairs(false)
@@ -210,8 +264,16 @@ func startGameStream():
 
 func sceneHelicopter():
 	await fadeOut()
+	playBGM("helicopter")
 	mouthLookup.clear()
 	loadScene("helicopter")
+
+func loadBeachScene():
+	playerCanMove = false
+	await fadeOut()
+	playBGM("waves")
+	mouthLookup.clear()
+	loadScene("beach")
 
 func loadBeachParty():
 	playerCanMove = false
@@ -219,21 +281,18 @@ func loadBeachParty():
 	mouthLookup.clear()
 	loadScene("beachParty")
 
-func loadBeachScene():
-	playerCanMove = false
-	await fadeOut()
-	mouthLookup.clear()
-	loadScene("beach")
 
 func loadGreenDayTraining():
 	playerCanMove = false
 	await fadeOut()
+	playBGM("greenday")
 	mouthLookup.clear()
 	loadScene("greenDay")
 
 func loadTrainingShoot():
 	playerCanMove = false
 	await fadeOut()
+	playBGM("obstacle")
 	mouthLookup.clear()
 	loadScene("trainingShoot")
 
@@ -246,18 +305,21 @@ func loadObstacleCourse():
 func loadTacSim():
 	playerCanMove = false
 	await fadeOut()
+	playBGM("tacsim")
 	mouthLookup.clear()
 	loadScene("tacSim")
 
 func loadFreelancer():
 	playerCanMove = false
 	await fadeOut()
+	playBGM("freelancer")
 	mouthLookup.clear()
 	loadScene("freelancer")
 
 func loadIsland():
 	playerCanMove = false
 	await fadeOut()
+	playBGM("outsideclub")
 	mouthLookup.clear()
 	loadScene("island")
 

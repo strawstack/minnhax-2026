@@ -13,13 +13,15 @@ func _ready() -> void:
 func startScene():
 	# TODO audio elevator door open
 	$AnimationPlayer.play("elevatorOpen")
+	gc.playSoundEffect("elevator_open")
 	await $AnimationPlayer.animation_finished
-	# TODO audio elevator ding
+	await get_tree().create_timer(1.0).timeout
 	$titleScreen/enterToStartLabel.set_visible(true)
 	canStart = true
 
 func elevatorClose():
 	$AnimationPlayer.play("elevatorClose")
+	gc.playSoundEffect("elevator_close")
 	await $AnimationPlayer.animation_finished
 	gc.mainMenuStartPress()
 

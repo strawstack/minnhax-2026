@@ -95,10 +95,12 @@ albedo_color = Color(1, 1, 1, 0.78431374)
 transparency = 1
 albedo_color = Color(1, 1, 1, 0.78431374)
 
-[node name="main" type="Node3D" unique_id=1687076067 node_paths=PackedStringArray("commands", "bulletSmoke")]
+[node name="main" type="Node3D" unique_id=1687076067 node_paths=PackedStringArray("commands", "bulletSmoke", "audioStreamPlayerBGM", "audioStreamPlayerSoundEffect")]
 script = ExtResource("1_sugp2")
 commands = NodePath("Commands")
 bulletSmoke = NodePath("bulletSmoke")
+audioStreamPlayerBGM = NodePath("Audio/AudioStreamPlayerBGM")
+audioStreamPlayerSoundEffect = NodePath("Audio/AudioStreamPlayerSoundEffect")
 
 [node name="Commands" type="Node3D" parent="." unique_id=700984858 node_paths=PackedStringArray("canvasLayerDialog")]
 script = ExtResource("2_4j5ol")
@@ -270,8 +272,7 @@ bus = &"Voice"
 bus = &"BackgroundMusic"
 
 [node name="AudioStreamPlayerSoundEffect" type="AudioStreamPlayer" parent="Audio" unique_id=697635758]
-
-[node name="AudioStreamPlayerPlayerSoundEffect" type="AudioStreamPlayer" parent="Audio" unique_id=1774954438]
+bus = &"BackgroundMusic"
 
 [node name="AudioStreamPlayerMusicTrack" type="AudioStreamPlayer" parent="Audio" unique_id=760994628]
 bus = &"Voice"
