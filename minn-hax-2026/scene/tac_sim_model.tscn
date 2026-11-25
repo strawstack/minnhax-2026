@@ -2873,7 +2873,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_qdeg2"]
 resource_name = "open_elevator"
-length = 2.0
+length = 3.0000000000000004
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -2881,7 +2881,7 @@ tracks/0/path = NodePath("Wall/Cube_060:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2),
+"times": PackedFloat32Array(0, 3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(3.1000001, 12.5, 24.699999), Vector3(3.1000001, 12.5, 23.232435)]
@@ -2893,7 +2893,7 @@ tracks/1/path = NodePath("Wall/Cube_061:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 2),
+"times": PackedFloat32Array(0, 3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(3.1000001, 12.5, 26.3), Vector3(3.1000001, 12.5, 27.76142)]

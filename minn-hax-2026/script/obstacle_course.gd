@@ -39,6 +39,7 @@ func hideSkateBoardModel():
 
 func hideFlag():
 	$red_flag.set_visible(false)
+	gc.playSoundEffect("flag_flap")
 
 func _process(delta: float) -> void:
 	if not $Player.noSkating and Input.is_action_just_pressed("f_key") and not commentOnce:

@@ -4,7 +4,6 @@ var gc
 func _ready() -> void:
 	gc = get_tree().current_scene
 	gc.sceneCommandLookup = {
-		"boatToIsland": boatToIsland,
 		"openShootingDoorAndBars": openShootingDoorAndBars,
 		"pickUpBoard": pickUpBoard,
 		"playerCanSkate": playerCanSkate,
@@ -38,13 +37,8 @@ func revealShooting():
 	$minnMaxLogo_shootingRange.reveal()
 	$minnMaxLogo_shootingRangeButton.reveal()
 
-func boatToIsland():
-	# TODO boating animation then switch to island scene
-	gc.loadIsland()
-
 func playCollectSound():
-	# TODO play collect sound
-	pass
+	gc.playSoundEffect("success")
 
 func openShootingDoorAndBars():
 	$AnimationPlayer.play("shootingDoorAndCageOpen")
@@ -66,8 +60,8 @@ func revealLeaveOnBoat():
 	$minnMaxLogo_leaveOnBoat.reveal()
 
 func playBoatAnimation():
-	# TODO play boat engine sound effect
 	$AnimationPlayer.play("driveBoat")
+	gc.playSoundEffect("boat_engine")
 	await get_tree().create_timer(3.0).timeout
 	gc.loadIsland()
 

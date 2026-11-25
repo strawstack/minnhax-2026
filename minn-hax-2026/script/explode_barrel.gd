@@ -15,3 +15,4 @@ func _on_area_3d_area_entered(area: Area3D) -> void:
 		$MeshInstance3D.set_visible(false)
 		$Explosion.set_visible(true)
 		$Timer.start()
+		gc.playSoundEffect("explode")

@@ -69,6 +69,7 @@ func _physics_process(delta):
 
 	# Jump
 	if Input.is_action_just_pressed("jump") and is_on_floor() and not playerRoot.inShootingMode:
+		gc.playSoundEffect("jump")
 		velocity.y = sqrt(2.0 * gravity * jump_height)
 
 	var dir = direction.normalized()

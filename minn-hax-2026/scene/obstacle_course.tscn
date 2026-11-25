@@ -12,6 +12,7 @@
 [ext_resource type="Material" uid="uid://doihrx6e7h62l" path="res://material/red_flag.tres" id="10_oosvs"]
 [ext_resource type="Material" uid="uid://c0ayg3mf4l6lc" path="res://material/rust_triplanar.tres" id="11_g0kro"]
 [ext_resource type="Script" uid="uid://b0u8slsv175rf" path="res://script/door_blow.gd" id="11_oosvs"]
+[ext_resource type="PackedScene" uid="uid://bk2hv7rgrpui6" path="res://scene/characters/green_day_character.tscn" id="13_aga0h"]
 
 [sub_resource type="Environment" id="Environment_jd5n0"]
 
@@ -1131,7 +1132,8 @@ surface_material_override/0 = ExtResource("10_oosvs")
 
 [node name="Label3D" type="Label3D" parent="." unique_id=2018917202]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -17.994312, 2.848337, -36.539238)
-text = "Ideally press F to \"skate\" and launch from the ramp to get the flag. Use these steps if you want. GreenDay doesn't care how you get the flag."
+text = "Stairs for accessibility only.
+Please use ramp."
 autowrap_mode = 2
 
 [node name="door" type="Node3D" parent="." unique_id=1850784895]
@@ -1261,6 +1263,9 @@ surface_material_override/0 = ExtResource("11_g0kro")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="door/pieces/StaticBody3D9" unique_id=129433081]
 shape = SubResource("BoxShape3D_g0kro")
+
+[node name="greenDay" parent="." unique_id=381334478 instance=ExtResource("13_aga0h")]
+transform = Transform3D(0.26117733, 0, 0.96529084, 0, 1, 0, -0.96529084, 0, 0.26117733, -7.7223907, 3.9980288, -44.230656)
 
 [node name="SkateBoardBack" type="MeshInstance3D" parent="." unique_id=780883510]
 transform = Transform3D(-0.6369186, 0.00966717, -0.77087045, -0.006157429, -0.9999534, -0.007452574, -0.77090657, -8.9406974e-08, 0.6369484, -13.389453, 1.0823777, -28.972593)

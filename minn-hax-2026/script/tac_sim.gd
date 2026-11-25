@@ -25,6 +25,7 @@ func _ready() -> void:
 	}
 	await gc.fadeIn()
 	$tac_sim_model/AnimationPlayer.play("open_elevator")
+	gc.playSoundEffect("elevator_open")
 	gc.playerCanMove = true
 
 func showMEleveator():
@@ -37,6 +38,7 @@ func mSidewaysGlance():
 func closeElevator():
 	await get_tree().create_timer(0.5).timeout
 	$tac_sim_model/AnimationPlayer.play("close_elevator")
+	gc.playSoundEffect("elevator_close")
 
 func hidePlayer():
 	$Player.set_visible(false)
@@ -73,7 +75,7 @@ func removeBarrier():
 	$tacBarrier.set_visible(false)
 
 func tacSimStartSound():
-	# TODO play sound, notify dialog on complete
+	gc.playSoundEffect("tac_sim_start")
 	await get_tree().create_timer(1.0).timeout
 	gc.endAwaitDialog()
 

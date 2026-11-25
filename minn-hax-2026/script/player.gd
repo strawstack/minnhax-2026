@@ -133,6 +133,7 @@ func _physics_process(delta: float) -> void:
 				var from = bulletStart.get_global_position()
 				var bulletDirection = -1 * bulletStart.get_global_basis().x * MAX_BULLET_DISTANCE
 				gc.draw_thick_line(from, from + bulletDirection)
+			gc.playSoundEffect("gun_shot")
 	else:
 		if Input.is_action_just_pressed("f_key") and not noSkating:
 			setMovement(not useWalkMovement)

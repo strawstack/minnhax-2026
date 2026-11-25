@@ -18,7 +18,7 @@ func startScene():
 	gc.playDialogFile("res://dialog/script/3_beach/12_a_agent_on_beach.json")
 
 func pickUpBeachTape():
-	gc.playSoundEffect("item_collect")
+	gc.playSoundEffect("success")
 
 func removeStaticBody3D_UntilRadio():
 	$blocksAndAreas/StaticBody3D_UntilRadio.set_collision_layer_value(5, false)
