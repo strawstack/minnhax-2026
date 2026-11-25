@@ -57,7 +57,7 @@ const soundEffect = {
 	"garage_door": preload("res://audio/soundEffect/garage_door.mp3"),
 	"glass_break": preload("res://audio/soundEffect/glass_break.mp3"),
 	"gun_shot": preload("res://audio/soundEffect/gun_shot.mp3"),
-	"item_collected": preload("res://audio/soundEffect/item_collect.mp3"),
+	"item_collect": preload("res://audio/soundEffect/item_collect.mp3"),
 	"jeep_hit": preload("res://audio/soundEffect/jeep_hit.mp3"),
 	"jump": preload("res://audio/soundEffect/jump.mp3"),
 	"low_battery": preload("res://image/low_battery.png"),
@@ -115,9 +115,12 @@ func playBGM(trackName: String):
 	audioStreamPlayerBGM.play()
 
 func playSoundEffect(effectName: String):
-	if not audioStreamPlayerSoundEffect.is_playing() and effectName in soundEffect:
-		audioStreamPlayerSoundEffect.stream = soundEffect[effectName]
-		audioStreamPlayerSoundEffect.play()
+	if not audioStreamPlayerSoundEffect.is_playing():
+		if effectName in soundEffect:
+			audioStreamPlayerSoundEffect.stream = soundEffect[effectName]
+			audioStreamPlayerSoundEffect.play()
+		else:
+			print("MISSING: " + effectName)
 
 func hideDialog():
 	$CanvasLayer_Dialog.set_visible(false)
@@ -225,7 +228,8 @@ func triggerCommand(command: String):
 func setMouth(name: String):
 	for characterName in mouthLookup:
 		for mouth in mouthLookup[characterName]:
-			mouth.setIsSpeaking(characterName == name)
+			if mouth:
+				mouth.setIsSpeaking(characterName == name)
 
 # Called when a dialog ends indicating a new one can be started
 func dialogEnds():
@@ -273,6 +277,7 @@ func loadBeachScene():
 	playerCanMove = false
 	await fadeOut()
 	playBGM("waves")
+	playSoundEffect("wind")
 	mouthLookup.clear()
 	loadScene("beach")
 
@@ -282,11 +287,11 @@ func loadBeachParty():
 	mouthLookup.clear()
 	loadScene("beachParty")
 
-
 func loadGreenDayTraining():
 	playerCanMove = false
 	await fadeOut()
 	playBGM("greenday")
+	playSoundEffect("air_plane_off")
 	mouthLookup.clear()
 	loadScene("greenDay")
 

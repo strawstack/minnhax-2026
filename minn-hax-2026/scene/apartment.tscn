@@ -3612,10 +3612,15 @@ surface_material_override/0 = ExtResource("13_gusyn")
 [node name="nevi" parent="." unique_id=1120417778 instance=ExtResource("14_qd0nk")]
 transform = Transform3D(-0.7546023, 0, 0.6561824, 0, 1, 0, -0.6561824, 0, -0.7546023, -1.6950225, 7.217, -3.7192044)
 
-[node name="neviPoints" type="Node3D" parent="." unique_id=365887790 node_paths=PackedStringArray("nevi", "player")]
+[node name="meowTimer" type="Timer" parent="." unique_id=1954877317]
+wait_time = 12.0
+one_shot = true
+
+[node name="neviPoints" type="Node3D" parent="." unique_id=365887790 node_paths=PackedStringArray("nevi", "player", "meowTimer")]
 script = ExtResource("14_q0pek")
 nevi = NodePath("../nevi")
 player = NodePath("../CharacterBody3D")
+meowTimer = NodePath("../meowTimer")
 
 [node name="DownstairsPost" type="Node3D" parent="neviPoints" unique_id=658884076]
 transform = Transform3D(-0.75448674, 0, 0.65631527, 0, 1, 0, -0.65631527, 0, -0.75448674, -1.6952761, 7.2165723, -3.7189696)
@@ -3682,3 +3687,5 @@ visible = false
 transform = Transform3D(-1.704744e-08, 0, 0.39, 0, 0.39, 0, -0.39, 0, -1.704744e-08, -2.395895, 7.840276, -7.6620774)
 visible = false
 texture = ExtResource("20_u5f37")
+
+[connection signal="timeout" from="meowTimer" to="neviPoints" method="_on_meow_timer_timeout"]

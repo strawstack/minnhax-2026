@@ -64,6 +64,7 @@ func driveJeep():
 	greenDay.set_visible(false)
 	$Jeep.showPassengers()
 	$Jeep.canDrive = true
+	gc.playSoundEffect("car_start")
 
 func startRolling():
 	$AnimationPlayerMonRoll.play("roll")

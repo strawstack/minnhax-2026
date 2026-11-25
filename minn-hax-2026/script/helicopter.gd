@@ -24,8 +24,9 @@ func cameraSwitchScreen():
 func switchLowBattery():
 	$Sprite3D_Game.set_visible(false)
 	$Sprite3D_LowBattery.set_visible(true)
+	gc.playSoundEffect("low_battery")
 
 func triggerExplosionSound():
-	print("TODO: Explosion sound")
+	gc.playSoundEffect("rocket_fly_explode")
 	await get_tree().create_timer(1.0).timeout
 	gc.endAwaitDialog()

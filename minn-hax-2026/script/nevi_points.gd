@@ -2,6 +2,7 @@ extends Node3D
 
 @export var nevi: Node3D
 @export var player: CharacterBody3D
+@export var meowTimer: Timer
 
 var points: Array[Node]
 var previousClosePoint = null
@@ -12,6 +13,8 @@ var rotation_speed = 10
 var neviCanMove = false
 
 var gc
+
+var canMeow = true
 
 func _ready() -> void:
 	gc = get_tree().current_scene
@@ -34,7 +37,13 @@ func _process(delta: float) -> void:
 			closePoint = point
 	if previousClosePoint != closePoint:
 		previousClosePoint = closePoint
-		gc.playSoundEffect("meow")
+		if canMeow:
+			canMeow = false
+			meowTimer.start()
+			gc.playSoundEffect("meow")
 
 	nevi.set_position(nevi.get_position().lerp(closePoint.get_position(), move_speed * delta))
 	nevi.set_rotation(nevi.get_rotation().lerp(closePoint.get_rotation(), rotation_speed * delta))
+
+func _on_meow_timer_timeout() -> void:
+	canMeow = true
