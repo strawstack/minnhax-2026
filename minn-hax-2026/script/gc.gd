@@ -181,6 +181,9 @@ func playMusic(track):
 	else:
 		print("MISSING music: " + track)
 
+func setMusicDialogAvatar(texture: Texture2D):
+	$CanvasLayer_MusicDialog/TextureRect_Avatar.set_texture(texture)
+
 func setMusicDialogCharacterName(name: String):
 	$CanvasLayer_MusicDialog/Label_CharacterName.set_text(name)
 

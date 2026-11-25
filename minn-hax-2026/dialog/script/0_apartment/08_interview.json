@@ -279,9 +279,13 @@
 		"lines": [
 			{
 				"voice": "08_21",
-				"text": "Thanks for that answer. That just about does it for our interview. Our background music today is produced by CrabPalace who appears for a performance in the final level of the game. And it looks like a bonus guest just jumped onto the desk."
+				"text": "Thanks for that answer. That just about does it for our interview. And it looks like a bonus guest just jumped onto the desk."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showNeviOnDesk"
 	},
 	{
 		"name": "Nevi",

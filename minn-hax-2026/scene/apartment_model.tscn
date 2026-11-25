@@ -26762,7 +26762,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 9.500001, -8.55)
 mesh = SubResource("ArrayMesh_l2xpa")
 
 [node name="Cube_266" type="MeshInstance3D" parent="." unique_id=1244412990]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 5.9499993, -9.25)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 5.944491, -9.25)
 mesh = SubResource("ArrayMesh_0jvrv")
 
 [node name="Cube_269" type="MeshInstance3D" parent="." unique_id=1930467584]

@@ -4,13 +4,7 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 # Todo
 
-- Record patch audio
-
 - Add Avatars to dialog box for each character
-
-- Add background music
-
-- Add sound effects
 
 - Ability to play cowbell during final performance
 
@@ -30,17 +24,7 @@ Godot project files for the MinnHax 2026 Game Jam.
   - The camera can go into them they should be labeled as "wall" to help camera physics
   - Applies to all rocks except barrier in the water
 
-- Top step of stairs to basement clips with floor - lower visible step a bit
-
-- Add LilBoo to bed
-
-- Add voice mail phone to desk
-
-- Show Nevi on the desk at the correct time
-
 - Review screenshots for more fixes (for example, placing images on monitors in apartment)
-
-- Consider closing my office door when dialog is active?
 
 - Place images throughout the game
   - CrabPalace in my office
@@ -51,6 +35,8 @@ Godot project files for the MinnHax 2026 Game Jam.
 - Confirm when player can and can't skate/shoot throughout
 
 - You can spam jump when in skate mode (does this break anything if not don't fix?)
+
+- make bgm for mi6 and mainmenu2 (it's the same track) more quite. Maybe -5db
 
 - Lable on wall near studio door saying
   - "Controls: Spacebar to jump, WASD to move, mouse to look."
@@ -65,6 +51,20 @@ Godot project files for the MinnHax 2026 Game Jam.
 - Studio stairs door. Make is colored to be more apparent
 
 # Done
+
+- Record patch audio
+
+- Add background music
+
+- Add sound effects
+
+- Top step of stairs to basement clips with floor - lower visible step a bit
+
+- add lilboo
+
+- add voice mail phone
+
+- Show Nevi on the desk at the correct time
 
 - Remove from in game text "It's all in good fun though, and..." this is not in audio file by choice
 
@@ -92,5 +92,7 @@ Godot project files for the MinnHax 2026 Game Jam.
   - Name and export clips
 
 # Cancel
+
+- Consider closing my office door when dialog is active?
 
 - Add 3D letters to the title screen texture the walls and couch

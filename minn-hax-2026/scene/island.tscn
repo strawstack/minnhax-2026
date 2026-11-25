@@ -7762,7 +7762,7 @@ mesh = SubResource("ArrayMesh_8g4af")
 surface_material_override/0 = ExtResource("4_tho0w")
 
 [node name="cat_carrier" type="MeshInstance3D" parent="sceneSeeEverything/interview_scene" unique_id=1069714368]
-transform = Transform3D(0.9390218, 0.15135972, 0.30875102, -0.14378673, 0.9884785, -0.04727717, -0.31234944, 0, 0.9499673, 15.1, 0.47499996, -11.599999)
+transform = Transform3D(0.93902177, 0.1513597, 0.30875102, -0.14378671, 0.9884784, -0.04727717, -0.31234944, 0, 0.9499673, 15.1, 0.47499996, -11.599999)
 mesh = SubResource("ArrayMesh_m4brd")
 surface_material_override/0 = ExtResource("7_salic")
 
@@ -8401,9 +8401,14 @@ mesh = SubResource("ArrayMesh_nkq4k")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0149987945, -0.22500049, 0)
 mesh = SubResource("ArrayMesh_gbdbe")
 
-[node name="Cube_455" type="MeshInstance3D" parent="tattooCharacters/Artist/Skeleton3D/Bone_001/Cube_453" unique_id=489325897]
+[node name="head" type="MeshInstance3D" parent="tattooCharacters/Artist/Skeleton3D/Bone_001/Cube_453" unique_id=489325897]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09999931, 0, 0)
 mesh = SubResource("ArrayMesh_irlx3")
+
+[node name="Mouth" parent="tattooCharacters/Artist/Skeleton3D/Bone_001/Cube_453/head" unique_id=1286447092 instance=ExtResource("10_hpfep")]
+transform = Transform3D(0.00023794071, 0.005167379, -0.99998707, 0.045998674, 0.9989287, 0.0051729977, 0.9989412, -0.045999162, -1.05036406e-07, 0.017911911, -0.08106613, 0.003711462)
+characterName = "TattooArtist"
+hideTeeth = true
 
 [node name="Bone_004" type="BoneAttachment3D" parent="tattooCharacters/Artist/Skeleton3D" unique_id=1961064195]
 transform = Transform3D(0.79137415, 0.16631654, 0.5882734, 0.15314795, 0.8776615, -0.45415404, -0.5918378, 0.44949883, 0.6690878, 0.2226235, 0.22905102, -0.27887332)

@@ -5,6 +5,27 @@ extends CanvasLayer
 # Mesage typeof Dict: Name, Avatar, Lines typeof Line[]
 # Line typeof Dict: voice_file, text
 
+const avatarLookup = {
+	"Richard": preload("res://dialog/avatar/Richard.png"),
+	"CrabPalace": preload("res://dialog/avatar/CrabPalace.png"),
+	"CroissantDuh": preload("res://dialog/avatar/CroissantDuh.png"),
+	"Drummer": preload("res://dialog/avatar/Drummer.png"),
+	"GreenDay": preload("res://dialog/avatar/GreenDay.png"),
+	"LadyInRed": preload("res://dialog/avatar/LadyInRed.png"),
+	"LeBooBoo": preload("res://dialog/avatar/LeBooBoo.png"),
+	"M": preload("res://dialog/avatar/M.png"),
+	"MoneyPony": preload("res://dialog/avatar/MoneyPony.png"),
+	"MonRoll": preload("res://dialog/avatar/MonRoll.png"),
+	"Nevi": preload("res://dialog/avatar/Nevi.png"),
+	"Q": preload("res://dialog/avatar/Q.png"),
+	"RampGuy": preload("res://dialog/avatar/RampGuy.png"),
+	"SecretTape": preload("res://dialog/avatar/SecretTape.png"),
+	"TattooArtist": preload("res://dialog/avatar/TattooArtist.png"),
+	"TCB": preload("res://dialog/avatar/TCB.png"),
+	"Unknown": preload("res://dialog/avatar/Unknown.png"),
+	"Yu": preload("res://dialog/avatar/Yu.png"),
+}
+
 # State
 const dialogState = {
 	"NOT_PLAYING": 0,
@@ -53,12 +74,16 @@ func playDialog(dialog: Array):
 
 # Set image and character name in UI
 func setAvatar(message: Dictionary):
-	# print("TODO: Set avatar image")
+	if message["name"] in avatarLookup:
+		$TextureRect_Avatar.set_texture(avatarLookup[message["name"]])
+	else:
+		$TextureRect_Avatar.set_texture(avatarLookup["Unknown"])
 	$Label_CharacterName.set_text(message["name"])
 
 func setMusicAvatar(message: Dictionary):
-	# print("TODO: Set avatar image")
-	gc.setMusicDialogCharacterName(message["mouth"])
+	var mouth = message["mouth"]
+	gc.setMusicDialogAvatar(avatarLookup[mouth])
+	gc.setMusicDialogCharacterName(mouth)
 
 func setMouth(message):
 	if message["name"] == "Music":

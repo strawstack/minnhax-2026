@@ -30,7 +30,8 @@ func _ready() -> void:
 		"cameraLittleBoo": cameraLittleBoo,
 		"openStudioStairsDoor": openStudioStairsDoor,
 		"playerFree": playerFree,
-		"releaseNevi": releaseNevi
+		"releaseNevi": releaseNevi,
+		"showNeviOnDesk": showNeviOnDesk
 	}
 	hideInterviewCharacters()
 	if gc.DEBUG:
@@ -39,6 +40,9 @@ func _ready() -> void:
 		#advanceToMorning()
 		gc.setPlayerCanMove(true)
 		gc.showCrossHairs(true)
+
+func showNeviOnDesk():
+	$neviInterview.set_visible(true)
 
 func playerFree():
 	gc.setPlayerCanMove(true)
@@ -81,6 +85,8 @@ func showInterviewCharacters():
 	$LeBooBooInterview.set_visible(true)
 	$MoneyPony.set_visible(true)
 	$fortySitting.set_visible(true)
+	$studioLogos/MinnMax.set_visible(false)
+	$studioLogos/leboomax_logo.set_visible(true)
 
 func interviewCameraA():
 	$Cameras/Interview/CameraA.set_current(true)
@@ -98,9 +104,9 @@ func advanceToMorning():
 	$CharacterBody3D/Node3D.rotation = Vector3(0, 0, 0)
 	$CharacterBody3D/Node3D/Camera3D.rotation = Vector3(0, 0, 0)
 	hideInterviewCharacters()
-	# TODO Show phone on table
+	$lilBoo2.set_visible(true)
+	$phone.set_visible(true)
 	minnMaxLogoVoiceMail.reveal()
-	# TODO Show stream start prompt in control room
 	minnMaxLogoControlRoom2.reveal()
 
 func richardTurnHead():

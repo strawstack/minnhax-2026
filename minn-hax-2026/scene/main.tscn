@@ -149,6 +149,7 @@ text = "Objective: testing"
 script = ExtResource("2_v0l8b")
 
 [node name="ColorRect_Flash" type="ColorRect" parent="CanvasLayer_Dialog" unique_id=385391305]
+visible = false
 offset_left = 16.0
 offset_top = 536.0
 offset_right = 32.0
@@ -162,10 +163,18 @@ offset_bottom = 720.0
 color = Color(0.06666667, 0.06666667, 0.06666667, 0.49803922)
 
 [node name="ColorRect_PlaceholderAvatar" type="ColorRect" parent="CanvasLayer_Dialog" unique_id=523485412]
-offset_left = 32.0
+offset_left = 24.0
 offset_top = 536.0
-offset_right = 176.0
+offset_right = 168.0
 offset_bottom = 680.0
+color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+
+[node name="TextureRect_Avatar" type="TextureRect" parent="CanvasLayer_Dialog" unique_id=960908186]
+offset_left = 24.0
+offset_top = 536.0
+offset_right = 168.0
+offset_bottom = 680.0
+stretch_mode = 2
 
 [node name="ColorRect_NameBackground" type="ColorRect" parent="CanvasLayer_Dialog" unique_id=1576016897]
 offset_left = 16.0
@@ -231,9 +240,16 @@ autowrap_trim_flags = 64
 visible = false
 
 [node name="ColorRect_PlaceholderAvatar" type="ColorRect" parent="CanvasLayer_MusicDialog" unique_id=930829493]
-offset_left = 16.0
+offset_left = 24.0
 offset_top = 536.0
-offset_right = 176.0
+offset_right = 168.0
+offset_bottom = 680.0
+color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+
+[node name="TextureRect_Avatar" type="TextureRect" parent="CanvasLayer_MusicDialog" unique_id=1724016213]
+offset_left = 24.0
+offset_top = 536.0
+offset_right = 168.0
 offset_bottom = 680.0
 
 [node name="ColorRect_NameBackground" type="ColorRect" parent="CanvasLayer_MusicDialog" unique_id=1346033162]
