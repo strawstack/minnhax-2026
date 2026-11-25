@@ -32,6 +32,10 @@ Godot project files for the MinnHax 2026 Game Jam.
   - Nevi sleeping on my desk
   - A community meet-up screenshot with label (Richard and Yu 2018? SF meetup)
 
+- stop nevi from meowing once the studio door is opened
+
+- Missing dialog "first though lets get this stream started"
+
 - Confirm when player can and can't skate/shoot throughout
 
 - You can spam jump when in skate mode (does this break anything if not don't fix?)

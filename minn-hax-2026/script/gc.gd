@@ -111,8 +111,11 @@ func stopBGM():
 
 func playBGM(trackName: String):
 	audioStreamPlayerBGM.stop()
-	audioStreamPlayerBGM.stream = bgmMusic[trackName]
-	audioStreamPlayerBGM.play()
+	if trackName in bgmMusic:
+		audioStreamPlayerBGM.stream = bgmMusic[trackName]
+		audioStreamPlayerBGM.play()
+	else:
+		print("MISSING: " + trackName)
 
 func playSoundEffect(effectName: String):
 	if not audioStreamPlayerSoundEffect.is_playing():
@@ -263,7 +266,7 @@ func draw_thick_line(from: Vector3, to: Vector3):
 # Called by interacting with Control Room 2 prompt after morning voice mail
 func startGameStream():
 	await fadeOut()
-	playBGM("loop_bubbles")
+	playBGM("bubbles")
 	mouthLookup.clear()
 	lookWatchUnderwater = true
 	showCrossHairs(false)

@@ -24,6 +24,7 @@ const avatarLookup = {
 	"TCB": preload("res://dialog/avatar/TCB.png"),
 	"Unknown": preload("res://dialog/avatar/Unknown.png"),
 	"Yu": preload("res://dialog/avatar/Yu.png"),
+	"AgentForty": preload("res://dialog/avatar/AgentForty.png")
 }
 
 # State
