@@ -4,17 +4,13 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 # Todo
 
-- Add Avatars to dialog box for each character
+- Dialog: Missing dialog "first though lets get this stream started"
 
-- Ability to play cowbell during final performance
+- Cowbell: Ability to play cowbell during final performance
 
-- Wire up objectives to make sure they show hide and reflect the correct info
+- Objectives: Wire up objectives to make sure they show hide and reflect the correct info
 
 - Crosshairs missing in greenday training (fix throughout)
-
-- Flip the studio wall art when interview starts
-
-- Place greenday near flag in obstacle course level
 
 - Radio dissappear from rock on beach once taken
   - Add emmission to radio
@@ -24,17 +20,15 @@ Godot project files for the MinnHax 2026 Game Jam.
   - The camera can go into them they should be labeled as "wall" to help camera physics
   - Applies to all rocks except barrier in the water
 
+- food on stove
+
+- images on monitors
+  - PC in my office
+  - Stream PC
+
 - Review screenshots for more fixes (for example, placing images on monitors in apartment)
 
-- Place images throughout the game
-  - CrabPalace in my office
-  - Dev images of Yu and I recording
-  - Nevi sleeping on my desk
-  - A community meet-up screenshot with label (Richard and Yu 2018? SF meetup)
-
-- stop nevi from meowing once the studio door is opened
-
-- Missing dialog "first though lets get this stream started"
+- Stop nevi from meowing once the studio door is opened
 
 - Confirm when player can and can't skate/shoot throughout
 
@@ -48,13 +42,25 @@ Godot project files for the MinnHax 2026 Game Jam.
 - Gun doesn't shoot exactly at center dot in screen
   - Maybe just move the dot a bit I think ray is centered
 
-- Nevi should meow when he moves (maybe not could be annoying?)
-
 - Remove objective notice during interview scene
+
+- Place images throughout the game?
+  - CrabPalace in my office
+  - Dev images of Yu and I recording
+  - Nevi sleeping on my desk
+  - A community meet-up screenshot with label (Richard and Yu 2018? SF meetup)
+
+# Done
+
+- Nevi should meow when he moves (maybe not could be annoying?)
 
 - Studio stairs door. Make is colored to be more apparent
 
-# Done
+- Flip the studio wall art when interview starts
+
+- Place greenday near flag in obstacle course level
+
+- Add Avatars to dialog box for each character
 
 - Record patch audio
 
