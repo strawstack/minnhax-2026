@@ -67,7 +67,8 @@ const soundEffect = {
 	"tac_sim_start": preload("res://audio/soundEffect/tac_sim_start.mp3"),
 	"tattoo_needle": preload("res://audio/soundEffect/tatto_needle.mp3"),
 	"wind": preload("res://audio/soundEffect/wind.mp3"),
-	"wood_door_smash": preload("res://audio/soundEffect/wood_door_smash.mp3")
+	"wood_door_smash": preload("res://audio/soundEffect/wood_door_smash.mp3"),
+	"meow": preload("res://audio/soundEffect/meow.mp3")
 }
 
 # commandLookup populated by Commands child node 

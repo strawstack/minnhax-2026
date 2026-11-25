@@ -106,6 +106,7 @@ func richardTurnHead():
 	richardHeadAnimation.play("turnHead")
 
 func richardHeadForward():
+	$freelancerOnTV.set_visible(true)
 	richardHeadAnimation.play("forwardHead")
 
 func releaseNevi():

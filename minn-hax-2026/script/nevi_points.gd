@@ -11,7 +11,10 @@ var rotation_speed = 10
 
 var neviCanMove = false
 
+var gc
+
 func _ready() -> void:
+	gc = get_tree().current_scene
 	points = get_children()
 
 func travel(point: Node3D):
@@ -29,9 +32,9 @@ func _process(delta: float) -> void:
 		if distance < closeDistance:
 			closeDistance = distance
 			closePoint = point
-	#if previousClosePoint != closePoint:
-		#previousClosePoint = closePoint
-		#travel(closePoint)
+	if previousClosePoint != closePoint:
+		previousClosePoint = closePoint
+		gc.playSoundEffect("meow")
 
 	nevi.set_position(nevi.get_position().lerp(closePoint.get_position(), move_speed * delta))
 	nevi.set_rotation(nevi.get_rotation().lerp(closePoint.get_rotation(), rotation_speed * delta))

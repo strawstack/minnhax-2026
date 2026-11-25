@@ -46,6 +46,7 @@ func playDialog(dialog: Array):
 		resetDialog()
 		activeDialog = dialog
 		state = dialogState.LOAD_LINE
+		AudioServer.set_bus_volume_db(1, -20.0)
 		showDialog(true)
 	else:
 		print("playDialog called while already playing")
@@ -94,6 +95,7 @@ func setCharacterVisible(charIndex: float):
 func dialogOver():
 	state = dialogState.NOT_PLAYING
 	showDialog(false)
+	AudioServer.set_bus_volume_db(1, 0)
 	gc.dialogEnds()
 
 func endAwait():
