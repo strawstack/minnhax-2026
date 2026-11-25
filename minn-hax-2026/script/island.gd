@@ -37,7 +37,7 @@ func _ready() -> void:
 		"showCrabPerformance": showCrabPerformance,
 		"showLeBooBooPerformance": showLeBooBooPerformance,
 		"setPostShowTalk": setPostShowTalk,
-		"movePlayerToStage": movePlayerToStage,
+		"switchToPlayer3": switchToPlayer3,
 		"activateStageWalls": activateStageWalls,
 		"openStageDoor": openStageDoor,
 		"switchToPlayer2": switchToPlayer2,
@@ -77,7 +77,14 @@ func _ready() -> void:
 		"cameraSeeInterviewer": cameraSeeInterviewer,
 		"cameraSeeLeBooBoo": cameraSeeLeBooBoo,
 		"cameraSeePullBack": cameraSeePullBack,
-		"hideOutsideTCB": hideOutsideTCB
+		"hideOutsideTCB": hideOutsideTCB,
+		"revealMinnMaxLogo_CenterDanceFloor": revealMinnMaxLogo_CenterDanceFloor,
+		"cameraPostLeBooBoo": cameraPostLeBooBoo,
+		"cameraPostAgent": cameraPostAgent,
+		"showSpyExitSign": showSpyExitSign,
+		"hideDJ": hideDJ,
+		"hideIdlePostShowAgent": hideIdlePostShowAgent,
+		"revealMinnMaxLogo_CreditsExit": revealMinnMaxLogo_CreditsExit
 	}
 	# Make sure these nodes are hidden on start
 	$players/Player2.set_visible(false)
@@ -91,6 +98,27 @@ func _ready() -> void:
 		gc.playerCanMove = true
 	else:
 		gc.playDialogFile("res://dialog/script/9_club/34_get_off_boat.json")
+
+func revealMinnMaxLogo_CreditsExit():
+	$logoPoints/minnMaxLogo_CreditsExit.reveal()
+
+func hideIdlePostShowAgent():
+	$postShowTalk/fortyIdleNoAnim.set_visible(false)
+
+func hideDJ():
+	$club_dj.set_visible(false)
+
+func showSpyExitSign():
+	$spyExit.set_visible(true)
+
+func cameraPostLeBooBoo():
+	$postShowTalk/PostLeBooBoo.set_current(true)
+
+func cameraPostAgent():
+	$postShowTalk/PostAgent.set_current(true)
+
+func revealMinnMaxLogo_CenterDanceFloor():
+	$logoPoints/minnMaxLogo_CenterDanceFloor.reveal()
 
 func hideOutsideTCB():
 	$sceneTalkToTCB/tcbCharacter.set_visible(false)
@@ -254,7 +282,7 @@ func switchToPlayer2():
 	$players/Player2.set_visible(true)
 	$players/Player2.setCameraActive()
 
-func movePlayerToStage():
+func switchToPlayer3():
 	$players/Player2.localFreeze = true
 	$players/Player2.set_visible(false)
 	$players/Player3.localFreeze = false
@@ -276,21 +304,22 @@ func sceneSetUp():
 func setPostShowTalk():
 	$LeBooBoo.set_visible(false)
 	$cowBellGuy.set_visible(false)
-	$club_dj.set_visible(false)
+	$club_dj.set_visible(false) # Just in case
 	$club_dj_mic.set_visible(false)
+	$postShowTalk.set_visible(true)
 
 func showLeBooBooAtMic():
 	$LeBooBoo.set_visible(true)
 
 func showCrabPerformance():
+	# NOTE no longer used
 	$LeBooBoo.set_visible(false)
 	$club_dj.set_visible(false)
 	$club_dj_mic.set_visible(true)
 	$cowBellGuy.set_visible(true)
 
 func showLeBooBooPerformance():
-	$LeBooBoo.set_visible(true)
-	$club_dj_mic.set_visible(false)
+	$club_dj.set_visible(false)
 	$cowBellGuy.set_visible(true)
 
 func cameraStageCrowd():
@@ -300,6 +329,7 @@ func cameraStageClose():
 	$Cameras/StageClose.set_current(true)
 
 func hideInterviewScene():
+	$logoPoints/minnMaxLogo_Interview.hideDeactivate()
 	$sceneSeeEverything/interview_scene/interview_couch/StaticBody3D.set_collision_layer_value(1, false)
 	$sceneSeeEverything/interview_scene/interview_chair/StaticBody3D.set_collision_layer_value(1, false)
 	$sceneSeeEverything.set_visible(false)

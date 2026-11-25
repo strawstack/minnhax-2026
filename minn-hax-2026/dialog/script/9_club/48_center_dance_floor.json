@@ -1,15 +1,11 @@
 [
 	{
 		"name": "Command",
-		"command": "hideInterviewScene"
-	},
-	{
-		"name": "Command",
 		"command": "freezePlayer"
 	},
 	{
 		"name": "Command",
-		"command": "hidePlayer"
+		"command": "hidePlayer2"
 	},
 	{
 		"name": "Command",
@@ -18,6 +14,10 @@
 	{
 		"name": "Command",
 		"command": "cameraStageCrowd"
+	},
+	{
+		"name": "Command",
+		"command": "hideDJ"
 	},
 	{
 		"name": "LeBooBoo",
@@ -49,7 +49,7 @@
 		"lines": [
 			{
 				"voice": "48_04",
-				"text": "Folks, we’re about to kick things off. My cowbell guy bailed at the last minute. Luckily, I’m told we have somewhat of an expert in the house. Join me in welcoming to the stage Grand Theft Auto Five - Los Santos Rock Radio - Mississippi Queen cowbell drummer “Corky” JeffM."
+				"text": "Folks, we’re about to kick things off. My cowbell guy bailed at the last minute. Luckily, I’m told we have somewhat of an expert in the house. Join me in welcoming to the stage Grand Theft Auto Five - Los Santos Rock Radio - Mississippi Queen cowbell drummer 'Corky' JeffM."
 			}
 		]
 	},
@@ -108,14 +108,10 @@
 		]
 	},
 	{
-		"name": "LeBooBoo",
+		"name": "Music",
 		"avatar": "",
-		"lines": [
-			{
-				"voice": "49_03",
-				"text": "(Play rap)"
-			}
-		]
+		"mouth": "LeBooBoo",
+		"track": "example_music"
 	},
 	{
 		"name": "MoneyPony",
@@ -133,7 +129,7 @@
 	},
 	{
 		"name": "Command",
-		"command": "b"
+		"command": "cameraPostLeBooBoo"
 	},
 	{
 		"name": "LeBooBoo",
@@ -147,7 +143,7 @@
 	},
 	{
 		"name": "Command",
-		"command": "a"
+		"command": "cameraPostAgent"
 	},
 	{
 		"name": "AgentForty",
@@ -171,7 +167,7 @@
 	},
 	{
 		"name": "Command",
-		"command": "b"
+		"command": "cameraPostLeBooBoo"
 	},
 	{
 		"name": "LeBooBoo",
@@ -189,9 +185,33 @@
 		"lines": [
 			{
 				"voice": "50_06",
-				"text": "Forty! Take the exit back stage. Go now."
+				"text": "Forty! Take the exit back stage. Go now!"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "switchToPlayer3"
+	},
+	{
+		"name": "Command",
+		"command": "showPlayer3"
+	},
+	{
+		"name": "Command",
+		"command": "hideIdlePostShowAgent"
+	},
+	{
+		"name": "Command",
+		"command": "returnPlayer3Camera"
+	},
+	{
+		"name": "Command",
+		"command": "unfreezePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "showSpyExitSign"
 	},
 	{
 		"name": "Command",
@@ -199,22 +219,6 @@
 	},
 	{
 		"name": "Command",
-		"command": "movePlayerToStage"
-	},
-	{
-		"name": "Command",
-		"command": "activateStageWalls"
-	},
-	{
-		"name": "Command",
-		"command": "showPlayer"
-	},
-	{
-		"name": "Command",
-		"command": "returnPlayerCamera"
-	},
-	{
-		"name": "Command",
-		"command": "unfreezePlayer"
+		"command": "revealMinnMaxLogo_CreditsExit"
 	}
 ]

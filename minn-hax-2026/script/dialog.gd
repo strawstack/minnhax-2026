@@ -112,6 +112,7 @@ func _process(delta: float) -> void:
 			state = dialogState.AWAIT_IN_PROGRESS
 			setMusicAvatar(message)
 			gc.showMusicUI()
+			setMouth(message)
 			playMusic(message["track"])
 			messageIndex += 1
 		elif message["name"] == "Command":

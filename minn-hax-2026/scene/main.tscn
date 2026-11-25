@@ -275,7 +275,7 @@ bus = &"SoundEffect"
 bus = &"SoundEffect"
 
 [node name="AudioStreamPlayerMusicTrack" type="AudioStreamPlayer" parent="Audio" unique_id=760994628]
-bus = &"MusicTrack"
+bus = &"Voice"
 
 [node name="Scene" type="Node3D" parent="." unique_id=1725802773]
 

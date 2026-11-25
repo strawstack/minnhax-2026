@@ -118,5 +118,9 @@
 	{
 		"name": "Command",
 		"command": "hideInterviewScene"
+	},
+	{
+		"name": "Command",
+		"command": "revealMinnMaxLogo_CenterDanceFloor"
 	}
 ]

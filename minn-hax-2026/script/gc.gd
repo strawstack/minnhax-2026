@@ -20,6 +20,7 @@ const scenes = {
 	"tacSim": preload("res://scene/tac_sim.tscn"),
 	"freelancer": preload("res://scene/freelancer.tscn"),
 	"island": preload("res://scene/island.tscn"),
+	"credits": preload("res://scene/credits.tscn"),
 }
 
 const musicTracks = {

@@ -6737,8 +6737,8 @@ light_bake_mode = 1
 omni_range = 9.897081
 
 [node name="OmniLight3D8" type="OmniLight3D" parent="light" unique_id=1334912341]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.50374, 3.11926, 4.279995)
-light_energy = 0.4
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.50374, 3.11926, 3.9568305)
+light_energy = 2.0
 light_bake_mode = 1
 omni_range = 9.897081
 
@@ -7691,7 +7691,7 @@ mesh = SubResource("ArrayMesh_8g4af")
 surface_material_override/0 = ExtResource("4_tho0w")
 
 [node name="cat_carrier" type="MeshInstance3D" parent="sceneSeeEverything/interview_scene" unique_id=1069714368]
-transform = Transform3D(0.9390221, 0.15135974, 0.30875102, -0.14378677, 0.98847866, -0.04727717, -0.31234956, 0, 0.9499673, 15.1, 0.47499996, -11.599999)
+transform = Transform3D(0.939022, 0.15135974, 0.30875102, -0.14378676, 0.9884786, -0.04727717, -0.31234953, 0, 0.9499673, 15.1, 0.47499996, -11.599999)
 mesh = SubResource("ArrayMesh_m4brd")
 surface_material_override/0 = ExtResource("7_salic")
 
@@ -7876,6 +7876,7 @@ startHidden = true
 [node name="minnMaxLogo_CenterDanceFloor" parent="logoPoints" unique_id=678720404 instance=ExtResource("26_pvu6s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.475012, 1.890154, -13.178336)
 prompt = "watch the show"
+dialogFile = "res://dialog/script/9_club/48_center_dance_floor.json"
 startHidden = true
 
 [node name="minnMaxLogo_CreditsExit" parent="logoPoints" unique_id=111318302 instance=ExtResource("26_pvu6s")]
@@ -7918,10 +7919,10 @@ transform = Transform3D(-0.9373336, 0, 0.34843332, 0, 1, 0, -0.34843332, 0, -0.9
 [node name="fortyIdleNoAnim" parent="postShowTalk" unique_id=97932778 instance=ExtResource("23_re1to")]
 transform = Transform3D(-0.91458976, 0, -0.40438294, 0, 1, 0, 0.40438294, 0, -0.91458976, 18.795515, 1.0138525, -3.524804)
 
-[node name="Camera3D_LeBooBoo" type="Camera3D" parent="postShowTalk" unique_id=1785249663]
+[node name="PostLeBooBoo" type="Camera3D" parent="postShowTalk" unique_id=1785249663]
 transform = Transform3D(-0.6787997, 0.11803711, -0.7247746, 0, 0.98699635, 0.16074266, 0.7343235, 0.10911206, -0.66997284, 18.67519, 2.8464777, -4.6563826)
 
-[node name="Camera3D_Agent" type="Camera3D" parent="postShowTalk" unique_id=1386857855]
+[node name="PostAgent" type="Camera3D" parent="postShowTalk" unique_id=1386857855]
 transform = Transform3D(-0.76040566, -0.06788587, 0.64589065, 0, 0.9945219, 0.1045285, -0.6494484, 0.07948407, -0.75624007, 20.882822, 2.8921444, -5.330888)
 
 [node name="stagePlayerTarget" type="Node3D" parent="." unique_id=936417994]
@@ -8447,5 +8448,11 @@ mesh = SubResource("ArrayMesh_kaxb7")
 [node name="Cube_426" type="MeshInstance3D" parent="tattooCharacters/Needle" unique_id=1690770412]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
 mesh = SubResource("ArrayMesh_0p4y8")
+
+[node name="spyExit" type="Label3D" parent="." unique_id=1735729438]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 15.437498, 5.599917, -0.019016981)
+visible = false
+text = "Secret Spy Exit"
+font_size = 48
 
 [connection signal="body_entered" from="logoPoints/Area3D_ClubHallway" to="logoPoints/Area3D_ClubHallway" method="_on_body_entered"]
