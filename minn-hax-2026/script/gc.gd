@@ -28,6 +28,10 @@ const musicTracks = {
 	"example_music_long": preload("res://dialog/tracks/example_music_long.mp3")
 }
 
+const bgmMusic = {
+	"name": null
+}
+
 # commandLookup populated by Commands child node 
 var commandLookup = {}
 # If command is not present, checks sceneCommandLookup which is populated by scene

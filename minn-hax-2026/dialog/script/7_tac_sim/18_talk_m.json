@@ -21,7 +21,7 @@
 		"lines": [
 			{
 				"voice": "18_01",
-				"text": "Welcome to MI6 Agent Forty-JeffM."
+				"text": "Agent Forty-JeffM. Welcome to MI6."
 			}
 		]
 	},
@@ -263,7 +263,7 @@
 		"lines": [
 			{
 				"voice": "18_18",
-				"text": "Right? I should get going."
+				"text": "Right? I should be going."
 			}
 		]
 	},

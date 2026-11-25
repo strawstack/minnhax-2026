@@ -6786,6 +6786,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0053777695, 0.020529509, -
 [node name="audio" type="Node3D" parent="." unique_id=463420886]
 
 [node name="AudioStreamPlayerSoundEffect" type="AudioStreamPlayer" parent="audio" unique_id=1170796073]
+bus = &"BackgroundMusic"
 
 [node name="light" type="Node3D" parent="." unique_id=722977712]
 
@@ -7761,7 +7762,7 @@ mesh = SubResource("ArrayMesh_8g4af")
 surface_material_override/0 = ExtResource("4_tho0w")
 
 [node name="cat_carrier" type="MeshInstance3D" parent="sceneSeeEverything/interview_scene" unique_id=1069714368]
-transform = Transform3D(0.9390219, 0.15135972, 0.30875102, -0.14378674, 0.98847854, -0.04727717, -0.3123495, 0, 0.9499673, 15.1, 0.47499996, -11.599999)
+transform = Transform3D(0.9390218, 0.15135972, 0.30875102, -0.14378673, 0.9884785, -0.04727717, -0.31234944, 0, 0.9499673, 15.1, 0.47499996, -11.599999)
 mesh = SubResource("ArrayMesh_m4brd")
 surface_material_override/0 = ExtResource("7_salic")
 
