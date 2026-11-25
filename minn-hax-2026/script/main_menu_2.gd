@@ -15,7 +15,7 @@ func startScene():
 	$AnimationPlayer.play("elevatorOpen")
 	await $AnimationPlayer.animation_finished
 	# TODO audio elevator ding
-	$titleScreen/enter_to_start.set_visible(true)
+	$titleScreen/enterToStartLabel.set_visible(true)
 	canStart = true
 
 func elevatorClose():

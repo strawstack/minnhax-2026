@@ -55,12 +55,11 @@ func _ready() -> void:
 	showCrossHairs(false)
 	hideObjective()
 	if DEBUG:
-		loadScene("credits")
+		loadScene("island")
 	else:
 		# Show and Hide these just to make sure
 		$CanvasLayer_Fade.set_visible(true) 
 		$CanvasLayer_MusicDialog.set_visible(false)
-
 		loadScene("logo") # Calls "logoSceneEnds" on completion
 		await fadeIn()
 

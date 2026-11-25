@@ -973,6 +973,12 @@ gi_mode = 0
 mesh = SubResource("ArrayMesh_y3myb")
 surface_material_override/0 = ExtResource("6_bhahi")
 
+[node name="enterToStartLabel" type="Label3D" parent="titleScreen" unique_id=801080511]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.7607403, 3.7361884, -0.021627784)
+visible = false
+text = "Press 'Enter' to Start"
+font_size = 68
+
 [node name="Cube_027" type="MeshInstance3D" parent="titleScreen" unique_id=2097095335]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.50000024, 0.008660793)
 mesh = SubResource("ArrayMesh_nveh6")

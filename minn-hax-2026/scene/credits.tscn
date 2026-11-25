@@ -6673,6 +6673,7 @@ surface_material_override/0 = ExtResource("11_ykmia")
 
 [node name="Cube_290" type="MeshInstance3D" parent="credits_model/Cube_288" unique_id=394014127]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.20000029, 1.5999999)
+visible = false
 mesh = SubResource("ArrayMesh_nbdeh")
 surface_material_override/0 = ExtResource("11_ykmia")
 
@@ -6698,6 +6699,7 @@ surface_material_override/0 = ExtResource("11_ykmia")
 
 [node name="Cube_305" type="MeshInstance3D" parent="credits_model/Cube_288" unique_id=1573353122]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025000095, 0.6999998, 1.4249997)
+visible = false
 mesh = SubResource("ArrayMesh_0arp0")
 surface_material_override/0 = ExtResource("11_ykmia")
 
