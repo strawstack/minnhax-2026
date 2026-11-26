@@ -6,7 +6,6 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 - CONFIRM:
   - Cowbell: Ability to play cowbell during final performance
-  - Low battery not showing low battery screen when character says "uh oh..."
   - GreenDay jeep vanishes after exit jeep cutscene and should stay around as you walk up the stairs
   - During "...going to cinnabon" line I think I saw the player in the left side of shot. Make sure play is hidden for this scene
   - Crosshairs missing in greenday training (fix throughout)
@@ -28,15 +27,9 @@ Godot project files for the MinnHax 2026 Game Jam.
     - So play at 75% in Audacity and then dip tracks accordingly
     - Directly overwright files in Godot folder to adjust
 
-- Three second pause after rocket explosion before loading beach
-- One second pause after rolling before monroll comments on it
-- Hide dialog when activating tacSim
-- Add grass to grey wall in skate park
-- Patch grind rail close to wall in skate park to prevent glitch out of wall
-
-- Can we "load cameras" in advance of apartment to help?
-
-- Audio needed "When I woke-up, my plane had landed, and it was time to meet my instructor"
+- AUDIO:
+  - 13 01 a Agent: When I woke, my plane had landed, and it was time to meet my instructor.
+  - 06 03 Rich: Okay, doors open. You can head down now.
 
 - Submit game on itch io
   - Game description
@@ -50,6 +43,15 @@ Godot project files for the MinnHax 2026 Game Jam.
 - Upload tracks to Youtube
 
 # Done
+
+- Low battery not showing low battery screen when character says "uh oh..."
+
+- Three second pause after rocket explosion before loading beach
+- One second pause after rolling before monroll comments on it
+- Hide dialog when activating tacSim
+- Add grass to grey wall in skate park
+- Patch grind rail close to wall in skate park to prevent glitch out of wall
+- Can we "load cameras" in advance of apartment to help?
 
 - Place images throughout the game
   - CrabPalace in my office

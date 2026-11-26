@@ -294,6 +294,17 @@ offset_right = 1168.0
 offset_bottom = 720.0
 color = Color(0, 0, 0, 1)
 
+[node name="CanvasLayer_Loading" type="CanvasLayer" parent="." unique_id=1813417722]
+visible = false
+
+[node name="Label" type="Label" parent="CanvasLayer_Loading" unique_id=1146237558]
+offset_left = 512.0
+offset_top = 336.0
+offset_right = 661.0
+offset_bottom = 381.0
+theme_override_font_sizes/font_size = 32
+text = "Loading..."
+
 [node name="CanvasLayer_Recording" type="CanvasLayer" parent="." unique_id=1617653784]
 visible = false
 

@@ -5129,14 +5129,4 @@ width = 200.0
 transform = Transform3D(0.59999996, 0, 0, 0, 0.59999996, 0, 0, 0, 0.59999996, -3.2724435, 13.386967, -5.769963)
 mesh = SubResource("ArrayMesh_jd4un")
 
-[node name="CanvasLayer_Loading" type="CanvasLayer" parent="." unique_id=69468586]
-
-[node name="Label" type="Label" parent="CanvasLayer_Loading" unique_id=1066524686]
-offset_left = 512.0
-offset_top = 336.0
-offset_right = 661.0
-offset_bottom = 381.0
-theme_override_font_sizes/font_size = 32
-text = "Loading..."
-
 [connection signal="timeout" from="meowTimer" to="neviPoints" method="_on_meow_timer_timeout"]

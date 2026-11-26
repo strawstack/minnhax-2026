@@ -47,8 +47,7 @@ func _ready() -> void:
 		gc.setPlayerCanMove(true)
 		gc.showCrossHairs(true)
 	else:
-		await warmUpCameras()
-		$SubViewport/underwater.continueScene()
+		warmUpCameras()
 
 func warmUpCameras():
 	playerCamera.set_current(true)
@@ -57,7 +56,8 @@ func warmUpCameras():
 	await get_tree().create_timer(0.5).timeout
 	$ZoomCam.set_current(true)
 	await get_tree().create_timer(0.5).timeout
-	$CanvasLayer_Loading.set_visible(false)
+	gc.apartmentLoadingDone()
+	$SubViewport/underwater.continueScene()
 
 func silenceNevi():
 	$neviPoints.silence = true

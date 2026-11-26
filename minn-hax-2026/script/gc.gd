@@ -250,11 +250,18 @@ func logoSceneEnds():
 	playBGM("tacsim")
 	loadScene("mainMenu2") # Calls "mainMenuStartPress" on completion
 
+func apartmentLoading():
+	$CanvasLayer_Loading.set_visible(true)
+
+func apartmentLoadingDone():
+	$CanvasLayer_Loading.set_visible(false)
+
 func mainMenuStartPress():
 	await fadeOut()
+	apartmentLoading()
+	await get_tree().create_timer(0.5).timeout
 	playBGM("apartment")
 	loadScene("apartment")
-	await fadeIn()
 
 func playDialogFile(fileStr: String):
 	var json = JSON.parse_string(FileAccess.get_file_as_string(fileStr))
