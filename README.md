@@ -28,14 +28,6 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 - Balance audio to avoid any loud noises
 
-- Place images throughout the game?
-  - CrabPalace in my office
-  - Dev images of Yu and I recording
-  - Nevi sleeping on my desk
-  - A community meet-up screenshot with label (Richard and Yu 2018? SF meetup)
-
-- You can spam jump when in skate mode (does this break anything if not don't fix?)
-
 - Upload tracks to Youtube
 
 - Submit game on itch io
@@ -48,6 +40,12 @@ Godot project files for the MinnHax 2026 Game Jam.
   - No AI statement
 
 # Done
+
+- Place images throughout the game
+  - CrabPalace in my office
+  - Dev images of Yu and I recording
+  - Nevi sleeping on my desk
+  - A community meet-up screenshot with label
 
 - Gun doesn't shoot exactly at center dot in screen
   - Maybe just move the dot a bit I think ray is centered
@@ -118,6 +116,8 @@ Godot project files for the MinnHax 2026 Game Jam.
   - Name and export clips
 
 # Cancel
+
+- You can spam jump when in skate mode (does this break anything if not don't fix?)
 
 - Lable on wall near studio door saying
   - "Controls: Spacebar to jump, WASD to move, mouse to look."
