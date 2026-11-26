@@ -12,5 +12,9 @@
 	{
 		"name": "Command",
 		"command": "returnPlayerControl"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

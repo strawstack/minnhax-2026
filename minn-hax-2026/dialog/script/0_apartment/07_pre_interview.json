@@ -20,5 +20,9 @@
 	{
 		"name": "Command",
 		"command": "revealControlRoomPrompt"
+	},
+	{
+		"name": "Command",
+		"command": "objectiveD"
 	}
 ]

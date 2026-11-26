@@ -23,6 +23,7 @@ func _ready() -> void:
 		"showMEleveator": showMEleveator,
 		"closeElevator": closeElevator
 	}
+	gc.setObjectiveLetter("l")
 	await gc.fadeIn()
 	$tac_sim_model/AnimationPlayer.play("open_elevator")
 	gc.playSoundEffect("elevator_open")
@@ -73,6 +74,7 @@ func revealBriefing():
 func removeBarrier():
 	$tacBarrier/StaticBody3D_tacBarrier.set_collision_layer_value(5, false)
 	$tacBarrier.set_visible(false)
+	gc.setObjectiveLetter("m")
 
 func tacSimStartSound():
 	gc.playSoundEffect("tac_sim_start")

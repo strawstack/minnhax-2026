@@ -6771,6 +6771,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_2ip0n")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_uf2ew"]
+size = Vector3(3.222046, 6.722351, 1)
+
 [node name="island" type="Node3D" unique_id=1778808922]
 script = ExtResource("1_0stp1")
 
@@ -7762,7 +7765,7 @@ mesh = SubResource("ArrayMesh_8g4af")
 surface_material_override/0 = ExtResource("4_tho0w")
 
 [node name="cat_carrier" type="MeshInstance3D" parent="sceneSeeEverything/interview_scene" unique_id=1069714368]
-transform = Transform3D(0.93902177, 0.1513597, 0.30875102, -0.14378671, 0.9884784, -0.04727717, -0.31234944, 0, 0.9499673, 15.1, 0.47499996, -11.599999)
+transform = Transform3D(0.93902165, 0.15135969, 0.30875102, -0.1437867, 0.9884783, -0.04727717, -0.3123494, 0, 0.9499673, 15.1, 0.47499996, -11.599999)
 mesh = SubResource("ArrayMesh_m4brd")
 surface_material_override/0 = ExtResource("7_salic")
 
@@ -8552,4 +8555,14 @@ modulate = Color(0.5132329, 0.5132329, 0.5132329, 1)
 text = "\"SpaceBar\" to 
 Play Cowbell"
 
+[node name="Area3D_FinalExit" type="Area3D" parent="." unique_id=21762611]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.733135, 0, 9.191089)
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D_FinalExit" unique_id=400631458]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3098755, 2.8611755, 0)
+shape = SubResource("BoxShape3D_uf2ew")
+
 [connection signal="body_entered" from="logoPoints/Area3D_ClubHallway" to="logoPoints/Area3D_ClubHallway" method="_on_body_entered"]
+[connection signal="body_entered" from="Area3D_FinalExit" to="." method="_on_area_3d_final_exit_body_entered"]

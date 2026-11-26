@@ -16,5 +16,9 @@
 	{
 		"name": "Command",
 		"command": "cameraToPlayer"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

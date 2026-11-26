@@ -4,6 +4,14 @@
 		"command": "collectShootingSecretTape"
 	},
 	{
+		"name": "Command",
+		"command": "hideObjective"
+	},
+	{
+		"name": "Command",
+		"command": "objectiveR"
+	},
+	{
 		"name": "MoneyPony",
 		"avatar": "",
 		"lines": [
@@ -21,7 +29,11 @@
 		"name": "Music",
 		"avatar": "",
 		"mouth": "SecretTape",
-		"track": "example_music"
+		"track": "camping"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	},
 	{
 		"name": "AgentForty",

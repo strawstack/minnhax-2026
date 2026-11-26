@@ -4,6 +4,14 @@
 		"command": "collectSkateSecretTape"
 	},
 	{
+		"name": "Command",
+		"command": "hideObjective"
+	},
+	{
+		"name": "Command",
+		"command": "objectiveQ"
+	},
+	{
 		"name": "MoneyPony",
 		"avatar": "",
 		"lines": [
@@ -25,7 +33,11 @@
 		"name": "Music",
 		"avatar": "",
 		"mouth": "SecretTape",
-		"track": "example_music"
+		"track": "skate"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	},
 	{
 		"name": "AgentForty",

@@ -26,5 +26,9 @@
 	{
 		"name": "Command",
 		"command": "revealDriveJeep"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

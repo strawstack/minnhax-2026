@@ -111,7 +111,7 @@
 		"name": "Music",
 		"avatar": "",
 		"mouth": "LeBooBoo",
-		"track": "example_music"
+		"track": "island"
 	},
 	{
 		"name": "MoneyPony",
@@ -178,6 +178,14 @@
 				"text": "Hey cowbell, let me set you up on Patreon - wait what, there's an Ad in my premium feed! What do they think this is Disney Plus!?"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "objectiveW"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	},
 	{
 		"name": "MoneyPony",

@@ -16,6 +16,8 @@ var gc
 
 var canMeow = true
 
+var silence = false
+
 func _ready() -> void:
 	gc = get_tree().current_scene
 	points = get_children()
@@ -40,7 +42,8 @@ func _process(delta: float) -> void:
 		if canMeow:
 			canMeow = false
 			meowTimer.start()
-			gc.playSoundEffect("meow")
+			if not silence:
+				gc.playSoundEffect("meow")
 
 	nevi.set_position(nevi.get_position().lerp(closePoint.get_position(), move_speed * delta))
 	nevi.set_rotation(nevi.get_rotation().lerp(closePoint.get_rotation(), rotation_speed * delta))

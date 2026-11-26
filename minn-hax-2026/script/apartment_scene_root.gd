@@ -31,7 +31,12 @@ func _ready() -> void:
 		"openStudioStairsDoor": openStudioStairsDoor,
 		"playerFree": playerFree,
 		"releaseNevi": releaseNevi,
-		"showNeviOnDesk": showNeviOnDesk
+		"showNeviOnDesk": showNeviOnDesk,
+		"silenceNevi": silenceNevi,
+		"objectiveA": objectiveA,
+		"objectiveB": objectiveB,
+		"objectiveC": objectiveC,
+		"objectiveD": objectiveD
 	}
 	hideInterviewCharacters()
 	if gc.DEBUG:
@@ -41,12 +46,16 @@ func _ready() -> void:
 		gc.setPlayerCanMove(true)
 		gc.showCrossHairs(true)
 
+func silenceNevi():
+	$neviPoints.silence = true
+
 func showNeviOnDesk():
 	$neviInterview.set_visible(true)
 
 func playerFree():
 	gc.setPlayerCanMove(true)
 	gc.showCrossHairs(true)
+	gc.showRecording()
 
 func camera75fov():
 	playerCamera.set_fov(75.0)
@@ -72,6 +81,7 @@ func revealStudioPrompt():
 func hideLeBooBooPreInterview():
 	$LeBooBoo.set_visible(false)
 	$LeBooBoo.stopFloat()
+	gc.hideRecording()
 
 func revealControlRoomPrompt():
 	minnMaxLogoControlRoom.reveal()
@@ -108,6 +118,19 @@ func advanceToMorning():
 	$phone.set_visible(true)
 	minnMaxLogoVoiceMail.reveal()
 	minnMaxLogoControlRoom2.reveal()
+	gc.setObjectiveLetter("e")
+
+func objectiveA():
+	gc.setObjectiveLetter("a")
+
+func objectiveB():
+	gc.setObjectiveLetter("b")
+
+func objectiveC():
+	gc.setObjectiveLetter("c")
+
+func objectiveD():
+	gc.setObjectiveLetter("d")
 
 func richardTurnHead():
 	richardHeadAnimation.play("turnHead")

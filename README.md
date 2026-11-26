@@ -4,17 +4,28 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 # Todo
 
-- Dialog: Missing dialog "first though lets get this stream started"
-
 - Cowbell: Ability to play cowbell during final performance
 
-- Objectives: Wire up objectives to make sure they show hide and reflect the correct info
+- Low battery not showing low battery screen when character says "uh oh..."
+
+- Audio needed "when I woke my plane had landed, and it was time to meet my instructor"
+
+- Remove "..." from all in game text it delays the dialog box too long so audio plays before text shows
+
+- Metal door opening sound effect for greenday training
+
+- Make sure glass break and tattoo needle sound play over correct bus
+
+- GreenDay jeep vanishes after exit jeep cutscene and should stay around as you walk up the stairs
+- During "...going to cinnabon" line I think I saw the player in the left side of shot. Make sure play is hidden for this scene
 
 - Crosshairs missing in greenday training (fix throughout)
 
 - Radio dissappear from rock on beach once taken
   - Add emmission to radio
   - Add radio sound effect
+
+- make sure BGM not playing during music rap
 
 - Beach ground and all walls are labeled as invisible:
   - The camera can go into them they should be labeled as "wall" to help camera physics
@@ -51,6 +62,12 @@ Godot project files for the MinnHax 2026 Game Jam.
   - A community meet-up screenshot with label (Richard and Yu 2018? SF meetup)
 
 # Done
+
+- Objectives: Wire up objectives to make sure they show hide and reflect the correct info
+
+- Dialog: Missing dialog "first though lets get this stream started"
+
+- For mac track pad, maybe allow "hold R" to aim (in addition to right click) left mouse to shoot
 
 - Nevi should meow when he moves (maybe not could be annoying?)
 

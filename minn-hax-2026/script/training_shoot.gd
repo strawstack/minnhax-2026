@@ -16,6 +16,7 @@ func _ready() -> void:
 	startScene()
 
 func startScene():
+	gc.setObjectiveLetter("j")
 	gc.playDialogFile("res://dialog/script/5_target_shooting/16_a_target_shoot_before.json")
 
 func targetHit():

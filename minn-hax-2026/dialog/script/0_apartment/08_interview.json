@@ -386,5 +386,9 @@
 	{
 		"name": "Command",
 		"command": "unfreezePlayer"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

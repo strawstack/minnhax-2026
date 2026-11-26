@@ -52,11 +52,13 @@ func cameraToPlayer():
 
 func startScene():
 	$Camera3D.set_current(true)
+	gc.setObjectiveLetter("h")
 	await gc.fadeIn()
 	gc.playDialogFile("res://dialog/script/4_greenday_training/13_a_intro.json")
 
 func revealDriveJeep():
 	$minnMaxLogo_EnterJeep.reveal()
+	gc.setObjectiveLetter("i")
 
 func driveJeep():
 	agent.set_visible(false)
@@ -151,6 +153,7 @@ func exitJeepSceneComplete():
 	agent2.setCameraActive()
 	agent2.localFreeze = false
 	gc.playerCanMove = true
+	gc.showObjective()
 
 func hideAndFreezeAgentShowIdlePose():
 	gc.playerCanMove = false

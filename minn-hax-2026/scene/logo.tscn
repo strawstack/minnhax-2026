@@ -1488,8 +1488,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_wbyt8")
 
-[node name="logo" type="Node3D" unique_id=1608830763]
+[node name="logo" type="Node3D" unique_id=1608830763 node_paths=PackedStringArray("label")]
 script = ExtResource("1_ciqto")
+label = NodePath("CanvasLayer/Label")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=344429843]
 environment = SubResource("Environment_jd5n0")
@@ -1504,7 +1505,7 @@ stream = ExtResource("2_snm24")
 
 [node name="AudioStreamPlayer_Crickets" type="AudioStreamPlayer" parent="." unique_id=1468954420]
 stream = ExtResource("2_o4sbl")
-autoplay = true
+bus = &"Lower"
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1609459850]
 transform = Transform3D(-0.38103968, -0.24548922, 0.8913719, 0, 0.96410525, 0.26552042, -0.9245587, 0.10117382, -0.36736235, 5.5398483, 3.6196318, -2.9402514)
@@ -1688,3 +1689,16 @@ mesh = SubResource("ArrayMesh_g5fpw")
 [node name="Cube_046" type="MeshInstance3D" parent="logo" unique_id=1947709262]
 transform = Transform3D(1, 0, 0, 0, 3.2015517, 0, 0, 0, 1.9843792, -30.5, 14.574982, 40.85108)
 mesh = SubResource("ArrayMesh_5ycvm")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=720047172]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=603994991]
+visible = false
+offset_left = 352.0
+offset_top = 336.0
+offset_right = 823.0
+offset_bottom = 403.0
+theme_override_font_sizes/font_size = 48
+text = "Press 'Enter' to Start"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -2,6 +2,8 @@ extends Node3D
 
 var gc
 
+var once_setObjectiveX = false
+
 const soundEffect = {
 	"glass": preload("res://audio/soundEffect/glass_break.mp3"),
 	"needle": preload("res://audio/soundEffect/tatto_needle.mp3")
@@ -84,7 +86,9 @@ func _ready() -> void:
 		"showSpyExitSign": showSpyExitSign,
 		"hideDJ": hideDJ,
 		"hideIdlePostShowAgent": hideIdlePostShowAgent,
-		"revealMinnMaxLogo_CreditsExit": revealMinnMaxLogo_CreditsExit
+		"revealMinnMaxLogo_CreditsExit": revealMinnMaxLogo_CreditsExit,
+		"objectiveT": objectiveT,
+		"objectiveW": objectiveW
 	}
 	# Make sure these nodes are hidden on start
 	$players/Player2.set_visible(false)
@@ -92,12 +96,19 @@ func _ready() -> void:
 	$sceneTattoo/fortyIdleNoAnimRoof.set_visible(false)
 	$tcbCharacterAtBar.set_visible(false)
 	$Camera3D_OpenTwo.set_current(true)
+	gc.setObjectiveLetter("s")
 	await gc.fadeIn()
 	if gc.DEBUG:
 		switchToPlayer2()
 		gc.playerCanMove = true
 	else:
 		gc.playDialogFile("res://dialog/script/9_club/34_get_off_boat.json")
+
+func objectiveW():
+	gc.setObjectiveLetter("w")
+
+func objectiveT():
+	gc.setObjectiveLetter("t")
 
 func revealMinnMaxLogo_CreditsExit():
 	$logoPoints/minnMaxLogo_CreditsExit.reveal()
@@ -119,6 +130,7 @@ func cameraPostAgent():
 
 func revealMinnMaxLogo_CenterDanceFloor():
 	$logoPoints/minnMaxLogo_CenterDanceFloor.reveal()
+	gc.setObjectiveLetter("v")
 
 func hideOutsideTCB():
 	$sceneTalkToTCB/tcbCharacter.set_visible(false)
@@ -149,6 +161,7 @@ func hideFortyIdleNoAnimDrummer():
 
 func revealMinnMaxLogo_HostMeetup():
 	$logoPoints/minnMaxLogo_HostMeetup.reveal()
+	gc.setObjectiveLetter("u")
 
 func revealMinnMaxLogo_TCBBar():
 	$logoPoints/minnMaxLogo_TCBBar.reveal()
@@ -189,7 +202,7 @@ func playerFallAnimationSequence():
 	showfortyIdleNoAnimRoof()
 	$sceneTattoo/AnimationPlayer.play("playerFall")
 	$glass_shards.fall()
-	playSoundEffect("glass")
+	gc.playSoundEffect("glass_break")
 	await $sceneTattoo/AnimationPlayer.animation_finished
 	gc.endAwaitDialog()
 
@@ -197,11 +210,11 @@ func freeShards():
 	$glass_shards.free()
 
 func breakGlassSoundEffect():
-	await playSoundEffectAwait("glass")
+	await gc.playSoundEffectAwait("glass_break")
 	gc.endAwaitDialog()
 
 func tattooSoundEffect():
-	playSoundEffect("needle")
+	gc.playSoundEffect("tattoo_needle")
 
 func cameraCloseTattoo():
 	$sceneTattoo/CloseTattoo.set_current(true)
@@ -276,6 +289,7 @@ func showPlayer3():
 	$players/Player3.set_visible(true)
 
 func switchToPlayer2():
+	gc.setObjectiveLetter("s2")
 	$players/Player.localFreeze = true
 	$players/Player.set_visible(false)
 	$players/Player2.localFreeze = false
@@ -381,3 +395,8 @@ func openStageDoor():
 
 func _process(delta: float) -> void:
 	pass
+
+func _on_area_3d_final_exit_body_entered(body: Node3D) -> void:
+	if not once_setObjectiveX:
+		once_setObjectiveX = true
+		gc.setObjectiveLetter("x")

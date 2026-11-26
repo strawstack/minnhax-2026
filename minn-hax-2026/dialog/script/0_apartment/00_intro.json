@@ -22,6 +22,10 @@
 		"command": "playerFree"
 	},
 	{
+		"name": "Command",
+		"command": "showObjective"
+	},
+	{
 		"name": "Richard",
 		"avatar": "",
 		"lines": [
@@ -45,7 +49,7 @@
 	},
 	{
 		"name": "Command",
-		"command": "objectiveGoSeeComputer"
+		"command": "objectiveA"
 	},
 	{
 		"name": "Command",

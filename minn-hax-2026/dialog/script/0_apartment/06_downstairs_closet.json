@@ -19,6 +19,22 @@
 	},
 	{
 		"name": "Command",
+		"command": "richardHeadForward"
+	},
+	{
+		"name": "Command",
 		"command": "openStudioStairsDoor"
+	},
+	{
+		"name": "Command",
+		"command": "silenceNevi"
+	},
+	{
+		"name": "Command",
+		"command": "objectiveC"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

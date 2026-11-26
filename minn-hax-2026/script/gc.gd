@@ -26,8 +26,11 @@ const scenes = {
 }
 
 const musicTracks = {
-	"example_music": preload("res://dialog/tracks/example_music.mp3"),
-	"example_music_long": preload("res://dialog/tracks/example_music_long.mp3")
+	"example_music": preload("res://audio/tracks/example_music.mp3"),
+	"example_music_long": preload("res://audio/tracks/example_music_long.mp3"),
+	"skate": preload("res://audio/tracks/skate.mp3"),
+	"camping": preload("res://audio/tracks/camping.mp3"),
+	"island": preload("res://audio/tracks/island.mp3")
 }
 
 const bgmMusic = {
@@ -97,6 +100,7 @@ func _ready() -> void:
 	hideInteract()
 	showCrossHairs(false)
 	hideObjective()
+	hideRecording()
 	if DEBUG:
 		loadScene("island")
 	else:
@@ -104,7 +108,15 @@ func _ready() -> void:
 		$CanvasLayer_Fade.set_visible(true) 
 		$CanvasLayer_MusicDialog.set_visible(false)
 		loadScene("logo") # Calls "logoSceneEnds" on completion
-		await fadeIn()
+
+func setObjectiveLetter(letter: String):
+	$CanvasLayer_Objective.setObjectiveLetter(letter)
+
+func showRecording():
+	$CanvasLayer_Recording.set_visible(true)
+
+func hideRecording():
+	$CanvasLayer_Recording.set_visible(false)
 
 func stopBGM():
 	audioStreamPlayerBGM.stop()
@@ -125,6 +137,16 @@ func playSoundEffect(effectName: String):
 		else:
 			print("MISSING: " + effectName)
 
+func playSoundEffectAwait(effectName: String):
+	if audioStreamPlayerSoundEffect.is_playing():
+		audioStreamPlayerSoundEffect.stop()
+	if effectName in soundEffect:
+		audioStreamPlayerSoundEffect.stream = soundEffect[effectName]
+		audioStreamPlayerSoundEffect.play()
+		await audioStreamPlayerSoundEffect.finished
+	else:
+		print("MISSING: " + effectName)
+
 func hideDialog():
 	$CanvasLayer_Dialog.set_visible(false)
 
@@ -134,11 +156,11 @@ func showCrossHairs(value):
 func setPlayerCanMove(value):
 	playerCanMove = value
 
-func setObjective(msg: String):
-	$CanvasLayer_Objective.setObjective(msg)
-
 func hideObjective():
 	$CanvasLayer_Objective.set_visible(false)
+
+func showObjective():
+	$CanvasLayer_Objective.set_visible(true)
 
 func endAwaitDialog():
 	$CanvasLayer_Dialog.endAwait()
@@ -183,6 +205,11 @@ func playMusic(track):
 		audioStreamPlayerMusicTrack.play() # Calls _on_audio_stream_player_music_track_finished when finished
 	else:
 		print("MISSING music: " + track)
+
+func stopMusic():
+	if audioStreamPlayerMusicTrack.is_playing():
+		audioStreamPlayerMusicTrack.stop()
+		endAwaitDialog()
 
 func setMusicDialogAvatar(texture: Texture2D):
 	$CanvasLayer_MusicDialog/TextureRect_Avatar.set_texture(texture)

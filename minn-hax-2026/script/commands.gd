@@ -9,8 +9,6 @@ func _ready() -> void:
 	gc.commandLookup = {
 		"freezePlayer": freezePlayer,
 		"unfreezePlayer": unfreezePlayer,
-		"objectiveGoSeeComputer": objectiveGoSeeComputer,
-		"objectiveStudioDoor": objectiveStudioDoor,
 		"hideDialog": hideDialog,
 		"showDialog": showDialog,
 		"fadeOut": fadeOut,
@@ -26,8 +24,16 @@ func _ready() -> void:
 		"loadObstacleCourse": loadObstacleCourse,
 		"loadTacSim": loadTacSim,
 		"loadFreelancer": loadFreelancer,
-		"loadCredits": loadCredits
+		"loadCredits": loadCredits,
+		"hideObjective": hideObjective,
+		"showObjective": showObjective
 	}
+
+func hideObjective():
+	gc.hideObjective()
+
+func showObjective():
+	gc.showObjective()
 
 func showCrossHairs():
 	gc.showCrossHairs(true)
@@ -40,12 +46,6 @@ func freezePlayer():
 
 func unfreezePlayer():
 	gc.playerCanMove = true
-
-func objectiveGoSeeComputer():
-	gc.setObjective("Mouse to look around. WASD to move. Talk to Yu in the kitchen, and visit Richard's office upstairs.")
-
-func objectiveStudioDoor():
-	gc.setObjective("Head downstairs to the studio in the basement.")
 
 func hideDialog():
 	canvasLayerDialog.set_visible(false)

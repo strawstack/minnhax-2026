@@ -27,4 +27,6 @@ func elevatorClose():
 
 func _process(delta: float) -> void:
 	if canStart and Input.is_action_just_pressed("enter"):
+		canStart = false
+		$titleScreen/enterToStartLabel.set_visible(false)
 		elevatorClose()

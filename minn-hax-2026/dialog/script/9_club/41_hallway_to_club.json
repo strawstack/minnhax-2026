@@ -16,5 +16,9 @@
 				"text": "Your contact is wearing red at the bar. I’m color blind. This one’s up to you."
 			}
 		]
-	}
+	},
+	{
+		"name": "Command",
+		"command": "objectiveT"
+	},
 ]

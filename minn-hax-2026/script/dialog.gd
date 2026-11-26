@@ -5,6 +5,10 @@ extends CanvasLayer
 # Mesage typeof Dict: Name, Avatar, Lines typeof Line[]
 # Line typeof Dict: voice_file, text
 
+const skipTime = 3.0
+var currentSkipTime = 0.0
+var playingMusic = false
+
 const avatarLookup = {
 	"Richard": preload("res://dialog/avatar/Richard.png"),
 	"CrabPalace": preload("res://dialog/avatar/CrabPalace.png"),
@@ -69,6 +73,7 @@ func playDialog(dialog: Array):
 		activeDialog = dialog
 		state = dialogState.LOAD_LINE
 		AudioServer.set_bus_volume_db(1, -20.0)
+		gc.hideObjective()
 		showDialog(true)
 	else:
 		print("playDialog called while already playing")
@@ -125,11 +130,22 @@ func dialogOver():
 	gc.dialogEnds()
 
 func endAwait():
+	playingMusic = false
 	state = dialogState.LOAD_LINE
+
+func endMusic():
+	gc.stopMusic()
 
 func _process(delta: float) -> void:
 	toggleEnterPrompt(state == dialogState.WAITING_FOR_INPUT)
 	if state == dialogState.AWAIT_IN_PROGRESS:
+		if playingMusic and Input.is_action_pressed("skip"):
+			currentSkipTime += delta
+			if skipTime <= currentSkipTime:
+				currentSkipTime = 0
+				endMusic()
+		else:
+			currentSkipTime = 0
 		return # State changed by 'endAwait' above
 	if state == dialogState.LOAD_LINE:
 		if messageIndex >= activeDialog.size():
@@ -141,6 +157,7 @@ func _process(delta: float) -> void:
 			setMusicAvatar(message)
 			gc.showMusicUI()
 			setMouth(message)
+			playingMusic = true
 			playMusic(message["track"])
 			messageIndex += 1
 		elif message["name"] == "Command":

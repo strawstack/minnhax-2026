@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bl2ax3g176ohq" path="res://image/point_8.png" id="2_brvut"]
 [ext_resource type="Script" uid="uid://cw5p35xqsvu2j" path="res://script/dialog.gd" id="2_v0l8b"]
 [ext_resource type="Script" uid="uid://w2owemapqhmn" path="res://script/canvas_layer_objective.gd" id="5_p1hux"]
+[ext_resource type="AudioStream" uid="uid://cptvcvlrwfpab" path="res://audio/soundEffect/cowbell.mp3" id="7_of57s"]
 [ext_resource type="Script" uid="uid://cakfngxb6o8an" path="res://script/bullet_smoke.gd" id="8_of57s"]
 
 [sub_resource type="Environment" id="Environment_jd5n0"]
@@ -268,12 +269,45 @@ text = "Character Name"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Label" type="Label" parent="CanvasLayer_MusicDialog" unique_id=46079194]
+offset_left = 976.0
+offset_top = 680.0
+offset_right = 1146.0
+offset_bottom = 703.0
+theme_override_colors/font_color = Color(1, 1, 1, 0.5137255)
+text = "Hold \"T\" to Skip Music"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="CanvasLayer_Fade" type="CanvasLayer" parent="." unique_id=1994350165]
 
 [node name="fadeRect" type="ColorRect" parent="CanvasLayer_Fade" unique_id=173595337]
 offset_right = 1168.0
 offset_bottom = 720.0
 color = Color(0, 0, 0, 1)
+
+[node name="CanvasLayer_Recording" type="CanvasLayer" parent="." unique_id=1617653784]
+visible = false
+
+[node name="Label" type="Label" parent="CanvasLayer_Recording" unique_id=781695407]
+offset_left = 1072.0
+offset_top = 16.0
+offset_right = 1112.0
+offset_bottom = 42.0
+theme_override_colors/font_color = Color(0.75686276, 0.07058824, 0.12156863, 1)
+theme_override_font_sizes/font_size = 18
+text = "REC"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer_Recording" unique_id=1838598169]
+modulate = Color(0.75686276, 0.07058824, 0.12156863, 1)
+offset_left = 1120.0
+offset_top = 16.0
+offset_right = 1160.0
+offset_bottom = 56.0
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_brvut")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1333780906]
 libraries/ = SubResource("AnimationLibrary_0ha60")
@@ -292,6 +326,12 @@ bus = &"BackgroundMusic"
 
 [node name="AudioStreamPlayerMusicTrack" type="AudioStreamPlayer" parent="Audio" unique_id=760994628]
 bus = &"Voice"
+
+[node name="AudioStreamPlayer_TargetHit" type="AudioStreamPlayer" parent="Audio" unique_id=1574715533]
+bus = &"BackgroundMusic"
+
+[node name="AudioStreamPlayer_Cowbell" type="AudioStreamPlayer" parent="Audio" unique_id=2147083605]
+stream = ExtResource("7_of57s")
 
 [node name="Scene" type="Node3D" parent="." unique_id=1725802773]
 

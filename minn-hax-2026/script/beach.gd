@@ -8,13 +8,19 @@ func _ready() -> void:
 		"removeStaticBody3D_UntilRadio": removeStaticBody3D_UntilRadio,
 		"removeStaticBody3D_AlrightBlock": removeStaticBody3D_AlrightBlock,
 		"removeStaticBody3D_ShimmyBlock": removeStaticBody3D_ShimmyBlock,
-		"pickUpBeachTape": pickUpBeachTape
+		"pickUpBeachTape": pickUpBeachTape,
+		"pickUpRadio": pickUpRadio
 	}
 	startScene()
+
+func pickUpRadio():
+	$Radio.set_visible(false)
+	gc.setObjectiveLetter("g")
 
 func startScene():
 	gc.playerCanMove = true
 	await gc.fadeIn()
+	gc.setObjectiveLetter("f")
 	gc.playDialogFile("res://dialog/script/3_beach/12_a_agent_on_beach.json")
 
 func pickUpBeachTape():

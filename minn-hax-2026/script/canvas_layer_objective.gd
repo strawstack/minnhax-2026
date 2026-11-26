@@ -1,37 +1,43 @@
 extends CanvasLayer
 
-# Objectives
-# Mouse to look around. WASD to move. Talk to Yu in the kitchen, and see my office upstairs.
-# Head downstairs to the studio in the basement.
-# Talk to LeBooBoo in the downstairs studio.
-# Start the interview stream from the control room.
-# Get the radio.
-# Explore the beach.
-# Talk to GreenDay near the jeep.
-# Drive to the training area.
-# (Objectives off during training)
-# Explore MII6.
-# Enter the TacSim.
-# Investigate LeBooBoo's mansion.
-# Enter the secret passage in the kitchen revealed by the banana.
-# Press 'F' to toggle skate/walk. Retreive the secret tape.
-# Explore the forest next to LeBooBoo's mansion.
-# Go to the dock and use the boat to travel to the island.
-# Get inside the club.
-# Explore the club.
-# Distract LeBooBoo's band member in order to replace them on stage.
-# Join LeBooBoo on stage. Stay close. Hack his phone.
-# Exit via the door at the back of the stage.
-# Extract to complete your mission.
-
+const objectives = {
+	"a": "Mouse to look around. WASD to move. Talk to Yu in the kitchen. Visit Richard's office upstairs.",
+	"b": "Head downstairs to the studio in the basement.",
+	"c": "Talk to LeBooBoo in the downstairs studio.",
+	"d": "Start the interview stream from the control room.",
+	"e": "Listen to voice mail. Stream The Department of Parasocial Activity from the control room.",
+	"f": "Get the radio.",
+	"g": "Explore the beach.",
+	"h": "Talk to GreenDay near the jeep.",
+	"i": "Drive the jeep to the training area.",
+	"j": "Shoot three targets.",
+	"k": "Complete the course and get the flag.",
+	"l": "Explore MII6.",
+	"m": "Enter the TacSim.",
+	"n": "Investigate LeBooBoo's mansion to find a way underground.",
+	"o": "Enter the secret passage in the kitchen.",
+	"p": "Press 'F' to toggle skate/walk. Retreive the secret tape.",
+	"q": "Explore the forest next to LeBooBoo's mansion.",
+	"q2": "Retreive the secret tape from the cage at the end of the course.",
+	"r": "Go to the dock and use the boat to travel to the island.",
+	"s": "Get inside the club.",
+	"s2": "Explore the club.",
+	"t": "Meet the contact in red.",
+	"u": "Watch LeBooBoo's interview on the central dance floor. Find and take out the band member.",
+	"v": "Head to the central dance floor.",
+	"w": "Exit via the door at the back of the stage.",
+	"x": "Extract to complete your mission."
+}
 const prefix = "Objective: "
 
 func _ready() -> void:
 	pass
 
-func setObjective(msg: String):
-	set_visible(true)
-	$PanelContainer/Label.set_text(prefix + msg)
+func setObjectiveLetter(letter: String):
+	if letter in objectives:
+		setObjective(objectives[letter])
+	else:
+		print("MISSING(objective): " + letter)
 
-func _process(delta: float) -> void:
-	pass
+func setObjective(msg: String):
+	$PanelContainer/Label.set_text(prefix + msg)

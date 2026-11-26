@@ -8,5 +8,9 @@
 				"text": "I washed ashore the only survivor of the crash and found a radio."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

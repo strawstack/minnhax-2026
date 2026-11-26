@@ -17,18 +17,32 @@ func _ready() -> void:
 		"returnPlayerCamera": returnPlayerCamera,
 		"openFridge": openFridge,
 		"hidePlayer": hidePlayer,
-		"showBoatAndCam": showBoatAndCam 
+		"showBoatAndCam": showBoatAndCam,
+		"objectiveQ": objectiveQ,
+		"objectiveQ2": objectiveQ2,
+		"objectiveR": objectiveR
 	}
 	$Camera3D_OpenShot.set_current(true)
 	$BoatCutscene.set_visible(false)
+	gc.setObjectiveLetter("n")
 	await gc.fadeIn()
 	gc.playDialogFile("res://dialog/script/8_freelancer/22_inside_tac_sim.json")
+
+func objectiveQ():
+	gc.setObjectiveLetter("q")
+
+func objectiveQ2():
+	gc.setObjectiveLetter("q2")
+
+func objectiveR():
+	gc.setObjectiveLetter("r")
 
 func hidePlayer():
 	$Player.set_visible(false)
 
 func openFridge():
 	$AnimationPlayer.play("openFridge")
+	gc.setObjectiveLetter("o")
 
 func returnPlayerCamera():
 	$Player.setCameraActive()
@@ -55,6 +69,7 @@ func playerCanSkate():
 
 func openParkDoor():
 	$AnimationPlayer.play("openSkateParkDoor")
+	gc.setObjectiveLetter("p")
 
 func revealLeaveOnBoat():
 	$minnMaxLogo_leaveOnBoat.reveal()

@@ -21,7 +21,9 @@ func revealFlagLogo():
 
 func startScene():
 	$Player.setCameraActive()
+	gc.showObjective()
 	gc.playerCanMove = true
+	gc.setObjectiveLetter("k")
 	await gc.fadeIn()
 
 func hideGunModel():
