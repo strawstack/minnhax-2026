@@ -4307,6 +4307,67 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_eu7n5")
 
+[sub_resource type="Animation" id="Animation_wpegw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cowBell/Cube_018:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.90203744, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("cowBell/Cube_018:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1.1, 1.1, 1.1)]
+}
+
+[sub_resource type="Animation" id="Animation_nb7vv"]
+resource_name = "cowbell"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cowBell/Cube_018:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(-0.90203744, 0, 0), Vector3(-1.0274, -0.053773634, 0.06529098), Vector3(-0.90203744, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("cowBell/Cube_018:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(1, 1, 1), Vector3(1.1, 1.1, 1.1), Vector3(1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_d13li"]
+_data = {
+&"RESET": SubResource("Animation_wpegw"),
+&"cowbell": SubResource("Animation_nb7vv")
+}
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_kbkkx"]
 size = Vector3(1, 5.5497437, 5.0273438)
 
@@ -6774,8 +6835,9 @@ shadow_mesh = SubResource("ArrayMesh_2ip0n")
 [sub_resource type="BoxShape3D" id="BoxShape3D_uf2ew"]
 size = Vector3(3.222046, 6.722351, 1)
 
-[node name="island" type="Node3D" unique_id=1778808922]
+[node name="island" type="Node3D" unique_id=1778808922 node_paths=PackedStringArray("animationPlayer_Cowbell")]
 script = ExtResource("1_0stp1")
+animationPlayer_Cowbell = NodePath("cowBellGuy/AnimationPlayer_Cowbell")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1565766509]
 environment = SubResource("Environment_jd5n0")
@@ -7765,7 +7827,7 @@ mesh = SubResource("ArrayMesh_8g4af")
 surface_material_override/0 = ExtResource("4_tho0w")
 
 [node name="cat_carrier" type="MeshInstance3D" parent="sceneSeeEverything/interview_scene" unique_id=1069714368]
-transform = Transform3D(0.93902165, 0.15135969, 0.30875102, -0.1437867, 0.9884783, -0.04727717, -0.3123494, 0, 0.9499673, 15.1, 0.47499996, -11.599999)
+transform = Transform3D(0.9390215, 0.15135968, 0.30875102, -0.14378668, 0.98847824, -0.04727717, -0.31234935, 0, 0.9499673, 15.1, 0.47499996, -11.599999)
 mesh = SubResource("ArrayMesh_m4brd")
 surface_material_override/0 = ExtResource("7_salic")
 
@@ -7967,7 +8029,7 @@ visible = false
 transform = Transform3D(-0.25881904, 0, -0.9659258, 0, 1, 0, 0.9659258, 0, -0.25881904, 15.795017, -0.60658956, -0.81323886)
 
 [node name="Cube_018" type="MeshInstance3D" parent="cowBellGuy/cowBell" unique_id=328332473]
-transform = Transform3D(1.0000001, 1.4901161e-08, 0, 0, 0.62001276, 0.7845918, 0, -0.78459185, 0.6200128, -0.19999981, 1.0498377, -0.040000916)
+transform = Transform3D(1.1, 0, 0, 0, 0.682014, 0.863051, 0, -0.863051, 0.682014, -0.19999981, 1.0498377, -0.040002823)
 mesh = SubResource("ArrayMesh_kgcur")
 surface_material_override/0 = ExtResource("29_o76gs")
 
@@ -7979,6 +8041,9 @@ surface_material_override/0 = ExtResource("30_ck08u")
 
 [node name="fortyIdleNoAnim" parent="cowBellGuy" unique_id=147732629 instance=ExtResource("23_re1to")]
 transform = Transform3D(-0.50000006, 0, -0.8660254, 0, 1, 0, 0.8660254, 0, -0.50000006, 15.772791, -0.7311611, -0.7871971)
+
+[node name="AnimationPlayer_Cowbell" type="AnimationPlayer" parent="cowBellGuy" unique_id=403445302]
+libraries/ = SubResource("AnimationLibrary_d13li")
 
 [node name="postShowTalk" type="Node3D" parent="." unique_id=1924454817]
 visible = false

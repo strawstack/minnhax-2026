@@ -6,6 +6,7 @@ const DEBUG = false
 @export var bulletSmoke: Node3D
 @export var audioStreamPlayerBGM: AudioStreamPlayer
 @export var audioStreamPlayerSoundEffect: AudioStreamPlayer
+@export var audioStreamPlayer_Cowbell: AudioStreamPlayer
 
 const scenes = {
 	"logo": preload("res://scene/logo.tscn"),
@@ -291,6 +292,9 @@ func _input(event):
 	# Free mouse on esc
 	if event.is_action_pressed("esc"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+
+func playCowbell():
+	audioStreamPlayer_Cowbell.play()
 
 func draw_thick_line(from: Vector3, to: Vector3):
 	bulletSmoke.draw_thick_line(from, to)

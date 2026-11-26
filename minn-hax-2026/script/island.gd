@@ -1,8 +1,11 @@
 extends Node3D
 
+@export var animationPlayer_Cowbell: AnimationPlayer
+
 var gc
 
 var once_setObjectiveX = false
+var canPlayCowbell = false
 
 const soundEffect = {
 	"glass": preload("res://audio/soundEffect/glass_break.mp3"),
@@ -88,7 +91,9 @@ func _ready() -> void:
 		"hideIdlePostShowAgent": hideIdlePostShowAgent,
 		"revealMinnMaxLogo_CreditsExit": revealMinnMaxLogo_CreditsExit,
 		"objectiveT": objectiveT,
-		"objectiveW": objectiveW
+		"objectiveW": objectiveW,
+		"allowPlayCowbell": allowPlayCowbell,
+		"stopPlayCowbell": stopPlayCowbell
 	}
 	# Make sure these nodes are hidden on start
 	$players/Player2.set_visible(false)
@@ -103,6 +108,12 @@ func _ready() -> void:
 		gc.playerCanMove = true
 	else:
 		gc.playDialogFile("res://dialog/script/9_club/34_get_off_boat.json")
+
+func allowPlayCowbell():
+	canPlayCowbell = true
+
+func stopPlayCowbell():
+	canPlayCowbell = false
 
 func objectiveW():
 	gc.setObjectiveLetter("w")
@@ -394,7 +405,9 @@ func openStageDoor():
 	$backStageDoor/AnimationPlayer.play("openStageDoor")
 
 func _process(delta: float) -> void:
-	pass
+	if canPlayCowbell and Input.is_action_just_pressed("jump"):
+		animationPlayer_Cowbell.play("cowbell")
+		gc.playCowbell()
 
 func _on_area_3d_final_exit_body_entered(body: Node3D) -> void:
 	if not once_setObjectiveX:
