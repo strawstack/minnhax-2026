@@ -24,7 +24,7 @@ Godot project files for the MinnHax 2026 Game Jam.
     - Stream PC
   - Metal door opening sound effect for greenday training (gears)
 
-- Audio needed "when I woke my plane had landed, and it was time to meet my instructor"
+- Audio needed "When I woke-up, my plane had landed, and it was time to meet my instructor"
 
 - Balance audio to avoid any loud noises
   - Assume all play at full volume
