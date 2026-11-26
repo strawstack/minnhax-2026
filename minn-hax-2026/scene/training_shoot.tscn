@@ -15,6 +15,9 @@ script = ExtResource("1_8tfii")
 
 [node name="target_shooting_model" parent="." unique_id=1694195642 instance=ExtResource("2_3cpc2")]
 
+[node name="LightmapGI" type="LightmapGI" parent="." unique_id=840346394]
+light_data = ExtResource("7_hmbwd")
+
 [node name="Target" parent="." unique_id=267441459 node_paths=PackedStringArray("targetHitCallbackNode") instance=ExtResource("3_monsh")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.7864742, 0, -7.389925)
 targetHitCallbackNode = NodePath("..")
@@ -48,9 +51,6 @@ one_shot = true
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1603501314]
 transform = Transform3D(0.9837385, -0.059221547, -0.16956192, 0.17960633, 0.32436773, 0.9287233, 0, -0.9440754, 0.32972968, -1.2970514, 10.237716, 0)
 light_bake_mode = 1
-
-[node name="LightmapGI" type="LightmapGI" parent="." unique_id=840346394]
-light_data = ExtResource("7_hmbwd")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=999392081]
 environment = SubResource("Environment_jd5n0")
