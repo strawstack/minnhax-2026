@@ -2,7 +2,7 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-uid="uid://ym2oob60hg0x"
+uid="uid://ca66d6sd17mkx"
 path="res://.godot/imported/loop_bubbles.mp3-879c66fb2456d9da246f46f02e9194a8.mp3str"
 
 [deps]
@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/loop_bubbles.mp3-879c66fb2456d9da246f46f02e91
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
 bpm=0
 beat_count=0

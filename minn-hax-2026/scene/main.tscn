@@ -6,10 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://bl2ax3g176ohq" path="res://image/point_8.png" id="2_brvut"]
 [ext_resource type="Script" uid="uid://cw5p35xqsvu2j" path="res://script/dialog.gd" id="2_v0l8b"]
 [ext_resource type="Script" uid="uid://w2owemapqhmn" path="res://script/canvas_layer_objective.gd" id="5_p1hux"]
-[ext_resource type="AudioStream" uid="uid://b8ubl6y37b560" path="res://audio/soundEffect/bullet_wood.mp3" id="7_b5f6u"]
-[ext_resource type="AudioStream" uid="uid://cptvcvlrwfpab" path="res://audio/soundEffect/cowbell.mp3" id="7_of57s"]
+[ext_resource type="AudioStream" uid="uid://c0fvltky8hqlw" path="res://audio/soundEffect/bullet_wood.mp3" id="7_b5f6u"]
+[ext_resource type="AudioStream" uid="uid://crjxychxyp8pn" path="res://audio/soundEffect/cowbell.mp3" id="7_of57s"]
 [ext_resource type="Script" uid="uid://cakfngxb6o8an" path="res://script/bullet_smoke.gd" id="8_of57s"]
-[ext_resource type="AudioStream" uid="uid://dc73dv4aidtq0" path="res://audio/soundEffect/gun_shot.mp3" id="9_tqoya"]
+[ext_resource type="AudioStream" uid="uid://cida67p77piw2" path="res://audio/soundEffect/gun_shot.mp3" id="9_tqoya"]
 
 [sub_resource type="Environment" id="Environment_jd5n0"]
 

@@ -23,13 +23,12 @@ Godot project files for the MinnHax 2026 Game Jam.
     - PC in my office
     - Stream PC
   - Metal door opening sound effect for greenday training (gears)
+  - Balance audio to avoid any loud noises
+    - Assume all play at full volume
+    - So play at 75% in Audacity and then dip tracks accordingly
+    - Directly overwright files in Godot folder to adjust
 
 - Audio needed "When I woke-up, my plane had landed, and it was time to meet my instructor"
-
-- Balance audio to avoid any loud noises
-  - Assume all play at full volume
-  - So play at 75% in Audacity and then dip tracks accordingly
-  - Directly overwright files in Godot folder to adjust
 
 - Submit game on itch io
   - Game description
