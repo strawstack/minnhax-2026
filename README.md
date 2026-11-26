@@ -27,8 +27,9 @@ Godot project files for the MinnHax 2026 Game Jam.
 - Audio needed "when I woke my plane had landed, and it was time to meet my instructor"
 
 - Balance audio to avoid any loud noises
-
-- Upload tracks to Youtube
+  - Assume all play at full volume
+  - So play at 75% in Audacity and then dip tracks accordingly
+  - Directly overwright files in Godot folder to adjust
 
 - Submit game on itch io
   - Game description
@@ -38,6 +39,8 @@ Godot project files for the MinnHax 2026 Game Jam.
   - Links to Youtube music
   - Music credits: AudioLibrary
   - No AI statement
+
+- Upload tracks to Youtube
 
 # Done
 
