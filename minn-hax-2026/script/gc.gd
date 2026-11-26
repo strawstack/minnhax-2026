@@ -1,6 +1,6 @@
 extends Node3D
 
-const DEBUG = false
+const DEBUG = true
 
 @export var commands: Node3D
 @export var bulletSmoke: Node3D
@@ -104,7 +104,7 @@ func _ready() -> void:
 	hideObjective()
 	hideRecording()
 	if DEBUG:
-		loadScene("island")
+		loadScene("trainingShoot")
 	else:
 		# Show and Hide these just to make sure
 		$CanvasLayer_Fade.set_visible(true) 
@@ -151,6 +151,9 @@ func playSoundEffectAwait(effectName: String):
 
 func targetHit():
 	$Audio/AudioStreamPlayer_TargetHit.play()
+
+func gunShoot():
+	$Audio/AudioStreamPlayer_Shoot.play()
 
 func hideDialog():
 	$CanvasLayer_Dialog.set_visible(false)

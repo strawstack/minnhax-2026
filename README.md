@@ -24,12 +24,7 @@ Godot project files for the MinnHax 2026 Game Jam.
     - Stream PC
   - Metal door opening sound effect for greenday training (gears)
 
-- Food on stove
-
 - Audio needed "when I woke my plane had landed, and it was time to meet my instructor"
-
-- Gun doesn't shoot exactly at center dot in screen
-  - Maybe just move the dot a bit I think ray is centered
 
 - Balance audio to avoid any loud noises
 
@@ -53,6 +48,11 @@ Godot project files for the MinnHax 2026 Game Jam.
   - No AI statement
 
 # Done
+
+- Gun doesn't shoot exactly at center dot in screen
+  - Maybe just move the dot a bit I think ray is centered
+
+- Food on stove
 
 - Remove "..." from all in game text it delays the dialog box too long so audio plays before text shows
 
