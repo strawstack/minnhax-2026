@@ -62,5 +62,9 @@
 	{
 		"name": "Command",
 		"command": "revealShooting"
+	},
+	{
+		"name": "Command",
+		"command": "resumeFreelancerBGM"
 	}
 ]

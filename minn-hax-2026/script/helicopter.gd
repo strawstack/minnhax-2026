@@ -7,9 +7,19 @@ func _ready() -> void:
 	gc.sceneCommandLookup = {
 		"cameraSwitchScreen": cameraSwitchScreen,
 		"switchLowBattery": switchLowBattery,
-		"triggerExplosionSound": triggerExplosionSound
+		"triggerExplosionSound": triggerExplosionSound,
+		"waitTwoSeconds": waitTwoSeconds,
+		"showLowBattery": showLowBattery
 	}
 	startScene()
+
+func showLowBattery():
+	$Sprite3D_LowBattery.set_visible(true)
+	$Sprite3D_Game.set_visible(false)
+
+func waitTwoSeconds():
+	await get_tree().create_timer(2.0).timeout
+	gc.endAwaitDialog()
 
 func startScene():
 	await gc.fadeIn()

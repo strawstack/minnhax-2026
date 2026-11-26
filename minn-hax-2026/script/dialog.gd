@@ -74,6 +74,7 @@ func playDialog(dialog: Array):
 		state = dialogState.LOAD_LINE
 		AudioServer.set_bus_volume_db(1, -20.0)
 		gc.hideObjective()
+		gc.showCrossHairs(false)
 		showDialog(true)
 	else:
 		print("playDialog called while already playing")

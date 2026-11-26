@@ -147,6 +147,9 @@ func playSoundEffectAwait(effectName: String):
 	else:
 		print("MISSING: " + effectName)
 
+func targetHit():
+	$Audio/AudioStreamPlayer_TargetHit.play()
+
 func hideDialog():
 	$CanvasLayer_Dialog.set_visible(false)
 
@@ -200,6 +203,7 @@ func playVoice(voiceFile: String):
 			print("MISSING: " + voiceFile)
 
 func playMusic(track):
+	stopBGM()
 	if track in musicTracks:
 		audioStreamPlayerMusicTrack.stream = musicTracks[track]
 		audioStreamPlayerMusicTrack.play() # Calls _on_audio_stream_player_music_track_finished when finished
@@ -208,6 +212,7 @@ func playMusic(track):
 
 func stopMusic():
 	if audioStreamPlayerMusicTrack.is_playing():
+		hideMusicUI()
 		audioStreamPlayerMusicTrack.stop()
 		endAwaitDialog()
 
@@ -371,4 +376,4 @@ func loadCredits():
 # Music Track finishes playing
 func _on_audio_stream_player_music_track_finished() -> void:
 	hideMusicUI()
-	$CanvasLayer_Dialog.endAwait()
+	endAwaitDialog()

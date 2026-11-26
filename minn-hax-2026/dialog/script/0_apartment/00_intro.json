@@ -23,6 +23,10 @@
 	},
 	{
 		"name": "Command",
+		"command": "objectiveA"
+	},
+	{
+		"name": "Command",
 		"command": "showObjective"
 	},
 	{
@@ -46,10 +50,6 @@
 	{
 		"name": "Command",
 		"command": "richardHeadForward"
-	},
-	{
-		"name": "Command",
-		"command": "objectiveA"
 	},
 	{
 		"name": "Command",

@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bl2ax3g176ohq" path="res://image/point_8.png" id="2_brvut"]
 [ext_resource type="Script" uid="uid://cw5p35xqsvu2j" path="res://script/dialog.gd" id="2_v0l8b"]
 [ext_resource type="Script" uid="uid://w2owemapqhmn" path="res://script/canvas_layer_objective.gd" id="5_p1hux"]
+[ext_resource type="AudioStream" uid="uid://b8ubl6y37b560" path="res://audio/soundEffect/bullet_wood.mp3" id="7_b5f6u"]
 [ext_resource type="AudioStream" uid="uid://cptvcvlrwfpab" path="res://audio/soundEffect/cowbell.mp3" id="7_of57s"]
 [ext_resource type="Script" uid="uid://cakfngxb6o8an" path="res://script/bullet_smoke.gd" id="8_of57s"]
 
@@ -328,6 +329,7 @@ bus = &"BackgroundMusic"
 bus = &"Voice"
 
 [node name="AudioStreamPlayer_TargetHit" type="AudioStreamPlayer" parent="Audio" unique_id=1574715533]
+stream = ExtResource("7_b5f6u")
 bus = &"BackgroundMusic"
 
 [node name="AudioStreamPlayer_Cowbell" type="AudioStreamPlayer" parent="Audio" unique_id=2147083605]

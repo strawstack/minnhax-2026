@@ -14,6 +14,23 @@
 		"command": "cameraSwitchScreen"
 	},
 	{
+		"name": "Command",
+		"command": "hideDialog"
+	},
+	{
+		"name": "Command",
+		"command": "waitTwoSeconds",
+		"await": true
+	},
+	{
+		"name": "Command",
+		"command": "showLowBattery"
+	},
+	{
+		"name": "Command",
+		"command": "showDialog"
+	},
+	{
 		"name": "AgentForty",
 		"avatar": "",
 		"lines": [

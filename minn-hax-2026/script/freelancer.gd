@@ -20,13 +20,17 @@ func _ready() -> void:
 		"showBoatAndCam": showBoatAndCam,
 		"objectiveQ": objectiveQ,
 		"objectiveQ2": objectiveQ2,
-		"objectiveR": objectiveR
+		"objectiveR": objectiveR,
+		"resumeFreelancerBGM": resumeFreelancerBGM
 	}
 	$Camera3D_OpenShot.set_current(true)
 	$BoatCutscene.set_visible(false)
 	gc.setObjectiveLetter("n")
 	await gc.fadeIn()
 	gc.playDialogFile("res://dialog/script/8_freelancer/22_inside_tac_sim.json")
+
+func resumeFreelancerBGM():
+	gc.playBGM("freelancer")
 
 func objectiveQ():
 	gc.setObjectiveLetter("q")

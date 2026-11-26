@@ -62,5 +62,9 @@
 	{
 		"name": "Command",
 		"command": "revealLeaveOnBoat"
+	},
+	{
+		"name": "Command",
+		"command": "resumeFreelancerBGM"
 	}
 ]

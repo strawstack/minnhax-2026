@@ -4,12 +4,15 @@ extends Node3D
 
 var once = false
 
+var gc
+
 func _ready() -> void:
-	pass 
+	gc = get_tree().current_scene 
 
 func hit():
 	$AnimationPlayer.play("down")
 	if not once:
+		gc.targetHit()
 		if targetHitCallbackNode:
 			targetHitCallbackNode.targetHit()
 
