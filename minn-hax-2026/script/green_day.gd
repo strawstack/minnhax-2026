@@ -75,14 +75,19 @@ func stopRolling():
 	$AnimationPlayerMonRoll.stop()
 
 func openDoorOne():
+	gc.playSoundEffect("gear_spin")
 	doorAnimationPlayer.play("DoorOne")
 func openDoorTwo():
+	gc.playSoundEffect("gear_spin")
 	doorAnimationPlayer.play("DoorTwo")
 func openDoorThree():
+	gc.playSoundEffect("gear_spin")
 	doorAnimationPlayer.play("DoorThree")
 func openDoorFour():
+	gc.playSoundEffect("gear_spin")
 	doorAnimationPlayer.play("DoorFour")
 func openDoorFive():
+	gc.playSoundEffect("gear_spin")
 	doorAnimationPlayer.play("DoorFive")
 
 func _process(delta: float) -> void:

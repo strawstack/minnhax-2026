@@ -17,6 +17,8 @@
 [ext_resource type="Material" uid="uid://c5ms3ytoe21hh" path="res://material/hard_floor.tres" id="11_gsk71"]
 [ext_resource type="Material" uid="uid://b8vlsfiq51xyb" path="res://material/flat_black.tres" id="13_0lpmh"]
 [ext_resource type="Material" uid="uid://d0lu2r31738" path="res://material/pillow_color.tres" id="14_0lpmh"]
+[ext_resource type="Material" uid="uid://c8afg082ijuws" path="res://material/runway.tres" id="17_38n78"]
+[ext_resource type="Material" uid="uid://vwxj3ggxshch" path="res://material/fire_red.tres" id="18_17gt6"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yxx8y"]
 
@@ -116,6 +118,111 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_e1ynj")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_a0f0n"]
+_surfaces = [{
+"aabb": AABB(-0.099999905, -2.8875003, -5.7, 0.19999981, 4.1, 12.2),
+"format": 34359742465,
+"index_count": 96,
+"index_data": PackedByteArray("AAABAAIAAQADAAIABAAAAAIAAgAFAAQABAAGAAAABwACAAMABwAFAAIABAAFAAgABAAIAAYACAAFAAEABQAHAAkACAABAAoACgAGAAgAAAAKAAEABQALAAEABQAJAAsAAQALAAMABwAMAAkADAALAAkACgAMAAYAAwALAA0ADAANAAsACgANAAwADQAKAAAABwAOAAwAAwAOAAcABgAMAA4AAwANAA8ADQAAAA8AAwAPAA4ABgAPAAAABgAOAA8A"),
+"name": "wall_office",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("wMzMPTAzmz9mZrbAwMzMvTAzmz8AANBAwMzMvTAzmz9mZrbAwMzMvWZmjj8zM5O/wMzMvc7MOMBmZrbAwMzMvWdmMsAAANBAwMzMPc7MOMBmZrbAwMzMvTUzAz8zM5O/wMzMPWdmMsAAANBAwMzMvTUzAz80M7M+wMzMPTAzmz8AANBAwMzMvWZmjj80M7M+wMzMPTUzAz80M7M+wMzMPWZmjj80M7M+wMzMPTUzAz8zM5O/wMzMPWZmjj8zM5O/")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_yaxu6"]
+resource_name = "apartment_v2_Cube_004"
+lightmap_size_hint = Vector2i(66, 58)
+_surfaces = [{
+"aabb": AABB(-0.099999905, -2.8875003, -5.7, 0.19999981, 4.1, 12.2),
+"attribute_data": PackedByteArray("AAAgPwAAAD8QPvg7YblnPwAAYD8AAIA+o4tuP08jbD8AAGA/AAAAPxA++DtPI2w/AAAgPwAAgD6ji24/YblnPwAAwD4AAIA+hA9+P8s9DTwAACA/AAAAAIwuej8Jy70+AAAgPwAAgD6ED34/Ccu9PgAAwD4AAAAAjC56P8s9DTwi+BQ/bd5XPxZdtD6mADk/AAAgPwAAQD8QPvg73dNIP4NsHj9t3lc/Fl20Ph6RRj8AACA/AACAP6OLbj/d00g/e2seP9q8Xz+ji+4+HpFGPwAAwD4AAIA/o4tuPx3M3D4AAMA+AABAPxA++DufRtg+ZvAUP9q8Xz+ji+4+pgA5PwAAAD4AAAA/hA9+P5Z7Wj8AAMA+AACAPhA++DuoEVY/AADAPgAAAD+ED34/qBFWPwAAAD4AAIA+ED74O5Z7Wj8AAMA+AAAAPxA++DvLPQ08gmwePyZD0D4WXbQ+i0W5PgAAID8AAAA/ED74OwnLvT58ax4/TIbAPqKL7j6LRbk+IfgUPyRD0D4WXbQ+nCSePgAAID8AAIA+o4tuPwnLvT5m8BQ/TIbAPqKL7j6cJJ4+AADAPgAAgD6ji24/xPaOPAAAwD4AAEA/jC56P59G2D4AACA/AAAAP4QPfj/d00g/AAAgPwAAQD+MLno/3dNIPwAAwD4AAAA/hA9+P59G2D6pqko/AAAAPxA++DsaYXk/VFU1PwAAgD7ZZBM+Cct9P1RVNT8AAAA/ED74OwnLfT+oqko/AACAPtlkEz4aYXk/AADAPrCqKj6ED34/YblnPwAAID/Aqqo9jC56PwnLfT8AAMA+wKqqPYwuej9huWc/AAAgP7CqKj6ED34/Cct9P15VVT4AAAA/fPBBPhpheT9WVZU+AgCAPrLJpj4Jy30/XlVVPgAAgD6yyaY+GmF5P1dVlT4AAAA/fPBBPgnLfT8AACA/qKoqPzbZ5D4Jy30///+/PlRVFT+ED74+GmF5PwAAwD6oqio/hA++PgnLfT8AACA/VFUVPzbZ5D4aYXk/"),
+"format": 34359742519,
+"index_count": 96,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACwAKAAkACwAMAAoACAANAAkADQAMAAsACQANAA4ADQAIAA8ADQAPAAwAEAARABIAEAATABEAFAAVABYAFwAWABUAFAAYABUAFwAZABYAFAAaABgAGQAXABoAGQAaABQAGQAUABsAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0A"),
+"material": ExtResource("6_piv6d"),
+"name": "wall_office",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("wMzMPTAzmz9mZrbAwMzMvTAzmz8AANBAwMzMvTAzmz9mZrbAwMzMPTAzmz8AANBAwMzMPWdmMsAAANBAwMzMvTAzmz8AANBAwMzMPTAzmz8AANBAwMzMvWdmMsAAANBAwMzMvTUzAz8zM5O/wMzMvTAzmz9mZrbAwMzMvWZmjj8zM5O/wMzMvTAzmz8AANBAwMzMvWZmjj80M7M+wMzMvWdmMsAAANBAwMzMvc7MOMBmZrbAwMzMvTUzAz80M7M+wMzMvc7MOMBmZrbAwMzMPWdmMsAAANBAwMzMPc7MOMBmZrbAwMzMvWdmMsAAANBAwMzMPc7MOMBmZrbAwMzMPWZmjj8zM5O/wMzMPTAzmz9mZrbAwMzMPWZmjj80M7M+wMzMPTUzAz8zM5O/wMzMPTAzmz8AANBAwMzMPTUzAz80M7M+wMzMPWdmMsAAANBAwMzMvc7MOMBmZrbAwMzMPTAzmz9mZrbAwMzMvTAzmz9mZrbAwMzMPc7MOMBmZrbAwMzMvWZmjj8zM5O/wMzMPWZmjj80M7M+wMzMPWZmjj8zM5O/wMzMvWZmjj80M7M+wMzMPTUzAz80M7M+wMzMvWZmjj80M7M+wMzMvTUzAz80M7M+wMzMPWZmjj80M7M+wMzMvTUzAz8zM5O/wMzMPTUzAz80M7M+wMzMvTUzAz80M7M+wMzMPTUzAz8zM5O/wMzMvWZmjj8zM5O/wMzMPTUzAz8zM5O/wMzMvTUzAz8zM5O/wMzMPWZmjj8zM5O//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f/9//3////9//3//f////3//f/9/////f/9//3///wAA/3//f///AAD/f/9///8AAP9//3///wAA/3//f///AAD/f/9///8AAP9//3///wAA/3//f///AAD/f/9//v//fwoB////v/9/CgH///+//38KAf///7//fwoB////v////3//f///////f/9//v////9//3///////3//f///////f/9//v////9//3///////3//f///////f/9//////////3//////////f/////////9//////////3////9/AAAAAP8//38AAAAA/z//fwAAAAD/P/9/AAAAAP8///////9/AAD//////38AAP//////fwAA//////9/AAD/f////v//P/9////+//8//3////7//z//f///////P/9//3//fwAA/3//f/9/AAD/f/9//38AAP9//3//fwAA")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_a0f0n")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xasul"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_b7fhx"]
+_surfaces = [{
+"aabb": AABB(-0.099999905, -2.85, -8.6, 0.19999981, 5.7, 17.2),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAAAEAAEAAwAFAAIABQAAAAIABgAEAAAABQAGAAAABwABAAQABwADAAEABgAHAAQABQADAAcABQAHAAYA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("wMzMPWZmNkCamQnBwMzMvWZmNkCamQlBwMzMvWZmNkCamQnBwMzMvWZmNsCamQlBwMzMPWZmNkCamQlBwMzMvWZmNsCamQnBwMzMPWZmNsCamQnBwMzMPWZmNsCamQlB")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_klloj"]
+resource_name = "apartment_v2_Cube_320"
+lightmap_size_hint = Vector2i(74, 90)
+_surfaces = [{
+"aabb": AABB(-0.099999905, -2.85, -8.6, 0.19999981, 5.7, 17.2),
+"attribute_data": PackedByteArray("AAAgPwAAAD8V+Ww/YQu2OwAAYD8AAIA+tG5wP+mTfj8AAGA/AAAAP7RucD9hC7Y7AAAgPwAAgD4V+Ww/6ZN+PwAAwD4AAIA+kc96P83MTD0AACA/AAAAADBFfj/pk74+AAAgPwAAgD6Rz3o/6ZO+PgAAwD4AAAAAMEV+P83MTD0AAMA+AACAP7vBVD/pk34/AAAgPwAAQD9o3eA+YQu2OwAAID8AAIA/aN3gPumTfj8AAMA+AABAP7vBVD9hC7Y7AAAAPgAAAD83mGI/YQu2OwAAwD4AAIA+mCJfP+mTfj8AAMA+AAAAP5giXz9hC7Y7AAAAPgAAgD43mGI/6ZN+PwAAwD4AAAA/rRvMPmELtjsAACA/AACAPsln3Tvpk34/AAAgPwAAAD/JZ907YQu2OwAAwD4AAIA+rRvMPumTfj8AAMA+AABAP5HPej8LtiA/AAAgPwAAAD8wRX4/MzNzPwAAID8AAEA/kc96PzMzcz8AAMA+AAAAPzBFfj8LtiA/"),
+"format": 34359742519,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_xasul"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("wMzMPWZmNkCamQnBwMzMvWZmNkCamQlBwMzMvWZmNkCamQnBwMzMPWZmNkCamQlBwMzMPWZmNsCamQlBwMzMvWZmNkCamQlBwMzMPWZmNkCamQlBwMzMvWZmNsCamQlBwMzMvWZmNsCamQlBwMzMvWZmNkCamQnBwMzMvWZmNkCamQlBwMzMvWZmNsCamQnBwMzMvWZmNsCamQnBwMzMPWZmNsCamQlBwMzMPWZmNsCamQnBwMzMvWZmNsCamQlBwMzMPWZmNsCamQnBwMzMPWZmNkCamQlBwMzMPWZmNkCamQnBwMzMPWZmNsCamQlBwMzMvWZmNsCamQnBwMzMPWZmNkCamQnBwMzMvWZmNkCamQnBwMzMPWZmNsCamQnB/3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f/9//3////9//3//f////3//f/9/////f/9//3///wAA/3//f///AAD/f/9///8AAP9//3///wAA/3//f////38AAP///7//fwAA////v/9/AAD///+//38AAP///7////9//3///////3//f///////f/9///////9//3//////////f/////////9//////////3//////////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_b7fhx")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_0arss"]
+data = PackedVector3Array(0.099999994, 2.85, -8.599999, -0.099999994, 2.85, 8.599999, -0.099999994, 2.85, -8.599999, 0.099999994, 2.85, -8.599999, 0.099999994, 2.85, 8.599999, -0.099999994, 2.85, 8.599999, 0.099999994, -2.85, 8.599999, -0.099999994, 2.85, 8.599999, 0.099999994, 2.85, 8.599999, 0.099999994, -2.85, 8.599999, -0.099999994, -2.85, 8.599999, -0.099999994, 2.85, 8.599999, -0.099999994, -2.85, 8.599999, -0.099999994, 2.85, -8.599999, -0.099999994, 2.85, 8.599999, -0.099999994, -2.85, 8.599999, -0.099999994, -2.85, -8.599999, -0.099999994, 2.85, -8.599999, -0.099999994, -2.85, -8.599999, 0.099999994, -2.85, 8.599999, 0.099999994, -2.85, -8.599999, -0.099999994, -2.85, -8.599999, -0.099999994, -2.85, 8.599999, 0.099999994, -2.85, 8.599999, 0.099999994, -2.85, -8.599999, 0.099999994, 2.85, 8.599999, 0.099999994, 2.85, -8.599999, 0.099999994, -2.85, -8.599999, 0.099999994, -2.85, 8.599999, 0.099999994, 2.85, 8.599999, -0.099999994, -2.85, -8.599999, 0.099999994, 2.85, -8.599999, -0.099999994, 2.85, -8.599999, -0.099999994, -2.85, -8.599999, 0.099999994, -2.85, -8.599999, 0.099999994, 2.85, -8.599999)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_00phj"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_vr3c7"]
+_surfaces = [{
+"aabb": AABB(-0.099999905, -2.6999998, -10, 0.19999981, 5.3999996, 20),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAAAEAAEAAwAFAAIABQAAAAIABgAEAAAABQAGAAAABwABAAQABwADAAEABgAHAAQABQADAAcABQAHAAYA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("wMzMPczMLEAAACDBwMzMvczMLEAAACBBwMzMvczMLEAAACDBwMzMvczMLMAAACBBwMzMPczMLEAAACBBwMzMvczMLMAAACDBwMzMPczMLMAAACDBwMzMPczMLMAAACBB")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_yb0wf"]
+resource_name = "apartment_v2_Cube_410"
+lightmap_size_hint = Vector2i(74, 102)
+_surfaces = [{
+"aabb": AABB(-0.099999905, -2.6999998, -10, 0.19999981, 5.3999996, 20),
+"attribute_data": PackedByteArray("AAAgPwAAAD+Rz3o/oaCgOwAAYD8AAIA+MEV+P7++fj8AAGA/AAAAPzBFfj+hoKA7AAAgPwAAgD6Rz3o/v75+PwAAwD4AAIA+FflsP6GgoDsAACA/AAAAALRucD8UFJQ+AAAgPwAAgD4V+Ww/FBSUPgAAwD4AAAAAtG5wP6GgoDsAAMA+AACAP7vBVD+/vn4/AAAgPwAAQD9o3eA+oaCgOwAAID8AAIA/aN3gPr++fj8AAMA+AABAP7vBVD+hoKA7AAAAPgAAAD83mGI/oaCgOwAAwD4AAIA+mCJfP7++fj8AAMA+AAAAP5giXz+hoKA7AAAAPgAAgD43mGI/v75+PwAAwD4AAAA/rRvMPqGgoDsAACA/AACAPsln3Tu/vn4/AAAgPwAAAD/JZ907oaCgOwAAwD4AAIA+rRvMPr++fj8AAMA+AABAPxX5bD/i4SE/AAAgPwAAAD+0bnA/q6pqPwAAID8AAEA/FflsP6uqaj8AAMA+AAAAP7RucD/i4SE/"),
+"format": 34359742519,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_00phj"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("wMzMPczMLEAAACDBwMzMvczMLEAAACBBwMzMvczMLEAAACDBwMzMPczMLEAAACBBwMzMPczMLMAAACBBwMzMvczMLEAAACBBwMzMPczMLEAAACBBwMzMvczMLMAAACBBwMzMvczMLMAAACBBwMzMvczMLEAAACDBwMzMvczMLEAAACBBwMzMvczMLMAAACDBwMzMvczMLMAAACDBwMzMPczMLMAAACBBwMzMPczMLMAAACDBwMzMvczMLMAAACBBwMzMPczMLMAAACDBwMzMPczMLEAAACBBwMzMPczMLEAAACDBwMzMPczMLMAAACBBwMzMvczMLMAAACDBwMzMPczMLEAAACDBwMzMvczMLEAAACDBwMzMPczMLMAAACDB/3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f/9//3////9//3//f////3//f/9/////f/9//3///wAA/3//f///AAD/f/9///8AAP9//3///wAA/3//f////38AAP///7//fwAA////v/9/AAD///+//38AAP///7////9//3///////3//f///////f/9///////9//3//////////f/////////9//////////3//////////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_vr3c7")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_awxo1"]
+data = PackedVector3Array(0.099999994, 2.7, -10, -0.099999994, 2.7, 10, -0.099999994, 2.7, -10, 0.099999994, 2.7, -10, 0.099999994, 2.7, 10, -0.099999994, 2.7, 10, 0.099999994, -2.7, 10, -0.099999994, 2.7, 10, 0.099999994, 2.7, 10, 0.099999994, -2.7, 10, -0.099999994, -2.7, 10, -0.099999994, 2.7, 10, -0.099999994, -2.7, 10, -0.099999994, 2.7, -10, -0.099999994, 2.7, 10, -0.099999994, -2.7, 10, -0.099999994, -2.7, -10, -0.099999994, 2.7, -10, -0.099999994, -2.7, -10, 0.099999994, -2.7, 10, 0.099999994, -2.7, -10, -0.099999994, -2.7, -10, -0.099999994, -2.7, 10, 0.099999994, -2.7, 10, 0.099999994, -2.7, -10, 0.099999994, 2.7, 10, 0.099999994, 2.7, -10, 0.099999994, -2.7, -10, 0.099999994, -2.7, 10, 0.099999994, 2.7, 10, -0.099999994, -2.7, -10, 0.099999994, 2.7, -10, -0.099999994, 2.7, -10, -0.099999994, -2.7, -10, 0.099999994, -2.7, -10, 0.099999994, 2.7, -10)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tt0fy"]
 
@@ -1027,39 +1134,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_drf55")
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_a0f0n"]
-_surfaces = [{
-"aabb": AABB(-0.099999905, -2.8875003, -5.7, 0.19999981, 4.1, 12.2),
-"format": 34359742465,
-"index_count": 96,
-"index_data": PackedByteArray("AAABAAIAAQADAAIABAAAAAIAAgAFAAQABAAGAAAABwACAAMABwAFAAIABAAFAAgABAAIAAYACAAFAAEABQAHAAkACAABAAoACgAGAAgAAAAKAAEABQALAAEABQAJAAsAAQALAAMABwAMAAkADAALAAkACgAMAAYAAwALAA0ADAANAAsACgANAAwADQAKAAAABwAOAAwAAwAOAAcABgAMAA4AAwANAA8ADQAAAA8AAwAPAA4ABgAPAAAABgAOAA8A"),
-"name": "wall_office",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 16,
-"vertex_data": PackedByteArray("wMzMPTAzmz9mZrbAwMzMvTAzmz8AANBAwMzMvTAzmz9mZrbAwMzMvWZmjj8zM5O/wMzMvc7MOMBmZrbAwMzMvWdmMsAAANBAwMzMPc7MOMBmZrbAwMzMvTUzAz8zM5O/wMzMPWdmMsAAANBAwMzMvTUzAz80M7M+wMzMPTAzmz8AANBAwMzMvWZmjj80M7M+wMzMPTUzAz80M7M+wMzMPWZmjj80M7M+wMzMPTUzAz8zM5O/wMzMPWZmjj8zM5O/")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_yaxu6"]
-resource_name = "apartment_v2_Cube_004"
-lightmap_size_hint = Vector2i(66, 58)
-_surfaces = [{
-"aabb": AABB(-0.099999905, -2.8875003, -5.7, 0.19999981, 4.1, 12.2),
-"attribute_data": PackedByteArray("AAAgPwAAAD8QPvg7YblnPwAAYD8AAIA+o4tuP08jbD8AAGA/AAAAPxA++DtPI2w/AAAgPwAAgD6ji24/YblnPwAAwD4AAIA+hA9+P8s9DTwAACA/AAAAAIwuej8Jy70+AAAgPwAAgD6ED34/Ccu9PgAAwD4AAAAAjC56P8s9DTwi+BQ/bd5XPxZdtD6mADk/AAAgPwAAQD8QPvg73dNIP4NsHj9t3lc/Fl20Ph6RRj8AACA/AACAP6OLbj/d00g/e2seP9q8Xz+ji+4+HpFGPwAAwD4AAIA/o4tuPx3M3D4AAMA+AABAPxA++DufRtg+ZvAUP9q8Xz+ji+4+pgA5PwAAAD4AAAA/hA9+P5Z7Wj8AAMA+AACAPhA++DuoEVY/AADAPgAAAD+ED34/qBFWPwAAAD4AAIA+ED74O5Z7Wj8AAMA+AAAAPxA++DvLPQ08gmwePyZD0D4WXbQ+i0W5PgAAID8AAAA/ED74OwnLvT58ax4/TIbAPqKL7j6LRbk+IfgUPyRD0D4WXbQ+nCSePgAAID8AAIA+o4tuPwnLvT5m8BQ/TIbAPqKL7j6cJJ4+AADAPgAAgD6ji24/xPaOPAAAwD4AAEA/jC56P59G2D4AACA/AAAAP4QPfj/d00g/AAAgPwAAQD+MLno/3dNIPwAAwD4AAAA/hA9+P59G2D6pqko/AAAAPxA++DsaYXk/VFU1PwAAgD7ZZBM+Cct9P1RVNT8AAAA/ED74OwnLfT+oqko/AACAPtlkEz4aYXk/AADAPrCqKj6ED34/YblnPwAAID/Aqqo9jC56PwnLfT8AAMA+wKqqPYwuej9huWc/AAAgP7CqKj6ED34/Cct9P15VVT4AAAA/fPBBPhpheT9WVZU+AgCAPrLJpj4Jy30/XlVVPgAAgD6yyaY+GmF5P1dVlT4AAAA/fPBBPgnLfT8AACA/qKoqPzbZ5D4Jy30///+/PlRVFT+ED74+GmF5PwAAwD6oqio/hA++PgnLfT8AACA/VFUVPzbZ5D4aYXk/"),
-"format": 34359742519,
-"index_count": 96,
-"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACwAKAAkACwAMAAoACAANAAkADQAMAAsACQANAA4ADQAIAA8ADQAPAAwAEAARABIAEAATABEAFAAVABYAFwAWABUAFAAYABUAFwAZABYAFAAaABgAGQAXABoAGQAaABQAGQAUABsAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0A"),
-"material": ExtResource("6_piv6d"),
-"name": "wall_office",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 48,
-"vertex_data": PackedByteArray("wMzMPTAzmz9mZrbAwMzMvTAzmz8AANBAwMzMvTAzmz9mZrbAwMzMPTAzmz8AANBAwMzMPWdmMsAAANBAwMzMvTAzmz8AANBAwMzMPTAzmz8AANBAwMzMvWdmMsAAANBAwMzMvTUzAz8zM5O/wMzMvTAzmz9mZrbAwMzMvWZmjj8zM5O/wMzMvTAzmz8AANBAwMzMvWZmjj80M7M+wMzMvWdmMsAAANBAwMzMvc7MOMBmZrbAwMzMvTUzAz80M7M+wMzMvc7MOMBmZrbAwMzMPWdmMsAAANBAwMzMPc7MOMBmZrbAwMzMvWdmMsAAANBAwMzMPc7MOMBmZrbAwMzMPWZmjj8zM5O/wMzMPTAzmz9mZrbAwMzMPWZmjj80M7M+wMzMPTUzAz8zM5O/wMzMPTAzmz8AANBAwMzMPTUzAz80M7M+wMzMPWdmMsAAANBAwMzMvc7MOMBmZrbAwMzMPTAzmz9mZrbAwMzMvTAzmz9mZrbAwMzMPc7MOMBmZrbAwMzMvWZmjj8zM5O/wMzMPWZmjj80M7M+wMzMPWZmjj8zM5O/wMzMvWZmjj80M7M+wMzMPTUzAz80M7M+wMzMvWZmjj80M7M+wMzMvTUzAz80M7M+wMzMPWZmjj80M7M+wMzMvTUzAz8zM5O/wMzMPTUzAz80M7M+wMzMvTUzAz80M7M+wMzMPTUzAz8zM5O/wMzMvWZmjj8zM5O/wMzMPTUzAz8zM5O/wMzMvTUzAz8zM5O/wMzMPWZmjj8zM5O//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f/9//3////9//3//f////3//f/9/////f/9//3///wAA/3//f///AAD/f/9///8AAP9//3///wAA/3//f///AAD/f/9///8AAP9//3///wAA/3//f///AAD/f/9//v//fwoB////v/9/CgH///+//38KAf///7//fwoB////v////3//f///////f/9//v////9//3///////3//f///////f/9//v////9//3///////3//f///////f/9//////////3//////////f/////////9//////////3////9/AAAAAP8//38AAAAA/z//fwAAAAD/P/9/AAAAAP8///////9/AAD//////38AAP//////fwAA//////9/AAD/f////v//P/9////+//8//3////7//z//f///////P/9//3//fwAA/3//f/9/AAD/f/9//38AAP9//3//fwAA")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_a0f0n")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_lq0ku"]
 _surfaces = [{
@@ -22781,42 +22855,6 @@ shadow_mesh = SubResource("ArrayMesh_r4bso")
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_wg7vo"]
 data = PackedVector3Array(1, 0.59999996, -0.099999994, -1, 0.59999996, 0.099999994, -1, 0.59999996, -0.099999994, 1, 0.59999996, -0.099999994, 1, 0.59999996, 0.099999994, -1, 0.59999996, 0.099999994, 1, -0.59999996, 0.099999994, -1, 0.59999996, 0.099999994, 1, 0.59999996, 0.099999994, 1, -0.59999996, 0.099999994, -1, -0.59999996, 0.099999994, -1, 0.59999996, 0.099999994, -1, -0.59999996, 0.099999994, -1, 0.59999996, -0.099999994, -1, 0.59999996, 0.099999994, -1, -0.59999996, 0.099999994, -1, -0.59999996, -0.099999994, -1, 0.59999996, -0.099999994, -1, -0.59999996, -0.099999994, 1, -0.59999996, 0.099999994, 1, -0.59999996, -0.099999994, -1, -0.59999996, -0.099999994, -1, -0.59999996, 0.099999994, 1, -0.59999996, 0.099999994, 1, -0.59999996, -0.099999994, 1, 0.59999996, 0.099999994, 1, 0.59999996, -0.099999994, 1, -0.59999996, -0.099999994, 1, -0.59999996, 0.099999994, 1, 0.59999996, 0.099999994, -1, -0.59999996, -0.099999994, 1, 0.59999996, -0.099999994, -1, 0.59999996, -0.099999994, -1, -0.59999996, -0.099999994, 1, -0.59999996, -0.099999994, 1, 0.59999996, -0.099999994)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xasul"]
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_b7fhx"]
-_surfaces = [{
-"aabb": AABB(-0.099999905, -2.85, -8.6, 0.19999981, 5.7, 17.2),
-"format": 34359742465,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAwACAAEAAAAEAAEAAwAFAAIABQAAAAIABgAEAAAABQAGAAAABwABAAQABwADAAEABgAHAAQABQADAAcABQAHAAYA"),
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 8,
-"vertex_data": PackedByteArray("wMzMPWZmNkCamQnBwMzMvWZmNkCamQlBwMzMvWZmNkCamQnBwMzMvWZmNsCamQlBwMzMPWZmNkCamQlBwMzMvWZmNsCamQnBwMzMPWZmNsCamQnBwMzMPWZmNsCamQlB")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_klloj"]
-resource_name = "apartment_v2_Cube_320"
-lightmap_size_hint = Vector2i(74, 90)
-_surfaces = [{
-"aabb": AABB(-0.099999905, -2.85, -8.6, 0.19999981, 5.7, 17.2),
-"attribute_data": PackedByteArray("AAAgPwAAAD8V+Ww/YQu2OwAAYD8AAIA+tG5wP+mTfj8AAGA/AAAAP7RucD9hC7Y7AAAgPwAAgD4V+Ww/6ZN+PwAAwD4AAIA+kc96P83MTD0AACA/AAAAADBFfj/pk74+AAAgPwAAgD6Rz3o/6ZO+PgAAwD4AAAAAMEV+P83MTD0AAMA+AACAP7vBVD/pk34/AAAgPwAAQD9o3eA+YQu2OwAAID8AAIA/aN3gPumTfj8AAMA+AABAP7vBVD9hC7Y7AAAAPgAAAD83mGI/YQu2OwAAwD4AAIA+mCJfP+mTfj8AAMA+AAAAP5giXz9hC7Y7AAAAPgAAgD43mGI/6ZN+PwAAwD4AAAA/rRvMPmELtjsAACA/AACAPsln3Tvpk34/AAAgPwAAAD/JZ907YQu2OwAAwD4AAIA+rRvMPumTfj8AAMA+AABAP5HPej8LtiA/AAAgPwAAAD8wRX4/MzNzPwAAID8AAEA/kc96PzMzcz8AAMA+AAAAPzBFfj8LtiA/"),
-"format": 34359742519,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_xasul"),
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 24,
-"vertex_data": PackedByteArray("wMzMPWZmNkCamQnBwMzMvWZmNkCamQlBwMzMvWZmNkCamQnBwMzMPWZmNkCamQlBwMzMPWZmNsCamQlBwMzMvWZmNkCamQlBwMzMPWZmNkCamQlBwMzMvWZmNsCamQlBwMzMvWZmNsCamQlBwMzMvWZmNkCamQnBwMzMvWZmNkCamQlBwMzMvWZmNsCamQnBwMzMvWZmNsCamQnBwMzMPWZmNsCamQlBwMzMPWZmNsCamQnBwMzMvWZmNsCamQlBwMzMPWZmNsCamQnBwMzMPWZmNkCamQlBwMzMPWZmNkCamQnBwMzMPWZmNsCamQlBwMzMvWZmNsCamQnBwMzMPWZmNkCamQnBwMzMvWZmNkCamQnBwMzMPWZmNsCamQnB/3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f/9//3////9//3//f////3//f/9/////f/9//3///wAA/3//f///AAD/f/9///8AAP9//3///wAA/3//f////38AAP///7//fwAA////v/9/AAD///+//38AAP///7////9//3///////3//f///////f/9///////9//3//////////f/////////9//////////3//////////f///")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_b7fhx")
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_0arss"]
-data = PackedVector3Array(0.099999994, 2.85, -8.599999, -0.099999994, 2.85, 8.599999, -0.099999994, 2.85, -8.599999, 0.099999994, 2.85, -8.599999, 0.099999994, 2.85, 8.599999, -0.099999994, 2.85, 8.599999, 0.099999994, -2.85, 8.599999, -0.099999994, 2.85, 8.599999, 0.099999994, 2.85, 8.599999, 0.099999994, -2.85, 8.599999, -0.099999994, -2.85, 8.599999, -0.099999994, 2.85, 8.599999, -0.099999994, -2.85, 8.599999, -0.099999994, 2.85, -8.599999, -0.099999994, 2.85, 8.599999, -0.099999994, -2.85, 8.599999, -0.099999994, -2.85, -8.599999, -0.099999994, 2.85, -8.599999, -0.099999994, -2.85, -8.599999, 0.099999994, -2.85, 8.599999, 0.099999994, -2.85, -8.599999, -0.099999994, -2.85, -8.599999, -0.099999994, -2.85, 8.599999, 0.099999994, -2.85, 8.599999, 0.099999994, -2.85, -8.599999, 0.099999994, 2.85, 8.599999, 0.099999994, 2.85, -8.599999, 0.099999994, -2.85, -8.599999, 0.099999994, -2.85, 8.599999, 0.099999994, 2.85, 8.599999, -0.099999994, -2.85, -8.599999, 0.099999994, 2.85, -8.599999, -0.099999994, 2.85, -8.599999, -0.099999994, -2.85, -8.599999, 0.099999994, -2.85, -8.599999, 0.099999994, 2.85, -8.599999)
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xwsc8"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_5na8v"]
@@ -23142,42 +23180,6 @@ shadow_mesh = SubResource("ArrayMesh_mcf7h")
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_k8rm3"]
 data = PackedVector3Array(0.099999994, 2.7, -9.9, -0.099999994, 2.7, 9.9, -0.099999994, 2.7, -9.9, 0.099999994, 2.7, -9.9, 0.099999994, 2.7, 9.9, -0.099999994, 2.7, 9.9, 0.099999994, -2.7, 9.9, -0.099999994, 2.7, 9.9, 0.099999994, 2.7, 9.9, 0.099999994, -2.7, 9.9, -0.099999994, -2.7, 9.9, -0.099999994, 2.7, 9.9, -0.099999994, -2.7, 9.9, -0.099999994, 2.7, -9.9, -0.099999994, 2.7, 9.9, -0.099999994, -2.7, 9.9, -0.099999994, -2.7, -9.9, -0.099999994, 2.7, -9.9, -0.099999994, -2.7, -9.9, 0.099999994, -2.7, 9.9, 0.099999994, -2.7, -9.9, -0.099999994, -2.7, -9.9, -0.099999994, -2.7, 9.9, 0.099999994, -2.7, 9.9, 0.099999994, -2.7, -9.9, 0.099999994, 2.7, 9.9, 0.099999994, 2.7, -9.9, 0.099999994, -2.7, -9.9, 0.099999994, -2.7, 9.9, 0.099999994, 2.7, 9.9, -0.099999994, -2.7, -9.9, 0.099999994, 2.7, -9.9, -0.099999994, 2.7, -9.9, -0.099999994, -2.7, -9.9, 0.099999994, -2.7, -9.9, 0.099999994, 2.7, -9.9)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_00phj"]
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_vr3c7"]
-_surfaces = [{
-"aabb": AABB(-0.099999905, -2.6999998, -10, 0.19999981, 5.3999996, 20),
-"format": 34359742465,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAwACAAEAAAAEAAEAAwAFAAIABQAAAAIABgAEAAAABQAGAAAABwABAAQABwADAAEABgAHAAQABQADAAcABQAHAAYA"),
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 8,
-"vertex_data": PackedByteArray("wMzMPczMLEAAACDBwMzMvczMLEAAACBBwMzMvczMLEAAACDBwMzMvczMLMAAACBBwMzMPczMLEAAACBBwMzMvczMLMAAACDBwMzMPczMLMAAACDBwMzMPczMLMAAACBB")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_yb0wf"]
-resource_name = "apartment_v2_Cube_410"
-lightmap_size_hint = Vector2i(74, 102)
-_surfaces = [{
-"aabb": AABB(-0.099999905, -2.6999998, -10, 0.19999981, 5.3999996, 20),
-"attribute_data": PackedByteArray("AAAgPwAAAD+Rz3o/oaCgOwAAYD8AAIA+MEV+P7++fj8AAGA/AAAAPzBFfj+hoKA7AAAgPwAAgD6Rz3o/v75+PwAAwD4AAIA+FflsP6GgoDsAACA/AAAAALRucD8UFJQ+AAAgPwAAgD4V+Ww/FBSUPgAAwD4AAAAAtG5wP6GgoDsAAMA+AACAP7vBVD+/vn4/AAAgPwAAQD9o3eA+oaCgOwAAID8AAIA/aN3gPr++fj8AAMA+AABAP7vBVD+hoKA7AAAAPgAAAD83mGI/oaCgOwAAwD4AAIA+mCJfP7++fj8AAMA+AAAAP5giXz+hoKA7AAAAPgAAgD43mGI/v75+PwAAwD4AAAA/rRvMPqGgoDsAACA/AACAPsln3Tu/vn4/AAAgPwAAAD/JZ907oaCgOwAAwD4AAIA+rRvMPr++fj8AAMA+AABAPxX5bD/i4SE/AAAgPwAAAD+0bnA/q6pqPwAAID8AAEA/FflsP6uqaj8AAMA+AAAAP7RucD/i4SE/"),
-"format": 34359742519,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_00phj"),
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 24,
-"vertex_data": PackedByteArray("wMzMPczMLEAAACDBwMzMvczMLEAAACBBwMzMvczMLEAAACDBwMzMPczMLEAAACBBwMzMPczMLMAAACBBwMzMvczMLEAAACBBwMzMPczMLEAAACBBwMzMvczMLMAAACBBwMzMvczMLMAAACBBwMzMvczMLEAAACDBwMzMvczMLEAAACBBwMzMvczMLMAAACDBwMzMvczMLMAAACDBwMzMPczMLMAAACBBwMzMPczMLMAAACDBwMzMvczMLMAAACBBwMzMPczMLMAAACDBwMzMPczMLEAAACBBwMzMPczMLEAAACDBwMzMPczMLMAAACBBwMzMvczMLMAAACDBwMzMPczMLEAAACDBwMzMvczMLEAAACDBwMzMPczMLMAAACDB/3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f/9//3////9//3//f////3//f/9/////f/9//3///wAA/3//f///AAD/f/9///8AAP9//3///wAA/3//f////38AAP///7//fwAA////v/9/AAD///+//38AAP///7////9//3///////3//f///////f/9///////9//3//////////f/////////9//////////3//////////f///")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_vr3c7")
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_awxo1"]
-data = PackedVector3Array(0.099999994, 2.7, -10, -0.099999994, 2.7, 10, -0.099999994, 2.7, -10, 0.099999994, 2.7, -10, 0.099999994, 2.7, 10, -0.099999994, 2.7, 10, 0.099999994, -2.7, 10, -0.099999994, 2.7, 10, 0.099999994, 2.7, 10, 0.099999994, -2.7, 10, -0.099999994, -2.7, 10, -0.099999994, 2.7, 10, -0.099999994, -2.7, 10, -0.099999994, 2.7, -10, -0.099999994, 2.7, 10, -0.099999994, -2.7, 10, -0.099999994, -2.7, -10, -0.099999994, 2.7, -10, -0.099999994, -2.7, -10, 0.099999994, -2.7, 10, 0.099999994, -2.7, -10, -0.099999994, -2.7, -10, -0.099999994, -2.7, 10, 0.099999994, -2.7, 10, 0.099999994, -2.7, -10, 0.099999994, 2.7, 10, 0.099999994, 2.7, -10, 0.099999994, -2.7, -10, 0.099999994, -2.7, 10, 0.099999994, 2.7, 10, -0.099999994, -2.7, -10, 0.099999994, 2.7, -10, -0.099999994, 2.7, -10, -0.099999994, -2.7, -10, 0.099999994, -2.7, -10, 0.099999994, 2.7, -10)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_263t4"]
 
@@ -25716,6 +25718,32 @@ mesh = SubResource("ArrayMesh_54spl")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 mesh = SubResource("ArrayMesh_1tc6a")
 
+[node name="sideWalls" type="Node3D" parent="." unique_id=1664637511]
+
+[node name="Cube_004" type="MeshInstance3D" parent="sideWalls" unique_id=544776990]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2999997, 1.7874999, 2.6999998)
+mesh = SubResource("ArrayMesh_yaxu6")
+
+[node name="Cube_306" type="MeshInstance3D" parent="sideWalls" unique_id=1852657490]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4000006, 8.55, -10.9)
+mesh = SubResource("ArrayMesh_klloj")
+surface_material_override/0 = ExtResource("5_feuam")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="sideWalls/Cube_306" unique_id=1598634431]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="sideWalls/Cube_306/StaticBody3D" unique_id=834480766]
+shape = SubResource("ConcavePolygonShape3D_0arss")
+
+[node name="Cube_392" type="MeshInstance3D" parent="sideWalls" unique_id=1883401959]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4000006, 14.100002, -14)
+mesh = SubResource("ArrayMesh_yb0wf")
+surface_material_override/0 = ExtResource("5_feuam")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="sideWalls/Cube_392" unique_id=2064875029]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="sideWalls/Cube_392/StaticBody3D" unique_id=1911174478]
+shape = SubResource("ConcavePolygonShape3D_awxo1")
+
 [node name="nevi_litter_and_downstairs_sink" type="Node3D" parent="." unique_id=1000803556]
 
 [node name="Node3D" type="Node3D" parent="nevi_litter_and_downstairs_sink" unique_id=2116606448]
@@ -25846,10 +25874,6 @@ mesh = SubResource("ArrayMesh_s4u0x")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.95, 2.6, 0.35)
 mesh = SubResource("ArrayMesh_wvhyw")
 surface_material_override/0 = ExtResource("6_1l16d")
-
-[node name="Cube_004" type="MeshInstance3D" parent="." unique_id=544776990]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2999997, 1.7874999, 2.6999998)
-mesh = SubResource("ArrayMesh_yaxu6")
 
 [node name="Cube_006" type="MeshInstance3D" parent="." unique_id=2125835079]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0600002, 0.495, -1.94)
@@ -26443,6 +26467,7 @@ mesh = SubResource("ArrayMesh_me0q5")
 [node name="Cube_186" type="MeshInstance3D" parent="." unique_id=1256970108]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6275003, 1.4000001, -0.54999995)
 mesh = SubResource("ArrayMesh_gwmye")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_187" type="MeshInstance3D" parent="Cube_186" unique_id=1301183340]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.022500038, -0.29999995, 0)
@@ -26463,146 +26488,182 @@ mesh = SubResource("ArrayMesh_p6m1h")
 [node name="Cube_191" type="MeshInstance3D" parent="Cube_190" unique_id=1122787228]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.049999714, 0, 0)
 mesh = SubResource("ArrayMesh_a3stb")
+surface_material_override/0 = ExtResource("6_1l16d")
 
 [node name="Cube_192" type="MeshInstance3D" parent="." unique_id=1922911512]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.265, 1.0250001, -0.845)
 mesh = SubResource("ArrayMesh_at3mh")
+surface_material_override/0 = ExtResource("17_38n78")
 
 [node name="Cube_194" type="MeshInstance3D" parent="Cube_192" unique_id=1361652299]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.089999914, 0.034999967, -0.21000004)
 mesh = SubResource("ArrayMesh_as5lk")
+surface_material_override/0 = ExtResource("18_17gt6")
 
 [node name="Cube_195" type="MeshInstance3D" parent="Cube_192" unique_id=796676557]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.089999914, 0.034999967, -0.14999998)
 mesh = SubResource("ArrayMesh_k0plj")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_196" type="MeshInstance3D" parent="Cube_192" unique_id=110326118]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.089999914, 0.034999967, -0.089999974)
 mesh = SubResource("ArrayMesh_o10rn")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_197" type="MeshInstance3D" parent="Cube_192" unique_id=805801172]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.089999914, 0.034999967, -0.029999971)
 mesh = SubResource("ArrayMesh_4mwmd")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_198" type="MeshInstance3D" parent="Cube_192" unique_id=1744279032]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.089999914, 0.034999967, 0.030000031)
 mesh = SubResource("ArrayMesh_jmd82")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_199" type="MeshInstance3D" parent="Cube_192" unique_id=478068249]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.089999914, 0.034999967, 0.09000003)
 mesh = SubResource("ArrayMesh_m7fis")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_200" type="MeshInstance3D" parent="Cube_192" unique_id=1143407908]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.089999914, 0.034999967, 0.15000004)
 mesh = SubResource("ArrayMesh_pq3s0")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_201" type="MeshInstance3D" parent="Cube_192" unique_id=726310990]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.089999914, 0.034999967, 0.21000004)
 mesh = SubResource("ArrayMesh_ae15o")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_202" type="MeshInstance3D" parent="Cube_192" unique_id=378169784]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.029999971, 0.034999967, -0.21000004)
 mesh = SubResource("ArrayMesh_yqyxn")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_203" type="MeshInstance3D" parent="Cube_192" unique_id=1537436117]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.029999971, 0.034999967, -0.14999998)
 mesh = SubResource("ArrayMesh_op5ls")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_204" type="MeshInstance3D" parent="Cube_192" unique_id=144408933]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.029999971, 0.034999967, -0.089999974)
 mesh = SubResource("ArrayMesh_kjycb")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_205" type="MeshInstance3D" parent="Cube_192" unique_id=1443862614]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.029999971, 0.034999967, -0.029999971)
 mesh = SubResource("ArrayMesh_3f8s8")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_206" type="MeshInstance3D" parent="Cube_192" unique_id=971580716]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.029999971, 0.034999967, 0.030000031)
 mesh = SubResource("ArrayMesh_aaqe5")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_207" type="MeshInstance3D" parent="Cube_192" unique_id=1835838210]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.029999971, 0.034999967, 0.09000003)
 mesh = SubResource("ArrayMesh_f72b8")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_208" type="MeshInstance3D" parent="Cube_192" unique_id=1278038904]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.029999971, 0.034999967, 0.15000004)
 mesh = SubResource("ArrayMesh_dbdjh")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_209" type="MeshInstance3D" parent="Cube_192" unique_id=1905292207]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.029999971, 0.034999967, 0.21000004)
 mesh = SubResource("ArrayMesh_1jbbn")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_210" type="MeshInstance3D" parent="Cube_192" unique_id=1665072590]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.029999971, 0.034999967, -0.21000004)
 mesh = SubResource("ArrayMesh_madti")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_211" type="MeshInstance3D" parent="Cube_192" unique_id=1605622288]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.029999971, 0.034999967, -0.14999998)
 mesh = SubResource("ArrayMesh_qbsy3")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_212" type="MeshInstance3D" parent="Cube_192" unique_id=905083913]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.029999971, 0.034999967, -0.089999974)
 mesh = SubResource("ArrayMesh_hj01g")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_213" type="MeshInstance3D" parent="Cube_192" unique_id=2124771991]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.029999971, 0.034999967, -0.029999971)
 mesh = SubResource("ArrayMesh_ww7ya")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_214" type="MeshInstance3D" parent="Cube_192" unique_id=534666939]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.029999971, 0.034999967, 0.030000031)
 mesh = SubResource("ArrayMesh_sryfk")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_216" type="MeshInstance3D" parent="Cube_192" unique_id=646354256]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.029999971, 0.034999967, 0.15000004)
 mesh = SubResource("ArrayMesh_ijg8s")
+surface_material_override/0 = ExtResource("18_17gt6")
 
 [node name="Cube_218" type="MeshInstance3D" parent="Cube_192" unique_id=1602604155]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.089999914, 0.034999967, -0.21000004)
 mesh = SubResource("ArrayMesh_ctite")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_219" type="MeshInstance3D" parent="Cube_192" unique_id=876307922]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.089999914, 0.034999967, -0.14999998)
 mesh = SubResource("ArrayMesh_1lfu6")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_220" type="MeshInstance3D" parent="Cube_192" unique_id=405154028]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.089999914, 0.034999967, -0.089999974)
 mesh = SubResource("ArrayMesh_is0fl")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_221" type="MeshInstance3D" parent="Cube_192" unique_id=1245589913]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.089999914, 0.034999967, -0.029999971)
 mesh = SubResource("ArrayMesh_eys7a")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_222" type="MeshInstance3D" parent="Cube_192" unique_id=1239190089]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.089999914, 0.034999967, 0.030000031)
 mesh = SubResource("ArrayMesh_4v05p")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_223" type="MeshInstance3D" parent="Cube_192" unique_id=1408365407]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.089999914, 0.034999967, 0.09000003)
 mesh = SubResource("ArrayMesh_34e1c")
+surface_material_override/0 = ExtResource("18_17gt6")
 
 [node name="Cube_224" type="MeshInstance3D" parent="Cube_192" unique_id=933215748]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.089999914, 0.034999967, 0.15000004)
 mesh = SubResource("ArrayMesh_xlenm")
+surface_material_override/0 = ExtResource("18_17gt6")
 
 [node name="Cube_225" type="MeshInstance3D" parent="Cube_192" unique_id=1624148230]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.089999914, 0.034999967, 0.21000004)
 mesh = SubResource("ArrayMesh_80ug1")
+surface_material_override/0 = ExtResource("18_17gt6")
 
 [node name="Cube_193" type="MeshInstance3D" parent="." unique_id=703985619]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3, 1.0250001, -0.27499998)
 mesh = SubResource("ArrayMesh_2nd6r")
+surface_material_override/0 = ExtResource("17_38n78")
 
 [node name="Cube_215" type="MeshInstance3D" parent="Cube_193" unique_id=1711626256]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.045000076, 0.034999967, -0.029999971)
 mesh = SubResource("ArrayMesh_3dqv4")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_217" type="MeshInstance3D" parent="Cube_193" unique_id=945555549]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.045000076, 0.034999967, 0.030000001)
 mesh = SubResource("ArrayMesh_lqom1")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_226" type="MeshInstance3D" parent="." unique_id=284477155]
 transform = Transform3D(0.8104836, 0, 0.5857613, 0, 1, 0, -0.5857613, 0, 0.8104836, 3.4217644, 1.4000001, -1.2168204)
 mesh = SubResource("ArrayMesh_50aov")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_227" type="MeshInstance3D" parent="Cube_226" unique_id=1313003965]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02249831, -0.30000007, 0)
@@ -27238,7 +27299,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6500008, 14.550002, -20.17
 mesh = SubResource("ArrayMesh_pjeah")
 
 [node name="Cube_420" type="MeshInstance3D" parent="." unique_id=1307546054]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5000006, 13.200002, -18.490002)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5000006, 13.299342, -18.490002)
 mesh = SubResource("ArrayMesh_1hpfs")
 
 [node name="Cube_421" type="MeshInstance3D" parent="." unique_id=1515133726]
@@ -27450,6 +27511,7 @@ surface_material_override/0 = ExtResource("5_2v8cf")
 [node name="Cube_493" type="MeshInstance3D" parent="." unique_id=1439128763]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7400007, 13.600002, -10.339998)
 mesh = SubResource("ArrayMesh_7yei5")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_501" type="MeshInstance3D" parent="Cube_493" unique_id=904257021]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14499998, -0.2800007, 0)
@@ -27571,10 +27633,12 @@ surface_material_override/0 = ExtResource("5_2v8cf")
 [node name="Cube_518" type="MeshInstance3D" parent="." unique_id=1245233489]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -2.465, 13.125, -10.455)
 mesh = SubResource("ArrayMesh_41odh")
+surface_material_override/0 = ExtResource("17_38n78")
 
 [node name="Cube_520" type="MeshInstance3D" parent="Cube_518" unique_id=1675581022]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.089999974, 0.0350008, -0.20999981)
 mesh = SubResource("ArrayMesh_q6ea3")
+surface_material_override/0 = ExtResource("18_17gt6")
 
 [node name="Cube_521" type="MeshInstance3D" parent="Cube_518" unique_id=1165451609]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08999997, 0.0350008, -0.1499994)
@@ -27587,14 +27651,17 @@ mesh = SubResource("ArrayMesh_k4u87")
 [node name="Cube_523" type="MeshInstance3D" parent="Cube_518" unique_id=427946032]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08999996, 0.0350008, -0.030000463)
 mesh = SubResource("ArrayMesh_dsqw0")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_524" type="MeshInstance3D" parent="Cube_518" unique_id=900158535]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08999995, 0.0350008, 0.03000091)
 mesh = SubResource("ArrayMesh_cpkg7")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_525" type="MeshInstance3D" parent="Cube_518" unique_id=1445604807]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.089999944, 0.0350008, 0.090000376)
 mesh = SubResource("ArrayMesh_oxgog")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_526" type="MeshInstance3D" parent="Cube_518" unique_id=999272908]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.089999944, 0.0350008, 0.14999984)
@@ -27611,14 +27678,17 @@ mesh = SubResource("ArrayMesh_xnl8j")
 [node name="Cube_529" type="MeshInstance3D" parent="Cube_518" unique_id=1427620448]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.030000024, 0.0350008, -0.1499994)
 mesh = SubResource("ArrayMesh_vy541")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_530" type="MeshInstance3D" parent="Cube_518" unique_id=815531409]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03000002, 0.0350008, -0.08999994)
 mesh = SubResource("ArrayMesh_6umii")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_531" type="MeshInstance3D" parent="Cube_518" unique_id=2004388733]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.030000014, 0.0350008, -0.030000469)
 mesh = SubResource("ArrayMesh_wfkxo")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_532" type="MeshInstance3D" parent="Cube_518" unique_id=1539285225]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.030000009, 0.0350008, 0.030000905)
@@ -27643,18 +27713,22 @@ mesh = SubResource("ArrayMesh_3166d")
 [node name="Cube_537" type="MeshInstance3D" parent="Cube_518" unique_id=1184792499]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02999992, 0.0350008, -0.14999941)
 mesh = SubResource("ArrayMesh_5uhal")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_538" type="MeshInstance3D" parent="Cube_518" unique_id=291875126]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.029999923, 0.0350008, -0.08999994)
 mesh = SubResource("ArrayMesh_l6smr")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_539" type="MeshInstance3D" parent="Cube_518" unique_id=1742901400]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.029999929, 0.0350008, -0.030000474)
 mesh = SubResource("ArrayMesh_a4p3p")
+surface_material_override/0 = ExtResource("13_0lpmh")
 
 [node name="Cube_540" type="MeshInstance3D" parent="Cube_518" unique_id=1574720745]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.029999934, 0.0350008, 0.030000899)
 mesh = SubResource("ArrayMesh_vseav")
+surface_material_override/0 = ExtResource("18_17gt6")
 
 [node name="Cube_541" type="MeshInstance3D" parent="Cube_518" unique_id=1556987997]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.029999945, 0.0350008, 0.14999983)
@@ -28785,16 +28859,6 @@ surface_material_override/0 = ExtResource("5_feuam")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall/Cube_298/StaticBody3D" unique_id=1880108495]
 shape = SubResource("ConcavePolygonShape3D_wg7vo")
 
-[node name="Cube_306" type="MeshInstance3D" parent="Wall" unique_id=1852657490]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9000006, 11.05, -13.4)
-mesh = SubResource("ArrayMesh_klloj")
-surface_material_override/0 = ExtResource("5_feuam")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_306" unique_id=1598634431]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall/Cube_306/StaticBody3D" unique_id=834480766]
-shape = SubResource("ConcavePolygonShape3D_0arss")
-
 [node name="Cube_307" type="MeshInstance3D" parent="Wall" unique_id=231140555]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1999993, 15.7, -10.980003)
 mesh = SubResource("ArrayMesh_wioxd")
@@ -28880,16 +28944,6 @@ surface_material_override/0 = ExtResource("5_feuam")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall/Cube_390/StaticBody3D" unique_id=482374367]
 shape = SubResource("ConcavePolygonShape3D_k8rm3")
-
-[node name="Cube_392" type="MeshInstance3D" parent="Wall" unique_id=1883401959]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9000006, 16.600002, -16.5)
-mesh = SubResource("ArrayMesh_yb0wf")
-surface_material_override/0 = ExtResource("5_feuam")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_392" unique_id=2064875029]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall/Cube_392/StaticBody3D" unique_id=1911174478]
-shape = SubResource("ConcavePolygonShape3D_awxo1")
 
 [node name="Cube_393" type="MeshInstance3D" parent="Wall" unique_id=1256602553]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1999993, 14.849999, -12.410004)
@@ -29064,7 +29118,7 @@ surface_material_override/0 = ExtResource("5_feuam")
 shape = SubResource("ConcavePolygonShape3D_2i6me")
 
 [node name="Cube_417" type="MeshInstance3D" parent="Wall" unique_id=1393376769]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9500008, 16.45, -22.590002)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9500008, 16.519728, -22.590002)
 mesh = SubResource("ArrayMesh_8gd7d")
 surface_material_override/0 = ExtResource("5_feuam")
 

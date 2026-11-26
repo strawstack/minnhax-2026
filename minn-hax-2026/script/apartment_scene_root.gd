@@ -36,7 +36,8 @@ func _ready() -> void:
 		"objectiveA": objectiveA,
 		"objectiveB": objectiveB,
 		"objectiveC": objectiveC,
-		"objectiveD": objectiveD
+		"objectiveD": objectiveD,
+		"waitOneSecond": waitOneSecond
 	}
 	hideInterviewCharacters()
 	if gc.DEBUG:
@@ -60,11 +61,20 @@ func playerFree():
 func camera75fov():
 	playerCamera.set_fov(75.0)
 
+func waitOneSecond():
+	await get_tree().create_timer(1.0).timeout
+	gc.endAwaitDialog()
+
 func openStudioStairsDoor():
 	$studio_door_with_handle_and_open/closedDoor.set_visible(false)
 	$studio_door_with_handle_and_open/openDoor.set_visible(true)
 	$studio_door_with_handle_and_open/DoorWall/StaticBody3D.set_collision_layer_value(1, false)
 	gc.playSoundEffect("door_open")
+
+func closeStudioStairsDoor():
+	$studio_door_with_handle_and_open/closedDoor.set_visible(true)
+	$studio_door_with_handle_and_open/openDoor.set_visible(false)
+	$studio_door_with_handle_and_open/DoorWall/StaticBody3D.set_collision_layer_value(1, true)
 
 func switchCameraA():
 	$Cameras/cameraA.set_current(true)
@@ -118,6 +128,9 @@ func advanceToMorning():
 	$phone.set_visible(true)
 	minnMaxLogoVoiceMail.reveal()
 	minnMaxLogoControlRoom2.reveal()
+	$interviewFeeds.set_visible(false)
+	$gameStreamControl.set_visible(true)
+	closeStudioStairsDoor()
 	gc.setObjectiveLetter("e")
 
 func objectiveA():

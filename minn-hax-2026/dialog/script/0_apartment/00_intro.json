@@ -1,7 +1,20 @@
 [
 	{
 		"name": "Command",
+		"command": "hideDialog"
+	},
+	{
+		"name": "Command",
 		"command": "camera75fov"
+	},
+	{
+		"name": "Command",
+		"command": "waitOneSecond",
+		"await": true
+	},
+	{
+		"name": "Command",
+		"command": "showDialog"
 	},
 	{
 		"name": "Richard",

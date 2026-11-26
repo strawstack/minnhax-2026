@@ -19,18 +19,15 @@ Godot project files for the MinnHax 2026 Game Jam.
     - Applies to all rocks except barrier in the water
     - Confirm when player can and can't skate/shoot throughout
     - Make sure glass break and tattoo needle sound play over correct bus
+  - images on monitors
+    - PC in my office
+    - Stream PC
 
 - Food on stove
 
-- images on monitors
-  - PC in my office
-  - Stream PC
-
 - Audio needed "when I woke my plane had landed, and it was time to meet my instructor"
 
-- Remove "..." from all in game text it delays the dialog box too long so audio plays before text shows
-
-- Metal door opening sound effect for greenday training
+- Metal door opening sound effect for greenday training (gears)
 
 - Gun doesn't shoot exactly at center dot in screen
   - Maybe just move the dot a bit I think ray is centered
@@ -45,7 +42,20 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 - You can spam jump when in skate mode (does this break anything if not don't fix?)
 
+- Upload tracks to Youtube
+
+- Submit game on itch io
+  - Game description
+  - Screenshots
+  - Controls
+  - Credits: Richard, Yu, CrabPalace
+  - Links to Youtube music
+  - Music credits: AudioLibrary
+  - No AI statement
+
 # Done
+
+- Remove "..." from all in game text it delays the dialog box too long so audio plays before text shows
 
 - Remove objective notice during interview scene
 

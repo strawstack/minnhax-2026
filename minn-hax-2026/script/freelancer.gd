@@ -59,6 +59,7 @@ func playCollectSound():
 	gc.playSoundEffect("success")
 
 func openShootingDoorAndBars():
+	gc.playSoundEffect("gear_spin")
 	$AnimationPlayer.play("shootingDoorAndCageOpen")
 
 func openShootingExitDoor():

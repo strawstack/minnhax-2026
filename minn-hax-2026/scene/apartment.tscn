@@ -24,6 +24,11 @@
 [ext_resource type="Material" uid="uid://b8vlsfiq51xyb" path="res://material/flat_black.tres" id="22_r8kcf"]
 [ext_resource type="Material" uid="uid://d3ekinuddh8ho" path="res://material/blue_glow.tres" id="23_d8kxh"]
 [ext_resource type="Material" uid="uid://bbbaxswojvgng" path="res://material/shelf_black.tres" id="24_y3us5"]
+[ext_resource type="Texture2D" uid="uid://c763ktticr4fk" path="res://image/office_monitor.png" id="25_d8kxh"]
+[ext_resource type="Texture2D" uid="uid://daf51hla8wk13" path="res://image/control_left_interview.png" id="26_c4a64"]
+[ext_resource type="Texture2D" uid="uid://etu4mm44faka" path="res://image/left_control_room.png" id="26_y3us5"]
+[ext_resource type="Texture2D" uid="uid://6crgfnym37cq" path="res://image/right_control_room.png" id="27_bgio4"]
+[ext_resource type="Texture2D" uid="uid://bfaqd7gfjeasq" path="res://image/control_right_interview.png" id="27_jyfud"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jd5n0"]
 
@@ -4091,5 +4096,30 @@ surface_material_override/0 = ExtResource("23_d8kxh")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.067500114, 0.5000001)
 mesh = SubResource("ArrayMesh_e5vn8")
 surface_material_override/0 = ExtResource("24_y3us5")
+
+[node name="Sprite3D_Office_monitor" type="Sprite3D" parent="." unique_id=1274360606]
+transform = Transform3D(-6.119594e-09, 0, 0.14, 0, 0.14, 0, -0.14, 0, -6.119594e-09, -2.679975, 13.717143, -10.308147)
+texture = ExtResource("25_d8kxh")
+
+[node name="interviewFeeds" type="Sprite3D" parent="." unique_id=519118351]
+
+[node name="Sprite3D_ControlLeft" type="Sprite3D" parent="interviewFeeds" unique_id=1995716261]
+transform = Transform3D(0.09236355, 0, -0.1244748, 0, 0.155, 0, 0.1244748, 0, 0.09236355, 3.4481897, 1.5213723, -1.1704705)
+texture = ExtResource("26_c4a64")
+
+[node name="Sprite3D_ControlRight" type="Sprite3D" parent="interviewFeeds" unique_id=1830417045]
+transform = Transform3D(-6.7752652e-09, 0, -0.155, 0, 0.155, 0, 0.155, 0, -6.7752652e-09, 3.654211, 1.5219427, -0.5211586)
+texture = ExtResource("27_jyfud")
+
+[node name="gameStreamControl" type="Sprite3D" parent="." unique_id=1857062839]
+visible = false
+
+[node name="Sprite3D_ControlLeft" type="Sprite3D" parent="gameStreamControl" unique_id=580363647]
+transform = Transform3D(0.05958939, 0, -0.08030632, 0, 0.099999994, 0, 0.08030632, 0, 0.05958939, 3.4481897, 1.5213723, -1.1704705)
+texture = ExtResource("26_y3us5")
+
+[node name="Sprite3D_ControlRight" type="Sprite3D" parent="gameStreamControl" unique_id=880097206]
+transform = Transform3D(-5.4639235e-09, 0, -0.125, 0, 0.125, 0, 0.125, 0, -5.4639235e-09, 3.654211, 1.5219427, -0.5211586)
+texture = ExtResource("27_bgio4")
 
 [connection signal="timeout" from="meowTimer" to="neviPoints" method="_on_meow_timer_timeout"]
