@@ -18,6 +18,8 @@ func pickUpRadio():
 	gc.setObjectiveLetter("g")
 
 func startScene():
+	# Wait for rocket explosion sound effect
+	await get_tree().create_timer(3.0).timeout
 	gc.playerCanMove = true
 	await gc.fadeIn()
 	gc.setObjectiveLetter("f")

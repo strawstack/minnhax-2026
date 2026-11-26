@@ -7827,7 +7827,7 @@ mesh = SubResource("ArrayMesh_8g4af")
 surface_material_override/0 = ExtResource("4_tho0w")
 
 [node name="cat_carrier" type="MeshInstance3D" parent="sceneSeeEverything/interview_scene" unique_id=1069714368]
-transform = Transform3D(0.9390214, 0.15135968, 0.30875102, -0.14378667, 0.9884782, -0.04727717, -0.31234932, 0, 0.9499673, 15.1, 0.47499996, -11.599999)
+transform = Transform3D(0.9390213, 0.15135966, 0.30875102, -0.14378665, 0.9884781, -0.04727717, -0.3123493, 0, 0.9499673, 15.1, 0.47499996, -11.599999)
 mesh = SubResource("ArrayMesh_m4brd")
 surface_material_override/0 = ExtResource("7_salic")
 

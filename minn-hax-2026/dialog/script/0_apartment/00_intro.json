@@ -9,11 +9,6 @@
 	},
 	{
 		"name": "Command",
-		"command": "waitOneSecond",
-		"await": true
-	},
-	{
-		"name": "Command",
 		"command": "showDialog"
 	},
 	{

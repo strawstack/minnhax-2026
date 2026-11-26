@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/bgm_greenday_jeep.mp3-bdc1cc214ab387d0f703117
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

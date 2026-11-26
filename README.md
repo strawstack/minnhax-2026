@@ -28,6 +28,13 @@ Godot project files for the MinnHax 2026 Game Jam.
     - So play at 75% in Audacity and then dip tracks accordingly
     - Directly overwright files in Godot folder to adjust
 
+- Three second pause after rocket explosion before loading beach
+- One second pause after rolling before monroll comments on it
+- Hide dialog when activating tacSim
+- Add grass to grey wall in skate park
+- Patch grind rail close to wall in skate park to prevent glitch out of wall
+- Cane we "load cameras" in advance of apartment to help?
+
 - Audio needed "When I woke-up, my plane had landed, and it was time to meet my instructor"
 
 - Submit game on itch io

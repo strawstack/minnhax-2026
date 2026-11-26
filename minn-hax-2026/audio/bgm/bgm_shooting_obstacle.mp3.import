@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/bgm_shooting_obstacle.mp3-c182c1eda10c5005ff9
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

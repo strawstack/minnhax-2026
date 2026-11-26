@@ -7,6 +7,7 @@ const DEBUG = false
 @export var audioStreamPlayerBGM: AudioStreamPlayer
 @export var audioStreamPlayerSoundEffect: AudioStreamPlayer
 @export var audioStreamPlayer_Cowbell: AudioStreamPlayer
+@export var preloadVoice: Node3D
 
 const scenes = {
 	"logo": preload("res://scene/logo.tscn"),
@@ -43,7 +44,8 @@ const bgmMusic = {
 	"obstacle": preload("res://audio/bgm/bgm_shooting_obstacle.mp3"),
 	"tacsim": preload("res://audio/bgm/bgm_mi6.mp3"),
 	"freelancer": preload("res://audio/bgm/bgm_freelancer.mp3"),
-	"outsideclub": preload("res://audio/bgm/bgm_outside_club.mp3")
+	"outsideclub": preload("res://audio/bgm/bgm_outside_club.mp3"),
+	"insideclub": preload("res://audio/bgm/bgm_inside_club.mp3")
 }
 
 const soundEffect = {
@@ -196,7 +198,11 @@ func registerMouth(characterName, mouthNode):
 
 func playVoice(voiceFile: String):
 	if voiceFile != "":
-		var audio = load("res://dialog/vocal/" + voiceFile + ".mp3")
+		var audio = null
+		if voiceFile in preloadVoice.preloadLookup:
+			audio = preloadVoice.preloadLookup[voiceFile]
+		else:
+			audio = load("res://dialog/vocal/" + voiceFile + ".mp3")
 		if audio:
 			audioStreamPlayerVoice.stream = audio
 			audioStreamPlayerVoice.play()

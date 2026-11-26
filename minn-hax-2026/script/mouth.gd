@@ -26,7 +26,7 @@ func _ready() -> void:
 	teeth = $Teeth
 	if teethOveride:
 		teeth.set_texture(teethOveride)
-	spectrum_instance = AudioServer.get_bus_effect_instance(2, 0)  # Bus 1, Effect 0
+	spectrum_instance = AudioServer.get_bus_effect_instance(2, 0)  # Bus 2, Effect 0
 	gc.registerMouth(characterName, self)
 
 func setIsSpeaking(value):
@@ -35,7 +35,6 @@ func setIsSpeaking(value):
 func _process(_delta: float) -> void:
 	if isSpeaking:
 		var magnitude = spectrum_instance.get_magnitude_for_frequency_range(0, 1000).length()
-		
 		# Show hide teeth
 		var showTeeth = magnitude <= TEETH_CUTOFF
 		space.set_visible(not showTeeth)

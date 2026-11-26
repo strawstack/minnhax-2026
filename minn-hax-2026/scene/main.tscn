@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://bf7an73nf3omp" path="res://script/commands.gd" id="2_4j5ol"]
 [ext_resource type="Texture2D" uid="uid://bl2ax3g176ohq" path="res://image/point_8.png" id="2_brvut"]
 [ext_resource type="Script" uid="uid://cw5p35xqsvu2j" path="res://script/dialog.gd" id="2_v0l8b"]
+[ext_resource type="Script" uid="uid://frryb6rt0m3" path="res://script/preload_voice.gd" id="3_k65ib"]
 [ext_resource type="Script" uid="uid://w2owemapqhmn" path="res://script/canvas_layer_objective.gd" id="5_p1hux"]
 [ext_resource type="AudioStream" uid="uid://c0fvltky8hqlw" path="res://audio/soundEffect/bullet_wood.mp3" id="7_b5f6u"]
 [ext_resource type="AudioStream" uid="uid://crjxychxyp8pn" path="res://audio/soundEffect/cowbell.mp3" id="7_of57s"]
@@ -98,16 +99,21 @@ albedo_color = Color(1, 1, 1, 0.78431374)
 transparency = 1
 albedo_color = Color(1, 1, 1, 0.78431374)
 
-[node name="main" type="Node3D" unique_id=1687076067 node_paths=PackedStringArray("commands", "bulletSmoke", "audioStreamPlayerBGM", "audioStreamPlayerSoundEffect")]
+[node name="main" type="Node3D" unique_id=1687076067 node_paths=PackedStringArray("commands", "bulletSmoke", "audioStreamPlayerBGM", "audioStreamPlayerSoundEffect", "audioStreamPlayer_Cowbell", "preloadVoice")]
 script = ExtResource("1_sugp2")
 commands = NodePath("Commands")
 bulletSmoke = NodePath("bulletSmoke")
 audioStreamPlayerBGM = NodePath("Audio/AudioStreamPlayerBGM")
 audioStreamPlayerSoundEffect = NodePath("Audio/AudioStreamPlayerSoundEffect")
+audioStreamPlayer_Cowbell = NodePath("Audio/AudioStreamPlayer_Cowbell")
+preloadVoice = NodePath("preloadVoice")
 
 [node name="Commands" type="Node3D" parent="." unique_id=700984858 node_paths=PackedStringArray("canvasLayerDialog")]
 script = ExtResource("2_4j5ol")
 canvasLayerDialog = NodePath("../CanvasLayer_Dialog")
+
+[node name="preloadVoice" type="Node3D" parent="." unique_id=2055158885]
+script = ExtResource("3_k65ib")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=37290506]
 environment = SubResource("Environment_jd5n0")

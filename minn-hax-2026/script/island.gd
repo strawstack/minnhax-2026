@@ -306,6 +306,7 @@ func switchToPlayer2():
 	$players/Player2.localFreeze = false
 	$players/Player2.set_visible(true)
 	$players/Player2.setCameraActive()
+	gc.playBGM("insideclub")
 
 func switchToPlayer3():
 	$players/Player2.localFreeze = true
