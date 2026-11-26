@@ -8,5 +8,9 @@
 				"text": "Our intel says, LeBooBoo once lived in a small cabin like this. Apparently, it’s haunted."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

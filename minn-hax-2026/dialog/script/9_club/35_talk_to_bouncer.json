@@ -192,5 +192,9 @@
 	{
 		"name": "Command",
 		"command": "revealMinnMaxLogo_RampAnnounce"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

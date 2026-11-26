@@ -52,5 +52,9 @@
 	{
 		"name": "Command",
 		"command": "openDoorOne"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

@@ -24,5 +24,9 @@
 				"text": "A scan of the room shows a secret tape somewhere in the area. Similar to the one you found on the beach."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

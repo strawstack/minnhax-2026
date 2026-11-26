@@ -8,5 +8,9 @@
 				"text": "That’s our internet router on the shelf. It’s really there in real-life. The internet hookup is in the closet, and there’s no power outlet. So, they said either drill a hole in the wall, or - as we’ve done - run an extension cable to this outlet above the sink."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

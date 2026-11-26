@@ -28,5 +28,9 @@
 				"text": "Just... keep it charged"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

@@ -18,5 +18,9 @@
 				"text": "Meow!"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

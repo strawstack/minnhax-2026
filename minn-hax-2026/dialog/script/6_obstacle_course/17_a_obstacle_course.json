@@ -8,5 +8,9 @@
 				"text": "Forty-Jeffm, there’s many layers to this one. I hope you're light on your feet, and smooth with a buttery finish. Jump across the gaps, grab the gun, run through the door, and shoot the targets. MonRoll will meet you near the finish."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

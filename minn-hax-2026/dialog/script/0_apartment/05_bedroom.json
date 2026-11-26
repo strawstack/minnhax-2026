@@ -20,5 +20,9 @@
 				"text": "It also doesn’t block spiders either, and this is the Pacific North West, so we have the door taped shut. But hey, we’ve been spider free for over two months."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

@@ -16,5 +16,9 @@
 				"text": "This should come in handy. Now let's take a run at the door and see what's on the other side."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

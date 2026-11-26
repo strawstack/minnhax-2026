@@ -18,5 +18,9 @@
 				"text": "Let’s search the house for an instrument or something."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

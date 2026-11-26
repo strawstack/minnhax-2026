@@ -8,5 +8,9 @@
 				"text": "That may have opened the safe on the roof."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

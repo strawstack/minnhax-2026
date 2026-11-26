@@ -18,5 +18,9 @@
 				"text": "He’s a ghost afterall. Maybe he doesn’t even know what a door is."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

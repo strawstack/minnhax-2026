@@ -18,5 +18,9 @@
 				"text": "Forthyith clone."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

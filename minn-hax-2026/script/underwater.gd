@@ -25,7 +25,7 @@ func startScene():
 	await gc.fadeIn()
 	gc.playDialogFile("res://dialog/script/1_underwater/11_a_agent_intro_monologue.json")
 
-func continueScene(): # Called after 'pre_float_underwater' ends
+func continueScene(): # Called after '11_a_agent_intro_monologue' ends
 	if not gc.lookWatchUnderwater:
 		await gc.fadeIn()
 		animationPlayer.play("fish_swim")

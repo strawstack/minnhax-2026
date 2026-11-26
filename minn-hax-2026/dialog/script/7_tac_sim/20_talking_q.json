@@ -167,4 +167,8 @@
 		"name": "Command",
 		"command": "revealBriefing"
 	},
+	{
+		"name": "Command",
+		"command": "showObjective"
+	}
 ]

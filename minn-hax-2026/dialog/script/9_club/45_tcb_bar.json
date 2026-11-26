@@ -106,6 +106,10 @@
 				"text": "Agent Forty. The band member is in the VIP lounge at the end of the hallway to the left of the stage."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]
 

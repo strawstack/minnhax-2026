@@ -73,5 +73,9 @@
 	{
 		"name": "Command",
 		"command": "revealMinnMaxLogo_TCBBar"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

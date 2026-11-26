@@ -236,5 +236,9 @@
 	{
 		"name": "Command",
 		"command": "revealMinnMaxLogo_CreditsExit"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

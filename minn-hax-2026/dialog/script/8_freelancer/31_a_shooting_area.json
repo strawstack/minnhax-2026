@@ -8,5 +8,9 @@
 				"text": "LeBooBoo has some kind of obstacle course set up."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

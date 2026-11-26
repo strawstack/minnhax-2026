@@ -16,5 +16,9 @@
 	{
 		"name": "Command",
 		"command": "revealMinnMaxLogo_TouchRamps"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

@@ -64,5 +64,9 @@
 				"text": "Forty use the ramps to get on the roof."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

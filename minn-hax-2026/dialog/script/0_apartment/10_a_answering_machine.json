@@ -40,5 +40,9 @@
 				"text": "First though, let’s get this stream started."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

@@ -66,5 +66,9 @@
 	{
 		"name": "Command",
 		"command": "resumeFreelancerBGM"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

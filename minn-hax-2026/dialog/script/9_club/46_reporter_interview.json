@@ -124,5 +124,9 @@
 	{
 		"name": "Command",
 		"command": "returnPlayer2Camera"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

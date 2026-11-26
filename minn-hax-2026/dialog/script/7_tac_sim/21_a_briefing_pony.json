@@ -92,5 +92,9 @@
 	{
 		"name": "Command",
 		"command": "removeBarrier"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

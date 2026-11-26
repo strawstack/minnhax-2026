@@ -8,5 +8,9 @@
 				"text": "Quite literally rolling I see. Well, not everyone has the form of Chef Grant. Roll or jump and get the flag."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

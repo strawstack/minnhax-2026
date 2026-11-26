@@ -258,9 +258,9 @@ func apartmentLoadingDone():
 
 func mainMenuStartPress():
 	await fadeOut()
+	stopBGM()
 	apartmentLoading()
 	await get_tree().create_timer(0.5).timeout
-	playBGM("apartment")
 	loadScene("apartment")
 
 func playDialogFile(fileStr: String):

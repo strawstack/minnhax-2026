@@ -21,4 +21,8 @@
 		"name": "Command",
 		"command": "objectiveT"
 	},
+	{
+		"name": "Command",
+		"command": "showObjective"
+	}
 ]

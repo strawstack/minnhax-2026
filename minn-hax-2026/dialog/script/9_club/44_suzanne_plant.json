@@ -8,5 +8,9 @@
 				"text": "Shh, I'm hiding..."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

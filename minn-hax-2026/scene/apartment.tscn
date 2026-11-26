@@ -5078,7 +5078,7 @@ font_size = 16
 horizontal_alignment = 0
 
 [node name="Cube_008" type="MeshInstance3D" parent="artImages" unique_id=903494858]
-transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, -1.5426724, 13.967823, -12.189564)
+transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, -0.21449375, 13.51228, -12.189564)
 mesh = SubResource("ArrayMesh_34e72")
 
 [node name="Label3D" type="Label3D" parent="artImages/Cube_008" unique_id=608990339]
@@ -5089,7 +5089,7 @@ font_size = 16
 horizontal_alignment = 2
 
 [node name="Cube" type="MeshInstance3D" parent="artImages" unique_id=1786574990]
-transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -3.228009, 14.024092, -8.298931)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -3.228009, 13.476302, -7.6392365)
 mesh = SubResource("ArrayMesh_shra7")
 
 [node name="Cube_001" type="MeshInstance3D" parent="artImages" unique_id=1850818538]

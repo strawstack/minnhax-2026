@@ -28,5 +28,9 @@
 				"text": "Odd fellow..."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

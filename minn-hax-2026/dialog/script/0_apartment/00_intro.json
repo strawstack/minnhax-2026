@@ -9,7 +9,8 @@
 	},
 	{
 		"name": "Command",
-		"command": "waitOneSecond"
+		"command": "waitOneSecond",
+		"await": true
 	},
 	{
 		"name": "Command",

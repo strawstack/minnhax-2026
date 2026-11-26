@@ -86,5 +86,9 @@
 	{
 		"name": "Command",
 		"command": "removeStaticBody3D_UntilRadio"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

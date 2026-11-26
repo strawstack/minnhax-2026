@@ -70,5 +70,9 @@
 	{
 		"name": "Command",
 		"command": "exitJeepSceneComplete"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

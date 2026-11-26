@@ -18,5 +18,9 @@
 				"text": "Some of the boxes have strange markings on them. Did LeBooBoo... order these from a restaurant?"
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

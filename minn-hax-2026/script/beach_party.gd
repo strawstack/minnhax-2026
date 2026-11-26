@@ -4,13 +4,16 @@ var gc
 
 func _ready() -> void:
 	gc = get_tree().current_scene
+	gc.sceneCommandLookup = {
+		"localFadeIn": localFadeIn
+	}
 	startScene()
 
 func startScene():
-	gc.playerCanMove = true
 	$lebooboos/AnimationPlayer.play("rotate")
 	await gc.fadeIn()
 	gc.playDialogFile("res://dialog/script/3_c_beach/13_g_beach_party.json")
 
-func _process(delta: float) -> void:
-	pass
+func localFadeIn():
+	gc.playerCanMove = true
+	$CanvasLayer_LocalFade/AnimationPlayer.play("localFadeIn")

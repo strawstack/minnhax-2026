@@ -32,5 +32,9 @@
 				"text": "The fridge opened. There is a secret area behind the kitchen."
 			}
 		]
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

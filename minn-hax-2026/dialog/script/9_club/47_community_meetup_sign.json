@@ -122,5 +122,9 @@
 	{
 		"name": "Command",
 		"command": "revealMinnMaxLogo_CenterDanceFloor"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

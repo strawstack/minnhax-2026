@@ -96,5 +96,9 @@
 	{
 		"name": "Command",
 		"command": "openDoorThree"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

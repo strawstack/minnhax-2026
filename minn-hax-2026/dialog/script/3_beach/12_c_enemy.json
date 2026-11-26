@@ -72,5 +72,9 @@
 	{
 		"name": "Command",
 		"command": "removeStaticBody3D_AlrightBlock"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]

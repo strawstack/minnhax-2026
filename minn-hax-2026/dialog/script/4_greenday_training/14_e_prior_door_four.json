@@ -62,5 +62,9 @@
 	{
 		"name": "Command",
 		"command": "openDoorFour"
+	},
+	{
+		"name": "Command",
+		"command": "showObjective"
 	}
 ]
