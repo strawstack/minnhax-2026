@@ -148,7 +148,7 @@ func switchCameraExitAgent():
 	$JeepParkScene/Camera3D_Agent.set_current(true)
 
 func exitJeepSceneComplete():
-	$JeepParkScene.set_visible(false)
+	$JeepParkScene/fortyIdleNoAnim2.set_visible(false)
 	agent2.set_visible(true)
 	agent2.setCameraActive()
 	agent2.localFreeze = false
@@ -158,6 +158,7 @@ func exitJeepSceneComplete():
 func hideAndFreezeAgentShowIdlePose():
 	gc.playerCanMove = false
 	agent.set_visible(false)
+	agent2.set_visible(false)
 	$fortyIdleNoAnim.set_visible(true)
 
 func camera3D_AgentToCroissant():

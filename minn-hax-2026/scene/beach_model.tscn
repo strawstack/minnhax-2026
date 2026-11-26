@@ -5163,7 +5163,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 14, 5)
 mesh = SubResource("ArrayMesh_tf0kv")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_113" unique_id=339919907]
-collision_layer = 16
 collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_113/StaticBody3D" unique_id=851994784]
@@ -5174,7 +5173,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 14, 0.5)
 mesh = SubResource("ArrayMesh_ipine")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_114" unique_id=1269845566]
-collision_layer = 16
 collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_114/StaticBody3D" unique_id=1893329703]
@@ -5185,7 +5183,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.5, 9, 6)
 mesh = SubResource("ArrayMesh_cmw43")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_115" unique_id=588407671]
-collision_layer = 16
 collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_115/StaticBody3D" unique_id=197943161]
@@ -5196,7 +5193,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65.5, 14, 5)
 mesh = SubResource("ArrayMesh_825d0")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_116" unique_id=487527580]
-collision_layer = 16
 collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_116/StaticBody3D" unique_id=1610161752]
@@ -5218,7 +5214,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 14, -0.5)
 mesh = SubResource("ArrayMesh_hhqfs")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_118" unique_id=1414143327]
-collision_layer = 16
 collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_118/StaticBody3D" unique_id=223205889]
@@ -5229,7 +5224,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.5, 14, 0.5)
 mesh = SubResource("ArrayMesh_ohsqf")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_119" unique_id=1959681266]
-collision_layer = 16
 collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_119/StaticBody3D" unique_id=1650774422]
@@ -5240,7 +5234,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.5, 14, -0.5)
 mesh = SubResource("ArrayMesh_4j5hs")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_120" unique_id=195237629]
-collision_layer = 16
 collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_120/StaticBody3D" unique_id=1001203344]
@@ -5251,7 +5244,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.5, 14, 0.5)
 mesh = SubResource("ArrayMesh_568mx")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_121" unique_id=53899708]
-collision_layer = 16
 collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_121/StaticBody3D" unique_id=2002008198]
@@ -5262,7 +5254,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 62.5, 14, 1.5)
 mesh = SubResource("ArrayMesh_o13rr")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_122" unique_id=646108542]
-collision_layer = 16
 collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_122/StaticBody3D" unique_id=557927011]
@@ -5273,7 +5264,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.95, 14, 9.75)
 mesh = SubResource("ArrayMesh_vgrmd")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_123" unique_id=869326074]
-collision_layer = 16
 collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_123/StaticBody3D" unique_id=756752037]
@@ -5284,7 +5274,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.95, 14, 2.25)
 mesh = SubResource("ArrayMesh_fksd3")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_124" unique_id=1877699447]
-collision_layer = 16
 collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_124/StaticBody3D" unique_id=20079050]
@@ -5295,7 +5284,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.95, 15.5, 5)
 mesh = SubResource("ArrayMesh_gbqds")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_125" unique_id=998072396]
-collision_layer = 16
 collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WallInvisible/Cube_125/StaticBody3D" unique_id=390358113]
