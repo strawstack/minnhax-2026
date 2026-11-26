@@ -20,8 +20,6 @@ func _ready() -> void:
 		animationPlayer = $AnimationPlayer
 		if gc.lookWatchUnderwater:
 			startScene()
-		else:
-			continueScene()
 
 func startScene():
 	await gc.fadeIn()

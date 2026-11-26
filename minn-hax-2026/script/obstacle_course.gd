@@ -46,4 +46,7 @@ func hideFlag():
 func _process(delta: float) -> void:
 	if not $Player.noSkating and Input.is_action_just_pressed("f_key") and not commentOnce:
 		commentOnce = true
-		gc.playDialogFile("res://dialog/script/6_obstacle_course/17_c_obstacle_course.json")
+		$TimerComment.start()
+
+func _on_timer_comment_timeout() -> void:
+	gc.playDialogFile("res://dialog/script/6_obstacle_course/17_c_obstacle_course.json")

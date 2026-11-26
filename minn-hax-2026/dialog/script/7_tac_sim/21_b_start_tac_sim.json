@@ -1,6 +1,10 @@
 [
 	{
 		"name": "Command",
+		"command": "hideDialog"
+	},
+	{
+		"name": "Command",
 		"command": "tacSimStartSound",
 		"await": true
 	},

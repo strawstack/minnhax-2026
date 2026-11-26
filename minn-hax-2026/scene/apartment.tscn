@@ -3833,6 +3833,11 @@ minnMaxLogoControlRoom2 = NodePath("minnMaxLogo_ControlRoom2")
 richardHeadAnimation = NodePath("richardCouch/AnimationPlayerRichard")
 playerCamera = NodePath("CharacterBody3D/Node3D/Camera3D")
 
+[node name="ZoomCam" type="Camera3D" parent="." unique_id=1031079516]
+transform = Transform3D(-0.44720492, 0, 0.89443153, 0, 1, 0, -0.89443153, 0, -0.44720492, 2.5182776, 7.75, -10.355566)
+current = true
+fov = 19.5
+
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=1492951469]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.027121544, 0)
 light_data = ExtResource("5_w0ngi")
@@ -3891,7 +3896,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Node3D" unique_id=249227619]
 current = true
-fov = 19.5
 
 [node name="RayCast3D" type="RayCast3D" parent="CharacterBody3D/Node3D/Camera3D" unique_id=36536425]
 target_position = Vector3(0, 0, -3)
@@ -5124,5 +5128,15 @@ width = 200.0
 [node name="Cube_007" type="MeshInstance3D" parent="artImages" unique_id=718701255]
 transform = Transform3D(0.59999996, 0, 0, 0, 0.59999996, 0, 0, 0, 0.59999996, -3.2724435, 13.386967, -5.769963)
 mesh = SubResource("ArrayMesh_jd4un")
+
+[node name="CanvasLayer_Loading" type="CanvasLayer" parent="." unique_id=69468586]
+
+[node name="Label" type="Label" parent="CanvasLayer_Loading" unique_id=1066524686]
+offset_left = 512.0
+offset_top = 336.0
+offset_right = 661.0
+offset_bottom = 381.0
+theme_override_font_sizes/font_size = 32
+text = "Loading..."
 
 [connection signal="timeout" from="meowTimer" to="neviPoints" method="_on_meow_timer_timeout"]

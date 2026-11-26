@@ -1319,4 +1319,8 @@ mesh = SubResource("ArrayMesh_swtwq")
 transform = Transform3D(0.050014257, 0, 0, 0, -2.384866e-08, 0.05001425, 0, -0.050014257, -2.3848656e-08, -0.29999992, -0.110000096, -0.10945343)
 mesh = SubResource("ArrayMesh_w7lhf")
 
+[node name="TimerComment" type="Timer" parent="." unique_id=471707737]
+one_shot = true
+
 [connection signal="body_entered" from="door/facade/Area3D" to="door/facade/Area3D" method="_on_body_entered"]
+[connection signal="timeout" from="TimerComment" to="." method="_on_timer_comment_timeout"]

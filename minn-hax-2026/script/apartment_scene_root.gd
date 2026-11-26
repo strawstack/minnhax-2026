@@ -20,7 +20,7 @@ func _ready() -> void:
 		"hideLeBooBooPreInterview": hideLeBooBooPreInterview,
 		"revealControlRoomPrompt": revealControlRoomPrompt,
 		"showInterviewCharacters": showInterviewCharacters,
-		"camera75fov": camera75fov,
+		"cameraApartmentPlayer": cameraApartmentPlayer,
 		"interviewCameraA": interviewCameraA,
 		"interviewCameraB": interviewCameraB,
 		"interviewCameraC": interviewCameraC,
@@ -46,6 +46,18 @@ func _ready() -> void:
 		#advanceToMorning()
 		gc.setPlayerCanMove(true)
 		gc.showCrossHairs(true)
+	else:
+		await warmUpCameras()
+		$SubViewport/underwater.continueScene()
+
+func warmUpCameras():
+	playerCamera.set_current(true)
+	await get_tree().create_timer(0.5).timeout
+	$Cameras/cameraB.set_current(true)
+	await get_tree().create_timer(0.5).timeout
+	$ZoomCam.set_current(true)
+	await get_tree().create_timer(0.5).timeout
+	$CanvasLayer_Loading.set_visible(false)
 
 func silenceNevi():
 	$neviPoints.silence = true
@@ -58,8 +70,8 @@ func playerFree():
 	gc.showCrossHairs(true)
 	gc.showRecording()
 
-func camera75fov():
-	playerCamera.set_fov(75.0)
+func cameraApartmentPlayer():
+	playerCamera.set_current(true)
 
 func waitOneSecond():
 	await get_tree().create_timer(1.0).timeout

@@ -33,7 +33,8 @@ Godot project files for the MinnHax 2026 Game Jam.
 - Hide dialog when activating tacSim
 - Add grass to grey wall in skate park
 - Patch grind rail close to wall in skate park to prevent glitch out of wall
-- Cane we "load cameras" in advance of apartment to help?
+
+- Can we "load cameras" in advance of apartment to help?
 
 - Audio needed "When I woke-up, my plane had landed, and it was time to meet my instructor"
 
