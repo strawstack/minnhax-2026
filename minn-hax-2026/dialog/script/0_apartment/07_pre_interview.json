@@ -28,5 +28,9 @@
 	{
 		"name": "Command",
 		"command": "showObjective"
+	},
+	{
+		"name": "Command",
+		"command": "showCrossHairs"
 	}
 ]

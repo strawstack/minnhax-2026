@@ -23,7 +23,18 @@
 	},
 	{
 		"name": "Command",
-		"command": "openStudioStairsDoor"
+		"command": "openStudioStairsDoor",
+		"await": true
+	},
+	{
+		"name": "Richard",
+		"avatar": "",
+		"lines": [
+			{
+				"voice": "06_03",
+				"text": "Well, doors open. You can head down."
+			}
+		]
 	},
 	{
 		"name": "Command",
@@ -36,5 +47,9 @@
 	{
 		"name": "Command",
 		"command": "showObjective"
+	},
+	{
+		"name": "Command",
+		"command": "showCrossHairs"
 	}
 ]

@@ -82,7 +82,8 @@ func openStudioStairsDoor():
 	$studio_door_with_handle_and_open/closedDoor.set_visible(false)
 	$studio_door_with_handle_and_open/openDoor.set_visible(true)
 	$studio_door_with_handle_and_open/DoorWall/StaticBody3D.set_collision_layer_value(1, false)
-	gc.playSoundEffect("door_open")
+	await gc.playSoundEffectAwait("door_open")
+	gc.endAwaitDialog()
 
 func closeStudioStairsDoor():
 	$studio_door_with_handle_and_open/closedDoor.set_visible(true)

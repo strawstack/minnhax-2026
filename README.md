@@ -4,32 +4,7 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 # Todo
 
-- CONFIRM:
-  - Cowbell: Ability to play cowbell during final performance
-  - GreenDay jeep vanishes after exit jeep cutscene and should stay around as you walk up the stairs
-  - During "...going to cinnabon" line I think I saw the player in the left side of shot. Make sure play is hidden for this scene
-  - Crosshairs missing in greenday training (fix throughout)
-  - Radio dissappear from rock on beach once taken
-    - Add emmission to radio
-    - Add radio sound effect
-  - make sure BGM not playing during music rap
-  - Beach ground and all walls are labeled as invisible:
-    - The camera can go into them they should be labeled as "wall" to help camera physics
-    - Applies to all rocks except barrier in the water
-    - Confirm when player can and can't skate/shoot throughout
-    - Make sure glass break and tattoo needle sound play over correct bus
-  - images on monitors
-    - PC in my office
-    - Stream PC
-  - Metal door opening sound effect for greenday training (gears)
-  - Balance audio to avoid any loud noises
-    - Assume all play at full volume
-    - So play at 75% in Audacity and then dip tracks accordingly
-    - Directly overwright files in Godot folder to adjust
-
-- AUDIO:
-  - 13 01 a Agent: When I woke, my plane had landed, and it was time to meet my instructor.
-  - 06 03 Rich: Okay, doors open. You can head down now.
+- CONFIRM: Cowbell: Ability to play cowbell during final performance
 
 - Submit game on itch io
   - Game description
@@ -43,6 +18,33 @@ Godot project files for the MinnHax 2026 Game Jam.
 - Upload tracks to Youtube
 
 # Done
+
+- Show player cursor after dialogs in apartment
+
+- GreenDay jeep vanishes after exit jeep cutscene and should stay around as you walk up the stairs
+- During "...going to cinnabon" line I think I saw the player in the left side of shot. Make sure play is hidden for this scene
+- Crosshairs missing in greenday training (fix throughout)
+- Radio dissappear from rock on beach once taken
+  - Add emmission to radio
+  - Add radio sound effect
+- make sure BGM not playing during music rap
+- Beach ground and all walls are labeled as invisible:
+  - The camera can go into them they should be labeled as "wall" to help camera physics
+  - Applies to all rocks except barrier in the water
+  - Confirm when player can and can't skate/shoot throughout
+  - Make sure glass break and tattoo needle sound play over correct bus
+- images on monitors
+  - PC in my office
+  - Stream PC
+- Metal door opening sound effect for greenday training (gears)
+- Balance audio to avoid any loud noises
+  - Assume all play at full volume
+  - So play at 75% in Audacity and then dip tracks accordingly
+  - Directly overwright files in Godot folder to adjust
+
+- AUDIO:
+  - 13 01 a Agent: When I woke, my plane had landed, and it was time to meet my instructor.
+  - 06 03 Rich: Okay, doors open. You can head down now.
 
 - Low battery not showing low battery screen when character says "uh oh..."
 

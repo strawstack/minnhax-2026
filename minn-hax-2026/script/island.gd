@@ -58,7 +58,7 @@ func _ready() -> void:
 		"hidefortyIdleNoAnimRoof": hidefortyIdleNoAnimRoof,
 		"playerFallAnimationSequence": playerFallAnimationSequence,
 		"breakGlassSoundEffect": breakGlassSoundEffect,
-		"tattooSoundEffect": tattooSoundEffect,
+		"tattooSoundEffectAndFadeIn": tattooSoundEffectAndFadeIn,
 		"cameraCloseTattoo": cameraCloseTattoo,
 		"cameraLeBooBoo": cameraLeBooBoo,
 		"cameraArtist": cameraArtist,
@@ -224,8 +224,10 @@ func breakGlassSoundEffect():
 	await gc.playSoundEffectAwait("glass_break")
 	gc.endAwaitDialog()
 
-func tattooSoundEffect():
-	gc.playSoundEffect("tattoo_needle")
+func tattooSoundEffectAndFadeIn():
+	gc.fadeIn()
+	await gc.playSoundEffectAwait("tattoo_needle")
+	gc.endAwaitDialog()
 
 func cameraCloseTattoo():
 	$sceneTattoo/CloseTattoo.set_current(true)
