@@ -334,7 +334,6 @@ func sceneSetUp():
 func setPostShowTalk():
 	$LeBooBoo.set_visible(false)
 	$cowBellGuy.set_visible(false)
-	$playCowBellInstruction.set_visible(false)
 	$club_dj.set_visible(false) # Just in case
 	$club_dj_mic.set_visible(false)
 	$postShowTalk.set_visible(true)
@@ -352,7 +351,6 @@ func showCrabPerformance():
 func showLeBooBooPerformance():
 	$club_dj.set_visible(false)
 	$cowBellGuy.set_visible(true)
-	$playCowBellInstruction.set_visible(true)
 
 func cameraStageCrowd():
 	$Cameras/StageCrowd.set_current(true)

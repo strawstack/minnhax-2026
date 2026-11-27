@@ -2,12 +2,12 @@
 
 [ext_resource type="Material" uid="uid://c51v7x212ff0l" path="res://material/sand_stone_normal_map.tres" id="1_nkm2i"]
 [ext_resource type="Script" uid="uid://eee7vx2qqin2" path="res://script/greenday_training_model.gd" id="1_wsh3t"]
-[ext_resource type="Material" uid="uid://b4gnh15gsrjv7" path="res://material/sand_stone_light_normal_map.tres" id="2_8g3uc"]
 [ext_resource type="Material" uid="uid://b8vlsfiq51xyb" path="res://material/flat_black.tres" id="2_jbtp1"]
 [ext_resource type="Material" uid="uid://bbbaxswojvgng" path="res://material/shelf_black.tres" id="3_l6djg"]
 [ext_resource type="Material" uid="uid://due5oug3u2p8x" path="res://material/rust_on_door.tres" id="3_w3p61"]
 [ext_resource type="Material" uid="uid://c8afg082ijuws" path="res://material/runway.tres" id="3_wsh3t"]
-[ext_resource type="Material" uid="uid://ch3eofv7xkph0" path="res://material/sand_light.tres" id="6_wdpgc"]
+[ext_resource type="Material" uid="uid://dm5d4wkhvfsuy" path="res://material/good_sand_secondary.tres" id="6_lg72r"]
+[ext_resource type="Material" uid="uid://cuojgq7g8mxc5" path="res://material/good_sand.tres" id="7_mtcnl"]
 [ext_resource type="Material" uid="uid://c5ms3ytoe21hh" path="res://material/hard_floor.tres" id="7_wdpgc"]
 [ext_resource type="Material" uid="uid://dmj8krlnbdtkr" path="res://material/sand.tres" id="8_l6djg"]
 
@@ -6101,47 +6101,47 @@ surface_material_override/0 = ExtResource("1_nkm2i")
 [node name="Cube_040" type="MeshInstance3D" parent="." unique_id=377223554]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -100, -0.5, -35)
 mesh = SubResource("ArrayMesh_urkrr")
-surface_material_override/0 = ExtResource("6_wdpgc")
+surface_material_override/0 = ExtResource("6_lg72r")
 
 [node name="Cube_043" type="MeshInstance3D" parent="." unique_id=1087264089]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75, -0.25, -61)
 mesh = SubResource("ArrayMesh_ubgfu")
-surface_material_override/0 = ExtResource("6_wdpgc")
+surface_material_override/0 = ExtResource("6_lg72r")
 
 [node name="Cube_044" type="MeshInstance3D" parent="." unique_id=1126691200]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75, 0.25, -63)
 mesh = SubResource("ArrayMesh_srx6m")
-surface_material_override/0 = ExtResource("6_wdpgc")
+surface_material_override/0 = ExtResource("6_lg72r")
 
 [node name="Cube_045" type="MeshInstance3D" parent="." unique_id=2087104073]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75, 0.75, -65)
 mesh = SubResource("ArrayMesh_hoj2p")
-surface_material_override/0 = ExtResource("6_wdpgc")
+surface_material_override/0 = ExtResource("6_lg72r")
 
 [node name="Cube_046" type="MeshInstance3D" parent="." unique_id=1315850751]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -111, 10, -36)
 mesh = SubResource("ArrayMesh_1e5k6")
-surface_material_override/0 = ExtResource("1_nkm2i")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="Cube_047" type="MeshInstance3D" parent="." unique_id=1884421044]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75, 1.25, -67)
 mesh = SubResource("ArrayMesh_xro5q")
-surface_material_override/0 = ExtResource("6_wdpgc")
+surface_material_override/0 = ExtResource("6_lg72r")
 
 [node name="Cube_048" type="MeshInstance3D" parent="." unique_id=1038944301]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75, 1.75, -69)
 mesh = SubResource("ArrayMesh_1nmsv")
-surface_material_override/0 = ExtResource("6_wdpgc")
+surface_material_override/0 = ExtResource("6_lg72r")
 
 [node name="Cube_049" type="MeshInstance3D" parent="." unique_id=1017290451]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75, 2.25, -71)
 mesh = SubResource("ArrayMesh_438md")
-surface_material_override/0 = ExtResource("6_wdpgc")
+surface_material_override/0 = ExtResource("6_lg72r")
 
 [node name="Cube_050" type="MeshInstance3D" parent="." unique_id=393950490]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75, 2.75, -73)
 mesh = SubResource("ArrayMesh_pctj8")
-surface_material_override/0 = ExtResource("6_wdpgc")
+surface_material_override/0 = ExtResource("6_lg72r")
 
 [node name="Cube_054" type="MeshInstance3D" parent="." unique_id=1652555005]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5, 2.8, 101.5)
@@ -6166,22 +6166,22 @@ surface_material_override/0 = ExtResource("2_jbtp1")
 [node name="Cube_058" type="MeshInstance3D" parent="." unique_id=773139853]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0.5, 45)
 mesh = SubResource("ArrayMesh_hcm61")
-surface_material_override/0 = ExtResource("8_l6djg")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="Cube_059" type="MeshInstance3D" parent="." unique_id=1707165577]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0.5, 34)
 mesh = SubResource("ArrayMesh_s0100")
-surface_material_override/0 = ExtResource("8_l6djg")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="Cube_060" type="MeshInstance3D" parent="." unique_id=1657059268]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0.5, -61)
 mesh = SubResource("ArrayMesh_e0ioi")
-surface_material_override/0 = ExtResource("8_l6djg")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="Cube_061" type="MeshInstance3D" parent="." unique_id=1799592235]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0.5, -39)
 mesh = SubResource("ArrayMesh_c85ui")
-surface_material_override/0 = ExtResource("8_l6djg")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="Cube_064" type="MeshInstance3D" parent="." unique_id=835186331]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 0, 16.5, 20.5)
@@ -6201,42 +6201,42 @@ surface_material_override/0 = ExtResource("1_nkm2i")
 [node name="Cube_073" type="MeshInstance3D" parent="." unique_id=1379144150]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 142.5)
 mesh = SubResource("ArrayMesh_1s3dk")
-surface_material_override/0 = ExtResource("6_wdpgc")
+surface_material_override/0 = ExtResource("6_lg72r")
 
 [node name="Cube_086" type="MeshInstance3D" parent="." unique_id=1269372815]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2.25, -115)
 mesh = SubResource("ArrayMesh_y1h7i")
-surface_material_override/0 = ExtResource("6_wdpgc")
+surface_material_override/0 = ExtResource("6_lg72r")
 
 [node name="Cube_089" type="MeshInstance3D" parent="." unique_id=1639324348]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -115, 2.25, -120)
 mesh = SubResource("ArrayMesh_rhb8j")
-surface_material_override/0 = ExtResource("2_8g3uc")
+surface_material_override/0 = ExtResource("6_lg72r")
 
 [node name="Cube_090" type="MeshInstance3D" parent="." unique_id=1577228723]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -120, -0.5, -35)
 mesh = SubResource("ArrayMesh_abpg8")
-surface_material_override/0 = ExtResource("8_l6djg")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="Cube_091" type="MeshInstance3D" parent="." unique_id=673386156]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -91, 10, -23)
 mesh = SubResource("ArrayMesh_ghppp")
-surface_material_override/0 = ExtResource("8_l6djg")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="Cube_092" type="MeshInstance3D" parent="." unique_id=766022502]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5, 1, 94.4)
 mesh = SubResource("ArrayMesh_0q1dv")
-surface_material_override/0 = ExtResource("8_l6djg")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="Cube_093" type="MeshInstance3D" parent="." unique_id=1663514729]
 transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -18, 1, -26)
 mesh = SubResource("ArrayMesh_axtw5")
-surface_material_override/0 = ExtResource("8_l6djg")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="Cube_094" type="MeshInstance3D" parent="." unique_id=1203388459]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.5, 1, 76.5)
 mesh = SubResource("ArrayMesh_f00u2")
-surface_material_override/0 = ExtResource("8_l6djg")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="Cube_095" type="MeshInstance3D" parent="." unique_id=12726261]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -84, 1, -26)
@@ -6251,12 +6251,12 @@ surface_material_override/0 = ExtResource("8_l6djg")
 [node name="Cube_097" type="MeshInstance3D" parent="." unique_id=1115694454]
 transform = Transform3D(-1, 0, 1.509958e-07, 0, 1, 0, -1.509958e-07, 0, -1, -78, 1, -2)
 mesh = SubResource("ArrayMesh_c23dk")
-surface_material_override/0 = ExtResource("8_l6djg")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="Cube_098" type="MeshInstance3D" parent="." unique_id=568243133]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.5, 1, 106.5)
 mesh = SubResource("ArrayMesh_02258")
-surface_material_override/0 = ExtResource("8_l6djg")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="Cube_099" type="MeshInstance3D" parent="." unique_id=1085397605]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -84, 1, 4)
@@ -6266,12 +6266,12 @@ surface_material_override/0 = ExtResource("8_l6djg")
 [node name="Cube_100" type="MeshInstance3D" parent="." unique_id=630592719]
 transform = Transform3D(-1, 0, 1.509958e-07, 0, 1, 0, -1.509958e-07, 0, -1, -78, 1, -32)
 mesh = SubResource("ArrayMesh_ewes6")
-surface_material_override/0 = ExtResource("1_nkm2i")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="Cube_101" type="MeshInstance3D" parent="." unique_id=1026895855]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -24, 1, -32)
 mesh = SubResource("ArrayMesh_5grl1")
-surface_material_override/0 = ExtResource("8_l6djg")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="Cube_102" type="MeshInstance3D" parent="." unique_id=2125255233]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 21, -10, 55)
@@ -6326,17 +6326,17 @@ surface_material_override/0 = ExtResource("1_nkm2i")
 [node name="Cube_113" type="MeshInstance3D" parent="." unique_id=2012277617]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -69, 13, -73)
 mesh = SubResource("ArrayMesh_762q0")
-surface_material_override/0 = ExtResource("8_l6djg")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="Cube_115" type="MeshInstance3D" parent="." unique_id=1626990788]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -192.5, -10.5, -20)
 mesh = SubResource("ArrayMesh_gosnv")
-surface_material_override/0 = ExtResource("1_nkm2i")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="Cube_116" type="MeshInstance3D" parent="." unique_id=1027064713]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -222.5, -10.5, -20)
 mesh = SubResource("ArrayMesh_gx2cq")
-surface_material_override/0 = ExtResource("1_nkm2i")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="Cube_117" type="MeshInstance3D" parent="." unique_id=155209688]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -252.5, -10.5, -20)
@@ -6624,7 +6624,7 @@ mesh = SubResource("ArrayMesh_yq05f")
 [node name="Cube_001" type="MeshInstance3D" parent="Wall" unique_id=763931530]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.50000036, 2, -39)
 mesh = SubResource("ArrayMesh_rcasi")
-surface_material_override/0 = ExtResource("6_wdpgc")
+surface_material_override/0 = ExtResource("6_lg72r")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_001" unique_id=1175853743]
 
@@ -6634,7 +6634,7 @@ shape = SubResource("ConcavePolygonShape3D_cswyd")
 [node name="Cube_002" type="MeshInstance3D" parent="Wall" unique_id=939886041]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.5, 2, -126.5)
 mesh = SubResource("ArrayMesh_0er1m")
-surface_material_override/0 = ExtResource("6_wdpgc")
+surface_material_override/0 = ExtResource("6_lg72r")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_002" unique_id=731943724]
 
@@ -6714,7 +6714,7 @@ shape = SubResource("ConcavePolygonShape3D_jbtp1")
 [node name="Cube_041" type="MeshInstance3D" parent="Wall" unique_id=1519967341]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64.5, 12.5, -137.5)
 mesh = SubResource("ArrayMesh_e34oi")
-surface_material_override/0 = ExtResource("8_l6djg")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_041" unique_id=1562289094]
 
@@ -6724,7 +6724,7 @@ shape = SubResource("ConcavePolygonShape3D_l6djg")
 [node name="Cube_042" type="MeshInstance3D" parent="Wall" unique_id=659099171]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94.5, 12.5, -137.5)
 mesh = SubResource("ArrayMesh_i43l0")
-surface_material_override/0 = ExtResource("8_l6djg")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_042" unique_id=729904187]
 
@@ -6734,7 +6734,7 @@ shape = SubResource("ConcavePolygonShape3D_wdpgc")
 [node name="Cube_051" type="MeshInstance3D" parent="Wall" unique_id=2102037440]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.5, 12.5, -161.5)
 mesh = SubResource("ArrayMesh_2lx85")
-surface_material_override/0 = ExtResource("8_l6djg")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_051" unique_id=879101161]
 
@@ -6744,7 +6744,7 @@ shape = SubResource("ConcavePolygonShape3D_l4rev")
 [node name="Cube_052" type="MeshInstance3D" parent="Wall" unique_id=1838817960]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -80.5, 12.5, -167.5)
 mesh = SubResource("ArrayMesh_tafdg")
-surface_material_override/0 = ExtResource("8_l6djg")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_052" unique_id=1346439850]
 
@@ -6754,7 +6754,7 @@ shape = SubResource("ConcavePolygonShape3D_lg72r")
 [node name="Cube_053" type="MeshInstance3D" parent="Wall" unique_id=1218647308]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.5, 4.75, -168.5)
 mesh = SubResource("ArrayMesh_v7n6v")
-surface_material_override/0 = ExtResource("6_wdpgc")
+surface_material_override/0 = ExtResource("6_lg72r")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_053" unique_id=1776598776]
 
@@ -6854,7 +6854,7 @@ shape = SubResource("ConcavePolygonShape3D_syoun")
 [node name="Cube_083" type="MeshInstance3D" parent="Wall" unique_id=36092188]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.5, 12.5, -101.5)
 mesh = SubResource("ArrayMesh_eoube")
-surface_material_override/0 = ExtResource("8_l6djg")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_083" unique_id=2083686625]
 
@@ -6864,7 +6864,7 @@ shape = SubResource("ConcavePolygonShape3D_62v3h")
 [node name="Cube_084" type="MeshInstance3D" parent="Wall" unique_id=1458801687]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -100.5, 12.5, -197.5)
 mesh = SubResource("ArrayMesh_12u5a")
-surface_material_override/0 = ExtResource("1_nkm2i")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_084" unique_id=788539897]
 
@@ -6874,7 +6874,7 @@ shape = SubResource("ConcavePolygonShape3D_p85c2")
 [node name="Cube_085" type="MeshInstance3D" parent="Wall" unique_id=534405968]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102.5, 12.5, -185.5)
 mesh = SubResource("ArrayMesh_cqb72")
-surface_material_override/0 = ExtResource("1_nkm2i")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_085" unique_id=1656715612]
 
@@ -6884,7 +6884,7 @@ shape = SubResource("ConcavePolygonShape3D_68cjw")
 [node name="Cube_088" type="MeshInstance3D" parent="Wall" unique_id=9959788]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -124.5, 12.5, -194.5)
 mesh = SubResource("ArrayMesh_dvnd5")
-surface_material_override/0 = ExtResource("1_nkm2i")
+surface_material_override/0 = ExtResource("7_mtcnl")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_088" unique_id=877005740]
 

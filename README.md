@@ -4,6 +4,8 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 # Todo
 
+- remove t to skip
+
 - Submit game on itch io
   - Screenshots
   - Links to Youtube music

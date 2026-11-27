@@ -322,6 +322,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label" type="Label" parent="CanvasLayer_MusicDialog" unique_id=46079194]
+visible = false
 offset_left = 976.0
 offset_top = 680.0
 offset_right = 1146.0
