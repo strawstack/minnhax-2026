@@ -1,6 +1,6 @@
 extends Node3D
 
-const DEBUG = true
+const DEBUG = false
 
 @export var commands: Node3D
 @export var bulletSmoke: Node3D
@@ -106,7 +106,7 @@ func _ready() -> void:
 	hideObjective()
 	hideRecording()
 	if DEBUG:
-		loadScene("greenDay")
+		loadScene("freelancer")
 	else:
 		# Show and Hide these just to make sure
 		$CanvasLayer_Fade.set_visible(true) 

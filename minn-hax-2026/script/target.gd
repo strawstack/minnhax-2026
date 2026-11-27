@@ -10,8 +10,9 @@ func _ready() -> void:
 	gc = get_tree().current_scene 
 
 func hit():
-	$AnimationPlayer.play("down")
 	if not once:
+		once = true
+		$AnimationPlayer.play("down")
 		gc.targetHit()
 		if targetHitCallbackNode:
 			targetHitCallbackNode.targetHit()

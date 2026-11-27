@@ -4,20 +4,33 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 # Todo
 
-- remove t to skip
+- Add CrabPalace rap to beach.
 
-- Submit game on itch io
-  - Screenshots
-  - Links to Youtube music
-  - x Music credits: AudioLibrary
-  - x Credits: Richard, Yu, CrabPalace
-  - x Game description
-  - x Controls
-  - x No AI statement
+- Add CrabPalace club loop to club scene.
 
-- Upload tracks to Youtube
+- Link to CrabPalace Youtube/Spotify.
+
+- Take itch project live.
+
+- IMPORTANT: Submit game to jam and confirm it's in submissions.
+
+- Announce game on Discord after submission.
 
 # Done
+
+- You can fly into the chimny
+
+- If you turn off skating on the long stairs freelancer, you drop through map
+
+- Remove "louder" from diaog line when LeBooBoo reacts to me saying I'm his voice actor.
+
+- Remove the "(be good have fun..." line from Yu's final interview dialog.
+
+- Remove "(pause)" from voice mail dialog.
+
+- Fix line "... now lets see about this door" text is not same as audio.
+
+- Targets if shot more than once go down more than once
 
 - Put roof to prevent flying too high in obstacle course
 - Block top stairs has no collider
@@ -172,6 +185,9 @@ Godot project files for the MinnHax 2026 Game Jam.
   - Name and export clips
 
 # Cancel
+
+- There's a split second lag at the start of beach.
+  - Maybe related to lights. Could I take these out?
 
 - stop boat sound on scene change
 

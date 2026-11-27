@@ -4929,6 +4929,14 @@ mesh = SubResource("BoxMesh_iuy5y")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9566951, 0)
 text = "Developer note: There's not much stuff in the room because I ran low on time, but the next levels better."
 
+[node name="Label3D4" type="Label3D" parent="." unique_id=389740541]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.7591727, 7.74702, -16.685692)
+text = "Wink ;)
+Press F to skate 
+and tap spacebar 
+to fly out"
+font_size = 16
+
 [connection signal="body_entered" from="doors/Area3D_MainDoor" to="doors/Area3D_MainDoor" method="_on_body_entered"]
 [connection signal="body_entered" from="doors/Area3D_SideDoor" to="doors/Area3D_SideDoor" method="_on_body_entered"]
 [connection signal="body_entered" from="doors/Area3D_doorGarage" to="doors/Area3D_doorGarage" method="_on_body_entered"]
