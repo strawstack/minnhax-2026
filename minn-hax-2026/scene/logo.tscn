@@ -1,12 +1,15 @@
 [gd_scene format=4 uid="uid://df3df6bjurflm"]
 
 [ext_resource type="Script" uid="uid://dx2k518nkf2v2" path="res://script/logo.gd" id="1_ciqto"]
-[ext_resource type="AudioStream" uid="uid://3pki7wktn1op" path="res://dialog/vocal/crickets.mp3" id="2_o4sbl"]
+[ext_resource type="AudioStream" uid="uid://bdycydh6tjwnm" path="res://dialog/vocal/crickets.mp3" id="2_o4sbl"]
 [ext_resource type="AudioStream" uid="uid://bkq2wc6ejwy6w" path="res://dialog/vocal/boo_logo_voice.mp3" id="2_snm24"]
 [ext_resource type="PackedScene" uid="uid://dlvrh27xebc5k" path="res://scene/tree.tscn" id="5_2yffc"]
 [ext_resource type="LightmapGIData" uid="uid://ce5c5lnwpo2d4" path="res://bake/logo.lmbake" id="5_5j417"]
 
 [sub_resource type="Environment" id="Environment_jd5n0"]
+background_mode = 1
+background_color = Color(0.06150435, 0.19364977, 0.273951, 1)
+background_energy_multiplier = 0.17
 
 [sub_resource type="Animation" id="Animation_c5tmp"]
 length = 0.001
@@ -1450,44 +1453,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_mnoyn")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ar03h"]
-resource_name = "Sky"
-cull_mode = 2
-albedo_color = Color(0.10588236, 0.28627458, 0.3960785, 1)
-roughness = 0.5
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_wbyt8"]
-_surfaces = [{
-"aabb": AABB(-0.5, -7, -38.5, 1, 14, 80),
-"format": 34359742465,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYA"),
-"name": "Sky",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 8,
-"vertex_data": PackedByteArray("AAAAvwAA4MAAACZCAAAAvwAA4EAAABrCAAAAvwAA4EAAACZCAAAAvwAA4MAAABrCAAAAPwAA4EAAABrCAAAAPwAA4MAAACZCAAAAPwAA4EAAACZCAAAAPwAA4MAAABrC")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_5ycvm"]
-resource_name = "logo_Cube_032"
-lightmap_size_hint = Vector2i(3406, 1846)
-_surfaces = [{
-"aabb": AABB(-0.5, -7, -38.5, 1, 14, 80),
-"attribute_data": PackedByteArray("p/RUP7KFlT4/cng/LEZ5Pyc9NT8AAIA/MYgaPW3C+T4mPTU/soWVPj9yeD9twvk+qPRUPwAAgD8xiBo9LEZ5PwAAAABgLSw+7/h4P1B6xTy5/RA8soWVPgGNej/IkAI/AAAAALKFlT7v+Hg/yJACP7n9EDxgLSw+AY16P1B6xTworHQ/soWVPlvTbj9r7fg+qfRUPwAAgD9D7hk5qgGOOaj0VD+yhZU+W9NuP6oBjjkprHQ/AACAP0PuGTlr7fg+EXh7P7KFlT5h9n8/Npp8Pxo0eT8AAIA/K2WJPa2weT8aNHk/soWVPmH2fz+tsHk/EXh7PwAAgD8rZYk9Npp8Pwi8fT+yhZU+jYx/PbcEfT8ReHs/AACAP4XCfj9A7n8/EXh7P7KFlT6NjH89QO5/Pwi8fT8AAIA/hcJ+P7cEfT+5/RA8YC0sPnMufT/HScI+uf2QPLKFlT6Fwn4/2YldP7n9EDyyhZU+cy59P9mJXT+5/ZA8YC0sPoXCfj/HScI+"),
-"format": 34359742519,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_ar03h"),
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 24,
-"vertex_data": PackedByteArray("AAAAvwAA4MAAACZCAAAAvwAA4EAAABrCAAAAvwAA4EAAACZCAAAAvwAA4MAAABrCAAAAvwAA4MAAABrCAAAAPwAA4EAAABrCAAAAvwAA4EAAABrCAAAAPwAA4MAAABrCAAAAPwAA4MAAABrCAAAAPwAA4EAAACZCAAAAPwAA4EAAABrCAAAAPwAA4MAAACZCAAAAvwAA4MAAABrCAAAAPwAA4MAAACZCAAAAPwAA4MAAABrCAAAAvwAA4MAAACZCAAAAPwAA4EAAABrCAAAAvwAA4EAAACZCAAAAvwAA4EAAABrCAAAAPwAA4EAAACZCAAAAPwAA4MAAACZCAAAAvwAA4EAAACZCAAAAPwAA4EAAACZCAAAAvwAA4MAAACZCAAAAgP9/AIAAAACA/38AgAAAAID/fwCAAAAAgP9/AID/////////v/////////+//////////7//////////v///AID/fwCA//8AgP9/AID//wCA/38AgP//AID/fwCAAIAAAAAA/78AgAAAAAD/vwCAAAAAAP+/AIAAAAAA/78AgP//////vwCA//////+/AID//////78AgP//////v/9//38AAP+//3//fwAA/7//f/9/AAD/v/9//38AAP+/")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_wbyt8")
-
 [node name="logo" type="Node3D" unique_id=1608830763 node_paths=PackedStringArray("label")]
 script = ExtResource("1_ciqto")
 label = NodePath("CanvasLayer/Label")
@@ -1505,7 +1470,6 @@ stream = ExtResource("2_snm24")
 
 [node name="AudioStreamPlayer_Crickets" type="AudioStreamPlayer" parent="." unique_id=1468954420]
 stream = ExtResource("2_o4sbl")
-bus = &"Lower"
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1609459850]
 transform = Transform3D(-0.38103968, -0.24548922, 0.8913719, 0, 0.96410525, 0.26552042, -0.9245587, 0.10117382, -0.36736235, 5.5398483, 3.6196318, -2.9402514)
@@ -1683,12 +1647,8 @@ transform = Transform3D(0, 0.09043384, 0, 0, 0, -0.09043384, -0.09043384, 0, 0, 
 mesh = SubResource("ArrayMesh_c7xyv")
 
 [node name="Cube_041" type="MeshInstance3D" parent="logo" unique_id=93017918]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.5743086, -10, -0.5, 8.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.704, -10, -0.5, 25.991043)
 mesh = SubResource("ArrayMesh_g5fpw")
-
-[node name="Cube_046" type="MeshInstance3D" parent="logo" unique_id=1947709262]
-transform = Transform3D(1, 0, 0, 0, 3.2015517, 0, 0, 0, 1.9843792, -30.5, 14.574982, 40.85108)
-mesh = SubResource("ArrayMesh_5ycvm")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=720047172]
 
