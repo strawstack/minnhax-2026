@@ -4071,12 +4071,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.046706617, 0.11396885, 0.02
 [node name="diana" type="Node3D" parent="." unique_id=33160197]
 transform = Transform3D(0.79863554, 0, -0.601815, 0, 1, 0, 0.601815, 0, 0.79863554, -1.4011809, 6.011517, -17.423618)
 
-[node name="Mouth" parent="diana" unique_id=1139275092 instance=ExtResource("6_gsw74")]
-transform = Transform3D(-0.020777881, 0, -0.9997837, 0, 1, 0, 0.9997837, 0, -0.020777881, 0.2215724, 1.544177, 0.0127334595)
-characterName = "Yu"
-
 [node name="Armature" type="Node3D" parent="diana" unique_id=1678585012]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1506257, 0)
 
 [node name="Skeleton3D" type="Skeleton3D" parent="diana/Armature" unique_id=972368519]
 bones/0/name = "Bone"
@@ -4186,6 +4182,10 @@ bone_idx = 1
 [node name="Sphere" type="MeshInstance3D" parent="diana/Armature/Skeleton3D/Bone_001" unique_id=760769373]
 transform = Transform3D(0.22194968, 0, 0, 0, 0.22194968, 0, 0, 0, 0.22194968, 1.8544112e-08, 0.24000013, 3.4308112e-11)
 mesh = SubResource("ArrayMesh_5vecs")
+
+[node name="Mouth" parent="diana/Armature/Skeleton3D/Bone_001/Sphere" unique_id=1139275092 instance=ExtResource("6_gsw74")]
+transform = Transform3D(-0.09361529, 0, -4.504551, 0, 4.505525, 0, 4.504551, 0, -0.09361529, 1.0059395, -0.43078613, -0.0023841858)
+characterName = "Yu"
 
 [node name="Cube_005" type="MeshInstance3D" parent="diana/Armature/Skeleton3D/Bone_001/Sphere" unique_id=1858339612]
 transform = Transform3D(4.5055246, 0, 0, 0, 4.5055246, 0, 0, 0, 4.5055246, 0, -0.9461622, 0)

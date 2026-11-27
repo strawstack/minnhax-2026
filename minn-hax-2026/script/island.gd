@@ -417,4 +417,5 @@ func _process(delta: float) -> void:
 func _on_area_3d_final_exit_body_entered(body: Node3D) -> void:
 	if not once_setObjectiveX:
 		once_setObjectiveX = true
+		gc.playBGM("greenday")
 		gc.setObjectiveLetter("x")

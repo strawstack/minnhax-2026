@@ -160,6 +160,7 @@ func exitJeepSceneComplete():
 	agent2.setCameraActive()
 	agent2.localFreeze = false
 	gc.playerCanMove = true
+	gc.setObjectiveLetter("i2")
 	gc.showObjective()
 
 func hideAndFreezeAgentShowIdlePose():

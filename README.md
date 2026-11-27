@@ -6,6 +6,19 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 - CONFIRM: Cowbell: Ability to play cowbell during final performance
 
+- Submit game on itch io
+  - Game description
+  - Screenshots
+  - Controls
+  - Credits: Richard, Yu, CrabPalace
+  - Links to Youtube music
+  - Music credits: AudioLibrary
+  - No AI statement
+
+- Upload tracks to Youtube
+
+# Done
+
 - use dirt crumble to hide shimmy
 - show driving controls top right
 - await tacsim sound effect before fading into freelancer
@@ -24,31 +37,20 @@ Godot project files for the MinnHax 2026 Game Jam.
 - door close in club plays driving sound?
 - "play cowbell with spacebar" label on screen during rap
 - reset watch look in case player plays a second time
-
-- Submit game on itch io
-  - Game description
-  - Screenshots
-  - Controls
-  - Credits: Richard, Yu, CrabPalace
-  - Links to Youtube music
-  - Music credits: AudioLibrary
-  - No AI statement
-
-- Upload tracks to Youtube
-
-# Done
-
+- update objective once you are out of the jeep
+- its dark in the freelancer hallway
+- collider on shooting exit door
+- add bgm to exit and credits?
+- place collider on fridge
+- yu char model might be a bit underground
 - Before apartment show loading: this may take a minute
-
 - blue bin floor bedroom remove physics
 - low battery sound should await to prevent deamp by voice line on chopper
 - the unknown people say crab top right over and over
 - my dialog after beach tape is under the fade
   - place a fade behind the dialog and call it from beach_party
 - jeep can drive through walls during greenday training
-
 - Show player cursor after dialogs in apartment
-
 - GreenDay jeep vanishes after exit jeep cutscene and should stay around as you walk up the stairs
 - During "...going to cinnabon" line I think I saw the player in the left side of shot. Make sure play is hidden for this scene
 - Crosshairs missing in greenday training (fix throughout)
@@ -158,6 +160,8 @@ Godot project files for the MinnHax 2026 Game Jam.
   - Name and export clips
 
 # Cancel
+
+- stop boat sound on scene change
 
 - there's no collider on the glass tank in main room of freelancer house
 

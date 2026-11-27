@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bugwpg2o7w3gw" path="res://scene/player.tscn" id="2_y4fha"]
 [ext_resource type="PackedScene" uid="uid://7w7qj04mf06d" path="res://scene/minn_max_logo.tscn" id="5_k82v5"]
 [ext_resource type="Script" uid="uid://bikli38xhfa12" path="res://script/dialogTriggerZone.gd" id="6_cwgp8"]
+[ext_resource type="Material" uid="uid://b8vlsfiq51xyb" path="res://material/flat_black.tres" id="7_qui1e"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_k82v5"]
 sky_top_color = Color(0.09654612, 0.12467157, 0.16213462, 1)
@@ -457,22 +458,27 @@ surface_material_override/0 = SubResource("StandardMaterial3D_7gvk8")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="shimBlock" unique_id=1848740476]
 transform = Transform3D(0.23607734, 0.05847479, -0.9699733, -0.13717583, 0.9901973, 0.026307398, 0.96200323, 0.12684634, 0.2417845, 16.92968, 0, -4.8249445)
 mesh = SubResource("BoxMesh_jd5n0")
+surface_material_override/0 = ExtResource("7_qui1e")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="shimBlock" unique_id=882233421]
 transform = Transform3D(0.23607734, 0.05847479, -0.9699733, -0.13717583, 0.9901973, 0.026307398, 0.96200323, 0.12684634, 0.2417845, 16.92968, 1.9942343, -5.1123857)
 mesh = SubResource("BoxMesh_jd5n0")
+surface_material_override/0 = ExtResource("7_qui1e")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="shimBlock" unique_id=558166703]
 transform = Transform3D(-0.7919384, -0.24918047, -0.55744284, 0.31786352, 0.61124307, -0.72480667, 0.5213407, -0.7511929, -0.4048616, 16.92968, 0.8025694, -3.820827)
 mesh = SubResource("BoxMesh_jd5n0")
+surface_material_override/0 = ExtResource("7_qui1e")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="shimBlock" unique_id=1582786386]
 transform = Transform3D(-0.7919384, -0.24918047, -0.55744284, 0.31786352, 0.61124307, -0.72480667, 0.5213407, -0.7511929, -0.4048616, 16.92968, 0.8025694, -5.5160427)
 mesh = SubResource("BoxMesh_jd5n0")
+surface_material_override/0 = ExtResource("7_qui1e")
 
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="shimBlock" unique_id=1234879149]
 transform = Transform3D(-0.010579429, -0.48009175, 0.8771545, -0.8532829, -0.453013, -0.2582386, 0.5213408, -0.75119305, -0.40486163, 16.92968, 1.8455778, -3.5247471)
 mesh = SubResource("BoxMesh_jd5n0")
+surface_material_override/0 = ExtResource("7_qui1e")
 
 [connection signal="body_entered" from="blocksAndAreas/Area3D_TriggerEnemies" to="blocksAndAreas/Area3D_TriggerEnemies" method="_on_body_entered"]
 [connection signal="body_entered" from="blocksAndAreas/Area3D_YouAlright" to="blocksAndAreas/Area3D_YouAlright" method="_on_body_entered"]

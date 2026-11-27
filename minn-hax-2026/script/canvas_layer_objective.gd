@@ -10,6 +10,7 @@ const objectives = {
 	"g": "Explore the beach.",
 	"h": "Talk to GreenDay near the jeep.",
 	"i": "Drive the jeep to the training area.",
+	"i2": "Go up the stairs and meet your peers.",
 	"j": "Shoot three targets.",
 	"k": "Complete the course and get the flag.",
 	"l": "Explore MII6.",
