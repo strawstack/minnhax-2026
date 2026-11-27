@@ -6,7 +6,6 @@
 [ext_resource type="Material" uid="uid://b7md4g8kbwi5j" path="res://material/seat_black.tres" id="3_8ovo4"]
 [ext_resource type="Material" uid="uid://c0ayg3mf4l6lc" path="res://material/rust_triplanar.tres" id="3_aa57k"]
 [ext_resource type="Material" uid="uid://b7qpcnmvd3dia" path="res://material/grass_dirt.tres" id="3_psymu"]
-[ext_resource type="Material" uid="uid://b4gnh15gsrjv7" path="res://material/sand_stone_light_normal_map.tres" id="4_aa57k"]
 [ext_resource type="Material" uid="uid://c7oi8u3rqaycw" path="res://material/red_rust_triplanar.tres" id="4_laybu"]
 [ext_resource type="Material" uid="uid://hi4gayacy3ex" path="res://material/water_opaque.tres" id="4_psymu"]
 [ext_resource type="Material" uid="uid://doihrx6e7h62l" path="res://material/red_flag.tres" id="5_b40wg"]
@@ -15,8 +14,10 @@
 [ext_resource type="Material" uid="uid://dw0rl4lsy5uh2" path="res://material/moss_grass.tres" id="8_laybu"]
 [ext_resource type="Material" uid="uid://bd86yojyk0kcu" path="res://material/dark_grass_dirt.tres" id="11_b40wg"]
 [ext_resource type="Material" uid="uid://cx2sgyfb2lka2" path="res://material/moss_grass_triplanar.tres" id="13_8aka5"]
+[ext_resource type="Material" uid="uid://cuojgq7g8mxc5" path="res://material/good_sand.tres" id="15_6j5pe"]
 [ext_resource type="Material" uid="uid://due5oug3u2p8x" path="res://material/rust_on_door.tres" id="15_beybm"]
 [ext_resource type="Material" uid="uid://6bicb1pey7la" path="res://material/bin_blue.tres" id="18_beybm"]
+[ext_resource type="Material" uid="uid://dm5d4wkhvfsuy" path="res://material/good_sand_secondary.tres" id="18_d0lte"]
 [ext_resource type="Material" uid="uid://dstbnbfd8utx7" path="res://material/bin_dark_blue.tres" id="19_6j5pe"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2na38"]
@@ -32848,7 +32849,7 @@ shape = SubResource("ConcavePolygonShape3D_j0c30")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66.5, 35.5, -51.5)
 gi_mode = 0
 mesh = SubResource("ArrayMesh_gpvew")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("15_6j5pe")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_501" unique_id=1654387634]
 
@@ -32857,8 +32858,9 @@ shape = SubResource("ConcavePolygonShape3D_slxcy")
 
 [node name="Cube_502" type="MeshInstance3D" parent="Wall" unique_id=1255640506]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 30.8, -30)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_2pxg0")
-surface_material_override/0 = ExtResource("4_aa57k")
+surface_material_override/0 = ExtResource("15_6j5pe")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_502" unique_id=1443351953]
 
@@ -32869,7 +32871,7 @@ shape = SubResource("ConcavePolygonShape3D_xm85k")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82.450005, 35.5, -28.5)
 gi_mode = 0
 mesh = SubResource("ArrayMesh_gvt36")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("15_6j5pe")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_503" unique_id=750196983]
 
@@ -32880,7 +32882,7 @@ shape = SubResource("ConcavePolygonShape3D_5kuq4")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 35.5, -8.5)
 gi_mode = 0
 mesh = SubResource("ArrayMesh_1mq24")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("15_6j5pe")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_504" unique_id=898765073]
 
@@ -32950,6 +32952,7 @@ shape = SubResource("ConcavePolygonShape3D_fg37f")
 
 [node name="Cube_512" type="MeshInstance3D" parent="Wall" unique_id=1136930277]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.5, 31.5, 17.5)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_6lt6r")
 surface_material_override/0 = ExtResource("3_psymu")
 
@@ -33325,7 +33328,7 @@ shape = SubResource("ConcavePolygonShape3D_qdsyg")
 [node name="Cube_613" type="MeshInstance3D" parent="Wall" unique_id=488871522]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75, 33.55, -32)
 mesh = SubResource("ArrayMesh_7cmy2")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("18_d0lte")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_613" unique_id=2018125760]
 
@@ -33597,7 +33600,7 @@ shape = SubResource("ConcavePolygonShape3D_050yb")
 [node name="Cube_726" type="MeshInstance3D" parent="Wall" unique_id=1475760999]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68, 33.3, -20.5)
 mesh = SubResource("ArrayMesh_636xq")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("15_6j5pe")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_726" unique_id=379374759]
 
@@ -33617,7 +33620,7 @@ shape = SubResource("ConcavePolygonShape3D_f8538")
 [node name="Cube_728" type="MeshInstance3D" parent="Wall" unique_id=626961854]
 transform = Transform3D(3.5762787e-07, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 3.5762787e-07, 53.09997, 36.35, -21.899996)
 mesh = SubResource("ArrayMesh_4f1cl")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("18_d0lte")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_728" unique_id=1545735995]
 
@@ -33627,7 +33630,7 @@ shape = SubResource("ConcavePolygonShape3D_cglb0")
 [node name="Cube_730" type="MeshInstance3D" parent="Wall" unique_id=1806975580]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68, 33.55, -25)
 mesh = SubResource("ArrayMesh_tjrxu")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("18_d0lte")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_730" unique_id=1364747007]
 
@@ -33637,7 +33640,7 @@ shape = SubResource("ConcavePolygonShape3D_o5mpj")
 [node name="Cube_731" type="MeshInstance3D" parent="Wall" unique_id=1128094647]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75, 33.55, -25)
 mesh = SubResource("ArrayMesh_oyhs2")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("18_d0lte")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_731" unique_id=1128334504]
 
@@ -33647,7 +33650,7 @@ shape = SubResource("ConcavePolygonShape3D_fhs06")
 [node name="Cube_732" type="MeshInstance3D" parent="Wall" unique_id=1795301855]
 transform = Transform3D(0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 0, 0, 1, 57.35, 32.35, -13)
 mesh = SubResource("ArrayMesh_ifflm")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("18_d0lte")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_732" unique_id=1770697651]
 
@@ -33657,7 +33660,7 @@ shape = SubResource("ConcavePolygonShape3D_ss8ua")
 [node name="Cube_733" type="MeshInstance3D" parent="Wall" unique_id=1485576857]
 transform = Transform3D(1, 0, 0, 0, 0.8660254, -0.5, 0, 0.5, 0.8660254, 53.1, 35.35, -18.300001)
 mesh = SubResource("ArrayMesh_qlulq")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("18_d0lte")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_733" unique_id=798260981]
 
@@ -33667,7 +33670,7 @@ shape = SubResource("ConcavePolygonShape3D_eomxb")
 [node name="Cube_734" type="MeshInstance3D" parent="Wall" unique_id=1020644669]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55, 36.3, -31.5)
 mesh = SubResource("ArrayMesh_tb4g7")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("15_6j5pe")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_734" unique_id=432664885]
 
@@ -33677,7 +33680,7 @@ shape = SubResource("ConcavePolygonShape3D_nwq3m")
 [node name="Cube_735" type="MeshInstance3D" parent="Wall" unique_id=1146614726]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55, 36.3, -42.5)
 mesh = SubResource("ArrayMesh_nx0ei")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("15_6j5pe")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_735" unique_id=386595925]
 
@@ -33687,7 +33690,7 @@ shape = SubResource("ConcavePolygonShape3D_r0w6q")
 [node name="Cube_736" type="MeshInstance3D" parent="Wall" unique_id=1298493945]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.5, 36.3, -40)
 mesh = SubResource("ArrayMesh_ss1we")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("15_6j5pe")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_736" unique_id=1527789616]
 
@@ -33697,7 +33700,7 @@ shape = SubResource("ConcavePolygonShape3D_ptfnl")
 [node name="Cube_737" type="MeshInstance3D" parent="Wall" unique_id=1155901664]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65.5, 36.3, -31.5)
 mesh = SubResource("ArrayMesh_v3dsq")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("15_6j5pe")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_737" unique_id=1415861371]
 
@@ -33707,7 +33710,7 @@ shape = SubResource("ConcavePolygonShape3D_vxynr")
 [node name="Cube_738" type="MeshInstance3D" parent="Wall" unique_id=1243596203]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.5, 36.3, -37)
 mesh = SubResource("ArrayMesh_kickm")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("15_6j5pe")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_738" unique_id=931373129]
 
@@ -33717,7 +33720,7 @@ shape = SubResource("ConcavePolygonShape3D_io7j0")
 [node name="Cube_739" type="MeshInstance3D" parent="Wall" unique_id=1169371414]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 62.5, 36.3, -42.5)
 mesh = SubResource("ArrayMesh_mpey8")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("15_6j5pe")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_739" unique_id=1117971612]
 
@@ -33727,7 +33730,7 @@ shape = SubResource("ConcavePolygonShape3D_qypfu")
 [node name="Cube_740" type="MeshInstance3D" parent="Wall" unique_id=684224322]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.5, 36.3, -32.5)
 mesh = SubResource("ArrayMesh_r5o3t")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("15_6j5pe")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_740" unique_id=494983823]
 
@@ -33737,7 +33740,7 @@ shape = SubResource("ConcavePolygonShape3D_04w4r")
 [node name="Cube_741" type="MeshInstance3D" parent="Wall" unique_id=1876325963]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.5, 36.3, -42.5)
 mesh = SubResource("ArrayMesh_lpaf8")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("15_6j5pe")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_741" unique_id=335378515]
 
@@ -33747,7 +33750,7 @@ shape = SubResource("ConcavePolygonShape3D_gtdoa")
 [node name="Cube_742" type="MeshInstance3D" parent="Wall" unique_id=907072138]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.6, 36.3, -20.5)
 mesh = SubResource("ArrayMesh_ycubp")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("15_6j5pe")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_742" unique_id=1679393367]
 
@@ -33757,7 +33760,7 @@ shape = SubResource("ConcavePolygonShape3D_qk5hn")
 [node name="Cube_743" type="MeshInstance3D" parent="Wall" unique_id=1667605492]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75, 36.3, -20.5)
 mesh = SubResource("ArrayMesh_hfvyr")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("15_6j5pe")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_743" unique_id=120181810]
 
@@ -33767,7 +33770,7 @@ shape = SubResource("ConcavePolygonShape3D_k1mq4")
 [node name="Cube_746" type="MeshInstance3D" parent="Wall" unique_id=759326885]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.1, 33.85, -20.5)
 mesh = SubResource("ArrayMesh_rhlv2")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("15_6j5pe")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_746" unique_id=849127666]
 
@@ -33777,7 +33780,7 @@ shape = SubResource("ConcavePolygonShape3D_oskph")
 [node name="Cube_748" type="MeshInstance3D" parent="Wall" unique_id=1018872861]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.1, 33.1, -13.799999)
 mesh = SubResource("ArrayMesh_jb8b8")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("18_d0lte")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_748" unique_id=813806301]
 
@@ -33787,7 +33790,7 @@ shape = SubResource("ConcavePolygonShape3D_u28ud")
 [node name="Cube_752" type="MeshInstance3D" parent="Wall" unique_id=1595467359]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75, 32.7975, -37.5)
 mesh = SubResource("ArrayMesh_2h3y7")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("18_d0lte")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_752" unique_id=1100192269]
 
@@ -33797,7 +33800,7 @@ shape = SubResource("ConcavePolygonShape3D_mqoq3")
 [node name="Cube_757" type="MeshInstance3D" parent="Wall" unique_id=1326834635]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75, 31.85, -41)
 mesh = SubResource("ArrayMesh_tommf")
-surface_material_override/0 = ExtResource("5_cdm7x")
+surface_material_override/0 = ExtResource("18_d0lte")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Wall/Cube_757" unique_id=843317479]
 
@@ -34100,6 +34103,7 @@ shape = SubResource("ConcavePolygonShape3D_kyfdf")
 
 [node name="Cube_903" type="MeshInstance3D" parent="Wall" unique_id=1330676632]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45, 31.5, 4)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_6s218")
 surface_material_override/0 = ExtResource("3_psymu")
 
@@ -34125,6 +34129,7 @@ mesh = SubResource("ArrayMesh_h36wd")
 
 [node name="Cube_141" type="MeshInstance3D" parent="WallInvisible" unique_id=1641557629]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.7, 32.55, -22.074999)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_cx1or")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_141" unique_id=870220868]
@@ -34136,6 +34141,7 @@ shape = SubResource("ConcavePolygonShape3D_uxwy3")
 
 [node name="Cube_749" type="MeshInstance3D" parent="WallInvisible" unique_id=1680747467]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.5, 35.5, -18.5)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_l6eam")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_749" unique_id=1653976844]
@@ -34147,6 +34153,7 @@ shape = SubResource("ConcavePolygonShape3D_xgd33")
 
 [node name="Cube_849" type="MeshInstance3D" parent="WallInvisible" unique_id=558563810]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65, 50, 29)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_2gwfr")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_849" unique_id=1430839064]
@@ -34158,6 +34165,7 @@ shape = SubResource("ConcavePolygonShape3D_dhgln")
 
 [node name="Cube_850" type="MeshInstance3D" parent="WallInvisible" unique_id=699966993]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59.5, 50, 18)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_2xyol")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_850" unique_id=30805640]
@@ -34169,6 +34177,7 @@ shape = SubResource("ConcavePolygonShape3D_d46v1")
 
 [node name="Cube_851" type="MeshInstance3D" parent="WallInvisible" unique_id=1164359980]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 50, 16.5)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_j3e6w")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_851" unique_id=2034704029]
@@ -34180,6 +34189,7 @@ shape = SubResource("ConcavePolygonShape3D_tc5di")
 
 [node name="Cube_852" type="MeshInstance3D" parent="WallInvisible" unique_id=703045281]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.5, 50, 11)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_xnqgi")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_852" unique_id=2129057047]
@@ -34191,6 +34201,7 @@ shape = SubResource("ConcavePolygonShape3D_n83cv")
 
 [node name="Cube_853" type="MeshInstance3D" parent="WallInvisible" unique_id=843303875]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56, 50, 9)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_08q2h")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_853" unique_id=1129835827]
@@ -34202,6 +34213,7 @@ shape = SubResource("ConcavePolygonShape3D_liq8k")
 
 [node name="Cube_854" type="MeshInstance3D" parent="WallInvisible" unique_id=1506373902]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60, 50, -2)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_0y26d")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_854" unique_id=913304746]
@@ -34213,6 +34225,7 @@ shape = SubResource("ConcavePolygonShape3D_gvwgf")
 
 [node name="Cube_855" type="MeshInstance3D" parent="WallInvisible" unique_id=1049772802]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.5, 50, -13)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_r4n2s")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_855" unique_id=1678068849]
@@ -34224,6 +34237,7 @@ shape = SubResource("ConcavePolygonShape3D_p7lag")
 
 [node name="Cube_856" type="MeshInstance3D" parent="WallInvisible" unique_id=727873819]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 50, -29.5)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_f2be8")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_856" unique_id=1105496157]
@@ -34235,6 +34249,7 @@ shape = SubResource("ConcavePolygonShape3D_o67dg")
 
 [node name="Cube_857" type="MeshInstance3D" parent="WallInvisible" unique_id=1800932951]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 50, -44)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_oyy0m")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_857" unique_id=2010554213]
@@ -34246,6 +34261,7 @@ shape = SubResource("ConcavePolygonShape3D_eg8ku")
 
 [node name="Cube_858" type="MeshInstance3D" parent="WallInvisible" unique_id=1626411239]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 50, -53.5)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_4h1c1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_858" unique_id=766552031]
@@ -34257,6 +34273,7 @@ shape = SubResource("ConcavePolygonShape3D_r7xi1")
 
 [node name="Cube_859" type="MeshInstance3D" parent="WallInvisible" unique_id=433908016]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.5, 50, -61)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_rr0w3")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_859" unique_id=617349886]
@@ -34268,6 +34285,7 @@ shape = SubResource("ConcavePolygonShape3D_8u17c")
 
 [node name="Cube_860" type="MeshInstance3D" parent="WallInvisible" unique_id=829811477]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.5, 50, -56.5)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_58oum")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_860" unique_id=1810544125]
@@ -34279,6 +34297,7 @@ shape = SubResource("ConcavePolygonShape3D_2dxel")
 
 [node name="Cube_861" type="MeshInstance3D" parent="WallInvisible" unique_id=161683356]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5, 50, -59)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_2cna2")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_861" unique_id=1408953690]
@@ -34290,6 +34309,7 @@ shape = SubResource("ConcavePolygonShape3D_job74")
 
 [node name="Cube_862" type="MeshInstance3D" parent="WallInvisible" unique_id=1642667942]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5, 50, -61)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_4ey3t")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_862" unique_id=79168728]
@@ -34301,6 +34321,7 @@ shape = SubResource("ConcavePolygonShape3D_68qx3")
 
 [node name="Cube_863" type="MeshInstance3D" parent="WallInvisible" unique_id=718109575]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 50, -64)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_5o7x1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_863" unique_id=1563337355]
@@ -34312,6 +34333,7 @@ shape = SubResource("ConcavePolygonShape3D_nssoi")
 
 [node name="Cube_864" type="MeshInstance3D" parent="WallInvisible" unique_id=2138500142]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 50, -52)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_c2d8u")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_864" unique_id=1142263440]
@@ -34323,6 +34345,7 @@ shape = SubResource("ConcavePolygonShape3D_jowqm")
 
 [node name="Cube_865" type="MeshInstance3D" parent="WallInvisible" unique_id=1285507403]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.5, 50, -42.5)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_al5vj")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_865" unique_id=440598308]
@@ -34334,6 +34357,7 @@ shape = SubResource("ConcavePolygonShape3D_ho8nt")
 
 [node name="Cube_866" type="MeshInstance3D" parent="WallInvisible" unique_id=278239439]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 50, -45)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_iw33y")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_866" unique_id=359416623]
@@ -34345,6 +34369,7 @@ shape = SubResource("ConcavePolygonShape3D_y4mjb")
 
 [node name="Cube_867" type="MeshInstance3D" parent="WallInvisible" unique_id=743360868]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75, 50, -42.5)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_7jq8a")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_867" unique_id=1494755460]
@@ -34356,6 +34381,7 @@ shape = SubResource("ConcavePolygonShape3D_op6fi")
 
 [node name="Cube_868" type="MeshInstance3D" parent="WallInvisible" unique_id=1671536582]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 77, 50, -18.5)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_3sd58")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_868" unique_id=2124144720]
@@ -34367,6 +34393,7 @@ shape = SubResource("ConcavePolygonShape3D_r4ybp")
 
 [node name="Cube_869" type="MeshInstance3D" parent="WallInvisible" unique_id=1864357596]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 62.5, 50, 3)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_oetvd")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_869" unique_id=1899204868]
@@ -34378,6 +34405,7 @@ shape = SubResource("ConcavePolygonShape3D_poe6h")
 
 [node name="Cube_870" type="MeshInstance3D" parent="WallInvisible" unique_id=139737581]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 50, 17.5)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_bs471")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_870" unique_id=1743721546]
@@ -34389,6 +34417,7 @@ shape = SubResource("ConcavePolygonShape3D_asfey")
 
 [node name="Cube_871" type="MeshInstance3D" parent="WallInvisible" unique_id=525549413]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.5, 50, 30)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_j23qk")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_871" unique_id=95509835]
@@ -34400,6 +34429,7 @@ shape = SubResource("ConcavePolygonShape3D_n26la")
 
 [node name="Cube_872" type="MeshInstance3D" parent="WallInvisible" unique_id=842264247]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 48.5, 43.5)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_6ydx7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_872" unique_id=1734958673]
@@ -34411,6 +34441,7 @@ shape = SubResource("ConcavePolygonShape3D_51a7e")
 
 [node name="Cube_873" type="MeshInstance3D" parent="WallInvisible" unique_id=143931383]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 48.5, 55)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_6qo03")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_873" unique_id=33724116]
@@ -34422,6 +34453,7 @@ shape = SubResource("ConcavePolygonShape3D_dm0wj")
 
 [node name="Cube_874" type="MeshInstance3D" parent="WallInvisible" unique_id=1129784390]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.5, 48.5, 44.5)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_lje26")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_874" unique_id=725954754]
@@ -34433,6 +34465,7 @@ shape = SubResource("ConcavePolygonShape3D_mm226")
 
 [node name="Cube_878" type="MeshInstance3D" parent="WallInvisible" unique_id=978621274]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 71, -4.5)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_iewsj")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_878" unique_id=738663734]
@@ -34444,6 +34477,7 @@ shape = SubResource("ConcavePolygonShape3D_kbe5h")
 
 [node name="Cube_879" type="MeshInstance3D" parent="WallInvisible" unique_id=1324022672]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.5, 50, 40)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_fp8xg")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_879" unique_id=1295930515]
@@ -34455,6 +34489,7 @@ shape = SubResource("ConcavePolygonShape3D_0n2c2")
 
 [node name="Cube_880" type="MeshInstance3D" parent="WallInvisible" unique_id=1937832488]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3999996, 35.5, 2)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_m25yh")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_880" unique_id=1800366671]
@@ -34466,6 +34501,7 @@ shape = SubResource("ConcavePolygonShape3D_pdjof")
 
 [node name="Cube_881" type="MeshInstance3D" parent="WallInvisible" unique_id=1623121893]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.6, 32.65, 2)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_xilnb")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_881" unique_id=956317156]
@@ -34477,6 +34513,7 @@ shape = SubResource("ConcavePolygonShape3D_42rbq")
 
 [node name="Cube_882" type="MeshInstance3D" parent="WallInvisible" unique_id=1958013214]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 36.25, -3.6000004)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_oujvg")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_882" unique_id=1798151468]
@@ -34488,6 +34525,7 @@ shape = SubResource("ConcavePolygonShape3D_mrckb")
 
 [node name="Cube_883" type="MeshInstance3D" parent="WallInvisible" unique_id=122569530]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 38.9, -10.650002)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_yton1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_883" unique_id=1510841293]
@@ -34499,6 +34537,7 @@ shape = SubResource("ConcavePolygonShape3D_kfqy6")
 
 [node name="Cube_884" type="MeshInstance3D" parent="WallInvisible" unique_id=1777135748]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 38.9, -16.25)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_6j34m")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_884" unique_id=529368574]
@@ -34510,6 +34549,7 @@ shape = SubResource("ConcavePolygonShape3D_dqd1l")
 
 [node name="Cube_885" type="MeshInstance3D" parent="WallInvisible" unique_id=240775545]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 32.9, -5.8)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_34fp1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_885" unique_id=526249586]
@@ -34521,6 +34561,7 @@ shape = SubResource("ConcavePolygonShape3D_20f2j")
 
 [node name="Cube_886" type="MeshInstance3D" parent="WallInvisible" unique_id=1008777151]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.5, 32.9, -5.8)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_u37ok")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_886" unique_id=244677811]
@@ -34532,6 +34573,7 @@ shape = SubResource("ConcavePolygonShape3D_fig0a")
 
 [node name="Cube_887" type="MeshInstance3D" parent="WallInvisible" unique_id=305295712]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.8, 32.9, -14.549999)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_1h4ca")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_887" unique_id=838380093]
@@ -34543,6 +34585,7 @@ shape = SubResource("ConcavePolygonShape3D_fryjl")
 
 [node name="Cube_888" type="MeshInstance3D" parent="WallInvisible" unique_id=1650892239]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.75, 32.9, -23.3)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_tmf8r")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_888" unique_id=734874778]
@@ -34554,6 +34597,7 @@ shape = SubResource("ConcavePolygonShape3D_hhaom")
 
 [node name="Cube_889" type="MeshInstance3D" parent="WallInvisible" unique_id=903877544]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.349999, 38, -23.8)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_8yowo")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_889" unique_id=87299681]
@@ -34565,6 +34609,7 @@ shape = SubResource("ConcavePolygonShape3D_byqs7")
 
 [node name="Cube_890" type="MeshInstance3D" parent="WallInvisible" unique_id=1625621584]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 38, -22.9)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_g3ts0")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_890" unique_id=1919289778]
@@ -34576,6 +34621,7 @@ shape = SubResource("ConcavePolygonShape3D_rncge")
 
 [node name="Cube_898" type="MeshInstance3D" parent="WallInvisible" unique_id=243431143]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.699999, 19.8, -19.700005)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_1wdx7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_898" unique_id=1622078345]
@@ -34586,6 +34632,7 @@ shape = SubResource("ConcavePolygonShape3D_x4iy1")
 
 [node name="Cube_899" type="MeshInstance3D" parent="WallInvisible" unique_id=326758312]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.3, 38.9, -10.200001)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_q5awr")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_899" unique_id=2131581374]
@@ -34597,6 +34644,7 @@ shape = SubResource("ConcavePolygonShape3D_q2ai7")
 
 [node name="Cube_900" type="MeshInstance3D" parent="WallInvisible" unique_id=2139322713]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.949999, 38.9, -8.049999)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_pglnf")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_900" unique_id=400416333]
@@ -34608,6 +34656,7 @@ shape = SubResource("ConcavePolygonShape3D_vpmyr")
 
 [node name="Cube_901" type="MeshInstance3D" parent="WallInvisible" unique_id=526204636]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.05, 38.9, -8.049999)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_l0kgd")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_901" unique_id=266264965]
@@ -34619,6 +34668,7 @@ shape = SubResource("ConcavePolygonShape3D_nw1lx")
 
 [node name="Cube_912" type="MeshInstance3D" parent="WallInvisible" unique_id=1035709556]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 50, -38)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_qaptj")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_912" unique_id=1414028368]
@@ -34630,6 +34680,7 @@ shape = SubResource("ConcavePolygonShape3D_dfvsc")
 
 [node name="Cube_1678" type="MeshInstance3D" parent="WallInvisible" unique_id=1115647192]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.7, 31.35, -20.449999)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_061ec")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_1678" unique_id=650721387]
@@ -34641,6 +34692,7 @@ shape = SubResource("ConcavePolygonShape3D_m41dr")
 
 [node name="Cube_1679" type="MeshInstance3D" parent="WallInvisible" unique_id=2014717024]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.3, 34.25, -20.574999)
+gi_mode = 0
 mesh = SubResource("ArrayMesh_7a70i")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WallInvisible/Cube_1679" unique_id=968455544]
