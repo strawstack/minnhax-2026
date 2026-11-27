@@ -4,8 +4,6 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 # Todo
 
-- CONFIRM: Cowbell: Ability to play cowbell during final performance
-
 - Submit game on itch io
   - Game description
   - Screenshots
@@ -19,6 +17,7 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 # Done
 
+- Cowbell: Ability to play cowbell during final performance
 - use dirt crumble to hide shimmy
 - show driving controls top right
 - await tacsim sound effect before fading into freelancer
