@@ -7887,7 +7887,7 @@ mesh = SubResource("ArrayMesh_8g4af")
 surface_material_override/0 = ExtResource("4_tho0w")
 
 [node name="cat_carrier" type="MeshInstance3D" parent="sceneSeeEverything/interview_scene" unique_id=1069714368]
-transform = Transform3D(0.9390204, 0.15135957, 0.30875102, -0.1437865, 0.9884775, -0.04727717, -0.312349, 0, 0.9499673, 15.1, 0.47499996, -11.599999)
+transform = Transform3D(0.9390203, 0.15135956, 0.30875102, -0.14378649, 0.98847747, -0.04727717, -0.31234896, 0, 0.9499673, 15.1, 0.47499996, -11.599999)
 mesh = SubResource("ArrayMesh_m4brd")
 surface_material_override/0 = ExtResource("7_salic")
 
@@ -8019,13 +8019,13 @@ prompt = "talk to bouncer"
 dialogFile = "res://dialog/script/9_club/35_talk_to_bouncer.json"
 
 [node name="minnMaxLogo_RampAnnounce" parent="logoPoints" unique_id=1903920026 instance=ExtResource("26_pvu6s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.639421, 1.6327314, -33.71552)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.11855, 1.4460518, -32.63994)
 prompt = "listen for clues"
 dialogFile = "res://dialog/script/9_club/36_ramp_guy.json"
 startHidden = true
 
 [node name="minnMaxLogo_TouchRamps" parent="logoPoints" unique_id=461043178 instance=ExtResource("26_pvu6s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.679066, 1.6327314, -33.71552)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.679066, 1.6327314, -33.15157)
 prompt = "touch the ramps"
 dialogFile = "res://dialog/script/9_club/37_touch_ramps.json"
 startHidden = true
