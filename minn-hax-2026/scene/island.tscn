@@ -72,7 +72,18 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_cwbx5")
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sc522"]
+sky_top_color = Color(0.3372549, 0.043137256, 0.6784314, 1)
+sky_horizon_color = Color(0.7779754, 0.59537196, 0.9969711, 1)
+ground_bottom_color = Color(0.15686275, 0.4392157, 0.5254902, 1)
+ground_horizon_color = Color(0.65016544, 0.6604825, 0.62228155, 1)
+
+[sub_resource type="Sky" id="Sky_xgph7"]
+sky_material = SubResource("ProceduralSkyMaterial_sc522")
+
 [sub_resource type="Environment" id="Environment_jd5n0"]
+background_mode = 2
+sky = SubResource("Sky_xgph7")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_amm6x"]
 
@@ -7876,7 +7887,7 @@ mesh = SubResource("ArrayMesh_8g4af")
 surface_material_override/0 = ExtResource("4_tho0w")
 
 [node name="cat_carrier" type="MeshInstance3D" parent="sceneSeeEverything/interview_scene" unique_id=1069714368]
-transform = Transform3D(0.9390207, 0.1513596, 0.30875102, -0.14378655, 0.98847777, -0.04727717, -0.31234908, 0, 0.9499673, 15.1, 0.47499996, -11.599999)
+transform = Transform3D(0.93902063, 0.1513596, 0.30875102, -0.14378655, 0.9884777, -0.04727717, -0.31234905, 0, 0.9499673, 15.1, 0.47499996, -11.599999)
 mesh = SubResource("ArrayMesh_m4brd")
 surface_material_override/0 = ExtResource("7_salic")
 

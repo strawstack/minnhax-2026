@@ -18,9 +18,19 @@
 [ext_resource type="Material" uid="uid://c8afg082ijuws" path="res://material/runway.tres" id="15_sc522"]
 [ext_resource type="Material" uid="uid://c5ms3ytoe21hh" path="res://material/hard_floor.tres" id="16_55sxe"]
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hybxs"]
+sky_top_color = Color(0.47058824, 0.6313726, 0.654902, 1)
+sky_horizon_color = Color(0.47058824, 0.6313726, 0.654902, 1)
+ground_bottom_color = Color(0.3764706, 0.6117647, 0.7411765, 1)
+ground_horizon_color = Color(0.5412357, 0.7002293, 0.72354066, 1)
+
+[sub_resource type="Sky" id="Sky_mswub"]
+sky_material = SubResource("ProceduralSkyMaterial_hybxs")
+
 [sub_resource type="Environment" id="Environment_jd5n0"]
-background_mode = 1
+background_mode = 2
 background_color = Color(0.47171968, 0.62988955, 0.6560386, 1)
+sky = SubResource("Sky_mswub")
 
 [sub_resource type="Animation" id="Animation_nusu5"]
 length = 0.001
