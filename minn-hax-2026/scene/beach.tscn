@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://do5h7vuxxxqu0" path="res://script/beach.gd" id="1_dbrq8"]
 [ext_resource type="PackedScene" uid="uid://beb663qt8k7wo" path="res://scene/beach_model.tscn" id="2_enn3f"]
-[ext_resource type="LightmapGIData" uid="uid://btjmvxdaun7dv" path="res://bake/beach.lmbake" id="2_wlmxs"]
 [ext_resource type="PackedScene" uid="uid://bugwpg2o7w3gw" path="res://scene/player.tscn" id="2_y4fha"]
 [ext_resource type="PackedScene" uid="uid://7w7qj04mf06d" path="res://scene/minn_max_logo.tscn" id="5_k82v5"]
 [ext_resource type="Script" uid="uid://bikli38xhfa12" path="res://script/dialogTriggerZone.gd" id="6_cwgp8"]
@@ -305,9 +304,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.008007, 0.24564838, 1.934
 noSkating = true
 hideBoard = true
 
-[node name="LightmapGI" type="LightmapGI" parent="." unique_id=308752786]
-light_data = ExtResource("2_wlmxs")
-
 [node name="beach_model" parent="." unique_id=1069443093 instance=ExtResource("2_enn3f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.001655221, -0.014924049, 0.0062417984)
 
@@ -319,6 +315,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.712933, 11.367319, -16.63
 [node name="SpotLight3D" type="SpotLight3D" parent="beach_shadow/light" unique_id=1751707865]
 transform = Transform3D(0.9773556, 9.249487e-09, -0.2116036, 0.20817646, 0.17924754, 0.96152633, 0.037929434, -0.983804, 0.17518859, -16.841164, 20.77001, 0)
 light_energy = 3.0
+light_bake_mode = 1
 spot_range = 47.015106
 spot_angle = 54.843742
 

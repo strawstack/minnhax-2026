@@ -14,8 +14,6 @@
 [ext_resource type="AudioStream" uid="uid://h5t2cnoxkcok" path="res://audio/soundEffect/glass_break.mp3" id="11_wscrc"]
 [ext_resource type="AudioStream" uid="uid://byshfm0iwkex4" path="res://audio/soundEffect/tatto_needle.mp3" id="12_mswub"]
 
-[sub_resource type="Environment" id="Environment_jd5n0"]
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0ha60"]
 bg_color = Color(0, 0, 0, 0.39215687)
 border_width_left = 10
@@ -152,9 +150,6 @@ canvasLayerDialog = NodePath("../CanvasLayer_Dialog")
 
 [node name="preloadVoice" type="Node3D" parent="." unique_id=2055158885]
 script = ExtResource("3_k65ib")
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=37290506]
-environment = SubResource("Environment_jd5n0")
 
 [node name="CanvasLayer_Interact" type="CanvasLayer" parent="." unique_id=1895858215]
 script = ExtResource("2_0ha60")

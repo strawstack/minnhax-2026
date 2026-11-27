@@ -106,7 +106,7 @@ func _ready() -> void:
 	hideObjective()
 	hideRecording()
 	if DEBUG:
-		loadScene("beach")
+		loadScene("beachParty")
 	else:
 		# Show and Hide these just to make sure
 		$CanvasLayer_Fade.set_visible(true) 

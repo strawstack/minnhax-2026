@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://bugwpg2o7w3gw" path="res://scene/player.tscn" id="2_bny3n"]
 [ext_resource type="PackedScene" uid="uid://cvrutceh1v4q6" path="res://scene/characters/club_dj_mic.tscn" id="3_561al"]
 [ext_resource type="PackedScene" uid="uid://crnjbminop8ik" path="res://scene/beach_model_party.tscn" id="4_0oaca"]
-[ext_resource type="LightmapGIData" uid="uid://jce0e2wngvlt" path="res://bake/beach_party.lmbake" id="4_561al"]
 [ext_resource type="PackedScene" uid="uid://lor47dxqn02d" path="res://scene/le_boo_boo.tscn" id="6_18qxj"]
 [ext_resource type="PackedScene" uid="uid://c7un3a18bmdfx" path="res://scene/target.tscn" id="7_bny3n"]
 [ext_resource type="Material" uid="uid://cv2ac8i6hhmjo" path="res://material/gold_brass.tres" id="7_fsdxv"]
@@ -13,6 +12,8 @@
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_k82v5"]
 sky_top_color = Color(0.8972013, 0.815053, 0.54885375, 1)
 sky_horizon_color = Color(0.62516403, 0.72193825, 0.88654375, 1)
+ground_bottom_color = Color(0.43137255, 0.654902, 0.7294118, 1)
+ground_horizon_color = Color(0.6313726, 0.7254902, 0.8784314, 1)
 
 [sub_resource type="Sky" id="Sky_y4fha"]
 sky_material = SubResource("ProceduralSkyMaterial_k82v5")
@@ -20,7 +21,6 @@ sky_material = SubResource("ProceduralSkyMaterial_k82v5")
 [sub_resource type="Environment" id="Environment_jd5n0"]
 background_mode = 2
 sky = SubResource("Sky_y4fha")
-ambient_light_energy = 0.5
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mk53a"]
 resource_name = "StoneOne"
@@ -304,9 +304,6 @@ script = ExtResource("1_18qxj")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=508102296]
 environment = SubResource("Environment_jd5n0")
 
-[node name="LightmapGI" type="LightmapGI" parent="." unique_id=1385921563]
-light_data = ExtResource("4_561al")
-
 [node name="Player" parent="." unique_id=1371449073 instance=ExtResource("2_bny3n")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4838247, 0.24564838, -0.5392785)
 shootingAllowed = true
@@ -329,6 +326,7 @@ light_bake_mode = 1
 
 [node name="SpotLight3D" type="SpotLight3D" parent="beach_shadow/light" unique_id=947984744]
 transform = Transform3D(1, 0, 0, 0, 0.7071068, 0.7071068, 0, -0.7071068, 0.7071068, 16.077652, -7.20141, 15)
+light_bake_mode = 1
 spot_range = 12.0
 
 [node name="Rocks" type="Node3D" parent="." unique_id=956392159]
