@@ -2740,7 +2740,7 @@ surface_material_override/0 = ExtResource("1_8u6hj")
 shape = SubResource("ConcavePolygonShape3D_d15m6")
 
 [node name="Cube_090" type="MeshInstance3D" parent="Wall" unique_id=175972617]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 12.5, -17)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 12.5, -16.985344)
 mesh = SubResource("ArrayMesh_662au")
 surface_material_override/0 = ExtResource("1_8u6hj")
 

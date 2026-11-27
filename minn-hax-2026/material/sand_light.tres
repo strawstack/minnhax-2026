@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ch3eofv7xkph0"]
+
+[ext_resource type="Texture2D" uid="uid://7y84md3egjxt" path="res://material/texture/sand_texture.tres" id="1_mltim"]
+
+[resource]
+albedo_color = Color(0.97345775, 0.8818776, 0.7426862, 1)
+albedo_texture = ExtResource("1_mltim")
+uv1_triplanar = true

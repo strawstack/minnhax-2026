@@ -25,6 +25,7 @@ const objectives = {
 	"s2": "Explore the club.",
 	"t": "Meet the contact in red.",
 	"u": "Watch LeBooBoo's interview on the central dance floor. Find and take out the band member.",
+	"u2": "Find and take out the band member.",
 	"v": "Head to the central dance floor.",
 	"w": "Exit via the door at the back of the stage.",
 	"x": "Extract to complete your mission."

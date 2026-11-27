@@ -164,6 +164,7 @@ func startRockCatAnimation():
 	$sceneSeeEverything/AnimationPlayer.play("rockCat")
 
 func stopRockCatAnimation():
+	gc.setObjectiveLetter("u2")
 	$sceneSeeEverything/AnimationPlayer.stop()
 
 func showFortyIdleNoAnimDrummer():
