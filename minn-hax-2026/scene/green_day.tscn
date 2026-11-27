@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://bss2sbwso1ylj" path="res://script/green_day.gd" id="1_gtwnb"]
 [ext_resource type="PackedScene" uid="uid://cwfjws3l3654t" path="res://scene/greenday_training_model.tscn" id="2_386c3"]
-[ext_resource type="LightmapGIData" uid="uid://bxix1esnwdxxm" path="res://bake/green_day.lmbake" id="3_xbkkb"]
 [ext_resource type="PackedScene" uid="uid://6gc1yeta3avh" path="res://scene/explode_barrel.tscn" id="4_gpfag"]
 [ext_resource type="PackedScene" uid="uid://xt2olg74fkl8" path="res://scene/jeep.tscn" id="5_ubt6e"]
 [ext_resource type="PackedScene" uid="uid://egojsd03b1cx" path="res://glb/greenDayTraining/agentInPlanePose/agentPlanePose.glb" id="6_y72cq"]
@@ -21,7 +20,18 @@
 [ext_resource type="Material" uid="uid://x41bw7aiyiax" path="res://material/window_clear.tres" id="17_o72e5"]
 [ext_resource type="Script" uid="uid://b3l28wud18kxa" path="res://script/get_active_players.gd" id="19_llgq0"]
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_llgq0"]
+sky_top_color = Color(1, 1, 1, 1)
+sky_horizon_color = Color(0.7357233, 0.63674027, 0.51970917, 1)
+ground_bottom_color = Color(0.30980393, 0.49019608, 0.60784316, 1)
+ground_horizon_color = Color(0.4121767, 0.6083531, 0.73792243, 1)
+
+[sub_resource type="Sky" id="Sky_c7f72"]
+sky_material = SubResource("ProceduralSkyMaterial_llgq0")
+
 [sub_resource type="Environment" id="Environment_jd5n0"]
+background_mode = 2
+sky = SubResource("Sky_c7f72")
 fog_light_color = Color(0.5176471, 0.5529412, 0.60784316, 1)
 fog_density = 0.005
 volumetric_fog_albedo = Color(0.5176471, 0.5529412, 0.60784316, 1)
@@ -2484,13 +2494,7 @@ environment = SubResource("Environment_jd5n0")
 [node name="Camera3D" type="Camera3D" parent="." unique_id=539856491]
 transform = Transform3D(-0.8038575, -0.28610292, 0.5214962, 0, 0.8767265, 0.48098922, -0.59482193, 0.3866468, -0.7047632, 4.604971, 6.728528, 90.950195)
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1931417608]
-transform = Transform3D(0.8660254, 2.1855694e-08, -0.5, 0.4829629, 0.258819, 0.83651626, 0.12940952, -0.9659258, 0.22414382, 0, 48, 0)
-
 [node name="greenday_training_model" parent="." unique_id=1641896734 instance=ExtResource("2_386c3")]
-
-[node name="LightmapGI" type="LightmapGI" parent="." unique_id=1516068207]
-light_data = ExtResource("3_xbkkb")
 
 [node name="Barrels" type="Node3D" parent="." unique_id=1817275297]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
