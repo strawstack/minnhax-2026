@@ -35,6 +35,7 @@
 [ext_resource type="Material" uid="uid://cv2ac8i6hhmjo" path="res://material/gold_brass.tres" id="30_ck08u"]
 [ext_resource type="Material" uid="uid://hi4gayacy3ex" path="res://material/water_opaque.tres" id="30_rn01p"]
 [ext_resource type="Texture2D" uid="uid://iden4mac68f2" path="res://glb/island_club/island_music_club_tattoo_minnMax.png" id="33_7x8he"]
+[ext_resource type="Material" uid="uid://vwxj3ggxshch" path="res://material/fire_red.tres" id="36_ck08u"]
 
 [sub_resource type="Environment" id="Environment_jd5n0"]
 
@@ -6835,6 +6836,12 @@ shadow_mesh = SubResource("ArrayMesh_2ip0n")
 [sub_resource type="BoxShape3D" id="BoxShape3D_uf2ew"]
 size = Vector3(3.222046, 6.722351, 1)
 
+[sub_resource type="BoxMesh" id="BoxMesh_kbkkx"]
+size = Vector3(1.2089844, 0.6993408, 0.14013672)
+
+[sub_resource type="BoxMesh" id="BoxMesh_uf2ew"]
+size = Vector3(0.13378906, 1, 0.09484863)
+
 [node name="island" type="Node3D" unique_id=1778808922 node_paths=PackedStringArray("animationPlayer_Cowbell")]
 script = ExtResource("1_0stp1")
 animationPlayer_Cowbell = NodePath("cowBellGuy/AnimationPlayer_Cowbell")
@@ -6942,6 +6949,7 @@ shape = SubResource("BoxShape3D_0pdau")
 
 [node name="glass_shards" type="Node3D" parent="." unique_id=1540477448 node_paths=PackedStringArray("windowRoof")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.8627746, 0)
+visible = false
 script = ExtResource("5_0pdau")
 windowRoof = NodePath("../windowRoof")
 
@@ -7827,7 +7835,7 @@ mesh = SubResource("ArrayMesh_8g4af")
 surface_material_override/0 = ExtResource("4_tho0w")
 
 [node name="cat_carrier" type="MeshInstance3D" parent="sceneSeeEverything/interview_scene" unique_id=1069714368]
-transform = Transform3D(0.93902105, 0.15135965, 0.30875102, -0.14378661, 0.988478, -0.04727717, -0.3123492, 0, 0.9499673, 15.1, 0.47499996, -11.599999)
+transform = Transform3D(0.9390209, 0.15135963, 0.30875102, -0.14378658, 0.9884779, -0.04727717, -0.31234914, 0, 0.9499673, 15.1, 0.47499996, -11.599999)
 mesh = SubResource("ArrayMesh_m4brd")
 surface_material_override/0 = ExtResource("7_salic")
 
@@ -8632,6 +8640,22 @@ collision_mask = 2
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D_FinalExit" unique_id=400631458]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3098755, 2.8611755, 0)
 shape = SubResource("BoxShape3D_uf2ew")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1695500348]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6978946, 0.9805504, -6.301564)
+mesh = SubResource("BoxMesh_kbkkx")
+surface_material_override/0 = ExtResource("36_ck08u")
+
+[node name="Label3D" type="Label3D" parent="MeshInstance3D" unique_id=1855321992]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0.02394557, -0.10378075)
+text = "Fire Access Only!
+... or if you can't Skate "
+font_size = 18
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D" unique_id=295545817]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.033243895, -0.46784222, 0.010307312)
+mesh = SubResource("BoxMesh_uf2ew")
+surface_material_override/0 = ExtResource("4_tho0w")
 
 [connection signal="body_entered" from="logoPoints/Area3D_ClubHallway" to="logoPoints/Area3D_ClubHallway" method="_on_body_entered"]
 [connection signal="body_entered" from="Area3D_FinalExit" to="." method="_on_area_3d_final_exit_body_entered"]

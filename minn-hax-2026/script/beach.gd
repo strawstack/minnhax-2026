@@ -35,6 +35,8 @@ func removeStaticBody3D_AlrightBlock():
 	$blocksAndAreas/StaticBody3D_AlrightBlock.set_collision_layer_value(5, false)
 
 func removeStaticBody3D_ShimmyBlock():
+	$shimBlock.set_visible(false)
+	gc.playSoundEffect("small_debris")
 	$blocksAndAreas/StaticBody3D_ShimmyBlock.set_collision_layer_value(5, false)
 
 func _process(delta: float) -> void:

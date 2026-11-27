@@ -67,6 +67,7 @@ func driveJeep():
 	$Jeep.showPassengers()
 	$Jeep.canDrive = true
 	gc.playSoundEffect("car_start")
+	$CanvasLayer_DrivingControls.set_visible(true)
 
 func startRolling():
 	$AnimationPlayerMonRoll.play("roll")
@@ -145,6 +146,7 @@ func exitJeep():
 	$JeepParkScene.set_visible(true)
 	agent.localFreeze = true
 	agent2.resetCamera()
+	$CanvasLayer_DrivingControls.set_visible(false)
 
 func switchCameraExitGreenDay():
 	$JeepParkScene/Camera3D_GreenDay.set_current(true)

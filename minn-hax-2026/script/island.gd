@@ -213,7 +213,7 @@ func playerFallAnimationSequence():
 	showfortyIdleNoAnimRoof()
 	$sceneTattoo/AnimationPlayer.play("playerFall")
 	$glass_shards.fall()
-	gc.playSoundEffect("glass_break")
+	gc.playGlassBreak()
 	await $sceneTattoo/AnimationPlayer.animation_finished
 	gc.endAwaitDialog()
 
@@ -221,11 +221,12 @@ func freeShards():
 	$glass_shards.free()
 
 func breakGlassSoundEffect():
-	gc.playGlassBreak()
+	$glass_shards.set_visible(true)
+	gc.playGlassBreakAwait()
 
 func tattooSoundEffectAndFadeIn():
 	gc.fadeIn()
-	gc.playTattooNeedle()
+	gc.playTattooNeedleAwait()
 
 func cameraCloseTattoo():
 	$sceneTattoo/CloseTattoo.set_current(true)
@@ -366,6 +367,7 @@ func meetupDoorOpen():
 	$sceneDrummerDistract/AnimationPlayer.play("meetupDoorOpen")
 
 func meetupDoorClose():
+	gc.playSoundEffect("door_lock")
 	$sceneDrummerDistract/AnimationPlayer.play("meetupDoorClose")
 
 func showMeetupSign():

@@ -3479,6 +3479,22 @@ noSkating = true
 hideBoard = true
 localFreeze = true
 
+[node name="CanvasLayer_DrivingControls" type="CanvasLayer" parent="." unique_id=1159428979]
+visible = false
+
+[node name="Label" type="Label" parent="CanvasLayer_DrivingControls" unique_id=460093443]
+modulate = Color(1, 1, 1, 0.6627451)
+offset_left = 968.0
+offset_top = 16.0
+offset_right = 1151.0
+offset_bottom = 169.0
+text = "Driving Controls
+  W: Backwards
+  S: Also backwards
+  A: Turn left
+  D: Turn right
+  mouse: Rotate camera"
+
 [connection signal="area_entered" from="DoorAreas/MeshInstance3D/PassDoorOne" to="." method="_on_pass_door_one_area_entered"]
 [connection signal="body_entered" from="DoorAreas/MeshInstance3D/PassDoorOne" to="." method="_on_pass_door_one_body_entered"]
 [connection signal="area_entered" from="DoorAreas/MeshInstance3D2/PassDoorTwo" to="." method="_on_pass_door_two_area_entered"]

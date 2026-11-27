@@ -10,7 +10,6 @@ Godot project files for the MinnHax 2026 Game Jam.
 - show driving controls top right
 - await tacsim sound effect before fading into freelancer
 - play door opening sound in freelancer house for doors
-- there's no collider on the glas tank in main room of freelancer house
 - garage door does not play sound in freelancer
 - remove top bar of finishline
 - open shooting tape exit sooner
@@ -20,6 +19,7 @@ Godot project files for the MinnHax 2026 Game Jam.
 - web doesn't support chinese characters, so switch back to "(speaking chinese)"
   - This line guest-voice-acted by Yu's Friend!
 - "Why would I deceve you" line does not play over audio
+
 - remove one couch collider from club
   - to prevent stuck in corner
 - door close in club plays driving sound?
@@ -159,6 +159,8 @@ Godot project files for the MinnHax 2026 Game Jam.
   - Name and export clips
 
 # Cancel
+
+- there's no collider on the glass tank in main room of freelancer house
 
 - show loading before main menu
 

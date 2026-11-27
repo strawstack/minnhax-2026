@@ -4293,6 +4293,7 @@ surface_material_override/0 = ExtResource("9_5a8tt")
 collision_layer = 0
 collision_mask = 2
 script = ExtResource("10_ypev2")
+slideSound = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="doors/Area3D_MainDoor" unique_id=155827023]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.532448, 2.0113199, -6.5569305)
@@ -4332,6 +4333,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.195314, 0, -20.018188)
 collision_layer = 0
 collision_mask = 2
 script = ExtResource("10_ypev2")
+slideSound = true
 
 [node name="sideDoor" type="MeshInstance3D" parent="doors/Area3D_SideDoor" unique_id=464009676]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24531555, 2.5499992, 1.1681862)
@@ -4354,6 +4356,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3, 3.5, -32.25)
 collision_layer = 0
 collision_mask = 2
 script = ExtResource("10_ypev2")
+garageSound = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="doors/Area3D_doorGarage" unique_id=99633805]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0982666, -1.645752, 0.021240234)
@@ -4386,6 +4389,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.299999, 8.900002, -17.150
 collision_layer = 0
 collision_mask = 2
 script = ExtResource("10_ypev2")
+slideSound = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="doors/Area3D_doorSlideUpBath" unique_id=1838706646]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4949646, 0.0071411133, 0.0065078735)
@@ -4636,6 +4640,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.849999, 8.900002, -22.9000
 collision_layer = 0
 collision_mask = 2
 script = ExtResource("10_ypev2")
+slideSound = true
 
 [node name="doorOfficePatio" type="Node3D" parent="doors/Area3D_doorOfficePatio" unique_id=1355188730]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.849999, -8.900002, 22.900003)

@@ -5,6 +5,10 @@
 	},
 	{
 		"name": "Command",
+		"command": "openShootingExitDoor"
+	},
+	{
+		"name": "Command",
 		"command": "hideObjective"
 	},
 	{
@@ -20,10 +24,6 @@
 				"text": "More rap on this one. I’ll play it, so you can listen for information. In the meantime, Q’s algorithm will pinpoint LeBooBoo’s location."
 			}
 		]
-	},
-	{
-		"name": "Command",
-		"command": "openShootingExitDoor"
 	},
 	{
 		"name": "Music",

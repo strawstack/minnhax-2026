@@ -249,10 +249,13 @@ func stopVoice():
 
 func playGlassBreak():
 	$Audio/AudioStreamPlayer_Glass.play()
+
+func playGlassBreakAwait():
+	$Audio/AudioStreamPlayer_Glass.play()
 	await $Audio/AudioStreamPlayer_Glass.finished
 	endAwaitDialog()
 
-func playTattooNeedle():
+func playTattooNeedleAwait():
 	$Audio/AudioStreamPlayer_Tattoo.play()
 	await $Audio/AudioStreamPlayer_Tattoo.finished
 	endAwaitDialog()

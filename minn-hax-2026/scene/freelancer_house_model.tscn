@@ -31131,6 +31131,7 @@ surface_material_override/0 = ExtResource("6_o5ool")
 
 [node name="Cube_774" type="MeshInstance3D" parent="." unique_id=222559052]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64.850006, 4.4, -14.999999)
+visible = false
 mesh = SubResource("ArrayMesh_aw4dr")
 surface_material_override/0 = ExtResource("3_8ovo4")
 

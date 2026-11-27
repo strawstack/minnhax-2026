@@ -77,8 +77,7 @@ func removeBarrier():
 	gc.setObjectiveLetter("m")
 
 func tacSimStartSound():
-	gc.playSoundEffect("tac_sim_start")
-	await get_tree().create_timer(1.0).timeout
+	await gc.playSoundEffectAwait("tac_sim_start")
 	gc.endAwaitDialog()
 
 func _process(delta: float) -> void:
