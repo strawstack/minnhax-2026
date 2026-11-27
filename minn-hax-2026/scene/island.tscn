@@ -8657,5 +8657,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.033243895, -0.46784222, 0.
 mesh = SubResource("BoxMesh_uf2ew")
 surface_material_override/0 = ExtResource("4_tho0w")
 
+[node name="CanvasLayer_CowbellControls" type="CanvasLayer" parent="." unique_id=513062528]
+visible = false
+
+[node name="Label" type="Label" parent="CanvasLayer_CowbellControls" unique_id=1715060410]
+modulate = Color(1, 1, 1, 0.7411765)
+offset_left = 888.0
+offset_top = 64.0
+offset_right = 1090.0
+offset_bottom = 87.0
+text = "'Spacebar' to play Cowbell"
+
 [connection signal="body_entered" from="logoPoints/Area3D_ClubHallway" to="logoPoints/Area3D_ClubHallway" method="_on_body_entered"]
 [connection signal="body_entered" from="Area3D_FinalExit" to="." method="_on_area_3d_final_exit_body_entered"]

@@ -110,9 +110,11 @@ func _ready() -> void:
 		gc.playDialogFile("res://dialog/script/9_club/34_get_off_boat.json")
 
 func allowPlayCowbell():
+	$CanvasLayer_CowbellControls.set_visible(true)
 	canPlayCowbell = true
 
 func stopPlayCowbell():
+	$CanvasLayer_CowbellControls.set_visible(false)
 	canPlayCowbell = false
 
 func objectiveW():

@@ -349,6 +349,7 @@ func sceneHelicopter():
 	await fadeOut()
 	playBGM("helicopter")
 	mouthLookup.clear()
+	lookWatchUnderwater = false
 	loadScene("helicopter")
 
 func loadBeachScene():

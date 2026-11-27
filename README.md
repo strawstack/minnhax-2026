@@ -19,7 +19,6 @@ Godot project files for the MinnHax 2026 Game Jam.
 - web doesn't support chinese characters, so switch back to "(speaking chinese)"
   - This line guest-voice-acted by Yu's Friend!
 - "Why would I deceve you" line does not play over audio
-
 - remove one couch collider from club
   - to prevent stuck in corner
 - door close in club plays driving sound?
