@@ -15,6 +15,9 @@
 [ext_resource type="PackedScene" uid="uid://bk2hv7rgrpui6" path="res://scene/characters/green_day_character.tscn" id="13_aga0h"]
 
 [sub_resource type="Environment" id="Environment_jd5n0"]
+background_mode = 1
+background_color = Color(0.3665946, 0.3665946, 0.36659455, 1)
+background_energy_multiplier = 0.5
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5cy0o"]
 resource_name = "Material"
@@ -1092,9 +1095,16 @@ transform = Transform3D(0.9999988, 0, -0.0015295614, 0, 1, 0, 0.0015295614, 0, 0
 [node name="Target5" parent="Targets" unique_id=142288561 instance=ExtResource("6_w62g6")]
 transform = Transform3D(-0.9150071, 0, -0.40343782, 0, 1, 0, 0.40343782, 0, -0.9150071, -4.9923077, 3.9841185, -21.999147)
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1773735848]
-transform = Transform3D(0.9659258, 0.066987306, 0.25, -0.25881904, 0.25000003, 0.93301266, 0, -0.9659258, 0.25881907, 0, 30.817776, 0)
+[node name="light" type="Node3D" parent="." unique_id=625496126]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="light" unique_id=1773735848]
+transform = Transform3D(0.9659259, 0.06698731, 0.25000003, -0.25881907, 0.25000003, 0.9330127, 0, -0.9659258, 0.2588191, 0, 30.817776, 0)
 light_bake_mode = 1
+
+[node name="OmniLight3D" type="OmniLight3D" parent="light" unique_id=1995484660]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1508076, 6, 4.874782)
+light_bake_mode = 1
+omni_range = 8.429361
 
 [node name="MonRoll" parent="." unique_id=936362553 instance=ExtResource("8_kgecf")]
 transform = Transform3D(0.55609894, 0, -0.8311161, 0, 1, 0, 0.8311161, 0, 0.55609894, -15.6146755, 0, -32.396034)
@@ -1321,6 +1331,13 @@ mesh = SubResource("ArrayMesh_w7lhf")
 
 [node name="TimerComment" type="Timer" parent="." unique_id=471707737]
 one_shot = true
+
+[node name="Label3D2" type="Label3D" parent="." unique_id=1257984544]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.926232, 2.6290364, 2.0025878)
+modulate = Color(0.546734, 0.3925582, 0.22339067, 1)
+outline_modulate = Color(0.42352942, 0.3137255, 0.18039216, 1)
+text = "You're late!
+- from GreenDay"
 
 [connection signal="body_entered" from="door/facade/Area3D" to="door/facade/Area3D" method="_on_body_entered"]
 [connection signal="timeout" from="TimerComment" to="." method="_on_timer_comment_timeout"]
