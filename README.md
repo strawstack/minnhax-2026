@@ -4,6 +4,20 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 # Todo
 
+- Put roof to prevent flying too high in obstacle course
+- Block top stairs has no collider
+
+- Limit jumps because it banks up speed and goes through floor
+  - Player allowed three jumps every four seconds
+- Missing stair at top of freelancer stairs to second floor
+- "good luck on stage" during club performance does not match line. Char name should be MoneyPony to get correct avatar
+
+- Delete a few more bake files to make room for rap and beat from CrabPalace (assume 15Mb)
+  - Remove water and large surfaces from freelancer (global illumunatin disable)
+- If you press e at any time it triggers the last seen logo
+- Swap bump map for texture on greenday level
+- Second obj for if you do interview it should just say "find drummer"
+
 - Submit game on itch io
   - Game description
   - Screenshots
