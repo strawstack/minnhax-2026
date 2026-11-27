@@ -6,7 +6,7 @@ func _ready() -> void:
 	gc = get_tree().current_scene
 	gc.sceneCommandLookup = {
 		"cameraSwitchScreen": cameraSwitchScreen,
-		"switchLowBattery": switchLowBattery,
+		"switchLowBatteryAwait": switchLowBatteryAwait,
 		"triggerExplosionSound": triggerExplosionSound,
 		"waitTwoSeconds": waitTwoSeconds,
 		"showLowBattery": showLowBattery
@@ -31,10 +31,9 @@ func _process(delta: float) -> void:
 func cameraSwitchScreen():
 	$Camera3D_SwitchScreen.set_current(true)
 
-func switchLowBattery():
-	$Sprite3D_Game.set_visible(false)
-	$Sprite3D_LowBattery.set_visible(true)
-	gc.playSoundEffect("low_battery")
+func switchLowBatteryAwait():
+	await gc.playSoundEffectAwait("low_battery")
+	gc.endAwaitDialog()
 
 func triggerExplosionSound():
 	gc.playSoundEffect("rocket_fly_explode")

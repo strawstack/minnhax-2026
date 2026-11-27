@@ -16,4 +16,4 @@ func startScene():
 
 func localFadeIn():
 	gc.playerCanMove = true
-	$CanvasLayer_LocalFade/AnimationPlayer.play("localFadeIn")
+	gc.beachFadeIn()

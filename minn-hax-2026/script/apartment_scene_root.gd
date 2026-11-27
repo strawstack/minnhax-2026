@@ -56,7 +56,7 @@ func warmUpCameras():
 	await get_tree().create_timer(0.5).timeout
 	$ZoomCam.set_current(true)
 	await get_tree().create_timer(0.5).timeout
-	gc.apartmentLoadingDone()
+	gc.hideGameLoading()
 	gc.playBGM("apartment")
 	$SubViewport/underwater.continueScene()
 

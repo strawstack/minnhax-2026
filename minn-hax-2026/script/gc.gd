@@ -67,7 +67,7 @@ const soundEffect = {
 	"item_collect": preload("res://audio/soundEffect/item_collect.mp3"),
 	"jeep_hit": preload("res://audio/soundEffect/jeep_hit.mp3"),
 	"jump": preload("res://audio/soundEffect/jump.mp3"),
-	"low_battery": preload("res://image/low_battery.png"),
+	"low_battery": preload("res://audio/soundEffect/low_battery.mp3"),
 	"rocket_fly_explode": preload("res://audio/soundEffect/rocket_fly_explode.mp3"),
 	"small_debris": preload("res://audio/soundEffect/small_debris.mp3"),
 	"success": preload("res://audio/soundEffect/success.mp3"),
@@ -111,7 +111,14 @@ func _ready() -> void:
 		# Show and Hide these just to make sure
 		$CanvasLayer_Fade.set_visible(true) 
 		$CanvasLayer_MusicDialog.set_visible(false)
+		$CanvasLayer_BeachFade.set_visible(false)
 		loadScene("logo") # Calls "logoSceneEnds" on completion
+
+func beachFadeVisible():
+	$CanvasLayer_BeachFade.set_visible(true)
+
+func beachFadeIn():
+	$CanvasLayer_BeachFade/AnimationPlayer.play("localFadeIn")
 
 func setObjectiveLetter(letter: String):
 	$CanvasLayer_Objective.setObjectiveLetter(letter)
@@ -240,6 +247,16 @@ func hideMusicUI():
 func stopVoice():
 	audioStreamPlayerVoice.stop()
 
+func playGlassBreak():
+	$Audio/AudioStreamPlayer_Glass.play()
+	await $Audio/AudioStreamPlayer_Glass.finished
+	endAwaitDialog()
+
+func playTattooNeedle():
+	$Audio/AudioStreamPlayer_Tattoo.play()
+	await $Audio/AudioStreamPlayer_Tattoo.finished
+	endAwaitDialog()
+
 func logoSceneEnds():
 	await fadeOut()
 	await get_tree().create_timer(1.0).timeout
@@ -250,16 +267,19 @@ func logoSceneEnds():
 	playBGM("tacsim")
 	loadScene("mainMenu2") # Calls "mainMenuStartPress" on completion
 
-func apartmentLoading():
+func showGameLoading(extraText: bool):
+	if extraText:
+		$CanvasLayer_Loading/Label_Extra.set_visible(true)
 	$CanvasLayer_Loading.set_visible(true)
 
-func apartmentLoadingDone():
+func hideGameLoading():
 	$CanvasLayer_Loading.set_visible(false)
+	$CanvasLayer_Loading/Label_Extra.set_visible(false)
 
 func mainMenuStartPress():
 	await fadeOut()
 	stopBGM()
-	apartmentLoading()
+	showGameLoading(true)
 	await get_tree().create_timer(0.5).timeout
 	loadScene("apartment")
 
@@ -339,6 +359,7 @@ func loadBeachScene():
 func loadBeachParty():
 	playerCanMove = false
 	await fadeOut()
+	beachFadeVisible()
 	mouthLookup.clear()
 	loadScene("beachParty")
 

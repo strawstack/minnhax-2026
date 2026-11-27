@@ -221,13 +221,11 @@ func freeShards():
 	$glass_shards.free()
 
 func breakGlassSoundEffect():
-	await gc.playSoundEffectAwait("glass_break")
-	gc.endAwaitDialog()
+	gc.playGlassBreak()
 
 func tattooSoundEffectAndFadeIn():
 	gc.fadeIn()
-	await gc.playSoundEffectAwait("tattoo_needle")
-	gc.endAwaitDialog()
+	gc.playTattooNeedle()
 
 func cameraCloseTattoo():
 	$sceneTattoo/CloseTattoo.set_current(true)

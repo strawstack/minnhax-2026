@@ -28,6 +28,11 @@
 	},
 	{
 		"name": "Command",
+		"command": "switchLowBatteryAwait",
+		"await": true
+	},
+	{
+		"name": "Command",
 		"command": "showDialog"
 	},
 	{

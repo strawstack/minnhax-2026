@@ -6,6 +6,26 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 - CONFIRM: Cowbell: Ability to play cowbell during final performance
 
+- use dirt crumble to hide shimmy
+- show driving controls top right
+- await tacsim sound effect before fading into freelancer
+- play door opening sound in freelancer house for doors
+- there's no collider on the glas tank in main room of freelancer house
+- garage door does not play sound in freelancer
+- remove top bar of finishline
+- open shooting tape exit sooner
+- hide window shards at club so window clear before cutscene
+- a sign that says "fire access only, or if you can't skate"
+- window and tattoo needle need to be louder
+- web doesn't support chinese characters, so switch back to "(speaking chinese)"
+  - This line guest-voice-acted by Yu's Friend!
+- "Why would I deceve you" line does not play over audio
+- remove one couch collider from club
+  - to prevent stuck in corner
+- door close in club plays driving sound?
+- "play cowbell with spacebar" label on screen during rap
+- reset watch look in case player plays a second time
+
 - Submit game on itch io
   - Game description
   - Screenshots
@@ -18,6 +38,15 @@ Godot project files for the MinnHax 2026 Game Jam.
 - Upload tracks to Youtube
 
 # Done
+
+- Before apartment show loading: this may take a minute
+
+- blue bin floor bedroom remove physics
+- low battery sound should await to prevent deamp by voice line on chopper
+- the unknown people say crab top right over and over
+- my dialog after beach tape is under the fade
+  - place a fade behind the dialog and call it from beach_party
+- jeep can drive through walls during greenday training
 
 - Show player cursor after dialogs in apartment
 
@@ -130,6 +159,8 @@ Godot project files for the MinnHax 2026 Game Jam.
   - Name and export clips
 
 # Cancel
+
+- show loading before main menu
 
 - You can spam jump when in skate mode (does this break anything if not don't fix?)
 
