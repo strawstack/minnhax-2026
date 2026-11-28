@@ -4,6 +4,13 @@ Godot project files for the MinnHax 2026 Game Jam.
 
 # Todo
 
+- Fix: TacSim start sound could be louder
+
+- Fix: Reveal the "break window" logo after TCB because ramp guy is optional
+
+- Fix: If you do interview before TCG in club the objectives are incorrect.
+  - Hide interview prompt until you complete TCB in club.
+
 - Add CrabPalace rap to beach.
 
 - Add CrabPalace club loop to club scene.
@@ -17,6 +24,16 @@ Godot project files for the MinnHax 2026 Game Jam.
 - Announce game on Discord after submission.
 
 # Done
+
+- Remove: "turn both knobs line" contains (exactly)
+
+- Remove: Find LeBooBoo and take him down has extra MoneyPony at start of line
+
+- Remove: TCB has "(embphasis)" in the text
+
+- Add "Well GreenDay that is a remarkable story" has GreenDay mispelled (GreeDay)
+
+- Place wall collider on the two windows upstairs. Freelancer.
 
 - You can fly into the chimny
 
