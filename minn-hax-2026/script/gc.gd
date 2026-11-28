@@ -106,7 +106,7 @@ func _ready() -> void:
 	hideObjective()
 	hideRecording()
 	if DEBUG:
-		loadScene("freelancer")
+		loadScene("obstacleCourse")
 	else:
 		# Show and Hide these just to make sure
 		$CanvasLayer_Fade.set_visible(true) 

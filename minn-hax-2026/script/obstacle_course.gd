@@ -44,7 +44,7 @@ func hideFlag():
 	gc.playSoundEffect("flag_flap")
 
 func _process(delta: float) -> void:
-	if not $Player.noSkating and Input.is_action_just_pressed("f_key") and not commentOnce:
+	if not $Player.noSkating and Input.is_action_just_pressed("f_key") and not commentOnce and not gc.dialogInProgress:
 		commentOnce = true
 		$TimerComment.start()
 
