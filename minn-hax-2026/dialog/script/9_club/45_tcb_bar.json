@@ -109,6 +109,10 @@
 	},
 	{
 		"name": "Command",
+		"command": "revealMinnMaxLogo_Interview"
+	},
+	{
+		"name": "Command",
 		"command": "showObjective"
 	}
 ]

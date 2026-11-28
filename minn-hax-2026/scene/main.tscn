@@ -13,6 +13,7 @@
 [ext_resource type="AudioStream" uid="uid://cida67p77piw2" path="res://audio/soundEffect/gun_shot.mp3" id="9_tqoya"]
 [ext_resource type="AudioStream" uid="uid://h5t2cnoxkcok" path="res://audio/soundEffect/glass_break.mp3" id="11_wscrc"]
 [ext_resource type="AudioStream" uid="uid://byshfm0iwkex4" path="res://audio/soundEffect/tatto_needle.mp3" id="12_mswub"]
+[ext_resource type="AudioStream" uid="uid://bwj5m6xvdhsm0" path="res://audio/soundEffect/tac_sim_start.mp3" id="13_hybxs"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0ha60"]
 bg_color = Color(0, 0, 0, 0.39215687)
@@ -415,6 +416,9 @@ stream = ExtResource("11_wscrc")
 
 [node name="AudioStreamPlayer_Tattoo" type="AudioStreamPlayer" parent="Audio" unique_id=412280567]
 stream = ExtResource("12_mswub")
+
+[node name="AudioStreamPlayer_TacSim" type="AudioStreamPlayer" parent="Audio" unique_id=415315227]
+stream = ExtResource("13_hybxs")
 
 [node name="Scene" type="Node3D" parent="." unique_id=1725802773]
 

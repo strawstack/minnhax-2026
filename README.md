@@ -5,11 +5,9 @@ Godot project files for the MinnHax 2026 Game Jam.
 # Todo
 
 - Fix: TacSim start sound could be louder
-
-- Fix: Reveal the "break window" logo after TCB because ramp guy is optional
-
 - Fix: If you do interview before TCG in club the objectives are incorrect.
   - Hide interview prompt until you complete TCB in club.
+- Fix: Reveal the "break window" logo after TCB because ramp guy is optional
 
 - Add CrabPalace rap to beach.
 

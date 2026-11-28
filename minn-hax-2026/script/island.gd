@@ -48,6 +48,7 @@ func _ready() -> void:
 		"switchToPlayer2": switchToPlayer2,
 		"showIdleAtBouncer": showIdleAtBouncer,
 		"showLabel3D_RampTruck": showLabel3D_RampTruck,
+		"revealMinnMaxLogo_Interview": revealMinnMaxLogo_Interview,
 		"revealMinnMaxLogo_RampAnnounce": revealMinnMaxLogo_RampAnnounce,
 		"revealMinnMaxLogo_TouchRamps": revealMinnMaxLogo_TouchRamps,
 		"hideFortyIdleNoAnimRamp": hideFortyIdleNoAnimRamp,
@@ -125,6 +126,9 @@ func objectiveT():
 
 func revealMinnMaxLogo_CreditsExit():
 	$logoPoints/minnMaxLogo_CreditsExit.reveal()
+
+func revealMinnMaxLogo_Interview():
+	$logoPoints/minnMaxLogo_Interview.reveal()
 
 func hideIdlePostShowAgent():
 	$postShowTalk/fortyIdleNoAnim.set_visible(false)
@@ -271,10 +275,10 @@ func hideFortyIdleNoAnimRamp():
 
 func revealMinnMaxLogo_RampAnnounce():
 	$logoPoints/minnMaxLogo_RampAnnounce.reveal()
+	$logoPoints/minnMaxLogo_Window.reveal()
 
 func revealMinnMaxLogo_TouchRamps():
 	$logoPoints/minnMaxLogo_TouchRamps.reveal()
-	$logoPoints/minnMaxLogo_Window.reveal()
 
 func showLabel3D_RampTruck():
 	$Label3D_RampTruck.set_visible(true)

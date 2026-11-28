@@ -161,6 +161,10 @@ func playSoundEffectAwait(effectName: String):
 func targetHit():
 	$Audio/AudioStreamPlayer_TargetHit.play()
 
+func playTacSimAwait():
+	$Audio/AudioStreamPlayer_TacSim.play()
+	await $Audio/AudioStreamPlayer_TacSim.finished
+
 func gunShoot():
 	$Audio/AudioStreamPlayer_Shoot.play()
 

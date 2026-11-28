@@ -7887,7 +7887,7 @@ mesh = SubResource("ArrayMesh_8g4af")
 surface_material_override/0 = ExtResource("4_tho0w")
 
 [node name="cat_carrier" type="MeshInstance3D" parent="sceneSeeEverything/interview_scene" unique_id=1069714368]
-transform = Transform3D(0.9390203, 0.15135956, 0.30875102, -0.14378649, 0.98847747, -0.04727717, -0.31234896, 0, 0.9499673, 15.1, 0.47499996, -11.599999)
+transform = Transform3D(0.93902016, 0.15135956, 0.30875102, -0.14378648, 0.9884774, -0.04727717, -0.3123489, 0, 0.9499673, 15.1, 0.47499996, -11.599999)
 mesh = SubResource("ArrayMesh_m4brd")
 surface_material_override/0 = ExtResource("7_salic")
 
@@ -8062,6 +8062,7 @@ startHidden = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.046932, 1.6003125, -10.864874)
 prompt = "watch interview"
 dialogFile = "res://dialog/script/9_club/46_reporter_interview.json"
+startHidden = true
 
 [node name="minnMaxLogo_HostMeetup" parent="logoPoints" unique_id=744209755 instance=ExtResource("26_pvu6s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.496132, 1.9951714, 4.422349)
